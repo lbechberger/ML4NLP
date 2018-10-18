@@ -18,3 +18,5 @@ In oder to run the code, please use the conda environment provided in `environme
 * [More condensed SPAQRL reference](https://www.dajobe.org/2005/04-sparql/SPARQLreference-1.8.pdf)
 * [Some slides on SPAQRL](http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
+## Useful Other Links
+* [The Secret to Good Code Documentation](https://www.intertech.com/Blog/secret-to-good-code-documentation/)
