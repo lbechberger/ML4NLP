@@ -53,27 +53,27 @@ class TestKS(unittest.TestCase):
         self.assertEquals(len(actual_result), 118)
 
     def test_run_resource_query_valid_title(self):
-        expected_result = 'Mexican president defends emigration'
+        expected_result = ['Mexican president defends emigration']
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "dct:title")
         self.assertEquals(expected_result, actual_result)
 
     def test_run_resource_query_valid_created(self):
-        expected_result = '2005-05-14T02:00:00.000+02:00'
+        expected_result = ['2005-05-14T02:00:00.000+02:00']
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "dct:created")
         self.assertEquals(expected_result, actual_result)
 
     def test_run_resource_query_empty_property(self):
-        expected_result = ''
+        expected_result = []
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "dct:publisher")
         self.assertEquals(expected_result, actual_result)
 
     def test_run_resource_query_invalid_property(self):
-        expected_result = ''
+        expected_result = []
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "ks:refersTo")
         self.assertEquals(expected_result, actual_result)
 
     def test_run_resource_query_invalid_uri(self):
-        expected_result = ''
+        expected_result = []
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration_NON_EXISTENT", "ks:hasMention")
         self.assertEquals(expected_result, actual_result)
   
@@ -88,5 +88,15 @@ class TestKS(unittest.TestCase):
         actual_result = ks.run_files_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration_NON_EXISTENT")  
         self.assertEquals(expected_result, actual_result)
         
+    # mention_URI_to_resource_URI
+    def test_mention_URI_to_resource_URI_valid(self):
+        expected_result = 'http://en.wikinews.org/wiki/Mexican_president_defends_emigration'
+        actual_result = ks.mention_uri_to_resource_uri('http://en.wikinews.org/wiki/Mexican_president_defends_emigration#char=615,622')
+        self.assertEquals(expected_result, actual_result)
+
+    def test_mention_URI_to_resource_URI_invalid(self):
+        expected_result = 'http://en.wikinews.org/wiki/Mexican_president_defends_emigration'
+        actual_result = ks.mention_uri_to_resource_uri('http://en.wikinews.org/wiki/Mexican_president_defends_emigration')
+        self.assertEquals(expected_result, actual_result)
         
 unittest.main()

@@ -50,7 +50,7 @@ def run_mention_query(mention_uri, prop):
     json = req.json()
     result = []
     
-    if '@graph' in json.keys() and len(json['@graph']) >= 1 and prop  in json['@graph'][0].keys():
+    if '@graph' in json.keys() and len(json['@graph']) >= 1 and prop in json['@graph'][0].keys():
         if isinstance(json['@graph'][0][prop], list):
             for element in json['@graph'][0][prop]:
                 result.append(element['@id'])    
@@ -59,29 +59,28 @@ def run_mention_query(mention_uri, prop):
     return result
 
 """
-Queries the KnowledgeStore for the given property of the given mention.
+Queries the KnowledgeStore for the given property of the given mention and returns a list of results.
 
-For the property 'ks:Mention', a list of mention URIs is returned (empty list in case of invalid resource URI).
-For all propoerties a string containing the result is returned (empty string in case of invalid resource URI or invalid property).
+The function returns an empty list in case of invalid resource URI or invalid property.
 
 For the function call 'run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "dct:title")',
 the result looks like this:
-'Mexican president defends emigration'
+['Mexican president defends emigration']
 """
 def run_resource_query(resource_uri, prop):
     p = {"id":"<{0}>".format(resource_uri), "property":prop}
     req = requests.get('http://knowledgestore2.fbk.eu/nwr/wikinews/resources', params=p)
     json = req.json()
+    result = []
     
-    if prop == "ks:hasMention":
-        if '@graph' not in json.keys() or len(json['@graph']) < 1 or prop not in json['@graph'][0].keys() or len(json['@graph'][0][prop]) < 1:
-            return []
-        return list(map(lambda x: x['@id'], json['@graph'][0][prop]))
-    else:
-        if '@graph' not in json.keys() or len(json['@graph']) < 1 or prop not in json['@graph'][0].keys() or '@value' not in json['@graph'][0][prop].keys():
-            return ''
-        return json['@graph'][0][prop]['@value']
-
+    if '@graph' in json.keys() and len(json['@graph']) >= 1 and prop in json['@graph'][0].keys():
+        if isinstance(json['@graph'][0][prop], list):
+            for element in json['@graph'][0][prop]:
+                result.append(element['@id'])    
+        elif '@value' in json['@graph'][0][prop].keys():
+            result.append(json['@graph'][0][prop]['@value'])
+    return result
+    
 """
 Retrieves the text of the news article stored under the given resource URI. Returns empty string for invalid resource URI.
 """
@@ -93,6 +92,17 @@ def run_files_query(resource_uri):
         return ''
     except ValueError:    
         return req.text
+
+"""
+Converts a given mention URI into a resource URI by simply removing the suffix starting with "#".
+
+For instance, the mention URI 'http://en.wikinews.org/wiki/Mexican_president_defends_emigration#char=615,622' is 
+transformed into the resource URI 'http://en.wikinews.org/wiki/Mexican_president_defends_emigration'.
+
+There is currently no sanity check on the input!
+"""
+def mention_uri_to_resource_uri(mention_uri):
+    return mention_uri.split('#')[0]
 
 """
 Short demo script showing how to use the API.
