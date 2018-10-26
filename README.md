@@ -18,12 +18,16 @@ In oder to run the code, please use the conda environment provided in `environme
 * [More condensed SPAQRL reference](https://www.dajobe.org/2005/04-sparql/SPARQLreference-1.8.pdf)
 * [Some slides on SPAQRL](http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
-## Useful Other Links
-
-* [The Secret to Good Code Documentation](https://www.intertech.com/Blog/secret-to-good-code-documentation/)
+## Development Environment Links
+* [Spyder IDE](https://www.spyder-ide.org/)
 * [Installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [Installing git-cola](https://git-cola.github.io/downloads.html)
 * [Downloading Anaconda](https://www.anaconda.com/download/)
 * [Installing Miniconda](https://conda.io/docs/user-guide/install/index.html)
 * [How to deal with conda environments](https://conda.io/docs/user-guide/tasks/manage-environments.html)
 
+## Links about Machine Learning
+
+* [The Secret to Good Code Documentation](https://www.intertech.com/Blog/secret-to-good-code-documentation/)
+* [Getting Better at Machine Learning](https://medium.com/@rchang/getting-better-at-machine-learning-16b4dd913a1f)
+* [How to deliver on Machine Learning projects](https://blog.insightdatascience.com/how-to-deliver-on-machine-learning-projects-c8d82ce642b0)
