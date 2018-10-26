@@ -19,4 +19,8 @@ In oder to run the code, please use the conda environment provided in `environme
 * [Some slides on SPAQRL](http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 
 ## Useful Other Links
+
 * [The Secret to Good Code Documentation](https://www.intertech.com/Blog/secret-to-good-code-documentation/)
+* [Installing Conda](https://conda.io/docs/user-guide/install/index.html)
+* [How to deal with conda environments](https://conda.io/docs/user-guide/tasks/manage-environments.html)
+
