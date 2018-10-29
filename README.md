@@ -25,6 +25,7 @@ In oder to run the code, please use the conda environment provided in `environme
 * [Downloading Anaconda](https://www.anaconda.com/download/)
 * [Installing Miniconda](https://conda.io/docs/user-guide/install/index.html)
 * [How to deal with conda environments](https://conda.io/docs/user-guide/tasks/manage-environments.html)
+* [Markdown syntax](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 
 ## Links about Machine Learning
 
