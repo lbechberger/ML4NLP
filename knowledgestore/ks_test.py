@@ -46,6 +46,13 @@ class TestKS(unittest.TestCase):
         expected_result = []
         actual_result = ks.run_mention_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration#char=0,629", "nwr:pred")
         self.assertEquals(expected_result, actual_result)
+
+    def test_run_mention_query_valid_propBank(self):
+        expected_result = ['http://www.newsreader-project.eu/propbank/issue.01']
+        actual_result = ks.run_mention_query("http://en.wikinews.org/wiki/World_leaders_react_to_Obama_win#char=1881,1887", "nwr:propbankRef")
+        self.assertEquals(expected_result, actual_result)   
+
+    
     
     # run_resource_query
     def test_run_resource_query_valid_hasMention(self):

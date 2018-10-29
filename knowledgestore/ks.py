@@ -21,19 +21,23 @@ For the query "SELECT ?s WHERE {?s rdf:type sem:Event} LIMIT 1", the result look
 """
 def run_sparql_query(query_string):
     req = requests.get('http://knowledgestore2.fbk.eu/nwr/wikinews/sparql', params={"query":query_string})
-    json = req.json()
-    if 'results' not in json.keys() or 'bindings' not in json['results'].keys():
-        return []
-    bindings = json['results']['bindings']   
-
-    result = []
-    for binding in bindings:
-        local_map = {}
-        for key, value in binding.items():
-            local_map[key] = value['value']
-        result.append(local_map)
     
-    return result
+    try:    
+        json = req.json()
+        if 'results' not in json.keys() or 'bindings' not in json['results'].keys():
+            return []
+        bindings = json['results']['bindings']   
+    
+        result = []
+        for binding in bindings:
+            local_map = {}
+            for key, value in binding.items():
+                local_map[key] = value['value']
+            result.append(local_map)
+        return result
+    except ValueError:
+        print("Warning! Couldn't parse JSON!")
+        return []
 
 """
 Queries the KnowledgeStore for the given property of the given mention and returns a list of results.
@@ -56,6 +60,8 @@ def run_mention_query(mention_uri, prop):
                 result.append(element['@id'])    
         elif '@value' in json['@graph'][0][prop].keys():
             result.append(json['@graph'][0][prop]['@value'])
+        elif '@id' in json['@graph'][0][prop].keys():
+            result.append(json['@graph'][0][prop]['@id'])
     return result
 
 """
@@ -79,6 +85,8 @@ def run_resource_query(resource_uri, prop):
                 result.append(element['@id'])    
         elif '@value' in json['@graph'][0][prop].keys():
             result.append(json['@graph'][0][prop]['@value'])
+        elif '@id' in json['@graph'][0][prop].keys():
+            result.append(json['@graph'][0][prop]['@id'])
     return result
     
 """
