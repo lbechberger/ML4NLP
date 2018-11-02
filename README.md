@@ -9,7 +9,7 @@ This is the branch of group Epsilon.
 We aim to create a system that is capable of answering questions concerning a single document. I.e. When asked "Who owns the Company BigCompay?" after reading a text about this company, it should be able to answer "Mrs Bigshot". For this we make use of the  KnowledgeStore Database (link: https://knowledgestore.fbk.eu/), and the articles contained within.
 
 ### Approach
-We quickly realised that a complete QA system capable of parsing  difficulty questions ("Whose fault is the decline of the Euro, according to Mrs Moneybags?") would be beyond our scope. Inspired by the triplets that make up entries in SPARCL, we decided to limit the questions to the style of (Who has relation x to y?), (What is the relation between z and y?) and (Z has relation x to who/what?).
+We quickly realised that a complete QA system capable of parsing  difficulty questions ("Whose fault is the decline of the Euro, according to Mrs Moneybags?") would be beyond our scope. Inspired by the triplets that make up entries in SPARQL, we decided to limit the questions to the style of (Who has relation x to y?), (What is the relation between z and y?) and (Z has relation x to who/what?).
 This enables us to make use of these triplets to autogenerate large amount of questions, making heavy duty machine learning feasible. 
 Furthermore this decision enabled the splitting of the task into 3 variants, one for each style of question. This is especially suited for our approach, as we consist of three groups, working in parallel. 
 
