@@ -9,11 +9,24 @@ News recommendation is a commonly tackled task in natural language processing. I
 
 Many current websites use such systems for different modalities. Examples are the selling of products (i.e. Amazon), the recommendation of movies and series (i.e. Netflix) or the providing of somewhat pleasant, interesting or funny posting (i.e. Facebook).
 
-[TODO: Collaborative filtering vs Content-based filtering]
+In generel two approaches for a Recommender System can be distinguished. A list of recommendations can be gathered either by
+applying collaborative filtering or by applying content-based filtering.
+
+In the collaborative filtering approach, recommendations are selected by collecting and comparing information and preferences from multiple users. The underlying assumption is that if a person A has the same interest as a person B, the person A is more likely to have person B's interests than that of a randomly chosen person. Pure collaborative filtering approaches do not exploit or require any knowledge about the items themselves. An advantage of this strategy is that these data do not have to be entered into the system or maintained.
+
+In the content-based filtering approach, the descriptive attributes of items are used to make recommendations. The goal is to 
+recommend items to the user that are similar to those that a user liked in the past. So at its core, content-based filtering is based on the availability of (manually created or automatically extracted) item descriptions and a profile that assigns importance to these characteristics. An Advantage of this approach is that it does not require large user groups to achieve reasonable recommendation accuracy. Moreover, new items can be immediately recommended once item attributes are available. In some domains these item descriptions can be automatically extracted or are already available in an electronic catalog. In other domains some of these characteristics are hard to acquire automatically. In that case such information must be manually entered into the system.
+
+Both approaches can be combined to a hybrid approach, which then could be more effective in some cases. But due to a lack of user information, we would have to enter all the user data manually to use elements of a collaborative filtering approach. For elements of the content-based filtering approach, we can use SPARQL to extract automatically the needed characterristics of our news articles. Only the preferences of the user has to be entered from us manually.
+
+Therefore we decide to stick to the content-based filtering approach in the beginning. The first thing we need to classify are the news articles. This allows us to rate them with an score, how well they fit to a certain user profile.
 
 In order of implementing such a news recommendation system utilized supervised machine learning, we have to define our goals. In a nutshell, we define our task as approximating an unknown function *f*, which gets the preferences of a user and an article as input and returns a score indicating the predicted interest of the user for that article. Iterating through the set of news articles and evaluating the function multiple times, such an implementation would find the most relevant articles from a corpus.
 
 [TODO: Further discussion of alternatives and why we wont use them]
 
 ## Citations
+Aggarwal. (2016). Recommender Systems: The Textbook. Springer
+Jannach, Zanker, Felfernig, Friedrich. (2011). Recommender Systems: An Introduction. Cambridge University Press
 Ricci, Francesco & Rokach, Lior & Shapira, Bracha. (2010). Recommender Systems Handbook. Springer
+
