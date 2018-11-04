@@ -13,9 +13,9 @@ The overall task of this work is to create a Question-Answering-System, that is 
 
 All triples provided as part of the KnowledgeStore-database (http://knowledgestore2.fbk.eu/nwr/wikinews/ui) are of the form *subject-predicate-object*. This limits the scope of questions we can answer to the following three general types, asking respectively for the subject, the predicate/relation, and the object:
 
-- **Who**  <did something> to <some entity>? (For example "Who shot Abraham Lincoln?")
-- **What** did <some entity> do to <some entity>? (For example "What did John Wilkes Booth to Abraham Lincoln?")
-- **To whom** did <some entity> do <something>? (For example "Whom did John Wilkes Booth shoot?")
+- **Who**  \<did something\> to \<some entity\>? (For example "Who shot Abraham Lincoln?")
+- **What** did \<some entity\> do to \<some entity\>? (For example "What did John Wilkes Booth to Abraham Lincoln?")
+- **To whom** did \<some entity\> do \<something\>? (For example "Whom did John Wilkes Booth shoot?")
 
 Using this data has the huge advantage that we don't have to manually create a dataset by extracting Question-Answer-Pairs from news articles ourselves. The only task left to create the dataset is thus to extract all triples in a way that's useful as dataset for our task, one idea being to create a dataset of pairs (one component missing) together with the underlying article as input, and the missing component as target.
 
@@ -33,7 +33,7 @@ The first problem arises already when posing the question. As questions can be a
 
 #### Selecting the correct article that answers the question
 
-After the respective two-thirds-of-a-triple that constitutes the question is successfully extracted (eg. from "Who shot Abraham Lincoln" to "<X> <shot> <Lincoln>") the next challenge is to select the article that answers this question. As all triples in the KnowledgeStore-database contain the respective source article, it seems possible to generate a dataset for a model that is able to figure out this connection. This model would then have as classes a vector of all eligible articles, selecting the one that is relevant for the demanded tuple. This is, of course, only a rough idea, and many questions (as for example the encoding of the article and the tuple, if they are supposed to be bags-of-words, or already contain meta-information as URIs of the KnowledgeStore-database-entities) are still open. Further, it is an open question of how this step may be performed on an ever-changing database of articles, once the model runs productively.
+After the respective two-thirds-of-a-triple that constitutes the question is successfully extracted (eg. from "Who shot Abraham Lincoln" to "\<X\> \<shot\> \<Lincoln\>") the next challenge is to select the article that answers this question. As all triples in the KnowledgeStore-database contain the respective source article, it seems possible to generate a dataset for a model that is able to figure out this connection. This model would then have as classes a vector of all eligible articles, selecting the one that is relevant for the demanded tuple. This is, of course, only a rough idea, and many questions (as for example the encoding of the article and the tuple, if they are supposed to be bags-of-words, or already contain meta-information as URIs of the KnowledgeStore-database-entities) are still open. Further, it is an open question of how this step may be performed on an ever-changing database of articles, once the model runs productively.
 
 #### Answering the question given the correct article
 
