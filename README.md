@@ -3,7 +3,9 @@ Material for the Practical Seminar "Machine Learning for Natural Language Proces
 
 This is the branch of group Alpha.
 
-# Session 2, 30.10.18
+## Session 2, 30.10.18
+
+### Project goal
 
 Goal of the project is the recommendation of news articles on the basis of Wikinews (https://en.wikinews.org/wiki/Main_Page), accessed via KnowledgeStore API (http://knowledgestore2.fbk.eu/nwr/wikinews/ui). The latter includes the enrichment of articles with information in a format that makes them easiy to process by computers, for example the linking of mentioned entities with DBpedia-entries (https://wiki.dbpedia.org/).
 
