@@ -15,7 +15,7 @@ The goal of this project is to implement a news recommendation system based on a
 With the help of SPARQL (https://www.w3.org/TR/rdf-sparql-query/) and the KnowledgeStore API (http://knowledgestore2.fbk.eu/nwr/wikinews/ui) we will access and extract knowledge from this data base to easily gather the data for our news recommendation system in a computer readable format.
 
 ## General approaches
-In order to understand the design decisions of our project, we sill shortly introduce the main idea of popular appraoches for Recommender Systems. In generel two popular approaches can be distinguished. A list of recommendations can be gathered either by
+In order to understand the design decisions of our project, we sill shortly introduce the main idea of popular approaches for Recommender Systems. In generel two popular approaches can be distinguished. A list of recommendations can be gathered either by
 applying collaborative filtering or by applying content-based filtering.
 
 In the collaborative filtering approach, recommendations are selected by collecting and comparing information and preferences from multiple users. The underlying assumption is that if a person A has the same interest as a person B, the person A is more likely to have person B's interests than that of a randomly chosen person. Pure collaborative filtering approaches do not exploit or require any knowledge about the items themselves. An advantage of this strategy is that these data do not have to be entered into the system or maintained.
