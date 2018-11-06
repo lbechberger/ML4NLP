@@ -15,3 +15,5 @@ In order to estimate a user's interest in a given article, machine learning tech
 After training, the classifier is supposed to receive one user profile and one article as an input, the output should be the statement if that article is interesting for the specific user or if not.
 
 By having a user profile, the classifier should be able to recommend each user individual articles rather than the general recommendation of (for example popular) articles to unknown users.
+
+## Session 3, 06.11.18
