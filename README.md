@@ -1,4 +1,4 @@
-# ML4NLP - Zeta
+﻿# ML4NLP - Zeta
 Material for the Practical Seminar "Machine Learning for Natural Language Processing" (Institute of Cognitive Science, Osnabrück University, Winter Term 2018/2019).
 
 This is the branch of group Zeta.
@@ -17,3 +17,5 @@ The initial challenge is translating a question like the ones above into a SPARQ
 We propose to develop classifiers that evaluates a set of triples and assigns probabilities regarding their relevance to a given question. After having determined the most relevant triple, the queried piece of information (subject, relation, or object respectively) is returned as the answer.
 
 This approach is feasibly implementable given our situation since three groups are working on the overall projects and the approach requires three different classifiers for each query scenario (querying the subject, querying the relation, or querying the object of a triple). Each classifier will be developed by one of the three groups.
+
+Test during session
