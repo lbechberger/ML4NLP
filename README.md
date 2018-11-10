@@ -23,11 +23,21 @@ So far, possible models have only briefly been discussed. One possible choice wo
 
 ## Week 05.11 - 11.11
 
-### Data Collection Interface
-
+### Data Collection 
+As discussed before, we wan to make use of the data contained within the KnowledgeStore database. We desire a large amount of data to enable more complciated machine learning approaches, and we want data clean of formating/labeling issues, that could break our pipeline. As such, we decided to autogenerate the data from the DB if possible. Furthermore, we decided that we want to focus on the Relation component of the triples, i.e. the answer the question "What is the relation between Mr Bigshot and the BigCompany." -> "Mr Bigshot owns the BigCompany/The BigCompany is owned by Mr Bigshot."
+Researching the database and the entries in the database revealed that the entries that we seek, so called "Mentions"  usually have an attribute called "RelationMention". (Link to the wiki here:) However,  SPARQL seems to be unable to direcly filter for this attribute. Currently we explore a combination of a primary SPARQL query requesting the combination of Mentions, their article and their attributes, and a secundary python script that futher filterse these based on the attribute "RelationMention". 
+From these filtered queries we desire to generate the test and trainings data sets. However, as mention in "Choice of Input and Target" we are not quite sure if we also want to add realworld knowledge about the entries in the article via further SPARQL queries. 
+ 
+ ###  Pros and Cons
+ As mentioned, we wanted a large and syntactically clean data set, which is possible with autogeneration. However, we are aware of the limitations. We cannot surpass the semnatic quality of the KnowledgeStore, nor can we generate information not yet contained within it, possibly an issue if we want to apply the algorythm to articles outside of the DB. For the articles contained within, however, we are quite sure to be capable of generating representative QA pairs, as these articles are related in their content and style. 
 Object to label: Mentions, Instances where we can generate a complete triple.
-NWR: RelationMention usually has the required information, but SPARQL cant filter for it.
+NWR: RelationMention usually has the required information, but SPARQL cant filter for it. 
 
+### Further steps required 
+We stated that our goal was to answer natural language QA pairs. Currently we only talked about the generation of incomplete and complete triplets. However, as we limited the style of our questions greatly, the translation to natural language can be done by simply "filling in the blanks". "Who is the mother fo Eddadottir" --> (?, is mother of, Eddadottir) --> (Edda,is mother of, Eddadottir) --> "Edda is the mother of Eddadottir." 
+
+#### Notes
+Here are notes for the group. If we forget to delete this, please ignore them.
 We can generate the required lables from the triplet information. Turning that into NL requires fillign in blanks
 
 Size we can guarentee due to the size of the DB
