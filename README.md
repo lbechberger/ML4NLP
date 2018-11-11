@@ -35,7 +35,7 @@ Objects to label: Words (possibly mentions) which complete the given incomplete 
 ### Properties of the Data Set
 
 Is it large?
-The size is determined by the size of the NewsReader data set, which currently contains 19751 articles with each on average bla mentions. How many of these are RelationMentions, we are not able to say at this point, since we cannot filter for them. 
+The size is determined by the size of the NewsReader data set, which currently contains 19751 articles with each on average 263 mentions per article. How many of these are RelationMentions, we are not able to say at this point, since we cannot filter for them. 
 
 Is it representative of task and data distribution?
 Representativeness for our task is given, since we select information from the same articles in order to answers questions about these articles. The representativeness of the articles within all articles depends on the selection criteria of the NewsReader project.
