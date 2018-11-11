@@ -39,13 +39,13 @@ For our approach, we need a set of triples that is as large as possible, is quic
 
 ### 3. Data Set Generation
 
-As mentioned above, RDF triples abide an subject-relation-object structure. Given the fact that we have reduced the scope of the task to specific questions regarding named entities (e.g. „Who is the father of Malia Obama?“), we know that all possible subjects and objects for the RDF triples we can use are named entities. Luckily, the NewsReader Ontology (https://knowledgestore.fbk.eu/ontologies/newsreader.html) that is also used in the KnowledgeStore database has a class to label named entities called EntityMention. By extracting all instances of the type nwr:EntityMention, we have assembled a complete list of all the potential subjects/objects of triples. 
+As mentioned above, RDF triples abide an subject-relation-object structure. Given the fact that we have reduced the scope of the task to specific questions regarding named entities (e.g. „Who is the father of Malia Obama?“), we know that all possible subjects and objects for the RDF triples we can use are named entities. Luckily, the NewsReader Ontology (https://knowledgestore.fbk.eu/ontologies/newsreader.html) that is also used in the KnowledgeStore database has a class to label named entities called EntityMention. By extracting all instances of the type nwr:EntityMention, we have assembled a complete list of all the potential subjects/objects of triples.
 
-After having identified all possible subjects/objects, relations between all possible subject/object pairs need to be evaluated. The NewsReader Ontology has a suitable class for this as well, namely nwr:RelationMention. This class denotes the relation between two distinct entites and potentially conveys additional information regarding the type of relation through its subclasses nwr:TLink (temporal link), nwr:CLink (causal link), nwr:Participation, nwr:GLink (grammatical link), and nwr:SLink (structural link). This enables us to query for relations in all possible subject/object combinations and use the result of each query to generate a triple. 
+After having identified all possible subjects/objects, relations between all possible subject/object pairs need to be evaluated. The NewsReader Ontology has a suitable class for this as well, namely nwr:RelationMention. This class denotes the relation between two distinct entites and potentially conveys additional information regarding the type of relation through its subclasses nwr:TLink (temporal link), nwr:CLink (causal link), nwr:Participation, nwr:GLink (grammatical link), and nwr:SLink (structural link). This enables us to query for relations in all possible subject/object combinations and use the result of each query to generate a triple.
 
-### 3.1 Potential Challenges
+#### 3.1 Potential Challenges
 
-The entities that we can choose by this aproach are limited to the ones that have been labelled by instances of EntityMention, RelationMention etc. and we have yet to evaluate how thoroughly the news articles have been labeled in this regard. 
+The entities that we can choose by this aproach are limited to the ones that have been labelled by instances of EntityMention, RelationMention etc. and we have yet to evaluate how thoroughly the news articles have been labeled in this regard.
 
 ### 4. Properties of the Data Set
 
@@ -60,7 +60,7 @@ It is representative since all the triples (based on their instances) are from t
 
 #### 4.3 Low Effort
 
-Relatively low effort to auto generate question answer pairs. 
+Relatively low effort to auto generate question answer pairs.
 
 #### 4.4 Quality
 
@@ -69,4 +69,3 @@ We expect it to be decent at best since they are auto generated. Also the qualit
 #### 4.5 Documentation
 
 We hope to provide a comprehensive documentation.
-
