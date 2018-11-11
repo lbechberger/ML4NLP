@@ -81,6 +81,7 @@ one possible way to detect entities is to use pre-existing Name Entity Recogniti
 * heads VBZ I-VP O 
 * for IN I-PP O 
 * Baghdad NNP I-NP I-LOC 
+
 with this we can extract entities for each sentense.
 
 2. Relation extraction
@@ -92,7 +93,7 @@ with the class $nwr:RelationMention$ in Knowledgestore API, it is of low cost to
 * nwr:Participation - A mention denoting the participation of an object (e.g., a person) to a certain event, further characterized by the role played by that object. 
 * nwr:GLink - A grammatical link among event mentions. 
 * nwr:SLink - A structural link, i.e., a mention denoting a structural relation among two events. 
-this would further become another constraint for the type of answerable questions defined in last week's documentation.
+
 
 ### About NER database CoNLL 2003
 
@@ -120,4 +121,5 @@ One biggest advantage of our approach is that it can generate entities for each 
 ## References
 
 [1] Tjong Kim Sang, Erik F., and Fien De Meulder. "Introduction to the CoNLL-2003 shared task: Language-independent named entity recognition." Proceedings of the seventh conference on Natural language learning at HLT-NAACL 2003-Volume 4. Association for Computational Linguistics, 2003.
+
 [2] Chiu, Jason PC, and Eric Nichols. "Named entity recognition with bidirectional LSTM-CNNs." arXiv preprint arXiv:1511.08308 (2015).
