@@ -114,8 +114,7 @@ One biggest advantage of our approach is that it can generate entities for each 
 ### Limitation
 
 1. step-by-step fashion of breaking down the problem will accumulate loss.
-2. Training for NER requires huge computation power and take. (the most power machine we are able to access is a 12G Titan X in IKW-Grid, which is still runnable with reasonable parameters of the ANN model.)
-3. Probably it will take some time to tune the model in order to achieve better performance.
+2. Training for NER requires huge computation power and is time-consuming. (the most power machine we are able to access is a 12G Titan X in IKW-Grid, which is still runnable with reasonable parameters of the ANN model.)
 
 
 ## References
