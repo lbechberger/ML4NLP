@@ -52,8 +52,16 @@ class TestKS(unittest.TestCase):
         actual_result = ks.run_mention_query("http://en.wikinews.org/wiki/World_leaders_react_to_Obama_win#char=1881,1887", "nwr:propbankRef")
         self.assertEquals(expected_result, actual_result)   
 
-    
-    
+    def test_run_mention_query_type_event(self):
+        expected_result = ['ks:Mention', 'nwr:EntityMention', 'nwr:EventMention', 'nwr:TimeOrEventMention']
+        actual_result = ks.run_mention_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration#char=615,622", "@type")
+        self.assertEquals(expected_result, actual_result)
+
+    def test_run_mention_query_type_relation(self):
+        expected_result = ['ks:Mention', 'nwr:Participation', 'nwr:RelationMention']
+        actual_result = ks.run_mention_query("http://en.wikinews.org/wiki/Angela_Merkel_elected_new_German_chancellor#char=563,585", "@type")
+        self.assertEquals(expected_result, actual_result)
+
     # run_resource_query
     def test_run_resource_query_valid_hasMention(self):
         actual_result = ks.run_resource_query("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "ks:hasMention")
@@ -105,5 +113,12 @@ class TestKS(unittest.TestCase):
         expected_result = 'http://en.wikinews.org/wiki/Mexican_president_defends_emigration'
         actual_result = ks.mention_uri_to_resource_uri('http://en.wikinews.org/wiki/Mexican_president_defends_emigration')
         self.assertEquals(expected_result, actual_result)
+
+    # is_article_in_category
+    def test_is_article_in_category_true(self):
+        self.assertTrue(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US_Senate"))
+        
+    def test_is_article_in_category_false(self):
+        self.assertFalse(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "Sports"))
         
 unittest.main()
