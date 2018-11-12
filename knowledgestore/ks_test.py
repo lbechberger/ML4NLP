@@ -117,6 +117,9 @@ class TestKS(unittest.TestCase):
     # is_article_in_category
     def test_is_article_in_category_true(self):
         self.assertTrue(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US_Senate"))
+
+    def test_is_article_in_category_true_no_underscore(self):
+        self.assertTrue(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US Senate"))
         
     def test_is_article_in_category_false(self):
         self.assertFalse(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "Sports"))

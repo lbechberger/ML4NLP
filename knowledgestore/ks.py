@@ -148,7 +148,8 @@ def is_article_in_category(resource_uri, category_name):
     Crawls the wikinews website and searches for the category_uri in the original HTML code (which contains links to the categories). 
     """        
     req = requests.get(resource_uri)
-    return '<a href="/wiki/Category:{0}"'.format(category_name) in req.text
+    pattern = '<a href="/wiki/Category:{0}" title="Category:{1}">{1}</a>'.format(category_name.replace(' ', '_'), category_name.replace('_', ' '))
+    return (pattern in req.text)
     
 
 def demo():
