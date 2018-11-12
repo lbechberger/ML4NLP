@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 """
-Examples for accessing the KnowledgeStore as shown in class
+Examples for accessing the KnowledgeStore as shown in Session 03.
 
 Created on Tue Nov  6 13:27:24 2018
 
 @author: lbechberger
 """
 
+import sys
+sys.path.append(".")
 import knowledgestore.ks as ks
 
 query_string = "SELECT DISTINCT ?e WHERE {?m dbo:starring ?e . ?m dbo:genre dbpedia:Comedy . ?m dbo:starring dbpedia:Charlie_Sheen . ?e rdf:type dbo:PlayboyPlaymate . ?e dbo:birthPlace dbpedia:Canada}"

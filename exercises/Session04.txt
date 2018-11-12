@@ -1,0 +1,16 @@
+1.) Accessing the types of a given mention
+------------------------------------------
+
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September#char=2081,2101
+
+
+2.) Checking if given article is in given category
+--------------------------------------------------
+
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September	Politics and conflicts
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September	Germany
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September	Sports
+
+http://en.wikinews.org/wiki/J%c3%bcrgen_Klopp_signs_3_year_contract_with_Liverpool		Politics and conflicts
+http://en.wikinews.org/wiki/J%c3%bcrgen_Klopp_signs_3_year_contract_with_Liverpool		Germany
+http://en.wikinews.org/wiki/J%c3%bcrgen_Klopp_signs_3_year_contract_with_Liverpool		Sports
