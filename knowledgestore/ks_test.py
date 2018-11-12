@@ -114,14 +114,13 @@ class TestKS(unittest.TestCase):
         actual_result = ks.mention_uri_to_resource_uri('http://en.wikinews.org/wiki/Mexican_president_defends_emigration')
         self.assertEquals(expected_result, actual_result)
 
-    # is_article_in_category
-    def test_is_article_in_category_true(self):
-        self.assertTrue(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US_Senate"))
+    # get_applicable_news_categories
+    def test_get_applicable_news_categories_match(self):
+        expected_result = ['Politics and conflicts']
+        actual_result = ks.get_applicable_news_categories("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", ks.top_level_category_names)
+        self.assertEquals(expected_result, actual_result)
 
-    def test_is_article_in_category_true_no_underscore(self):
-        self.assertTrue(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US Senate"))
-        
-    def test_is_article_in_category_false(self):
-        self.assertFalse(ks.is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "Sports"))
+    def test_get_applicable_news_categories_mismatch(self):
+        self.assertEquals(0, len(ks.get_applicable_news_categories("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", ["Sports"])))
         
 unittest.main()

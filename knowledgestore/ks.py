@@ -140,17 +140,46 @@ def get_all_resource_uris():
             pickle.dump(result, f)
         return result
 
-
-def is_article_in_category(resource_uri, category_name):
+def get_applicable_news_categories(resource_uri, category_names):
     """
-    Returns whether the given news article (given by resource_uri) belongs to the given category (given by category_uri).
+    Checks which of the given category_names are applicable to the given news article (given by resource_uri).
     
     Crawls the wikinews website and searches for the category_uri in the original HTML code (which contains links to the categories). 
-    """        
+    Returns a list of applicable category names (subset of category_names).
+    """
+
     req = requests.get(resource_uri)
-    pattern = '<a href="/wiki/Category:{0}" title="Category:{1}">{1}</a>'.format(category_name.replace(' ', '_'), category_name.replace('_', ' '))
-    return (pattern in req.text)
+    pattern = '<a href="/wiki/Category:{0}" title="Category:{1}">{1}</a>'
+    result = []
+
+    for category_name in category_names:
+        if pattern.format(category_name.replace(' ', '_'), category_name.replace('_', ' ')) in req.text:
+            result.append(category_name)   
+    return result
+
+top_level_category_names = ["Crime and law", "Culture and entertainment", "Disasters and accidents", "Economy and business", 
+                                "Education", "Environment", "Health", "Local only", "Media", "Obituaries", 
+                                "Politics and conflicts", "Science and technology", "Sports", "Wackynews", "Weather", "Women"]   
+
+def get_all_resource_category_mappings(category_names):
+    """
+    Returns a mapping of resource URIs to news categories. 
     
+    If a precomputed mapping is found, this is used. Otherwise, it is dynamically recomputed and stored.
+    """
+    if os.path.isfile('resource_category_mappings.pickle'):
+        with open('resource_category_mappings.pickle', "rb") as f:
+            data = pickle.load(f)
+            if data['category_names'] == category_names:
+                return data['mappings']
+    mappings = {}
+    all_resource_uris = get_all_resource_uris()
+    for resource_uri in all_resource_uris:
+        mappings[resource_uri] = get_applicable_news_categories(resource_uri, category_names)
+    result = {'category_names' : category_names, 'mappings' : mappings}
+    with open('resource_category_mappings.pickle', 'wb') as f:
+            pickle.dump(result, f)
+    return mappings
 
 def demo():
     """
@@ -186,10 +215,10 @@ def demo():
     print('len(get_all_resource_uris())')
     print(len(get_all_resource_uris()))
     
-    print("\n7.) Check if a given article is in a given category:")
-    print("----------------------------------------------------")
-    print('is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US_Senate")')
-    print(is_article_in_category("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", "US_Senate"))
+    print("\n7.) Check for applicable top level categories to a given article:")
+    print("-----------------------------------------------------------------")
+    print('get_applicable_news_categories("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", top_level_category_names)')
+    print(get_applicable_news_categories("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", top_level_category_names))
 
     
 
