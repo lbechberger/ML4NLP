@@ -17,6 +17,7 @@ In oder to run the code, please use the conda environment provided in `environme
 * [Specification of SPARQL](https://www.w3.org/TR/sparql11-query/)
 * [More condensed SPAQRL reference](https://www.dajobe.org/2005/04-sparql/SPARQLreference-1.8.pdf)
 * [Some slides on SPAQRL](http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
+* [Wikibook on SPARQL](https://en.wikibooks.org/wiki/SPARQL)
 
 ## Development Environment Links
 * [Spyder IDE](https://www.spyder-ide.org/)
