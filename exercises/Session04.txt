@@ -1,0 +1,21 @@
+1.) Accessing the types of a given mention
+------------------------------------------
+
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September#char=2081,2101
+
+
+2.) Checking if given article is in given category
+--------------------------------------------------
+Politics and conflicts
+Germany
+Sports
+
+http://en.wikinews.org/wiki/German_president_dissolves_parliament;_elections_in_September
+http://en.wikinews.org/wiki/J%c3%bcrgen_Klopp_signs_3_year_contract_with_Liverpool
+
+
+3.) Working with NLTK
+---------------------
+python -m nltk.downloader all
+
+John Wilkes Booth shot Abraham Lincoln. This did not happen inside the White House.
