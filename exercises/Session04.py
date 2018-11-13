@@ -10,4 +10,5 @@ Created on Mon Nov 12 13:38:20 2018
 import sys
 sys.path.append(".")
 import knowledgestore.ks as ks
+import nltk
 
