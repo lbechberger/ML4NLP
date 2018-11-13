@@ -55,4 +55,3 @@ Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 Jannach, Zanker, Felfernig, Friedrich. (2011). Recommender Systems: An Introduction. Cambridge University Press
 
 Ricci, Francesco & Rokach, Lior & Shapira, Bracha. (2010). Recommender Systems Handbook. Springer
-
