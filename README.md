@@ -97,9 +97,9 @@ with the class **nwr:RelationMention** in Knowledgestore API, it is of low cost 
 
 ### About NER database CoNLL 2003
 
-This dataset [1] includes 1,393 English and 909 German news articles, which is compatible with our dataset. We can use the english version for free, low cost :D. Our goal in this task is to extract entities for each sentence. Entities are annotated with LOC (location), ORG (organisation), PER (person) and MISC (miscellaneous). For instance, "**John Wilkes Booth shot Abraham Lincoln**" will be annotated with "**John[PER] Wilkes[PER] Booth[PER] shot[O] Abraham[PER] Lincoln[PER]**". You might notice that **John Wilkes Booth** will be annotated with three entity tags, rather than one single tag. How to overcome this problem needs more investigation.
+This dataset [1] includes 1,393 English and 909 German news articles, which is compatible with our dataset. We can use the english version for free, fitting our cheapness criterion. Our goal in this task is to extract entities for each sentence. Entities are annotated with LOC (location), ORG (organisation), PER (person) and MISC (miscellaneous). For instance, "**John Wilkes Booth shot Abraham Lincoln**" will be annotated with "**John[PER] Wilkes[PER] Booth[PER] shot[O] Abraham[PER] Lincoln[PER]**". You might notice that **John Wilkes Booth** will be annotated with three entity tags, rather than one single tag. How to overcome this problem needs more investigation.
 
-Some ANN-based models are able to achieve around 90% precision, recall and F score in this benchmark, such as [2]. The choice of architecture still remains to be explored. But B-LSTM could be a good choice, with GloVe or GoogleNews Word2vec. 
+Some ANN-based models are able to achieve around 90% precision, recall and F score in this benchmark, such as [2]. The choice of architecture still remains to be explored. But Bi-LSTMs could be a good choice, with GloVe or GoogleNews Word2vec word embeddings. 
 
 ### desiderata
 
