@@ -3,4 +3,5 @@ Material for the Practical Seminar "Machine Learning for Natural Language Proces
 
 This is the `teacher` branch, which is used to illustrate the usage of Git/GitHub.
 
+
 Lorem ipsum dolor sit amet...
