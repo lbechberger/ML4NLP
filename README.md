@@ -62,7 +62,7 @@ Articles can be assigned to every category and are not limited to be assigend to
 
 In the first step, we wrote a parser to obtain the categories from the Webpage. Due to the existence of some strange categories, e. g. "Corrected Articles" or "Templates", we defined some rules to sort out the categories, that do no represent the real categories of articles. After we obtaine the "real" categories, we then represent them as a hierarchy, so we do not lose any information, which would possible be important for the classifier.
 
-## Generate dataset
+### Generate dataset
 As a result after filtering out the categories, that make no sense, we ended up with a total amount of 19806 categories from the Wikinews website. In the Knowledge Store, there are 19737 annotated articles. Therefore the Wikinews website does not provide a significant higher number of articles and we decided, that the Knowledge Store has a sufficient amount of articles to train our classifier on.
 
 An investigation and an analysis of the articles and categories provided by Wikinews and the Knowledgestore was done this week. The next task is to generate the dataset by assigning articles to users. We have planned to assgin certain topics to users, that they might be interested in. After that we will randomly assign articles to the user, which belong to the corresponding categories, in which he is interested. In total, we assign 10 articles per user. This should be a sufficient amount of articles per user, where we can train a classifier on.
