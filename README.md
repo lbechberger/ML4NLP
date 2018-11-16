@@ -49,7 +49,25 @@ Summarizing these design decisions, we utilize a hybrid approach by combining a 
 
 This approach allows covering a large number of desirable properties of a dataset. Due to its artificial nature, a large amount of data can be generated effortlessly. The quality of the data is sound while being clearly documented. Probably, the biggest source of potential trouble is the representative nature of the data regarding the "real world". A careful selection of an extensive set of appropriate topics with assigned newspaper articles is necessary.
 
-## Citations
+## Source for the dataset (Week 3)
+### Wikinews Websource as an alternative
+After defining the generall approach, which kind of dataset we use for our classifier, we investigate some time in how we get our dataset. Therefore we looked into the annotated data, that the knowledgestore provides, and concluded, that it is worth trying to obtain more categories as the annotated ones by accessing Wikinews directly. Wikinews offers its own page, where every category and the amount of assigned news articles to each category are listed (https://en.wikinews.org/wiki/Special:Categories). 
+
+### Preprocess Wikinews-data
+Wikinews distincts between categories and subcategories. One category can have zero, one or multiple subcategories. The subcategories then are normal categories as well and can have zero, one or multiple subcategories on their own again. So the categories are represented in some kind of hierarchy:
+
+Articles can be assigned to every category and are not limited to be assigend to a subcategory. So it could be the case, that a category has simultaneously multiple subcategories and multiple articles assigend. The category music for example has the subcategories "Blues music", "Classical music", "Heavy metal" etc. but also multiple articles, e. g. "US rapper Mac Miller dies at home in Los Angeles" or "Netta wins Eurovision Song Contest for Israel" assigned. The subcategory "Heavy metal" has on its own the subcategories "Alice Cooper‎", "Lordi" and "Nightwish" and also articels, e. g. "GWAR announce Dave Brockie arts foundation" or "Arch Enemy singer Angela Gossow quits", assigned.
+
+[TODO] VISUALISATION of the hierarchy.
+
+In the first step, we wrote a parser to obtain the categories from the Webpage. Due to the existence of some strange categories, e. g. "Corrected Articles" or "Templates", we defined some rules to sort out the categories, that do no represent the real categories of articles. After we obtaine the "real" categories, we then represent them as a hierarchy, so we do not lose any information, which would possible be important for the classifier.
+
+## Generate dataset
+As a result after filtering out the categories, that make no sense, we ended up with a total amount of 19806 categories from the Wikinews website. In the Knowledge Store, there are 19737 annotated articles. Therefore the Wikinews website does not provide a significant higher number of articles and we decided, that the Knowledge Store has a sufficient amount of articles to train our classifier on.
+
+An investigation and an analysis of the articles and categories provided by Wikinews and the Knowledgestore was done this week. The next task is to generate the dataset by assigning articles to users. We have planned to assgin certain topics to users, that they might be interested in. After that we will randomly assign articles to the user, which belong to the corresponding categories, in which he is interested. In total, we assign 10 articles per user. This should be a sufficient amount of articles per user, where we can train a classifier on.
+
+### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
 Jannach, Zanker, Felfernig, Friedrich. (2011). Recommender Systems: An Introduction. Cambridge University Press
