@@ -28,21 +28,46 @@ By having a user profile, the classifier should be able to recommend each user i
 
 In order to build a machine learning model, it is crucial to know which form the input data will have. We encountered the problem that there is no pre-existing user data that is tailored to our research problem; the data would be required to be restricted only to articles that are listed in Wikinews via the KnowledgeStore database. We collected several options to resolve this problem:
 
-Option 1: 
+* Option 1: 
 We could simply assume that users can create profiles in which they specify the topics they are interested in. If the topics are broad (e.g. politics, science), the task would be simply extracting articles of a certain topic category from the database. As this would disregard the machine learning aspect, we would prefer not to use this approach.
 
-Option 2: 
+* Option 2: 
 In order to incorporate machine learning techniques, we could ignore the information on the article‘s topic categories that is specified in the database and just use the raw text of the article. This would allow us to auto-generate the dataset, but would transform the news recommendation task into a topic classification task.
 
-Option 3: 
+* Option 3: 
 Create several artificial user profiles as some kind of expert labeling. Each artificial user would only be interested in one rather narrow topic (e.g. a certain celebrity, a certain football team or a certain science sector). However, the topic would not explicitely be named in the profile, but the profile would consist of a list of articles on that topic. In order to generate training data, we would manually search for news articles that talk about that specific topic and thus create user profiles that consist of a list of articles that the imaginary user liked. The goal would then be to recommend articles that are about that specific topic.
 Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we would not be able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
 
-Option 4:
+* Option 4:
 Each team member would generate data for a user profile that stands for his or her own interest, thus being also an expert labeling approach. The definition of a user profile then could happen on the basis of a number of liked articles. The quality of the dataset would be high as the user profiles would match real users with the downside of being of marginally little size, even if we shared the dataset with all groups working on news recommendation.
 
-Option 5:
+* Option 5:
 Use a pre-existing dataset that contains user data, such as a list of articles they liked. This would also allow for a collaborative filtering approach. The problem here would be that a custom dataset is probably not confined on news articles that are also listed in the KnowledgeStore database, wherefore we could not make use of the meta-information linked to the articles.
 The advantage would be that the recommender system would work with real data instead of artificially created data.
 
 We have not yet decided on which option we will realize because we would like to discuss it with the lecturer or in class.
+
+
+## Session 4, 13.11.18
+
+### Decision how to aquire the data set
+
+The decision how to aquire a data set resulted in the plan to auto-generate idealized user profiles, so option 3 of the preceding part of the documentation.
+Before going further in this direction, the reasons for not taking the other options are shortly explained.
+
+* Option 1 doesn't include machine learning, so the seminar's goal wouldn't be covered.
+
+* Option 2 is in fact topic classification rather than news recommendation. 
+
+* Taking option 4 doesn't result in a sufficiently large data set. The only reasonable possibility to get enough data would have been the agreement of all three News Recommendation groups to take this approach and the sharing of data sets.
+
+* Option 5 would not include the use of the KnowledgeStore database to create the data set which doesn't match the seminar's criteria. Furthermore, a look at a fitting dataset by Yahoo revealed that the handling of such would go beyond the seminar's scope.
+
+### User profiles
+
+By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. To give an example, these articles could be articles which the user read til the end.
+
+### Aquiring the data set
+
+However, in order to aquire the data set, an intermediate step to model user's interests is taken. Interests are defined by a small number of topics the user is interested in. To enable the automatic generation, the topics of interest match the categories into which the articles of Wikinews are sorted. As the amount of top level categories is low at 16, we use the much bigger number of subcategories.
+A user profile consists of number (still to be defined) of articles that belong into the topics of interest for a user. In order to generate the user profiles, we created a python dictionary that lists for each topic all articles that fall into that topic. The articles are drawn from a random distribution where each topic is weighted by the number of articles that belong to that topic. We chose this approach because we assume that topics that contain a large number of articles are more important as more people are interested in these topics.
