@@ -6,18 +6,18 @@ This is the branch of group Beta.
 ## Documentation Part 1: 
 
 ### Introduction
-Today’s world changes at a rapid rate and we are flooded by news constantly. News apps update the user’s feed every minute and keeping up-to-date with oneself is time-consuming challenge. To reduce the amount of information to the news the user is interested in, a News Recommendation System is required. It would filter the articles to display solely the relevant reports. The News Recommendation System that will be implemented here, is going to filter news articles from the website wikinews.org.
-
-Building a News Recommendation System, there are two common approaches: collaborative and content-based approaches (Gopidi, 2015). Collaborative or popularity-based approaches use the preferences of many users and similarity measures to predict whether or not a user will like a news article. Problems with this method arise mainly due to a lack of data. Furthermore, it is hard to make predictions for new users, because finding article-user pairs for each user is computationally complex. Also, it is very helpful to have user feedback or ratings on articles to collect information about collective preferences, which wikinews.org does not provide. 
+Today’s world changes at a rapid rate and we are flooded by news constantly. News apps update the user’s feed every minute and keeping up-to-date by oneself is a time-consuming challenge. To reduce the amount of information to the news the user is interested in, a News Recommendation System is required. Such a system is aimed to filter the articles to display solely the relevant reports. The News Recommendation System that will be implemented here, is going to filter news articles from the website wikinews.org. 
 
 ### Approaches
+Building a News Recommendation System, there are two common approaches: collaborative and content-based approaches [1]. Collaborative or popularity-based approaches use the preferences of many users and similarity measures to predict whether or not a user will like a news article. Problems with this method arise mainly due to a lack of adequate data of user-preferences. Furthermore, it is hard to make predictions for new users, because of the lack of information concerning the user’s interests. For this approach it is therefore very helpful to have user feedback or ratings on articles to collect information about collective preferences, which wikinews.org does not provide. 
+
 Content-based approaches take into account the similarity of the content of the news article and the content of the news articles the user previously liked. The content can be either represented by keywords or the categories an article is assigned to. In wikinews.org, every article belongs to one or more categories (which often also seem to be keywords).
 
-On the other hand, a hybrid approach could use existing user profiles that are based on collective user action. The user profile built by interpreting explicitly (questionnaire) or implicitly (tracing user activities) collected data can then be compared with the different user profiles from the collaborative approach and the user preferences of the (collective) profile closest to the user’s profile can additionally be taken into account to achieve better performance. If we can manage to obtain such collective user profiles on news, we will try to include it.
+A hybrid approach of a collaborative and a content-based approach could use existing user profiles that are based on collective user action. The user profile built by interpreting explicitly (questionnaire) or implicitly (tracing user activities) collected data can then be compared with the different user profiles from the collaborative approach and the user preferences of the (collective) profile closest to the user’s profile can additionally be taken into account to achieve better performance. If we can manage to obtain such collective user profiles on news, we will try to include it.
 
 Because of the problems that come with the collaborative approach, we decided to implement a content-based news recommender system or a hybrid approach.
 
-### Structure of our Approach (cf. Gopidi, 2015): 
+### Structure of our Approach [cf.1]: 
 #### 1) Categories: 
 
 Wikinews.org provides the following categories: 
@@ -55,6 +55,35 @@ Based on this consideration, we decided that if we cannot get a very good existi
 The approach of developing a new user profile we aim for will look as follows: The new user fills out a questionnaire and based on this, an initial user profile is created. From the questionnaire, our algorithm assumes certain weights for the different categories covered. The categories are ordered in descending order of their weights. Articles with at least one of the categories with the highest weights (and none of the categories with the lowest weights) will be considered as a recommendation. Of these, more recent articles are preferred over older articles and articles that have been seen before are not going to be recommended again. The weights of the categories and the categories considered are adapted after every user feedback. How the weights are adapted is going to depend on the breadth of the category. If an article from a category that only includes 3 articles, like Figure Skating, is liked, it is likely that the other two articles are also interesting to the reader. But if an article is liked which is associated with a very large category like North America, the probability of the user to be interested in every other article in that category is very low.
 
 
-## Sources: 
-Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
+##Documentation Part 3 -  Data Generation
 
+In order to generate an appropriate sized set of training and test data for our classifier, we decided to generate 100 userprofiles, each user of which randomly either likes or dislikes one of the main categories. Four articles of each category are extracted from the dataset of news articles on wikinews.org and automatically annotated according to the category preferences(liked or disliked). Our classifier will then be trained on half of the extracted articles and tested on the other half of the articles. Accordingly the classifier will train on an tuple of the form (user, article, like/dislike) and will be tested on a tuple of the form (user, article, ?). After training, the classifier will be able to score the given articles and recommend articles accordingly.
+
+The user profiles will look as follows: 
+
+|                          |user 1|user 2|user 3|user 4|
+|--------------------------|------|------|------|------|
+|Crime and law             |1     |1     |0     |0     |
+|Culture and entertainment |0     |1     |1     |0     |
+|Disasters and accidents   |0     |0     |0     |1     | 
+|Economy and business      |1     |1     |1     |1     |
+|Education                 |0     |1     |0     |0     |
+|Environment               |1     |0     |1     |0     |
+|Health                    |0     |0     |0     |1     |
+|Obituaries                |1     |0     |0     |1     |
+|Politics and conflicts    |1     |1     |0     |1     |
+|Science and technology    |0     |0     |1     |0     |
+|Sports                    |0     |1     |0     |0     |
+|Wackynews                 |0     |0     |1     |1     |
+|Weather                   |1     |1     |0     |0     |
+
+                
+An article that user 1 would like would hence include one or more of the categories Crime and law, Culture and entertainment, Disasters and accidents, Health, Politics and conflicts, Science and technology, Weather. We would therefore pick four articles out of each category, so that we end up with 52 articles that are either associated with one or more of  the liked categories and are not associated with any of the disliked categories or that are associated with the disliked and with none of the liked articles
+
+For the random assignments of likes and dislikes, we use the pandas library[2], which can randomly output a number in a given range, which will in our case be 1 or 0. To extract articles that belong to a certain category but not to certain others, we use the function get_applicable_news_categories() located in the folder knowledgestore and defined in ks.py or directly with create_data_set.py. in the folder topic_classification.
+
+
+## Sources: 
+[1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
+
+[2] https://pandas.pydata.org
