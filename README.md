@@ -51,3 +51,8 @@ This is the documentation so far - judge for yourself.
 
 ### Further steps required 
 We stated that our goal was to answer natural language QA pairs. So far we only talked about the generation of incomplete and complete triplets. However, as we limited the style of our questions greatly, the translation to natural language can be done by simply "filling in the blanks". "Who is the mother fo Eddadottir" --> (?, is mother of, Eddadottir) --> (Edda,is mother of, Eddadottir) --> "Edda is the mother of Eddadottir." 
+
+## Week 12.11 -18.11
+ 
+### Data Aquisition
+With the capablilty to actually filter the data for the type, we now can filter for the required RelationMentions. This, in theory, should be the data we need for our tasks. However, we are not completely finished, only selecting all the RelationMentions from an article, and not yet formatting this. So we still need to turn this raw data into an useful format of (Subject, Relation, Object)
