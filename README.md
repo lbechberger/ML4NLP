@@ -54,5 +54,6 @@ We stated that our goal was to answer natural language QA pairs. So far we only 
 
 ## Week 12.11 -18.11
  
-### Data Aquisition
-With the capablilty to actually filter the data for the type, we now can filter for the required RelationMentions. This, in theory, should be the data we need for our tasks. However, we are not completely finished, only selecting all the RelationMentions from an article, and not yet formatting this. So we still need to turn this raw data into an useful format of (Subject, Relation, Object)
+### Data Acquisition
+We now have the ability to filter for RelationMentions, which will enable us to explore the data from which we aim to generate the QA pairs for the training of our classifier. However, so far there seems to be no obvious way to translate the data contained in the RelationMentions into QA pairs. An alternative candidate for the generation of QA pairs are the Events associated with each articles, since they seem to contain more semantic information like which actors participated in an action. Our next task will be to generate triples of the form (Subject, Relation, Object) for each article either from the RelationMentions, from the Events or from both.
+For the purposes of exploration code to access all RelationMentions and all Events associated with an article has been made available in the file explorer.py. 
