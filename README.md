@@ -45,25 +45,46 @@ After having identified all possible subjects/objects, relations between all pos
 
 The entities that we can choose by this aproach are limited to the ones that have been labelled by instances of EntityMention, RelationMention etc. and we have yet to evaluate how thoroughly the news articles have been labeled in this regard.
 
-### 4. Properties of the Data Set
+#### 3.2 Properties of the Data Set
 
-#### 4.1 Size
+#### 3.2.1 Size
 
 Fairly large since we search for entities in the sentences in an article using ObjectMention and this corresponds to a relatively large number of instances. Moreover, we will query for relations between all possible subject/object-combinations.
 
 
-#### 4.2 Representativeness
+#### 3.2.2 Representativeness
 
 It is representative since all the triples (based on their instances) are from the same articles in the database.
 
-#### 4.3 Low Effort
+#### 3.2.3 Low Effort
 
 Relatively low effort to auto generate question answer pairs.
 
-#### 4.4 Quality
+#### 3.2.4 Quality
 
 We expect it to be decent at best since they are auto generated. Also the quality is inherently influenced by the correctness of the labels present in the data itself for instances of EntityMention, RelationMention etc.
 
-#### 4.5 Documentation
+#### 3.2.5 Documentation
 
 We hope to provide a comprehensive documentation.
+
+
+
+## Week 4
+
+As discussed in the previous week, as the first step, our data contains RDF triples generated from wikinews articles. To achieve this, we have decided to use tools provided by the Natural Language Toolkit platform (http://www.nltk.org/) for named-entity recognition (NER). Using the entities extracted in this way, we can proceed to relation extraction. Coincidentally, NLTK also offers tools for this exact purpose as well. Therefore, the workflow for the first part of dataset generation will be to generate a list of strings containing *n* (actual quantity not yet decided upon) wikinews articles. The following workflow will look thus:
+1. split into sentences
+2. sentences will be POS-tagged
+3. NER will be applied to each sentence
+4. Relation extraction between fully tagged (both POS and NER) sentences will be applied
+The product of this approach will be sets of subject-relation-object items that will be saved in a simple text-file for now. POS- and NER-tags will also be included in the text-file. 
+The second step involves generating potential questions for each part of a generated triple. Given time constraints, we lack a concrete implementation of this just now but the plan is to use common question phrases adequate for the kind of inquiry. We are currently considering to also add morphological analysis in the first step of our data generation to make question generation even more adequate (taking into consideration singular vs. plural, for example).
+
+> Mark Zuckerberg [Pers] - founded - Facebook [Org]
+> > Who is [subject]?\
+> What is [object]?\
+> How are [subject] and [object] related?
+
+The fact that our previous processing has provided us with syntactic information regarding the constituents of a triple, the automatically generated questions can be grammatically adequate given the word they inquire about.
+
+Once we have generated questions that could query for information in a given triple, these triple-question sets will be stored in an XML file containing the triple and then potential questions for each constituent of the triple.
