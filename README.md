@@ -5,6 +5,7 @@ Material for the Practical Seminar "Machine Learning for Natural Language Proces
 
 This is the branch of group Zeta.
 
+- - - -
 
 ## Week 2
 
@@ -12,7 +13,6 @@ This is the branch of group Zeta.
 ### 1. Overall Task
 
 Our goal is to develop a system that is able to take a question phrased in a natural language (English in our case) and find an adequate concise answer to the question in the Wikinews data set.
-
 
 ### 2. Approach
 
@@ -29,7 +29,7 @@ We propose to develop classifiers that evaluates a set of triples and assigns pr
 
 This approach is feasibly implementable given our situation since three groups are working on the overall projects and the approach requires three different classifiers for each query scenario (querying the subject, querying the relation, or querying the object of a triple). Each classifier will be developed by one of the three groups.
 
-
+- - - -
 
 ## Week 3
 
@@ -68,7 +68,7 @@ We expect it to be decent at best since they are auto generated. Also the qualit
 
 We hope to provide a comprehensive documentation.
 
-
+- - - -
 
 ## Week 4
 
