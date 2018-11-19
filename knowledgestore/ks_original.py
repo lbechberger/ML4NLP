@@ -140,57 +140,6 @@ def get_all_resource_uris():
             pickle.dump(result, f)
         return result
 
-def get_all_news_subcategories(resource_uri):
-    """
-    Returns all subcategories (without top-level categories) that the article resource_uri belongs to
-    
-    Crawls the wikinews website and searches for the string wgCategories in the original HTML code. wgCategories is followed by a list of categories that articles belongs to
-    Returns a list of category names
-    """
-
-    req = requests.get(resource_uri)
-
-    index=req.text.find("wgCategories\":[")
-    closed_bracket=req.text.find("]",index)
-    categories=req.text[index+15:closed_bracket]
-    liste = []
-    for sub in categories.split("\",\""):
-        sub = sub.replace("\"","")
-        if not sub in top_level_category_names:
-            liste.append(sub)
-
-    return liste
-
-def create_category_articles_dictionary():
-
-    """
-    Returns a dictionary that matches all articles to the categories and subcategories they belong to
-
-    If a precomputed dictionary is found, this is used. Otherwise, it is dynamically recomputed and stored.
-    """
-
-    if os.path.isfile('subcategory_resource_mappings.pickle'):
-        with open('subcategory_resource_mappings.pickle', "rb") as f:
-            dic = pickle.load(f)
-
-    else:
-        dic = {} #matching dictionary
-        all_uris = get_all_resource_uris()
-        all_uris_len=len(all_uris)
-        for index, uri in enumerate(all_uris): #??
-            cats = get_all_news_subcategories(uri)
-            for cat in cats:
-                if not cat in dic:
-                    dic[cat] = []
-                dic[cat].append(uri)
-            print(int(index/all_uris_len*10000)/100,"% done")
-
-        with open('subcategory_resource_mappings.pickle', 'wb') as f:
-                pickle.dump(dic, f)
-
-    return dic
-
-
 def get_applicable_news_categories(resource_uri, category_names):
     """
     Checks which of the given category_names are applicable to the given news article (given by resource_uri).
@@ -231,7 +180,6 @@ def get_all_resource_category_mappings(category_names):
     with open('resource_category_mappings.pickle', 'wb') as f:
             pickle.dump(result, f)
     return mappings
-
 
 def demo():
     """
