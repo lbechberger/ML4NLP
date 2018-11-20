@@ -47,9 +47,9 @@ def get_triplets(article_uri):
     """Generates list of triplets of (agent,event,patient) for a given article"""
     timecodes = ["#tmx" + str(i) for i in range(7)]
     queries = [
-        "SELECT DISTINCT ?event ?agent ?patient  WHERE {?event rdf:type sem:Event . ?event sem:hasAtTime <" + str(article_uri) + str(
+        "SELECT DISTINCT ?event ?relation ?agent ?patient  WHERE {?event rdf:type sem:Event . ?event sem:hasAtTime <" + str(article_uri) + str(
             timecode) +
-        "> . ?event propbank:A0 ?agent . ?event propbank:A1 ?patient}" for timecode in timecodes]
+        "> . ?event propbank:A0 ?agent . ?event propbank:A1 ?patient . ?event rdfs:label ?relation}" for timecode in timecodes]
 
     result_list=[(result["agent"],result["event"],result["patient"]) for query in queries for result in ks.run_sparql_query(query)]
     return result_list
