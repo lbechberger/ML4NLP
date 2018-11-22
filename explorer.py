@@ -51,7 +51,7 @@ def get_triplets(article_uri):
             timecode) +
         "> . ?event propbank:A0 ?agent . ?event propbank:A1 ?patient . ?event rdfs:label ?relation}" for timecode in timecodes]
 
-    result_list=[(result["agent"],result["event"],result["patient"]) for query in queries for result in ks.run_sparql_query(query)]
+    result_list=[[result["agent"],result["event"],result["patient"]] for query in queries for result in ks.run_sparql_query(query)]
     return result_list
 
 if __name__ == "__main__":
