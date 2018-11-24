@@ -83,6 +83,8 @@ After that, we implemented the functions to generate the dataset (class "User").
 
 To train our classifier, we need a user representation on the one side and the training data on the other side as an input. We obtain the user representation by drawing randomly three articles per category from the internal representation of the user. Theoretically, the categories we did not draw can be used as positive examples for our training data. For the user representation for our classifier and for the positive sample we use the function "get_positive_sample" in our source code (the user representation is stored in "input_data" and the positive sample is stored in "true_labels"). Similar to that we can draw a negative sample with the function "get_negative_sample" from our articles.
 
+![ModelVisualization](ModelVisualization.png)
+
 We are now able to generate positive or negative labeled training data for one single user. The idea is to generate multiple users during our training process and train our classifier on this users. Due to the combinatorics of assigning random articles to users, we can generate an incredible amount of training data and therefore we hope to get a sufficient amount of data to train our classifier on.
 
 ### Citations
