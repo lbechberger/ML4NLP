@@ -64,6 +64,27 @@ For querying all the actual data, two ways seemed possible and were evaluated. T
 
 Despite our effort, the extraction process does not lead to a potentially valuable amount of additional data. In comparison to the 19737 annotated articles in the KnowledgeStore, the 27657 articles available nowadays were not considered as justifying a complete hybrid pipeline of both sources, at least not during our first experiments. We will stick to the available categories in the KnowledgeStore in order of generating the preferences of our user.
 
+## Generating the dataset (Week 4)
+
+### Preprocessing
+After we investing some time on the analysis of the articles and categories provided by Wikinews and the Knowledgestore in the last week, we implemented the necessary steps to generate our dataset for the classifier in this week.
+
+First of all, we extracted every article, that exists in the Knowledgestore. Due to the huge number of articles stored in the Knowledgestore (19737 articles), this query runs a significant amount of time. For a faster access in the future, we saved all articles into a pickle-file ("articles.pickle"). 
+
+In the next step, we obtained the corresponding categories for each article and stored them in a dictionary (function "articles_to_categories"). We make sure, that the same category is not saved multiple times in our list so that we only store the categories once. In total, we then have 5833 different categories for all articles. 
+
+Then we applied our filter from last week onto the categories to filter out the categories, that does not make sense for our news recommendation system (e.g. "Corrected Articles" or "Audio reports"). The exact filter can be seen in the function "filter_categories".
+
+In the next step, we looked into the distribution, how many articles are assigned to a corresponding category. [TODO: Show plot]
+From this distribution, we concluded to filter out every category with less than five articles assigned (included in the function "filter_categories"). The resulting number of articles is 1612.
+
+### Generate dataset
+After that, we implemented the functions to generate the dataset (class "User"). Therefore we randomly draw two categories per user ("random.sample(categories.keys(), num_interests)") and assign all articles, that belong to these categories, to the user for an internal representation ("interests_articles").
+
+To train our classifier, we need a user representation on the one side and the training data on the other side as an input. We obtain the user representation by drawing randomly three articles per category from the internal representation of the user. Theoretically, the categories we did not draw can be used as positive examples for our training data. For the user representation for our classifier and for the positive sample we use the function "get_positive_sample" in our source code (the user representation is stored in "input_data" and the positive sample is stored in "true_labels"). Similar to that we can draw a negative sample with the function "get_negative_sample" from our articles.
+
+We are now able to generate positive or negative labeled training data for one single user. The idea is to generate multiple users during our training process and train our classifier on this users. Due to the combinatorics of assigning random articles to users, we can generate an incredible amount of training data and therefore we hope to get a sufficient amount of data to train our classifier on.
+
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
