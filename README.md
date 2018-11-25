@@ -55,7 +55,7 @@ Based on this consideration, we decided that if we cannot get a very good existi
 The approach of developing a new user profile we aim for will look as follows: The new user fills out a questionnaire and based on this, an initial user profile is created. From the questionnaire, our algorithm assumes certain weights for the different categories covered. The categories are ordered in descending order of their weights. Articles with at least one of the categories with the highest weights (and none of the categories with the lowest weights) will be considered as a recommendation. Of these, more recent articles are preferred over older articles and articles that have been seen before are not going to be recommended again. The weights of the categories and the categories considered are adapted after every user feedback. How the weights are adapted is going to depend on the breadth of the category. If an article from a category that only includes 3 articles, like Figure Skating, is liked, it is likely that the other two articles are also interesting to the reader. But if an article is liked which is associated with a very large category like North America, the probability of the user to be interested in every other article in that category is very low.
 
 
-##Documentation Part 3 -  Data Generation
+## Documentation Part 3 -  Data Generation
 
 In order to generate an appropriate sized set of training and test data for our classifier, we decided to generate 100 userprofiles, each user of which randomly either likes or dislikes one of the main categories. Four articles of each category are extracted from the dataset of news articles on wikinews.org and automatically annotated according to the category preferences(liked or disliked). Our classifier will then be trained on half of the extracted articles and tested on the other half of the articles. Accordingly the classifier will train on an tuple of the form (user, article, like/dislike) and will be tested on a tuple of the form (user, article, ?). After training, the classifier will be able to score the given articles and recommend articles accordingly.
 
@@ -81,6 +81,57 @@ The user profiles will look as follows:
 An article that user 1 would like would hence include one or more of the categories Crime and law, Culture and entertainment, Disasters and accidents, Health, Politics and conflicts, Science and technology, Weather. We would therefore pick four articles out of each category, so that we end up with 52 articles that are either associated with one or more of  the liked categories and are not associated with any of the disliked categories or that are associated with the disliked and with none of the liked articles
 
 For the random assignments of likes and dislikes, we use the pandas library[2], which can randomly output a number in a given range, which will in our case be 1 or 0. To extract articles that belong to a certain category but not to certain others, we use the function get_applicable_news_categories() located in the folder knowledgestore and defined in ks.py or directly with create_data_set.py. in the folder topic_classification.
+
+## Documentation Part 4 - Dataset Generation II
+
+This week we have started to generate our dataset. We decided to look at the size of the categories provided on wikinews.org and include all (meaningful) categories which contain more than 500 articles. We picked and filtered the categories by hand, so that categories like wikinews-users who wrote and published more than 500 articles were excluded from the list of categories. We ended up with the following list of categories:
+
+#### All Categories:
+'Africa', 'Asia', 'Australia', 'Aviation', 'California', 'China', 'Computing', 'Crime and law', 'Culture and entertainment', 'Disasters and accidents', 'Economy and business', 'Elections', 'England', 'Environment', 'Europe', 'France', 'Health', 'Human rights', 'India', 'Internet', 'Iraq', 'Israel', 'London', 'Middle East', 'New Zealand', 'North America', 'Obituaries', 'Oceania', 'Politics and conflicts', 'Religion', 'Russia', 'Science and technology','Space',  'Sports', 'Transport', 'United Kingdom', 'United Nations', 'Wackynews', 'Weather', 'World'
+ 
+For each of these categories, we will save 100 random articles from the resourceURIs.pickle file in another pickle file (see article_collection.py). These articles are going to be annotated with a 1 for like or a 0 for dislike, depending on the user liking or disliking the category it represents. 
+
+Some of the extracted categories are at the same time subcategories of other categories, so we decided to put them in an hierarchical order and ended up with the following lists: 
+
+#### Top-Level Categories: 
+
+“Crime and law", "Culture and entertainment", "Disasters and accidents", "Economy and business", "Environment", "Health", "Science and technology", "Sports", "Wackynews", "Weather", "Politics and conflicts", "Obituaries", "Transport", "World", "Internet", "Religion"
+
+#### Region Categories: 
+
+"Africa", "Asia", "Europe", "Middle East", "North America", "Oceania"
+
+#### Subcategories:
+
+Transport: "Aviation"                            
+
+Science: "Computing", "Space"
+
+Politics: "Elections", "Human rights", "United Nations"
+
+Asia: "China", "India", "Russia"
+
+Middle East: "Iraq", "Israel"
+
+Oceania: “Australia", "New Zealand"
+
+North America: "California"
+
+Europe: "United Kingdom", "France"
+
+UK: "England"
+
+England: "London"
+
+
+We assigned the subcategories by hand, because they were sometimes overlapping or in our eyes not very meaningful in wikinews.org. Also, even though categories may have subcategories in wikinews.org, the subcategories can be assigned to an article independently of its superordinate category. For example an article can belong to the category “London”, without being assigned to the category “England” or “UK”. Still, we wanted to include sub- and superordinate categories relations, because we think that it is unlikely that a person that is not interested in articles about “Politics” will be interested in articles about “Elections”. We therefore thought about how to integrate this constraint and ended up with the following solution: 
+
+As described in the last section, for each user that we generate for our dataset, we will randomly assign if he or she likes each of the top-level categories or not. If a top-level category is liked, each of its subcategories will randomly be assigned a like or dislike, whereas if a top-level category is disliked, each of its subcategories will be assigned a dislike as well. Finally, the user will be named according to the categories that have been liked: e.g. username: Crime_and_law_Economy_and_business_Environmen_Health_Internet_Religion
+
+
+### Current State of Achievements:
+
+We have made a list of 100 articles for each of the top-categories and saved them into a pickle file (user_articles.pickle). The code we wrote for this procedure (article_collection.py) had some problems when accessing the wikines.org website, which is why we have only collected articles for the top-level categories and not for all of the categories yet. We will still need to collect articles for the Region categories and the subcategories. Also, we will generate the user profiles as described above in user_generaton.py and will create the final dataset by automatically annotating the articles according to each user’s preferences (dataset_generation.py and dataset.pickle)  and splitting the dataset  into 80% training and 20% test-set. We will upload the files user_generation.py, dataset_generation.py and dataset.pickle as soon as they are up and running. 
 
 
 ## Sources: 
