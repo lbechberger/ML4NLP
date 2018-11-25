@@ -71,3 +71,14 @@ By chosing the automatic generation of idealized user profiles to build the data
 
 However, in order to aquire the data set, an intermediate step to model user's interests is taken. Interests are defined by a small number of topics the user is interested in. To enable the automatic generation, the topics of interest match the categories into which the articles of Wikinews are sorted. As the amount of top level categories is low at 16, we use the much bigger number of subcategories.
 A user profile consists of number (still to be defined) of articles that belong into the topics of interest for a user. In order to generate the user profiles, we created a python dictionary that lists for each topic all articles that fall into that topic. The articles are drawn from a random distribution where each topic is weighted by the number of articles that belong to that topic. We chose this approach because we assume that topics that contain a large number of articles are more important as more people are interested in these topics.
+
+
+
+## Session 5, 20.11.18
+
+During this week, we finished the creation of the dataset. *dataset_generation.py* holds the method *generate_dataset(amount_users, subcategories_per_user, articles_per_user_and_category)* which creates *amount_users* users, which are interested in the number of *subcategories_per_user* topics and which like *articles_per_user_and_category* articles per topic they are interested in.
+
+Topics of interest are chosen from the category mapping of Wikinews. Note that the top-level categories aren't taken into account but only the level-2-categories, so subcategories. We excluded the first ones because if such a category was chosen for a user's topic of interest, the thematic range of articles belongig to that category would be high compared to articles belonging to a subcategory.
+
+The python code for generating users uses the method *create_category_articles_dictionary()*, for which we extended *ks.py* in the *knowledgestore* folder. *create_category_articles_dictionary()* creates a dictionary that matches news articles to the subcategories to which they belong. In order to get the subcategories for an article, the method *get_all_news_subcategories(resource_uri)* looks at the HTML code of the corresponding Wikinews article website, given by the parameter *resource_uri*. The HTML code contains the string *wgCategories*, which is followed by a list of categories that article belongs to. The top-level categories are excluded as explained above. 
+The extraction of categories for every article took roughly two hours, so the resulting dictionary is stored in the file *subcategory_resource_mappings.pickle*. If *create_category_articles_dictionary()* finds that file, it loads the dictionary from there instead of creating it anew.
