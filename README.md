@@ -57,3 +57,17 @@ We stated that our goal was to answer natural language QA pairs. So far we only 
 ### Data Acquisition
 We now have the ability to filter for RelationMentions, which will enable us to explore the data from which we aim to generate the QA pairs for the training of our classifier. However, so far there seems to be no obvious way to translate the data contained in the RelationMentions into QA pairs. An alternative candidate for the generation of QA pairs are the Events associated with each articles, since they seem to contain more semantic information like which actors participated in an action. Our next task will be to generate triples of the form (Subject, Relation, Object) for each article either from the RelationMentions, from the Events or from both.
 For the purposes of exploration code to access all RelationMentions and all Events associated with an article has been made available in the file explorer.py. 
+
+## Week 19.11 -25.11
+
+### Terminology
+As there are currently several terms for the same entities, some of which we used before and some of which we noticed are used by either others or the KnowledgeStore, here a few clarifications:
+Agent is the active part in a triplet, i.e. "Mr Bigshot" in our example  "Who owns the Company BigCompany?" We also called this previously Subject, but we now use agent to correspond to the use of the teachers terminology.
+Similarily, Patient is the passive part in a triplet, i.e. "BigCompany in our example "Who owns the Company BigCompany?" We previously called this Object.
+An event that has both an agent and a patient is considered a "Relation". We will continue to use this term, but be aware that there may be events that are not relations. However,we most likely won't be talking about these in our part. 
+
+# ## Current State of the Data
+We now have a proper dataset consiting of (Agent, ?, Patient) and the raw text of the article as input, with (Agent, Relation, Patient) as ground truth. For now, we generate this once before the actual training/testing from the KnowledgeStore, and save it in a csv file. This process is currently quite time consuming, and requires some parrallization to be useful for the full dataset. We disgregarded the real world knowledge contained about the entities contained within the database, simply because this is easier for our first try, but kept the code modular enough that adding real world relation should be possible without breaking prior models.
+
+### The Code
+Via several SPARQL queries we aquire all event for an article that have an agent and a patient (called propbank A0 and A1, respectively). We then transfer this information into question triplets (Agent,?,Patient), where a literal "?" represent the value to be found, and answer triplets (Agent, Relation, Patient). We then enrich this QA Pair with additional information. Right now, this is only the plain text of the article that was used to generate the pairs, so that the model has any information at all. However, as we used pandas to construct this dataset, we were able to construct the data in such a manner that additional information can be added without being available to models that do not request it. This means that we can add additional information at a later date without breaking or changing our prior models.
