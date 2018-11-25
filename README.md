@@ -88,3 +88,39 @@ The second step involves generating potential questions for each part of a gener
 The fact that our previous processing has provided us with syntactic information regarding the constituents of a triple, the automatically generated questions can be grammatically adequate given the word they inquire about.
 
 Once we have generated questions that could query for information in a given triple, these triple-question sets will be stored in an XML file containing the triple and then potential questions for each constituent of the triple.
+
+- - - -
+
+## Week 5
+
+### 5. Data Set Generation (Advanced)
+The process of preliminary data set generation is drawing to a close. The only remaining steps are relation extraction, question generation, and storing the generated information in the most usable format.
+#### 5.1 Relation Extraction
+Once named entities have been identified in a text, we try to extract relations between specified types of named entity. One way of approaching this task is to initially look for all triples of the form (X, α, Y), where X and Y are named entities of the required types, and α is the string of words that intervenes between X and Y. We can then use regular expressions to pull out just those instances of α that express the relation that we are looking for. The following example searches for strings that contain the word in. The special regular expression (?!\b.+ing\b) is a negative lookahead assertion that allows us to disregard strings such as “success in supervising the transition of”, where in is followed by a gerund.
+
+We can then use the function rtuple to print the form (Sub, filler, Obj), where Sub and Obj are pairs of Named Entity mentions, and filler is the string of words occurring between Sub and Obj (with no intervening NEs). For example:
+[ORG: 'Christian Democrats'] ', the leading political forces in' [LOC: 'Italy']
+
+Searching for the keyword *in* works reasonably well, though it will also retrieve false positives such as [ORG: House Transportation Committee], secured the most money in the [LOC: New York]; there is unlikely to be simple string-based method of excluding filler strings such as this.
+We can also define the pattern (α relation) as a disjunction of roles that a PERSON can occupy in an ORGANIZATION like (director| economist| editor etc). In addition to this, the “conll2002” and “ace” corpus contains not just named entity annotation but also part-of-speech tags and thus we can include POS tags in the query pattern.
+
+
+#### 5.2 Question Generation
+In this week's session, we received information that the system does not *have to* handle proper natural language questions, simple question formats (hereafter referred to as 'artificial questions') would also be acceptable. However, we decided to give it a try anyway. We are therefore working on both approaches, working on two methods to generate natural language questions and artificial questions. 
+##### 5.2.1 Natural Language Questions
+The two biggest issues with natural language questions (NLQ) is the sheer variety of possible phrasings as well as the amount of information needed about the syntactic nature of lexical items and the context they are used in. The fact that RDF triples are based on a structure reminiscing of natural language sentences (subject-verb-object structure), we can already determine the case of the question by the position of the information in a triple. You can find an example for why cases matter in the example under section 5.3. The gender of subject and object, however, are not inherently encoded in the information and should therefore be gathered in another way. The naive approach of querying for subjects and objects simply with the term "who" would result in unnatural NLQs like "Whom does Mark Zuckerberg own?" instead of "What does Mark Zuckerberg own?". We therefore preserved morphological information for every word in a given text. In order to achieve this, we changed our POS-tagging solution to the RDRPOSTagger (https://github.com/datquocnguyen/RDRPOSTagger) which is also able to derive morphological information. The accuracy of its POS-tagging for the English language reached up to 96.49% [1]. We have not yet evaluated its accuracy ourselves, however. Moreover, no claim about its accuracy for morphological tagging was made as of yet.
+##### 5.2.2 Artificial Questions
+The generation of artificial question (AQ) sets is significantly less complicated than the generation of NLQs. AQs are of the format (Barack_Obama, father_of, ?), (?, father_of, Malia_Obama), or (Barack_Obama, ?, Malia_Obama). We do not need any syntactic information for any items in the triple, instead we just generate strings of these three formats for every triple.
+
+#### 5.3 Storing the Information
+Given the circumstance that we have not yet decided on a concrete implementation of the classifier and the labelling format we want to apply to our data, we decided to store the information we generate in an XML file. With this as a foundation, we can later automatically transform the stored data into the format we want to train our classifier with.
+
+    <qa-set>
+        <triple> "Barack Obama" - "father to" - "Malia Obama" </triple>
+        <subject_question> "Who is the father of Malia Obama?" </subject_question>
+        <object_question> "Whom is Barack Obama father to?" </object_question>
+        <object_question> "Whose father is Barack Obama?" </object_question>
+        ....
+    </qa-set>
+
+It should be noted that a full qa-set should consist of one triple and a set of subject questions, a set of relation questions, and a set of object questions. This formatting style allows us to store all the information needed to later add labels in any shape we might need them. In addition to this, this dataset could in theory be used to train classifiers for subject questions, relation questions, and object questions. Should a later project be to develop a multi-class classifier, a single training data set for that classifier could also be generated from this dataset. We therefore found this formatting to be the most resilient and versatile, giving us more freedom for later design choices.
