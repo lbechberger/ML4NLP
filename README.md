@@ -161,3 +161,27 @@ some examples of the output.
 As shown in some of the outputs, the result is not really ideal for the **direct** extraction of the information-triples. However, it could help simplying complex sentences. For example, *Vladimir Voronin in Moldova* is extracted from the original text "President Vladimir Voronin of Moldova today signed a decree nominating ...". Although nltk doesn't do a good job getting the triples, it does a good job getting one element of the triples (the first entity) from a complex sentence (President Vladimir Voronin of Moldova today signed a decree). How to better retrieve all three elements still needed a deeper investigation. 
 
 How to store our dataset? Our idea is to directly annotate the output of NER and relation between entities in the original articles, in order to directly feed into our binary classifier in the future. However, current progress doesn't allow us to dream too far away, because a concrete and better way of extracting information-triples needs to be realized and the choice of model for classification needs to be determined before we decide how we want the input to be like. 
+
+
+
+## 25.11.2018
+
+### State of the code 
+
+So far, our code is able to extract certain kinds of relations using Python's NLTK. To do so, we access every article and run some components of the NLTK pipeline over it, in order to extract named entities as well as their relation. As, unfortunately, the necessary components from NLTK in part have a very low accuracy (or recall), only a subset of the possible relations are actually extracted, which is why we are looking into other possibilities to do so. Once we found other ways of doing so, we can simply replace the corresponding NLTK components thanks to our modular codebase.
+
+Another disadvantage about our approach is the fact that we have to define the relations between entities ourselves, using a custom gazetteer. Because of that, by far not all possible relations are actually extracted, and the size of our dataset depends in large parts on manual work of adding more relations by finding the corresponding regular expressions (see above).
+
+These relations are stored using simple CSV-files, where the entire relation is stored, together with the type of named entity and the position where the sentence making up the information appeared ("John Wilkes Booth, PER, shot, Abraham Lincoln, PER, <link>, <number>"). 
+
+### Relation extraction
+
+After identifying named entities in the articles using NLTK (or, hopefully in the future other techniques), the relations between specified types of named entities are extracted. To do so, we look for all triples of the form (NE, text, NE), and use regular expressions to figure out if the text in between two named entities contains relevant information. As mentioned above, we use regular expressions looking for strings that contain certain kinds of relations (like *in* or *of*). Unfortunaltey, doing this extraction has a relatively low precision, as it also retreives many false positives and inaccuracies: because we simply extract *any* string containing an *in* for example, we cannot tell if a person was born in a place, or if simply an event happened at a place, where that person was not necessarily physically present. Also the named entity recognition is far from perfect. An example where the named entity recognition failed is the following:
+
+```[PER: 'Sea/NNP Launch/NNP'] ',/, a/DT partnership/NN between/IN companies/NNS in/IN' [GPE: 'Norway/NNP']```
+
+Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, PER, is_in, Norway, GPE". As can be seen, the named entity recognition mistakes sea launch for a human.
+
+
+
+<@reviewers: this will be updated, the later you read it the better>
