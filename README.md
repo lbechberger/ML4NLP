@@ -54,7 +54,7 @@ After defining the general approach, the next step consists of evaluating which 
 
 Wikinews differentiates between categories and articles. One category can have zero, one or multiple subcategories. The subcategories are normal categories as well and can have zero, one or multiple subcategories on their own again. An article can be assigned to every category. Every category may have multiple subcategories and articles assigned simultaneously. The category "Music", for example, has both the subcategories "Blues music", "Classical music", "Heavy metal" etc. but also multiple articles, e. g. "US rapper Mac Miller dies at home in Los Angeles" or "Netta wins Eurovision Song Contest for Israel" assigned. Given this hierarchical structure, a representation as a tree-like structure seems suitable to represent the data.
 
-![Hierarchy](Hierarchy.png)
+![Hierarchy](documentation/Hierarchy.png)
 
 For querying all the actual data, two ways seemed possible and were evaluated. The foundation for all our experiments was an object-orientated pipeline written in Python allowing a flexible parsing, filtering and storing of both categories and articles. The classes may be found in the file "ArticlesExtractor.ipynb".
 
@@ -67,25 +67,44 @@ Despite our effort, the extraction process does not lead to a potentially valuab
 ## Generating the dataset (Week 4)
 
 ### Preprocessing
-After we investing some time on the analysis of the articles and categories provided by Wikinews and the Knowledgestore in the last week, we implemented the necessary steps to generate our dataset for the classifier in this week.
+After we spent some time on the analysis of the articles and categories provided by WikiNews and the Knowledgestore during the last week, we implemented the necessary steps to generate our dataset for the classifier in this week.
 
-First of all, we extracted every article, that exists in the Knowledgestore. Due to the huge number of articles stored in the Knowledgestore (19737 articles), this query runs a significant amount of time. For a faster access in the future, we saved all articles into a pickle-file ("articles.pickle"). 
+As a first step, we extracted the URL of every article existing in the Knowledgestore. Given the identifier of all the 19737 articles stored there, the object-orientated structures developed in the last week were utilized to enrich them with additional information. Utilizing the API of the underlying software *MediaWiki* and a JSON parser, we extracted both the human readable title and the list of matching categories. Despite our multiprocess-based parallel parsing pipeline, this enrichment took a significant amount of time. In order of simplifying the development and using the available resources in a fair manner, these data was cached locally in the file *articles.pickle*.
 
-In the next step, we obtained the corresponding categories for each article and stored them in a dictionary (function "articles_to_categories"). We make sure, that the same category is not saved multiple times in our list so that we only store the categories once. In total, we then have 5833 different categories for all articles. 
+In the next step, we optimized the data layout of these articles regarding the following tasks. Utilizing a dictionary-like structure, a mapping of all available categories towards their included articles were generated. Under usage of the hashing functionality of Python we ensured that the same category is not saved multiple times while still having access towards an easy iterating, filtering and mapping of the data. In total, we obtained 5833 different categories with all the available articles. 
 
-Then we applied our filter from last week onto the categories to filter out the categories, that does not make sense for our news recommendation system (e.g. "Corrected Articles" or "Audio reports"). The exact filter can be seen in the function "filter_categories".
+As already described in the previous week, the resulting categories do not all represent information of further interest. Especially categories like  "Corrected Articles" or "Audio reports" do not make any sense for a news recommendation system. Utilized all the hand-designed regular expressions, the already obtained categories where therefore filtered in a third step.
 
-In the next step, we looked into the distribution, how many articles are assigned to a corresponding category. [TODO: Show plot]
-From this distribution, we concluded to filter out every category with less than five articles assigned (included in the function "filter_categories"). The resulting number of articles is 1612.
+![CategoryDistibution](documentation/Wordcloud.png)
+
+By inspecting the 2408 remaining categories with the most influential ones visualized above, we were able to ensure the correctness of our approach. Still, we did not defined our lower required border for the importance of a news category. Small categories might carry no information of representative nature and do not allow an efficient training procedure due to their small amount of articles. In the next step, we analyzed therefore the distribution for figuring out, how many articles should be enforced for a valid category.
+
+![CategoryDistibution](documentation/CategoryDistibution.png)
+
+Given the sufficient amount of categories with a rather high amount of categories, we saw no special need to face the problems resulting from tiny categories and decided to filter out every category with less than five articles. Finally, the resulting number of obtained categories used from now on is therefore 1612.
 
 ### Generate dataset
-After that, we implemented the functions to generate the dataset (class "User"). Therefore we randomly draw two categories per user ("random.sample(categories.keys(), num_interests)") and assign all articles, that belong to these categories, to the user for an internal representation ("interests_articles").
+Interpreting these categories as potential interests of a news readers, the implementation of the pipeline for the actual generation of training data is rather straightforward. Fundamentally, every user is an instance of the class *User* with a specific amount of different interests. From each of these users, multiple user representations might be randomly drawn. These representations consists out of a list of articles considered as interesting for the user and are utilized as the first part of input to the classifier. The second part if the input is a single articles, which the classifier has to classify as "interesting"  or "not interesting" finally. In order to generate such positive and negative samples, the class *User* supports methods for getting articles with one of these known binary labels. A set-theoretically inspired implementation ensures that subcategories are handled in a correct manner when drawing negative samples. 
 
-To train our classifier, we need a user representation on the one side and the training data on the other side as an input. We obtain the user representation by drawing randomly three articles per category from the internal representation of the user. Theoretically, the categories we did not draw can be used as positive examples for our training data. For the user representation for our classifier and for the positive sample we use the function "get_positive_sample" in our source code (the user representation is stored in "input_data" and the positive sample is stored in "true_labels"). Similar to that we can draw a negative sample with the function "get_negative_sample" from our articles.
+![ModelVisualization](documentation/ModelVisualization.png)
 
-![ModelVisualization](ModelVisualization.png)
+Finally, we are now able to generate positive or negative labeled training data for individual user. The fundamental idea behind training is to generate a enormous amount of users, probably even on-the-fly, during our training process and train our classifier on their representations. Due to the combinatorics of assigning random articles to users, we can generate an incredible amount of training data. For validation purposes, we might utilize a subset of users with interests not used during training. Below, you find an example representation generated by the system for an user with interests in Dubai and Nicola Sturgeon:
 
-We are now able to generate positive or negative labeled training data for one single user. The idea is to generate multiple users during our training process and train our classifier on this users. Due to the combinatorics of assigning random articles to users, we can generate an incredible amount of training data and therefore we hope to get a sufficient amount of data to train our classifier on.
+```
+Example user representation (Interests: Dubai, Nicola Sturgeon):
+			 "Emaar Properties claims Burj Dubai as world's tallest building"
+			 "Elderly man in Scotland dies after contracting H1N1 swine flu virus"
+			 "Dubai purchases RMS Queen Elizabeth 2 for $100 million"
+			 "40th H1N1 swine flu death recorded in Scotland"
+			 "SNP wins Glasgow East by-election in Scotland"
+			 "Two charged in Heathrow bomb threat"
+			 
+Interesting:
+			"George Bush arrives in Saudi Arabia as part of his Middle East visit"
+
+Not interesting:
+			"U.S. Senator Larry Craig to resign"
+```
 
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
