@@ -124,3 +124,8 @@ Given the circumstance that we have not yet decided on a concrete implementation
     </qa-set>
 
 It should be noted that a full qa-set should consist of one triple and a set of subject questions, a set of relation questions, and a set of object questions. This formatting style allows us to store all the information needed to later add labels in any shape we might need them. In addition to this, this dataset could in theory be used to train classifiers for subject questions, relation questions, and object questions. Should a later project be to develop a multi-class classifier, a single training data set for that classifier could also be generated from this dataset. We therefore found this formatting to be the most resilient and versatile, giving us more freedom for later design choices.
+
+# References
+[1] Dat Quoc Nguyen, Dai Quoc Nguyen, Dang Duc Pham and Son Bao Pham. RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger. In Proceedings of the Demonstrations at the 14th Conference of the European Chapter of the Association for Computational Linguistics, EACL 2014, pp. 17-20, 2014.
+
+- - - -
