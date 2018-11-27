@@ -20,6 +20,7 @@ def generate_all_data():
                 all_data = all_data.append(next_data, ignore_index=True)
 
                 all_data.to_csv(file)
+				
 
 
 def generate_data_from_uri(uri):
@@ -37,4 +38,4 @@ def generate_data_from_uri(uri):
 
 
 if __name__ == "__main__":
-    generate_all_data()
+    generate_triples_from_uri("http://en.wikinews.org/wiki/Invisibility_shield_gets_blueprint")
