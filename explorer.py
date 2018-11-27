@@ -4,21 +4,6 @@ from knowledgestore import ks
 
 all_article_uris = pd.read_csv("all_article_uris.csv")
 
-
-def main():
-    # select random article from all articles
-    article_uri = all_article_uris.loc[np.random.randint(low=0, high=len(all_article_uris.index))]["article"]
-    print(article_uri)
-    relation_mentions = get_mentions_type(article_uri, "nwr:RelationMention")
-    events = get_events(article_uri)
-    events_with_agent_patient = get_events_with_agent_patient(article_uri)
-    triplets = get_triplets(article_uri)
-    print(relation_mentions)
-    print(events)
-    print(events_with_agent_patient)
-    print(triplets)
-
-
 def get_events(article_uri):
     """ generates list of event URIs for a given article """
     timecodes = ["#tmx" + str(i) for i in range(7)]
@@ -44,20 +29,18 @@ def get_mentions_type(article_uri, type):
     return [m[len(article_uri):] for m in mentions if type in ks.run_mention_query(m, "@type")]
 
 
-def get_triplets(article_uri):
-    """Generates list of triplets of (agent,event,patient) for a given article"""
-    timecodes = ["#tmx" + str(i) for i in range(7)]
-    queries = [
-        "SELECT DISTINCT ?event ?relation ?agent ?patient  WHERE {?event rdf:type sem:Event . ?event sem:hasAtTime <" + str(
-            article_uri) + str(
-            timecode) +
-        "> . ?event propbank:A0 ?agent . ?event propbank:A1 ?patient . ?event rdfs:label ?relation}" for timecode in
-        timecodes]
+def get_triple_from_event(event_uri):
+	query = "SELECT DISTINCT ?agent ?charloc ?patient  WHERE {<" + event_uri + "> propbank:A0 ?agent . <" + event_uri + "> propbank:A1 ?patient . <" + event_uri + "> gaf:denotedBy ?charloc}"
+	result = ks.run_sparql_query(query)
+	if len(result) == 0:
+		return ()
+	else:
+		agent = (result[0]["agent"].split("/")[-2], result[0]["agent"].split("/")[-1].replace("+", " "))
+		patient = (result[0]["patient"].split("/")[-2], result[0]["patient"].split("/")[-1].replace("+", " "))
+		charlocs = [(r["charloc"].split("=")[-1].split(",")[0], r["charloc"].split("=")[-1].split(",")[1]) for r in result if r["charloc"].split("#")[0] == event_uri.split("#")[0]]
+		return (agent, charlocs, patient)
 
-    result_list = [[result["agent"], result["event"], result["patient"]] for query in queries for result in
-                   ks.run_sparql_query(query)]
-    return result_list
-
-
-if __name__ == "__main__":
-    main()
+def generate_triples_from_uri(uri):
+	events = get_events(uri)
+	triples = [get_triple_from_event(event) for event in events]
+	return triples
