@@ -37,10 +37,15 @@ def get_triple_from_event(event_uri):
 	else:
 		agent = (result[0]["agent"].split("/")[-2], result[0]["agent"].split("/")[-1].replace("+", " "))
 		patient = (result[0]["patient"].split("/")[-2], result[0]["patient"].split("/")[-1].replace("+", " "))
-		charlocs = [(r["charloc"].split("=")[-1].split(",")[0], r["charloc"].split("=")[-1].split(",")[1]) for r in result if r["charloc"].split("#")[0] == event_uri.split("#")[0]]
+		charlocs = [(int(r["charloc"].split("=")[-1].split(",")[0]), int(r["charloc"].split("=")[-1].split(",")[1])) for r in result if r["charloc"].split("#")[0] == event_uri.split("#")[0]]
 		return (agent, charlocs, patient)
+
 
 def generate_triples_from_uri(uri):
 	events = get_events(uri)
-	triples = [get_triple_from_event(event) for event in events]
+	triples = []
+	for event in events:
+		trip = get_triple_from_event(event)
+		if len(trip) > 0:
+			triples.append(trip)
 	return triples
