@@ -10,11 +10,13 @@ def tokenize_text(articles):
         print("Article number " + str(n) + "tokeinzed into sentences successfully!")
         n += 1
     return sentences
-        
+
+
 def pos_tag(sentences):
     '''Generates POS tags for the text.'''
     pos_tags = [nltk.pos_tag(sentence) for sentence in sentences]
     return pos_tags
+
 
 def recognize_ne(sentences):
     pers_list = []
@@ -35,6 +37,14 @@ def recognize_ne(sentences):
                 misc_list.append(elem)
         n += 1
     return [pers_list, org_list, loc_list, misc_list]
+
+
+def print_to_txt(triples):
+    with open('triples.txt', 'w') as f:
+        for triple in triples:
+            f.write(triple[0] + " " + triple[1] + " " + triple[2] + "\n")
+        f.close()
+
 
 if __name__ == '__main__':
     wikinews_uris = ks.get_all_resource_uris()
