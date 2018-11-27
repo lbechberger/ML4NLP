@@ -13,6 +13,8 @@ all_article_uris = explorer.all_article_uris
 
 def main():
 	data = generate_data_for_articles([all_article_uris.loc[i]["article"] for i in range(3)])
+	data.to_csv("test_data.csv")
+	print(data.head())
 	print(data.describe())
 
 
@@ -32,17 +34,13 @@ def generate_all_data():
 
 
 def generate_classification_data(agent, patient, chars, raw_text):
-	# Possibly remove dead end candidates: StopWords, Only Verbs, sth like that?
 	correct_relations = [(c[0], c[1]) for c in chars]
 	splits_at = get_positions_of_char_in_text(" ", raw_text)
-	splits_at.insert(0, 0)
-	splits_at.insert(-1, len(raw_text))
 	words_by_position = [(splits_at[x] + 1, splits_at[x + 1]) for x in range(len(splits_at) - 1)]
 	result_frame = pd.DataFrame()
 	for word_by_position in words_by_position:
-		classification = word_by_position in correct_relations #Todo: I made everything a tuple, pandas interprets this as two datapoints
-		pandas_line = pd.DataFrame({"agent": agent[1], "patient": patient[1], "word_by_char": [word_by_position],
-									"classification": classification, "raw_text": raw_text})
+		classification = word_by_position in correct_relations
+		pandas_line = pd.DataFrame({"agent": agent[1], "patient": patient[1], "word_start_char": word_by_position[0], "word_end_char": word_by_position[1], "classification": classification, "raw_text": raw_text}, index=[0])
 		result_frame = result_frame.append(pandas_line, ignore_index=True)
 	return result_frame
 
