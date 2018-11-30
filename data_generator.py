@@ -1,22 +1,32 @@
 """ Uses the scripts contained within explorer.py to generate training and test data."""
-
+from knowledgestore import ks
 import pandas as pd
 import numpy as np
-from knowledgestore import ks
 import explorer
-from multiprocessing import Pool
-import copy
-from logging import log
 import re
+import time
 
 all_article_uris = pd.read_csv("all_article_uris.csv")
 
 
 def main():
-	generate_data_chunks(0, 3)
+	total = 0
+	start = 0
+	step = 50
+	print("Starting processing...")
+	while total < len(all_article_uris.index):
+		generate_data_chunks(start, start + step)
+		total = start + step
+		print(str(total) + " articles were processed so far.")
+		print(str(len(all_article_uris.index) - total) + " articles left.")
+		start = total + 1
+	print()
+	print("Script finished with {} articles left.".format(len(all_article_uris.index) - total))
+
 
 
 def generate_data_chunks(start_index, end_index):
+	start = time.time()
 	print("Generating classification data for articles {} to {} now.".format(start_index, end_index))
 	data_chunk = generate_data_for_articles([all_article_uris.loc[i]["article"] for i in range(start_index, end_index + 1)], gather=True, verbose=True)
 	print("Generated data: ")
@@ -28,6 +38,7 @@ def generate_data_chunks(start_index, end_index):
 	filename = "cdata_articles_{}_to_{}.csv".format(start_index, end_index)
 	data_chunk.to_csv("generated_data/classification_data_chunks/" + filename)
 	print("Classification data saved to file {}.".format(filename))
+	print("{0:0.1f} seconds elapsed and ".format(time.time() - start) + str(end_index - start_index + 1)  + " articles were processed in this time.")
 
 
 def generate_data_for_articles(articles, gather=False, verbose=False):
