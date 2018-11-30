@@ -190,11 +190,8 @@ Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, P
 
 ### State of the code 
 
-​```sequence
-Articles->Mentions: ks.run_resource_query(article_uri, 'ks:hasMention')
-Mentions-->Predicates: ks.run_mention_query(mention, "nwr:pred") 
-Predicates-->Events
-Predicates-->Agents
-Predicates-->Patients
-​```
+​
+[logo]: https://github.com/lbechberger/ML4NLP/tree/delta/figures/week6.png "week 6 work flow"
+
+​
 
