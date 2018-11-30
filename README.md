@@ -185,3 +185,16 @@ Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, P
 
 
 <@reviewers: this will be updated, the later you read it the better>
+
+## 30.11.2018
+
+### State of the code 
+
+​```sequence
+Articles->Mentions: ks.run_resource_query(article_uri, 'ks:hasMention')
+Mentions-->Predicates: ks.run_mention_query(mention, "nwr:pred") 
+Predicates-->Events
+Predicates-->Agents
+Predicates-->Patients
+​```
+
