@@ -1,0 +1,10 @@
+extracting events and entities shittily - eb2aa8f131fe85bf357d5dba632faa8431baabec
+
+
+res = ks.run_sparql_query("SELECT ?x ?l WHERE {dbpedia:Angela_Merkel ?x ?l}")
+
+- was ziemlich nice ist, dadrin sind types (agent, chancellor, person politician, ..), damit kann man natürlich schon was machen...
+- further ist da sogar stuff wie birthplace, birthname, ..., womit man theoretisch schon fragen wie wann wurde sie geboren beantworten kann....
+- und die labels ('http://www.w3.org/2000/01/rdf-schema#label'), oder alternaitveName, sind auch super-praktisch für synonyme 
+
+
