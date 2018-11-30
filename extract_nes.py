@@ -1,6 +1,6 @@
 import nltk
 from multiprocessing import Pool
-import ks
+import knowledgestore.ks as ks
 
 txt = """
 A progressive blog, Democrats.com, is offering a $1,000 reward to anyone who can get United States president George W. Bush to answer a question about pre-Iraq war intelligence. The contest comes after Bush has declined for a full month to answer any questions about a leaked secret British memo, which states, in reference to the Bush administration, that "the intelligence and facts were being fixed around the policy". Neither the US or UK government are disputing the document's accuracy. The $1,000 question is:
@@ -30,6 +30,6 @@ for sent in sentences:
     pos_tagged = nltk.pos_tag(word_tokenized)
     ne_chunked = nltk.ne_chunk(pos_tagged)
     recognized.append(" ".join([i[0] if isinstance(i, tuple) else "["+(" ".join([j[0] for j in i]))+"]" for i in ne_chunked]).replace(" ,",","))
-    # print(ne_chunked)
+    print(ne_chunked)
 
 print("\n".join(recognized))

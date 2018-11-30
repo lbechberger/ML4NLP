@@ -1,16 +1,5 @@
 from knowledgestore import ks
+import pandas as pd
 
-query = """SELECT ?mention ?event (strbefore(str(?atime), "#") AS ?article)
-WHERE {
-?event rdf:type sem:Event .
-?event sem:hasAtTime ?atime .
-?event gaf:denotedBy ?mention
-}
-ORDER BY DESC(?article)
-LIMIT 5"""
-
-test_response = ks.run_sparql_query(query)
-
-# test_mention = test[0]["mention"]
-
-print(test_response)
+all_uris = pd.read_csv("all_article_uris.csv")
+print(len(all_uris))

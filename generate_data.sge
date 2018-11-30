@@ -21,7 +21,7 @@ echo ""
 echo "Start"
 echo ""
 
-source /net/projects/scratch/summer/valid_until_31_January_2019/juhuang/ML4NLP_setup.bash
+source /net/projects/scratch/summer/valid_until_31_January_2019/juhuang/ml4nlp_setup.bash
 
 export PATH=/home/student/j/jschoening/local/cuda-9.0/bin:$PATH
 export LD_LIBRARY_PATH=/home/student/j/jschoening/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
@@ -38,7 +38,7 @@ source activate python3
 
 
 echo "rolling..."
-PYTHONPATH=$ML4NLP_ROOT/$USER WALLTIME=36:00:00 python generate_data.py
+PYTHONPATH=$ML4NLP_ROOT WALLTIME=36:00:00 python generate_data.py
 
 
 echo ""
