@@ -7,19 +7,23 @@ top_level_categories = ["Crime and law", "Culture and entertainment", "Disasters
                         "Environment", "Health", "Science and technology", "Sports", "Wackynews", "Weather",
                         "Politics and conflicts", "Obituaries", "Transport", "World", "Internet", "Religion",
                         "Africa", "Asia", "Europe", "Middle East", "North America", "Oceania", "Aviation", "Computing",
-                        "Space", "Elections", "Human rights", "United Nations", "China", "India", "Russia", "Iraq",
-                        "Israel", "Australia", "New Zealand", "California", "United Kingdom", "France", "England",
-                        "London"]
+                        "Space", "Elections", "Human rights", "United Nations", "Football (soccer)", "China", "India",
+                        "Russia", "Iraq", "Israel", "Australia", "New Zealand", "Canada", "United States", "California",
+                        "United Kingdom", "France", "Germany", "England", "London"]
+
 
 # if there already exists a pickle file: append it, otherwise create new one
 if os.path.isfile('./user_articles.pickle'):
     with open("user_articles.pickle", 'rb') as ppf:
         _, listOfArticles, allArticles = pickle.load(ppf)
+        print("Found pickle file")
 else:
     with open('all_article_uris.csv', 'r') as csvFile:
         # read in all articles as list
         allArticles = list(csv.reader(csvFile))
         listOfArticles = []
+        print("Found no pickle file. Creating new list")
+
 
 # listOfArticles = nested list of categories' articles
 # e.g. listOfArticles[0][0] = first article in cat Crime and law
@@ -31,13 +35,14 @@ for c in top_level_categories[len(listOfArticles):]:
     articleCounter = 0
     while articleCounter < 100:
         randomRow = np.random.randint(1, len(allArticles))
-        newArticle = allArticles[randomRow][0] 
+        newArticle = allArticles[randomRow][0]
         # if article belongs to c
         if ks.get_applicable_news_categories(newArticle, [c]) != []:
             catArticles.append(newArticle)
             # remove from list of possible articles to avoid duplicates
             allArticles.pop(randomRow)
             articleCounter += 1
+            print(articleCounter)
         else:
             # if article does not belong in this category try again
             continue
