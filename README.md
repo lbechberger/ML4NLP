@@ -191,7 +191,7 @@ Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, P
 ### State of the code 
 
 ​
-[logo]: https://github.com/lbechberger/ML4NLP/tree/delta/figures/week6.png "week 6 work flow"
+![RESULT](https://github.com/lbechberger/ML4NLP/tree/delta/figures/week6.png)
 
 ​
 
