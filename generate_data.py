@@ -6,11 +6,19 @@ from nltk.sem.relextract import extract_rels, rtuple
 import pandas as pd 
 import numpy as np
 
-def run(num_articles):
+def run():
+	dir_setup()
 	all_uris = pd.read_csv("all_article_uris.csv")
-	for i, uri in enumerate(all_uris.article[:num_articles]):
-		print("article", i)
-		data = get_triples(i, uri)
+	for n in range(int(os.environ['SGE_TASK_ID']) - 1, (int(os.environ['SGE_TASK_ID'])+int(os.environ['SGE_TASK_STEPSIZE']))-1):
+		data = get_triples(n, all_uris.article[n], int(os.environ['SGE_TASK_ID']))
+
+
+def dir_setup():
+	if not os.path.exists('./data'):
+		os.mkdir('./data')
+	if not os.path.exists('./data/raw_csv'):
+		os.mkdir('./data/raw_csv')
+
 
 def get_mentions(article_uri):
 	""" generates list of event URIs for a given article """
@@ -43,8 +51,8 @@ def get_word_and_sentence(article, mention):
         return None, None
     return article[positions[0]:positions[1]], correct_sent
 
-def save_csv(df):
-    csv_path = './dataset_delta.csv'
+def save_csv(df, csv_file_name):
+    csv_path = './dataset_delta_' + str(csv_file_name) + '.csv'
     if not os.path.exists(csv_path):
         df.to_csv(csv_path)
         # print('csv saved.')
@@ -60,7 +68,7 @@ def get_pos(text):
 	sentences = [nltk.pos_tag(sent) for sent in sentences]
 	return sentences	
 
-def get_triples(article_id, article_uri):
+def get_triples(article_id, article_uri, csv_file_name):
 	prop = 'ks:hasMention'
 	mentions = ks.run_resource_query(article_uri, prop)
 
@@ -111,12 +119,12 @@ def get_triples(article_id, article_uri):
 	data['predicate'] = preds
 	data['patients'] = patients
 	# data['POS'] = pos
-	save_csv(data)
+	save_csv(data, csv_file_name)
 
 	return data
 	
 
 
 if __name__ == "__main__":
-	run(10)
+	run()
 
