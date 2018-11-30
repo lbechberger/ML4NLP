@@ -52,7 +52,7 @@ def get_word_and_sentence(article, mention):
     return article[positions[0]:positions[1]], correct_sent
 
 def save_csv(df, csv_file_name):
-    csv_path = './dataset_delta_' + str(csv_file_name) + '.csv'
+    csv_path = './data/raw_csv/dataset_delta_' + str(csv_file_name) + '.csv'
     if not os.path.exists(csv_path):
         df.to_csv(csv_path)
         # print('csv saved.')
