@@ -5,6 +5,7 @@ import json
 import pandas as pd
 
 from . import User, Representation
+from pathlib import Path
 
 class DataSet:
     class Parameter:
@@ -21,7 +22,7 @@ class DataSet:
         @staticmethod
         def from_json(path):
             with open(path, 'r') as json_file:
-                data = json.loads(json_file)
+                data = json.load(json_file)
 
                 user_params = data['user']
                 representation_params = user_params['representation']
@@ -38,7 +39,9 @@ class DataSet:
                     ),
                     num_user=data['users']
                 )
-            
+
+    DATASET_NAME =  "Dataset_{}"
+
     def __init__(self, users, hyperparameters):
         self.users = users
         self.params = hyperparameters
@@ -46,13 +49,25 @@ class DataSet:
     def __str__(self):
         return "Dataset with {} users.".format(len(self.users))
     
-    def save(self, path):
-        with open(path, "wb") as file:
+    def save(self, path, filename="dataset.pickle"):
+        num_existing_datasets = len([True for f in path.iterdir() if f.is_dir()])
+
+        current_storage = path / DataSet.DATASET_NAME.format(num_existing_datasets)
+        current_storage.mkdir()
+
+        with open(current_storage / filename, "wb") as file:
             pickle.dump(self, file)
-    
+        return current_storage
+
     @staticmethod
-    def load(path):
-        with open(path, "rb") as file:
+    def get_last_dataset(path):
+        candidates = {int(f.name.split('_')[1]): f for f in path.iterdir() if f.is_dir()}
+        return candidates[max(candidates.keys())]
+
+    @staticmethod
+    def load(path, version = None, filename="dataset.pickle"):
+        dataset_path = DataSet.get_last_dataset(path) if version is None else path / DataSet.DATASET_NAME.format(version)
+        with open(dataset_path / filename, "rb") as file:
             return pickle.load(file)
         
     def as_dataframe(self):
