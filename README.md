@@ -71,3 +71,18 @@ We now have a proper dataset consiting of (Agent, ?, Patient) and the raw text o
 
 ### The Code
 Via several SPARQL queries we aquire all events that have an agent and a patient (called propbank A0 and A1, respectively) for a given article. We then transform this information to question triplets (Agent, ?, Patient), where a literal "?" represents the value questioned and answer triplets (Agent, Relation, Patient). We then enrich this QA Pair with additional information. Right now, this is only the plain text of the article that was used to generate the pairs, so that the model has any information at all. However, since we used pandas to construct this dataset, we were able to construct the data in such a manner that additional information can be added without being available to models that do not request it. This means that we can add additional information at a later date without breaking or changing our prior models.
+
+## Week 26.11 - 02.12
+
+### Changed Goal
+After the discussion about the minimal requirements of a dataset to be usable for our task, we updated our requirements. Instead of saving the data as QAPairs, we know generate possible candidates, and save them with a question and the classification of whether or not they are the answer.
+
+### New Format of the saved data
+We still use pandas to enable  modularity and the possibilty to enrich the data later on without reprocessing everything. However, we now have a agent and patient column, as well as a column for the candidate, one for the correct answer classification, and one for the complete text of the article the candidate and the question stem from. 
+The fact that the relation is missing implies that we ask about relations.  Furthermore, instead of saving a plain text copy of the candidate, we decided to refer to the word by the position of characters in the text, as many words reoccur often. Agent and patient are still referred by their plain text name. We currently also extract information about wether they are a named or non-named entity, but don't make use of it.
+### Current State of the Data
+Currently, we are generating a large dataset, periodically saving chunks of the data.It might be impossible to process the complete dataset for all candidates,  but we will most likely be able to generate a large enough amount to be used even for heavy machine learning.
+
+### Code
+Using the SPARQL queries mentioned in last weeks code segment, we request the needed information from the database. We then generate all possible candidates, which in our case are all single words of the article, and assign a True/False classification to them, depending on whether or not they are one of the possible answers, defined by the character position in the text.
+This candidate, with the agent, patient, classification and the full text of the article is then saved in a pandas Dataframe and every 50 articles, saved as a csv file.
