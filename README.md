@@ -186,12 +186,14 @@ Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, P
 
 <@reviewers: this will be updated, the later you read it the better>
 
-## 30.11.2018
+## 02.12.2018
 
 ### State of the code 
+Currently we code is able to get triples information *[agent, predicate, patient]* (for convenience, we adapt the words - agent and patient, from the other QA group) for each article, with the usage of IKW grid. 
 
-​
-[workflow](https://github.com/lbechberger/ML4NLP/tree/delta/figures/week6.png)
+### Workflow
+Given an article, all mentions in the article are retrieved. Then we find all mentions with a predicate. Among those mentions with predicates, we further limit our search with a sparql query to retrieve all events with a patient, a predicate and a patient. The motivation of first finding predicates is that it gives more constraints to the SPARQL query of finding events with agents and patients. 
+![workflow](/figures/week6.png)
 
 ​
 
