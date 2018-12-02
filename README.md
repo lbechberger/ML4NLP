@@ -83,3 +83,59 @@ Topics of interest are chosen from the category mapping of Wikinews. Note that t
 
 The python code for generating users uses the method *create_category_articles_dictionary()*, for which we extended *ks.py* in the *knowledgestore* folder. *create_category_articles_dictionary()* creates a dictionary that matches news articles to the subcategories to which they belong. In order to get the subcategories for an article, the method *get_all_news_subcategories(resource_uri)* looks at the HTML code of the corresponding Wikinews article website, given by the parameter *resource_uri*. The HTML code contains the string *wgCategories*, which is followed by a list of categories that article belongs to. The top-level categories are excluded as explained above. 
 The extraction of categories for every article took roughly two hours, so the resulting dictionary is stored in the file *subcategory_resource_mappings.pickle*. If *create_category_articles_dictionary()* finds that file, it loads the dictionary from there instead of creating it anew.
+
+
+## Session 6, 27.11.18
+
+In this week we finished creating the dataset. The code for generating the dataset can be found in the file *generate_dataset.py*. 
+The dataset consists of 1000 user profiles. Each user profile contains 30 articles the user liked - 10 from each of the 3 topics the user is interested in.
+Apart from that, there are also 30 positive and 30 negative training examples per user which can later be used for training the classifier.
+
+The data is saved in a nesting of lists, which have the following hierarchical structure (example for two users):
+
+<pre>
+[                                                       dataset                                  ]
+
+[ [                         user1                                 ] , [         user2          ] ]
+
+[ [ [   profile    ] , [               training                 ] ] , [ [profile] , [training] ] ]
+
+[ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
+</pre>
+    
+The *generate_dataset.py* program does the following:
+Firstly, a dictionary with a matching from all subcategories to a list of all articles that belong to the specific subcategory is created. Afterward, certain categories are deleted:
+* all categories that contain too few articles (less than 15 or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
+* all categories that contain too many articles (over 506). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
+* all categories that denote a specific date, e.g. 'January 1, 2008'. 
+* all categories that just describe authorship. For example 'Cocoaguy (Wikinewsie)' or 'Juliancolton (WWC2010)'. The reason for that is that some authors write about a wide, seemingly unrelated variety of articles, hence they do not have anything to do with a certain topic.
+* the following categories: 
+  * 'Published'
+  * 'Archived'
+  * 'Original reporting'
+  * 'AutoArchived'
+  * 'Pages with template loops'
+  * 'Pages using duplicate arguments in template calls'
+  * 'Pages with pull-quotes'
+  * 'Pages with defaulting non-local links'
+  * 'Pages with categorizable local links'
+  * 'Pages using two-parameter languageicon'
+  * ''
+  * 'Pages with missing-image template calls'
+  * 'Pages with forced foreign links'
+  * 'Pages using three-parameter languageicon'
+  * 'Reviewed articles'
+  * 'Pages with irredeemable missing-image template calls'
+  * 'Corrected articles'
+  * 'Writing contest 2010'
+  * 'Imported news'
+  * 'Translated news'
+  * 'Featured article'
+  * 'Writing Contests/May 2010'
+  * 'News articles with translated quotes'
+  * 'News articles with telephone numbers'
+   
+After deleting these unsuitable categories, we used a weighted random distribution to chose three distinct topics of interest for each user. The more articles a category has, the more likely it was chosen. 
+Then, for each topic of interest, there were 20 articles drawn - 10 for the user profile and 10 for the positive training samples. Afterward, 30 articles that do not belong to any of the three categories of 
+interest were drawn in order to be used as negative training samples.
+Finally, the dataset was saved as a pickle file.
