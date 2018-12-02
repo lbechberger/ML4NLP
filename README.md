@@ -141,6 +141,15 @@ For the user representation that we feed into our classifier, we created the cla
 
 To handle all hyperparameters in an efficient and central way, we created for each class the subclass Parameter. This allows us to reuse the parameters and fed them into our three different classes efficiently.
 
+This is an example for a dataset with the hyperparameters articles_per_interest = 1, positive_samples = 3, negative_samples = 1, representations = 1, interests = 2, users = 1:
+
+| interest 1   | interest 2   |article_interested 1         |article_interested 2               |candidate                    |label|
+|--------------|--------------|-----------------------------|-----------------------------------|-----------------------------|-----|
+|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Warming oceans make it ...   |True |
+|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Snow causes German ...       |True |
+|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Sony's Playstation ...       |True |
+|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|University defeat Maro ...   |False|
+
 Finally, we are now able to create a list, which contains the internal categories (interests) of a user, the user representation for the classifier and the labeled examples in one row. As mentioned above, we want to save this generated dataset in a pickle-file, so that further researchers can just read it in into their code. We did not implement this yet, because we are not sure, which data is exactly necessary to save in order to split it into a training and a test dataset. But after we know more about our training and test data split and about our classifier, we will surely implement this.
 
 ### Citations
