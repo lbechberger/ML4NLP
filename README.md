@@ -133,6 +133,55 @@ As described in the last section, for each user that we generate for our dataset
 
 We have made a list of 100 articles for each of the top-categories and saved them into a pickle file (user_articles.pickle). The code we wrote for this procedure (article_collection.py) had some problems when accessing the wikines.org website, which is why we have only collected articles for the top-level categories and not for all of the categories yet. We will still need to collect articles for the Region categories and the subcategories. Also, we will generate the user profiles as described above in user_generaton.py and will create the final dataset by automatically annotating the articles according to each user’s preferences (dataset_generation.py and dataset.pickle)  and splitting the dataset  into 80% training and 20% test-set. We will upload the files user_generation.py, dataset_generation.py and dataset.pickle as soon as they are up and running. 
 
+## Documentation Part 5 - Dataset Generation III
+
+This week we have further optimised our code to extract 100 articles per category from wikinews.org and save them in a pickle file. We have found a few more categories, ‘South America’, ‘Football (soccer)’, ‘Germany’, ‘Canada’, ‘United States’, which we had overlooked in the first run, so that our lists of categories and subcategories look as follows: 
+
+#### All Categories: 
+"Crime and law", "Culture and entertainment", "Disasters and accidents",  "Economy and business", "Environment", "Health", "Science and technology", "Sports", "Wackynews", "Weather", "Politics and conflicts","Obituaries", "Transport", "World", "Internet", "Religion", "Africa", "Asia", "Europe", "Middle East", "North America", "Oceania", "Aviation", "Computing", "Space", "Elections", "Human rights", "United Nations", "Football (soccer)", "China", "India", "Russia", "Iraq", "Israel", "Australia", "New Zealand", "Canada", "United States", "California", "United Kingdom", "France", "Germany", "England", "London", “South America”
+
+#### Top-Level Categories: 
+
+“Crime and law", "Culture and entertainment", "Disasters and accidents", "Economy and business", "Environment", "Health", "Science and technology", "Sports", "Wackynews", "Weather", "Politics and conflicts", "Obituaries", "Transport", "World", "Internet", "Religion"
+
+#### Region Categories: 
+
+"Africa", "Asia", "Europe", "Middle East", "North America", "Oceania", “South America”
+
+#### Subcategories:
+
+Transport: "Aviation"                            
+
+Science: "Computing", "Space"
+
+Politics: "Elections", "Human rights", "United Nations"
+
+Sports: “Football (soccer)”
+
+Asia: "China", "India", "Russia"
+
+Middle East: "Iraq", "Israel"
+
+Oceania: “Australia", "New Zealand"
+
+North America: “Canada”, “United States” 
+
+USA: "California"
+
+Europe: "France", “Germany”, "United Kingdom"
+
+UK: "England"
+
+England: "London"
+
+We have uploaded the code for unser generation (user_generation.py) and article extraction (article_collection.py) and also the pickle file (user_articles.picke) that contains 100 articles per category is uploaded. 
+At the moment we are thinking about an elegant way to implement that for each top category that is disliked by the user (i.e. annotated with “0”), all subcategories are also set to dislike/ “0”. When we have solved that problem, the last step will be to extract the articles’ name and content text and annotate the articles as being liked or disliked by the according users’ preferences. The articles’ text will be made available to the classifier, but not the articles’ categories. Hence, the classifier will receive the following information for training: 
+
+- article’s name 
+- article’s text
+- user name
+- user likes or dislikes the article
+
 
 ## Sources: 
 [1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
