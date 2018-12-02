@@ -82,7 +82,7 @@ We would like to generate a pandas dataframe with the columns "agent", "patient"
 "agent" will contain natural language string values generated from the "propbank:A0" attributes in events.
 "patient" will contain natural language string values generated from the "propbank:A1" attributes in events.
 "word_start_char" and "word_end_char" will contain int values denoting the position of words within an article.
-"classification" will contain int values of 0 or 1 depending on whether the word denoted by "word_start_char" and "word_end_char" is one of the mentions associated with the corresponding or not.
+"classification" will contain boolean values of True or False depending on whether the word denoted by "word_start_char" and "word_end_char" is one of the mentions associated with the corresponding or not.
 "article_uri" will contain string values denoting the uri at which the raw text of the article in question can be obtained.
 
 The column "classification" will be the target for our binary classificator.
@@ -90,7 +90,7 @@ The column "classification" will be the target for our binary classificator.
 ### Data Set Generation Process
 We will use the scripts data_generator.py and explorer.py to generate rows for the pandas dataframe discussed from each article in the table all_article_uris.csv.
 For each article, we will generate a triple from each event in the article that has values for the attributes "propbank:A0", "propbank:A1", "rdfs:label" and "gaf:denotedBy".
-For each of these triples we will generate a row for each of the words in the article, with the classification being 1 only if the word is one of the mentions denoted by the "gaf:denotedBy" attribute of the corresponding event.
+For each of these triples we will generate a row for each of the words in the article, with the classification being True if and only if the word is one of the mentions denoted by the "gaf:denotedBy" attribute of the corresponding event.
 Assuming roughly 20 000 articles with on average 10 useful triples generated from each article and articles containing on average 500 words, we are looking at a data set with about 100 000 000 entries.
 
 Even if we end up having to filter most of them out due to nonsensical "propbank:A0" and "propbank:A1" attributes, this should still be more than enough to train a decent binary classifier.
