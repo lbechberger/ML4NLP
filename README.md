@@ -96,9 +96,7 @@ Assuming roughly 20 000 articles with on average 10 useful triples generated fro
 Even if we end up having to filter most of them out due to nonsensical "propbank:A0" and "propbank:A1" attributes, this should still be more than enough to train a decent binary classifier.
 Of course most of these entries are going to be wrong answers since most words in an article are not the answer to a given question, but wrong answers still provide a good training for classifiers.
 
-### Current State of the Generation Process (VIP)
+### Current State of the Generation Process
 For the sake of stability, continuity and error avoidance we are processing only chunks of 50 articles at once and then save the resulting dataframe to a csv file in generated_data/classification_data_chunks.
-At a rate of 7 articles per minute on average, the generation of each chunk will take about 8 minutes. The generation of all 400 chunks will consequently take about 54h, at maximum two and a half days.
-Therefore it is not an unrealistic expectation that we will have the whole data set up and running by the start of the next seminar session. We will not upload it to GitHub, since the total file size will be about 6 GB which is far too much to upload.
-However we will upload a sample of the first three data chunks to further illustrate the structure of our data set.
-Also for the purposes of documentation and debugging we will simultanously generate a csv file with the triples generated from each article in the folder generated_data/qaps_by_article. We will also upload a selection of those since they are more readable and intuitive than our classification data chunks.
+At a rate of 3 articles per minute the generation of each chunk will take about 16 minutes. The generation of all 400 chunks would consequently take about four to five days of straight computing time. If we could manage to parallelize the process, this would accelerate the process greatly.
+Therefore it is an unrealistic expectation that we will have the whole data set up and running by the start of the next seminar session. However, we so far managed to produce 15 data chunks containing the data from the first 750 articles. This should be a good starting point for further exploration and the selection of a suitable classifier. 
