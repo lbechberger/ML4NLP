@@ -9,7 +9,7 @@ top_level_categories = ["Crime and law", "Culture and entertainment", "Disasters
                         "Africa", "Asia", "Europe", "Middle East", "North America", "Oceania", "Aviation", "Computing",
                         "Space", "Elections", "Human rights", "United Nations", "Football (soccer)", "China", "India",
                         "Russia", "Iraq", "Israel", "Australia", "New Zealand", "Canada", "United States", "California",
-                        "United Kingdom", "France", "Germany", "England", "London"]
+                        "United Kingdom", "France", "Germany", "England", "London", "South America"]
 
 
 # if there already exists a pickle file: append it, otherwise create new one
