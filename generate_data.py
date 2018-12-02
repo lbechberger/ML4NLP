@@ -13,6 +13,8 @@ def main():
 
 
 def main_for_missing_articles():
+	"""run if there are jobs killed before they are finished. this will retrieved tripels 
+	information from the articles where information is not yet retrieved."""
 	missing_articles_id = generate_missing_articles_id()
 	all_uris = pd.read_csv("all_article_uris.csv")
 	for n in range(int(os.environ['SGE_TASK_ID']) - 1, (int(os.environ['SGE_TASK_ID'])+int(os.environ['SGE_TASK_STEPSIZE']))-1):
@@ -21,6 +23,7 @@ def main_for_missing_articles():
 
 
 def dir_setup():
+	"""set up directory"""
 	if not os.path.exists('./data'):
 		os.mkdir('./data')
 	if not os.path.exists('./data/raw_csv'):
@@ -40,19 +43,23 @@ def get_mentions(article_uri):
 def get_e(mention):
 	"""get entities/events given a mention"""
 	e = ks.run_sparql_query("SELECT ?e WHERE {?e gaf:denotedBy <" + mention + ">}")
+
 	return e
 
 
 def get_mention_string(mention):
+	"""get the mention as string"""
 	uri = mention.split('#char=')[0]
 	start = mention.split('#char=')[1].split(',')[0]
 	end = mention.split('#char=')[1].split(',')[1]
 	article = ks.run_files_query(uri)
 	sentence = article[int(start):int(end)]
+
 	return sentence
 
 
 def get_word_and_sentence(article, mention):
+	"""get the sentence(str) where the mention belongs to"""
     positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
     sentences_and_positions = list(zip(nltk.sent_tokenize(article), list(np.cumsum(np.array([len(i) for i in nltk.sent_tokenize(article)])))))
     try:
@@ -79,6 +86,14 @@ def get_pos(text):
 
 
 def get_triples(article_id, article_uri, csv_file_name):
+	"""get triples from article, and save it to csv file.
+	For each article,
+	1. get all mentions in this article
+	2. get all predicates in the mentions
+	3. write the sentence where the prerdicate belongs to
+	4. find all events with agents, prerdicates and patients
+	5. save article id, urri, events, agent, predicate and patient to csv
+	"""
 	prop = 'ks:hasMention'
 	mentions = ks.run_resource_query(article_uri, prop)
 
@@ -135,6 +150,9 @@ def get_triples(article_id, article_uri, csv_file_name):
 	
 
 def generate_missing_articles_id():
+	"""memory problem might occur in the IKW grid jobs. Thus there might be 
+	some articles where triples are not retrieved. This function generate 
+	id of these articles. """
 	path = './data/raw_csv/' 
 	allFiles = glob.glob(path + "/*.csv")
 	list_ = []
@@ -154,6 +172,7 @@ def generate_missing_articles_id():
 
 
 def csv_file_name_for_missing_articles(article_id):
+	"""for each missing article, generate csv file name which the triples are wrote to."""
 	len_digit = len(str(article_id))
 	if len_digit < 4:
 		file_name = "dataset_delta_1.csv"
@@ -167,5 +186,6 @@ def csv_file_name_for_missing_articles(article_id):
 
 
 if __name__ == "__main__":
-	# main()
-	main_for_missing_articles()
+	main()
+	# uncomment this if there is missing article
+	# main_for_missing_articles()
