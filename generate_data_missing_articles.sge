@@ -3,9 +3,8 @@
 #$ -l mem=2G
 #$ -cwd
 #$ -j y
-#$ -l cuda=!1 
 #$ -l h_rt=36:00:00
-#$ -t 1-4613:1000
+#$ -t 1-19751:1000
 
 echo "*** Start of SGE job ***"
 date

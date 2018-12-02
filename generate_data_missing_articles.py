@@ -1,6 +1,6 @@
 import os
 import knowledgestore.ks as ks
-import nltk, re, glob
+import nltk, re
 from nltk.sem.relextract import extract_rels, rtuple
 import pandas as pd 
 import numpy as np
@@ -10,14 +10,6 @@ def main():
 	all_uris = pd.read_csv("all_article_uris.csv")
 	for n in range(int(os.environ['SGE_TASK_ID']) - 1, (int(os.environ['SGE_TASK_ID'])+int(os.environ['SGE_TASK_STEPSIZE']))-1):
 		data = get_triples(n, all_uris.article[n], int(os.environ['SGE_TASK_ID']))
-
-
-def main_for_missing_articles():
-	missing_articles_id = generate_missing_articles_id()
-	all_uris = pd.read_csv("all_article_uris.csv")
-	for n in range(int(os.environ['SGE_TASK_ID']) - 1, (int(os.environ['SGE_TASK_ID'])+int(os.environ['SGE_TASK_STEPSIZE']))-1):
-		csv_file_name = csv_file_name_for_missing_articles(missing_articles_id[n])
-		data = get_triples(missing_articles_id[n], all_uris.article[missing_articles_id[n]], csv_file_name)
 
 
 def dir_setup():
@@ -34,14 +26,12 @@ def get_mentions(article_uri):
 	print(len(mentions), "mentions")
 	# mention_type = [ks.run_mention_query(mention, prop = '@type') for mention in mentions]
 	
-	return mentions
-
+	return mentions#, mention_type
 
 def get_e(mention):
 	"""get entities/events given a mention"""
 	e = ks.run_sparql_query("SELECT ?e WHERE {?e gaf:denotedBy <" + mention + ">}")
 	return e
-
 
 def get_mention_string(mention):
 	uri = mention.split('#char=')[0]
@@ -50,7 +40,6 @@ def get_mention_string(mention):
 	article = ks.run_files_query(uri)
 	sentence = article[int(start):int(end)]
 	return sentence
-
 
 def get_word_and_sentence(article, mention):
     positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
@@ -61,13 +50,14 @@ def get_word_and_sentence(article, mention):
         return None, None
     return article[positions[0]:positions[1]], correct_sent
 
-
 def save_csv(df, csv_file_name):
     csv_path = './data/raw_csv/dataset_delta_' + str(csv_file_name) + '.csv'
     if not os.path.exists(csv_path):
         df.to_csv(csv_path)
+        # print('csv saved.')
     else:
         df.to_csv(csv_path, header=False, mode='a')
+    # print('csv saved.')
 
 
 def get_pos(text):
@@ -76,7 +66,6 @@ def get_pos(text):
 	sentences = [nltk.word_tokenize(sent) for sent in sentences]
 	sentences = [nltk.pos_tag(sent) for sent in sentences]
 	return sentences	
-
 
 def get_triples(article_id, article_uri, csv_file_name):
 	prop = 'ks:hasMention'
@@ -134,38 +123,7 @@ def get_triples(article_id, article_uri, csv_file_name):
 	return data
 	
 
-def generate_missing_articles_id():
-	path = './data/raw_csv/' 
-	allFiles = glob.glob(path + "/*.csv")
-	list_ = []
-
-	for i, file_ in enumerate(allFiles):
-	    df = pd.read_csv(file_,index_col=None, header=0)
-	    list_.append(df)
-
-	frame = pd.concat(list_, axis = 0, ignore_index = True)
-	generated_articles = list(set(frame['id']))
-	missing_articles = list(set(list(range(19751))) - set(frame['id']))
-	print("number of all articles: 19751")
-	print("number of generarted articles: ", len(generated_articles))
-	print("number of missing articles: ", len(missing_articles))
-	
-	return missing_articles
-
-
-def csv_file_name_for_missing_articles(article_id):
-	len_digit = len(str(article_id))
-	if len_digit < 4:
-		file_name = "dataset_delta_1.csv"
-		file_id = str(1)
-	else: 
-		beginning_digit = str(article_id)[:-3]
-		file_name = "dataset_delta_" + beginning_digit + "001.csv"
-		file_id = beginning_digit + "001"
-	
-	return file_id
-
 
 if __name__ == "__main__":
-	# main()
-	main_for_missing_articles()
+	main()
+
