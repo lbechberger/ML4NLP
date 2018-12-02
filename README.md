@@ -137,18 +137,16 @@ This week, we thought about the hyperparameters that can be tuned to generate th
 ### Restructuring the code
 Due to these hyperparameters and for an efficient way to create our dataset, we thought it is perhaps a good idea to restructure the code a little bit. 
 
-For the user representation that we feed into our classifier, we created the class Representation. This class takes in the parameters number articles per category, the number of positive samples and number of negative samples. In the next step, we created a User class. This class represents our internal user. It can be controlled by the parameters number of interests, number of representations and all the parameters of the representation class. Finally, we implemented a Dataset class, which is responsible for generating the data set (and in the future for saving it in a pickle- or csv-file). The Dataset class gets the parameters number of user and all the parameters of the User class.
-
-To handle all hyperparameters in an efficient and central way, we created for each class the subclass Parameter. This allows us to reuse the parameters and fed them into our three different classes efficiently.
+For the user representation that we feed into our classifier, we created the class Representation. This class takes in the parameters number articles per category, the number of positive samples and number of negative samples. In the next step, we created a User class. This class represents our internal user. It can be controlled by the parameters number of interests, number of representations and all the parameters of the representation class. Finally, we implemented a Dataset class, which is responsible for generating the data set (and in the future for saving it in a pickle- or csv-file). The Dataset class gets the parameters number of user and all the parameters of the User class. To handle all hyperparameters in an efficient and central way, we created for each class the subclass Parameter. This allows us to reuse the parameters and feed them into our three different classes efficiently.
 
 This is an example for a dataset with the hyperparameters articles_per_interest = 1, positive_samples = 3, negative_samples = 1, representations = 1, interests = 2, users = 1:
 
-| interest 1   | interest 2   |article_interested 1         |article_interested 2               |candidate                    |label|
-|--------------|--------------|-----------------------------|-----------------------------------|-----------------------------|-----|
-|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Warming oceans make it ...   |True |
-|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Snow causes German ...       |True |
-|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|Sony's Playstation ...       |True |
-|Baltic Sea    |Sony          |Aggressive Bird Flu found ...|American console sales continue ...|University defeat Maro ...   |False|
+|   interest 1   |   interest 2   |article_interested 1         |article_interested 2               |candidate                 |label|
+|----------------|----------------|-----------------------------|-----------------------------------|--------------------------|-----|
+|   Baltic Sea   |     Sony       |Aggressive Bird Flu found ...|American console sales continue ...|Warming oceans make it ...|True |
+|   Baltic Sea   |     Sony       |Aggressive Bird Flu found ...|American console sales continue ...|Snow causes German ...    |True |
+|   Baltic Sea   |     Sony       |Aggressive Bird Flu found ...|American console sales continue ...|Sony's Playstation ...    |True |
+|   Baltic Sea   |     Sony       |Aggressive Bird Flu found ...|American console sales continue ...|University defeat Maro ...|False|
 
 Finally, we are now able to create a list, which contains the internal categories (interests) of a user, the user representation for the classifier and the labeled examples in one row. As mentioned above, we want to save this generated dataset in a pickle-file, so that further researchers can just read it in into their code. We did not implement this yet, because we are not sure, which data is exactly necessary to save in order to split it into a training and a test dataset. But after we know more about our training and test data split and about our classifier, we will surely implement this.
 
