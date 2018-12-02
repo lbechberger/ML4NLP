@@ -159,10 +159,14 @@ In addition to the new way of generating negatives, we have come to the realizat
 Given this newly added amount of data for each qa-pair and this comparably naive approach to generating negatives, we need to point out a flaw in automatically generated datasets which will most likely be present in our dataset as well. We are referring to errors in the automatically labelled data which can occur at many steps. We are using the following (potentially fallible) natural language processing tools in our data generation pipeline: 
 - NLTK POS tagging
 - NLTK NER
-- [Bhaskar's relation extraction thingy]
+- Relation extraction based off of NLTK
 - a naive NER-matching solution for generation of negatives
 
 Along every step of the process, these tools may make mistakes. NER, for example, turned "Barack Obama" into "Barack" as a person and "Obama" into a seperate entity labelled as an organization during one of our performance evaluations. These mismatches quickly accumulate given the size of our desired dataset and will make for a noisy data set, a circumstance we will have to deal with at a later point in development. We have evaluated our pipeline and do not see any way to reduce the chance of generating noise in our data any further.
+
+- - - - 
+
+
 
 # References
 [1] Dat Quoc Nguyen, Dai Quoc Nguyen, Dang Duc Pham and Son Bao Pham. RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger. In Proceedings of the Demonstrations at the 14th Conference of the European Chapter of the Association for Computational Linguistics, EACL 2014, pp. 17-20, 2014.
