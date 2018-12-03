@@ -207,16 +207,17 @@ In our first result, information from 15,138 articles are retrieved and average 
 
 03.12.2018
 
-number of all articles: 19751
+number of all articles: 19,751
 
-number of generarted articles:  18866
+number of articles where triples are found:  18,866
 
 number of articles where no triples are found:  885
 
-number of triples found:  172758
+number of triples found:  172,758
 
 average number of triples per article:  9.157108025018552
 
+approximate computing time: 6-8 hours with parallelism (if no job is killed)
 
 ### What's more
 The result of our retrieval method seems good. However, we noticed that we can also make use of the entity mention meta-data. For example, alternative names, date of birth, gender and other demographic information of an entity. Result will come soon :D
