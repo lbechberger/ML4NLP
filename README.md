@@ -33,3 +33,5 @@ In oder to run the code, please use the conda environment provided in `environme
 * [The Secret to Good Code Documentation](https://www.intertech.com/Blog/secret-to-good-code-documentation/)
 * [Getting Better at Machine Learning](https://medium.com/@rchang/getting-better-at-machine-learning-16b4dd913a1f)
 * [How to deliver on Machine Learning projects](https://blog.insightdatascience.com/how-to-deliver-on-machine-learning-projects-c8d82ce642b0)
+* [Scikit learn: Splitting up the data set](https://scikit-learn.org/stable/modules/cross_validation.html)
+* [Scikit learn: Evaluation metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
