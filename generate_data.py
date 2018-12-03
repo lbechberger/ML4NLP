@@ -60,13 +60,13 @@ def get_mention_string(mention):
 
 def get_word_and_sentence(article, mention):
 	"""get the sentence(str) where the mention belongs to"""
-    positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
-    sentences_and_positions = list(zip(nltk.sent_tokenize(article), list(np.cumsum(np.array([len(i) for i in nltk.sent_tokenize(article)])))))
-    try:
-        correct_sent = list(filter(lambda x: x[1] > positions[0], sentences_and_positions))[0][0]
-    except:
-        return None, None
-    return article[positions[0]:positions[1]], correct_sent
+	positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
+	sentences_and_positions = list(zip(nltk.sent_tokenize(article), list(np.cumsum(np.array([len(i) for i in nltk.sent_tokenize(article)])))))
+	try:
+		correct_sent = list(filter(lambda x: x[1] > positions[0], sentences_and_positions))[0][0]
+	except:
+		return None, None
+	return article[positions[0]:positions[1]], correct_sent
 
 
 def save_csv(df, csv_file_name):
@@ -158,8 +158,8 @@ def generate_missing_articles_id():
 	list_ = []
 
 	for i, file_ in enumerate(allFiles):
-	    df = pd.read_csv(file_,index_col=None, header=0)
-	    list_.append(df)
+		df = pd.read_csv(file_,index_col=None, header=0)
+		list_.append(df)
 
 	frame = pd.concat(list_, axis = 0, ignore_index = True)
 	generated_articles = list(set(frame['id']))
