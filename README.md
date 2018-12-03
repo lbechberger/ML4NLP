@@ -186,12 +186,25 @@ Which becomes the relation "Sea Launch, is_in, "Norway", saved as "Sea Launch, P
 
 <@reviewers: this will be updated, the later you read it the better>
 
-## 30.11.2018
+## 02.12.2018
 
 ### State of the code 
+Currently we code is able to get triples information *[agent, predicate, patient]* (for convenience, we adapt the words - agent and patient, from the other QA group) for each article, with the usage of IKW grid. 
 
-​
-![RESULT](https://github.com/lbechberger/ML4NLP/tree/delta/figures/week6.png)
+### Workflow
+Given an article, all mentions in the article are retrieved. Then we find all mentions with a predicate. Among those mentions with predicates, we further limit our search with a sparql query to retrieve all events with a patient, a predicate and a patient. The motivation of first finding predicates is that it gives more constraints to the SPARQL query of finding events with agents and patients, so that the computation time for the task will be reduced. 
+![workflow](/figures/week6.png)
+
+### Change in strategy 
+one change in our workflow is that we now first find the relation(predicate) between entities, rather than retrieving relation after retrrieving entities. Reason is explained before, to reduce computation time. 
+
+### Result
+we have totally 19,751 news articles. To speed up, we distribute the job to 20 different machines, with each machine 1000 articles. And every machine will write the result in a separate csv file in folder *data/raw_csv*. This allows us to retrieve information from all the articles in less than 8 hours, ideally. However, due to memory reason, some jobs are killed after a certain time period. With this acknowledgement, we save the triples information to csv after every article. This allow us to 1) check which articles are missing efficiently; 2) to resume the jobs after they are killed easily. 
+
+In our first result, information from 15,138 articles are retrieved and average computing time for 1000 articles is 7.5 hours. 4,613 are still missing due to memory problem in the IKW grid. Current average number of triples per article extracted by our strategy is 9. 139,343 triples are found from 15,138 articles. (the missing articles are currently running in the grid. This will be updated later.)
+
+### What's more
+The result of our retrieval method seems good. However, we noticed that we can also make use of the entity mention meta-data. For example, alternative names, date of birth, gender and other demographic information of an entity. Result will come soon :D
 
 ​
 
