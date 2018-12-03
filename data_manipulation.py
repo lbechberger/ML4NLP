@@ -16,14 +16,20 @@ def generate_missing_articles_id():
 	    df = pd.read_csv(file_,index_col=None, header=0)
 	    list_.append(df)
 
-	frame = pd.concat(list_, axis = 0, ignore_index = True)
-	generated_articles = list(set(frame['id']))
-	missing_articles = list(set(list(range(19751))) - set(frame['id']))
+	data = pd.concat(list_, axis = 0, ignore_index = True)
+	# sorting by first name 
+	data.sort_values("id", inplace=True) 
+
+	# dropping duplicate values 
+	data.drop_duplicates(keep='first',inplace=True) 
+  
+	generated_articles = list(set(data['id']))
+	missing_articles = list(set(list(range(19751))) - set(data['id']))
 	print("number of all articles: 19751")
 	print("number of generarted articles: ", len(generated_articles))
 	print("number of missing articles: ", len(missing_articles))
-	print("number of triples found: ", len(frame))
-	print("average number of triples per article: ", len(frame)/len(generated_articles))
+	print("number of triples found: ", len(data))
+	print("average number of triples per article: ", len(data)/len(generated_articles))
 	return missing_articles
 
 def csv_file_name_for_missing_articles(article_id):
