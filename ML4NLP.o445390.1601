@@ -1,0 +1,27 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+light.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+
+Mon Dec  3 11:31:08 CET 2018
+*** End of SGE job ***

@@ -1,0 +1,1938 @@
+*** Start of SGE job ***
+Sun Dec  2 18:06:43 CET 2018
+
+Hostname
+perception.cv.uni-osnabrueck.de
+445385
+Job-ID:
+445385
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  15138
+number of missing articles:  4613
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev31
+predicate: seat
+patient: Melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev31
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev32
+predicate: battle
+patient: the+inner-city+seat+of+melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev32
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev51
+predicate: see
+patient: the+inner-city+seat+of+melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev51
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev33
+predicate: obtain
+patient: the+inner-city+seat+of+melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev33
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev31
+predicate: seat
+patient: Melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev31
+sentence: The Age reports that Mr Bracks could have a majority of 22 seats in the new parliament â€” down from 36.
+agent: Labor_government_retains_power_in_Victorian_election#ev31
+predicate: seat
+patient: Melbourne
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev31
+sentence: Bracks is now Labor's longest serving Victorian premier, exceeding John Cain Jr's 3,047 day reign.
+agent: Labor_government_retains_power_in_Victorian_election#ev37
+predicate: premier
+patient: longest+serving
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev37
+sentence: Bracks is now Labor's longest serving Victorian premier, exceeding John Cain Jr's 3,047 day reign.
+agent: Labor_government_retains_power_in_Victorian_election#ev36
+predicate: exceed
+patient: JohnCainJrs
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev36
+sentence: Following last weekend's state election, despite a primary vote swing of 4.4 per cent against the State Government, the Liberal Party were unable to get the substantial shift neeeded to unseat Bracks' government.
+agent: Labor_government_retains_power_in_Victorian_election#ev39
+predicate: get
+patient: to+unseat+bracks+%27+government
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev39
+sentence: The Victorian Government has declared victory for a third term, with Steve Bracks now the state's longest-serving Labor Premier.
+agent: Labor_government_retains_power_in_Victorian_election#ev41
+predicate: declare
+patient: victory+for+a+third+term
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev41
+sentence: Following last weekend's state election, despite a primary vote swing of 4.4 per cent against the State Government, the Liberal Party were unable to get the substantial shift neeeded to unseat Bracks' government.
+agent: Labor_government_retains_power_in_Victorian_election#ev15
+predicate: shift
+patient: to+unseat+bracks+%27+government
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev15
+sentence: Following last weekend's state election, despite a primary vote swing of 4.4 per cent against the State Government, the Liberal Party were unable to get the substantial shift neeeded to unseat Bracks' government.
+agent: Labor_government_retains_power_in_Victorian_election#ev17
+predicate: unseat
+patient: Steve_Bracks
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev17
+sentence: Premier Steve Bracks told the ABC that the win is a historic result.
+agent: Labor_government_retains_power_in_Victorian_election#ev42
+predicate: tell
+patient: a+historic+result
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev42
+sentence: "Only the second time in 150 years that a Labor Party has won three consecutive elections," he said.
+agent: Labor_government_retains_power_in_Victorian_election#ev20
+predicate: win
+patient: three+consecutive+elections
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev20
+sentence: "Only the second time in 150 years that a Labor Party has won three consecutive elections," he said.
+agent: Labor_government_retains_power_in_Victorian_election#ev43
+predicate: say
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev43
+sentence: Labor's Victorian president Bill Shorten said the party expected to lose some seats after achieving a record win in 2002.
+agent: Labor_government_retains_power_in_Victorian_election#ev43
+predicate: say
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev43
+sentence: Labor's Victorian president Bill Shorten said the party expected to lose some seats after achieving a record win in 2002.
+agent: Labor_government_retains_power_in_Victorian_election#ev22
+predicate: lose
+patient: some+seats
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev22
+sentence: Labor's Victorian president Bill Shorten said the party expected to lose some seats after achieving a record win in 2002.
+agent: Labor_government_retains_power_in_Victorian_election#ev24
+predicate: achieve
+patient: Australian_House_of_Representatives
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev24
+sentence: Opposition leader Liberal Ted Baillieu conceded defeat but said the election result showed a renewed confidence in his team.
+agent: Labor_government_retains_power_in_Victorian_election#ev43
+predicate: say
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev43
+sentence: Opposition leader Liberal Ted Baillieu conceded defeat but said the election result showed a renewed confidence in his team.
+agent: Labor_government_retains_power_in_Victorian_election#ev46
+predicate: show
+patient: a+renewed+confidence+in+his+team
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev46
+sentence: "I look forward to working with them to keep this Government accountable," he said.
+agent: Labor_government_retains_power_in_Victorian_election#ev29
+predicate: work
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev29
+sentence: He urged the Liberal Party to work towards the 2010 campaign.
+agent: Labor_government_retains_power_in_Victorian_election#ev43
+predicate: say
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev43
+sentence: He urged the Liberal Party to work towards the 2010 campaign.
+agent: Labor_government_retains_power_in_Victorian_election#ev29
+predicate: work
+patient: to+keep+this+government+accountable
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev29
+sentence: Votes are still to be fully counted but the National Party have achieved eight Lower House seats, while the Greens and Labor are still battling to see which party obtains the inner-city seat of Melbourne.
+agent: Labor_government_retains_power_in_Victorian_election#ev24
+predicate: achieve
+patient: Australian_House_of_Representatives
+event: http://en.wikinews.org/wiki/Labor_government_retains_power_in_Victorian_election#ev24
+sentence: Thousands of events are held around the world and at the United Nations to inspire women to celebrate their achievements.
+agent: Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev13
+predicate: celebrate
+patient: their+achievements
+event: http://en.wikinews.org/wiki/Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev13
+sentence: Local 12, the union representing the employees of the U.S. Department of Labor, marked the day by serving coffee and donuts to employees and presenting flowers to female employees.
+agent: Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev7
+predicate: mark
+patient: the+day
+event: http://en.wikinews.org/wiki/Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev7
+sentence: International Women’s Day has been celebrated by many countries for over 100 years and some have even designated it as a national holiday.
+agent: Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev13
+predicate: celebrate
+patient: their+achievements
+event: http://en.wikinews.org/wiki/Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev13
+sentence: Today, American Federation of Government Employees (AFGE) Local 12 marked the 101st anniversary of International Women’s Day.
+agent: Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev7
+predicate: mark
+patient: the+day
+event: http://en.wikinews.org/wiki/Labor_employees_celebrate_International_Women%e2%80%99s_Day#ev7
+sentence: team1=Chicago Fire|
+score=1â€“0|
+team2=DC United|
+report=Match Report|
+goals1=Gutierrez Rolfe Brown Barrett Carr Blanco Thorrington |
+goals2= Carroll Kpene Moreno Carroll Emilio Moreno|
+stadium=Toyota Park, Bridgeview|
+attendance=17,834|
+referee=Baldomero Toledo 
+Chicago Fire beat DC United to take a 1-0 advantage into the 2nd leg on Chris Rolfe 1st career playoff goal.
+agent: 08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev4
+predicate: beat
+patient: Wigan_Athletic_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev4
+sentence: team1=Chicago Fire|
+score=1â€“0|
+team2=DC United|
+report=Match Report|
+goals1=Gutierrez Rolfe Brown Barrett Carr Blanco Thorrington |
+goals2= Carroll Kpene Moreno Carroll Emilio Moreno|
+stadium=Toyota Park, Bridgeview|
+attendance=17,834|
+referee=Baldomero Toledo 
+Chicago Fire beat DC United to take a 1-0 advantage into the 2nd leg on Chris Rolfe 1st career playoff goal.
+agent: 2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev10
+predicate: advantage
+patient: chris+rolfe+1st+career+playoff+goal
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev10
+sentence: team1=Chicago Fire|
+score=1â€“0|
+team2=DC United|
+report=Match Report|
+goals1=Gutierrez Rolfe Brown Barrett Carr Blanco Thorrington |
+goals2= Carroll Kpene Moreno Carroll Emilio Moreno|
+stadium=Toyota Park, Bridgeview|
+attendance=17,834|
+referee=Baldomero Toledo 
+Chicago Fire beat DC United to take a 1-0 advantage into the 2nd leg on Chris Rolfe 1st career playoff goal.
+agent: 2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev19
+predicate: goal
+patient: career+playoff
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev19
+sentence: Chicago played a defensive game as DC United, who scored 56 goals during the regular season, only managed 2 shots which hit the target.
+agent: 2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev13
+predicate: play
+patient: a+defensive+game
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev13
+sentence: Chicago played a defensive game as DC United, who scored 56 goals during the regular season, only managed 2 shots which hit the target.
+agent: 2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev13
+predicate: game
+patient: a+defensive+game
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev13
+sentence: Chicago played a defensive game as DC United, who scored 56 goals during the regular season, only managed 2 shots which hit the target.
+agent: 2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev22
+predicate: hit
+patient: the+target
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer_Playoffs:_Chicago_Fire_vs._DC_United#ev22
+sentence: team1=Toronto FC|
+score=2â€“2|
+team2=New England Revolution|
+report=Match Report|
+goals1=Lombardo Robinson Cunningham Dichio Lombardo Pozniak Samuel Dichio |
+goals2= Thompson Parkhurst Twellman Thompson Dorman Noonan Cristman|
+stadium=BMO Field, Toronto|
+attendance=20,374|
+referee=Steven DePiero 
+Toronto FC ended their inaugural season with a 2-2 draw against New England Revolution.
+agent: 2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev7
+predicate: referee
+patient: team1+%3d+20%2c374+%7c+referee
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev7
+sentence: The game was more evenly match as opposed from the 1st 2 games when New England Revolution won the 1st game 4-0 on April 14 and won the 2nd game 3-0.
+agent: 2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev11
+predicate: win
+patient: the+1st+game+4-0
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev11
+sentence: The game was more evenly match as opposed from the 1st 2 games when New England Revolution won the 1st game 4-0 on April 14 and won the 2nd game 3-0.
+agent: 2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev11
+predicate: win
+patient: the+1st+game+4-0
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev11
+sentence: Michael Parkhurst opened the scoring with a goal from his own half just before halftime.
+agent: Football:_Manchester_United_push_past_Sheffield#ev100
+predicate: open
+patient: the+scoring
+event: http://en.wikinews.org/wiki/Football:_Manchester_United_push_past_Sheffield#ev100
+sentence: Taylor Twellman doubled the Revolution lead immediately after the break off a corner kick.
+agent: 2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev14
+predicate: double
+patient: the+revolution+lead
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev14
+sentence: Toronto FC's season is finished as New England Revolution will face New York Red Bulls in the 1st Round of the playoffs.
+agent: 2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev29
+predicate: face
+patient: New_York_Red_Bulls
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_vs._New_England_Revolution#ev29
+sentence: An aging McDonnell Douglas MD-83 passenger jet (registration: SU-BOY) of Egypt's AMC Airlines with 156 passengers and seven crew on a charter flight made an emergency belly landing at the AtatÃ¼rk International Airport in Istanbul, Turkey after requesting permission to perform an emergency landing for technical reasons.
+agent: AMC_Airlines_charter_plane_makes_emergency_landing_on_belly_in_Istanbul#ev17
+predicate: registration
+patient: AMC_Airlines
+event: http://en.wikinews.org/wiki/AMC_Airlines_charter_plane_makes_emergency_landing_on_belly_in_Istanbul#ev17
+sentence: Columbus came out attacking in the 2nd half and it paid dividends in the 61st minute when Jason Garey scored the equalizer.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev25
+predicate: score
+patient: the+equalizer
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev25
+sentence: Substitute Jacob Thomas scored the winner in the 83rd minute.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev25
+predicate: score
+patient: the+equalizer
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev25
+sentence: The next Toronto FC game is away to DC United on September 29 while Columbus Crew faces Los Angeles Galaxy at home on September 30.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev36
+predicate: face
+patient: Los_Angeles
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev36
+sentence: team1= Toronto FC |
+score= 1 â€“ 2 |
+team2= Columbus Crew |
+report= Match Report|
+goals1= Canizalez Cunningham Lombardo |
+goals2=Herron Thomas Garey Garey Kamara Thomas |
+stadium= BMO Field, Toronto, Ontario |
+attendance= 20,127 |
+referee= Steven DePiero
+ 
+
+Toronto FC ended their Major League Soccer record goalscoring drought at 824 minutes in a 2-1 loss to Columbus Crew.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev11
+predicate: referee
+patient: team2+20%2c127+%7c+referee
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev11
+sentence: team1= Toronto FC |
+score= 1 â€“ 2 |
+team2= Columbus Crew |
+report= Match Report|
+goals1= Canizalez Cunningham Lombardo |
+goals2=Herron Thomas Garey Garey Kamara Thomas |
+stadium= BMO Field, Toronto, Ontario |
+attendance= 20,127 |
+referee= Steven DePiero
+ 
+
+Toronto FC ended their Major League Soccer record goalscoring drought at 824 minutes in a 2-1 loss to Columbus Crew.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev16
+predicate: drought
+patient: record+goalscoring
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev16
+sentence: The loss takes Toronto FC to a 10 game winless streak.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev18
+predicate: take
+patient: Toronto_Maple_Leafs
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev18
+sentence: Columbus ended a 7 game winless streak.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev28
+predicate: end
+patient: a+7+game+winless+streak
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev28
+sentence: Miguel Canizalez opened the scoring to end the Major League Soccer record drought in the 2nd minute from within the penalty area.
+agent: 2007_Rugby_World_Cup:_South_Africa,_Australia_and_New_Zealand_qualify#ev67
+predicate: open
+patient: the+scoring
+event: http://en.wikinews.org/wiki/2007_Rugby_World_Cup:_South_Africa,_Australia_and_New_Zealand_qualify#ev67
+sentence: Miguel Canizalez opened the scoring to end the Major League Soccer record drought in the 2nd minute from within the penalty area.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev16
+predicate: drought
+patient: record+goalscoring
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev16
+sentence: Toronto FC found many chances to increase their lead, but to no avail.
+agent: 2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev22
+predicate: increase
+patient: their+lead
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Toronto_FC_end_drought;_lose_to_Crew#ev22
+sentence: Toronto have now only scored two goals in their last 1,002 minutes played.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev21
+predicate: score
+patient: four+goals
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev21
+sentence: team1=DC United|
+score=4â€“1|
+team2=Toronto FC |
+report=|
+goals1=Boswell McTavish Gros Kpene Olsen Moreno Burch Fred Moreno Emilio Gomez Carroll |
+goals2=Marshall Robinson Braz Braz Cunningham Samuel Lombardo Pozniak Canizalez |
+stadium=RFK Stadium, Washington DC|
+attendance=25,174|
+referee=Ramon Hernandez 
+DC United took magic number to clinch MLS Supporters' Shield was reduced to 12 after a 4-1 come-from-behind victory against Toronto FC.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev12
+predicate: Cunningham
+patient: braz+braz
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev12
+sentence: team1=DC United|
+score=4â€“1|
+team2=Toronto FC |
+report=|
+goals1=Boswell McTavish Gros Kpene Olsen Moreno Burch Fred Moreno Emilio Gomez Carroll |
+goals2=Marshall Robinson Braz Braz Cunningham Samuel Lombardo Pozniak Canizalez |
+stadium=RFK Stadium, Washington DC|
+attendance=25,174|
+referee=Ramon Hernandez 
+DC United took magic number to clinch MLS Supporters' Shield was reduced to 12 after a 4-1 come-from-behind victory against Toronto FC.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev14
+predicate: take
+patient: magic+number
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev14
+sentence: After the loss, Toronto FC will be eliminated from post-season contention if Chicago Fire win against Chivas USA tonight.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev19
+predicate: win
+patient: C.D._Chivas_USA
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev19
+sentence: Toronto for the second straight week took an early lead in the first half from a Carl Robinson free kick while DC United looked "passive" in the first half.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev14
+predicate: take
+patient: magic+number
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev14
+sentence: Toronto for the second straight week took an early lead in the first half from a Carl Robinson free kick while DC United looked "passive" in the first half.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev35
+predicate: look
+patient: %60%60+passive+%27%27
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev35
+sentence: In the second half, DC United showed why they're the top team in the league by scoring four goals.
+agent: 2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev21
+predicate: score
+patient: four+goals
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_DC_United_vs._Toronto_FC#ev21
+sentence: team1=Chicago Fire|
+score=1â€“0|
+team2=Los Angeles Galaxy|
+report=Match Report|
+goals1=Barrett Thorrington Wanchope Soumare Rolfe Carr Thorrington |
+goals2= Vagenas Beckham Glinton Buddle Tudela Gordon Buddle|
+stadium=Toyota Park, Bridgeview|
+attendance=21,374|
+referee=Alex Prus 
+Both teams entered Sunday's match with a seven-game unbeaten streak to give them the chance to take the final playoff spot.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev12
+predicate: take
+patient: to+take+the+final+playoff+spot
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev12
+sentence: In the end, Chicago Fire beat Los Angeles Galaxy to take the last playoff spot.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev13
+predicate: beat
+patient: Los_Angeles_Galaxy
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev13
+sentence: In the end, Chicago Fire beat Los Angeles Galaxy to take the last playoff spot.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev12
+predicate: take
+patient: to+take+the+final+playoff+spot
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev12
+sentence: Chicago Fire controlled the game as they outshot Los Angeles Galaxy 22-5.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev14
+predicate: control
+patient: the+game
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev14
+sentence: Chicago Fire poured the shots until the scored the winner in the 93rd minute to score the eventual game winner.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev17
+predicate: pour
+patient: the+shots
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev17
+sentence: The loss for Los Angeles Galaxy eliminates them from the playoffs as Chicago Fire will play DC United in the 1st round of the playoffs.
+agent: 2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev21
+predicate: play
+patient: dc+united
+event: http://en.wikinews.org/wiki/2007_Major_League_Soccer:_Chicago_Fire_vs._Los_Angeles_Galaxy#ev21
+sentence: Forecasting the WiMax Forum by Taipei Computer Association (TCA) next week, Intel Taiwan invited Mei-yueh Ho (Chairman of Council for Economic Planning and Development) to introduce M-Taiwan and the future of WiMax in Taiwan.
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev42
+predicate: forecast
+patient: WiMAX
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev42
+sentence: Forecasting the WiMax Forum by Taipei Computer Association (TCA) next week, Intel Taiwan invited Mei-yueh Ho (Chairman of Council for Economic Planning and Development) to introduce M-Taiwan and the future of WiMax in Taiwan.
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev41
+predicate: invite
+patient: MeiyuehHo
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev41
+sentence: Forecasting the WiMax Forum by Taipei Computer Association (TCA) next week, Intel Taiwan invited Mei-yueh Ho (Chairman of Council for Economic Planning and Development) to introduce M-Taiwan and the future of WiMax in Taiwan.
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev38
+predicate: introduce
+patient: m-taiwan+and+the+future+of+wimax
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev38
+sentence: "Not only WiMax, laptop manufacturers will respect on functions such as compatible with High-Definition Videos, power saving, hardware mobilization.
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev16
+predicate: manufacturer
+patient: laptop+manufacturers
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev16
+sentence: This is the future object what manufacturers should do."
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev16
+predicate: manufacturer
+patient: laptop+manufacturers
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev16
+sentence: Navin Shenoy mentioned.
+agent: 2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev21
+predicate: do.
+patient: NavinShenoy
+event: http://en.wikinews.org/wiki/2007_Intel_Developer_Forum_Taipei_Autumn_starts_with_Mobility_and_Internet_Experience#ev21
+sentence: * Literature: Glenda Browne of Blue Mountains, Australia, for her study on how the word "The" confuses people when they try to put things in alphabetical order.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev49
+predicate: study
+patient: about+how+cloth+sheets+become+wrinkled
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev49
+sentence: The awards, given out every early October since 1991 by the Annals of Improbable Research, are a parody of the Nobel Prize, which are awards given out in several fields.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev14
+predicate: give
+patient: awards+given+out+in+several+fields
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev14
+sentence: The awards are given to achievements that, "first make people laugh, and then make them think."
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev14
+predicate: give
+patient: awards+given+out+in+several+fields
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev14
+sentence: Ten awards have been presented, each given to a different field.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev14
+predicate: give
+patient: awards+given+out+in+several+fields
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev14
+sentence: The winners are:
+
+* Medicine: Brian Witcombe, of Gloucestershire Royal NHS Foundation Trust, UK, and Dan Meyer, who studied the health consequences of sword swallowing.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev49
+predicate: study
+patient: about+how+cloth+sheets+become+wrinkled
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev49
+sentence: * Physics: A team from the USA and Chile, who made a study about how cloth sheets become wrinkled.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev49
+predicate: study
+patient: about+how+cloth+sheets+become+wrinkled
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev49
+sentence: The awards, given out every early October since 1991 by the Annals of Improbable Research, are a parody of the Nobel Prize, which are awards given out in several fields.
+agent: 2007_Ig_Nobel_Prize_winners_announced#ev14
+predicate: give
+patient: awards+given+out+in+several+fields
+event: http://en.wikinews.org/wiki/2007_Ig_Nobel_Prize_winners_announced#ev14
+sentence: Stephon is described as five feet seven inches and 145 pounds and last seen wearing blue jeans and a gray sweatshirt.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+predicate: wear
+patient: blue+jeans+and+a+gray+sweatshirt
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+sentence: He was last seen wearing blue jeans and green hoodie sweatshirt
+
+The police are requesting anybody with information that may help in locating the victims to call (410) 307-2020 or 911.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+predicate: wear
+patient: blue+jeans+and+a+gray+sweatshirt
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+sentence: Police say that at 3 a.m. EDT (UTC-4), early Tuesday morning, six armed men wearing masks forced their way into the two-story house.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+predicate: wear
+patient: blue+jeans+and+a+gray+sweatshirt
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev7
+sentence: Police say that at 3 a.m. EDT (UTC-4), early Tuesday morning, six armed men wearing masks forced their way into the two-story house.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev5
+predicate: force
+patient: their+way
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev5
+sentence: He began to approach but, according to police, the assailants fired a shot at him and drove away.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev15
+predicate: fire
+patient: a+shot+at+him
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev15
+sentence: Baltimore County police spokesperson, Mike Hill, said that the remaining victims in the house initially refused to give information, though they later gave some information.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev32
+predicate: refuse
+patient: to+give+information
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev32
+sentence: Baltimore County police spokesperson, Mike Hill, said that the remaining victims in the house initially refused to give information, though they later gave some information.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev19
+predicate: give
+patient: some+information
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev19
+sentence: Baltimore County police spokesperson, Mike Hill, said that the remaining victims in the house initially refused to give information, though they later gave some information.
+agent: AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev19
+predicate: give
+patient: some+information
+event: http://en.wikinews.org/wiki/AMBER_alert_issued_in_Maryland_for_missing_teenaged_boys#ev19
+sentence: A great intensive competition is still in Men's Group between Wen-chien Wu and Tsu-chien Cheng, but Wu still held his honor and won back this championship with 27 minutes and 34 seconds; In the Women's Group, Chien-her Hsieh won with 31 minutes and 34 seconds, Yu-hao Wu won the champion with 40 minutes and 27 seconds in the Blind Group.
+agent: 2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+predicate: win
+patient: the+champion
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+sentence: A great intensive competition is still in Men's Group between Wen-chien Wu and Tsu-chien Cheng, but Wu still held his honor and won back this championship with 27 minutes and 34 seconds; In the Women's Group, Chien-her Hsieh won with 31 minutes and 34 seconds, Yu-hao Wu won the champion with 40 minutes and 27 seconds in the Blind Group.
+agent: 2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+predicate: win
+patient: the+champion
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+sentence: On Saturday of September 15, ING Taipei Marathon South Taiwan Warming Up Competition goes to Kaohsiung Museum of Fine Arts, not only 1615 professional runners but also international runners from Canada, Japan, UK, USA, Germany, and Ireland participated this event.
+agent: Hualien_warm-up_of_2007_ING_Taipei_Marathon_kicked_off#ev11
+predicate: participate
+patient: by+participating+this+event
+event: http://en.wikinews.org/wiki/Hualien_warm-up_of_2007_ING_Taipei_Marathon_kicked_off#ev11
+sentence: Not only international runners, companies and enterprises such as China Steel Corp., CPC Corp. Taiwan, Taiwan Power Company, Chi Mei Medical Center, Chang Gung Memorial Hospital, NXP Semiconductors Taiwan, Corning Co., Ltd. (Taiwan), National Highway Police Bureau of Taiwan, Kang Hsuan Educational Publishing Group, Kaohsiung Prison and Kaohsiung District Prosecutors Office of Ministry of Justice of Taiwan also grouped and participated this event.
+agent: Hualien_warm-up_of_2007_ING_Taipei_Marathon_kicked_off#ev11
+predicate: participate
+patient: by+participating+this+event
+event: http://en.wikinews.org/wiki/Hualien_warm-up_of_2007_ING_Taipei_Marathon_kicked_off#ev11
+sentence: A great intensive competition is still in Men's Group between Wen-chien Wu and Tsu-chien Cheng, but Wu still held his honor and won back this championship with 27 minutes and 34 seconds; In the Women's Group, Chien-her Hsieh won with 31 minutes and 34 seconds, Yu-hao Wu won the champion with 40 minutes and 27 seconds in the Blind Group.
+agent: 2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev14
+predicate: hold
+patient: his+honor
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev14
+sentence: A great intensive competition is still in Men's Group between Wen-chien Wu and Tsu-chien Cheng, but Wu still held his honor and won back this championship with 27 minutes and 34 seconds; In the Women's Group, Chien-her Hsieh won with 31 minutes and 34 seconds, Yu-hao Wu won the champion with 40 minutes and 27 seconds in the Blind Group.
+agent: 2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+predicate: win
+patient: the+champion
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon_warming_up_competition_goes_to_Kaohsiung#ev15
+sentence: Finally, ING Antai Running Team won this competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: Finally, ING Antai Running Team won this competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+predicate: win
+patient: this+competition
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+sentence: After the charity race to benefit charity organizations and media in Taiwan, ING Antai held "a lap within one minute" special challenge for the Basketball Team of Taipei Municipal Songshan Senior High School.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: After the charity race to benefit charity organizations and media in Taiwan, ING Antai held "a lap within one minute" special challenge for the Basketball Team of Taipei Municipal Songshan Senior High School.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev32
+predicate: hold
+patient: a+lap
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev32
+sentence: With their excellent performance, the team succeeded in meeting this challenge.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev49
+predicate: succeed
+patient: in+meeting+this+challenge
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev49
+sentence: With their excellent performance, the team succeeded in meeting this challenge.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev37
+predicate: meet
+patient: in+meeting+this+challenge
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev37
+sentence: At the end of the event, ING Antai invited 24 elementary schools from Taipei City to the "Kids' Running Championship".
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: At the end of the event, ING Antai invited 24 elementary schools from Taipei City to the "Kids' Running Championship".
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev57
+predicate: invite
+patient: running+experts
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev57
+sentence: Before this event, some participants even won good places at Hualien, Kaohsiung, and Taichung warming-up running matches.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+predicate: win
+patient: this+competition
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+sentence: Due to the actual strength of participants were too close, the organizer decided to split 4 sections by a group draw.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev61
+predicate: decide
+patient: by+a+group+draw
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev61
+sentence: Due to the actual strength of participants were too close, the organizer decided to split 4 sections by a group draw.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev27
+predicate: split
+patient: 18+runners
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev27
+sentence: Finally, Dong-hu Elementary School won the champion and qualified the main competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+predicate: win
+patient: this+competition
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev31
+sentence: Finally, Dong-hu Elementary School won the champion and qualified the main competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev40
+predicate: qualify
+patient: the+main+competition
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev40
+sentence: According to ING Antai, the sum of Charity Fund of ING Taipei Matathon was multiplied between numbers of finished runners and total running mileage with different groups and added from donations at this event.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: By the way, Deputy Secretary General of Taipei City Government (TCG) Yong-jen Chen talk to Wikinews Reporter Brock and remarked: "The traffic quality of ING Taipei Marathon will be progressively accepted after the criticism by foreigners at 2004 &amp; 2005.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev66
+predicate: talk
+patient: WikinewsReporterBrock
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev66
+sentence: Before the event, John Wylie (President &amp; CEO of ING Antai) encouraged citizens in Taiwan to add their signatures to the "Charity Ambassador of ING Taipei Marathon" on the official website of the 2007 ING Taipei Marathon and hoped this competition will renew the scale of participation again next month.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev55
+predicate: add
+patient: their+signatures
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev55
+sentence: Before the event, John Wylie (President &amp; CEO of ING Antai) encouraged citizens in Taiwan to add their signatures to the "Charity Ambassador of ING Taipei Marathon" on the official website of the 2007 ING Taipei Marathon and hoped this competition will renew the scale of participation again next month.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev22
+predicate: renew
+patient: the+scale+of+participation
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev22
+sentence: Taipei City Government, the main organizer of 2007 ING Taipei Marathon, invited running experts, ING Running Club delegates, athletes of 2009 Summer Deaflympics, and blind-visual runners (approximately 18 runners) split up into 3 teams (ING Antai Running Team, Taiwan Marathon Scud Team, Taipei City Government Runners Team) for charity funds to Taiwan Foundation For Rare Disorders, Chinese Taipei Blind-Visual Road Running Association, and Foundation of 21st Summer Deaflympics Organizing Committee in this 6-people relay competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev57
+predicate: invite
+patient: running+experts
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev57
+sentence: Taipei City Government, the main organizer of 2007 ING Taipei Marathon, invited running experts, ING Running Club delegates, athletes of 2009 Summer Deaflympics, and blind-visual runners (approximately 18 runners) split up into 3 teams (ING Antai Running Team, Taiwan Marathon Scud Team, Taipei City Government Runners Team) for charity funds to Taiwan Foundation For Rare Disorders, Chinese Taipei Blind-Visual Road Running Association, and Foundation of 21st Summer Deaflympics Organizing Committee in this 6-people relay competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: Taipei City Government, the main organizer of 2007 ING Taipei Marathon, invited running experts, ING Running Club delegates, athletes of 2009 Summer Deaflympics, and blind-visual runners (approximately 18 runners) split up into 3 teams (ING Antai Running Team, Taiwan Marathon Scud Team, Taipei City Government Runners Team) for charity funds to Taiwan Foundation For Rare Disorders, Chinese Taipei Blind-Visual Road Running Association, and Foundation of 21st Summer Deaflympics Organizing Committee in this 6-people relay competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev27
+predicate: split
+patient: 18+runners
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev27
+sentence: Taipei City Government, the main organizer of 2007 ING Taipei Marathon, invited running experts, ING Running Club delegates, athletes of 2009 Summer Deaflympics, and blind-visual runners (approximately 18 runners) split up into 3 teams (ING Antai Running Team, Taiwan Marathon Scud Team, Taipei City Government Runners Team) for charity funds to Taiwan Foundation For Rare Disorders, Chinese Taipei Blind-Visual Road Running Association, and Foundation of 21st Summer Deaflympics Organizing Committee in this 6-people relay competition.
+agent: 2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+predicate: ING
+patient: Taiwan
+event: http://en.wikinews.org/wiki/2007_ING_Taipei_Marathon:_Charity_&amp;_Kids_Running_comes_back_to_Taipei#ev24
+sentence: Toss: South Africa won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+predicate: choose
+patient: to+field+first
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+sentence: South Africa defeated New Zealand by six wickets in the Super 8 stage of the 2007 ICC World Twenty20 at Kingsmead, Durban, South Africa.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+predicate: defeat
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+sentence: Lou Vincent scored 32 runs and Brendon McCullum added 38 as New Zealand started well.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev22
+predicate: score
+patient: 32+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev22
+sentence: Lou Vincent scored 32 runs and Brendon McCullum added 38 as New Zealand started well.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev23
+predicate: add
+patient: 58+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev23
+sentence: Lou Vincent scored 32 runs and Brendon McCullum added 38 as New Zealand started well.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev38
+predicate: start
+patient: their+2007+rugby+world+cup+campaigns
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev38
+sentence: Brendon McCullum was caught behind in the ninth over, while Ross Taylor fell in similar fashion four balls later.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: Lou Vincent was bowled by Johan van der Wath and Scott Styris was dismissed for six runs leaving New Zealand on 90-4.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev43
+predicate: bowl
+patient: List_of_Lost_characters
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev43
+sentence: Although Craig McMillan scored 48 not out, South African bowler Morne Morkel took 4-17 off four overs to help restrict New Zealand to 153-8.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev22
+predicate: score
+patient: 32+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev22
+sentence: Although Craig McMillan scored 48 not out, South African bowler Morne Morkel took 4-17 off four overs to help restrict New Zealand to 153-8.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev31
+predicate: bowler
+patient: Morné_Morkel
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev31
+sentence: Graeme Smith and Abraham de Villiers were both caught behind and Herschelle Gibbs fell for just nineteen.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: However Justin Kemp hit 89 not out as South Africa reached 158-4, winning with five balls to spare.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev40
+predicate: hit
+patient: to+score+28+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev40
+sentence: However Justin Kemp hit 89 not out as South Africa reached 158-4, winning with five balls to spare.
+agent: Three_strong_earthquakes_strike_near_New_Zealand#ev10
+predicate: reach
+patient: Scotland_national_rugby_union_team
+event: http://en.wikinews.org/wiki/Three_strong_earthquakes_strike_near_New_Zealand#ev10
+sentence: However Justin Kemp hit 89 not out as South Africa reached 158-4, winning with five balls to spare.
+agent: 2007_Rugby_World_Cup:_South_Africa_defeat_England#ev16
+predicate: win
+patient: South_Africa_national_cricket_team
+event: http://en.wikinews.org/wiki/2007_Rugby_World_Cup:_South_Africa_defeat_England#ev16
+sentence: Toss: South Africa won, and chose to field first.
+agent: 2007_Rugby_World_Cup:_South_Africa_defeat_England#ev16
+predicate: win
+patient: South_Africa_national_cricket_team
+event: http://en.wikinews.org/wiki/2007_Rugby_World_Cup:_South_Africa_defeat_England#ev16
+sentence: India have defeated South Africa by 37 runs in the Super 8 stage of the 2007 ICC World Twenty20 at Kingsmead, Durban, South Africa.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+predicate: defeat
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+sentence: Fall of wickets: 1-32 (Gambhir, 4.4 ov), 2-33 (Karthik, 4.6 ov), 3-33 (Sehwag, 5.1 ov), 4-61 (Uthappa, 10.3 ov), 5-146 (Dhoni, 19.4 ov)
+
+Did not bat: Harbhajan Singh, Joginder Sharma, S Sreesanth, R P Singh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fall of wickets: 1-11 (Gibbs, 1.1 ov), 2-12 (Smith, 1.4 ov), 3-12 (de Villiers, 2.3 ov), 4-30 (Kemp, 5.4 ov), 5-31 (Pollock, 5.5 ov), 6-100 (Boucher, 16.4 ov), 7-103 (Philander, 17.4 ov), 8-109 (JA Morkel, 18.4 ov), 9-111 (van der Wath, 19.4 ov)
+
+
+
+
+
+
+
+
+
+South Africa: G C Smith (capt), H H Gibbs, A B de Villiers, M V Boucher (wkt), J M Kemp, S M Pollock, J A Morkel, J J van der Wath, V D Philander, M Ntini, M Morkel
+
+India: G Gambhir, V Sehwag, K D Karthik, R V Uthappa, R P Sharma, M S Dhoni (capt, wkt), I K Pathan, Harbhajan Singh, Joginder Sharma, S Sreesanth, R P Singh
+
+Man of the Match: R P Sharma (India) 
+
+Umpires: B R Doctrove (West Indies) and S J A Taufel (Australia) 
+TV Umpire: S J Davis (Australia) 
+Match Referee: R S Madugalle (Sri Lanka) 
+Reserve Umpire: B G Jerling (South Africa)
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev38
+predicate: man
+patient: of+the+match
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev38
+sentence: South Africa are eliminated from the tournament, while India and New Zealand progress to the semi finals from Group E.
+
+India were left on 61-4 after Gautam Gambhir was dismissed for nineteen runs and Dinesh Karthik was caught behind for a duck two balls later.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev53
+predicate: leave
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev53
+sentence: South Africa are eliminated from the tournament, while India and New Zealand progress to the semi finals from Group E.
+
+India were left on 61-4 after Gautam Gambhir was dismissed for nineteen runs and Dinesh Karthik was caught behind for a duck two balls later.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev25
+predicate: dismiss
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev25
+sentence: South Africa are eliminated from the tournament, while India and New Zealand progress to the semi finals from Group E.
+
+India were left on 61-4 after Gautam Gambhir was dismissed for nineteen runs and Dinesh Karthik was caught behind for a duck two balls later.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+predicate: catch
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+sentence: Virender Sehwag was caught behind for 11 and Robin Uthappa made 15, but Rohit Sharma (50 not out) and Mahendra Singh Dhoni (45) shared a partnership of 85 runs as India recovered to 153-5.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+predicate: catch
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+sentence: Virender Sehwag was caught behind for 11 and Robin Uthappa made 15, but Rohit Sharma (50 not out) and Mahendra Singh Dhoni (45) shared a partnership of 85 runs as India recovered to 153-5.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev27
+predicate: share
+patient: a+partnership+of+69+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev27
+sentence: In response South Africa collapsed to 31-5 as R P Singh took 4-13 and Sreesanth took 2-23.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+predicate: take
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+sentence: In response South Africa collapsed to 31-5 as R P Singh took 4-13 and Sreesanth took 2-23.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+predicate: take
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+sentence: Mark Boucher and Albie Morkel both scored 36 runs and shared a partnership of 69 runs, but South Africa fell 37 runs short after 20 overs, finishing on 116-9.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev32
+predicate: score
+patient: 36+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev32
+sentence: Mark Boucher and Albie Morkel both scored 36 runs and shared a partnership of 69 runs, but South Africa fell 37 runs short after 20 overs, finishing on 116-9.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev27
+predicate: share
+patient: a+partnership+of+69+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev27
+sentence: Toss: India won, and chose to bat first.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+predicate: win
+patient: the+series+4-3
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+sentence: Toss: India won, and chose to bat first.
+agent: 2007_Twenty20_World_Championship:_England_vs_Australia#ev58
+predicate: choose
+patient: to+bat+first
+event: http://en.wikinews.org/wiki/2007_Twenty20_World_Championship:_England_vs_Australia#ev58
+sentence: Matt Prior (32) and Owais Shah (36) shared a partnership of 55 runs, but England scored too slowly.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev41
+predicate: share
+patient: a+partnership+of+55+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev41
+sentence: After Andrew Flintoff was bowled by Johan van der Wath for 17 runs, England could only reach 135-7 after twenty overs.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev43
+predicate: bowl
+patient: List_of_Lost_characters
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev43
+sentence: Toss: England won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+predicate: win
+patient: the+series+4-3
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+sentence: Toss: England won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+predicate: choose
+patient: to+field+first
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+sentence: South Africa defeated England by 19 runs in the Super 8 stage of the 2007 ICC World Twenty20 at Newlands Cricket Ground, Cape Town, South Africa.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+predicate: defeat
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+sentence: After suffering an early blow, when opening batsman Jean-Paul Duminy was caught behind off Stuart Broad's first delivery, South Africa were restricted by the England bowlers.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: After suffering an early blow, when opening batsman Jean-Paul Duminy was caught behind off Stuart Broad's first delivery, South Africa were restricted by the England bowlers.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev29
+predicate: restrict
+patient: South_Africa_national_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev29
+sentence: South Africa defeated England by 19 runs in the Super 8 stage of the 2007 ICC World Twenty20 at Newlands Cricket Ground, Cape Town, South Africa.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+predicate: run
+patient: Kevin_Pietersen
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+sentence: Two wickets fell quickly as Dimitri Mascarenhas caught Graeme Smith for 19 runs and Abraham de Villiers was caught behind for 18.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: Two wickets fell quickly as Dimitri Mascarenhas caught Graeme Smith for 19 runs and Abraham de Villiers was caught behind for 18.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: After a partnership of 49 runs between Justin Kemp and Mark Boucher, South Africa lost three wickets in quick succession to reduce them to 94-6.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+predicate: run
+patient: Kevin_Pietersen
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+sentence: After a partnership of 49 runs between Justin Kemp and Mark Boucher, South Africa lost three wickets in quick succession to reduce them to 94-6.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev34
+predicate: lose
+patient: their+final+two+matches
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev34
+sentence: However England missed some catches, and dropped Albie Morkel twice.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev38
+predicate: miss
+patient: some+catches
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev38
+sentence: However England missed some catches, and dropped Albie Morkel twice.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev51
+predicate: drop
+patient: Albie_Morkel
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev51
+sentence: England opener Luke Wright fell in the first over for a duck, and Kevin Pietersen was run out after losing his bat in a collision with bowler Shaun Pollock.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+predicate: run
+patient: Kevin_Pietersen
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev27
+sentence: England opener Luke Wright fell in the first over for a duck, and Kevin Pietersen was run out after losing his bat in a collision with bowler Shaun Pollock.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev34
+predicate: lose
+patient: their+final+two+matches
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev34
+sentence: Paul Collingwood was caught first ball at slip, and England were left on 27-3.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+predicate: catch
+patient: Paul_Collingwood
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev31
+sentence: Paul Collingwood was caught first ball at slip, and England were left on 27-3.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev53
+predicate: leave
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev53
+sentence: The Australian Labor Party has appointed SLW Group to run it's advertisement campaign for the 2007 Australian Legislative Election.
+agent: ALP_appoints_SLW_Group_for_2007_election_campaign#ev6
+predicate: appoint
+patient: slw+group
+event: http://en.wikinews.org/wiki/ALP_appoints_SLW_Group_for_2007_election_campaign#ev6
+sentence: ALP campaign director Tim Gartell said that Lawrence had a wealth of experience with political campaigns, being part of the adveritsement team responsible for the election of a Victorian Labor government in the 1980s.
+agent: ALP_appoints_SLW_Group_for_2007_election_campaign#ev26
+predicate: have
+patient: of+experience+with+political+campaigns
+event: http://en.wikinews.org/wiki/ALP_appoints_SLW_Group_for_2007_election_campaign#ev26
+sentence: Shahid Afridi took 3-18 and Umar Gul took 2-14 for Pakistan as Sri Lanka finished on 156-9.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+predicate: take
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+sentence: Shahid Afridi took 3-18 and Umar Gul took 2-14 for Pakistan as Sri Lanka finished on 156-9.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+predicate: take
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+sentence: Toss: Sri Lanka won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+predicate: choose
+patient: to+field+first
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+sentence: Pakistan were 33-3 in the fifth over after Imran Nazir was caught at cover and Dilhara Fernando bowled both Salman Butt and Mohammad Hafeez.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: However Shoaib Malik (57) and Younis Khan (51) shared a partnership of 101 runs.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev33
+predicate: share
+patient: a+partnership+of+101+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev33
+sentence: Lasith Malinga took three wickets but Pakistan reached 189-6 after twenty overs.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+predicate: take
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev35
+sentence: Having made an early breakthrough when Upul Tharanga was dismissed with the second ball of the innings, Pakistan missed a chance three balls later when Sohail Tanvir dropped Sanath Jayasuriya.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev36
+predicate: miss
+patient: a+chance
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev36
+sentence: Having made an early breakthrough when Upul Tharanga was dismissed with the second ball of the innings, Pakistan missed a chance three balls later when Sohail Tanvir dropped Sanath Jayasuriya.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev50
+predicate: drop
+patient: Sanath_Jayasuriya
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev50
+sentence: However Tanvir, bowling the following over, bowled Jayasuriya with his first delivery.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: However Tanvir, bowling the following over, bowled Jayasuriya with his first delivery.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: Sri Lanka were reduced to 35-3 soon afterwards when Mohammad Asif bowled Kumar Sangakkara.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: Mahela Jayawardene (28) and Chamara Silva (38) shared a 53 run partnership while Tillakaratne Dilshan scored 38, but three quick wickets fell for four runs limiting Sri Lanka's chances.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev33
+predicate: share
+patient: a+partnership+of+101+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev33
+sentence: Pakistan defeated Sri Lanka by 33 runs in the Super 8 stage of the 2007 ICC World Twenty20 at Wanderers Stadium, Johannesburg, South Africa.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+predicate: defeat
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev26
+sentence: Mahela Jayawardene (28) and Chamara Silva (38) shared a 53 run partnership while Tillakaratne Dilshan scored 38, but three quick wickets fell for four runs limiting Sri Lanka's chances.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev45
+predicate: limit
+patient: Pakistan_national_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev45
+sentence: Toss: India won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+predicate: win
+patient: the+series+4-3
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_England#ev44
+sentence: Toss: India won, and chose to field first.
+agent: 2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+predicate: choose
+patient: to+field+first
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Australia_vs_Bangladesh#ev51
+sentence: The Black Caps lost opener Lou Vincent in the second over.
+agent: 2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev31
+predicate: lose
+patient: List_of_Lost_characters
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev31
+sentence: New Zealand have beaten India by ten runs in the Super 8 stage of the 2007 ICC World Twenty20 at Wanderers Stadium, Johannesburg, South Africa.
+agent: 2007_Twenty20_World_Championship:_Kenya_vs_Sri_Lanka#ev27
+predicate: beat
+patient: England_cricket_team
+event: http://en.wikinews.org/wiki/2007_Twenty20_World_Championship:_Kenya_vs_Sri_Lanka#ev27
+sentence: Brendon McCullum (45) and Peter Fulton added 58 runs together to take New Zealand to 69-1, but four quick wickets fell and they were reduced to 91-5.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev23
+predicate: add
+patient: 58+runs
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_New_Zealand#ev23
+sentence: Brendon McCullum (45) and Peter Fulton added 58 runs together to take New Zealand to 69-1, but four quick wickets fell and they were reduced to 91-5.
+agent: 2007_Twenty20_World_Championship:_New_Zealand_vs_Sri_Lanka#ev31
+predicate: take
+patient: List_of_Lost_characters
+event: http://en.wikinews.org/wiki/2007_Twenty20_World_Championship:_New_Zealand_vs_Sri_Lanka#ev31
+sentence: Jacob Oram (35) and Craig McMillan (44) shared a 73 run partnership as New Zealand pushed towards 190.
+agent: 2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev35
+predicate: share
+patient: a+73+run+partnership
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev35
+sentence: However four wickets fell in the last over, as Daniel Vettori was bowled by R P Singh and three other batsmen were run out.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: Gautam Gambhir and Virender Sehwag had reached 76 runs in the sixth over when Sehwag was caught by Scott Styris for 40 runs.
+agent: 2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev49
+predicate: reach
+patient: 76+runs+in+the+sixth
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev49
+sentence: Gautam Gambhir and Virender Sehwag had reached 76 runs in the sixth over when Sehwag was caught by Scott Styris for 40 runs.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+predicate: catch
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+sentence: Daniel Vettori caught and bowled Robin Uthappa for a duck and had Gambhir caught behind for 51.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+predicate: catch
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+sentence: Daniel Vettori caught and bowled Robin Uthappa for a duck and had Gambhir caught behind for 51.
+agent: 2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+predicate: bowl
+patient: Mohammad_Hafeez
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_Pakistan_vs_Sri_Lanka#ev32
+sentence: Daniel Vettori caught and bowled Robin Uthappa for a duck and had Gambhir caught behind for 51.
+agent: 2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+predicate: catch
+patient: Gautam_Gambhir
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_South_Africa_vs_India#ev26
+sentence: Mahendra Singh Dhoni was run out for 24 as the Indian batsmen fell, with Vettori taking four wickets for New Zealand.
+agent: 2007_Twenty20_World_Championship:_New_Zealand_vs_Sri_Lanka#ev31
+predicate: take
+patient: List_of_Lost_characters
+event: http://en.wikinews.org/wiki/2007_Twenty20_World_Championship:_New_Zealand_vs_Sri_Lanka#ev31
+sentence: Mahendra Singh Dhoni was run out for 24 as the Indian batsmen fell, with Vettori taking four wickets for New Zealand.
+agent: 2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev42
+predicate: wicket
+patient: New_Zealand_national_cricket_team
+event: http://en.wikinews.org/wiki/2007_ICC_World_Twenty20:_India_vs_New_Zealand#ev42
+sentence: On defense, Javier Arenas had two interceptions to lead all defenders.
+agent: Alabama_wins_2010_American_football_college_title#ev71
+predicate: have
+patient: two+interceptions+to+lead+all+defenders
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev71
+sentence: On defense, Javier Arenas had two interceptions to lead all defenders.
+agent: Alabama_wins_2010_American_football_college_title#ev37
+predicate: interception
+patient: all+defenders
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev37
+sentence: On defense, Javier Arenas had two interceptions to lead all defenders.
+agent: Alabama_wins_2010_American_football_college_title#ev30
+predicate: lead
+patient: Greg_McElroy
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev30
+sentence: With the win, Ingram became only the second Heisman winner to win the BCS national championship game in the same season.
+agent: Alabama_wins_2010_American_football_college_title#ev41
+predicate: win
+patient: the+title
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev41
+sentence: With the win, Ingram became only the second Heisman winner to win the BCS national championship game in the same season.
+agent: Alabama_wins_2010_American_football_college_title#ev40
+predicate: championship
+patient: national+championship
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev40
+sentence: With the win, Ingram became only the second Heisman winner to win the BCS national championship game in the same season.
+agent: Alabama_wins_2010_American_football_college_title#ev39
+predicate: game
+patient: with+perfect+records
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev39
+sentence: Also with the win, Alabama coach Nick Saban became the first coach to win two BCS national titles with two different schools.
+agent: Alabama_wins_2010_American_football_college_title#ev41
+predicate: win
+patient: the+title
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev41
+sentence: Also with the win, Alabama coach Nick Saban became the first coach to win two BCS national titles with two different schools.
+agent: Alabama_wins_2010_American_football_college_title#ev28
+predicate: title
+patient: with+two+different+schools
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev28
+sentence: He previously won the title in 2003 with Louisiana State University.
+agent: Alabama_wins_2010_American_football_college_title#ev41
+predicate: win
+patient: the+title
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev41
+sentence: After the game, Ingram told ESPN that the national title has been a season-long goal for Alabama.
+agent: France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+predicate: tell
+patient: 2010_Haiti_earthquake
+event: http://en.wikinews.org/wiki/France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+sentence: After the game, Ingram told ESPN that the national title has been a season-long goal for Alabama.
+agent: Alabama_wins_2010_American_football_college_title#ev28
+predicate: title
+patient: with+two+different+schools
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev28
+sentence: After the game, Ingram told ESPN that the national title has been a season-long goal for Alabama.
+agent: Alabama_wins_2010_American_football_college_title#ev72
+predicate: goal
+patient: a+season-long+goal+for+alabama
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev72
+sentence: Heisman trophy winner Mark Ingram scored a one-yard touchdown and Trent Richardson scored from two yards to cement the University of Alabama's first national American football title since 1992 in the 2010 BCS National Championship Game over the University of Texas at Austin yesterday in Pasadena, California.
+agent: Alabama_wins_2010_American_football_college_title#ev24
+predicate: winner
+patient: Mark_Ingram,_Jr.
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev24
+sentence: "The whole entire organization from the top to the bottom," Ingram said, "we set that goal at the beginning at the season and worked towards it [...] I could not have done it by myself."
+agent: France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+predicate: say
+patient: 2010_Haiti_earthquake
+event: http://en.wikinews.org/wiki/France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+sentence: Ingram also told his father -- who is currently serving a prison sentence -- via the television broadcast that he loved him.
+agent: France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+predicate: tell
+patient: 2010_Haiti_earthquake
+event: http://en.wikinews.org/wiki/France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+sentence: Heisman trophy winner Mark Ingram scored a one-yard touchdown and Trent Richardson scored from two yards to cement the University of Alabama's first national American football title since 1992 in the 2010 BCS National Championship Game over the University of Texas at Austin yesterday in Pasadena, California.
+agent: Alabama_wins_2010_American_football_college_title#ev28
+predicate: title
+patient: with+two+different+schools
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev28
+sentence: Ingram's father played football for nine years in the NFL and was the 28th overall pick in the 1987 NFL Draft.
+agent: Alabama_wins_2010_American_football_college_title#ev39
+predicate: play
+patient: with+perfect+records
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev39
+sentence: After the game, McCoy told ESPN that he "[...] would haven given anything to be out there with [his] team."
+agent: France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+predicate: tell
+patient: 2010_Haiti_earthquake
+event: http://en.wikinews.org/wiki/France,_Germany_officials_warn_against_using_Internet_Explorer#ev55
+sentence: The game, held annually in Pasadena, California, is the final college American football game in the country determines the national champion for the previous year's regular season.
+agent: Alabama_wins_2010_American_football_college_title#ev39
+predicate: game
+patient: with+perfect+records
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev39
+sentence: Both teams came into the game with perfect records and as the champions of their respective conferences, the SEC for Alabama and the Big 12 for Texas.
+agent: Alabama_wins_2010_American_football_college_title#ev39
+predicate: game
+patient: with+perfect+records
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev39
+sentence: The Crimson Tide defeated the Longhorns 37-21.
+agent: Alabama_wins_2010_American_football_college_title#ev29
+predicate: defeat
+patient: the+longhorns+37-21
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev29
+sentence: Heisman trophy winner Mark Ingram scored a one-yard touchdown and Trent Richardson scored from two yards to cement the University of Alabama's first national American football title since 1992 in the 2010 BCS National Championship Game over the University of Texas at Austin yesterday in Pasadena, California.
+agent: Alabama_wins_2010_American_football_college_title#ev25
+predicate: score
+patient: a+one-yard+touchdown
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev25
+sentence: After a strong start by Texas, Alabama -- led by Greg McElroy -- went on the offense, leading by 24-6 at the end of the first half.
+agent: Alabama_wins_2010_American_football_college_title#ev30
+predicate: lead
+patient: Greg_McElroy
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev30
+sentence: After a strong start by Texas, Alabama -- led by Greg McElroy -- went on the offense, leading by 24-6 at the end of the first half.
+agent: Alabama_wins_2010_American_football_college_title#ev30
+predicate: lead
+patient: Greg_McElroy
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev30
+sentence: Texas launched an impressive comeback bid to bring the score within three, but Alabama capitalized on two turnovers at the end of the fourth quarter to put the game away.
+agent: Alabama_wins_2010_American_football_college_title#ev32
+predicate: capitalize
+patient: on+two+turnovers
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev32
+sentence: For the Crimson Tide, Ingram led all rushers with 116 yard and both he and Richardson had two touchdowns.
+agent: Alabama_wins_2010_American_football_college_title#ev30
+predicate: lead
+patient: Greg_McElroy
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev30
+sentence: For the Crimson Tide, Ingram led all rushers with 116 yard and both he and Richardson had two touchdowns.
+agent: Alabama_wins_2010_American_football_college_title#ev68
+predicate: have
+patient: two+touchdowns
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev68
+sentence: For Texas Jordan Shipley led all receivers with 112 yards and two touchdowns.
+agent: Alabama_wins_2010_American_football_college_title#ev30
+predicate: lead
+patient: Greg_McElroy
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev30
+sentence: Heisman trophy winner Mark Ingram scored a one-yard touchdown and Trent Richardson scored from two yards to cement the University of Alabama's first national American football title since 1992 in the 2010 BCS National Championship Game over the University of Texas at Austin yesterday in Pasadena, California.
+agent: Alabama_wins_2010_American_football_college_title#ev25
+predicate: score
+patient: a+one-yard+touchdown
+event: http://en.wikinews.org/wiki/Alabama_wins_2010_American_football_college_title#ev25
+sentence: The post office, located five miles west of downtown Birmingham, Alabama, was evacuated, and Hueytown firefighters in hazardous materials attire inspected the chemical.
+agent: Alabama_postal_workers_and_customers_become_ill,_suspicious_substance_found#ev32
+predicate: inspect
+patient: the+chemical
+event: http://en.wikinews.org/wiki/Alabama_postal_workers_and_customers_become_ill,_suspicious_substance_found#ev32
+sentence: She was not available to comment to the media, but other family members said that they still have hope that the children are alive.
+agent: Senior_security_official:_%22Hardly_any_chance%22_to_ban_German_Church_of_Scientology#ev49
+predicate: say
+patient: the+possibility+of+an+overdose
+event: http://en.wikinews.org/wiki/Senior_security_official:_%22Hardly_any_chance%22_to_ban_German_Church_of_Scientology#ev49
+sentence: Police and other authorities are using divers, dogs and helicopters to search for the bodies in a 100-square-mile area with a total of 70 people on the case.
+agent: Alabama_father_throws_children_in_river#ev43
+predicate: use
+patient: divers+%2c+dogs+and+helicopters
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev43
+sentence: Lam Luong, a 37 year old shrimp fisherman from Irvington, Bayou La Batre, Alabama, United States, has confessed to throwing his four children off an 80 feet high bridge after a fight with his wife the day before.
+agent: Alabama_father_throws_children_in_river#ev18
+predicate: wife
+patient: luong+%27s
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev18
+sentence: Family members and friends told Fox News that the couple had been fighting over several things, including Luong's girlfriend, on Sunday evening and Monday morning.
+agent: Alabama_father_throws_children_in_river#ev20
+predicate: girlfriend
+patient: luong+%27s
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev20
+sentence: Luong later drove off with his four children, whom he reported missing to the police and claimed he had left them with his girlfriend who lives in a hotel.
+agent: Alabama_father_throws_children_in_river#ev20
+predicate: girlfriend
+patient: luong+%27s
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev20
+sentence: The Associated Press say that the authorities believe that Dauphin Island Bridge is where Luong threw the four children, of which he was the biological father of three, into the water.
+agent: Senior_security_official:_%22Hardly_any_chance%22_to_ban_German_Church_of_Scientology#ev49
+predicate: say
+patient: the+possibility+of+an+overdose
+event: http://en.wikinews.org/wiki/Senior_security_official:_%22Hardly_any_chance%22_to_ban_German_Church_of_Scientology#ev49
+sentence: Initially the family had feared that Luong had traded his children to fund a drug habit.
+agent: Alabama_father_throws_children_in_river#ev32
+predicate: fund
+patient: a+drug+habit
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev32
+sentence: Luong's wife, Ngoc Phan, is at the family home which they shared with her mother.
+agent: Alabama_father_throws_children_in_river#ev18
+predicate: wife
+patient: luong+%27s
+event: http://en.wikinews.org/wiki/Alabama_father_throws_children_in_river#ev18
+sentence: The issue of same-sex marriage has been contested over recent months.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: Alabama Chief Justice Roy Moore had told judges not to issue licenses.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev58
+predicate: tell
+patient: not+to+issue+licenses
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev58
+sentence: The national Supreme Court intervened in January, deeming Moore's decision unconstitutional.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: The national Supreme Court intervened in January, deeming Moore's decision unconstitutional.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev59
+predicate: deem
+patient: moore+%27s+decision+unconstitutional
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev59
+sentence: Of the 67 state counties, only a third of them began to issue same-sex marriage licences.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: The status of the licenses that have already been issued in Alabama hasn't been made clear.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: The ruling goes against an earlier order by the United States Supreme Court, allowing judges to issue same-sex couples a marriage license.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev47
+predicate: order
+patient: all+judges
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev47
+sentence: The Alabama Supreme Court said that the pre-issued licenses were "purported".
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev61
+predicate: say
+patient: the+pre-issued+licenses
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev61
+sentence: On this issue, Kennedy said "These people are married.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev61
+predicate: say
+patient: the+pre-issued+licenses
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev61
+sentence: The ruling goes against an earlier order by the United States Supreme Court, allowing judges to issue same-sex couples a marriage license.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev46
+predicate: allow
+patient: for+%60+marriage+%27
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev46
+sentence: The ruling goes against an earlier order by the United States Supreme Court, allowing judges to issue same-sex couples a marriage license.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: The ruling said "As it has done for approximately two centuries, Alabama law allows for ‘marriage’ between only one man and one woman.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev46
+predicate: allow
+patient: for+%60+marriage+%27
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev46
+sentence: The Supreme Court of Alabama yesterday ordered all judges to halt in issuing same-sex marriage licenses in the state.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev47
+predicate: order
+patient: all+judges
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev47
+sentence: Alabama[...] judges have a[...] duty not to issue any marriage license contrary to this law.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: The Supreme Court of Alabama yesterday ordered all judges to halt in issuing same-sex marriage licenses in the state.
+agent: Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+predicate: issue
+patient: same-sex+couples+a+marriage+license
+event: http://en.wikinews.org/wiki/Alabama_Supreme_Court_orders_judges_to_stop_issuing_same-sex_marriage_licences#ev18
+sentence: It was unclear if the driver jumped or was ejected, though National Transportation Safety Board spokeswoman Debbie Hersman said the bus driver was found on the overpass, and that, "We are trying to determine why the bus driver was on the overpass."
+agent: Alabama_School_Bus_Crash_kills_4#ev82
+predicate: say
+patient: the+laidlaw+education+services-contracted+school+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev82
+sentence: Tragedy struck Huntsville, Alabama Monday morning when a school bus transporting Lee High School students to a local trade school careened over a retaining wall on an elevated part of Interstate 565 at the U.S. highway 231 exit and plummeted 30 feet.
+agent: Alabama_School_Bus_Crash_kills_4#ev24
+predicate: careen
+patient: headlong+onto+the+ground+below
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev24
+sentence: Thad Sokolowski, a 17-year-old Lee High School eyewitness said, "The orange car was going to pass the bus.
+agent: Alabama_School_Bus_Crash_kills_4#ev82
+predicate: say
+patient: the+laidlaw+education+services-contracted+school+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev82
+sentence: He thought something was wrong with the car, like his tire got blown out because it started fishtailing."
+agent: Alabama_School_Bus_Crash_kills_4#ev46
+predicate: pass
+patient: the+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev46
+sentence: He added that the orange Toyota hit the bus, "but not hard.
+agent: Alabama_School_Bus_Crash_kills_4#ev48
+predicate: add
+patient: Toyota
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev48
+sentence: He added that the orange Toyota hit the bus, "but not hard.
+agent: Alabama_School_Bus_Crash_kills_4#ev76
+predicate: hit
+patient: the+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev76
+sentence: It was a bump," adding that the bus "skidded down the rail and it was gone."
+agent: Alabama_School_Bus_Crash_kills_4#ev48
+predicate: add
+patient: Toyota
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev48
+sentence: Police Chief Rex Reynolds said evidence will be presented to a Grand Jury, as is required by state law for fatalities involving minors, and added that charges have not yet been filed against the 17-year old Toyota driver.
+agent: Alabama_School_Bus_Crash_kills_4#ev93
+predicate: say
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev93
+sentence: Police Chief Rex Reynolds said evidence will be presented to a Grand Jury, as is required by state law for fatalities involving minors, and added that charges have not yet been filed against the 17-year old Toyota driver.
+agent: Alabama_School_Bus_Crash_kills_4#ev48
+predicate: add
+patient: Toyota
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev48
+sentence: Tragedy struck Huntsville, Alabama Monday morning when a school bus transporting Lee High School students to a local trade school careened over a retaining wall on an elevated part of Interstate 565 at the U.S. highway 231 exit and plummeted 30 feet.
+agent: Stern:_greatly_underestimated_costs_in_climate_change_report?#ev16
+predicate: highway
+patient: India
+event: http://en.wikinews.org/wiki/Stern:_greatly_underestimated_costs_in_climate_change_report?#ev16
+sentence: Chief Reynolds said the bus driver had a clean driving record.
+agent: Alabama_School_Bus_Crash_kills_4#ev93
+predicate: say
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev93
+sentence: Mass chaos ensued and Crestwood Medical Center and Huntsville Hospital, the two local hospitals, both activated their Mass Casualty action plans.
+agent: Alabama_School_Bus_Crash_kills_4#ev77
+predicate: have
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev77
+sentence: Emergency response personnel from throughout the area were called upon to assist in rescue efforts.
+agent: Alabama_School_Bus_Crash_kills_4#ev57
+predicate: personnel
+patient: medical+and+nursing
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev57
+sentence: Huntsville Hospital emergency room physician Dr. Sherrie Squyres said all off-duty hospital medical and nursing personnel were requested to return to work, and that three trauma surgeons and one neurosurgeon were committed exclusively to accident response.
+agent: Alabama_School_Bus_Crash_kills_4#ev59
+predicate: physician
+patient: emergency+room
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev59
+sentence: Huntsville Hospital emergency room physician Dr. Sherrie Squyres said all off-duty hospital medical and nursing personnel were requested to return to work, and that three trauma surgeons and one neurosurgeon were committed exclusively to accident response.
+agent: Alabama_School_Bus_Crash_kills_4#ev93
+predicate: say
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev93
+sentence: Huntsville Hospital emergency room physician Dr. Sherrie Squyres said all off-duty hospital medical and nursing personnel were requested to return to work, and that three trauma surgeons and one neurosurgeon were committed exclusively to accident response.
+agent: Alabama_School_Bus_Crash_kills_4#ev57
+predicate: personnel
+patient: medical+and+nursing
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev57
+sentence: Among the problems facing hospital and rescue personnel was the absence of personal identification among the victims.
+agent: Alabama_School_Bus_Crash_kills_4#ev57
+predicate: personnel
+patient: medical+and+nursing
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev57
+sentence: Among the problems facing hospital and rescue personnel was the absence of personal identification among the victims.
+agent: Alabama_School_Bus_Crash_kills_4#ev62
+predicate: absence
+patient: of+personal+identification
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev62
+sentence: Huntsville City Schools Superintendent Dr. Ann Roy Moore said that the Lee High School principal had initiated a student ID card program, "but not every student carried the ID."
+agent: Alabama_School_Bus_Crash_kills_4#ev93
+predicate: say
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev93
+sentence: Huntsville City Schools Superintendent Dr. Ann Roy Moore said that the Lee High School principal had initiated a student ID card program, "but not every student carried the ID."
+agent: Alabama_School_Bus_Crash_kills_4#ev65
+predicate: initiate
+patient: a+student+id+card+program
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev65
+sentence: Brad Holley, Field Director for Alabama Department of Education, noting the tragedy said "We have not had a student killed while riding a school bus since 1969."
+agent: Alabama_School_Bus_Crash_kills_4#ev104
+predicate: carry
+patient: the+id
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev104
+sentence: Brad Holley, Field Director for Alabama Department of Education, noting the tragedy said "We have not had a student killed while riding a school bus since 1969."
+agent: Alabama_School_Bus_Crash_kills_4#ev93
+predicate: say
+patient: a+clean+driving+record
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev93
+sentence: Brad Holley, Field Director for Alabama Department of Education, noting the tragedy said "We have not had a student killed while riding a school bus since 1969."
+agent: Alabama_School_Bus_Crash_kills_4#ev106
+predicate: student
+patient: bus+transporting
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev106
+sentence: Huntsville's last school bus related fatality was November 19, 1968 when a bus transporting students from Lee High Chapman Junior High Schools careened off Bankhead Parkway on Monte Sano Mountain above Tollgate Road.
+agent: Alabama_School_Bus_Crash_kills_4#ev26
+predicate: bus
+patient: related+fatality
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev26
+sentence: Huntsville's last school bus related fatality was November 19, 1968 when a bus transporting students from Lee High Chapman Junior High Schools careened off Bankhead Parkway on Monte Sano Mountain above Tollgate Road.
+agent: Alabama_School_Bus_Crash_kills_4#ev26
+predicate: bus
+patient: related+fatality
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev26
+sentence: Huntsville's last school bus related fatality was November 19, 1968 when a bus transporting students from Lee High Chapman Junior High Schools careened off Bankhead Parkway on Monte Sano Mountain above Tollgate Road.
+agent: Alabama_School_Bus_Crash_kills_4#ev68
+predicate: transporting
+patient: bus+transporting
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev68
+sentence: Huntsville's last school bus related fatality was November 19, 1968 when a bus transporting students from Lee High Chapman Junior High Schools careened off Bankhead Parkway on Monte Sano Mountain above Tollgate Road.
+agent: Alabama_School_Bus_Crash_kills_4#ev106
+predicate: student
+patient: bus+transporting
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev106
+sentence: Huntsville's last school bus related fatality was November 19, 1968 when a bus transporting students from Lee High Chapman Junior High Schools careened off Bankhead Parkway on Monte Sano Mountain above Tollgate Road.
+agent: Alabama_School_Bus_Crash_kills_4#ev24
+predicate: careen
+patient: headlong+onto+the+ground+below
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev24
+sentence: None
+agent: Alabama_School_Bus_Crash_kills_4#ev80
+predicate: cause
+patient: that+wreck
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev80
+sentence: Huntsville Police spokesman Wendell Johnson said a 1990 Toyota Celica apparently hit the Laidlaw Education Services-contracted school bus.
+agent: Alabama_School_Bus_Crash_kills_4#ev82
+predicate: say
+patient: the+laidlaw+education+services-contracted+school+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev82
+sentence: Tragedy struck Huntsville, Alabama Monday morning when a school bus transporting Lee High School students to a local trade school careened over a retaining wall on an elevated part of Interstate 565 at the U.S. highway 231 exit and plummeted 30 feet.
+agent: Alabama_School_Bus_Crash_kills_4#ev26
+predicate: bus
+patient: related+fatality
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev26
+sentence: Huntsville Police spokesman Wendell Johnson said a 1990 Toyota Celica apparently hit the Laidlaw Education Services-contracted school bus.
+agent: Alabama_School_Bus_Crash_kills_4#ev70
+predicate: hit
+patient: the+laidlaw+education+services-contracted+school+bus
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev70
+sentence: The bus driver apparently attempted evasive action, and a reaction sent the right tire climbing up the protective barrier.
+agent: Alabama_School_Bus_Crash_kills_4#ev26
+predicate: bus
+patient: related+fatality
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev26
+sentence: The bus driver apparently attempted evasive action, and a reaction sent the right tire climbing up the protective barrier.
+agent: Alabama_School_Bus_Crash_kills_4#ev37
+predicate: attempt
+patient: evasive+action
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev37
+sentence: The buses momentum caused it to teeter on the wall briefly, flipped upside down, careening headlong onto the ground below.
+agent: Alabama_School_Bus_Crash_kills_4#ev24
+predicate: careen
+patient: headlong+onto+the+ground+below
+event: http://en.wikinews.org/wiki/Alabama_School_Bus_Crash_kills_4#ev24
+sentence: The announcement caused an impassioned discussion about the civil rights leader's work, the problems facing the black community and whether Sharpton helps or hurts his cause.
+agent: World_AIDS_Day_events_held_around_the_globe#ev94
+predicate: help
+patient: Nelson_Mandela
+event: http://en.wikinews.org/wiki/World_AIDS_Day_events_held_around_the_globe#ev94
+sentence: Below is his interview with Al Sharpton on everything from Tawana Brawley, his purported feud with Barack Obama, criticism by influential African Americans such as Clarence Page, his experience running for President, to how he never expected he would see fifty (he is now 53).
+agent: Al_Sharpton_speaks_out_on_race,_rights_and_what_bothers_him_about_his_critics#ev27
+predicate: run
+patient: for+president
+event: http://en.wikinews.org/wiki/Al_Sharpton_speaks_out_on_race,_rights_and_what_bothers_him_about_his_critics#ev27
+sentence: Internet statements on Al-Qaeda websites Tuesday and Thursday asked Muslims to pray for al-Zarqawi and said that an interim leader named Abu Hafs al-Gerni had been appointed.
+agent: Al_Qaeda_leader_Abu_Musab_al-Zarqawi_reported_%22wounded%22#ev16
+predicate: ask
+patient: to+pray+for+al-zarqawi
+event: http://en.wikinews.org/wiki/Al_Qaeda_leader_Abu_Musab_al-Zarqawi_reported_%22wounded%22#ev16
+sentence: Internet statements on Al-Qaeda websites Tuesday and Thursday asked Muslims to pray for al-Zarqawi and said that an interim leader named Abu Hafs al-Gerni had been appointed.
+agent: Al_Qaeda_leader_Abu_Musab_al-Zarqawi_reported_%22wounded%22#ev17
+predicate: say
+patient: an+interim+leader+named+abu+hafs
+event: http://en.wikinews.org/wiki/Al_Qaeda_leader_Abu_Musab_al-Zarqawi_reported_%22wounded%22#ev17
+sentence: ABC News is reporting that a key Al Qaeda operative was killed in the U.S. airstrike in Pakistan which killed 18 people, including women and children, last week.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: U.S. officials also say that Khalid Habib, another senior Al Qaeda operative, may have been at the site of the attack.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: U.S. officials also say that Khalid Habib, another senior Al Qaeda operative, may have been at the site of the attack.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+sentence: ABC News is reporting that a key Al Qaeda operative was killed in the U.S. airstrike in Pakistan which killed 18 people, including women and children, last week.
+agent: No_evidence_of_dead_terrorists_in_US_bombed_Pakistan_village#ev37_0
+predicate: report
+patient: exchanges+of+small+arms+fire
+event: http://en.wikinews.org/wiki/No_evidence_of_dead_terrorists_in_US_bombed_Pakistan_village#ev37_0
+sentence: Pakistani officials have been searching for the gravesights of the 4 or 5 terrorists killed in the attack where three houses were destroyed, but so far have been unsuccessful.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: Provincial authorities say that sympathizers probably took the bodies to be buried in the mountains to prevent their identification.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+sentence: "We do not have any evidence to prove that they have been killed, but we have indications that they were there and were among those bodies that were taken away," an unnamed official was quoted by the Associated Press news agency.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: "We do not have any evidence to prove that they have been killed, but we have indications that they were there and were among those bodies that were taken away," an unnamed official was quoted by the Associated Press news agency.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev63
+predicate: quote
+patient: an+unnamed+official
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev63
+sentence: Pakistani Interior Minister Aftab Sherpao had earlier stated that the Pakistani government had no knowledge of the identities of the foreigners who were believed killed in the missile attack.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: U.S. counterterrorism officials had no immediate comment on the report.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev48
+predicate: have
+patient: no+immediate+comment+on+the+report
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev48
+sentence: The White House, as of Tuesday, has not made mention of any U.S. connection with the attack, but called Pakistan a valuable ally in the war against terrorists.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev67
+predicate: comment
+patient: on+the+report
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev67
+sentence: The sources said he was among one of three known senior al Qaeda members present at the compound that was hit.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+sentence: "He's the man who trained the shoe bomber, Richard Reid and Zacharias Mousssaoui, as well as hundreds of others," said former FBI agent Jack Cloonan.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+sentence: ABC News is reporting that a key Al Qaeda operative was killed in the U.S. airstrike in Pakistan which killed 18 people, including women and children, last week.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: Mursi has a $5 million dollar bounty on his head and is well-known for his chemical weapons expertise, strange alias, and red beard.
+agent: Ariel_Sharon's_brain_shows_activity#ev49
+predicate: have
+patient: to+have+souter+%27s+house+removed
+event: http://en.wikinews.org/wiki/Ariel_Sharon's_brain_shows_activity#ev49
+sentence: Mursi has a $5 million dollar bounty on his head and is well-known for his chemical weapons expertise, strange alias, and red beard.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev21
+predicate: bounty
+patient: on+his+head
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev21
+sentence: 2 leader, Ayman al-Zawahiri, was also among those killed in the U.S. airstrikes.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev15
+sentence: Police were on high alert today in London, with 6,000 officers watching for a repeat of the attacks two and four weeks ago and they continue to investigate the 7 July bombings and are holding 15 people in connection with the 21 July attempt.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev45
+predicate: watch
+patient: for+a+repeat+of+the+attacks
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev45
+sentence: A warning has been sent out by Osama Bin Laden's lieutenant Ayman al-Zawahri saying that more attacks will be carried out because of Tony Blair's foreign policy decisions.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev36
+predicate: decision
+patient: foreign+policy
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev36
+sentence: A warning has been sent out by Osama Bin Laden's lieutenant Ayman al-Zawahri saying that more attacks will be carried out because of Tony Blair's foreign policy decisions.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev34
+predicate: send
+patient: a+warning
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev34
+sentence: Tony Blair has denied that his policies caused the July 7 bomb attacks.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev42
+predicate: deny
+patient: the+july+7+bomb+attacks
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev42
+sentence: Tony Blair has denied that his policies caused the July 7 bomb attacks.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev31
+predicate: cause
+patient: the+july+7+bomb+attacks
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev31
+sentence: Downing Street has refused to comment on the tape.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev10
+predicate: attack
+patient: the+july+7+bomb+attacks
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev10
+sentence: A warning has been sent out by Osama Bin Laden's lieutenant Ayman al-Zawahri saying that more attacks will be carried out because of Tony Blair's foreign policy decisions.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev10
+predicate: attack
+patient: the+july+7+bomb+attacks
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev10
+sentence: Downing Street has refused to comment on the tape.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev43
+predicate: refuse
+patient: to+comment+on+the+tape
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev43
+sentence: Downing Street has refused to comment on the tape.
+agent: Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev44
+predicate: comment
+patient: to+comment+on+the+tape
+event: http://en.wikinews.org/wiki/Al_Qaeda:_'Blair_brought_destruction_to_the_heart_of_London'#ev44
+sentence: Al Jazeera has yet to comment about Al-Rashedon's allegations.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev66
+predicate: comment
+patient: about+al-rashedon+%27s+allegations
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev66
+sentence: The website of international news service Al Jazeera has been restored and is working as normal, following a hack of the website by a group identifying itself as Al-Rashedon.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev20
+predicate: hack
+patient: of+the+website
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev20
+sentence: The nature, and exact purpose, of the group is unknown..
+
+Syria's civil war has been covered from the outset in great detail by Al Jazeera, based in Qatar, a Middle Eastern country whose government is supportive of the Syrian opposition.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev69
+predicate: purpose
+patient: exact+purpose
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev69
+sentence: Al Jazeera's English website was previously attacked in February, by a group identifying itself as the Syrian Electronic Army [SEA].
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+predicate: website
+patient: of+international+news+service+al+jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+sentence: The same group accessed Al Jazeera's page on social networking website Twitter in July, posting messages critical of Syrian opposition members.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev49
+predicate: access
+patient: on+social+networking+website+twitter
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev49
+sentence: The same group accessed Al Jazeera's page on social networking website Twitter in July, posting messages critical of Syrian opposition members.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev72
+predicate: post
+patient: United_States_Armed_Forces
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev72
+sentence: Wikinews was contacted Tuesday by Al Jazeera about the incident, and referred to a statement from a spokesperson for the news service saying: "Some visitors to our websites faced disruption after external DNS servers were compromised.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev54
+predicate: contact
+patient: Wikinews
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev54
+sentence: The SEA also claimed responsibility for attacking the websites of Saudi Arabian news service Al Arabiya and Harvard in the US state of Massachusetts.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+predicate: website
+patient: of+international+news+service+al+jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+sentence: The website of Reuters, another news service, was reportedly hacked by Syrian government supporters in August.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+predicate: website
+patient: of+international+news+service+al+jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+sentence: The website of Reuters, another news service, was reportedly hacked by Syrian government supporters in August.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev20
+predicate: hack
+patient: of+the+website
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev20
+sentence: Wikinews was contacted Tuesday by Al Jazeera about the incident, and referred to a statement from a spokesperson for the news service saying: "Some visitors to our websites faced disruption after external DNS servers were compromised.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev22
+predicate: refer
+patient: to+a+statement
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev22
+sentence: Wikinews was contacted Tuesday by Al Jazeera about the incident, and referred to a statement from a spokesperson for the news service saying: "Some visitors to our websites faced disruption after external DNS servers were compromised.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+predicate: website
+patient: of+international+news+service+al+jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+sentence: The website of international news service Al Jazeera has been restored and is working as normal, following a hack of the website by a group identifying itself as Al-Rashedon.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+predicate: website
+patient: of+international+news+service+al+jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev17
+sentence: On the hacked webpage Al-Rashedon, a group apparently supporting Syrian President Bashar al-Assad, said they had performed this action "in response to [Al Jazeera's] position against the people and government of Syria".
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev62
+predicate: position
+patient: against+the+people
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev62
+sentence: The website of international news service Al Jazeera has been restored and is working as normal, following a hack of the website by a group identifying itself as Al-Rashedon.
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev16
+predicate: work
+patient: as+normal
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev16
+sentence: The Al-Rashedon statement condemned Al Jazeera for its coverage of the Syrian civil war in an Arabic language statement which the group said was "support[ive] of the armed terrorist groups and spreading false fabricated news."
+agent: Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev63
+predicate: condemn
+patient: Al_Jazeera
+event: http://en.wikinews.org/wiki/Al_Jazeera_website_restored_after_Al-Rashedon_hack#ev63
+sentence: Reporters who were previously welcomed by opponents of Libyan leader Muammar Gaddafi now feel threatened by Gaddafi supporters as his forces near Benghazi.
+agent: US_President_Obama_considering_supplying_arms_to_Libyan_rebels#ev90
+predicate: opponent
+patient: Muammar_Gaddafi
+event: http://en.wikinews.org/wiki/US_President_Obama_considering_supplying_arms_to_Libyan_rebels#ev90
+sentence: There are signs that Gaddafi intends to drive the foreign press out of Libya.
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev77
+predicate: intend
+patient: the+foreign+press
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev77
+sentence: There are signs that Gaddafi intends to drive the foreign press out of Libya.
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev48
+predicate: drive
+patient: the+foreign+press
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev48
+sentence: Many journalists are now planning to leave the city.
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev80
+predicate: plan
+patient: to+leave+the+city
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev80
+sentence: The director of Al Jazeera, Wadah Khanfar, said that the killing of the cameraman followed "an unprecedented campaign" against the news organization by Gaddafi.
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev49
+predicate: leave
+patient: to+leave+the+city
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev49
+sentence: He said, "Al Jazeera reiterates the assault cannot dent its resolve to continue its mission, professionally enlightening the public of the unfolding events in Libya and elsewhere."
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev54
+predicate: dent
+patient: its+resolve+to+continue+its+mission
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev54
+sentence: He said, "Al Jazeera reiterates the assault cannot dent its resolve to continue its mission, professionally enlightening the public of the unfolding events in Libya and elsewhere."
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev62
+predicate: continue
+patient: its+mission
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev62
+sentence: Al Jazeera, in an official statement, called the act a "cowardly crime" and "part of the Libyan regime's malicious campaign targeting Al Jazeera and its staff".
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev66
+predicate: call
+patient: the+act
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev66
+sentence: Al Jaber was rushed to a hospital but a bullet had apparently penetrated his heart and he died.
+agent: Al_Jazeera_cameraman_killed_in_eastern_Libya#ev31
+predicate: penetrate
+patient: his+heart
+event: http://en.wikinews.org/wiki/Al_Jazeera_cameraman_killed_in_eastern_Libya#ev31
+sentence: The new channel has named its management team:
+* Nigel Parsons is to head operations at the company's Doha headquarters
+* Sue Philips, a former employee of the Canadian Broadcasting Corporation, is to be in charge of the European coverage from Al Jazeera's London office
+* Trish Carter, formerly of Television New Zealand is to head the Asian desk in Kuala Lumpur
+* And Will Stebbins, formerly with Associated Press Television News, is to head the North American operations.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev34
+predicate: head
+patient: the+north+american+operations
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev34
+sentence: The new channel has named its management team:
+* Nigel Parsons is to head operations at the company's Doha headquarters
+* Sue Philips, a former employee of the Canadian Broadcasting Corporation, is to be in charge of the European coverage from Al Jazeera's London office
+* Trish Carter, formerly of Television New Zealand is to head the Asian desk in Kuala Lumpur
+* And Will Stebbins, formerly with Associated Press Television News, is to head the North American operations.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev34
+predicate: head
+patient: the+north+american+operations
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev34
+sentence: The new channel has named its management team:
+* Nigel Parsons is to head operations at the company's Doha headquarters
+* Sue Philips, a former employee of the Canadian Broadcasting Corporation, is to be in charge of the European coverage from Al Jazeera's London office
+* Trish Carter, formerly of Television New Zealand is to head the Asian desk in Kuala Lumpur
+* And Will Stebbins, formerly with Associated Press Television News, is to head the North American operations.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev34
+predicate: head
+patient: the+north+american+operations
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev34
+sentence: The project fits in with the robust growth and in-your-face style of the original channel, but faces significant challenges in the new markets.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev53
+predicate: face
+patient: significant+challenges+in+the+new+markets
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev53
+sentence: Al Jazeera's confrontational approach to news has earned it enemies in every government in the Middle East.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev16
+predicate: approach
+patient: to+news
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev16
+sentence: Al Jazeera's confrontational approach to news has earned it enemies in every government in the Middle East.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev17
+predicate: earn
+patient: enemies+in+every+government
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev17
+sentence: Its independence has caused the Iranian government to close its Tehran bureau for covering ethnic riots near the border with Iraq.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev44
+predicate: cause
+patient: the+iranian+government
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev44
+sentence: Al Jazeera has also earned the enmity of Washington D.C., where the Bush administration regularly complains about their coverage.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev17
+predicate: earn
+patient: enemies+in+every+government
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev17
+sentence: Al Jazeera has also earned the enmity of Washington D.C., where the Bush administration regularly complains about their coverage.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev56
+predicate: complain
+patient: about+their+coverage
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev56
+sentence: Al Jazeera offices were also hit by U.S. weapons in Kabul, Afghanistan, and Baghdad, Iraq, although the U.S. military insists they were accidental targets.
+agent: Al_Jazeera_announces_English-language_channel_for_2006#ev58
+predicate: insist
+patient: they+were+accidental+targets
+event: http://en.wikinews.org/wiki/Al_Jazeera_announces_English-language_channel_for_2006#ev58
+sentence: As for similar operations taking place in America, it's only a matter of time.
+agent: Aljazeera_airs_new_audiotape_by_Osama_bin_Laden#ev62
+predicate: take
+patient: United_States
+event: http://en.wikinews.org/wiki/Aljazeera_airs_new_audiotape_by_Osama_bin_Laden#ev62
+sentence: Portions were broadcast in which Bin Laden offers a "a long-term truce" to allow rebuilding of Afghanistan and 
+Iraq while also making threats of "new attacks" against the United States.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev55
+predicate: offer
+patient: of+a+truce
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev55
+sentence: But what triggered my desire to talk to you is the continuous deliberate misinformation given by your president [George W.] Bush, when it comes to polls made in your home country which reveal that the majority of your people are willing to withdraw U.S. forces from Iraq."
+agent: Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev73
+predicate: withdraw
+patient: United_States_Armed_Forces
+event: http://en.wikinews.org/wiki/Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev73
+sentence: Portions were broadcast in which Bin Laden offers a "a long-term truce" to allow rebuilding of Afghanistan and 
+Iraq while also making threats of "new attacks" against the United States.
+agent: Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev113
+predicate: allow
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev113
+sentence: In a White House press conference today, Press Secretary Scott McClellan showed no fear: "We are taking the fight to the enemy and we will find them where ever they are.
+agent: Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev138
+predicate: show
+patient: no+fear
+event: http://en.wikinews.org/wiki/Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev138
+sentence: In a White House press conference today, Press Secretary Scott McClellan showed no fear: "We are taking the fight to the enemy and we will find them where ever they are.
+agent: Aljazeera_airs_new_audiotape_by_Osama_bin_Laden#ev62
+predicate: take
+patient: United_States
+event: http://en.wikinews.org/wiki/Aljazeera_airs_new_audiotape_by_Osama_bin_Laden#ev62
+sentence: The CIA ran voice analyzer tests on the tape against previous tapes and confirmed that the tape is authentic and that of Bin Laden's voice.
+agent: Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev87
+predicate: run
+patient: voice+analyzer+tests
+event: http://en.wikinews.org/wiki/Al_Jazeera_airs_new_Osama_Bin_Laden_tape#ev87
+sentence: The CIA ran voice analyzer tests on the tape against previous tapes and confirmed that the tape is authentic and that of Bin Laden's voice.
+agent: Ayman_al-Zawahiri_releases_new_tape#ev41
+predicate: confirm
+patient: a+tape+that+surfaced+today
+event: http://en.wikinews.org/wiki/Ayman_al-Zawahiri_releases_new_tape#ev41
+sentence: This tape, says Michael Scheuer, former head of the CIA's Bin Laden unit, "proves two things...he's not dead.
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+sentence: And despite all the things we say about him being isolated and alone, he can clearly dominate the international media when he wants to."
+agent: Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53
+predicate: say
+patient: three+known+senior+al+qaeda+members
+event: http://en.wikinews.org/wiki/Al_Qaeda_bomb_maker_reportedly_killed_in_U.S._airstrike_in_Pakistan#ev53/var/lib/gridengine/util/starter.sh: line 41: 15896 Killed                  /usr/bin/cgexec -g freezer,memory,cpuset:${CGPATH} $@

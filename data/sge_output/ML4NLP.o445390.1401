@@ -1,0 +1,77 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+perception.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+sentence: Around 15:00 the first train had stopped at the station of Roccasecca, and was just to restart its journey, when the second train came at high speed on the same rail, slamming into the back of it.
+agent: Two_trains_collide_near_Rome#ev72
+predicate: stop
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev72
+sentence: A BBC report however suggested there could be at least 40 injured.
+agent: Californian_Governor_denies_clemency_for_Stanley_Tookie_Williams#ev52
+predicate: report
+patient: an+additional+%2c+fourth+large+explosion
+event: http://en.wikinews.org/wiki/Californian_Governor_denies_clemency_for_Stanley_Tookie_Williams#ev52
+sentence: However no evidence about that has been collected to support this at present.
+agent: Two_trains_collide_near_Rome#ev51
+predicate: pass
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev51
+sentence: Actually if the second train had to pass the station without stopping and overtaking the first train it seems resonable that it would pass on a different track.
+agent: Two_trains_collide_near_Rome#ev51
+predicate: pass
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev51
+sentence: Actually if the second train had to pass the station without stopping and overtaking the first train it seems resonable that it would pass on a different track.
+agent: Two_trains_collide_near_Rome#ev72
+predicate: stop
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev72
+sentence: Actually if the second train had to pass the station without stopping and overtaking the first train it seems resonable that it would pass on a different track.
+agent: Two_trains_collide_near_Rome#ev51
+predicate: overtake
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev51
+sentence: Hovewer the railway authority has confirmed that there has been no error in this sense, because both trains were scheduled on the platform 2.
+agent: Two_trains_collide_near_Rome#ev51
+predicate: pass
+patient: the+first+train
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev51
+sentence: Nevertheless even if the line were equipped by a modern security system, it would be of no help in this case.
+agent: Two_trains_collide_near_Rome#ev62
+predicate: equip
+patient: the+line
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev62
+sentence: The inauguration of the new "high speed" line between Rome and Naples was in program just for the day after the crash.
+agent: Two_trains_collide_near_Rome#ev66
+predicate: line
+patient: %60%60+high+speed+%27%27
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev66
+sentence: Relief efforts are being made difficult by the dark and cold weather.
+agent: Two_trains_collide_near_Rome#ev69
+predicate: make
+patient: relief+efforts
+event: http://en.wikinews.org/wiki/Two_trains_collide_near_Rome#ev69
+
+Mon Dec  3 11:30:11 CET 2018
+*** End of SGE job ***

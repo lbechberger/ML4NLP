@@ -1,0 +1,1519 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+vector.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+sentence: The pilots may have attempted an emergency landing on water.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev31
+predicate: attempt
+patient: an+emergency+landing+on+water
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev31
+sentence: Manufacturer Airbus, based in Toulouse, will aid the investigation, Airbus spokespersons stated.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev36
+predicate: aid
+patient: the+investigation
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev36
+sentence: A Civil Aviation Authority spokesperson stated that the incident does not cast any doubt on the airworthiness of the A320 design, a popular aircraft which has been involved in only ten fatal accidents since its introduction in 1987.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev38
+predicate: cast
+patient: any+doubt
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev38
+sentence: The twin-engine jet airliner had just undergone maintenance at Perpignan in preparation for its return to Air New Zealand by German airline XL Airways, which had been operating it on lease.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev40
+predicate: have
+patient: just+undergone+maintenance
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev40
+sentence: The seven on board included two XL Airways crew, Civil Aviation Authority inspector Jeremy Cook of Wellington, and four Air New Zealand personnel.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev22
+predicate: personnel
+patient: involved+personnel
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev22
+sentence: Air New Zealand has identified involved personnel as Captain Brian Horrell and Murray White of Auckland, and Michael Gyles and Noel Marsh of Christchurch.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev23
+predicate: identify
+patient: involved+personnel
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev23
+sentence: Air New Zealand has identified involved personnel as Captain Brian Horrell and Murray White of Auckland, and Michael Gyles and Noel Marsh of Christchurch.
+agent: Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev22
+predicate: personnel
+patient: involved+personnel
+event: http://en.wikinews.org/wiki/Airbus_A320_crashes_off_French_coast,_7_missing_or_dead#ev22
+sentence: The United States Missile Defense Agency have announced that their airborne laser system has successfully shot down a ballistic missile for the first time.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev20
+predicate: shoot
+patient: its+laser
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev20
+sentence: It is designed to operate at high altitudes above the clouds, and to detect and destroy ballistic missiles soon after launch whilst they are still in their boosting phase.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev26
+predicate: destroy
+patient: to+destroy+the+target
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev26
+sentence: "Through its hard work and technical ingenuity, the government-industry team has produced a breakthrough with incredible potential," stated Greg Hyslop, vice president of Boeing Missile Defense Systems.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev44
+predicate: work
+patient: on+the+program
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev44
+sentence: "Through its hard work and technical ingenuity, the government-industry team has produced a breakthrough with incredible potential," stated Greg Hyslop, vice president of Boeing Missile Defense Systems.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev43
+predicate: produce
+patient: a+breakthrough+with+incredible+potential
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev43
+sentence: "Through its hard work and technical ingenuity, the government-industry team has produced a breakthrough with incredible potential," stated Greg Hyslop, vice president of Boeing Missile Defense Systems.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev47
+predicate: breakthrough
+patient: a+breakthrough+with+incredible+potential
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev47
+sentence: The US has been working on the program since 1996, and has faced numerous problems in that time.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev50
+predicate: make
+patient: history+%27%27
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev50
+sentence: The US has been working on the program since 1996, and has faced numerous problems in that time.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev44
+predicate: work
+patient: on+the+program
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev44
+sentence: The US has been working on the program since 1996, and has faced numerous problems in that time.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev98
+predicate: face
+patient: numerous+problems
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev98
+sentence: In a test on Thursday the "Airborne Laser Testbed" (ALTB), a modified Boeing 747-400F, detected a boosting short-range missile and tracked it using a low-energy laser.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev85
+predicate: detect
+patient: a+boosting+short-range+missile
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev85
+sentence: Last year, Secretary of Defense Robert Gates cut the program back to a single jet for research, suggesting it would not see actual deployment.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev101
+predicate: suggest
+patient: it+would+not+see+actual+deployment
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev101
+sentence: "So, right now the [jet] would have to orbit inside the borders of Iran in order to be able to try and use its laser to shoot down that missile in the boost phase."
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev20
+predicate: shoot
+patient: its+laser
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev20
+sentence: However, he said that directed energy weapons still had potential for missile defense.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev83
+predicate: have
+patient: United_States_Department_of_Defense
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev83
+sentence: A second low-energy laser was used to measure and compensate for atmospheric disturbance, before the aircraft's High Energy Laser was used to destroy the target.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev25
+predicate: compensate
+patient: for+atmospheric+disturbance
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev25
+sentence: A second low-energy laser was used to measure and compensate for atmospheric disturbance, before the aircraft's High Energy Laser was used to destroy the target.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev26
+predicate: destroy
+patient: to+destroy+the+target
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev26
+sentence: It was launched from sea, and shot down by the ALTB within two minutes.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev20
+predicate: shoot
+patient: its+laser
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev20
+sentence: In a second test less than an hour later, a solid-fuel missile launched from a ground location was also successfully hit by the High Energy Laser, but deliberately not destroyed.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev26
+predicate: destroy
+patient: to+destroy+the+target
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev26
+sentence: A similar missile was destroyed on February 3.
+agent: Airborne_laser_successfully_destroys_ballistic_missile#ev26
+predicate: destroy
+patient: to+destroy+the+target
+event: http://en.wikinews.org/wiki/Airborne_laser_successfully_destroys_ballistic_missile#ev26
+sentence: The group adds that it also conducted checks on Solo International Airport and Semarang International Airport, and that these airports also had invalid Airport Operating Certificates.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev85
+predicate: have
+patient: AirportOperatingCertificates
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev85
+sentence: The final report was not released at the time as the client in question felt it 'too sensitive', and Flight Safety says that it was rapidly covered up three months later when it leaked in Indonesia.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev100
+predicate: feel
+patient: %60+too+sensitive+%27
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev100
+sentence: The final report was not released at the time as the client in question felt it 'too sensitive', and Flight Safety says that it was rapidly covered up three months later when it leaked in Indonesia.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: The group says it notified the International Civil Aviation Organisation (ICAO), and that they in turn said the Australian Transport Safety Bureau (ATSB) - who assisted in the crash investigation - was in control of the situation.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: The group says it notified the International Civil Aviation Organisation (ICAO), and that they in turn said the Australian Transport Safety Bureau (ATSB) - who assisted in the crash investigation - was in control of the situation.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: The group says it notified the International Civil Aviation Organisation (ICAO), and that they in turn said the Australian Transport Safety Bureau (ATSB) - who assisted in the crash investigation - was in control of the situation.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev50
+predicate: control
+patient: of+the+situation
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev50
+sentence: However, Flight Safety claim that when approached, the ATSB denied knowing about it.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev104
+predicate: deny
+patient: knowing+about+it
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev104
+sentence: Allegedly, the ATSB had missed the licensing discrepancy because they only checked the front page of the airport's license and did not conduct a detailed analysis of the small print.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev52
+predicate: miss
+patient: the+licensing+discrepancy
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev52
+sentence: Allegedly, the ATSB had missed the licensing discrepancy because they only checked the front page of the airport's license and did not conduct a detailed analysis of the small print.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+predicate: conduct
+patient: a+re-audit
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+sentence: Flight Safety claim that the Indonesian Director of Aviation Safety told them that the situation had been rectified.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev109
+predicate: tell
+patient: that+the+situation+had+been+rectified
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev109
+sentence: However, the group have now conducted a re-audit and say Solo and Yogyakarta airports both remain illegal.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+predicate: conduct
+patient: a+re-audit
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+sentence: However, the group have now conducted a re-audit and say Solo and Yogyakarta airports both remain illegal.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: Flight Safety go on to claim that the survivors of the crash and relatives of the deceased have not been informed either, and say that this will have a serious effect on the compensation process and on any insurance claims.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: Crikey, an Australian news service, also suggested that AU$12 million of aid promised by Australia to help Indonesia improve air safety is also being misused.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev114
+predicate: promise
+patient: to+help+indonesia+improve+air+safety
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev114
+sentence: Crikey, an Australian news service, also suggested that AU$12 million of aid promised by Australia to help Indonesia improve air safety is also being misused.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev61
+predicate: improve
+patient: air+safety
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev61
+sentence: An official statement by Flight Safety head Chris Weir concluded "It [the group's findings] should now be exposed as the safety issues remain unresolved."
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev63
+predicate: head
+patient: flight+safety
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev63
+sentence: Mardjono Siswo Suwarno of the National Transport Safety Committee, the body responsible for investigating the disaster, denied that Yogyakarta Airport was illegal, saying "At that time [the license] was still valid, but the RESA was not long enough...
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: The final report found that the pilot-in-command, who has been arrested and charged over the crash, attempted to land after fifteen Ground Proximity Warning System activations to tell him he was landing too fast, and says that although a longer runway and full-sized RESA wouldn't have stopped an airliner traveling at such excessive speed it could have reduced the toll of deaths and injuries.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: The directors of Yogyakarta and Solo airports claim that since the re-audit they have taken steps to improve safety and rectify any problems, but have not actually admitted their airports were illegal.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev61
+predicate: improve
+patient: air+safety
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev61
+sentence: Indonesian director general of air transportation Budi Mulyawan Suyitno said that although local budget limitations have prevented some airports from being improved there are no problems currently at Yogyakarta, with improvements including declaration of a RESA for 140 metres of the 2,250 metre runway and stationing Aircraft Rescue and Firefighting trucks at the airport.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+predicate: say
+patient: solo+and+yogyakarta+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev101
+sentence: Indonesian director general of air transportation Budi Mulyawan Suyitno said that although local budget limitations have prevented some airports from being improved there are no problems currently at Yogyakarta, with improvements including declaration of a RESA for 140 metres of the 2,250 metre runway and stationing Aircraft Rescue and Firefighting trucks at the airport.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev81
+predicate: prevent
+patient: some+airports
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev81
+sentence: Since these conditions remained unchanged, the license effectively voided six months before the disaster, claim Flight Safety.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev40
+predicate: void
+patient: six+months
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev40
+sentence: The group adds that it also conducted checks on Solo International Airport and Semarang International Airport, and that these airports also had invalid Airport Operating Certificates.
+agent: Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+predicate: conduct
+patient: a+re-audit
+event: http://en.wikinews.org/wiki/Air_safety_group_says_airport_was_operating_illegally_without_license_when_Garuda_Indonesia_Flight_200_crashed#ev44
+sentence: Secret Service agents rushed the President from the Oval Office into an underground shelter.
+agent: Air_alarm_at_White_House,_Bush_moved_to_safety#ev9
+predicate: rush
+patient: the+president
+event: http://en.wikinews.org/wiki/Air_alarm_at_White_House,_Bush_moved_to_safety#ev9
+sentence: White House press secretary Scott McClellan announced that the President reached the shelter quickly, to demonstrate that the President is constantly in a safe environment.
+agent: Air_alarm_at_White_House,_Bush_moved_to_safety#ev21
+predicate: reach
+patient: the+shelter
+event: http://en.wikinews.org/wiki/Air_alarm_at_White_House,_Bush_moved_to_safety#ev21
+sentence: Striking pilots at Air Zimbabwe have been told that they could lose their jobs if they don't return to work.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+predicate: strike
+patient: air+zimbabwe
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+sentence: The pilots are currently on the third day of striking over a pay dispute.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+predicate: strike
+patient: air+zimbabwe
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+sentence: Their wage is currently $2,500 a month, but the pilots are currently receiving just $1,200.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev17
+predicate: receive
+patient: just+%24+1%2c200
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev17
+sentence: Jonathan Kadzura, board chairperson for Air Zimbabwe released a statement saying "The board and management have resolved to give them a 24-hour notice to go back to work.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev20
+predicate: resolve
+patient: to+go+back+to+work
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev20
+sentence: Jonathan Kadzura, board chairperson for Air Zimbabwe released a statement saying "The board and management have resolved to give them a 24-hour notice to go back to work.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev21
+predicate: give
+patient: to+go+back+to+work
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev21
+sentence: Jonathan Kadzura, board chairperson for Air Zimbabwe released a statement saying "The board and management have resolved to give them a 24-hour notice to go back to work.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev32
+predicate: notice
+patient: to+go+back+to+work
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev32
+sentence: Air Zimbabwe can't afford to pay the airliner's force of 60 pilots their full wage but has promised to make up all back-pay.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev36
+predicate: make
+patient: to+make+up+all+back-pay
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev36
+sentence: In the time that the staff have been striking Air Zimbabwe been forced to use pilots from private South African airline Quaries to cover local routes.
+agent: Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+predicate: strike
+patient: air+zimbabwe
+event: http://en.wikinews.org/wiki/Air_Zimbabwe_pilots_'face_dismissal'_over_pay_strike#ev9
+sentence: The airline's new brand-mark and livery features a masi design created by Fijian artist, Makereta Matemosi.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev46
+predicate: design
+patient: brand-mark+and+livery
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev46
+sentence: The new identity is to "symbolises the airline's new identity and epitomises all that Fiji Airways represents.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev30
+predicate: epitomise
+patient: Air_Pacific
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev30
+sentence: The re-brand was described by interim CEO Aubrey Swift as allowing the airline to align itself "closer with Fiji as a destination" .
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev39
+predicate: describe
+patient: the+re-brand
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev39
+sentence: The re-brand was described by interim CEO Aubrey Swift as allowing the airline to align itself "closer with Fiji as a destination" .
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev40
+predicate: allow
+patient: the+airline
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev40
+sentence: The name change is designed in part to reduce the confusion which surrounded the name Air Pacific.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev12
+predicate: change
+patient: the+name+change
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev12
+sentence: Along with the name change, the airline has redesigned its website, and changed the name of each of its classes of service.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev12
+predicate: change
+patient: the+name+change
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev12
+sentence: Along with the name change, the airline has redesigned its website, and changed the name of each of its classes of service.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev17
+predicate: redesign
+patient: its+website
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev17
+sentence: Along with the name change, the airline has redesigned its website, and changed the name of each of its classes of service.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev12
+predicate: change
+patient: the+name+change
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev12
+sentence: The airline has also introduced plans to overhaul its fleet of older Boeing 747s with Airbus A330s.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev33
+predicate: introduce
+patient: its+fleet+of+older+boeing+747s
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev33
+sentence: The airline has also introduced plans to overhaul its fleet of older Boeing 747s with Airbus A330s.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev45
+predicate: plan
+patient: its+fleet+of+older+boeing+747s
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev45
+sentence: The airline has also introduced plans to overhaul its fleet of older Boeing 747s with Airbus A330s.
+agent: Air_Pacific_re-brands_as_Fiji_Airways#ev22
+predicate: overhaul
+patient: its+fleet+of+older+boeing+747s
+event: http://en.wikinews.org/wiki/Air_Pacific_re-brands_as_Fiji_Airways#ev22
+sentence: Flights from Auckland to Vancouver will operate three times a week between November and March, to coincide with the peak travel season between the two destinations, as Canadians escape winter and New Zealand skiers head to the Canadian slopes.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev9
+predicate: operate
+patient: between+november+and+march
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev9
+sentence: Flights from Auckland to Vancouver will operate three times a week between November and March, to coincide with the peak travel season between the two destinations, as Canadians escape winter and New Zealand skiers head to the Canadian slopes.
+agent: 100_icebergs_heading_for_New_Zealand#ev16
+predicate: head
+patient: New_Zealand
+event: http://en.wikinews.org/wiki/100_icebergs_heading_for_New_Zealand#ev16
+sentence: Canadian visitors make up two percent of international visitor arrivals, however they stay longer and spend more in New Zealand than many other visitors spent an average of 29 days in New Zealand in 2006, and spent almost $3400 each.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev35
+predicate: make
+patient: two+percent+of+international+visitor+arrivals
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev35
+sentence: Canadian visitors make up two percent of international visitor arrivals, however they stay longer and spend more in New Zealand than many other visitors spent an average of 29 days in New Zealand in 2006, and spent almost $3400 each.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev18
+predicate: spend
+patient: an+average+of+29+days
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev18
+sentence: Canadian visitors make up two percent of international visitor arrivals, however they stay longer and spend more in New Zealand than many other visitors spent an average of 29 days in New Zealand in 2006, and spent almost $3400 each.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev18
+predicate: spend
+patient: an+average+of+29+days
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev18
+sentence: Canadian visitors make up two percent of international visitor arrivals, however they stay longer and spend more in New Zealand than many other visitors spent an average of 29 days in New Zealand in 2006, and spent almost $3400 each.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev18
+predicate: spend
+patient: an+average+of+29+days
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev18
+sentence: Tourism New Zealand chief executive, George Hickton has said that the direct flights will make New Zealand look much more appealing to the Canadian market.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev36
+predicate: make
+patient: New_Zealand
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev36
+sentence: Tourism New Zealand chief executive, George Hickton has said that the direct flights will make New Zealand look much more appealing to the Canadian market.
+agent: Air_New_Zealand_opens_direct_route_to_Canada#ev40
+predicate: look
+patient: to+the+canadian+market
+event: http://en.wikinews.org/wiki/Air_New_Zealand_opens_direct_route_to_Canada#ev40
+sentence: At present, renowned companies such as Air France, Lufthansa group and Spanish Iberia Airlines own Embraer 190 jets, specified the representative of Air Moldova.
+agent: Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev7
+predicate: specify
+patient: Air_Moldova
+event: http://en.wikinews.org/wiki/Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev7
+sentence: The same source specified that Embraer 190 jet is one of the most economic and optimal aircrafts for operation, and it will be configured in a single-class cabin with 114 seats.
+agent: Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev7
+predicate: specify
+patient: Air_Moldova
+event: http://en.wikinews.org/wiki/Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev7
+sentence: Air Moldova, which links the Moldovan capital, Chişinău, to cities in Europe and the Middle East, intends to use the new plane to open new markets.
+agent: Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev29
+predicate: open
+patient: to+open+new+markets
+event: http://en.wikinews.org/wiki/Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev29
+sentence: On December 31, the Embraer 170/190 E-Jets had logged 764 firm orders and 786 options.
+agent: Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev13
+predicate: log
+patient: 764+firm+orders+and+786+options
+event: http://en.wikinews.org/wiki/Air_Moldova_completes_airpark_with_a_Brazilian_Embraer_aircraft#ev13
+sentence: We expect this satisfaction level will climb even higher once the Challenger 605 jets join the fleet.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev31
+predicate: join
+patient: the+fleet
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev31
+sentence: Tarek Arebi said "This purchase represents the launching of our fleet renewal program.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev55
+predicate: say
+patient: of+our+fleet+renewal+program
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev55
+sentence: Tarek Arebi said "This purchase represents the launching of our fleet renewal program.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev56
+predicate: represent
+patient: of+our+fleet+renewal+program
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev56
+sentence: Canadian vehicle and equipment manufacturers Bombardier announced on Thursday that Air Independence and Libyan Airlines have placed orders for new aircraft valued at a total US$190 million, excluding any optional extras at customer specification.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev13
+predicate: manufacturer
+patient: vehicle+and+equipment
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev13
+sentence: Air Independence, a European business aviation services company that already operates two Challenger 604 jets and one Challenger 800, have ordered 3 widebody Challenger 605 business jets, with a total value of US$82 million.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+predicate: order
+patient: Bombardier_Aerospace
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+sentence: In a separate order, Libyan Airlines have ordered 3 Bombardier CRJ900 regional jets with a value of approximately US$108 million.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+predicate: order
+patient: Bombardier_Aerospace
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+sentence: In a separate order, Libyan Airlines have ordered 3 Bombardier CRJ900 regional jets with a value of approximately US$108 million.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+predicate: order
+patient: Bombardier_Aerospace
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev46
+sentence: Managing director of Air Independence Andrian Feuchter said "Our customers love our current Challenger business jet fleet.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev47
+predicate: say
+patient: our+current+challenger+business+jet+fleet
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev47
+sentence: Managing director of Air Independence Andrian Feuchter said "Our customers love our current Challenger business jet fleet.
+agent: Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev48
+predicate: love
+patient: our+current+challenger+business+jet+fleet
+event: http://en.wikinews.org/wiki/Air_Independence_and_Libyan_Airlines_place_orders_for_Bombardier_aircraft_valued_at_$190_million#ev48
+sentence: Air France will also adjust its Paris-Bucharest timetable so that possibilities for transfer at Paris Charles de Gaulle airport can be maximised.
+agent: Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev15
+predicate: adjust
+patient: its+paris-bucharest+timetable
+event: http://en.wikinews.org/wiki/Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev15
+sentence: The fifth daily flight is also to be run under a codesharing agreement with TAROM — the two carriers have decided to allow the transfer of tickets between them.
+agent: Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev29
+predicate: decide
+patient: the+transfer+of+tickets+between+them
+event: http://en.wikinews.org/wiki/Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev29
+sentence: The fifth daily flight is also to be run under a codesharing agreement with TAROM — the two carriers have decided to allow the transfer of tickets between them.
+agent: Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev30
+predicate: allow
+patient: the+transfer+of+tickets+between+them
+event: http://en.wikinews.org/wiki/Air_France_to_launch_new_daily_flight_from_Paris_to_Bucharest#ev30
+sentence: A MiG-29 jet was scrambled to intercept the flight, an Airbus A340-300, which was bound for Bangkok after departing from Paris.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev9
+predicate: intercept
+patient: Airbus
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev9
+sentence: The Air France plane had just entered Indian airspace from Pakistan.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev15
+predicate: enter
+patient: indian+airspace
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev15
+sentence: The Air France plane had just entered Indian airspace from Pakistan.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev16
+predicate: airspace
+patient: Airbus
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev16
+sentence: The pilot had apparently used the wrong Identify Friend or Foe (IFF) code, used to help radar determine whether or not an aircraft is "friendly".
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+predicate: code
+patient: the+jet+%27s+pilot
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+sentence: The fighter was ordered to return to the ground after the jet's pilot gave the proper code.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev19
+predicate: give
+patient: the+proper+code
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev19
+sentence: "IAF radars picked up an aircraft today [Thursday] morning southeast of Amritsar in the northern sector.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+predicate: code
+patient: the+jet+%27s+pilot
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+sentence: The Indian Air Force (IAF) has said that an Air France passenger jet was intercepted by a fighter jet on Thursday, after failing to identify itself correctly.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev9
+predicate: intercept
+patient: Airbus
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev9
+sentence: The aircraft, at a flight level of 37,000 feet, had entered Indian airspace on an established border entry point.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev15
+predicate: enter
+patient: indian+airspace
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev15
+sentence: The aircraft, at a flight level of 37,000 feet, had entered Indian airspace on an established border entry point.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev16
+predicate: airspace
+patient: Airbus
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev16
+sentence: However, the aircraft was not in communication and also its secondary radar response code (IFF) was not correct and the aircraft identified as 'Unknown'," IAF officials said.
+agent: Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+predicate: code
+patient: the+jet+%27s+pilot
+event: http://en.wikinews.org/wiki/Air_France_passenger_jet_intercepted_by_Indian_Air_Force#ev36
+sentence: In a press communiquÃ©, Air France stated that AF447 had encountered an area of heavy turbulence at 02:00 GMT and that the aircraft had sent an automatic message indicating an electric failure at 02:14 UTC.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev64
+predicate: send
+patient: an+electric+failure+at+02%3a14+utc
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev64
+sentence: In a press communiquÃ©, Air France stated that AF447 had encountered an area of heavy turbulence at 02:00 GMT and that the aircraft had sent an automatic message indicating an electric failure at 02:14 UTC.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev64
+predicate: message
+patient: an+electric+failure+at+02%3a14+utc
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev64
+sentence: Search and rescue operations by the Brazilian Air Force are to be initially centered on the island of Fernando de Noronha.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev37
+predicate: operation
+patient: Brazilian_Air_Force
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev37
+sentence: He also requested that America use their surveillance satellites to assist in locating the plane.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev49
+predicate: use
+patient: their+surveillance+satellites
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev49
+sentence: Air France has provided three telephone numbers for the families and friends of those on board AF447: 
+*0800 800 812 for calls from within France 
+* 0800 881 20 20 for calls from Brazil 
+*+33 1 57 02 10 55, for calls from outside France or Brazil.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev73
+predicate: call
+patient: from+outside+france+or+brazil
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev73
+sentence: Air France has provided three telephone numbers for the families and friends of those on board AF447: 
+*0800 800 812 for calls from within France 
+* 0800 881 20 20 for calls from Brazil 
+*+33 1 57 02 10 55, for calls from outside France or Brazil.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev73
+predicate: call
+patient: from+outside+france+or+brazil
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev73
+sentence: Air France has provided three telephone numbers for the families and friends of those on board AF447: 
+*0800 800 812 for calls from within France 
+* 0800 881 20 20 for calls from Brazil 
+*+33 1 57 02 10 55, for calls from outside France or Brazil.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev73
+predicate: call
+patient: from+outside+france+or+brazil
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev73
+sentence: Reuters reports that an electrical short circuit during turbulence may have caused the plane to plunge into the Atlantic Ocean.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev44
+predicate: cause
+patient: the+plane
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev44
+sentence: The plane with registration F-GZCP has totalled 18,870 flight hours and went into service on 18 April 2005.
+agent: Air_France_jet_with_228_on_board_goes_missing#ev45
+predicate: have
+patient: totalled+18%2c870+flight+hours
+event: http://en.wikinews.org/wiki/Air_France_jet_with_228_on_board_goes_missing#ev45
+sentence: "We have received no news from flight AF447," said Air France in a statement.
+agent: Tail_from_Air_France_jet_recovered_from_Atlantic_Ocean#ev28
+predicate: say
+patient: no+news+from+flight+af447
+event: http://en.wikinews.org/wiki/Tail_from_Air_France_jet_recovered_from_Atlantic_Ocean#ev28
+sentence: "We have received no news from flight AF447," said Air France in a statement.
+agent: Somali_pirates_demand_$2_million_ransom_for_US_captain_held_hostage#ev52
+predicate: statement
+patient: no+news+from+flight+af447
+event: http://en.wikinews.org/wiki/Somali_pirates_demand_$2_million_ransom_for_US_captain_held_hostage#ev52
+sentence: Czech Airlines has a fleet of 51 planes.
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev34
+predicate: have
+patient: a+fleet+of+51+planes
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev34
+sentence: The latter also expressed interest in buying Czech Airlines.
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev44
+predicate: express
+patient: Czech_Airlines
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev44
+sentence: Last month, the Czech government announced that it is planning to sell its 91.51% stake in Czech Airlines, expecting to generate about US$270 million.
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+predicate: expect
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+sentence: The Czech Ministry of Finance owns 56.92% and the Czech Consolidation Agency 34.59%.
+agent: Clashes_in_France_after_anti-condom_speech_by_Pope#ev63
+predicate: own
+patient: no+opinion
+event: http://en.wikinews.org/wiki/Clashes_in_France_after_anti-condom_speech_by_Pope#ev63
+sentence: The remainder is owned by other Czech institutions.
+agent: Clashes_in_France_after_anti-condom_speech_by_Pope#ev63
+predicate: own
+patient: no+opinion
+event: http://en.wikinews.org/wiki/Clashes_in_France_after_anti-condom_speech_by_Pope#ev63
+sentence: Air France-KLM made a non-binding offer on this share: "Air France-KLM in a letter will today make a non-binding expression of interest in order to have access to detailed documentation on the company".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev21
+predicate: make
+patient: a+non-binding+offer
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev21
+sentence: Air France-KLM made a non-binding offer on this share: "Air France-KLM in a letter will today make a non-binding expression of interest in order to have access to detailed documentation on the company".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+predicate: offer
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+sentence: Air France-KLM made a non-binding offer on this share: "Air France-KLM in a letter will today make a non-binding expression of interest in order to have access to detailed documentation on the company".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev21
+predicate: make
+patient: a+non-binding+offer
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev21
+sentence: According to the airline, the Czech government expects no binding offers before June: "Firm offers are not expected before June, after an in-depth analysis of Czech Airlines by the candidates".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+predicate: expect
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+sentence: According to the airline, the Czech government expects no binding offers before June: "Firm offers are not expected before June, after an in-depth analysis of Czech Airlines by the candidates".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+predicate: offer
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+sentence: According to the airline, the Czech government expects no binding offers before June: "Firm offers are not expected before June, after an in-depth analysis of Czech Airlines by the candidates".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+predicate: offer
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev22
+sentence: According to the airline, the Czech government expects no binding offers before June: "Firm offers are not expected before June, after an in-depth analysis of Czech Airlines by the candidates".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+predicate: expect
+patient: firm+offers
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev39
+sentence: According to the airline, the Czech government expects no binding offers before June: "Firm offers are not expected before June, after an in-depth analysis of Czech Airlines by the candidates".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev42
+predicate: analysis
+patient: Czech_Airlines
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev42
+sentence: Among other things, it would enable the Group to strengthen its position in Central and Eastern Europe".
+agent: Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev28
+predicate: strengthen
+patient: Eastern_Europe
+event: http://en.wikinews.org/wiki/Air_France-KLM_interested_in_acquiring_Czech_Airlines#ev28
+sentence: The dispute surrounds stall warning systems.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+predicate: stall
+patient: an+aircraft
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+sentence: An aircraft stalls if it no longer has sufficient speed to keep itself airbourne.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+predicate: stall
+patient: an+aircraft
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+sentence: The correct course of action in a stall is to lower the nose, increasing an aircraft's speed; if the speed increases, the warnings can sound again.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev49
+predicate: increase
+patient: an+aircraft+%27s+speed
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev49
+sentence: The correct course of action in a stall is to lower the nose, increasing an aircraft's speed; if the speed increases, the warnings can sound again.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev49
+predicate: increase
+patient: an+aircraft+%27s+speed
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev49
+sentence: The BEA have responded that the last-minute call to remove a recommendation calling for changes to stall warning design was owing to a need to examine the issue further.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev33
+predicate: remove
+patient: for+changes+to+stall+warning+design
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev33
+sentence: The BEA have responded that the last-minute call to remove a recommendation calling for changes to stall warning design was owing to a need to examine the issue further.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+predicate: stall
+patient: an+aircraft
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev42
+sentence: The BEA have responded that the last-minute call to remove a recommendation calling for changes to stall warning design was owing to a need to examine the issue further.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev120
+predicate: examine
+patient: the+issue
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev120
+sentence: Friday's 117-page report did examine the actions and training of the pilots.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev120
+predicate: examine
+patient: the+issue
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev120
+sentence: The speed sensing system failed, causing the autopilot and autothrust to switch off.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev85
+predicate: cause
+patient: the+autopilot+and+autothrust
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev85
+sentence: This was followed by stall warnings, which the interim BEA report say were ignored by pilots during a three-and-a-half minute fall of 38,000 feet into the ocean.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev65
+predicate: ignore
+patient: an+enquiry+that+is+exemplary
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev65
+sentence: For weeks his organisation has mounted protests against the direction taken by the investigation.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev69
+predicate: mount
+patient: the+direction+taken+by+the+investigation
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev69
+sentence: Air France, who are battling legally with Airbus over responsibility (both firms are also under criminal investigation), wrote to the European Aviation Safety Agency asking that they examine the stall warnings and seek that they be changed in need be.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev71
+predicate: take
+patient: the+direction+taken+by+the+investigation
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev71
+sentence: Air France previously upgraded the speed sensors on their A330s.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev74
+predicate: upgrade
+patient: the+speed+sensors
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev74
+sentence: "There has never been such a transparent enquiry: it was filmed, took place under the judiciary's control, with Brazilian [and] American investigators.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev138
+predicate: defend
+patient: Bureau_d'Enquêtes_et_d'Analyses_pour_la_Sécurité_de_l'Aviation_Civile
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev138
+sentence: "There has never been such a transparent enquiry: it was filmed, took place under the judiciary's control, with Brazilian [and] American investigators.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev71
+predicate: take
+patient: the+direction+taken+by+the+investigation
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev71
+sentence: These controversies discredit an enquiry that is exemplary."
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev65
+predicate: discredit
+patient: an+enquiry+that+is+exemplary
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev65
+sentence: About 180 airlines use the Airbus A330.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev142
+predicate: say
+patient: it+%27s+neither+conceivable+nor+admissible
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev142
+sentence: None
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev90
+predicate: use
+patient: Airbus
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev90
+sentence: At the last moment, the BEA removed a recommendation added by chief investigator Alain Bouillard which called for alarms on Airbus A330s to be modified.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev33
+predicate: remove
+patient: for+changes+to+stall+warning+design
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev33
+sentence: The SNPL has withdrawn all support in the probe.
+agent: Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev38
+predicate: withdraw
+patient: all+support
+event: http://en.wikinews.org/wiki/Air_France,_pilots_union,_victims_group_criticise_transatlantic_disaster_probe#ev38
+sentence: US travellers through the main Toronto hub more than doubled, indicating the increase in foreign air traffic to and through Canadian airports.
+agent: Air_Canada_back_in_the_black_in_2010#ev28
+predicate: increase
+patient: the+increased+net+revenues
+event: http://en.wikinews.org/wiki/Air_Canada_back_in_the_black_in_2010#ev28
+sentence: With labour contracts scheduled to end this month and next, the strong position of the airlines is expected to stiffen union resolve to share in the increased net revenues.
+agent: Air_Canada_back_in_the_black_in_2010#ev23
+predicate: stiffen
+patient: union+resolve
+event: http://en.wikinews.org/wiki/Air_Canada_back_in_the_black_in_2010#ev23
+sentence: With labour contracts scheduled to end this month and next, the strong position of the airlines is expected to stiffen union resolve to share in the increased net revenues.
+agent: Air_Canada_back_in_the_black_in_2010#ev28
+predicate: increase
+patient: the+increased+net+revenues
+event: http://en.wikinews.org/wiki/Air_Canada_back_in_the_black_in_2010#ev28
+sentence: Those revenues were helped by increasing numbers of passengers and reducing costs, as well as foreign exchange gains.
+agent: Air_Canada_back_in_the_black_in_2010#ev28
+predicate: increase
+patient: the+increased+net+revenues
+event: http://en.wikinews.org/wiki/Air_Canada_back_in_the_black_in_2010#ev28
+sentence: International travel, especially to the Pacific region, led the rises.
+agent: Air_Canada_back_in_the_black_in_2010#ev33
+predicate: lead
+patient: the+rises
+event: http://en.wikinews.org/wiki/Air_Canada_back_in_the_black_in_2010#ev33
+sentence: Low-cost German airline Air Berlin, which recently announced that it will join the Oneworld airline alliance, has stated that it plans to begin code-sharing with fellow Oneworld members American Airlines and Finnair as early as November.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+predicate: alliance
+patient: Berlin
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+sentence: Air Berlin joined the alliance sponsored by British Airways.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+predicate: join
+patient: Oneworld
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+sentence: Air Berlin joined the alliance sponsored by British Airways.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+predicate: alliance
+patient: Berlin
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+sentence: Air Berlin joined the alliance sponsored by British Airways.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev22
+predicate: sponsor
+patient: the+alliance
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev22
+sentence: The airline also said that it could begin code-sharing with British Airways and Iberia in summer 2011.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev30
+predicate: say
+patient: Finnair
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev30
+sentence: The same applies for Finnair Oyj," Air Berlin chief executive Joachim Hunold said.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev17
+predicate: apply
+patient: Finnair
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev17
+sentence: A code-share agreement with American Airlines would have a predicted "'incremental market potential' of 2.4 million passengers a year," according to Dow Jones.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev30
+predicate: say
+patient: Finnair
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev30
+sentence: Low-cost German airline Air Berlin, which recently announced that it will join the Oneworld airline alliance, has stated that it plans to begin code-sharing with fellow Oneworld members American Airlines and Finnair as early as November.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+predicate: join
+patient: Oneworld
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+sentence: Air Berlin accepted an invitation to join the Oneworld alliance late July.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+predicate: join
+patient: Oneworld
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+sentence: Air Berlin accepted an invitation to join the Oneworld alliance late July.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+predicate: alliance
+patient: Berlin
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+sentence: The air carrier became the first low-cost airline to join one of the three major airline alliances: Star Alliance, Oneworld, and SkyTeam.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+predicate: join
+patient: Oneworld
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev13
+sentence: The air carrier became the first low-cost airline to join one of the three major airline alliances: Star Alliance, Oneworld, and SkyTeam.
+agent: Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+predicate: alliance
+patient: Berlin
+event: http://en.wikinews.org/wiki/Air_Berlin_to_code-share_with_American_Airlines_and_Finnair_by_November#ev14
+sentence: Franken himself is owed $360,750 by Air America.
+agent: Air_America_radio_files_for_bankruptcy,_allegedly_due_to_advertiser_blackout#ev63
+predicate: show
+patient: its+flagship+program
+event: http://en.wikinews.org/wiki/Air_America_radio_files_for_bankruptcy,_allegedly_due_to_advertiser_blackout#ev63
+sentence: Air America Radio filed for bankruptcy on October 13th, with close to $20 million in liabilities.
+agent: Air_America_radio_files_for_bankruptcy,_allegedly_due_to_advertiser_blackout#ev9
+predicate: file
+patient: for+bankruptcy
+event: http://en.wikinews.org/wiki/Air_America_radio_files_for_bankruptcy,_allegedly_due_to_advertiser_blackout#ev9
+sentence: A rescue boat with a crew of 22 has been dispatched, with water police providing an additional vessel.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+predicate: provide
+patient: an+additional+vessel
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+sentence: The Indonesian Civil Aviation Authority is overseeing the efforts.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev72
+predicate: oversee
+patient: the+efforts
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev72
+sentence: The Civil Aviation Authority of Singapore is "ready to provide any assistance to support the search and rescue effort" according to a statement.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+predicate: provide
+patient: an+additional+vessel
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+sentence: The Civil Aviation Authority of Singapore is "ready to provide any assistance to support the search and rescue effort" according to a statement.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+predicate: assistance
+patient: Australia
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+sentence: The Singaporean military has sent two C-130 aircraft to assist.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev150
+predicate: send
+patient: two+c-130+aircraft+to+assist
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev150
+sentence: The Indian Navy has reportedly placed three ships and a Boeing P8-1 on standby to help.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+predicate: assist
+patient: it+would+assist+investigators
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+sentence: The Indian Navy has reportedly placed three ships and a Boeing P8-1 on standby to help.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev76
+predicate: place
+patient: areas+for+families+and+friends
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev76
+sentence: Australian Foreign Minister Julie Bishop telephoned her Indonesian equivalent, Retno Marsudi, to offer support.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+predicate: offer
+patient: australian+assistance
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+sentence: Australian Foreign Minister Julie Bishop telephoned her Indonesian equivalent, Retno Marsudi, to offer support.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+predicate: assistance
+patient: Australia
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+sentence: Bishop has also offered Australian assistance to South Korea, Singapore, and Malaysia.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+predicate: offer
+patient: australian+assistance
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+sentence: Bishop has also offered Australian assistance to South Korea, Singapore, and Malaysia.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+predicate: offer
+patient: australian+assistance
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+sentence: Bishop has also offered Australian assistance to South Korea, Singapore, and Malaysia.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+predicate: assistance
+patient: Australia
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev74
+sentence: Australian Prime Minister Tony Abbott contacted Indonesian President Joko Widodo to offer sympathies and a P3 Orion plane.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev152
+predicate: contact
+patient: Joko_Widodo
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev152
+sentence: Australian Prime Minister Tony Abbott contacted Indonesian President Joko Widodo to offer sympathies and a P3 Orion plane.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+predicate: offer
+patient: australian+assistance
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev77
+sentence: Areas for families and friends have been set up at Changi Airport where the flight was headed and at Juanda International Airport where it departed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev76
+predicate: set
+patient: areas+for+families+and+friends
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev76
+sentence: Areas for families and friends have been set up at Changi Airport where the flight was headed and at Juanda International Airport where it departed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+predicate: head
+patient: Surabaya
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+sentence: The area where the plane vanished around 40 minutes into its trip was experiencing thunderstorms.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev30
+predicate: vanish
+patient: an+indonesia+airasia+jet
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev30
+sentence: An Indonesia AirAsia jet vanished over the Kumai region today.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev30
+predicate: vanish
+patient: an+indonesia+airasia+jet
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev30
+sentence: Airbus released a statement saying the plane had accumulated 23,000 flying hours on 13,600 flights.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: Airbus released a statement saying the plane had accumulated 23,000 flying hours on 13,600 flights.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev69
+predicate: accumulate
+patient: 23%2c000+flying+hours+on+13%2c600+flights
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev69
+sentence: The BEA, which investigates aviation mishaps in France, is liaising with their Indonesian counterparts at the National Transportation Safety Committee to provide assistance.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: The BEA, which investigates aviation mishaps in France, is liaising with their Indonesian counterparts at the National Transportation Safety Committee to provide assistance.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+predicate: assist
+patient: it+would+assist+investigators
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+sentence: The engines were built by CFM International, a joint enterprise between US firm General Electric and French engineering company Safran.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+predicate: provide
+patient: an+additional+vessel
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev71
+sentence: The NTSB says it is ready and willing to assist if required.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev104
+predicate: join
+patient: the+probe
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev104
+sentence: The NTSB says it is ready and willing to assist if required.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: A screenshot apparently leaked from an ATC radar screen shows the flight ascending through 36,000ft with a ground speed of 353knts.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+predicate: assist
+patient: it+would+assist+investigators
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev75
+sentence: He said he is heading to Surabaya and thanked Malaysian, Singaporean, and Indonesian authorities for emergency efforts.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: He said he is heading to Surabaya and thanked Malaysian, Singaporean, and Indonesian authorities for emergency efforts.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: He said he is heading to Surabaya and thanked Malaysian, Singaporean, and Indonesian authorities for emergency efforts.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+predicate: head
+patient: Surabaya
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+sentence: Fernandes bought AirAsia for a symbolic price from the Malaysian government in 2002.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev110
+predicate: buy
+patient: AirAsia
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev110
+sentence: He urged staff to "Pray hard.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: [...] Our priority is looking after all the next-of-kin for my staff and passengers."
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev175
+predicate: look
+patient: for+my+staff+and+passengers
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev175
+sentence: Djoko Murjatmodjo, acting head of transportation in Indonesia, said "We don't dare to presume what has happened except that it has lost contact."
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+predicate: head
+patient: Surabaya
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev80
+sentence: Djoko Murjatmodjo, acting head of transportation in Indonesia, said "We don't dare to presume what has happened except that it has lost contact."
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: Singaporean Prime Minister Lee Hsien Loong said he is "saddened" and his "thoughts are with the passengers and their families".
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: Malaysian Prime Minister Najib Razak called the news "Very sad to hear[...] My thoughts are with the families.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: Malaysian Prime Minister Najib Razak called the news "Very sad to hear[...] My thoughts are with the families.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev183
+predicate: call
+patient: the+news
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev183
+sentence: Initial reports claim AirAsia did not include British when listing the nationalities missing, but the UK Foreign and Commonwealth Office say a UK victim's next of kin have been informed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: Initial reports claim AirAsia did not include British when listing the nationalities missing, but the UK Foreign and Commonwealth Office say a UK victim's next of kin have been informed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev186
+predicate: claim
+patient: AirAsia
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev186
+sentence: Initial reports claim AirAsia did not include British when listing the nationalities missing, but the UK Foreign and Commonwealth Office say a UK victim's next of kin have been informed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev119
+predicate: list
+patient: the+nationalities+missing
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev119
+sentence: Initial reports claim AirAsia did not include British when listing the nationalities missing, but the UK Foreign and Commonwealth Office say a UK victim's next of kin have been informed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: France24 identifies co-pilot Plesel as French.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev119
+predicate: list
+patient: the+nationalities+missing
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev119
+sentence: 2014 has been a year of air disasters for the country; Malaysia Airlines flight 370 has been missing since March with 239 on board and in July Malaysia Airlines Flight 17 was shot down in Ukraine with 298 casualties.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: AirAsia has a good record with no previous major crashes.
+agent: Next_phase_of_search_for_MH_370_begins#ev26
+predicate: shoot
+patient: Malaysia
+event: http://en.wikinews.org/wiki/Next_phase_of_search_for_MH_370_begins#ev26
+sentence: PhoneContact|AirAsia Emergency Contact Number: +622129850801 Juanda Airport: [031] 8690945
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev78
+predicate: have
+patient: AirAsia
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev78
+sentence: The flight vanished from radar at 6:17.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev30
+predicate: vanish
+patient: an+indonesia+airasia+jet
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev30
+sentence: The transponder ceased to be received a minute later.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev59
+predicate: cease
+patient: to+be+received+a+minute+later
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev59
+sentence: ATC issued a series of escalating alerts in response.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev59
+predicate: issue
+patient: of+escalating+alerts+in+response
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev59
+sentence: The flight carried 162 people.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev142
+predicate: carry
+patient: 162+people
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev142
+sentence: The plane went missing in the vicinity of Pulau Belitung Island.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: National Search and Rescue Agency head Bambang Soelistyo says a "shadow" on the seabed, spotted by the air force, is thought to be the wreck site.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev106
+predicate: say
+patient: to+divert+to+avoid+bad+weather
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev106
+sentence: AirNav, the Indonesian national air traffic control (ATC) facility, yesterday said the aircraft was given permission to divert to avoid bad weather; the area was experiencing thunderstorms.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev106
+predicate: say
+patient: to+divert+to+avoid+bad+weather
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev106
+sentence: The flight crew next asked to climb from 32,000ft to 38,000ft.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev42_1
+predicate: ask
+patient: 38%2c000+ft.+controllers+conferred+with+singapore
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev42_1
+sentence: The flight vanished from radar at 6:17.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev30
+predicate: vanish
+patient: an+indonesia+airasia+jet
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev30
+sentence: The transponder ceased to be received a minute later.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev59
+predicate: cease
+patient: to+be+received+a+minute+later
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev59
+sentence: The flight from Surabaya to Singapore vanished from radar screens early on Sunday morning over the Java Sea.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev30
+predicate: vanish
+patient: an+indonesia+airasia+jet
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev30
+sentence: The aircraft would normally be travelling faster, with an Emirates jet also on the screen showing a ground speed of 503knts at 36,000ft.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev64
+predicate: travel
+patient: Singapore_Changi_Airport
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev64
+sentence: Indonesian Pilot Iriyanto and French co-pilot Remi Emmanuel Plesel did not explain their request to climb.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev92
+predicate: cause
+patient: an+aircraft
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev92
+sentence: The plane had accumulated 23,000 flying hours on 13,600 flights.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev69
+predicate: accumulate
+patient: 23%2c000+flying+hours+on+13%2c600+flights
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev69
+sentence: It went missing around 40 minutes into a flight to Changi International Airport.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev64
+predicate: go
+patient: Singapore_Changi_Airport
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev64
+sentence: It went missing around 40 minutes into a flight to Changi International Airport.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: The 53-year-old also has ten years experience as a pilot trainer.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev96
+predicate: have
+patient: a+pilot+trainer
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev96
+sentence: Search and rescue teams today began recovering bodies after debris from Indonesia AirAsia Flight 8501 was spotted in the sea near Borneo.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev87
+predicate: begin
+patient: recovering+bodies
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev87
+sentence: "Should he have climbed earlier?
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev125
+predicate: request
+patient: to+climb+at+that+stage
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev125
+sentence: Other aircraft were flying at a higher altitude in that area.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: The source said radar, weather, and communications data was being analysed.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev77
+predicate: react
+patient: to+the+weather
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev77
+sentence: The source said radar, weather, and communications data was being analysed.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: AirAsia owner Tony Fernandes said he has "full confidence in my[...] crew[...][Iriyanto] was extremely experienced".
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev78
+predicate: owner
+patient: AirAsia
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev78
+sentence: AirAsia owner Tony Fernandes said he has "full confidence in my[...] crew[...][Iriyanto] was extremely experienced".
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: Search and rescue teams today began recovering bodies after debris from Indonesia AirAsia Flight 8501 was spotted in the sea near Borneo.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev28
+predicate: recover
+patient: recovering+bodies
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev28
+sentence: AirAsia is based in Malaysia.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+predicate: say
+patient: full+confidence+in+my+%5b
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev164
+sentence: 2014 has been a year of air disasters for the country; Malaysia Airlines flight 370 has been missing since March with 239 on board and in July Malaysia Airlines Flight 17 was shot down in Ukraine with 298 casualties.
+agent: AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+predicate: miss
+patient: United_Kingdom
+event: http://en.wikinews.org/wiki/AirAsia_jet_vanishes_over_Indonesia,_162_missing#ev65
+sentence: Both involved Boeing 777 aircraft.
+agent: Next_phase_of_search_for_MH_370_begins#ev26
+predicate: shoot
+patient: Malaysia
+event: http://en.wikinews.org/wiki/Next_phase_of_search_for_MH_370_begins#ev26
+sentence: None
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev78
+predicate: have
+patient: AirAsia
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev78
+sentence: An Indonesian naval ship today recovered at least three bodies.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev28
+predicate: recover
+patient: recovering+bodies
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev28
+sentence: The US, UK, and France have been asked for help locating submerged remains.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev41
+predicate: join
+patient: search+efforts
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev41
+sentence: USS Sampson, a US Navy destroyer, is due to join search efforts today.
+agent: AirAsia_disaster:_Bodies,_wreckage_found#ev41
+predicate: join
+patient: search+efforts
+event: http://en.wikinews.org/wiki/AirAsia_disaster:_Bodies,_wreckage_found#ev41
+sentence: AOL acquired Bebo for $850 million in 2008.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev30
+predicate: acquire
+patient: Bebo
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev30
+sentence: News Corp., the parent company of MySpace, announced Friday that Co-President Jason Hirschhorn has decided to leave the social networking website because he wishes to return to his home city of New York.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev11
+predicate: leave
+patient: Geraint_Jones
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev11
+sentence: MySpace's reduced traffic and the departure of another executive have led industry insiders to draw comparisons between the two sites.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev31
+predicate: departure
+patient: of+another+executive
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev31
+sentence: MySpace's reduced traffic and the departure of another executive have led industry insiders to draw comparisons between the two sites.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev51
+predicate: draw
+patient: comparisons+between+the+two+sites
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev51
+sentence: He was replaced by former Facebook Chief Revenue Officer Owen Van Natta, but Natta held on to that position for just nine months.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev35
+predicate: replace
+patient: Hirschhorn_(Neckar)
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev35
+sentence: He was replaced by former Facebook Chief Revenue Officer Owen Van Natta, but Natta held on to that position for just nine months.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev36
+predicate: hold
+patient: on+to+that+position
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev36
+sentence: The departure of Hurschhorn leaves Jones to continue on as sole president.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev31
+predicate: departure
+patient: of+another+executive
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev31
+sentence: The departure of Hurschhorn leaves Jones to continue on as sole president.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev11
+predicate: leave
+patient: Geraint_Jones
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev11
+sentence: MySpace have said they do not intend on replacing Hirschhorn.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev35
+predicate: replace
+patient: Hirschhorn_(Neckar)
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev35
+sentence: MySpace was founded in 2003 by Tom Anderson and Chris DeWolfe and purchased for $580 million by News Corps.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev46
+predicate: found
+patient: Myspace
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev46
+sentence: MySpace was founded in 2003 by Tom Anderson and Chris DeWolfe and purchased for $580 million by News Corps.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev16
+predicate: purchase
+patient: Myspace
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev16
+sentence: In response, MySpace has been recently shifting its focus towards music, games, and videos, and plans to continue doing the same in the near future.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev25
+predicate: shift
+patient: its+focus
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev25
+sentence: News Corp., the parent company of MySpace, announced Friday that Co-President Jason Hirschhorn has decided to leave the social networking website because he wishes to return to his home city of New York.
+agent: Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev44
+predicate: decide
+patient: to+leave+the+social+networking+website
+event: http://en.wikinews.org/wiki/Ailing_social_networking_website_MySpace_loses_co-president_after_four_months#ev44
+sentence: A spokesman for the Conservative Party said: "Aidan Burley has behaved in a manner which is offensive and foolish.
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev31
+predicate: say
+patient: an+antisemitic+bone+in+his+body
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev31
+sentence: The Prime Minister has instructed the Conservative Party to conduct an investigation into Burley's behaviour.
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev33
+predicate: instruct
+patient: Conservative_Party_(UK)
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev33
+sentence: Burley has made repeated apologies to the Jewish community.
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev21
+predicate: make
+patient: repeated+apologies
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev21
+sentence: Burley has made repeated apologies to the Jewish community.
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev22
+predicate: apology
+patient: The_Jewish_Chronicle
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev22
+sentence: The Conservative Friends of Israel said he does "not have an antisemitic bone in his body".
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev24
+predicate: friend
+patient: Israel
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev24
+sentence: The Conservative Friends of Israel said he does "not have an antisemitic bone in his body".
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev31
+predicate: say
+patient: an+antisemitic+bone+in+his+body
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev31
+sentence: He offered an "unreserved, wholehearted and fulsome apology" in a letter to the Jewish Chronicle.
+agent: Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev22
+predicate: apology
+patient: The_Jewish_Chronicle
+event: http://en.wikinews.org/wiki/Aidan_Burley_MP_sacked_following_Nazi_pics_furore#ev22
+sentence: This is despite complaints that the government of the country is not allowing aid agencies full access.
+agent: Aid_starts_to_reach_Myanmar#ev48
+predicate: allow
+patient: aid+agencies
+event: http://en.wikinews.org/wiki/Aid_starts_to_reach_Myanmar#ev48
+sentence: Aid has started to reach Myanmar after a recent cyclone in the region killed thousands.
+agent: UN_Secretary_General_releases_new_statement_as_UN_aid_starts_to_reach_Myanmar#ev16
+predicate: reach
+patient: Burma
+event: http://en.wikinews.org/wiki/UN_Secretary_General_releases_new_statement_as_UN_aid_starts_to_reach_Myanmar#ev16
+sentence: Large companies, including Google, have tried to encourage people to donate to aid agencies.
+agent: Aid_starts_to_reach_Myanmar#ev40
+predicate: try
+patient: to+donate+to+aid+agencies
+event: http://en.wikinews.org/wiki/Aid_starts_to_reach_Myanmar#ev40
+sentence: On its website, Google wrote, "join the recovery efforts mobilizing around the world to assist cyclone victims in Myanmar.
+agent: At_least_10,000_reported_dead_after_Burma_cyclone#ev12
+predicate: assist
+patient: United_Nations
+event: http://en.wikinews.org/wiki/At_least_10,000_reported_dead_after_Burma_cyclone#ev12
+sentence: Government officials in Myanmar have said that 22,464 people have been confirmed dead from Cyclone Nargis.
+agent: Death_toll_from_cyclone_in_Myanmar_continues_to_rise#ev62
+predicate: say
+patient: with+other+countries
+event: http://en.wikinews.org/wiki/Death_toll_from_cyclone_in_Myanmar_continues_to_rise#ev62
+sentence: The pirates are demanding a ransom of half a million dollars for the return of the ship.
+agent: Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev32
+predicate: demand
+patient: of+half+a+million+dollars
+event: http://en.wikinews.org/wiki/Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev32
+sentence: Neither the UN World Food Programme (WFP) nor the ship's owners are willing to pay the ransom.
+agent: Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev18
+predicate: pay
+patient: the+ransom
+event: http://en.wikinews.org/wiki/Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev18
+sentence: The WFP believe the crew is still on board the ship and that the crew are "fine".
+agent: Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev23
+predicate: supply
+patient: in+aid+supply
+event: http://en.wikinews.org/wiki/Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev23
+sentence: The WFP supplies about 3,000 tons of food for about 275,000 Somalis per month, and the country currently has about two weeks of stocks left.
+agent: Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev23
+predicate: supply
+patient: in+aid+supply
+event: http://en.wikinews.org/wiki/Aid_ship_sailing_to_Somalia_hijacked;_aid_supply_threatened#ev23
+sentence: The WFP supplies about 3,000 tons of food for about 275,000 Somalis per month, and the country currently has about two weeks of stocks left.
+agent: Former_Sudanese_rebel_leader_John_Garang_sworn_in_as_vice_president_of_Sudan#ev13
+predicate: have
+patient: about+two+weeks+of+stocks+left
+event: http://en.wikinews.org/wiki/Former_Sudanese_rebel_leader_John_Garang_sworn_in_as_vice_president_of_Sudan#ev13
+sentence: In an abrupt about-face, the world's wealthiest nations have begun pouring funding into the Earthquake/Tsunami damaged region.
+agent: Aid_pledges_rise;_Japan_promises_500,000,000_USD#ev5
+predicate: damage
+patient: into+the+earthquake%2ftsunami+damaged+region
+event: http://en.wikinews.org/wiki/Aid_pledges_rise;_Japan_promises_500,000,000_USD#ev5
+sentence: The UK has suspended Â£30m ($54m) of aid payments to Ethiopia following the deaths of 36 people in protests over disputed elections.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev9
+predicate: suspend
+patient: aid+payments+to+ethiopia
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev9
+sentence: Benn said that Ethiopia should allow the Red Cross access to detainees, and that they either be charged or released.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+predicate: say
+patient: it+has+started+releasing+people
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+sentence: Benn said that Ethiopia should allow the Red Cross access to detainees, and that they either be charged or released.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev33
+predicate: allow
+patient: International_Committee_of_the_Red_Cross
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev33
+sentence: Benn said that Ethiopia should allow the Red Cross access to detainees, and that they either be charged or released.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev14
+predicate: access
+patient: to+detainees
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev14
+sentence: Ethiopia has said it has started releasing people, but has not provided figures on the number imprisoned.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+predicate: say
+patient: it+has+started+releasing+people
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+sentence: Opposition groups estimate the number to be 3,600.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev37
+predicate: estimate
+patient: the+number
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev37
+sentence: Ethiopia has stated that it has begun releasing many of those arrested during the protests, however, Human Rights Watch says those being held are at risk of abuse.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+predicate: say
+patient: it+has+started+releasing+people
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev32
+sentence: On Tuesday, Ethiopia's leaders signed a declaration to try to end violence and launch an investigation into election complaints.
+agent: Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev26
+predicate: try
+patient: an+investigation+into+election+complaints
+event: http://en.wikinews.org/wiki/Aid_payments_to_be_withdrawn_by_UK_following_violence_in_Ethiopia#ev26
+sentence: The incident occurred in North Pyongan Province on June 9 when one of the villagers lit a match near a cracked segment of the pipeline, setting off fuel vapours.
+agent: Aid_group_reports_110_North_Koreans_killed_in_explosion#ev18
+predicate: light
+patient: a+cracked+segment+of+the+pipeline
+event: http://en.wikinews.org/wiki/Aid_group_reports_110_North_Koreans_killed_in_explosion#ev18
+sentence: The National Intelligence Service in South Korea says it cannot confirm the reports.
+agent: Aid_group_reports_110_North_Koreans_killed_in_explosion#ev22
+predicate: say
+patient: it+can+not+confirm+the+reports
+event: http://en.wikinews.org/wiki/Aid_group_reports_110_North_Koreans_killed_in_explosion#ev22
+sentence: The National Intelligence Service in South Korea says it cannot confirm the reports.
+agent: Aid_group_reports_110_North_Koreans_killed_in_explosion#ev22
+predicate: say
+patient: it+can+not+confirm+the+reports
+event: http://en.wikinews.org/wiki/Aid_group_reports_110_North_Koreans_killed_in_explosion#ev22
+sentence: The National Intelligence Service in South Korea says it cannot confirm the reports.
+agent: Plane_with_Korean,_Czech_tourists_aboard_crashes_in_Cambodia#ev87
+predicate: confirm
+patient: the+report
+event: http://en.wikinews.org/wiki/Plane_with_Korean,_Czech_tourists_aboard_crashes_in_Cambodia#ev87
+sentence: The UNHCR recently criticised the two governments after they issued a joint press release which declared that asylum seekers in each others countries did not have a legitimate claim and therefore were illegal immigrants rather than refugees.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev70
+predicate: criticise
+patient: the+two+governments
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev70
+sentence: The international medical aid group Médecins Sans Frontières (MSF) has claimed in a press release that its medical staff have been prevented from accessing their clinic inside the Songore transit camp.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev23
+predicate: access
+patient: their+clinic
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev23
+sentence: MSF claims that the camp is now guarded by the Burundese military.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev27
+predicate: guard
+patient: the+camp
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev27
+sentence: "It's unacceptable that our medical staff are denied access to our own health facility in Songore camp, denying medical care to the people in the camp.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev66_0
+predicate: deny
+patient: access+to+our+own+health+facility
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev66_0
+sentence: "It's unacceptable that our medical staff are denied access to our own health facility in Songore camp, denying medical care to the people in the camp.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev23
+predicate: access
+patient: their+clinic
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev23
+sentence: "It's unacceptable that our medical staff are denied access to our own health facility in Songore camp, denying medical care to the people in the camp.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev66_0
+predicate: deny
+patient: access+to+our+own+health+facility
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev66_0
+sentence: Also, by transporting these people back to Rwanda, MSF is not able to continue the medical care for those that were already under treatment.
+agent: Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev29
+predicate: transport
+patient: these+people
+event: http://en.wikinews.org/wiki/Aid_group_'denied_access'_to_Rwandan_refugee_camp_in_Burundi#ev29
+sentence: Prime Minister John Howard announced $430 million on September 17, bringing the total aid to over $1 billion.
+agent: Aid_for_Australian_farmers_increased_to_$1_billion#ev29
+predicate: announce
+patient: medical+research
+event: http://en.wikinews.org/wiki/Aid_for_Australian_farmers_increased_to_$1_billion#ev29
+sentence: Prime Minister John Howard announced $430 million on September 17, bringing the total aid to over $1 billion.
+agent: Aid_for_Australian_farmers_increased_to_$1_billion#ev25
+predicate: bring
+patient: the+total+aid
+event: http://en.wikinews.org/wiki/Aid_for_Australian_farmers_increased_to_$1_billion#ev25
+sentence: The Australian Federal Government today announced an additional AU$714 million in aid to farmers affected by the drought.
+agent: Aid_for_Australian_farmers_increased_to_$1_billion#ev28
+predicate: announce
+patient: to+farmers+affected+by+the+drought
+event: http://en.wikinews.org/wiki/Aid_for_Australian_farmers_increased_to_$1_billion#ev28
+sentence: The Australian Federal Government today announced an additional AU$714 million in aid to farmers affected by the drought.
+agent: Aid_for_Australian_farmers_increased_to_$1_billion#ev24
+predicate: affect
+patient: to+farmers+affected+by+the+drought
+event: http://en.wikinews.org/wiki/Aid_for_Australian_farmers_increased_to_$1_billion#ev24
+sentence: Aid agencies and Indian government officials have warned that there may be food shortages in the country, following severe floods that affected southern states./var/lib/gridengine/util/starter.sh: line 41: 29290 Killed                  /usr/bin/cgexec -g freezer,memory,cpuset:${CGPATH} $@

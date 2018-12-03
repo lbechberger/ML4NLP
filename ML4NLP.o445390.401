@@ -1,0 +1,2353 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+dimension.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+sentence: Environmental activist and former Vice-President Al Gore today announced his support for Democratic candidate Barack Obama in the United States presidential election.
+agent: Obama_gives_check_to_Clinton_campaign#ev34
+predicate: candidate
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Obama_gives_check_to_Clinton_campaign#ev34
+sentence: At the rally in Detroit's Joe Louis Arena, Gore called Obama "the next President of the United States of America" and said he could lead the nation past "eight years in which our Constitution has been dishonored and disrespected".
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: He addressed the issue of climate change, which he said many Republicans had "refused to discuss at all".
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: He addressed the issue of climate change, which he said many Republicans had "refused to discuss at all".
+agent: Al_Gore_endorses_Obama_for_US_President#ev118
+predicate: refuse
+patient: which+to+discuss+at+all
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev118
+sentence: "The outcome of this election will affect the future of our entire planet," Gore said, adding that "the future is ours, not to predict, but to create."
+agent: Al_Gore_endorses_Obama_for_US_President#ev90
+predicate: affect
+patient: the+future+of+our+entire+planet
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev90
+sentence: "The outcome of this election will affect the future of our entire planet," Gore said, adding that "the future is ours, not to predict, but to create."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: He compared the criticisms of Obama's young age and foreign policy experience to those faced by John F. Kennedy in the 1960 Presidential election.
+agent: Al_Gore_endorses_Obama_for_US_President#ev59
+predicate: policy
+patient: foreign+policy
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev59
+sentence: He criticized the way the Bush administration has handled these issues, and repeated the oft-heard criticism that McCain is running for Bush's "third term".
+agent: Al_Gore_endorses_Obama_for_US_President#ev65
+predicate: handle
+patient: these+issues
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev65
+sentence: He said that if there was one thing that could unite the Democrats, it is that "when we go into the polling places in November, the name 'George W. Bush' will not be on the ballot."
+agent: Al_Gore_endorses_Obama_for_US_President#ev59
+predicate: policy
+patient: foreign+policy
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev59
+sentence: He said that if there was one thing that could unite the Democrats, it is that "when we go into the polling places in November, the name 'George W. Bush' will not be on the ballot."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: He said that if there was one thing that could unite the Democrats, it is that "when we go into the polling places in November, the name 'George W. Bush' will not be on the ballot."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: In an email sent to Obama supporters, Al Gore voices his support for the presumptive nominee.
+agent: Al_Gore_endorses_Obama_for_US_President#ev106
+predicate: voice
+patient: his+support+for+the+presumptive+nominee
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev106
+sentence: He said that if there was one thing that could unite the Democrats, it is that "when we go into the polling places in November, the name 'George W. Bush' will not be on the ballot."
+agent: Al_Gore_endorses_Obama_for_US_President#ev43
+predicate: unite
+patient: a+movement
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev43
+sentence: In an email sent to Obama supporters, Al Gore voices his support for the presumptive nominee.
+agent: Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+predicate: support
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+sentence: Obama commended McCain for his service to the country, but said that he "seems to have lost his way" from his reputation as a political maverick.
+agent: Al_Gore_endorses_Obama_for_US_President#ev126
+predicate: commend
+patient: John_McCain
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev126
+sentence: Obama commended McCain for his service to the country, but said that he "seems to have lost his way" from his reputation as a political maverick.
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: Obama commended McCain for his service to the country, but said that he "seems to have lost his way" from his reputation as a political maverick.
+agent: Al_Gore_endorses_Obama_for_US_President#ev72
+predicate: lose
+patient: the+2000+presidential+election
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev72
+sentence: "The Straight Talk Express lost a couple of wheels," he said.
+agent: Al_Gore_endorses_Obama_for_US_President#ev72
+predicate: lose
+patient: the+2000+presidential+election
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev72
+sentence: Many of the problems in America "go back for decades," Obama said.
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: "The American people feel that American dream slipping away.
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: "The American people feel that American dream slipping away.
+agent: Al_Gore_endorses_Obama_for_US_President#ev130
+predicate: feel
+patient: that+american+dream+slipping+away
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev130
+sentence: I choose faith."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: Obama thanked his supporters for helping his campaign, saying that "change in America doesn't happen from the top down; it comes from the bottom up."
+agent: Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+predicate: supporter
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+sentence: Obama thanked his supporters for helping his campaign, saying that "change in America doesn't happen from the top down; it comes from the bottom up."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: "And we need fighters in the Democratic Party because we've got a lot to fight for."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: Obama and Gore were introduced by Michigan governor Jennifer Granholm, who supported Clinton in the primaries but now says she is supporting Obama.
+agent: Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+predicate: support
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+sentence: Al Gore served as Vice-President under President Bill Clinton in the '90s, and after losing the 2000 Presidential election to George W. Bush, he focused his efforts on environmental activism.
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: Al Gore served as Vice-President under President Bill Clinton in the '90s, and after losing the 2000 Presidential election to George W. Bush, he focused his efforts on environmental activism.
+agent: Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+predicate: support
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+sentence: Al Gore served as Vice-President under President Bill Clinton in the '90s, and after losing the 2000 Presidential election to George W. Bush, he focused his efforts on environmental activism.
+agent: Al_Gore_endorses_Obama_for_US_President#ev81
+predicate: serve
+patient: as+vice-president
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev81
+sentence: Al Gore served as Vice-President under President Bill Clinton in the '90s, and after losing the 2000 Presidential election to George W. Bush, he focused his efforts on environmental activism.
+agent: Al_Gore_endorses_Obama_for_US_President#ev72
+predicate: lose
+patient: the+2000+presidential+election
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev72
+sentence: "Over the past 18 months, Barack Obama has united a movement," Gore writes.
+agent: Al_Gore_endorses_Obama_for_US_President#ev43
+predicate: unite
+patient: a+movement
+event: http://en.wikinews.org/wiki/Al_Gore_endorses_Obama_for_US_President#ev43
+sentence: Environmental activist and former Vice-President Al Gore today announced his support for Democratic candidate Barack Obama in the United States presidential election.
+agent: Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+predicate: support
+patient: Barack_Obama
+event: http://en.wikinews.org/wiki/Democratic_Party_reaches_deal_over_Florida_and_Michigan#ev42
+sentence: Obama said Gore was "a visionary, not just for the party, but for the country."
+agent: Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+predicate: say
+patient: Sharon_Osbourne
+event: http://en.wikinews.org/wiki/Tsvangirai_campaign_rallies_banned_in_Zimbabwe#ev134
+sentence: "We want to transform the television medium itself, giving a national platform to those who are hungry to help create the TV they want to watch.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev81
+predicate: want
+patient: to+transform+the+television+medium+itself
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev81
+sentence: We're creating a powerful new brand of television that doesn't treat audiences as merely viewers, but as collaborators," Gore said in the release.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+predicate: say
+patient: as+collaborators
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+sentence: The network posted submission guidelines on its new website which launched Monday.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev85
+predicate: post
+patient: its+new+website+which+launched+monday
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev85
+sentence: Gore bought Newsworld International (NWI) from Vivendi Universal last year for $70 million.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev25
+predicate: buy
+patient: Newsworld_International
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev25
+sentence: A year after buying the struggling Newsworld International 24-hour U.S. and Canada cable news channel, former U.S. vice president Al Gore and his partner, millionaire Ohio attorney and politician Joel Hyatt, plan to re-launch the channel with a new name, a new concept and a new target audience.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev25
+predicate: buy
+patient: Newsworld_International
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev25
+sentence: NBC already had two struggling cable news channels of its own.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev50
+predicate: channel
+patient: cable+news
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev50
+sentence: NWI's current news content is mostly rebroadcasts of news produced by the Canadian Broadcasting Corporation.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev51
+predicate: content
+patient: nwi+%27s+current+news+content
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev51
+sentence: But after market research, the new owners of NWI decided that a liberal news network was not financially feasible.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev57
+predicate: owner
+patient: of+nwi
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev57
+sentence: Instead, they focused on a youth-skewed news channel under the code name "INdTV" (pronounced "Indy Tee Vee").
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev50
+predicate: channel
+patient: cable+news
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev50
+sentence: "The Internet opened a floodgate for young people whose passions are finally being heard, but TV hasn't followed suit.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev73
+predicate: open
+patient: a+floodgate
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev73
+sentence: Young adults have a powerful voice, but you can't hear that voice on television ... yet," Gore said in a press release issued from the network's San Francisco studios.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev65
+predicate: have
+patient: a+powerful+voice
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev65
+sentence: Young adults have a powerful voice, but you can't hear that voice on television ... yet," Gore said in a press release issued from the network's San Francisco studios.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+predicate: say
+patient: as+collaborators
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+sentence: Gore said the new channel will be partly created by citizen journalists, where viewer-created reports will find their way on air.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+predicate: say
+patient: as+collaborators
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev77
+sentence: Gore said the new channel will be partly created by citizen journalists, where viewer-created reports will find their way on air.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev78
+predicate: find
+patient: their+way+on+air
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev78
+sentence: "We want to transform the television medium itself, giving a national platform to those who are hungry to help create the TV they want to watch.
+agent: Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev81
+predicate: want
+patient: to+transform+the+television+medium+itself
+event: http://en.wikinews.org/wiki/Al_Gore-owned_cable_news_channel_to_relaunch_August_1_with_viewer-created_content#ev81
+sentence: The African Union says its peacekeeping force in Somalia — which is supposed to number 8,000, but currently has about 3,500 soldiers from Uganda and Burundi — is in dire need of reinforcement.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+predicate: say
+patient: it+now+has+second+thoughts
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+sentence: However, Nigeria, which was supposed to send 850 officers and soldiers within weeks, says it now has second thoughts.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+predicate: say
+patient: it+now+has+second+thoughts
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+sentence: "But the situation in Somalia has deteriorated considerably.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+predicate: say
+patient: it+now+has+second+thoughts
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev70
+sentence: None
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev23
+predicate: add
+patient: another+90+civilians+have+been+injured
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev23
+sentence: Among them are 48 civilians, said the Elman Peace and Human Rights Organisation.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev57
+predicate: say
+patient: among+them+are+48+civilians
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev57
+sentence: Another 90 civilians have been injured, the group added.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev23
+predicate: add
+patient: another+90+civilians+have+been+injured
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev23
+sentence: On Sunday, Al-Shabaab attacked Burundi troops with suicide bombers at an AMISOM base in Mogadishu.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev24
+predicate: attack
+patient: African_Union
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev24
+sentence: "Al-Shabaab fighters are now patrolling the town and the other group fled," local elder Hussein Abdi Isak told Reuters in a phone interview.
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev29
+predicate: patrol
+patient: the+other+group+fled
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev29
+sentence: The United Nations Security Council issued a statement to "condemn in the strongest terms the attacks on the African Union mission in Somalia."
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev24
+predicate: attack
+patient: African_Union
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev24
+sentence: The statement was passed unanimously and urges all Somalis "to reject violence and extremism."
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev64
+predicate: urge
+patient: all+somalis
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev64
+sentence: The statement was passed unanimously and urges all Somalis "to reject violence and extremism."
+agent: Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev65
+predicate: reject
+patient: %60%60+to+reject+violence+and+extremism
+event: http://en.wikinews.org/wiki/Al-Shabaab_and_AU_peacekeepers_clash_in_Somalia#ev65
+sentence: The African branch of al-Qaida has demanded the release of four of its members held in Mali in exchange for the French hostage Pierre Camatte, 61 years, kidnapped in November.
+agent: Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev15
+predicate: kidnap
+patient: three+spanish+aid+workers
+event: http://en.wikinews.org/wiki/Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev15
+sentence: If their demands are not met they have threatened to kill him.
+agent: Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev18
+predicate: kill
+patient: an+american+teacher
+event: http://en.wikinews.org/wiki/Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev18
+sentence: Four days later in neighbouring Mauritania the group kidnapped three Spanish aid workers.
+agent: Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev15
+predicate: kidnap
+patient: three+spanish+aid+workers
+event: http://en.wikinews.org/wiki/Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev15
+sentence: According to CNN, the group executed British hostage Edwin Dyer in June, after failing to obtain the release of the person believed to be Osama bin Laden's Europeandeputy, Abu Qatada.
+agent: Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev29
+predicate: execute
+patient: Al-Qaeda_in_the_Islamic_Maghreb
+event: http://en.wikinews.org/wiki/Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev29
+sentence: The group also claims to have killed an American teacher in Mauritania in June for spreading the Christian message.
+agent: Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev18
+predicate: kill
+patient: an+american+teacher
+event: http://en.wikinews.org/wiki/Al-Qaida_demands_hostage_exchange;_threatens_to_kill_if_demands_not_met#ev18
+sentence: Now you too will taste the reality of this situation" 
+
+Al-Zawahiri described the 7/7 attacks as "a slap to the policy of British Prime Minister Tony Blair" and called the attacks a response to the UK's foreign policy "just as 9/11 was a response to America's".
+agent: 7_bombings#ev33
+predicate: policy
+patient: our+foreign+policy
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev33
+sentence: Al Jazeera has aired two video tapes by Al Qaida on Thursday evening.
+agent: 7_bombings#ev17
+predicate: air
+patient: Al-Qaeda
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev17
+sentence: Muslim Council of Britain spokesman Inayat Bunglawala said that holding the British Public responsible for the war "is just plain wrong - this country was bitterly divided and many millions, perhaps the majority, clearly opposed the war."
+agent: 7_bombings#ev70
+predicate: tell
+patient: there+is+no+holy+war+%27%27
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev70
+sentence: He claimed that the West is backing governments who commit crimes against humanity.
+agent: 7_bombings#ev27
+predicate: back
+patient: governments+who+commit+crimes+against+humanity
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev27
+sentence: Now you too will taste the reality of this situation" 
+
+Al-Zawahiri described the 7/7 attacks as "a slap to the policy of British Prime Minister Tony Blair" and called the attacks a response to the UK's foreign policy "just as 9/11 was a response to America's".
+agent: 7_bombings#ev60
+predicate: describe
+patient: the+7%2f7+attacks
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev60
+sentence: Now you too will taste the reality of this situation" 
+
+Al-Zawahiri described the 7/7 attacks as "a slap to the policy of British Prime Minister Tony Blair" and called the attacks a response to the UK's foreign policy "just as 9/11 was a response to America's".
+agent: 7_bombings#ev33
+predicate: policy
+patient: our+foreign+policy
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev33
+sentence: Now you too will taste the reality of this situation" 
+
+Al-Zawahiri described the 7/7 attacks as "a slap to the policy of British Prime Minister Tony Blair" and called the attacks a response to the UK's foreign policy "just as 9/11 was a response to America's".
+agent: 7_bombings#ev61
+predicate: call
+patient: the+attacks
+event: http://en.wikinews.org/wiki/Al-Qaida_claims_responsibility_for_London_7/7_bombings#ev61
+sentence: It was also the first attack attempted on a member of the royal family.
+agent: Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev20
+predicate: attempt
+patient: a+ryadh+interior+minister
+event: http://en.wikinews.org/wiki/Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev20
+sentence: Militant-activist group Al-Qaeda has recently issued new threats to Saudi Arabia of more attacks, incidentally following what appeared to be a suicide bomber's unsuccessful attempt to kill a Ryadh interior minister last month, Prince Mohammad bin Nayef.
+agent: Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev20
+predicate: attempt
+patient: a+ryadh+interior+minister
+event: http://en.wikinews.org/wiki/Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev20
+sentence: "Our heroes have woven their grave-clothes with your blood," he went on.
+agent: Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev30
+predicate: weave
+patient: their+grave-clothes
+event: http://en.wikinews.org/wiki/Al-Qaeda_warns_Saudi_Arabia_of_attacks#ev30
+sentence: Al-Qaeda's No.2 Ayman al-Zawahiri warned in a 20-minute audiotaped message that the knighthood of Salman Rushdie was defying the Islamic world by granting the honour to the author of The Satanic Verses, which was deemed an insult to Islam.
+agent: Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev9
+predicate: defy
+patient: the+islamic+world
+event: http://en.wikinews.org/wiki/Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev9
+sentence: Al-Qaeda's No.2 Ayman al-Zawahiri warned in a 20-minute audiotaped message that the knighthood of Salman Rushdie was defying the Islamic world by granting the honour to the author of The Satanic Verses, which was deemed an insult to Islam.
+agent: Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev10
+predicate: grant
+patient: the+honour
+event: http://en.wikinews.org/wiki/Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev10
+sentence: Al-Zawahri said in the message that a "very precise response" is in preparation to retaliate against this offence, "And if you did not understand, listen, we are ready to repeat it for you."
+agent: Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev19
+predicate: message
+patient: a+20-minute+audiotaped+message
+event: http://en.wikinews.org/wiki/Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev19
+sentence: Al-Qaeda's No.2 Ayman al-Zawahiri warned in a 20-minute audiotaped message that the knighthood of Salman Rushdie was defying the Islamic world by granting the honour to the author of The Satanic Verses, which was deemed an insult to Islam.
+agent: Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev19
+predicate: message
+patient: a+20-minute+audiotaped+message
+event: http://en.wikinews.org/wiki/Al-Qaeda_threatens_UK_over_Rushdie's_knighthood#ev19
+sentence: According to a report from the British newspaper The Sun, Al-Qaeda members have issued a prominent threat on the Internet that Britain's Prince Harry will be killed or kidnapped when he is sent out to Iraq for his first tour of duty in the British Army in May this year.
+agent: Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev19
+predicate: kill
+patient: Prince_Harry_of_Wales
+event: http://en.wikinews.org/wiki/Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev19
+sentence: An Islamic website has messages which have been posted on the site since the 22 year old Prince's deployment to the gulf state was revealed at the start of February.
+agent: Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev22
+predicate: deployment
+patient: to+the+gulf+state
+event: http://en.wikinews.org/wiki/Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev22
+sentence: The messages included: "Prince Harry will be sent to Iraq to be killed by Muslims."
+agent: Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev19
+predicate: kill
+patient: Prince_Harry_of_Wales
+event: http://en.wikinews.org/wiki/Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev19
+sentence: According to a report from the British newspaper The Sun, Al-Qaeda members have issued a prominent threat on the Internet that Britain's Prince Harry will be killed or kidnapped when he is sent out to Iraq for his first tour of duty in the British Army in May this year.
+agent: Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev18
+predicate: threat
+patient: on+the+internet
+event: http://en.wikinews.org/wiki/Al-Qaeda_threaten_to_kill_British_Prince_Harry_in_Iraq#ev18
+sentence: The message then says "wait for the big surprise," but does not add anymore information.
+agent: Al-Qaeda_terror_ad_warns_of_'big_surprise'#ev20
+predicate: say
+patient: wait+for+the+big+surprise
+event: http://en.wikinews.org/wiki/Al-Qaeda_terror_ad_warns_of_'big_surprise'#ev20
+sentence: The computer equipment also revealed that there were hopes of attacking major transportation hubs, and that during the six years he lived at the compound in Pakistan, bin Laden stayed in close contact with senior affiliates and played an active role in developing terrorist plots.
+agent: Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev24
+predicate: play
+patient: an+active+role+in+al-qaeda+plotting
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev24
+sentence: The statement from the organization, posted on jihadist internet forums, came as the Pentagon released videos filmed inside the terrorist leader's compound which was raided last weekend.
+agent: Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev67
+predicate: statement
+patient: on+jihadist+internet+forums
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev67
+sentence: The revelation that al-Qaeda was planning more attacks against the U.S. comes only several days after officials warned the terrorist group was likely to be plotting a revenge attack to avenge the death of bin Laden.
+agent: Pakistani_Taliban_threaten_revenge_attack_after_bin_Laden_death;_CIA_says_retaliation_is_likely#ev30
+predicate: avenge
+patient: Osama_bin_Laden
+event: http://en.wikinews.org/wiki/Pakistani_Taliban_threaten_revenge_attack_after_bin_Laden_death;_CIA_says_retaliation_is_likely#ev30
+sentence: Intelligence officials said at a briefing in Washington, D.C. that the videos showed that bin Laden was still playing an active role in al-Qaeda plotting.
+agent: Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev24
+predicate: play
+patient: an+active+role+in+al-qaeda+plotting
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev24
+sentence: Although the video tapes have no audio, they show bin Laden watching news coverage of himself on television and preparing to record a propaganda film.
+agent: Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev61
+predicate: have
+patient: no+audio
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev61
+sentence: Earlier this week it emerged bin Laden had been planning an attack on the American rail network on the tenth anniversary of the September 11 attacks this year.
+agent: Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev75
+predicate: plan
+patient: of+the+september+11+attacks
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_bin_Laden_death_will_'not_be_wasted';_Pentagon_releases_videos_of_terrorist_leader_in_compound#ev75
+sentence: Bin Laden appeared for the first time in a video since 2004 when he released a video on September 7, 2007.
+agent: Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+predicate: release
+patient: the+video
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+sentence: The second tape was reportedly recorded from the same spot as the video that was released last week.
+agent: Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+predicate: release
+patient: the+video
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+sentence: According to al-Qaeda, Osama bin Laden will release yet another video which is said to contain a will and testament from one of the September 11, 2001 hijackers, Abu Musab Waleed al-Shehri.
+agent: Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+predicate: release
+patient: the+video
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+sentence: According to the United States based terrorist monitoring group, IntelCenter, the video will be released within the next 24 hours, but it is not known if bin Laden will actually appear in the video, or if an audio recording of his voice will just be present.
+agent: Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+predicate: release
+patient: the+video
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev9
+sentence: Some reports suggest that the video will feature new images of bin Laden.
+agent: Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev19
+predicate: feature
+patient: Osama_bin_Laden
+event: http://en.wikinews.org/wiki/Al-Qaeda_says_another_bin_Laden_tape_to_be_released#ev19
+sentence: Al-Qaeda in Iraq has released video of Sudanese hostages that members of the organization have kidnapped last week.
+agent: Al-Qaeda_releases_video_of_Sudanese_hostages#ev6
+predicate: release
+patient: video+of+sudanese+hostages
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_video_of_Sudanese_hostages#ev6
+sentence: The video indicates that the militants intend to kill five kidnapped employees of the Sudanese Embassy in Baghdad in two days unless the Sudanese government removes its diplomatic mission from Iraq.
+agent: Al-Qaeda_releases_video_of_Sudanese_hostages#ev13
+predicate: remove
+patient: its+diplomatic+mission+from+iraq
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_video_of_Sudanese_hostages#ev13
+sentence: The video indicates that the militants intend to kill five kidnapped employees of the Sudanese Embassy in Baghdad in two days unless the Sudanese government removes its diplomatic mission from Iraq.
+agent: Al-Qaeda_releases_video_of_Sudanese_hostages#ev17
+predicate: mission
+patient: its+diplomatic+mission+from+iraq
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_video_of_Sudanese_hostages#ev17
+sentence: "Ignorance of Islam causes the people of the West to rapturously applaud when Israel perpetrates wholesale slaughter of Muslims in Lebanon and Palestine and leads them to give their consent to the atrocities that governments commit in Afghanistan, Iraq and elsewhere in the Muslim world," added Gadahn.
+agent: Al-Qaeda_releases_new_videotape#ev33
+predicate: commit
+patient: wholesale+slaughter+of+muslims
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_new_videotape#ev33
+sentence: "Ignorance of Islam causes the people of the West to rapturously applaud when Israel perpetrates wholesale slaughter of Muslims in Lebanon and Palestine and leads them to give their consent to the atrocities that governments commit in Afghanistan, Iraq and elsewhere in the Muslim world," added Gadahn.
+agent: Al-Qaeda_releases_new_videotape#ev38
+predicate: cause
+patient: Western_world
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_new_videotape#ev38
+sentence: "Ignorance of Islam causes the people of the West to rapturously applaud when Israel perpetrates wholesale slaughter of Muslims in Lebanon and Palestine and leads them to give their consent to the atrocities that governments commit in Afghanistan, Iraq and elsewhere in the Muslim world," added Gadahn.
+agent: Al-Qaeda_releases_new_videotape#ev33
+predicate: perpetrate
+patient: wholesale+slaughter+of+muslims
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_new_videotape#ev33
+sentence: Al-Zawahiri also criticised his native country Egypt, saying that "Israel has been able to dominate Lebanon and Gaza only because Egypt has been totally removed from the conflict with Israel."
+agent: 11_message#ev68
+predicate: criticise
+patient: his+native+country+egypt
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev68
+sentence: Al-Zawahiri also criticised his native country Egypt, saying that "Israel has been able to dominate Lebanon and Gaza only because Egypt has been totally removed from the conflict with Israel."
+agent: 11_message#ev44
+predicate: dominate
+patient: Lebanon
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev44
+sentence: CNN analyst Peter Bergen said Sunday that the al-Qaeda group was certain to make some sort of statement on Monday's anniversary.
+agent: 11_message#ev58
+predicate: make
+patient: some+sort+of+statement
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev58
+sentence: Al-Qaida released a 9/11 message to the American public today, and with it comes a threat for the American people.
+agent: 11_message#ev59
+predicate: message
+patient: a+9%2f11+message
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev59
+sentence: The tape appears to be recorded recently, with many references to the Israel and Lebanon conflict, including the recent bombardment of Lebanon by Israel.
+agent: 11_message#ev38
+predicate: bombardment
+patient: Lebanon
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev38
+sentence: Al-Qaida released a 9/11 message to the American public today, and with it comes a threat for the American people.
+agent: 11_message#ev26
+predicate: release
+patient: a+9%2f11+message
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev26
+sentence: Al-Zawahiri says that attacks on the West should be considered fair, because "...the reality of international politics is the humiliation and repression of the Muslim at the hands of the idol-kings who dominate this world."
+agent: 11_message#ev44
+predicate: dominate
+patient: Lebanon
+event: http://en.wikinews.org/wiki/Al-Qaeda_releases_9/11_message#ev44
+sentence: Unconfirmed reports from Iraq say that Abu Hamza al-Muhajir, the supposed successor of al-Zarqawi, has been killed in a US-led military raid.
+agent: Two_Iraqi_women,_one_pregnant,_killed_by_US_soldiers#ev29
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Two_Iraqi_women,_one_pregnant,_killed_by_US_soldiers#ev29
+sentence: Unconfirmed reports from Iraq say that Abu Hamza al-Muhajir, the supposed successor of al-Zarqawi, has been killed in a US-led military raid.
+agent: Iraq_rejects_US_probe_clearing_US_troops_of_killings_civilians_in_Ishaqi#ev54
+predicate: raid
+patient: United_States
+event: http://en.wikinews.org/wiki/Iraq_rejects_US_probe_clearing_US_troops_of_killings_civilians_in_Ishaqi#ev54
+sentence: According to the US, Abu Hamza Al-Muhajir replaced al-Zarqawi, the previous leader of al-Qaeda in Iraq, after he was killed in a US raid in June 2006.
+agent: Al-Qaeda_leader_in_Iraq_'killed'#ev8
+predicate: replace
+patient: the+previous+leader+of+al-qaeda
+event: http://en.wikinews.org/wiki/Al-Qaeda_leader_in_Iraq_'killed'#ev8
+sentence: According to the US, Abu Hamza Al-Muhajir replaced al-Zarqawi, the previous leader of al-Qaeda in Iraq, after he was killed in a US raid in June 2006.
+agent: Two_Iraqi_women,_one_pregnant,_killed_by_US_soldiers#ev29
+predicate: kill
+patient: Iraq
+event: http://en.wikinews.org/wiki/Two_Iraqi_women,_one_pregnant,_killed_by_US_soldiers#ev29
+sentence: According to the US, Abu Hamza Al-Muhajir replaced al-Zarqawi, the previous leader of al-Qaeda in Iraq, after he was killed in a US raid in June 2006.
+agent: Iraq_rejects_US_probe_clearing_US_troops_of_killings_civilians_in_Ishaqi#ev54
+predicate: raid
+patient: United_States
+event: http://en.wikinews.org/wiki/Iraq_rejects_US_probe_clearing_US_troops_of_killings_civilians_in_Ishaqi#ev54
+sentence: Unconfirmed reports from Iraq say that Abu Hamza al-Muhajir, the supposed successor of al-Zarqawi, has been killed in a US-led military raid.
+agent: Al-Qaeda_leader_in_Iraq_'killed'#ev6
+predicate: successor
+patient: of+al-zarqawi
+event: http://en.wikinews.org/wiki/Al-Qaeda_leader_in_Iraq_'killed'#ev6
+sentence: Brigadier General David Perkins agreed, saying the death of Qaswarah "allows the Iraqi security forces with the support of the coalition to go in and continue to tear apart that network".
+agent: Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev52
+predicate: allow
+patient: the+iraqi+security+forces
+event: http://en.wikinews.org/wiki/Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev52
+sentence: US officials had reported the deaths earlier but had not confirmed Qaswarah's identity.
+agent: Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev46_0
+predicate: report
+patient: the+deaths
+event: http://en.wikinews.org/wiki/Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev46_0
+sentence: A military statement reported that Qaswarah's death would "degrade AQI operations" and leave the group "without a leader to oversee and coordinate its operations in the region".
+agent: Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev30
+predicate: degrade
+patient: aqi+operations
+event: http://en.wikinews.org/wiki/Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev30
+sentence: A military statement reported that Qaswarah's death would "degrade AQI operations" and leave the group "without a leader to oversee and coordinate its operations in the region".
+agent: Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev49
+predicate: leave
+patient: the+group
+event: http://en.wikinews.org/wiki/Al-Qaeda_in_Iraq_second-in-command_reported_killed_during_US_raid#ev49
+sentence: The President of Chad Idriss Deby has confirmed that the senior Al-Qaeda commander Abdelhamid Abou Zeid has been killed by French troops in Northern Mali.
+agent: Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+predicate: kill
+patient: prominent+militant+islamist+mokhtar+belmokhtar
+event: http://en.wikinews.org/wiki/Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+sentence: Al-Qaeda are currently holding seven French nationals hostages in Sahel and there are no confirmed reports that they have been executed.
+agent: Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev26
+predicate: hold
+patient: seven+french+nationals+hostages+in+sahel
+event: http://en.wikinews.org/wiki/Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev26
+sentence: Abou Zeid is a senior commander in the Al-Qaeda in the Islamic Maghreb who are fighting French-backed Malian forces, he was killed along with 40 other militants four days ago in the Adrar des Ifoghas mountain range.
+agent: Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+predicate: kill
+patient: prominent+militant+islamist+mokhtar+belmokhtar
+event: http://en.wikinews.org/wiki/Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+sentence: President Deby said in a statement on Friday: "Chadian forces killed two jihadi leaders, including Abou Zeid", "On February 22, we lost several soldiers in the Ifogha mountains after destroying the jihadists' base.
+agent: Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev36
+predicate: statement
+patient: on+friday
+event: http://en.wikinews.org/wiki/Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev36
+sentence: President Deby said in a statement on Friday: "Chadian forces killed two jihadi leaders, including Abou Zeid", "On February 22, we lost several soldiers in the Ifogha mountains after destroying the jihadists' base.
+agent: Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+predicate: kill
+patient: prominent+militant+islamist+mokhtar+belmokhtar
+event: http://en.wikinews.org/wiki/Al-Qaeda_commander_Abou_Zeid_killed_in_Mali_by_French_forces#ev9
+sentence: Al-Qaeda's second in command, Ayman al-Zawahri has appeared in a new videotape in which he calls President George W. Bush a "liar" and a "failure" in the war against terrorism.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev51
+predicate: war
+patient: in+the+war+against+terrorism
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev51
+sentence: In the video, Zawahiri also criticizes the Pope Benedict XVI for comments he made against Muslims in a speech on September 12, 2006 and also calls for the Pope and all Christians to "become Muslims."
+agent: Pope_Benedict_XVI_criticises_Prophet_Muhammad's_teachings#ev17
+predicate: criticize
+patient: the+idea+of+jihad
+event: http://en.wikinews.org/wiki/Pope_Benedict_XVI_criticises_Prophet_Muhammad's_teachings#ev17
+sentence: "This charlatan Benedict brings back to our memories the speech of his predecessor charlatan Urban II in the 11th century ... in which he instigated Europeans to fight Muslims and launch the Crusades because he (Urban) claimed 'atheist Muslims, the enemies of Christ' are attacking the tomb of Jesus Christ, peace be upon him," said Zawahiri.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev100
+predicate: bring
+patient: of+his+predecessor+charlatan+urban+ii
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev100
+sentence: "This charlatan Benedict brings back to our memories the speech of his predecessor charlatan Urban II in the 11th century ... in which he instigated Europeans to fight Muslims and launch the Crusades because he (Urban) claimed 'atheist Muslims, the enemies of Christ' are attacking the tomb of Jesus Christ, peace be upon him," said Zawahiri.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+predicate: attack
+patient: god+%27s
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+sentence: "If Benedict attacked us, we will respond to his insults with good things.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+predicate: say
+patient: peace+be+upon+him
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+sentence: "If Benedict attacked us, we will respond to his insults with good things.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+predicate: attack
+patient: god+%27s
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+sentence: Zawahiri also said that sending any peacekeepers to the Darfur Region of Sudan is a "crusader plan" and that all Muslims in the region "should defend themselves."
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+predicate: say
+patient: peace+be+upon+him
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+sentence: "There is a Crusader plan to send Crusaders forces to Darfur that is about to become a new field of the Crusades war.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+predicate: defend
+patient: your+land
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+sentence: Oh, nation of Islam, rise up to defend your land from the Crusaders aggression who are coming wearing United Nations masks.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev51
+predicate: war
+patient: in+the+war+against+terrorism
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev51
+sentence: Oh, nation of Islam, rise up to defend your land from the Crusaders aggression who are coming wearing United Nations masks.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+predicate: defend
+patient: your+land
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+sentence: No one will defend you (Darfur) but a popular holy war," said Zawahiri.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+predicate: defend
+patient: your+land
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev127
+sentence: The U.S. intelligence agency, the CIA has confirmed that the tape is authentic and that the person appearing in the video is Zawahiri.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+predicate: say
+patient: peace+be+upon+him
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+sentence: "After conducting a technical analysis of the videotape, the CIA can confirm with confidence that the voice on the tape is that of Ayman al-Zawahri," said spokeswoman for the CIA, Michele Neff.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev92
+predicate: conduct
+patient: a+technical+analysis+of+the+videotape
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev92
+sentence: "After conducting a technical analysis of the videotape, the CIA can confirm with confidence that the voice on the tape is that of Ayman al-Zawahri," said spokeswoman for the CIA, Michele Neff.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+predicate: say
+patient: peace+be+upon+him
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+sentence: It is not known exactly when the video was made, but United States officials say that it was written after September 12, the day of the Pope's speech.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+predicate: say
+patient: peace+be+upon+him
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev121
+sentence: "Bush, you deceitful charlatan, 3 1/2 years have passed since your capture of Khalid Sheikh Mohammed, so how have you found us during this time?
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev58
+predicate: year
+patient: you+deceitful+charlatan
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev58
+sentence: Or are we launching attacks with God's help and becoming martyrs?
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+predicate: attack
+patient: god+%27s
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahri_appears_in_new_videotape#ev61
+sentence: U.S. intelligence is currently reviewing the tape, but so far the authenticity cannot be independently confirmed.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev37
+predicate: review
+patient: the+tape
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev37
+sentence: In a separate recording released last week, al-Qaeda leader Osama bin Laden called on Palestinians to reject negotiations and use "iron and fire" against Israel.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev26
+predicate: call
+patient: on+palestinians
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev26
+sentence: A voice described as bin Laden's also urged Muslims to support the insurgency in Iraq as a way to liberate Palestine.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev42
+predicate: support
+patient: Iraq
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev42
+sentence: The tape was posted on the internet and on it, Zawahiri urges strikes against Jewish and Americans interests, along with all those who participate in aggression against Muslims.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev18
+predicate: participate
+patient: in+the+attack
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev18
+sentence: Strike the interests of the Jews, the Americans, and all those who participated in the attack on Muslims.
+agent: Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev18
+predicate: participate
+patient: in+the+attack
+event: http://en.wikinews.org/wiki/Al-Qaeda's_second_in_command,_Ayman_al-Zawahiri,_calls_for_'strikes_against_Jewish_and_American_interests'#ev18
+sentence: Other results of the poll showed that 67% of Pakistanis polled, oppose U.S military intervention on Pakistan soil.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev40_1
+predicate: oppose
+patient: United_States_Armed_Forces
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev40_1
+sentence: Another 41% support negotiations with the Taliban.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev43
+predicate: support
+patient: Asif_Ali_Zardari
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev43
+sentence: The poll also revealed that some are dissatisfied with the current government of Pakistan, showing only 11% support for the current president, Asif Ali Zardari.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev43
+predicate: support
+patient: Asif_Ali_Zardari
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev43
+sentence: A poll commissioned by the news network Al Jazeera in Pakistan has concluded that a majority of Pakistanis believe that Pakistan's largest military aid donor, the United States, is the "biggest" threat to the country today.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev15
+predicate: donor
+patient: United_States
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev15
+sentence: Of the more than 2,600 Pakistanis polled 11% believed Taliban fighters to be the biggest threat, another 18% believed neighboring India to be the biggest threat to Pakistan.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev38_1
+predicate: believe
+patient: Tehrik-i-Taliban_Pakistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev38_1
+sentence: A probable cause of resentment of the United States in Pakistan are the drone attacks, which are opposed by 66% of those polled, according to Al Jazeera.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+predicate: attack
+patient: a+drone+attack
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+sentence: Drone attacks killed four civilians in Southern Afghanistan near the Afghanistan-Pakistan border on Wednesday, August, 5.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+predicate: attack
+patient: a+drone+attack
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+sentence: Drone attacks killed four civilians in Southern Afghanistan near the Afghanistan-Pakistan border on Wednesday, August, 5.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev23
+predicate: kill
+patient: SouthernAfghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev23
+sentence: In October, 2006, a drone attack hit a school in South Waziristan killing 80 people causing unrest in Pakistan.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+predicate: attack
+patient: a+drone+attack
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev22
+sentence: In October, 2006, a drone attack hit a school in South Waziristan killing 80 people causing unrest in Pakistan.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev35
+predicate: hit
+patient: 80+people+causing+unrest+in+pakistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev35
+sentence: In October, 2006, a drone attack hit a school in South Waziristan killing 80 people causing unrest in Pakistan.
+agent: Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev23
+predicate: kill
+patient: SouthernAfghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_poll_shows_many_Pakistanis_identify_America_as_'biggest'_threat#ev23
+sentence: al-Zawahri also threatened the citizens of Britain and the U.S.A. in the tape; "The lion of Islam, Sheik Osama bin Laden, may God protect him, offered you a decent exit from your dilemma.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev40
+predicate: citizen
+patient: Federal_government_of_the_United_States
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev40
+sentence: al-Zawahri also threatened the citizens of Britain and the U.S.A. in the tape; "The lion of Islam, Sheik Osama bin Laden, may God protect him, offered you a decent exit from your dilemma.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev42
+predicate: lion
+patient: Islam
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev42
+sentence: But your leaders, who are keen to accumulate wealth, insist on throwing you in battles and killing your souls in Iraq and Afghanistan and — God willing — on your own land."
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+predicate: kill
+patient: some+al-qaeda+operatives
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+sentence: A U.S. counterterrorism official said to AP reporters on condition of anonymity, that the message broadcast by al-Jazeera indicates that al-Qaeda believed it was important to show that al-Zawahri is alive.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev24
+predicate: broadcast
+patient: the+message+broadcast+by+al-jazeera
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev24
+sentence: The U.S. official also noted that the video was delivered quickly, demonstrating al-Zawahri's ability to get his message out even faster than bin Laden.
+agent: Terrorism_expert_says_Osama_Bin_Laden_could_be_dead#ev117
+predicate: note
+patient: on+the+attack
+event: http://en.wikinews.org/wiki/Terrorism_expert_says_Osama_Bin_Laden_could_be_dead#ev117
+sentence: As al-Zawahri make a reference to Osama Bin Laden's offering of a truce, it appears this tape is recorded not more than 12 days ago, which make a very short time according to al-Qaeda standards.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+predicate: make
+patient: for+the+cross-border+attack+from+afghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+sentence: As al-Zawahri make a reference to Osama Bin Laden's offering of a truce, it appears this tape is recorded not more than 12 days ago, which make a very short time according to al-Qaeda standards.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev55
+predicate: offering
+patient: of+a+truce
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev55
+sentence: As al-Zawahri make a reference to Osama Bin Laden's offering of a truce, it appears this tape is recorded not more than 12 days ago, which make a very short time according to al-Qaeda standards.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+predicate: make
+patient: for+the+cross-border+attack+from+afghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+sentence: It has been widely reported, but not confirmed, that some al-Qaeda operatives were killed by the U.S. airstrike on the village of Damadola in Pakistan.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+predicate: kill
+patient: some+al-qaeda+operatives
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+sentence: It has been widely reported, but not confirmed, that some al-Qaeda operatives were killed by the U.S. airstrike on the village of Damadola in Pakistan.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev57
+predicate: airstrike
+patient: Damadola
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev57
+sentence: In his first video appearance to mention the Peshawar province missile attack in Pakistan, Al-Zawahri refers to the alleged strike on himself and calls United States President George W. Bush, a "butcher" and a "failure".
+agent: U.S._airstrike_targeting_Ayman_al-Zawahiri_leaves_18_dead_in_Pakistani_village#ev53
+predicate: attack
+patient: over+u.s.+attacks+on+pakistani+civilians
+event: http://en.wikinews.org/wiki/U.S._airstrike_targeting_Ayman_al-Zawahiri_leaves_18_dead_in_Pakistani_village#ev53
+sentence: The air strike killed 13 villagers and led to widespread demonstrations in Pakistan for the alleged deaths of civilians.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+predicate: kill
+patient: some+al-qaeda+operatives
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev32
+sentence: The U.S. has made no official claim of responsibility for the cross-border attack from Afghanistan.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+predicate: make
+patient: for+the+cross-border+attack+from+afghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev34
+sentence: The U.S. has made no official claim of responsibility for the cross-border attack from Afghanistan.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev71
+predicate: claim
+patient: for+the+cross-border+attack+from+afghanistan
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev71
+sentence: The Qatar-based Arabic language television network al-Jazeera has aired a new tape of al-Qaeda's second-in-command, Ayman al-Zawahri.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev24
+predicate: air
+patient: the+message+broadcast+by+al-jazeera
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev24
+sentence: The U.S. has made no official claim of responsibility for the cross-border attack from Afghanistan.
+agent: U.S._airstrike_targeting_Ayman_al-Zawahiri_leaves_18_dead_in_Pakistani_village#ev53
+predicate: attack
+patient: over+u.s.+attacks+on+pakistani+civilians
+event: http://en.wikinews.org/wiki/U.S._airstrike_targeting_Ayman_al-Zawahiri_leaves_18_dead_in_Pakistani_village#ev53
+sentence: "Bush, do you know where I am?
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev72
+predicate: know
+patient: where+i+am
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev72
+sentence: In an interview broadcast on Russian state-run Channel One television, deposed Kyrgyz president Askar Akayev, when asked whether he was prepared to resign as president, replied, "Of course, of course - if I am given the relevant guarantees and if it is in full accordance with the current legislation."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev12
+predicate: give
+patient: rise+to+mass+unrest
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev12
+sentence: While acting president and prime minister Kurmanbek Bakiyev and former acting minister of securities Felix Kulov have offered him immunity, he said he would only return if parliament offered him "personal safety guarantees."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev16
+predicate: act
+patient: on+his+own+will
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev16
+sentence: While acting president and prime minister Kurmanbek Bakiyev and former acting minister of securities Felix Kulov have offered him immunity, he said he would only return if parliament offered him "personal safety guarantees."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+predicate: say
+patient: the+parliamentary+press+service
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+sentence: Bakiyev warned that Akayev's return could "give rise to mass unrest."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev36
+predicate: warn
+patient: rise+to+mass+unrest
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev36
+sentence: Bakiyev warned that Akayev's return could "give rise to mass unrest."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev12
+predicate: give
+patient: rise+to+mass+unrest
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev12
+sentence: In related news, acting minister of securities Felix Kulov has been removed from parliament on his own will, RIA Novosti reported the parliamentary press service as saying.
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev16
+predicate: act
+patient: on+his+own+will
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev16
+sentence: In related news, acting minister of securities Felix Kulov has been removed from parliament on his own will, RIA Novosti reported the parliamentary press service as saying.
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev38_0
+predicate: report
+patient: the+parliamentary+press+service
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev38_0
+sentence: He was reported as saying that "The set goal has been achieved: the situation in our republic has stabilized."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+predicate: say
+patient: the+parliamentary+press+service
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+sentence: He was reported as saying that "The set goal has been achieved: the situation in our republic has stabilized."
+agent: Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+predicate: say
+patient: the+parliamentary+press+service
+event: http://en.wikinews.org/wiki/Akayev_willing_to_resign_as_president_of_Kyrgyzstan#ev33
+sentence: He said an official resignation ceremony would take place Monday.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: Akayev said a resignation document was drawn up during the meeting.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: Deposed President of Kyrgyzstan Askar Akayev said that he had signed his resignation in the Kyrgyz embassy in Moscow Sunday.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: "We have approved a very good and historic document," Akayev said after signing his resignation.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: "We have approved a very good and historic document," Akayev said after signing his resignation.
+agent: Akayev_signs_resignation_agreement#ev11
+predicate: sign
+patient: his+resignation
+event: http://en.wikinews.org/wiki/Akayev_signs_resignation_agreement#ev11
+sentence: Deposed President of Kyrgyzstan Askar Akayev said that he had signed his resignation in the Kyrgyz embassy in Moscow Sunday.
+agent: Akayev_signs_resignation_agreement#ev11
+predicate: sign
+patient: his+resignation
+event: http://en.wikinews.org/wiki/Akayev_signs_resignation_agreement#ev11
+sentence: Tekebayev said the agreement "will ensure peace and legitimacy."
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: Tekebayev said the agreement "will ensure peace and legitimacy."
+agent: Akayev_signs_resignation_agreement#ev39
+predicate: ensure
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/Akayev_signs_resignation_agreement#ev39
+sentence: While full details of the document were not available, Akayev said Russia and Kazakhstan were listed as guarantors.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: Akayev also said that under the agreement, parliament would pass a resolution recognizing his privileges as a former head of state - namely, immunity from prosecution.
+agent: United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+predicate: say
+patient: peace+and+legitimacy
+event: http://en.wikinews.org/wiki/United_States_helped_Kyrgyz_pro-democracy_programs#ev65
+sentence: Deposed President of Kyrgyzstan Askar Akayev said that he had signed his resignation in the Kyrgyz embassy in Moscow Sunday.
+agent: Akayev_signs_resignation_agreement#ev13
+predicate: embassy
+patient: Moscow
+event: http://en.wikinews.org/wiki/Akayev_signs_resignation_agreement#ev13
+sentence: Thousands of demonstrators, reportedly cheered on by residents, overran the Kyrgyz Presidential Palace, seizing control of Bishkek’s government buildings and forcing President Askar Akayev to flee the country.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+predicate: seize
+patient: every+government+building+in+the+capital
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+sentence: The Presidential Palace was reinforced with police forces and soldiers as about 5,000 protesters marched to the palace, chanting “down with the Akayev clans.”
+
+The forces surrounding the building, which reportedly numbered in the hundreds, repelled an initial attempt to storm the building by the protesters, but the forces dispersed as about a thousand protesters fought back, armed with rocks and clubs, attempting to storm the building a second time.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+predicate: force
+patient: Askar_Akayev
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+sentence: Thousands of demonstrators, reportedly cheered on by residents, overran the Kyrgyz Presidential Palace, seizing control of Bishkek’s government buildings and forcing President Askar Akayev to flee the country.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+predicate: control
+patient: Osh
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+sentence: Once inside, hundreds of protesters ransacked the building, throwing portraits of Akayev out the windows and destroying documents.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev68
+predicate: ransack
+patient: the+building
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev68
+sentence: Once inside, hundreds of protesters ransacked the building, throwing portraits of Akayev out the windows and destroying documents.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev69
+predicate: throw
+patient: Askar_Akayev
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev69
+sentence: Thousands of demonstrators, reportedly cheered on by residents, overran the Kyrgyz Presidential Palace, seizing control of Bishkek’s government buildings and forcing President Askar Akayev to flee the country.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+predicate: force
+patient: Askar_Akayev
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+sentence: Interfax reported that Akayev had flown to Kazakhstan with his family by helicopter earlier.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev74
+predicate: fly
+patient: Askar_Akayev
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev74
+sentence: Thousands of demonstrators, reportedly cheered on by residents, overran the Kyrgyz Presidential Palace, seizing control of Bishkek’s government buildings and forcing President Askar Akayev to flee the country.
+agent: Multiple_parliaments_meet_in_Kyrgyzstan,_legitimacy_uncertain#ev36
+predicate: flee
+patient: the+country
+event: http://en.wikinews.org/wiki/Multiple_parliaments_meet_in_Kyrgyzstan,_legitimacy_uncertain#ev36
+sentence: "Let's keep the peace, let's not lose our head," he said into a megaphone on the steps of the palace, addressing the protesters.
+agent: 96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+predicate: say
+patient: into+a+megaphone
+event: http://en.wikinews.org/wiki/96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+sentence: Felix Kulov was quoted as saying that Akayev had resigned, though he denied this.
+agent: 96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+predicate: say
+patient: into+a+megaphone
+event: http://en.wikinews.org/wiki/96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+sentence: The demonstrations began at about noon local time (0700 UTC), and, by 3:30 (1030 UTC), every government building in the capital was seized.
+agent: 96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+predicate: say
+patient: into+a+megaphone
+event: http://en.wikinews.org/wiki/96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+sentence: The opposition quickly established a “Coordination Council of National Unity.”
+
+"We will establish order.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+predicate: seize
+patient: every+government+building+in+the+capital
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+sentence: The opposition quickly established a “Coordination Council of National Unity.”
+
+"We will establish order.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+predicate: establish
+patient: CoordinationCouncil
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+sentence: We will not allow looting.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+predicate: establish
+patient: CoordinationCouncil
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+sentence: We will hold our own elections to start our rule," Kurmanbek Bakiyev, leader of the newly established Coordination Council said.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+predicate: establish
+patient: CoordinationCouncil
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev154
+sentence: Former legislator Oksana Malevanaya, speaking for the Coordination Council on state television, now under opposition control, said that the former parliament would meet Thursday night.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+predicate: control
+patient: Osh
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+sentence: He reportedly stated that the court considered the convened former legislature as the legitimate one.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev163
+predicate: declare
+patient: the+elections+invalid
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev163
+sentence: "It's not the opposition that has seized power, it's the people who have taken power.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+predicate: seize
+patient: every+government+building+in+the+capital
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+sentence: They have been fighting for so long against corruption, against that [Akayev] family," Ulan Shambetov, an opposition activist, said.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev53
+predicate: take
+patient: of+the+country
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev53
+sentence: The old parliament will serve as the legitimate legislature until the elections are be held.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev93
+predicate: serve
+patient: as+the+legitimate+legislature
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev93
+sentence: Opposition MP Ishinbai Kadyrbekov, former parliamentary speaker, was named acting president and newly freed Felix Kulov was named head of the ministries of security in the country by the parliament.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev170
+predicate: name
+patient: Felix_Kulov
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev170
+sentence: Opposition MP Ishinbai Kadyrbekov, former parliamentary speaker, was named acting president and newly freed Felix Kulov was named head of the ministries of security in the country by the parliament.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev170
+predicate: name
+patient: Felix_Kulov
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev170
+sentence: Elsewhere, in Batken, the third regional center in the south after now opposition controlled Osh and Jalal-Abad, hundreds of protesters broke through police lines and seized government buildings.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+predicate: control
+patient: Osh
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+sentence: Monica Whitlock, a correspondent for the BBC, notes she observed that some protesters carried pink banners while others carried yellow ones, suggesting that the opposition is fractured.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+predicate: seize
+patient: every+government+building+in+the+capital
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev43
+sentence: Monica Whitlock, a correspondent for the BBC, notes she observed that some protesters carried pink banners while others carried yellow ones, suggesting that the opposition is fractured.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev177
+predicate: carry
+patient: pink+banners
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev177
+sentence: Monica Whitlock, a correspondent for the BBC, notes she observed that some protesters carried pink banners while others carried yellow ones, suggesting that the opposition is fractured.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev100
+predicate: banner
+patient: pink+banners
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev100
+sentence: Monica Whitlock, a correspondent for the BBC, notes she observed that some protesters carried pink banners while others carried yellow ones, suggesting that the opposition is fractured.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev177
+predicate: carry
+patient: pink+banners
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev177
+sentence: Bishkek was described as sinking into a state of "anarchy" by one observer, as gangs of people roamed the streets and plundered stores of consumer goods.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev104
+predicate: roam
+patient: the+streets
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev104
+sentence: Several Bishkek residents blamed protesters from the south for the lawlessness.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev105
+predicate: plunder
+patient: stores+of+consumer+goods
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev105
+sentence: Several Bishkek residents blamed protesters from the south for the lawlessness.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev109
+predicate: resident
+patient: Bishkek
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev109
+sentence: "The law enforcement bodies are completely demoralised."
+agent: 96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+predicate: tell
+patient: into+a+megaphone
+event: http://en.wikinews.org/wiki/96_dead_of_Ebola-like_Marburg_virus_in_Angola#ev28
+sentence: Amid the continued instability, Kazakhstan tightened security along its border with Kyrgyzstan, as Uzbekistan and Tajikistan have recently done.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev111
+predicate: tighten
+patient: security+along+its+border+with+kyrgyzstan
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev111
+sentence: At the rally, the protesters gave speeches stating that the opposition would today finish taking control of the country.
+agent: Second_weekend_of_protests_begins_in_China#ev23
+predicate: give
+patient: permission+for+their+demonstration
+event: http://en.wikinews.org/wiki/Second_weekend_of_protests_begins_in_China#ev23
+sentence: At the rally, the protesters gave speeches stating that the opposition would today finish taking control of the country.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev53
+predicate: take
+patient: of+the+country
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev53
+sentence: At the rally, the protesters gave speeches stating that the opposition would today finish taking control of the country.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+predicate: control
+patient: Osh
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev46
+sentence: Keneshbek Dushebayev, newly appointed Interior Minister and chief of police for the city, called on them to give up their plans, but his pleas were dismissed by the protesters.
+agent: Second_weekend_of_protests_begins_in_China#ev23
+predicate: give
+patient: permission+for+their+demonstration
+event: http://en.wikinews.org/wiki/Second_weekend_of_protests_begins_in_China#ev23
+sentence: Keneshbek Dushebayev, newly appointed Interior Minister and chief of police for the city, called on them to give up their plans, but his pleas were dismissed by the protesters.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev58
+predicate: dismiss
+patient: his+pleas
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev58
+sentence: However, the Interior Minister assured them that the Akayev's regime would not use force against them, despite the fact that riot police suppressed a smaller demonstration the day before after he claimed that the use of force was lawful.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+predicate: force
+patient: Askar_Akayev
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev44
+sentence: However, the Interior Minister assured them that the Akayev's regime would not use force against them, despite the fact that riot police suppressed a smaller demonstration the day before after he claimed that the use of force was lawful.
+agent: Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev135
+predicate: suppress
+patient: a+smaller+demonstration
+event: http://en.wikinews.org/wiki/Akayev_flees_Kyrgyzstan_as_protesters_seize_control_of_Bishkek#ev135
+sentence: Seven are confirmed dead, with the pilot critical and police continuing to search the scene for more bodies.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev33
+predicate: search
+patient: for+more+bodies
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev33
+sentence: A midair collision today killed a pilot during an airshow in the village of Dittingen in Switzerland.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+predicate: kill
+patient: the+killed+pilot+%27s
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+sentence: Basel-Landschaft police spokesman Meinrad Stoecklin put the time of the accident at 11:30a.m.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev17
+predicate: put
+patient: the+time+of+the+accident
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev17
+sentence: The killed pilot's plane struck a barn.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+predicate: kill
+patient: the+killed+pilot+%27s
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+sentence: The killed pilot's plane struck a barn.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev24
+predicate: strike
+patient: a+barn
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev24
+sentence: The display team reportedly was using amateur pilots.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev29
+predicate: use
+patient: amateur+pilots
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev29
+sentence: They had been practising for an airshow due to be held this weekend.
+agent: Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+predicate: kill
+patient: the+killed+pilot+%27s
+event: http://en.wikinews.org/wiki/Airshow_collision_kills_one_in_Dittingen,_Switzerland#ev4
+sentence: Airports worldwide have implemented new security measures in the aftermath of the Christmas Day 2009 incident involving Umar Farouk Abdulmutallab, who is accused of attempting to blow up Northwest Airlines Flight 253 from Amsterdam, The Netherlands to Detroit, Michigan.
+agent: Airport_security_tightened_worldwide#ev2
+predicate: implement
+patient: new+security+measures
+event: http://en.wikinews.org/wiki/Airport_security_tightened_worldwide#ev2
+sentence: The announcement to re-name Katsina Airport was made by President Goodluck Jonathan.
+agent: Airport_named_after_late_Nigerian_President_Umaru_Yar%e2%80%99Adua#ev6
+predicate: make
+patient: the+announcement+to+re-name+katsina+airport
+event: http://en.wikinews.org/wiki/Airport_named_after_late_Nigerian_President_Umaru_Yar%e2%80%99Adua#ev6
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev34
+predicate: operate
+patient: the+flight
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev34
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev64_0
+predicate: suggest
+patient: the+pilot+to+fly+manually
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev64_0
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+predicate: fly
+patient: the+pilot+to+fly+manually
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+predicate: say
+patient: what+caused+the+crash
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+sentence: "If the autopilot is left on while the ice is building up, the pilot may suddenly be confronted with a very difficult situation," said William Voss, president of the Flight Safety Foundation, speaking to the Toronto Star.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+predicate: say
+patient: what+caused+the+crash
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+sentence: If you don't keep the wings clean you could find yourself in a situation where [...] suddenly the aircraft decides to quit flying."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev70
+predicate: decide
+patient: to+quit+flying
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev70
+sentence: The airplane's data recorders suggest that there was a significant accumulation of ice on the aircraft's wings and windshield before it crashed.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev43
+predicate: quit
+patient: to+quit+flying
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev43
+sentence: The airplane's data recorders suggest that there was a significant accumulation of ice on the aircraft's wings and windshield before it crashed.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+predicate: fly
+patient: the+pilot+to+fly+manually
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+sentence: The airplane's data recorders suggest that there was a significant accumulation of ice on the aircraft's wings and windshield before it crashed.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev71
+predicate: recorder
+patient: the+airplane+%27s
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev71
+sentence: Shortly before the crash, according to the flight voice recorder, the pilots were talking about the poor weather and ask the traffic controller for permission to descend.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev74
+predicate: ask
+patient: for+permission+to+descend
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev74
+sentence: Investigators have stated that Continental Connection Flight 3407, which crashed in icy weather near Buffalo, New York on February 12, was on autopilot when it went down, and that the pilot flying the aircraft might have violated the airline's policy and federal safety recommendations.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+predicate: fly
+patient: the+pilot+to+fly+manually
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev19
+sentence: Recordings of communications seemed to be normal until soon before impact, and the flight crew did not notify air traffic control of any problems.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev76
+predicate: discuss
+patient: the+ice
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev76
+sentence: Recordings of communications seemed to be normal until soon before impact, and the flight crew did not notify air traffic control of any problems.
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev79
+predicate: notify
+patient: air+traffic+control+of+any+problems
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev79
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev63
+predicate: investigator
+patient: the+accident
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev63
+sentence: Steve Chealander, an investigator for the National Transportation Safety Board (NTSB), said that the company which operated the flight suggests the pilot to fly manually when conditions are icy, saying that "you may be able in a manual mode to sense something sooner than the autopilot can sense it."
+agent: Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+predicate: say
+patient: what+caused+the+crash
+event: http://en.wikinews.org/wiki/Airplane_that_crashed_near_Buffalo,_New_York_'was_on_autopilot'#ev62
+sentence: The plane was supposed to be taking part in a mock rescue exercise, and was carrying 30 members from the National Emergency Management Agency and other emergency workers, when it slid off the runway and into some bushes after landing at Port Harcourt International Airport.
+agent: Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev8
+predicate: part
+patient: in+a+mock+rescue+exercise
+event: http://en.wikinews.org/wiki/Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev8
+sentence: The plane was supposed to be taking part in a mock rescue exercise, and was carrying 30 members from the National Emergency Management Agency and other emergency workers, when it slid off the runway and into some bushes after landing at Port Harcourt International Airport.
+agent: Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev20
+predicate: carry
+patient: 30+members
+event: http://en.wikinews.org/wiki/Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev20
+sentence: The rescue workers on the ground, intended to participate in the emergency drill, instead had to deal with a real emergency; however, only a few people on board the aircraft sustained minor wounds.
+agent: Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev15
+predicate: sustain
+patient: minor+wounds
+event: http://en.wikinews.org/wiki/Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev15
+sentence: The rescue workers on the ground, intended to participate in the emergency drill, instead had to deal with a real emergency; however, only a few people on board the aircraft sustained minor wounds.
+agent: Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev16
+predicate: wound
+patient: the+aircraft
+event: http://en.wikinews.org/wiki/Airplane_in_Nigeria_crashes_during_mock_rescue_exercise#ev16
+sentence: There was no information as to why the man wanted to divert the plane to Iran.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev49
+predicate: want
+patient: to+divert+the+plane+to+iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev49
+sentence: There was no information as to why the man wanted to divert the plane to Iran.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev22
+predicate: divert
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev22
+sentence: Fırat Keleş, a passenger on board, told a Turkish television network that the man could be seen reading the Koran during the flight.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev34
+predicate: passenger
+patient: on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev34
+sentence: This incident occurred six months after a man hijacked a flight en route to Istanbul in October 2006.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev45
+predicate: say
+patient: there+was+no+panic+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev45
+sentence: This incident occurred six months after a man hijacked a flight en route to Istanbul in October 2006.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev13
+predicate: flight
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev13
+sentence: A Pegasus Airline flight carrying 178 passengers was hijacked today by a man named Mehmet Gökşin Göl.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev13
+predicate: flight
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev13
+sentence: Reports say he was attempting to divert the flight to Iran and that he is suffering from a mental illness.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev45
+predicate: say
+patient: there+was+no+panic+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev45
+sentence: Reports say he was attempting to divert the flight to Iran and that he is suffering from a mental illness.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev22
+predicate: divert
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev22
+sentence: Reports say he was attempting to divert the flight to Iran and that he is suffering from a mental illness.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev13
+predicate: flight
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev13
+sentence: The man, identified as Mehmet Gökşin Göl, entered the cockpit and threatened to blow up the plane, claiming to have an explosive device on board, Ankara Deputy Governor Hayati Soylu said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev27
+predicate: enter
+patient: the+cockpit
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev27
+sentence: The man, identified as Mehmet Gökşin Göl, entered the cockpit and threatened to blow up the plane, claiming to have an explosive device on board, Ankara Deputy Governor Hayati Soylu said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev28
+predicate: threaten
+patient: to+blow+up+the+plane
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev28
+sentence: The man, identified as Mehmet Gökşin Göl, entered the cockpit and threatened to blow up the plane, claiming to have an explosive device on board, Ankara Deputy Governor Hayati Soylu said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev29
+predicate: blow
+patient: to+blow+up+the+plane
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev29
+sentence: The man, identified as Mehmet Gökşin Göl, entered the cockpit and threatened to blow up the plane, claiming to have an explosive device on board, Ankara Deputy Governor Hayati Soylu said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev47
+predicate: claim
+patient: an+explosive+device+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev47
+sentence: The man, identified as Mehmet Gökşin Göl, entered the cockpit and threatened to blow up the plane, claiming to have an explosive device on board, Ankara Deputy Governor Hayati Soylu said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev38
+predicate: have
+patient: an+explosive+device+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev38
+sentence: The man was not armed and did not have explosives.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev45
+predicate: say
+patient: there+was+no+panic+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev45
+sentence: He was detained at Ankara's Esenboğa airport where pilots landed the Pegasus airline flight, which was going from Diyarbakır to Istanbul.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev13
+predicate: flight
+patient: Iran
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev13
+sentence: There were 178 passengers on board, including three babies, the airline said.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev34
+predicate: passenger
+patient: on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev34
+sentence: None of the passengers were hurt.
+agent: Airplane_hijacker_surrenders_in_Turkey#ev45
+predicate: say
+patient: there+was+no+panic+on+board
+event: http://en.wikinews.org/wiki/Airplane_hijacker_surrenders_in_Turkey#ev45
+sentence: During a heavy thunderstorm at around 19:00 GMT, a plane crashed into a block of flats in the suburb of Yeoville in Johannesburg.
+agent: Airplane_crashes_into_flats_in_South_Africa#ev5
+predicate: suburb
+patient: Johannesburg
+event: http://en.wikinews.org/wiki/Airplane_crashes_into_flats_in_South_Africa#ev5
+sentence: Seven people are reported to have survived the crash.
+agent: Airplane_crashes_in_Nigeria#ev5
+predicate: survive
+patient: the+crash
+event: http://en.wikinews.org/wiki/Airplane_crashes_in_Nigeria#ev5
+sentence: A passenger on-board the plane gave this account: "We suddenly descended a great distance as if the plane fell into turbulence.
+agent: Airplane_crashes_at_Schiphol_Airport;_9_killed#ev31
+predicate: give
+patient: this+account
+event: http://en.wikinews.org/wiki/Airplane_crashes_at_Schiphol_Airport;_9_killed#ev31
+sentence: The plane's tail hit the ground [...] It slid from the side of the motorway into the field," he said.
+agent: Airplane_crashes_at_Schiphol_Airport;_9_killed#ev45
+predicate: hit
+patient: the+ground+%5b
+event: http://en.wikinews.org/wiki/Airplane_crashes_at_Schiphol_Airport;_9_killed#ev45
+sentence: The priority of the authorities is providing help and care," stated the vice-mayor of the Haarlemmermeer municipality, Michel Bezuijen.
+agent: Airplane_crashes_at_Schiphol_Airport;_9_killed#ev38
+predicate: provide
+patient: help+and+care
+event: http://en.wikinews.org/wiki/Airplane_crashes_at_Schiphol_Airport;_9_killed#ev38
+sentence: The plane was traveling from Istanbul, Turkey.
+agent: Airplane_crashes_at_Schiphol_Airport;_9_killed#ev19
+predicate: travel
+patient: Istanbul
+event: http://en.wikinews.org/wiki/Airplane_crashes_at_Schiphol_Airport;_9_killed#ev19
+sentence: The airplane crashed short of the runway, close to the A9 highway, and broke into three pieces.
+agent: Airplane_crashes_at_Schiphol_Airport;_9_killed#ev48
+predicate: break
+patient: into+three+pieces
+event: http://en.wikinews.org/wiki/Airplane_crashes_at_Schiphol_Airport;_9_killed#ev48
+sentence: Witness reports say there was an explosion shortly before the plane crashed.
+agent: Malawian_president_inaugurated_after_reelection#ev44
+predicate: say
+patient: to+prioritize+agriculture+and+food+security
+event: http://en.wikinews.org/wiki/Malawian_president_inaugurated_after_reelection#ev44
+sentence: Witness reports say there was an explosion shortly before the plane crashed.
+agent: Malawian_president_inaugurated_after_reelection#ev44
+predicate: say
+patient: to+prioritize+agriculture+and+food+security
+event: http://en.wikinews.org/wiki/Malawian_president_inaugurated_after_reelection#ev44
+sentence: "I heard at least two big explosions and saw flashes of fire inside the plane," said an eyewitness, a man working in a rice field near where the aircraft crashed.
+agent: Malawian_president_inaugurated_after_reelection#ev44
+predicate: say
+patient: to+prioritize+agriculture+and+food+security
+event: http://en.wikinews.org/wiki/Malawian_president_inaugurated_after_reelection#ev44
+sentence: The plane had taken off from the country's capital of Jakarta and was preparing to land at a military base nearby the crash site.
+agent: Key_town_captured_by_Islamist_Somali_militants#ev9
+predicate: capital
+patient: Jakarta
+event: http://en.wikinews.org/wiki/Key_town_captured_by_Islamist_Somali_militants#ev9
+sentence: Meanwhile, reports of another person who died but has not been found cannot be verified as yet," said Banbang Sulistyo, the air force's chief of information.
+agent: Airplane_crash_in_Indonesia_kills_100#ev22
+predicate: chief
+patient: the+air+force+%27s
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Indonesia_kills_100#ev22
+sentence: Indonesian president Susilo Bambang Yudhoyono called an emergency meeting at his presidential palace with the Armed Forces and Air Force chief and defence minister.
+agent: Airplane_crash_in_Indonesia_kills_100#ev47
+predicate: call
+patient: an+emergency+meeting
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Indonesia_kills_100#ev47
+sentence: Indonesian president Susilo Bambang Yudhoyono called an emergency meeting at his presidential palace with the Armed Forces and Air Force chief and defence minister.
+agent: Airplane_crash_in_Indonesia_kills_100#ev22
+predicate: chief
+patient: the+air+force+%27s
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Indonesia_kills_100#ev22
+sentence: Four people survived the crash, including a 9-year-old boy.
+agent: Helicopter_ditches_in_the_North_Sea;_all_18_on_board_rescued#ev10
+predicate: survive
+patient: the+crash
+event: http://en.wikinews.org/wiki/Helicopter_ditches_in_the_North_Sea;_all_18_on_board_rescued#ev10
+sentence: Heavy rain was reported when the plane went down and bad weather is hampering the investigation.
+agent: Airplane_crash_in_Brazil_kills_24#ev41
+predicate: hamper
+patient: the+investigation
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Brazil_kills_24#ev41
+sentence: The pilots of the plane, which had departed from Coari, had supposedly contacted the air traffic control near their destination of Manaus to announce that they were turning back.
+agent: Fifty_killed_in_commuter_plane_crash_in_Clarence_Center,_New_York#ev106
+predicate: control
+patient: air+traffic
+event: http://en.wikinews.org/wiki/Fifty_killed_in_commuter_plane_crash_in_Clarence_Center,_New_York#ev106
+sentence: The rescue effort was made more difficult by nightfall and heavy rains.
+agent: Airplane_crash_in_Brazil_kills_24#ev47
+predicate: make
+patient: the+rescue+effort
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Brazil_kills_24#ev47
+sentence: According to the National Transportation Safety Board (NTSB) report of the incident, the aircraft suffered substantial damage after its left wing struck a tree whilst attempting to take-off.
+agent: Airplane_crash_in_Alaska_kills_five#ev41
+predicate: report
+patient: of+the+incident
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev41
+sentence: According to the National Transportation Safety Board (NTSB) report of the incident, the aircraft suffered substantial damage after its left wing struck a tree whilst attempting to take-off.
+agent: Airplane_crash_in_Alaska_kills_five#ev27
+predicate: suffer
+patient: substantial+damage
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev27
+sentence: According to the National Transportation Safety Board (NTSB) report of the incident, the aircraft suffered substantial damage after its left wing struck a tree whilst attempting to take-off.
+agent: Airplane_crash_in_Alaska_kills_five#ev30
+predicate: strike
+patient: a+tree
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev30
+sentence: According to the National Transportation Safety Board (NTSB) report of the incident, the aircraft suffered substantial damage after its left wing struck a tree whilst attempting to take-off.
+agent: Airplane_crash_in_Alaska_kills_five#ev31
+predicate: attempt
+patient: to+take-off
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev31
+sentence: The NTSB determined that the probable cause of the accident was pilot error in inadequately compensating for the wind conditions.
+agent: Airplane_crash_in_Alaska_kills_five#ev35
+predicate: cause
+patient: of+the+accident
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev35
+sentence: The NTSB determined that the probable cause of the accident was pilot error in inadequately compensating for the wind conditions.
+agent: Airplane_crash_in_Alaska_kills_five#ev32
+predicate: compensate
+patient: for+the+wind+conditions
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev32
+sentence: SeaWind Aviation's web site lists the aircraft as a deHavilland Beaver floatplane
+
+Identifications of those killed or of those injured were not currently available.
+agent: Airplane_crash_in_Alaska_kills_five#ev17
+predicate: list
+patient: the+aircraft
+event: http://en.wikinews.org/wiki/Airplane_crash_in_Alaska_kills_five#ev17
+sentence: A British Airways spokesperson is quoted by the Sydney Morning Herald saying, "We are keeping our operations under review and we would make any changes that would be necessary".
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+predicate: say
+patient: no+flights+passing+over+syrian+airspace
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+sentence: Gulf Air said in an e-mail to Arabian Business, "Nonetheless, given the current political climate, the airline has fully prepared contingency plans in case of any military intervention in the coming days [...] These contingency plans are ready for implementation should there be any changes in the current situation in Syria.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+predicate: say
+patient: no+flights+passing+over+syrian+airspace
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+sentence: Gulf Air said in an e-mail to Arabian Business, "Nonetheless, given the current political climate, the airline has fully prepared contingency plans in case of any military intervention in the coming days [...] These contingency plans are ready for implementation should there be any changes in the current situation in Syria.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev58
+predicate: have
+patient: fully+prepared+contingency+plans
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev58
+sentence: Gulf Air says it currently has no flights passing over Syrian airspace.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+predicate: say
+patient: no+flights+passing+over+syrian+airspace
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+sentence: Several airlines have already suspended commercial services into Syria, including Etihad who did so a year ago.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev45
+predicate: suspend
+patient: their+services
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev45
+sentence: Al Jazeera suspended their services during the final quarter of 2012.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev45
+predicate: suspend
+patient: their+services
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev45
+sentence: Last week, Cyprus Airways rescheduled their flights into Beirut because of the potential conflict.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev49
+predicate: reschedule
+patient: their+flights
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev49
+sentence: Several airlines have had to deal with similar situations in the past few years as a result of events connected to the Arab Spring that closed parts of Middle East airspace and airports.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev50
+predicate: deal
+patient: with+similar+situations
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev50
+sentence: In an e-mail to Arabian Business, an Etihad Airways spokesperson said, "The safety and security of our customers is absolutely paramount and we have drawn up robust flight re-routing contingency plans in the event of any airspace being closed to commercial aircraft.
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+predicate: say
+patient: no+flights+passing+over+syrian+airspace
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev66
+sentence: A British Airways spokesperson is quoted by the Sydney Morning Herald saying, "We are keeping our operations under review and we would make any changes that would be necessary".
+agent: Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev69
+predicate: quote
+patient: British_Airways
+event: http://en.wikinews.org/wiki/Airlines_plan_reroutes_around_Syria_as_potential_for_US_military_intervention_increases#ev69
+sentence: All Nippon Airways has stated that five of its flight routes are to vary at this time, with flights between similar locations affected.
+agent: Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+predicate: route
+patient: five+of+its+flight+routes
+event: http://en.wikinews.org/wiki/Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+sentence: Approximately twenty flight routes for various airlines are to be modified to avoid the path of a rocket scheduled to be launched from North Korea later this month, the Civil Aviation Authority of the Philippines said yesterday.
+agent: Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+predicate: route
+patient: five+of+its+flight+routes
+event: http://en.wikinews.org/wiki/Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+sentence: Amongst the affected companies are Delta Air Lines, Garuda Indonesia, Japan Airlines, Korean Airlines, Cebu Pacific, Philippine Airlines and All Nippon Airways, all of which are to reroute their flight paths between April 12 and April 16, in which time the North Korean government says launch is scheduled, with the specific date being subject to weather conditions.
+agent: Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+predicate: path
+patient: five+of+its+flight+routes
+event: http://en.wikinews.org/wiki/Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+sentence: A statement from Japan Airlines clarifies four of their flight paths are to be modified in direct response to these rocket launch plans, including three from the Japanese capital Tokyo to the Filipino capital Manila, Singapore, and Jakarta, the capital of Indonesia, causing anticipated flight timings to rise by between five and twenty minutes.
+agent: Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+predicate: path
+patient: five+of+its+flight+routes
+event: http://en.wikinews.org/wiki/Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+sentence: Approximately twenty flight routes for various airlines are to be modified to avoid the path of a rocket scheduled to be launched from North Korea later this month, the Civil Aviation Authority of the Philippines said yesterday.
+agent: Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+predicate: path
+patient: five+of+its+flight+routes
+event: http://en.wikinews.org/wiki/Airlines_modify_flight_routes_amid_North_Korea_rocket_launch_plans#ev8
+sentence: "It's a preposterous piece of legislation, we among all airlines are fighting this," Ryanair deputy chief executive, Michael Cawley told BBC radio 4's Today programme.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+predicate: have
+patient: no+money
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+sentence: It has also been claimed that the advice may mislead customers by having them believe that they may be entitled to compensation if flights are delayed due to bad weather.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+predicate: have
+patient: no+money
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+sentence: Marja Quillinan-Meiland, European Commission spokeswoman has said that there are "grey areas" but added "these are not as big as the airlines are making out."
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+predicate: say
+patient: they+will+comply+with+the+regulations
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+sentence: European Regions Airline Association (ERAA) director of air transport Andy Clarke said "we reckon it's going to cost European air passengers – not the airlines, the airlines have no money, it has to be paid by the passengers – 1.5bn euros, that's over £1bn a year loaded onto European passengers.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+predicate: say
+patient: they+will+comply+with+the+regulations
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+sentence: European Regions Airline Association (ERAA) director of air transport Andy Clarke said "we reckon it's going to cost European air passengers – not the airlines, the airlines have no money, it has to be paid by the passengers – 1.5bn euros, that's over £1bn a year loaded onto European passengers.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+predicate: have
+patient: no+money
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+sentence: That's basically a transfer of money from passengers whose journeys are not disrupted to passengers whose journeys are disrupted."
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+predicate: have
+patient: no+money
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+sentence: These extra costs may also lead to carriers cancelling routes to areas that have been identified as problem destinations.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev107
+predicate: lead
+patient: cancelling+routes
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev107
+sentence: The European Low-Fares Association (ELFA) is mounting a legal challenge to the laws.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev69
+predicate: mount
+patient: a+legal+challenge+to+the+laws
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev69
+sentence: ELFA and International Air Transport Association expect a ruling from the European Court of Justice in fall of 2005, until then airlines have said they will comply with the regulations.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev108
+predicate: expect
+patient: theEuropeanCourtofJustice
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev108
+sentence: ELFA and International Air Transport Association expect a ruling from the European Court of Justice in fall of 2005, until then airlines have said they will comply with the regulations.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+predicate: say
+patient: they+will+comply+with+the+regulations
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev102
+sentence: "This is some comeback for passengers who have been inconvenienced," James Fremantle, industry affairs adviser for the Air Transport Users Council, told Reuters.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev87
+predicate: adviser
+patient: industry+affairs
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev87
+sentence: "This is some comeback for passengers who have been inconvenienced," James Fremantle, industry affairs adviser for the Air Transport Users Council, told Reuters.
+agent: Iraqis_vote_in_massive_numbers#ev71
+predicate: tell
+patient: for+passengers+who+have+been+inconvenienced
+event: http://en.wikinews.org/wiki/Iraqis_vote_in_massive_numbers#ev71
+sentence: Previously only scheduled flight operators were obliged to offer compensation in cases of overbooking— they did not have to extend compensation to travellers affected by flight cancellations.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+predicate: have
+patient: no+money
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev40
+sentence: Low cost airlines have criticised the new compensation levels arguing that the compensation paid will exceed the price of the ticket.
+agent: Airlines_fight_new_EU_passenger_compensation_legislation#ev44
+predicate: exceed
+patient: the+price+of+the+ticket
+event: http://en.wikinews.org/wiki/Airlines_fight_new_EU_passenger_compensation_legislation#ev44
+sentence: He is now facing unrelated charges concerning an alleged assault on his landlord.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev41
+predicate: pass
+patient: proper+security+checks
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev41
+sentence: Shadow home secretary David Davis said "It would be an outrageous and potentially devastating breach of security if a former hijacker had access to British Airways property near the airport and a pass allowing him access to secure areas.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev48
+predicate: access
+patient: him+access+to+secure+areas
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev48
+sentence: Shadow home secretary David Davis said "It would be an outrageous and potentially devastating breach of security if a former hijacker had access to British Airways property near the airport and a pass allowing him access to secure areas.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev76
+predicate: allow
+patient: onto+the+tarmac
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev76
+sentence: Shadow home secretary David Davis said "It would be an outrageous and potentially devastating breach of security if a former hijacker had access to British Airways property near the airport and a pass allowing him access to secure areas.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev48
+predicate: access
+patient: him+access+to+secure+areas
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev48
+sentence: Days after it was revealed that foreign airside workers at our airports do not have to pass proper security checks it is clear the Government do not have a grip on airport security."
+agent: Airliner_hijacker_found_working_for_British_Airways#ev41
+predicate: pass
+patient: proper+security+checks
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev41
+sentence: Days after it was revealed that foreign airside workers at our airports do not have to pass proper security checks it is clear the Government do not have a grip on airport security."
+agent: Airliner_hijacker_found_working_for_British_Airways#ev53
+predicate: check
+patient: proper+security+checks
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev53
+sentence: Days after it was revealed that foreign airside workers at our airports do not have to pass proper security checks it is clear the Government do not have a grip on airport security."
+agent: Airliner_hijacker_found_working_for_British_Airways#ev63
+predicate: have
+patient: the+disease
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev63
+sentence: British Airways say he did not have a pass to allow him onto the tarmac at Heathrow and did not work inside the airport, but he could get into some secure company areas.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev41
+predicate: pass
+patient: proper+security+checks
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev41
+sentence: British Airways say he did not have a pass to allow him onto the tarmac at Heathrow and did not work inside the airport, but he could get into some secure company areas.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev76
+predicate: allow
+patient: onto+the+tarmac
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev76
+sentence: Mohammidy was jailed for 30 months but he and the other eight had their convictions overturned by the Court of Appeal, claiming the Taliban was subjecting them to "medieval and brutal tyranny" forcing them to flee.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev56
+predicate: have
+patient: Court_of_Appeal_of_England_and_Wales
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev56
+sentence: They went on to win a High Court case to prevent their deportation.
+agent: Airliner_hijacker_found_working_for_British_Airways#ev33
+predicate: case
+patient: their+deportation
+event: http://en.wikinews.org/wiki/Airliner_hijacker_found_working_for_British_Airways#ev33
+sentence: The Boeing 737 was carrying over 100 passengers.
+agent: Airliner_crashes_in_Nigeria#ev7
+predicate: carry
+patient: over+100+passengers
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_Nigeria#ev7
+sentence: 54 people, including the captain, survived the crash.
+agent: Airliner_crashes_in_China,_42_killed#ev10
+predicate: survive
+patient: the+crash
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev10
+sentence: Chinese government news agency Xinhua reported that the Embraer 190 jet missed the runway during landing, was damaged and caught fire.
+agent: Airliner_crashes_in_China,_42_killed#ev12
+predicate: miss
+patient: the+runway
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev12
+sentence: The aircraft had taken off in Harbin.
+agent: Airliner_crashes_in_China,_42_killed#ev14
+predicate: take
+patient: the+emergency+exits
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev14
+sentence: A surviving passenger reported that the aircraft began to burn well before it came to rest.
+agent: Airliner_crashes_in_China,_42_killed#ev10
+predicate: survive
+patient: the+crash
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev10
+sentence: Many people then rushed to the front, instead of taking the emergency exits.
+agent: Airliner_crashes_in_China,_42_killed#ev14
+predicate: take
+patient: the+emergency+exits
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev14
+sentence: Xinhua reported that government investigators recovered two 'black box' flight recorders on Wednesday.
+agent: Airliner_crashes_in_China,_42_killed#ev26
+predicate: recover
+patient: %60+black+box+%27
+event: http://en.wikinews.org/wiki/Airliner_crashes_in_China,_42_killed#ev26
+sentence: An investigation into the crash has been launched by the South African Civil Aviation Authority.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev46
+predicate: investigation
+patient: an+investigation+into+the+crash
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev46
+sentence: An investigation into the crash has been launched by the South African Civil Aviation Authority.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev41
+predicate: launch
+patient: an+investigation+into+the+crash
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev41
+sentence: The crew was attempting a crash landing in a playing field after the Jetstream 41 aircraft developed engine trouble.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev16
+predicate: develop
+patient: engine+trouble
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev16
+sentence: It crashed about three kilometres from the airport, or 400m from the perimeter, leaving both flight crew, a flight attendant and a bystander on the ground with multiple injuries.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev25
+predicate: attendant
+patient: the+flight+attendant
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev25
+sentence: No-one else was involved, and at least one person needed to be cut from the wreckage.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev39
+predicate: need
+patient: to+be+cut+from+the+wreckage
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev39
+sentence: The flight attendant hurt her back and face.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev25
+predicate: attendant
+patient: the+flight+attendant
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev25
+sentence: The captain suffered injuries to his legs and face, and the first officer broke her hand, both her ankles, her hip and her ribs.
+agent: Airliner_crash_wounds_four_in_Durban,_South_Africa#ev35
+predicate: suffer
+patient: injuries+to+his+legs+and+face
+event: http://en.wikinews.org/wiki/Airliner_crash_wounds_four_in_Durban,_South_Africa#ev35
+sentence: Singayuda also said the accident occurred outside a hanger and prevented injuries.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev29
+predicate: cut
+patient: the+plane
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev29
+sentence: Singayuda also said the accident occurred outside a hanger and prevented injuries.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev44
+predicate: say
+patient: GlobalAirServices
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev44
+sentence: GMF spokeswoman Siska Tobing said the explosion was heard at Terminal 1 of the airport, which serves Jakarta.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev44
+predicate: say
+patient: GlobalAirServices
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev44
+sentence: An airliner has suffered an explosion and caught fire at Soekarno-Hatta Airport in Tangerang, Banten, Indonesia.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev13
+predicate: suffer
+patient: an+explosion
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev13
+sentence: Ownership of the plane is unclear, with Tempo Interactive saying that reports indicated Thailand's Phuket Air owns the plane and the Jakarta Globe quoting GMF corporate secretary Dwi Prasmono Adji as saying the plane belonged to Global Air Services.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev44
+predicate: say
+patient: GlobalAirServices
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev44
+sentence: Ownership of the plane is unclear, with Tempo Interactive saying that reports indicated Thailand's Phuket Air owns the plane and the Jakarta Globe quoting GMF corporate secretary Dwi Prasmono Adji as saying the plane belonged to Global Air Services.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev23
+predicate: belong
+patient: GlobalAirServices
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev23
+sentence: "The airline has gone bankrupt and the plane was being taken apart so they can resell the pieces," and the fire occurred as several technicians cut the plane up, he said.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev29
+predicate: cut
+patient: the+plane
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev29
+sentence: Herry Bhakti Singayuda, the Ministry of Transportation's director general of civil aviation, attributed the explosion to the presence of fuel in lines on the plane's right wing, which was being cut up.
+agent: Airliner_catches_fire_at_Indonesian_airport#ev44
+predicate: say
+patient: GlobalAirServices
+event: http://en.wikinews.org/wiki/Airliner_catches_fire_at_Indonesian_airport#ev44
+sentence: This relatively new safety precaution was sparked by a battery recall a few months ago.
+agent: Airline_checks_Dell_and_Apple_computers_for_hazard#ev11
+predicate: spark
+patient: this+relatively+new+safety+precaution
+event: http://en.wikinews.org/wiki/Airline_checks_Dell_and_Apple_computers_for_hazard#ev11
+sentence: Although Qantas has yet to release a statement, they are expected to within the next few days.
+agent: Airline_checks_Dell_and_Apple_computers_for_hazard#ev15
+predicate: release
+patient: a+statement
+event: http://en.wikinews.org/wiki/Airline_checks_Dell_and_Apple_computers_for_hazard#ev15
+sentence: The company said in an interview that the practice has been occurring for a number of months for the passengers' safety to mitigate the rare chance of fire.
+agent: Airline_checks_Dell_and_Apple_computers_for_hazard#ev24
+predicate: say
+patient: whether+the+campaign+has+been+successful
+event: http://en.wikinews.org/wiki/Airline_checks_Dell_and_Apple_computers_for_hazard#ev24
+sentence: The company said in an interview that the practice has been occurring for a number of months for the passengers' safety to mitigate the rare chance of fire.
+agent: Airline_checks_Dell_and_Apple_computers_for_hazard#ev17
+predicate: mitigate
+patient: the+rare+chance+of+fire
+event: http://en.wikinews.org/wiki/Airline_checks_Dell_and_Apple_computers_for_hazard#ev17
+sentence: al-Qirbi said the Yemeni government needs more support, "We need more training.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev49
+predicate: needAWOL
+patient: more+support
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev49
+sentence: However, he called some statements made by U.S. officials overstated and "exaggerated in some media."
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev109
+predicate: statement
+patient: some+statements+made+by+u.s.+officials
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev109
+sentence: However, he called some statements made by U.S. officials overstated and "exaggerated in some media."
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev82
+predicate: make
+patient: some+statements+made+by+u.s.+officials
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev82
+sentence: U.S. President Barack Obama says the United States will use all resources to find and hold accountable those responsible for the terrorist plot.
+agent: Copenhagen_climate_conference_ends_with_%22meaningful_agreement%22#ev88
+predicate: say
+patient: it+was+%60%60+absolutely+unprecedented+%27%27
+event: http://en.wikinews.org/wiki/Copenhagen_climate_conference_ends_with_%22meaningful_agreement%22#ev88
+sentence: U.S. President Barack Obama says the United States will use all resources to find and hold accountable those responsible for the terrorist plot.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev83
+predicate: use
+patient: all+resources
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev83
+sentence: U.S. President Barack Obama says the United States will use all resources to find and hold accountable those responsible for the terrorist plot.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev112
+predicate: find
+patient: all+resources
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev112
+sentence: U.S. President Barack Obama says the United States will use all resources to find and hold accountable those responsible for the terrorist plot.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev30
+predicate: hold
+patient: Federal_government_of_the_United_States
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev30
+sentence: He vowed to use every element of U.S. power "to disrupt, to dismantle and defeat" extremists in Afghanistan, Pakistan, Yemen, Somalia or elsewhere, who might want to attack the United States.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev61
+predicate: prevent
+patient: future+attacks
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev61
+sentence: The Yemeni Foreign Ministry and it's Minister, Abu Bakr al-Qirbi says 23-year-old Umar Farouk Abdulmutallab lived there between early August and early December.
+agent: Thousands_continue_to_flee_fighting_in_Yemen#ev18
+predicate: live
+patient: Yemen
+event: http://en.wikinews.org/wiki/Thousands_continue_to_flee_fighting_in_Yemen#ev18
+sentence: Abdulmutallab's name was listed in a U.S. government intelligence database, but he was not on the government's so-called "no-fly list," which would have banned him from flying on a U.S. airline.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev70
+predicate: list
+patient: Umar_Farouk_Abdulmutallab
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev70
+sentence: Abdulmutallab's name was listed in a U.S. government intelligence database, but he was not on the government's so-called "no-fly list," which would have banned him from flying on a U.S. airline.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev70
+predicate: list
+patient: Umar_Farouk_Abdulmutallab
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev70
+sentence: His father, a prominent banker and former Nigerian government minister, had warned the U.S. embassy in Nigeria about his son's extremist views.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev120
+predicate: warn
+patient: about+his+son+%27s+extremist+views
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev120
+sentence: Security officials say they approved the visa for Abdulmutallab because he was granted visas by several friendly countries, and still held a valid visa to the United States.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev30
+predicate: hold
+patient: Federal_government_of_the_United_States
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev30
+sentence: Abdulmutallab is charged with trying to detonate a bomb while flying aboard Northwest Airlines Flight 253 traveling from Amsterdam to Detroit.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev94
+predicate: charge
+patient: Umar_Farouk_Abdulmutallab
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev94
+sentence: Abdulmutallab is charged with trying to detonate a bomb while flying aboard Northwest Airlines Flight 253 traveling from Amsterdam to Detroit.
+agent: Airline_bombing_suspect_spent_months_in_Yemen#ev77
+predicate: try
+patient: explosives+concealed+in+his+underpants
+event: http://en.wikinews.org/wiki/Airline_bombing_suspect_spent_months_in_Yemen#ev77
+sentence: Abdulmutallab is charged with trying to detonate a bomb while flying aboard Northwest Airlines Flight 253 traveling from Amsterdam to Detroit.
+agent: Over_twenty_dead_after_multiple_bomb_attacks_in_Iraq#ev22
+predicate: detonate
+patient: a+bomb
+event: http://en.wikinews.org/wiki/Over_twenty_dead_after_multiple_bomb_attacks_in_Iraq#ev22
+sentence: Authorities in Yemen say the Nigerian man accused of trying to destroy a U.S. airliner last week lived in Yemen during a four-month period earlier this year.
+agent: Thousands_continue_to_flee_fighting_in_Yemen#ev18
+predicate: live
+patient: Yemen
+event: http://en.wikinews.org/wiki/Thousands_continue_to_flee_fighting_in_Yemen#ev18
+sentence: A French ship arrived at the area on the same day, and confirmed the debris.
+agent: Aircraft_wreckage_in_Atlantic_confirmed_to_be_that_of_missing_Air_France_flight#ev28
+predicate: confirm
+patient: the+debris
+event: http://en.wikinews.org/wiki/Aircraft_wreckage_in_Atlantic_confirmed_to_be_that_of_missing_Air_France_flight#ev28
+sentence: Air France Flight 447 was an Airbus A330 en route from Rio de Janeiro to Paris, France, with 228 people on board, when it vanished from radar screens after entering an area with severe turbulence.
+agent: Bomb_threat_delayed_an_Air_France_flight_to_Paris_days_before_Flight_447_crashed#ev26
+predicate: route
+patient: Paris
+event: http://en.wikinews.org/wiki/Bomb_threat_delayed_an_Air_France_flight_to_Paris_days_before_Flight_447_crashed#ev26
+sentence: A Flybe, Bombardier Q400, had to make an emergency landing at Edinburgh Airport in Scotland after it had engine troubles on its scheduled flight from Manchester.
+agent: Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev10
+predicate: have
+patient: on+its+scheduled+flight+from+manchester
+event: http://en.wikinews.org/wiki/Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev10
+sentence: Thirty-six passengers were onboard flight BE7220 when the captain made the Mayday call to air traffic control at approximately 07:40 BST.
+agent: Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev13
+predicate: passenger
+patient: thirty-six+passengers
+event: http://en.wikinews.org/wiki/Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev13
+sentence: Thirty-six passengers were onboard flight BE7220 when the captain made the Mayday call to air traffic control at approximately 07:40 BST.
+agent: Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev28
+predicate: make
+patient: the+mayday+call
+event: http://en.wikinews.org/wiki/Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev28
+sentence: A Flybe, Bombardier Q400, had to make an emergency landing at Edinburgh Airport in Scotland after it had engine troubles on its scheduled flight from Manchester.
+agent: Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev10
+predicate: have
+patient: on+its+scheduled+flight+from+manchester
+event: http://en.wikinews.org/wiki/Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev10
+sentence: Jim Mulhall, a passenger on board the plane said, "When the captain told us they were going to cut an engine everyone went quiet, probably because they were apprehensive."
+agent: Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev13
+predicate: passenger
+patient: thirty-six+passengers
+event: http://en.wikinews.org/wiki/Aircraft_makes_emergency_landing_at_Edinburgh_Airport#ev13
+sentence: Authorities could not confirm any injuries or fatalities, but the missing man formation was performed in a flyby shortly after the crash.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+predicate: perform
+patient: the+missing+man+formation
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+sentence: Emergency services and a police helicopter attended the scene.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev35
+predicate: attend
+patient: the+scene
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev35
+sentence: The plane was a Hurricane, one of three performing alongside the two Spitfires and five Messerschmitts.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+predicate: perform
+patient: the+missing+man+formation
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+sentence: The show is thought to have been attended by about 20,000 people, and was delayed by about 30 minutes after the crash.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev35
+predicate: attend
+patient: the+scene
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev35
+sentence: The plane was with the Royal Air Forces Association and had been performing in a Battle of Britain display.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+predicate: perform
+patient: the+missing+man+formation
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev19
+sentence: Witness Tim Deakin described the chain of events to BBC News 24: "The main point of the show was a Second World War dogfight between some Messerschmitts and some Spitfires.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev50
+predicate: describe
+patient: the+chain+of+events
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev50
+sentence: Witness Holly Russell had some more details: "They were doing a mock dog fight and it looked like the plane was doing a dive, but it was going too fast and smashed straight into the ground.
+agent: Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev43
+predicate: have
+patient: some+more+details
+event: http://en.wikinews.org/wiki/Aircraft_crashes_during_mock_dogfight_at_Shoreham_Airshow,_United_Kingdom#ev43
+sentence: The order, which is believed to be worth $15 billion, has given a boost to an otherwise disappointing Paris Air Show, which had been dominated by a state aid dispute between Airbus and Boeing.
+agent: Airbus_wins_Qatar_Airways_order_worth_$15bn#ev26
+predicate: dispute
+patient: state+aid
+event: http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev26
+sentence: In 2004, Airbus sold more planes than Boeing for the first time ever, sparking questions whether the US company had lost its once seemingly impregnable grip on the aviation market.
+agent: Airbus_wins_Qatar_Airways_order_worth_$15bn#ev17
+predicate: sell
+patient: more+planes+than+boeing
+event: http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev17
+sentence: However thus far, Boeing has received far more orders than Airbus in 2005.
+agent: Airbus_wins_Qatar_Airways_order_worth_$15bn#ev21
+predicate: receive
+patient: far+more+orders+than+airbus
+event: http://en.wikinews.org/wiki/Airbus_wins_Qatar_Airways_order_worth_$15bn#ev21
+sentence: Airbus has also inked recent deals with the Royal Australian Air Force, the Royal Saudi Air Force and the UAE Air Force.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33
+predicate: ink
+patient: recent+deals
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev33
+sentence: European Aeronautic Defence &amp; Space NV (EADS), the parent company of European airframer Airbus, has won a Â£13 billion contract to supply the United Kingdom's Royal Air Force (RAF) with aerial refueling tankers to replace the nation's current ageing fleet.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+predicate: supply
+patient: Royal_Air_Force
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+sentence: AirTanker Ltd., an EADS-led consortium, have signed a 27-year contract with the Defense Ministry to supply 14 new Airbus A330-200 passenger airliner converted for the task.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+predicate: supply
+patient: Royal_Air_Force
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+sentence: Rolls-Royce, part of the consortium, will supply engines.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+predicate: supply
+patient: Royal_Air_Force
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+sentence: France's Thales will supply electronics, Wimborne, UK's Cobham will manufacture refueling equipment and Southampton, UK's VT Group will provide service management.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+predicate: supply
+patient: Royal_Air_Force
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+sentence: France's Thales will supply electronics, Wimborne, UK's Cobham will manufacture refueling equipment and Southampton, UK's VT Group will provide service management.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+predicate: provide
+patient: Royal_Air_Force
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev10
+sentence: Last month, Northrop Grumman and EADS defeated Boeing to win a massive order for 179 tankers from the United States Air Force.
+agent: Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev30
+predicate: defeat
+patient: Boeing
+event: http://en.wikinews.org/wiki/Airbus_parent_EADS_wins_%c2%a313_billion_UK_RAF_airtanker_contract#ev30
+sentence: Efforts are ongoing using sensitive equipment under tow from a French naval vessel, but if this search proves fruitless then the BEA will seek money for a further three-month search.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev50
+predicate: seek
+patient: money+for+a+further+three-month+search
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev50
+sentence: The jet's Aircraft Communications Addressing and Reporting System (ACARS) was able to transmit information regarding problems on board prior to the crash.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+predicate: search
+patient: France
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+sentence: Airbus have announced that they will be willing to contribute between €12 million and €20 million (about US$16 million to $28 million) to fund an extended search for the black boxes from Air France Flight 447.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+predicate: search
+patient: France
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+sentence: The ACARS data suggests that the plane had suffered from a loss of valuable readings including airspeed, leading suspicion to fall on the pitot-static system which supplies various measurements.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev33
+predicate: suffer
+patient: problems+enroute+from+italy+to+france
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev33
+sentence: The ACARS data suggests that the plane had suffered from a loss of valuable readings including airspeed, leading suspicion to fall on the pitot-static system which supplies various measurements.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev34
+predicate: loss
+patient: of+valuable+readings
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev34
+sentence: Air France had not done this on the accident airplane although the entire fleet now features the modified design.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev40
+predicate: feature
+patient: the+modified+design
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev40
+sentence: The United States National Transportation Safety Board is probing two over American soil while earlier this month another Air France A330 equipped with the new tubes suffered a similar series of problems enroute from Italy to France.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev33
+predicate: suffer
+patient: problems+enroute+from+italy+to+france
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev33
+sentence: The Airbus A330 jetliner crashed into the Atlantic Ocean in June, killing all 228 people on board.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev14
+predicate: kill
+patient: all+228+people+on+board
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev14
+sentence: Chief executive Thomas Enders said in a statement, "We want to know what happened, as improving air safety is our top priority.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54
+predicate: say
+patient: the+company+%27s+move+was+unprecedented
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54
+sentence: We are fully committed to support the extension of the search with a significant contribution."
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+predicate: search
+patient: France
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+sentence: Although airframers normally supply technical assistance to investigations, the required impartiality makes funding rare, with Airbus spokesman Stefan Schaffrath saying the company's move was unprecedented.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54
+predicate: say
+patient: the+company+%27s+move+was+unprecedented
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev54
+sentence: Although airframers normally supply technical assistance to investigations, the required impartiality makes funding rare, with Airbus spokesman Stefan Schaffrath saying the company's move was unprecedented.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev22
+predicate: move
+patient: the+company+%27s+move+was+unprecedented
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev22
+sentence: France's investigative agency BEA has requested financial assistance for the search from both Airbus and Air France.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+predicate: search
+patient: France
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev53
+sentence: Air France have discussed this possibility with the BEA.
+agent: Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev63
+predicate: discuss
+patient: this+possibility
+event: http://en.wikinews.org/wiki/Airbus_offers_funding_to_search_for_black_boxes_from_Air_France_disaster#ev63
+sentence: British and American airline Virgin Atlantic has purchased six of these aeroplanes and intend to fit them with gyms and bars as well as seats.
+agent: Airbus_launches_world's_largest_passenger_plane#ev26
+predicate: purchase
+patient: six+of+these+aeroplanes
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev26
+sentence: The new aircraft will take the world's-largest title away from rival Boeing's 747.
+agent: Airbus_launches_world's_largest_passenger_plane#ev14
+predicate: take
+patient: the+first+commercial+flight
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14
+sentence: The new aircraft will take the world's-largest title away from rival Boeing's 747.
+agent: Airbus_launches_world's_largest_passenger_plane#ev15
+predicate: title
+patient: the+new+aircraft
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev15
+sentence: Boeing's upcoming new design, the 7e7, does not attempt to compete directly with the A380 but instead is aimed at a more efficient and comfortable flight at 200-250 seats.
+agent: Airbus_launches_world's_largest_passenger_plane#ev14
+predicate: aim
+patient: the+first+commercial+flight
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14
+sentence: Airbus has hopes that sales will exceed 700.
+agent: Airbus_launches_world's_largest_passenger_plane#ev28
+predicate: have
+patient: hopes+that+sales+will+exceed+700
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev28
+sentence: The company is currently in talks with China regarding possible sales there.
+agent: Airbus_launches_world's_largest_passenger_plane#ev38
+predicate: talk
+patient: regarding+possible+sales+there
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev38
+sentence: The first test flight of the aircraft may take place as early as March, and the first commercial flight is expected to take off in mid-2006 from Singapore's Changi Airport.
+agent: Airbus_launches_world's_largest_passenger_plane#ev14
+predicate: take
+patient: the+first+commercial+flight
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14
+sentence: The first test flight of the aircraft may take place as early as March, and the first commercial flight is expected to take off in mid-2006 from Singapore's Changi Airport.
+agent: Airbus_launches_world's_largest_passenger_plane#ev14
+predicate: take
+patient: the+first+commercial+flight
+event: http://en.wikinews.org/wiki/Airbus_launches_world's_largest_passenger_plane#ev14
+sentence: The news comes as its parent company, EADS starts a major restructuring programme because the company is not efficient enough.
+agent: Airbus_announces_job_cuts_of_10,000#ev30
+predicate: start
+patient: a+major+restructuring+programme
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev30
+sentence: Louis Gallois, the Airbus chief executive, said the company expects to cut approximately 4,300 jobs in France, 3,700 in Germany, 1,600 in UK and 400 in Spain.
+agent: Airbus_announces_job_cuts_of_10,000#ev36
+predicate: say
+patient: the+response+has+been+massive
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev36
+sentence: Louis Gallois, the Airbus chief executive, said the company expects to cut approximately 4,300 jobs in France, 3,700 in Germany, 1,600 in UK and 400 in Spain.
+agent: Airbus_announces_job_cuts_of_10,000#ev11
+predicate: cut
+patient: 10%2c000+job+cuts
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev11
+sentence: Airbus, Europe's biggest aircraft manufacturer, has announced 10,000 job cuts over the next four years.
+agent: Airbus_announces_job_cuts_of_10,000#ev35
+predicate: announce
+patient: 10%2c000+job+cuts
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev35
+sentence: Actual Airbus employee reduction would be about 5,000, or 9% of the total European work force of 55,000 full-time Airbus employees.
+agent: Airbus_announces_job_cuts_of_10,000#ev20
+predicate: employee
+patient: of+55%2c000+full-time+airbus+employees
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev20
+sentence: Although Gallois said he hoped to achieve this mainly through attrition, the unions were displeased.
+agent: Airbus_announces_job_cuts_of_10,000#ev36
+predicate: say
+patient: the+response+has+been+massive
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev36
+sentence: Union officials said nearly 14,000 employees at four French sites had a two hour work stoppage Wednesday afternoon to protest the cuts.
+agent: Airbus_announces_job_cuts_of_10,000#ev36
+predicate: say
+patient: the+response+has+been+massive
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev36
+sentence: Airbus, Europe's biggest aircraft manufacturer, has announced 10,000 job cuts over the next four years.
+agent: Airbus_announces_job_cuts_of_10,000#ev11
+predicate: cut
+patient: 10%2c000+job+cuts
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev11
+sentence: Union officials said nearly 14,000 employees at four French sites had a two hour work stoppage Wednesday afternoon to protest the cuts.
+agent: Airbus_announces_job_cuts_of_10,000#ev20
+predicate: employee
+patient: of+55%2c000+full-time+airbus+employees
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev20
+sentence: Union officials said nearly 14,000 employees at four French sites had a two hour work stoppage Wednesday afternoon to protest the cuts.
+agent: Airbus_announces_job_cuts_of_10,000#ev31
+predicate: have
+patient: a+two+hour+work+stoppage
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev31
+sentence: Union officials said nearly 14,000 employees at four French sites had a two hour work stoppage Wednesday afternoon to protest the cuts.
+agent: Airbus_announces_job_cuts_of_10,000#ev41
+predicate: protest
+patient: the+cuts
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev41
+sentence: "The response has been massive," said Julien Talavan, a spokesman for Force OuvriÃ¨re, the main Airbus union in France.
+agent: Airbus_announces_job_cuts_of_10,000#ev36
+predicate: say
+patient: the+response+has+been+massive
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev36
+sentence: "This is just the beginning," he said, hinting at future labor action.
+agent: Airbus_announces_job_cuts_of_10,000#ev36
+predicate: say
+patient: the+response+has+been+massive
+event: http://en.wikinews.org/wiki/Airbus_announces_job_cuts_of_10,000#ev36
+sentence: Airbus has said they will continue with their tour of Asia demonstrating the plane.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev30
+predicate: demonstrate
+patient: continuing+problems
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev30
+sentence: The minor accident occurred during push back, as the aircraft was leaving a parking space before it was due to fly to Chiang Mai International Airport.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev14
+predicate: push
+patient: the+jet
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev14
+sentence: The minor accident occurred during push back, as the aircraft was leaving a parking space before it was due to fly to Chiang Mai International Airport.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev15
+predicate: leave
+patient: a+parking+space
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev15
+sentence: As the jet was being pushed back by a Thai Airways International tug operator, the left winglet struck the side of the hangar, and was crumpled against it.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev14
+predicate: push
+patient: the+jet
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev14
+sentence: As the jet was being pushed back by a Thai Airways International tug operator, the left winglet struck the side of the hangar, and was crumpled against it.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev18
+predicate: strike
+patient: the+side+of+the+hangar
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev18
+sentence: After an inspection, Airbus decided to remove both winglets and continue the flight without them.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev24
+predicate: remove
+patient: both+winglets
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev24
+sentence: The plane left four hours after its scheduled 9:45 a.m. local time departure, carrying 150 passengers.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev15
+predicate: leave
+patient: a+parking+space
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev15
+sentence: The plane left four hours after its scheduled 9:45 a.m. local time departure, carrying 150 passengers.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev44
+predicate: carry
+patient: 150+passengers
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev44
+sentence: It also demonstrates continuing problems at Suvarnabhumi airport, which has suffered various incidents since it opened last September, the most severe of which being the discovery of large cracks in airport taxiways shortly after opening.
+agent: Airbus_A380_test_flight_delayed_after_accident#ev30
+predicate: demonstrate
+patient: continuing+problems
+event: http://en.wikinews.org/wiki/Airbus_A380_test_flight_delayed_after_accident#ev30
+sentence: Infrared camera recordings of the test will be analyzed by authorities such as the European Aviation Safety Agency, while the US Federal Aviation Administration was present during the test.
+agent: Airbus_A380_safety_test_injures_33#ev54
+predicate: analyze
+patient: infrared+camera+recordings+of+the+test
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev54
+sentence: The European Aviation Safety Agency will confirm the test results this week; Airbus intends to repeat the test on Saturday if the aviation agency fails this attempt.
+agent: Airbus_A380_safety_test_injures_33#ev55
+predicate: confirm
+patient: the+test+results
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev55
+sentence: The European Aviation Safety Agency will confirm the test results this week; Airbus intends to repeat the test on Saturday if the aviation agency fails this attempt.
+agent: Airbus_A380_safety_test_injures_33#ev29
+predicate: repeat
+patient: the+test+on+saturday
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev29
+sentence: This certification demonstrated that the test procedures use by Airbus met their respective standards.
+agent: Airbus_A380_safety_test_injures_33#ev14
+predicate: passenger
+patient: 853+volunteer
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev14
+sentence: This certification demonstrated that the test procedures use by Airbus met their respective standards.
+agent: Airbus_A380_safety_test_injures_33#ev38
+predicate: demonstrate
+patient: by+airbus+met+their+respective+standards
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev38
+sentence: This certification demonstrated that the test procedures use by Airbus met their respective standards.
+agent: Airbus_A380_safety_test_injures_33#ev46
+predicate: use
+patient: by+airbus+met+their+respective+standards
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev46
+sentence: This certification demonstrated that the test procedures use by Airbus met their respective standards.
+agent: Airbus_A380_safety_test_injures_33#ev39
+predicate: meet
+patient: by+airbus+met+their+respective+standards
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev39
+sentence: 853 volunteer "passengers" and 20 crew members took about 80 seconds to evacuate the aircraft, beating the test's requirements by 10 seconds and over 200 people "rescued".
+agent: Airbus_A380_safety_test_injures_33#ev14
+predicate: passenger
+patient: 853+volunteer
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev14
+sentence: The test was carried out in a dark hangar and the plane's aisles were littered with debris to simulate actual emergency conditions.
+agent: Airbus_A380_safety_test_injures_33#ev23
+predicate: simulate
+patient: actual+emergency+conditions
+event: http://en.wikinews.org/wiki/Airbus_A380_safety_test_injures_33#ev23
+
+Mon Dec  3 11:44:40 CET 2018
+*** End of SGE job ***

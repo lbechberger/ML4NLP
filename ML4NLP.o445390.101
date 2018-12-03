@@ -1,0 +1,597 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+vector.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+sentence: The Large Hadron Collider (LHC) that started preliminary experiments on September 10, 2008 in CERN, Geneva, and the planned International Linear Collider (ILC) will carry out a series of experiments in the future to validate the standard model of particle physics.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev58
+predicate: plan
+patient: International_Linear_Collider
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev58
+sentence: The bigger International Linear Collider, nicknamed "Einstein's telescope", is planned by the International Technology Recommendation Panel (ITRP).
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev58
+predicate: plan
+patient: International_Linear_Collider
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev58
+sentence: The ILC will have a collision energy of 500 GeV and will collide electrons with particles of antimatter, called positrons, along a 30-40 km completely straight tunnel.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev56
+predicate: have
+patient: a+collision+energy+of+500+gev
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev56
+sentence: The ILC will have a collision energy of 500 GeV and will collide electrons with particles of antimatter, called positrons, along a 30-40 km completely straight tunnel.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+predicate: particle
+patient: with+particles+of+antimatter
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+sentence: The ILC would be a much cleaner machine and tell us far more about their real nature."
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev71
+predicate: tell
+patient: about+their+real+nature
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev71
+sentence: The host country for the ILC has not yet been chosen but it is planned to have the machine constructed by late 2010.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev57
+predicate: have
+patient: the+machine+constructed+by+late+2010
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev57
+sentence: The host country for the ILC has not yet been chosen but it is planned to have the machine constructed by late 2010.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+predicate: construct
+patient: the+machine+constructed+by+late+2010
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+sentence: Physicists hope that ILC might be able to resolve some of the questions raised by Einstein's theories of relativity.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+predicate: build
+patient: the+machine+constructed+by+late+2010
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+sentence: Physicists hope that ILC might be able to resolve some of the questions raised by Einstein's theories of relativity.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev51
+predicate: resolve
+patient: by+einstein+%27s+theories+of+relativity
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev51
+sentence: Physicists hope that ILC might be able to resolve some of the questions raised by Einstein's theories of relativity.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev53
+predicate: theory
+patient: of+relativity
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev53
+sentence: The model predicts that Higgs boson particles gives mass to all fundamental particles and explains the existence of dark matter, or invisible matter in between galaxies.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+predicate: particle
+patient: with+particles+of+antimatter
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+sentence: The LHC is a 27 kilometer long circular high energy particle accelerator which took more than 20 years and USD $9 billion to build.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+predicate: particle
+patient: with+particles+of+antimatter
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev14
+sentence: The LHC is a 27 kilometer long circular high energy particle accelerator which took more than 20 years and USD $9 billion to build.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+predicate: build
+patient: the+machine+constructed+by+late+2010
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev20
+sentence: The new accelerator will perform ten times the number of collisions as the current LHC over the same time.
+agent: Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev30
+predicate: perform
+patient: ten+times+the+number+of+collisions
+event: http://en.wikinews.org/wiki/Large_particle_accelerators_to_explore_the_frontiers_of_physics#ev30
+sentence: The Attorney General of Arizona released a report that showed an increase.
+agent: Large_increase_in_number_of_foreclosures_across_US#ev5
+predicate: release
+patient: a+report+that+showed+an+increase
+event: http://en.wikinews.org/wiki/Large_increase_in_number_of_foreclosures_across_US#ev5
+sentence: The Attorney General of Arizona released a report that showed an increase.
+agent: Large_increase_in_number_of_foreclosures_across_US#ev15_1
+predicate: show
+patient: an+increase
+event: http://en.wikinews.org/wiki/Large_increase_in_number_of_foreclosures_across_US#ev15_1
+sentence: It said that "the collective efforts of servicers and government officials to date have not translated into meaningful improvement in foreclosure prevention outcomes."
+agent: Large_increase_in_number_of_foreclosures_across_US#ev12
+predicate: effort
+patient: to+date
+event: http://en.wikinews.org/wiki/Large_increase_in_number_of_foreclosures_across_US#ev12
+sentence: The Attorney General also commented on the report:
+agent: Large_increase_in_number_of_foreclosures_across_US#ev20
+predicate: comment
+patient: on+the+report
+event: http://en.wikinews.org/wiki/Large_increase_in_number_of_foreclosures_across_US#ev20
+sentence: Recently released figures have revealed that the number of foreclosures in California, United States has more than quadrupled.
+agent: Large_increase_in_number_of_foreclosures_across_US#ev5
+predicate: release
+patient: a+report+that+showed+an+increase
+event: http://en.wikinews.org/wiki/Large_increase_in_number_of_foreclosures_across_US#ev5
+sentence: The hoard, which was found in a private field over the course of five days in July 2009, is in fact the most Anglo-Saxon gold that has ever been unearthed at one site in the United Kingdom.
+agent: Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+predicate: find
+patient: the+big+haul+in+staffordshire
+event: http://en.wikinews.org/wiki/Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+sentence: Roughly 1,500 gold and silver pieces were found and the hoard contains roughly 5kgs of gold and 2.5kgs of silver â€” far more than the previous record of 2.5kgs of gold which was found at Sutton Hoo, near Woodbridge.
+agent: Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+predicate: find
+patient: the+big+haul+in+staffordshire
+event: http://en.wikinews.org/wiki/Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+sentence: Roughly 1,500 gold and silver pieces were found and the hoard contains roughly 5kgs of gold and 2.5kgs of silver â€” far more than the previous record of 2.5kgs of gold which was found at Sutton Hoo, near Woodbridge.
+agent: Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+predicate: find
+patient: the+big+haul+in+staffordshire
+event: http://en.wikinews.org/wiki/Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+sentence: The big haul in Staffordshire was found by 55-year-old Terry Herbert, while he was using a metal-detector.
+agent: Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+predicate: find
+patient: the+big+haul+in+staffordshire
+event: http://en.wikinews.org/wiki/Large_hoard_of_Anglo-Saxon_gold_found_in_Staffordshire,_England#ev34
+sentence: Mr Howard justified the reversal of policy as being in the "broader interests of democracy in the Middle East".
+agent: Australian_government_commits_more_troops_to_Iraq#ev31
+predicate: justify
+patient: the+reversal+of+policy
+event: http://en.wikinews.org/wiki/Australian_government_commits_more_troops_to_Iraq#ev31
+sentence: Australian prime minister John Howard has admitted this week's decision to commit an additional 450 troops to Iraq is a policy backflip.
+agent: Australian_government_commits_more_troops_to_Iraq#ev25
+predicate: admit
+patient: Iraq
+event: http://en.wikinews.org/wiki/Australian_government_commits_more_troops_to_Iraq#ev25
+sentence: The commitment of extra troops comes as a result of the Dutch government's decision to withdraw 1400 soldiers from Iraq, in response to political pressure in Holland.
+agent: Australian_government_commits_more_troops_to_Iraq#ev33_1
+predicate: response
+patient: to+political+pressure+in+holland
+event: http://en.wikinews.org/wiki/Australian_government_commits_more_troops_to_Iraq#ev33_1
+sentence: The Australians will be deployed to the Iraqi province of Al Muthanna to provide military support for Japanese engineers working on reconstruction projects.
+agent: Australian_government_commits_more_troops_to_Iraq#ev20
+predicate: work
+patient: on+reconstruction+projects
+event: http://en.wikinews.org/wiki/Australian_government_commits_more_troops_to_Iraq#ev20
+sentence: Mr Howard said in a statement that he has been asked to appear at the inquiry.
+agent: Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+predicate: say
+patient: United_Nations
+event: http://en.wikinews.org/wiki/Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+sentence: "The Cole Commission of Inquiry has requested that I appear at its hearings" he said.
+agent: Australian_PM_to_face_Cole_inquiry#ev18
+predicate: request
+patient: that+i+appear+at+its+hearings
+event: http://en.wikinews.org/wiki/Australian_PM_to_face_Cole_inquiry#ev18
+sentence: "The Cole Commission of Inquiry has requested that I appear at its hearings" he said.
+agent: Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+predicate: say
+patient: United_Nations
+event: http://en.wikinews.org/wiki/Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+sentence: Mr Howard expects that he will give evidence around 10 a.m. "The Inquiry has indicated that it would suit its convenience for me to do that at 10 a.m. tomorrow" said Mr Howard.
+agent: Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+predicate: say
+patient: United_Nations
+event: http://en.wikinews.org/wiki/Australian_foreign_minister_tells_inquiry_it_was_the_UN's_job_to_investigate_Iraq_kickback_claims#ev89
+sentence: It will be the first time an Australian Prime Minister has appeared before an inquiry since Bob Hawke faced the Hope Inquiry into Australia's intelligence services in 1983.
+agent: Australian_PM_to_face_Cole_inquiry#ev24
+predicate: face
+patient: the+hope+inquiry
+event: http://en.wikinews.org/wiki/Australian_PM_to_face_Cole_inquiry#ev24
+sentence: He said that his government would tighten visa restrictions for regime officials, and maintain the ban on defence exports to Myanmar.
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev32
+predicate: maintain
+patient: on+defence+exports+to+myanmar
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev32
+sentence: He noted that economic sanctions could harm the people of Myanmar.
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev12
+predicate: harm
+patient: Burma
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev12
+sentence: Australian Prime Minister John Howard has announced that it will investigate implementing "targeted financial sanctions against regime figures and supporters," but has ruled out economic sanctions against Myanmar.
+agent: Aid_for_Australian_farmers_increased_to_$1_billion#ev29
+predicate: announce
+patient: medical+research
+event: http://en.wikinews.org/wiki/Aid_for_Australian_farmers_increased_to_$1_billion#ev29
+sentence: Howard noted the important role that China has in the crisis.
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev37_1
+predicate: note
+patient: that+china+has+in+the+crisis
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev37_1
+sentence: Howard described the government of Myanmar as "a thoroughly loathsome regime."
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev44
+predicate: describe
+patient: Burma
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev44
+sentence: He said that his government would tighten visa restrictions for regime officials, and maintain the ban on defence exports to Myanmar.
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev25
+predicate: tighten
+patient: visa+restrictions+for+regime+officials
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev25
+sentence: He said that his government would tighten visa restrictions for regime officials, and maintain the ban on defence exports to Myanmar.
+agent: Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev26
+predicate: restriction
+patient: visa+restrictions+for+regime+officials
+event: http://en.wikinews.org/wiki/Australian_PM_rules_out_economic_sanctions_against_Myanmar#ev26
+sentence: Senator Brown says the Prime Minister has already made up his mind.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev87
+predicate: make
+patient: his+mind
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev87
+sentence: "His talk about a public debate is a complete sham, he's made up his mind," he said.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev87
+predicate: make
+patient: his+mind
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev87
+sentence: "He's had no mandate, but he's got control of the Senate and therefore we are going headlong into becoming a major agent in the nuclear proliferation right around the world."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Scientists have said Australia could not develop a nuclear power industry in time to stave off the effects of climate change.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Scientists have said Australia could not develop a nuclear power industry in time to stave off the effects of climate change.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev46
+predicate: develop
+patient: a+nuclear+power+industry
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev46
+sentence: Scientists have said Australia could not develop a nuclear power industry in time to stave off the effects of climate change.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev47
+predicate: stave
+patient: the+effects+of+climate+change
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev47
+sentence: Greenpeace Australia says that even if there was a doubling of nuclear energy by 2050 it would only reduce greenhouse gas emissions by five percent, well below the large cuts scientists say are necessary.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+predicate: change
+patient: that+view
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+sentence: Australian Prime Minister John Howard has told media in Canada that he wants "a full-blooded debate" in Australia about the issue of nuclear power.
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: Greenpeace Australia says that even if there was a doubling of nuclear energy by 2050 it would only reduce greenhouse gas emissions by five percent, well below the large cuts scientists say are necessary.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Greenpeace Australia says that even if there was a doubling of nuclear energy by 2050 it would only reduce greenhouse gas emissions by five percent, well below the large cuts scientists say are necessary.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Academics at NSW University and the University of Technology Sydney have said, "No private investor would take on the risk without huge government subsidies."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Academics at NSW University and the University of Technology Sydney have said, "No private investor would take on the risk without huge government subsidies."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev56
+predicate: take
+patient: the+risk
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev56
+sentence: Academics at NSW University and the University of Technology Sydney have said, "No private investor would take on the risk without huge government subsidies."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev112
+predicate: risk
+patient: the+risk
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev112
+sentence: The NSW Greens MLC Ian Cohen said that after 50 years, the nuclear industry still had not found a way to store its waste safely.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: The NSW Greens MLC Ian Cohen said that after 50 years, the nuclear industry still had not found a way to store its waste safely.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev113
+predicate: find
+patient: to+store+its+waste+safely
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev113
+sentence: The NSW Greens MLC Ian Cohen said that after 50 years, the nuclear industry still had not found a way to store its waste safely.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev58
+predicate: store
+patient: its+waste
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev58
+sentence: Steve Shallhorn, chief executive of Greenpeace Australia Pacific says the Prime Minister should have used his trip to Canada to learn why "nuclear power is not a viable option."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev61
+predicate: create
+patient: dangerous+amounts+of+waste
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev61
+sentence: Steve Shallhorn, chief executive of Greenpeace Australia Pacific says the Prime Minister should have used his trip to Canada to learn why "nuclear power is not a viable option."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Steve Shallhorn, chief executive of Greenpeace Australia Pacific says the Prime Minister should have used his trip to Canada to learn why "nuclear power is not a viable option."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev91
+predicate: use
+patient: Canada
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev91
+sentence: Mr Shallhorn said that, in Canada, nuclear power has driven up the price of electricity and created dangerous amounts of waste.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Mr Shallhorn said that, in Canada, nuclear power has driven up the price of electricity and created dangerous amounts of waste.
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: Mr Shallhorn said that, in Canada, nuclear power has driven up the price of electricity and created dangerous amounts of waste.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev64
+predicate: drive
+patient: the+price+of+electricity
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev64
+sentence: Mr Shallhorn said that, in Canada, nuclear power has driven up the price of electricity and created dangerous amounts of waste.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev61
+predicate: create
+patient: dangerous+amounts+of+waste
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev61
+sentence: He says its effect in reducing greenhouse gas emissions is also negligible.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: "I have a very open mind on the development of nuclear energy in my own country," he said.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: "Nuclear power can only solve a very tiny portion of greenhouse gas problems because electricity is only one source of the problem," said Mr Shallhorn.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev117
+predicate: solve
+patient: of+greenhouse+gas+problems
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev117
+sentence: "Nuclear power is not going to solve emissions from aircraft, from the industrial sector or from industrial processes."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: "Nuclear power is not going to solve emissions from aircraft, from the industrial sector or from industrial processes."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev117
+predicate: solve
+patient: of+greenhouse+gas+problems
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev117
+sentence: Australia is one of the world's top coal producers.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: The Howard government has supported the coal industry in the face of calls for more renewable energy.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev120
+predicate: support
+patient: the+coal+industry
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev120
+sentence: The Howard government has supported the coal industry in the face of calls for more renewable energy.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev121
+predicate: face
+patient: of+calls+for+more+renewable+energy
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev121
+sentence: Treasurer Peter Costello, next-in-line for the prime minister's job, has said "nuclear power would cost twice as much as coal power, adding that nuclear energy was not economically right for Australia at the present time because it had such large resources of gas and coal."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Treasurer Peter Costello, next-in-line for the prime minister's job, has said "nuclear power would cost twice as much as coal power, adding that nuclear energy was not economically right for Australia at the present time because it had such large resources of gas and coal."
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: Treasurer Peter Costello, next-in-line for the prime minister's job, has said "nuclear power would cost twice as much as coal power, adding that nuclear energy was not economically right for Australia at the present time because it had such large resources of gas and coal."
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: John Howard said nuclear power in Australia "could be closer than some people would have thought a short while ago."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: John Howard said nuclear power in Australia "could be closer than some people would have thought a short while ago."
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: Federal Industry Minister, Ian Macfarlane, claimed it could be as early as 2020.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev124
+predicate: think
+patient: a+short
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev124
+sentence: The Opposition's environment spokesman, Anthony Albanese, said Labor opposed nuclear power on cost, safety, and waste and proliferation grounds.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: The Opposition's environment spokesman, Anthony Albanese, said Labor opposed nuclear power on cost, safety, and waste and proliferation grounds.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev126_0
+predicate: oppose
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev126_0
+sentence: The Opposition's environment spokesman, Anthony Albanese, said Labor opposed nuclear power on cost, safety, and waste and proliferation grounds.
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: He said he looks forward to "Labor ending John Howard's nuclear fantasy."
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+predicate: change
+patient: that+view
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+sentence: He said he looks forward to "Labor ending John Howard's nuclear fantasy."
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Energy experts say that Australia could not develop a nuclear power industry in time to stave off the effects of climate change, and such a program would be prohibitively expensive.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Energy experts say that Australia could not develop a nuclear power industry in time to stave off the effects of climate change, and such a program would be prohibitively expensive.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev46
+predicate: develop
+patient: a+nuclear+power+industry
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev46
+sentence: Energy experts say that Australia could not develop a nuclear power industry in time to stave off the effects of climate change, and such a program would be prohibitively expensive.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev47
+predicate: stave
+patient: the+effects+of+climate+change
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev47
+sentence: Energy experts say that Australia could not develop a nuclear power industry in time to stave off the effects of climate change, and such a program would be prohibitively expensive.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+predicate: change
+patient: that+view
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev50
+sentence: A 2005 survey found 47 percent of Australians supported nuclear power and 40 percent opposed it.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev130
+predicate: support
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev130
+sentence: The federal opposition party, and all six state governments, oppose nuclear power.
+agent: States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+predicate: power
+patient: nuclear+power
+event: http://en.wikinews.org/wiki/States_challenge_to_Australian_Work_Choices_Act_begins#ev14
+sentence: None
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev95
+predicate: have
+patient: %60%60+no+new+mines+%27%27+uranium
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev95
+sentence: None
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev80
+predicate: policy
+patient: %60%60+no+new+mines+%27%27+uranium
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev80
+sentence: Australian Prime Minister John Howard has told media in Canada that he wants "a full-blooded debate" in Australia about the issue of nuclear power.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: tell
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Australia and Canada are two of the world's largest uranium producers, and the nuclear energy issue was discussed at length during Prime Minister Howard's visit to the country this week.
+agent: Pakistan_government_blocks_bloggers_ahead_of_Bush_visit#ev46
+predicate: visit
+patient: to+the+country
+event: http://en.wikinews.org/wiki/Pakistan_government_blocks_bloggers_ahead_of_Bush_visit#ev46
+sentence: Mr Howard said soaring oil prices and environmental concerns from fossil-fuel energy are adding pressure towards the debate in Australia.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: The time at which it will come should be governed by economic considerations," Mr Howard said from Ottawa.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Australian Greens leader Senator Bob Brown labelled the Prime Minister's call "a sham".
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev107
+predicate: label
+patient: the+prime+minister+%27s+call
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev107
+sentence: Australian Prime Minister John Howard has told media in Canada that he wants "a full-blooded debate" in Australia about the issue of nuclear power.
+agent: Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev98_0
+predicate: debate
+patient: about+the+issue+of+nuclear+power
+event: http://en.wikinews.org/wiki/Australian_PM_pushes_for_%22full-blooded%22_nuclear_energy_debate#ev98_0
+sentence: Senator Brown says the Prime Minister has already made up his mind.
+agent: Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+predicate: say
+patient: the+new+iraqi+national+unity+government
+event: http://en.wikinews.org/wiki/Howard's_revival_of_nuclear_debate_%22surprising%22:_Political_expert#ev96
+sentence: Corby's lawyers are now collecting new information and preparing for the case.
+agent: Australian_PM_promises_to_assist_Corby#ev32
+predicate: collect
+patient: further+evidence
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev32
+sentence: Mr Howard pledged to support them in this process.
+agent: Australian_PM_promises_to_assist_Corby#ev60
+predicate: support
+patient: your+legal+team
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev60
+sentence: "Looking ahead, the Australian government will do what it can to support your legal team as they work to collect further evidence in Australia", he said.
+agent: Australian_PM_promises_to_assist_Corby#ev60
+predicate: support
+patient: your+legal+team
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev60
+sentence: "Looking ahead, the Australian government will do what it can to support your legal team as they work to collect further evidence in Australia", he said.
+agent: Australian_PM_promises_to_assist_Corby#ev32
+predicate: collect
+patient: further+evidence
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev32
+sentence: Corby was recently sentenced by an Indonesian court to 20 years in jail for attempting to smuggle four kilograms of marijuana into the island of Bali.
+agent: Australian_PM_promises_to_assist_Corby#ev25
+predicate: sentence
+patient: Corby
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev25
+sentence: It has been alleged that the drugs were planted in Ms. Corby's luggage by baggage handlers, as part of a smuggling ring internal to Australia, and that they were not collected by the intended "pick up", leaving them in Ms. Corby's possession when she arrived in Bali.
+agent: Australian_PM_promises_to_assist_Corby#ev51
+predicate: plant
+patient: the+drugs
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev51
+sentence: It has been alleged that the drugs were planted in Ms. Corby's luggage by baggage handlers, as part of a smuggling ring internal to Australia, and that they were not collected by the intended "pick up", leaving them in Ms. Corby's possession when she arrived in Bali.
+agent: Australian_PM_promises_to_assist_Corby#ev32
+predicate: collect
+patient: further+evidence
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev32
+sentence: Australian Prime Minister John Howard has promised that his government will do whatever it can to assist Schapelle Corby's legal team.
+agent: Australian_PM_promises_to_assist_Corby#ev18
+predicate: assist
+patient: SchapelleCorbys
+event: http://en.wikinews.org/wiki/Australian_PM_promises_to_assist_Corby#ev18
+sentence: He estimated the government would lose at least $380 million for every one cent reduction, which would increase as drivers demanded a five to ten cent cut.
+agent: L_pump_prices#ev14
+predicate: lose
+patient: at+least+%24+380+million
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev14
+sentence: The criticism by Queensland Premier Peter Beattie has been particularly vocal, claiming that the government simply does not want to lose the revenue the excise generates.
+agent: L_pump_prices#ev34
+predicate: want
+patient: the+revenue+the+excise+generates
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev34
+sentence: The criticism by Queensland Premier Peter Beattie has been particularly vocal, claiming that the government simply does not want to lose the revenue the excise generates.
+agent: L_pump_prices#ev14
+predicate: lose
+patient: at+least+%24+380+million
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev14
+sentence: The criticism by Queensland Premier Peter Beattie has been particularly vocal, claiming that the government simply does not want to lose the revenue the excise generates.
+agent: L_pump_prices#ev15
+predicate: revenue
+patient: the+revenue+the+excise+generates
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev15
+sentence: The criticism by Queensland Premier Peter Beattie has been particularly vocal, claiming that the government simply does not want to lose the revenue the excise generates.
+agent: L_pump_prices#ev16
+predicate: generate
+patient: the+revenue+the+excise+generates
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev16
+sentence: The Queensland government subsidises fuel in the state with GST revenue.
+agent: L_pump_prices#ev17
+predicate: subsidises
+patient: fuel+in+the+state
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev17
+sentence: The Queensland government subsidises fuel in the state with GST revenue.
+agent: L_pump_prices#ev15
+predicate: revenue
+patient: the+revenue+the+excise+generates
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev15
+sentence: He can do something about it if he really wants to," Mr Beattie said.
+agent: L_pump_prices#ev34
+predicate: want
+patient: the+revenue+the+excise+generates
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev34
+sentence: This was consistent with the statements by the Australian Competition and Consumer Commission, which explained the major reasons for the increase were Katrina and China's recent embargo on refined petrol exports.
+agent: L_pump_prices#ev22
+predicate: embargo
+patient: on+refined+petrol+exports
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev22
+sentence: The Prime Minister also estimated that the Federal government would lose billions in a cut of significant size.
+agent: L_pump_prices#ev14
+predicate: lose
+patient: at+least+%24+380+million
+event: http://en.wikinews.org/wiki/Australian_PM_Howard_under_fire_over_AU$1.40/L_pump_prices#ev14
+
+Mon Dec  3 11:32:14 CET 2018
+*** End of SGE job ***
