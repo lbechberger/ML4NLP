@@ -202,7 +202,9 @@ one change in our workflow is that we now first find the relation(predicate) bet
 we have totally 19,751 news articles. To speed up, we distribute the job to 20 different machines, with each machine 1000 articles. And every machine will write the result in a separate csv file in folder *data/raw_csv*. This allows us to retrieve information from all the articles in less than 8 hours, ideally. However, due to memory reason, some jobs are killed after a certain time period. With this acknowledgement, we save the triples information to csv after every article. This allow us to 1) check which articles are missing efficiently; 2) to resume the jobs after they are killed easily. 
 
 In our first result, information from 15,138 articles are retrieved and average computing time for 1000 articles is 7.5 hours. 4,613 are still missing due to memory problem in the IKW grid. Current average number of triples per article extracted by our strategy is 9. 139,343 triples are found from 15,138 articles. (the missing articles are currently running in the grid. This will be updated later.)
+
 ==============================update==============================
+
 03.12.2018
 
 number of all articles: 19751
