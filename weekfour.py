@@ -12,7 +12,8 @@ IN = re.compile(r'.*\bin\b(?!\b.+ing)')
 
 def main():
     article_cache = ArticleCache()
-    # article_cache.cache_all_articles()
+    article_cache.cache_all_articles()
+    import sys; sys.exit(1)
     # for article in article_cache.generate_articles(verbose=True):
     #     pos_tags = get_sentences(article)
     #     print(per_of_gpe(pos_tags))
