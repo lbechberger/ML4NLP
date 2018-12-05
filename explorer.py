@@ -1,6 +1,5 @@
 from knowledgestore import ks
 
-
 def get_events(article_uri):
 	""" generates a list of event URIs for a given article URI"""
 	timecodes = ["#tmx" + str(i) for i in range(7)]
@@ -12,18 +11,17 @@ def get_events(article_uri):
 
 def get_triple_from_event(event_uri):
 	""" generates a triples from a given event URI """
-	query = "SELECT DISTINCT ?agent ?charloc ?patient ?label WHERE {<" + event_uri + "> propbank:A0 ?agent . <" + event_uri +\
-			"> propbank:A1 ?patient . <" + event_uri + "> gaf:denotedBy ?charloc . <" + event_uri + "> rdfs:label ?label}"
+	query = "SELECT DISTINCT ?agent ?charloc ?patient WHERE {<" + event_uri + "> propbank:A0 ?agent . <" + event_uri +\
+			"> propbank:A1 ?patient . <" + event_uri + "> gaf:denotedBy ?charloc }"
 	result = ks.run_sparql_query(query)
 	if len(result) == 0:
 		return ()
 	else:
 		agent = result[0]["agent"].split("/")[-1].replace("+", " ")
 		patient = result[0]["patient"].split("/")[-1].replace("+", " ")
-		label = result[0]["label"]
 		charlocs = [(int(r["charloc"].split("=")[-1].split(",")[0]), int(r["charloc"].split("=")[-1].split(",")[1])) for
 					r in result if r["charloc"].split("#")[0] == event_uri.split("#")[0]]
-		return (agent, (charlocs, label), patient)
+		return (agent, charlocs, patient)
 
 
 def generate_triples_from_article(article_uri):
