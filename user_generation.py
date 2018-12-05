@@ -1,24 +1,33 @@
 import pickle
 import numpy as np
 import pandas as pd
+from generation_functions import *
 
-categories, articles, _ = pickle.load(open("user_articles.pickle", "rb"))
+# always use same numbers (for performance comparison)
+np.random.seed(0)
 
-np.random.seed()
+# load categories, articles and URIs from file
+categories, uris, _ = pickle.load(open("user_articles.pickle", "rb"))
+# get texts of all articles. Will be dumped in pickle file to avoid unnecessary computations when re-running code
+# articles = get_articles_from_link(uris)
+articles = pickle.load(open("articles.pickle", "rb"))
 
-print("\nThere are {} categories: {}\n".format(len(articles), categories))
-aCount = 0
-for c in articles:
-    aCount += len(c)
-
-print("Total number of articles: {}".format(aCount))
-print([cat[0] for cat in articles]) # print first article of each category
+print("\nThere are {} categories. In total {} articles\n".format(len(categories), len(articles)))
 
 # create a dataframe with 100 users (rows) who get randomly assigned 0 or 1 for each category (cols)
 users_db = pd.DataFrame(np.random.randint(2, size=(100, len(categories))), columns=categories)
-# print(users_db.loc[0]) # vertical print
-# print(users_db.loc[[0]])
 
+"""
+For each user/row(axis=1): correct subcategories' label to 0 if supercategory is disliked. To verify correctness
+of function, use the following print function and check i.e. (sub)category "Transport":
+Aviation before 1, after 0)
+# print(users_db.loc[0], "\n")
+"""
+users_db.apply(lambda row: check_subcategories(row), axis=1)
 
-# wenn obercat loop durch untercat und allen eine  0  assignen -> alle untercat auch 0. Wenn 1 -> random likes so lassen
-# user sind representiert als array of likes 
+input_data, labels = create_dataset(users_db[:1], articles, 100)
+
+# for d in input_data[98:103]:
+#     print(d)
+# for l in labels[98:103]:
+#     print(l)
