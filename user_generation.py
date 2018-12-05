@@ -12,7 +12,6 @@ categories, uris, _ = pickle.load(open("user_articles.pickle", "rb"))
 # articles = get_articles_from_link(uris)
 articles = pickle.load(open("articles.pickle", "rb"))
 
-print("\nThere are {} categories. In total {} articles\n".format(len(categories), len(articles)))
 
 # create a dataframe with 100 users (rows) who get randomly assigned 0 or 1 for each category (cols)
 users_db = pd.DataFrame(np.random.randint(2, size=(100, len(categories))), columns=categories)
@@ -25,9 +24,12 @@ Aviation before 1, after 0)
 """
 users_db.apply(lambda row: check_subcategories(row), axis=1)
 
-input_data, labels = create_dataset(users_db[:1], articles, 100)
+input_data, labels = create_dataset(users_db, articles, 100)
 
 # for d in input_data[98:103]:
 #     print(d)
 # for l in labels[98:103]:
 #     print(l)
+
+print("\nThere are {} categories. In total {} articles resulting in a dataset length of {}"
+      .format(len(categories), len(articles), len(input_data)))
