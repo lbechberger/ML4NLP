@@ -8,5 +8,10 @@
         "representations": 2,
         "interest": 2
     },
-    "users": 100
+    "users": 100,
+    "splits": {
+        "training": 0.8,
+        "validation": 0.1,
+        "testing": 0.1
+    }
 }
