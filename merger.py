@@ -1,14 +1,20 @@
 import pandas as pd
 
-dfs = []
-dfs.append(pd.read_csv("generated_data/merged/cdata_articles_0_to_741.csv", index_col=0))
-dfs.append(pd.read_csv("generated_data/classification_data_chunks/cdata_articles_742_to_750.csv", index_col=0))
-print(dfs[0].head())
-print(dfs[1].head())
-conc = pd.concat(dfs, ignore_index=True, sort=True)
-print(conc.info())
-print(conc.head())
-print(conc.describe())
-print(sum([len(d.index) for d in dfs]))
-print(len(conc.index))
-conc.to_csv("merged_data/cdata_articles_0_to_750.csv")
+
+def main():
+	conc = concatenate_dfs(800, 999, 10)
+	print(conc.info())
+	print(conc.head())
+	print(conc.describe())
+	conc.to_csv("merged_data/cdata_articles_800_to_999.csv")
+	print("File successfully saved.")
+
+
+def concatenate_dfs(start, stop, step):
+	paths = ["generated_data/cdata_articles_{}_to_{}.csv".format(findex, findex + step - 1) for findex in range(start, stop + 1, step)]
+	dfs = [pd.read_csv(p,index_col=0) for p in paths]
+	return pd.concat(dfs, ignore_index=True, sort=True)
+
+
+if __name__ == "__main__":
+	main()
