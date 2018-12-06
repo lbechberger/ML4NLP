@@ -10,11 +10,12 @@ all_article_uris = pd.read_csv("all_article_uris.csv")
 
 def main():
 	max = len(all_article_uris.index)
-	start = 10000
+	start = 2600
 	step = 50
 	while start < max:
 		generate_data_chunks(start, start + step - 1)
 		start = start + step
+	print("Done.")
 
 
 def generate_data_chunks(start_index, end_index):
