@@ -3,23 +3,28 @@ import pickle
 import json
 import random
 from collections import UserDict
+from typing import Dict, Set
+from pathlib import Path
 
 import pandas as pd
 from sklearn.utils import shuffle
 import numpy as np
 
 from . import User, Representation
-from pathlib import Path
 
 
 class DataSet(UserDict):
     class Parameter:
-        def __init__(self, user_params, num_user, splits):
+        def __init__(
+            self, user_params: User.Parameter, num_user: int, splits: Dict[str, float]
+        ):
             self.user_params = user_params
             self.num_user = num_user
             self.splits = splits
 
-        def generate(self, interests, seed=None):
+        def generate(self, interests: Dict[str, Set["Article"]], seed: int = None):
+            """ Generates a dataset from the specified parameters. """
+
             # Set seed, if specified
             if seed is not None:
                 np.random.seed(seed)
@@ -70,7 +75,9 @@ class DataSet(UserDict):
             return DataSet(dataframes=result, hyperparameters=self)
 
         @staticmethod
-        def from_json(path):
+        def from_json(path: str) -> "Parameter":
+            """ Load the parameter from a file. """
+
             with open(path, "r") as json_file:
                 data = json.load(json_file)
 
@@ -99,11 +106,15 @@ class DataSet(UserDict):
 
     DATASET_NAME = "Dataset_{}"
 
-    def __init__(self, dataframes, hyperparameters):
+    def __init__(
+        self, dataframes: Dict[str, pd.DataFrame], hyperparameters: "DataSet.Parameter"
+    ):
         super().__init__(dataframes)
         self.params = hyperparameters
 
-    def save(self, path, filename="dataset.pickle"):
+    def save(self, path: Path, filename: str = "dataset.pickle") -> Path:
+        """ Save the dataset in a corresponding folder structure. """
+
         num_existing_datasets = len([True for f in path.iterdir() if f.is_dir()])
 
         current_storage = path / DataSet.DATASET_NAME.format(num_existing_datasets)
@@ -114,14 +125,20 @@ class DataSet(UserDict):
         return current_storage
 
     @staticmethod
-    def get_last_dataset(path):
+    def get_last_dataset(path: Path) -> Path:
+        """ Returns the most recently generated dataset. """
+
         candidates = {
             int(f.name.split("_")[1]): f for f in path.iterdir() if f.is_dir()
         }
         return candidates[max(candidates.keys())]
 
     @staticmethod
-    def load(path, version=None, filename="dataset.pickle"):
+    def load(
+        path: Path, version: int = None, filename: str = "dataset.pickle"
+    ) -> "DataSet":
+        """ Load the dataset from a specified path. """
+
         dataset_path = (
             DataSet.get_last_dataset(path)
             if version is None
