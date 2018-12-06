@@ -139,3 +139,30 @@ After deleting these unsuitable categories, we used a weighted random distributi
 Then, for each topic of interest, there were 20 articles drawn - 10 for the user profile and 10 for the positive training samples. Afterward, 30 articles that do not belong to any of the three categories of 
 interest were drawn in order to be used as negative training samples.
 Finally, the dataset was saved as a pickle file.
+
+## Session 7, 04.12.18
+
+### Splitting up the dataset
+
+As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, test and validation. As there is a lot of data present in the set, we can use different parts of the set for training, test and validation.
+Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We want the same for our classifier for news recommendation. One solution that comes into mind is the reservation of articles that a newer than a certain date and putting them aside for test and validation data.
+
+### Evaluating the classifier's performance
+
+For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. A decision still to be made is if we use the balanced F1-score or the F2-score to weigth recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
+Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
+At last, the accuracy should be calculated for having a metric that is widely used.
+
+### Baselines
+
+Currently, the users of our dataset have the same number of articles in which they are interested and in which they are not. Feeding the whole data for training into our classifier could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice. We consider changing the relation between the number of positive and negative examples in the dataset.
+
+As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
+
+|  | Always “True” | Always “False” | 50-50 | Label Frequency |
+|-----------------------|---------------|----------------|-------|-----------------|
+| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
+| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
+| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
+| Matthew's correlation | 0 | 0 | 0 | 0 |
+| Cohen's kappa | 0 | 0 | 0 | 0 |
