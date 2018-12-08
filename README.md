@@ -150,6 +150,80 @@ This is an example for a dataset with the hyperparameters articles_per_interest 
 
 Finally, we are now able to create a list, which contains the internal categories (interests) of a user, the user representation for the classifier and the labeled examples in one row. As mentioned above, we want to save this generated dataset in a pickle-file, so that further researchers can just read it in into their code. We did not implement this yet, because we are not sure, which data is exactly necessary to save in order to split it into a training and a test dataset. But after we know more about our training and test data split and about our classifier, we will surely implement this.
 
+## Evaluation and Baselines (Week 6)
+### Dataset split
+After creating our dataset we have to think about reasonable evaluations and baselines of our model. We want our classifier not only to classify the generated dataset as good as possible, but we also want it to generalize to unseen data. If we just would train it on the complete dataset, we would not be able to say anything about the generalization of our model. Therefore we introduce a split of our dataset into a training set, a validation set and a test set. Due to the automatic generation of our dataset, we have a huge dataset for training our model. Although we will split up our entire dataset into different parts and therefore reduce the size of the individual data sets, we should still have a high amount of samples for training, validation and testing. The cross validation approach has the disadvantage of a huge computational overhead and a slower training process. Therefore we simply shuffle and split our dataset into the above mentioned three parts, because this seems to be an optimal solution for our dataset.
+
+The training set is used for training our classifier. The validation set is used to validate the hyperparameters of our classifier and to improve them in an iterative process. The test set is used to measure the generalization of our classifier for unseen data.
+
+In the first run, we considered an 80% - 20% - 20% split, i. e. 80% of our dataset will be the training set, 20% the validation set and 20% the test set. That allows us to train our model still on a large size of training samples while keeping a sufficient amount of samples for validation and testing.
+
+### Evaluation metrics:
+To evaluate the performance of our model, we can look at different metrics. Each of the metrics can be computed by the confusion matrix. The confusion matrix consists of the four different numbers of True positive, False positive, False negative and True negative classified samples.
+
+![ConfusionMatrix](documentation/ConfusionMatrix.png)
+
+The following metrics can be taken into account in order to measure the performance of our model:
+
+Accuracy: 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{(TP&space;&plus;&space;TN)}{(TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{(TP&space;&plus;&space;TN)}{(TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN)}" title="\frac{(TP + TN)}{(TP + TN + FP + FN)}" /></a>
+
+False Alarm Rate:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{FP}{(FP&space;&plus;&space;TN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{FP}{(FP&space;&plus;&space;TN)}" title="\frac{FP}{(FP + TN)}" /></a>
+
+False Negative Rate:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{FN}{(FN&space;&plus;&space;TP)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{FN}{(FN&space;&plus;&space;TP)}" title="\frac{FN}{(FN + TP)}" /></a>
+
+Precision:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{TP}{(TP&space;&plus;&space;FP)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{TP}{(TP&space;&plus;&space;FP)}" title="\frac{TP}{(TP + FP)}" /></a>
+
+Recall:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{TP}{(TP&space;&plus;&space;FN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{TP}{(TP&space;&plus;&space;FN)}" title="\frac{TP}{(TP + FN)}" /></a>
+
+F1-Score:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=2&space;\cdot&space;\frac{(Precision&space;*&space;Recall)}{(Precision&space;&plus;&space;Recall)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2&space;\cdot&space;\frac{(Precision&space;*&space;Recall)}{(Precision&space;&plus;&space;Recall)}" title="2 \cdot \frac{(Precision * Recall)}{(Precision + Recall)}" /></a>
+
+- Cohan's Kappa:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{(p_0&space;-&space;p_e)}{(1&space;-&space;p_e)}&space;\&space;where&space;\&space;p_0&space;=&space;Acuraccy&space;\&space;and&space;\&space;p_e&space;=&space;\frac{(TP&space;&plus;&space;FP)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(TP&space;&plus;&space;FN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;&plus;&space;\frac{(FN&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(FP&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{(p_0&space;-&space;p_e)}{(1&space;-&space;p_e)}&space;\&space;where&space;\&space;p_0&space;=&space;Acuraccy&space;\&space;and&space;\&space;p_e&space;=&space;\frac{(TP&space;&plus;&space;FP)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(TP&space;&plus;&space;FN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;&plus;&space;\frac{(FN&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(FP&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}" title="\frac{(p_0 - p_e)}{(1 - p_e)} \ where \ p_0 = Acuraccy \ and \ p_e = \frac{(TP + FP)}{(TP + FP + FN + TN)} \cdot \frac{(TP + FN)}{(TP + FP + FN + TN)} + \frac{(FN + TN)}{(TP + FP + FN + TN)} \cdot \frac{(FP + TN)}{(TP + FP + FN + TN)}" /></a>
+
+With our news recommendation system we are especially interested in how good we can predict interesting articles for specific users. Therefore we will look especially in detail on the Accuracy, the False Alarm Rate and the Precision. The Accuracy indicates the overall performance of our model and the amount of correctly classified articles. The accuracy should be as high as possible in our approach. The False Alarm Rate indicates in our model, how many articles we recommend a user in which he is not interested. So this is an important measure for us and we try to minimize this number in our approach. The precision tells us, how many of the articles we recommend a user a really interesting for him. This measurement therefore should be as high as possible. 
+
+### Baselines
+As baselines, we will use the "Always True"-Baseline (predicting all articles as interesting for a user) and the "Based on Label Frequency"-Baseline (predicting articles as interesting for a user based on the distribution of our dataset). Considering a first dataset with a total amount of 960 samples in the training set and 120 samples in the training set as well as a label distribution between positive and negative articles of 50% - 50% the Accuracy, the False Alarm Rate and Precision will result in the following values:
+
+1. "Always True"-Baseline:
+
+Training set:
+ - Accuracy: 0.5
+ - False Alarm Rate: 1
+ - Precision: 0.5
+
+Test set:
+ - Acuraccy: 0.5
+ - False Alarm Rate: 1
+ - Precision: 0.5
+
+2. "Based on Label Frequency"-Baseline:
+
+Training set:
+ - Acuraccy: 0.5
+ - False Alarm Rate: 0.5
+ - Precision: 0.5
+
+Test set:
+ - Acuraccy: 0.5
+ - False Alarm Rate: 0.5
+ - Precision: 0.5
+
+We will compare the results of our classifier in the future with these metrics to these baselines. This comparison should allow us to find out, how good our news recommendation system finally will be in predicting interesting articles for different kind of users.
+
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
