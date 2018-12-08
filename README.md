@@ -152,7 +152,7 @@ Finally, we are now able to create a list, which contains the internal categorie
 
 ## Evaluation and Baselines (Week 6)
 ### Dataset split
-After creating our dataset we have to think about reasonable evaluations and baselines of our model. We want our classifier not only to classify the generated dataset as good as possible, but we also want it to generalize to unseen data. If we just would train it on the complete dataset, we would not be able to say anything about the generalization of our model. Therefore we introduce a split of our dataset into a training set, a validation set and a test set. Due to the automatic generation of our dataset, we have a huge dataset for training our model. Although we will split up our entire dataset into different parts and therefore reduce the size of the individual data sets, we should still have a high amount of samples for training, validation and testing. The cross validation approach has the disadvantage of a huge computational overhead and a slower training process. Therefore we simply shuffle and split our dataset into the above mentioned three parts, because this seems to be an optimal solution for our dataset.
+After creating our dataset we have to think about reasonable evaluations and baselines for our model. We want our classifier not only to classify the generated dataset as good as possible, but we also want it to generalize to unseen data. If we just would train it on the complete dataset, we would not be able to say anything about the generalization of our model. Therefore we introduce a split of our dataset into a training set, a validation set and a test set. Due to the automatic generation of our dataset, we have a huge dataset for training our model. Although we will split up our entire dataset into different parts and therefore reduce the size of the individual data sets, we should still have a high amount of samples for training, validation and testing. The cross validation approach has the disadvantage of a huge computational overhead and a slower training process. Therefore we simply shuffle and split our dataset into the above mentioned three parts, because this seems to be an optimal solution for our dataset.
 
 The training set is used for training our classifier. The validation set is used to validate the hyperparameters of our classifier and to improve them in an iterative process. The test set is used to measure the generalization of our classifier for unseen data.
 
@@ -198,7 +198,7 @@ With our news recommendation system we are especially interested in how good we 
 ### Baselines
 As baselines, we will use the "Always True"-Baseline (predicting all articles as interesting for a user) and the "Based on Label Frequency"-Baseline (predicting articles as interesting for a user based on the distribution of our dataset). Considering a first dataset with a total amount of 960 samples in the training set and 120 samples in the training set as well as a label distribution between positive and negative articles of 50% - 50% the Accuracy, the False Alarm Rate and Precision will result in the following values:
 
-1. "Always True"-Baseline:
+#### "Always True"-Baseline:
 
 Training set:
  - Accuracy: 0.5
@@ -210,7 +210,7 @@ Test set:
  - False Alarm Rate: 1
  - Precision: 0.5
 
-2. "Based on Label Frequency"-Baseline:
+#### "Based on Label Frequency"-Baseline:
 
 Training set:
  - Acuraccy: 0.5
