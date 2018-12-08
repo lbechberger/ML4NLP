@@ -2,12 +2,16 @@ import pandas as pd
 
 
 def main():
-	conc = concatenate_dfs(800, 999, 10)
+	start=19000
+	stop=19749
+	step=50
+	conc = concatenate_dfs(start, stop, step)
 	print(conc.info())
 	print(conc.head())
 	print(conc.describe())
-	conc.to_csv("merged_data/cdata_articles_800_to_999.csv")
+	conc.to_csv("merged_data/cdata_articles_%s_to_%s.csv" % (start,stop))
 	print("File successfully saved.")
+
 
 
 def concatenate_dfs(start, stop, step):
