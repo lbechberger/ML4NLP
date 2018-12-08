@@ -1,7 +1,6 @@
 """ Uses the scripts contained within explorer.py to generate training and test data."""
 from knowledgestore import ks
 import pandas as pd
-import explorer
 import re
 import time
 
@@ -15,6 +14,7 @@ def main():
 	while start < max:
 		generate_data_chunks(start, start + step - 1)
 		start = start + step
+	print("Done.")
 
 
 def generate_data_chunks(start_index, end_index):
@@ -40,7 +40,7 @@ def generate_data_for_articles(articles, verbose=False):
 		if verbose:
 			n = n + 1
 			print("Processing article {} with URI {}.".format(n, article_uri))
-		triples = explorer.generate_triples_from_article(article_uri)
+		triples = generate_triples_from_article(article_uri)
 		article_text = ks.run_files_query(article_uri)
 		splits_at = [pos for pos, char in enumerate(article_text) if char == " "]
 		words_by_position = [(splits_at[x] + 1, splits_at[x + 1]) for x in range(len(splits_at) - 1)]
@@ -57,6 +57,41 @@ def generate_classification_from_triple(agent, patient, correct_relations, artic
 		word_row = pd.DataFrame({"agent": agent, "patient": patient, "word_start_char": word_by_position[0], "word_end_char": word_by_position[1], "classification": classification, "article_uri": article_uri}, index=[0])
 		result_frame = result_frame.append(word_row, ignore_index=True)
 	return result_frame
+
+
+def get_events(article_uri):
+	""" generates a list of event URIs for a given article URI"""
+	timecodes = ["#tmx" + str(i) for i in range(7)]
+	queries = [
+		"SELECT DISTINCT ?event WHERE {?event rdf:type sem:Event . ?event sem:hasAtTime <" + str(article_uri) + str(
+			timecode) + ">}" for timecode in timecodes]
+	return [result["event"] for query in queries for result in ks.run_sparql_query(query)]
+
+
+def get_triple_from_event(event_uri):
+	""" generates a triples from a given event URI """
+	query = "SELECT DISTINCT ?agent ?charloc ?patient WHERE {<" + event_uri + "> propbank:A0 ?agent . <" + event_uri +\
+			"> propbank:A1 ?patient . <" + event_uri + "> gaf:denotedBy ?charloc }"
+	result = ks.run_sparql_query(query)
+	if len(result) == 0:
+		return ()
+	else:
+		agent = result[0]["agent"].split("/")[-1].replace("+", " ")
+		patient = result[0]["patient"].split("/")[-1].replace("+", " ")
+		charlocs = [(int(r["charloc"].split("=")[-1].split(",")[0]), int(r["charloc"].split("=")[-1].split(",")[1])) for
+					r in result if r["charloc"].split("#")[0] == event_uri.split("#")[0]]
+		return (agent, charlocs, patient)
+
+
+def generate_triples_from_article(article_uri):
+	""" generates a list of triples from a given article URI """
+	events = get_events(article_uri)
+	triples = []
+	for event in events:
+		triple = get_triple_from_event(event)
+		if len(triple) > 0:
+			triples.append(triple)
+	return triples
 
 
 if __name__ == "__main__":

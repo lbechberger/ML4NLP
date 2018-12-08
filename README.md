@@ -100,3 +100,21 @@ Of course most of these entries are going to be wrong answers since most words i
 For the sake of stability, continuity and error avoidance we are processing only chunks of 50 articles at once and then save the resulting dataframe to a csv file in generated_data/classification_data_chunks.
 At a rate of 3 articles per minute the generation of each chunk will take about 16 minutes. The generation of all 400 chunks would consequently take about four to five days of straight computing time. If we could manage to parallelize the process, this would accelerate the process greatly.
 Therefore it is an unrealistic expectation that we will have the whole data set up and running by the start of the next seminar session. However, we so far managed to produce 15 data chunks containing the data from the first 750 articles. This should be a good starting point for further exploration and the selection of a suitable classifier. 
+
+## Week 03.12. - 09.12
+### Data Exploration
+What is the percentage of true values? Perhaps we need to aug. the data to work, i.e. drop systematically false data ("A", "And")
+### Baselines
+Always false, (most predictive feature in the future), we make use of  weighted accuracy,
+### Feature engineering?
+Sliding window (+-10 words, Maybe sentencnces, depending on factors: what kind of words,  )
+Turn words into numbers (either semtantic net, word kind, levenstein distances)
+Filter systematicilly false ("A","AND")
+Synonyms via SPARQL, NER+Gender (For use with Personal Pronouns), Graph for the Agent,Patient (expensive)
+Computation is easy when is can be done for each row individually via apply, but is an issue for actions that require SPARQL, Natural Language Processing (i.e. NER (via spacy?)
+### Split
+10-Fold Crossvalidation , we got enough data.
+Very random, split articles among splits, lower bound of  number of true values.
+To take in account: A lot of "A", "And" etc. no split should consist of only these. We want to split articles -> Random
+Need to zip data to reduce size for git,
+

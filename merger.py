@@ -16,7 +16,7 @@ def main():
 
 def concatenate_dfs(start, stop, step):
 	paths = ["generated_data/cdata_articles_{}_to_{}.csv".format(findex, findex + step - 1) for findex in range(start, stop + 1, step)]
-	dfs = [pd.read_csv(p,index_col=0) for p in paths]
+	dfs = [pd.read_csv(p, index_col=0) for p in paths]
 	return pd.concat(dfs, ignore_index=True, sort=True)
 
 
