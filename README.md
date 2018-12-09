@@ -122,6 +122,6 @@ Because of the inbalance in classifications, the only suitable baseline for now 
 #### Split
 We have enough data to do 10-Fold Crossvalidation, which we hold to be the most reliable system. We would also prefer it if the triples generated from one article would not all be in one split, since we want the evaluation to be independent of the articles in question. Another point to consider is that since we only have very few True classifications, they should be evenly distributed among the splits so that there is no split with no True classifications to learn from.
 
-Fortunately, all these requirements are fulfilled in skickit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
+Fortunately, all these requirements are fulfilled in scikit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
 
 
