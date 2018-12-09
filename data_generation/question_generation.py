@@ -21,22 +21,21 @@ def naively_generate_negatives(event_pos):
     mode = random.randint(1,2)
     # @TODO: evaluate how random this actually is or if it generates a bias towards either subjects or objects
     same_as_before = True
+    # have random decision whether to replace the agent or the patient
     if mode == 1:
+        # randomly pick out an agent out of a list of all agents until it is not the same as the original agent
         while same_as_before:
-            print(actual_agent)
             new_agent_id = random.randint(0, len(agents) - 1)
             replacement_agent = agents[new_agent_id]
-            print(replacement_agent)
             if replacement_agent != actual_agent: 
                 same_as_before = False
         # returns a dict that can be written into the csv file
         return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": replacement_agent, "predicate": predicates[event_pos], "patient": patients[event_pos]}
     else:
+        # randomly pick out a patient out of a list of all patients until it is not the same as the original patient
         while same_as_before:
             new_patient_id = random.randint(0, len(patients) - 1)
-            print(actual_patient)
             replacement_patient = patients[new_patient_id]
-            print(replacement_patient)
             if replacement_patient != actual_patient:
                 same_as_before = False
 
@@ -59,20 +58,21 @@ if __name__ == '__main__':
     
     # read in the information from the csv file
     with open("demo_triples.csv") as csvDataFile:
-        data_file = csv.reader(csvDataFile)
+        data_file = csv.reader(csvDataFile, delimiter=';')
         for row in data_file:
             event_ids.append(row[0])
-            article_ids.append(row[0])
-            uris.append(row[0])
-            events.append(row[0])
-            agents.append(row[0])
-            predicates.append(row[0])
-            patients.append(row[0])
+            article_ids.append(row[1])
+            uris.append(row[2])
+            events.append(row[3])
+            agents.append(row[4])
+            predicates.append(row[5])
+            patients.append(row[6])
     
     # start writing a new csv file
     with open("negatives.csv", "w") as csvDataFile:
         writer = csv.DictWriter(csvDataFile, fieldnames=fieldnames)
         writer.writeheader()
+        # for each positive, generate n negatives, where n is determined by the user (10 by default, should the user not care)
         for event_pos in range(len(events)):
             for n in range(int(generation_factor)):
                 writer.writerow(naively_generate_negatives(event_pos))
