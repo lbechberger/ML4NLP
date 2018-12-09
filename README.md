@@ -113,13 +113,13 @@ For the purposes of exploration, we work within the script explorer.py mostly.
 A first examination of the data set has concluded that we have a lot of False classifications, which was to be expected since most words in an article are not the answer to a specific question. 
 In the preliminary data set, we have a total of 10 491 601 False classifications and 37 479 True classifcations, giving us only 0.597 % True classifications.
 
-## Evaluation Metric
+#### Evaluation Metric
 Accuracy seems to be the intuitive answer. However, since we are not really interested in whether the classifier misses other correct answers but only want it to find at least one correct answer, another metric that is interesting for us is precision. Precision will tell us how often the answers our question answering system gives us are actually correct, which is the quality we want to optimize.
 
-## Baseline
+#### Baseline
 Because of the inbalance in classifications, the only suitable baseline for now is "always false". Once we have properly started with the feature engineering, there may be a most predictive feature which will outscore "always false", but for now it is the champion among the baselines. Precision is not really defined for the baseline "always false", since there are no False Positives or True Positives when your classifier is "always false". Accuracy however is 99.64 % on our preliminary data set. This implies that we will have to involve some kind of weighting if we want to get significant differences in evaluations of our classifiers.
 
-## Split
+#### Split
 We have enough data to do 10-Fold Crossvalidation, which we hold to be the most reliable system. We would also prefer it if the triples generated from one article would not all be in one split, since we want the evaluation to be independent of the articles in question. Another point to consider is that since we only have very few True classifications, they should be evenly distributed among the splits so that there is no split with no True classifications to learn from.
 
 Fortunately, all these requirements are fulfilled in skickit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
