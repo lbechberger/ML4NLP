@@ -1,19 +1,20 @@
 import knowledgestore.ks as ks
 import nltk
 
+
 def tokenize_text(articles):
-    '''Processes the raw strings of the wikinews articles for further use.'''
+    """Processes the raw strings of the wikinews articles for further use."""
     sentences = []
     n = 1
     for article in articles:
         sentences = [nltk.word_tokenize(sentence) for sentence in (nltk.sent_tokenize(article))]
-        print("Article number " + str(n) + "tokeinzed into sentences successfully!")
+        print("Article number " + str(n) + "tokenized into sentences successfully!")
         n += 1
     return sentences
 
 
 def pos_tag(sentences):
-    '''Generates POS tags for the text.'''
+    """Generates POS tags for the text."""
     pos_tags = [nltk.pos_tag(sentence) for sentence in sentences]
     return pos_tags
 
@@ -54,9 +55,10 @@ if __name__ == '__main__':
     for uri in wikinews_uris: 
         articles.append(ks.run_files_query(uri))
         print("Retrieved content for article " + str(n))
+        
         n += 1
-    # articles = [ks<.run_files_query(uri) for uri in wikinews_uris]
     print("Article content retrieved successfully!")
     tagged_sentences = pos_tag(tokenize_text(articles))
     entities = recognize_ne(tagged_sentences)
     print(entities[0])
+    
