@@ -182,6 +182,64 @@ At the moment we are thinking about an elegant way to implement that for each to
 - user name
 - user likes or dislikes the article
 
+## Documentation Part 6
+
+### Dataset
+
+Our dataset consists of 450.000 (45 categories * 100 articles* 100 users) entries of user and article-text, annotated with a like or dislike. It is easy for us to increase or decrease the the size of our dataset by increasing or decreasing the number of users. We could also increase or decrease the number of articles we extract for each category, but here we are limited to 500 articles, because we chose to include only categories with at least 500 articles. When running user_generation.py, the resulting dataset looks somewhat like this:  
+ 
+|user                                                                                   |article text                   |label |
+|---------------------------------------------------------------------------|------------------------------|-------|
+|010100010011110101001101100100101110010101000 | category1_article1      |0      |
+|010100010011110101001101100100101110010101000 | category1_article2      |0      |
+|010100010011110101001101100100101110010101000 | category1...                 |0      |
+|010100010011110101001101100100101110010101000 | category1_article100  |0      |
+|010100010011110101001101100100101110010101000 | category2_article1      |1      |
+|010100010011110101001101100100101110010101000 | category2_article2      |1      |
+|010100010011110101001101100100101110010101000 | category2_...               |1      |
+|010100010011110101001101100100101110010101000 | category2_article100  |1      |
+|010100010011110101001101100100101110010101000 | category45_article1    |0      |
+|010100010011110101001101100100101110010101000 | category45_...             |0      |
+|010100010011110101001101100100101110010101000 | category45_article100 |0      |
+|101010000010111101001110101011101001001010111 | category1_article1 |1      |
+|101010000010111101001110101011101001001010111 | category2_…         |1      |
+
+### Splitting the dataset
+
+Since our dataset is quite big and has the potential to be extended, we first thought it would not be necessary to perform k-fold cross validation, but since we are curious about the potential differences in the results when splitting the dataset differently, we decided to try a 10-fold cross validation on our dataset. The dataset will therefore be split in 10 subsets of equal size containing random data-pairs of user and article plus the corresponding label. Training- and Testsets are split in a 80 - 20 ratio (see split_data.py).
+
+### Evaluation metric(s) 
+
+Because precision and recall are by themselves not very meaningful, we want to use the F1-score as our first evaluation metric, since it is the harmonic mean of the two values. Also, we want to use Cohen’s Kappa, because it is a more complex and meaningful metric than the  mere accuracy of our classifier. 
+
+### Baselines 
+
+The baselines we are going to use are the same as the ones we looked at in class, namely “Always True”, “Always False”, “50-50” and “Label Frequency”. Our dataset contains a bit more examples of articles the user is not interested in than articles they are interested in which has the following reason: In the first step, the user likes or dislikes all categories randomly equally. In the second step, the top-categories are checked and if they are annotated with a 0 (= dislike), the according subcategories are also assigned 0. If, on the other hand, a top category is annotated as 1, the subcategories are not changed, which means they can still be annotated with either 0 or 1. In the next step, the user gets paired with the articles of each category and the labels are given according to whether the category the article is associated with is liked or disliked. 
+22 out of the 45 categories are subcategories and have therefore a probability which is double as high to be 0 as for the other 23 categories. Therefore, the probability of a user article combination to be 0 is (0.5*23+0.75*22) / 45 = 0.62 and for a user article combination to be annotated as 1: (0.5*23+0.25*22) / 45 = 0.38 .
+
+### Performance of Baselines: 
+
+positive examples: 450.000*0.38 = 171.000
+
+negative examples: 450.000*0.62= 279.000
+
+
+Always True: TP = 171.000 FP = 279.000 FN = 0 TN = 0
+
+Always False: TP = 0 FP = 0 FN = 171.000 TN = 279.000
+
+50-50: TP = 85.500 FP = 175.500 FN= 85.500 TN= 175.500
+
+Label Frequency: TP = 64.980 FP = 123.120 FN = 123.120 TN = 252.720
+
+
+|                        |Always True   | Always False   | 50-50          |Label Frequency |
+|--------------------|-----------------|----------------------|-------------------|----------------------|
+|Accuracy          |  0.38           |  0.62                  |  0.5               |  0.706               |
+|Precision          |  0.38           |  0                       |  0.33             |  0.35                 |
+|Recall                |  1                |  0                       |  0.5               |  0.35                 |
+|Cohen’s Kappa|  0                |  0                       |  -0.19            |  -0.022              |
+
 
 ## Sources: 
 [1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
