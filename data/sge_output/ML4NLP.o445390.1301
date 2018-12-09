@@ -1,0 +1,2000 @@
+*** Start of SGE job ***
+Mon Dec  3 11:15:58 CET 2018
+
+Hostname
+voxel.cv.uni-osnabrueck.de
+445390
+Job-ID:
+445390
+user:
+juhuang
+
+Start
+
+CUDA VERSION (should be 9):
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2017 NVIDIA Corporation
+Built on Fri_Sep__1_21:08:03_CDT_2017
+Cuda compilation tools, release 9.0, V9.0.176
+ROOT
+/net/projects/scratch/summer/valid_until_31_January_2019/juhuang/nlp/ML4NLP
+rolling...
+number of all articles: 19751
+number of generarted articles:  17499
+number of missing articles:  2252
+sentence: A patched-up Reds defence saw Gerard Piqué and Danny Simpson included alongside Rio Ferdinand and Patrice Evra.
+agent: 08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev12
+predicate: see
+patient: Gerard_Piqué
+event: http://en.wikinews.org/wiki/2007/08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev12
+sentence: Manchester United have moved to the top of the table after beating Wigan Athletic 4–0 today.
+agent: 08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev4
+predicate: beat
+patient: Wigan_Athletic_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Premier_League:_Manchester_United_vs._Wigan_Athletic#ev4
+sentence: Ledley had a strong run down the sidelines for Cardiff, but Rae's header from the resulting cross was sent directly into Steele's arms.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev41
+predicate: header
+patient: from+the+resulting+cross
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev41
+sentence: Both teams defeated Premier League opposition to get to this stage, with Cardiff defeating Middlesbrough and Barnsley toppling London giants Chelsea.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+predicate: defeat
+patient: Arsenal_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+sentence: Barnsley continued to push for the equalizer, but couldn't find the quality they had to take out Chelsea and Liverpool in previous rounds.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev57
+predicate: continue
+patient: to+push+for+the+equalizer
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev57
+sentence: Barnsley continued to push for the equalizer, but couldn't find the quality they had to take out Chelsea and Liverpool in previous rounds.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev49
+predicate: take
+patient: Chelsea_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev49
+sentence: The appearance in the final is Cardiff's first since 1927 when they defeated Arsenal 1-0 and brought the FA Cup to Wales.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+predicate: defeat
+patient: Arsenal_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+sentence: The Bluebirds will look to take the trophy out of England for only the second time in history through 127 finals.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev49
+predicate: take
+patient: Chelsea_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev49
+sentence: Both teams defeated Premier League opposition to get to this stage, with Cardiff defeating Middlesbrough and Barnsley toppling London giants Chelsea.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+predicate: defeat
+patient: Arsenal_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+sentence: Both teams defeated Premier League opposition to get to this stage, with Cardiff defeating Middlesbrough and Barnsley toppling London giants Chelsea.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev24
+predicate: topple
+patient: London
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev24
+sentence: The teams continued their positive play in this match, but only a single goal was scored in the game.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev53
+predicate: continue
+patient: their+positive+play+in+this+match
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev53
+sentence: Cardiff pressurized the Barnsley goal early, and just as Robert Kozluk cleared the ball away with his head, Ledley connected with his left foot to float the ball over Luke Steele and give Cardiff the lead.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev28
+predicate: pressurize
+patient: Barnsley_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev28
+sentence: Cardiff pressurized the Barnsley goal early, and just as Robert Kozluk cleared the ball away with his head, Ledley connected with his left foot to float the ball over Luke Steele and give Cardiff the lead.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev61
+predicate: clear
+patient: the+ball
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev61
+sentence: The goal lit a fire under Barnsley and Stephen Foster could have equalized within minutes, but his header flew just wide.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev62
+predicate: light
+patient: a+fire
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev62
+sentence: The game was played end to end for much of the first half, with Cardiff providing more of the games cutting edge.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev38
+predicate: provide
+patient: more+of+the+games+cutting+edge
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev38
+sentence: Cardiff will return to Wembley next month to play Portsmouth in the FA Cup final after defeating Barnsley on Sunday.
+agent: 08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+predicate: defeat
+patient: Arsenal_F.C.
+event: http://en.wikinews.org/wiki/2007/08_FA_Cup:_Cardiff_joins_Portsmouth_in_Cup_final#ev23
+sentence: Bayern Munich pour shot after shot on Wacker Burghausen's goalkeeper ,Manuel Riemann, only to see the 3rd Division club take the lead in the 61st Minute when Wacker Burghausen striker, Thomas Neubert, looped a header over Oliver Kahn.
+agent: 08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev16
+predicate: take
+patient: the+lead+in+the+61st+minute
+event: http://en.wikinews.org/wiki/2007/08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev16
+sentence: Burghausen, Germany
+ 
+ 
+A capacity crowd in Wacker Arena saw Bayern Munich beat Wacker Burghausen in a shootout to advance to the 2nd Round of this season's DFB Cup.
+agent: 08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev9
+predicate: crowd
+patient: SV_Wacker_Burghausen
+event: http://en.wikinews.org/wiki/2007/08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev9
+sentence: Just 17 seconds had passed when Ribery took a shot that missed by inches .
+agent: 08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev16
+predicate: take
+patient: the+lead+in+the+61st+minute
+event: http://en.wikinews.org/wiki/2007/08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev16
+sentence: Riemann made his first save from Altintop on three minutes, However, almost gave Burghausen the lead when Hungarian midfielder Levente Schultz forced Oliver Kahn into a save near the post.
+agent: 08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev24
+predicate: force
+patient: Oliver_Kahn
+event: http://en.wikinews.org/wiki/2007/08_DFB_Cup:_FC_Bayern_Munich_beats_Burghausen_in_shootout_to_advance#ev24
+sentence: Wolfsburg Coach Felix Magath made a solitary change to his team which took an away point off Hamburg.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev11
+predicate: change
+patient: to+his+team
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev11
+sentence: Wolfsburg Coach Felix Magath made a solitary change to his team which took an away point off Hamburg.
+agent: UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+predicate: take
+patient: nine+points
+event: http://en.wikinews.org/wiki/UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+sentence: SchÃ¤fer took the place of Quiroga at left back.
+agent: UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+predicate: take
+patient: nine+points
+event: http://en.wikinews.org/wiki/UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+sentence: The Hansa Rostock coach Frank Pagelsdorf saw no reason to change his team which took nine points from their last three games.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev11
+predicate: change
+patient: to+his+team
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev11
+sentence: The Hansa Rostock coach Frank Pagelsdorf saw no reason to change his team which took nine points from their last three games.
+agent: UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+predicate: take
+patient: nine+points
+event: http://en.wikinews.org/wiki/UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+sentence: The Hansa Rostock coach Frank Pagelsdorf saw no reason to change his team which took nine points from their last three games.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+predicate: game
+patient: to+visitors
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+sentence: Their last victory was against the defending champions Stuttgart.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev31
+predicate: defend
+patient: the+defending+champions+stuttgart
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev31
+sentence: The game began in a cautious manner, with Hansa Rostock defending in their own half, hoping to hit Wolfsburg on a counter attack.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev31
+predicate: defend
+patient: the+defending+champions+stuttgart
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev31
+sentence: The game began in a cautious manner, with Hansa Rostock defending in their own half, hoping to hit Wolfsburg on a counter attack.
+agent: Australia_Votes_2007:_Analysts_say_Rudd_wins_TV_debate#ev110
+predicate: hit
+patient: VfL_Wolfsburg
+event: http://en.wikinews.org/wiki/Australia_Votes_2007:_Analysts_say_Rudd_wins_TV_debate#ev110
+sentence: Wolfsburg tried to take the game to visitors from the former DDR, but they didn't create any goalscoring chances during the opening minutes.
+agent: UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+predicate: take
+patient: nine+points
+event: http://en.wikinews.org/wiki/UEFA_Champions_League_2007%e2%80%9308:_CSKA_Moscow_vs._Inter_Milan#ev16
+sentence: Wolfsburg tried to take the game to visitors from the former DDR, but they didn't create any goalscoring chances during the opening minutes.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+predicate: game
+patient: to+visitors
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+sentence: When a 0-0 draw looked inevitable, Wolfsburg secured all three points in the 89th minute.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev36
+predicate: secure
+patient: all+three+points
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev36
+sentence: After the Bundesliga break, Wolfsburg will travel to and play Hannover in the Niedersachsen derby.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev23
+predicate: travel
+patient: Hannover_96
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev23
+sentence: After the Bundesliga break, Wolfsburg will travel to and play Hannover in the Niedersachsen derby.
+agent: 08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+predicate: play
+patient: to+visitors
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Hansa_Rostock#ev24
+sentence: A sell-out crowd at the Volkswagen Arena saw the Wolfsburg control the match against Bayern Munich during the 1st half.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev8
+predicate: see
+patient: FC_Bayern_Munich
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev8
+sentence: Bayern Munich won the 2007/08 German championship after a 0-0 against Wolfsburg.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+predicate: win
+patient: the+2007%2f08+german+championship
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+sentence: In goal, Michael Rensing replaced Oliver Kahn, Willy Sagnol replaced Philipp Lahm, Daniel van Buyten replaced Lucio, Andreas Ottl and Jose Ernesto Sosa replaced ZÃ© Roberto and Franck Ribery and Lukas Podolski replaced Miroslav Klose.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+predicate: replace
+patient: Zé_Roberto
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+sentence: In goal, Michael Rensing replaced Oliver Kahn, Willy Sagnol replaced Philipp Lahm, Daniel van Buyten replaced Lucio, Andreas Ottl and Jose Ernesto Sosa replaced ZÃ© Roberto and Franck Ribery and Lukas Podolski replaced Miroslav Klose.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+predicate: replace
+patient: Zé_Roberto
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+sentence: In goal, Michael Rensing replaced Oliver Kahn, Willy Sagnol replaced Philipp Lahm, Daniel van Buyten replaced Lucio, Andreas Ottl and Jose Ernesto Sosa replaced ZÃ© Roberto and Franck Ribery and Lukas Podolski replaced Miroslav Klose.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+predicate: replace
+patient: Zé_Roberto
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+sentence: In goal, Michael Rensing replaced Oliver Kahn, Willy Sagnol replaced Philipp Lahm, Daniel van Buyten replaced Lucio, Andreas Ottl and Jose Ernesto Sosa replaced ZÃ© Roberto and Franck Ribery and Lukas Podolski replaced Miroslav Klose.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+predicate: replace
+patient: Zé_Roberto
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+sentence: In goal, Michael Rensing replaced Oliver Kahn, Willy Sagnol replaced Philipp Lahm, Daniel van Buyten replaced Lucio, Andreas Ottl and Jose Ernesto Sosa replaced ZÃ© Roberto and Franck Ribery and Lukas Podolski replaced Miroslav Klose.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+predicate: replace
+patient: Zé_Roberto
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev6
+sentence: Stuttgart suffered another setback in their defence of their championship after losing to Hannover 2-0 at home.
+agent: 08_Bundesliga:_Stuttgart_vs._Hannover#ev8
+predicate: suffer
+patient: another+setback
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Stuttgart_vs._Hannover#ev8
+sentence: Stuttgart struggled to recover from the red card and failed to create a chance until the 28th minute when Mario Gomez headed a corner straight at Hannover goalkeeper Robert Enke.
+agent: 08_Bundesliga:_Stuttgart_vs._Hannover#ev15
+predicate: struggle
+patient: to+recover+from+the+red+card
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Stuttgart_vs._Hannover#ev15
+sentence: Stuttgart struggled to recover from the red card and failed to create a chance until the 28th minute when Mario Gomez headed a corner straight at Hannover goalkeeper Robert Enke.
+agent: 08_Bundesliga:_Stuttgart_vs._Hannover#ev19
+predicate: head
+patient: a+corner
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Stuttgart_vs._Hannover#ev19
+sentence: Schafer rushed out to get the ball at the feet of Hanno Balitsch.
+agent: 08_Bundesliga:_Stuttgart_vs._Hannover#ev27
+predicate: get
+patient: the+ball
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Stuttgart_vs._Hannover#ev27
+sentence: Steve Cherundolo crossed and Huszti was well positioned to score his second goal of the game.
+agent: 08_Bundesliga:_Stuttgart_vs._Hannover#ev22
+predicate: cross
+patient: his+second+goal+of+the+game
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Stuttgart_vs._Hannover#ev22
+sentence: Daniel van Buyten replaced Martin Demichelis, Andreas Ottl replaced Mark van Bommel, who was serving a suspension, and Christian Lell replaced Hamit Altintop who is out injured with fractured metatarsus.
+agent: 08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+predicate: replace
+patient: Mark_van_Bommel
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+sentence: Daniel van Buyten replaced Martin Demichelis, Andreas Ottl replaced Mark van Bommel, who was serving a suspension, and Christian Lell replaced Hamit Altintop who is out injured with fractured metatarsus.
+agent: 08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+predicate: replace
+patient: Mark_van_Bommel
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+sentence: Daniel van Buyten replaced Martin Demichelis, Andreas Ottl replaced Mark van Bommel, who was serving a suspension, and Christian Lell replaced Hamit Altintop who is out injured with fractured metatarsus.
+agent: 08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+predicate: replace
+patient: Mark_van_Bommel
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev13
+sentence: Substitute Lukas Podolski scored a late equalizer to claim his 1st goal of the Bundesliga season against NÃ¼rnberg.
+agent: 08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev20
+predicate: claim
+patient: of+the+bundesliga+season+against+n%c3%bcrnberg
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_N%c3%bcrnberg_vs._Bayern_Munich#ev20
+sentence: Bayern Munich took a 3-0 lead after 20 minutes, an Andreas Ottl goal along with quick-fire Lukas Podolski brace ensuring the champions had a comfortable ride through to half time.
+agent: 08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev4
+predicate: take
+patient: a+sudden+and+dramatic+twist
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev4
+sentence: Bayern Munich's win over MSV Duisburg condemned Duisburg to second division football next term.
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+predicate: win
+patient: the+2007%2f08+german+championship
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+sentence: Bayern Munich took a 3-0 lead after 20 minutes, an Andreas Ottl goal along with quick-fire Lukas Podolski brace ensuring the champions had a comfortable ride through to half time.
+agent: 08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev14
+predicate: have
+patient: a+comfortable+ride
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev14
+sentence: However, the match took a sudden and dramatic twist in the ten minutes following the restart as Mihai Tararache and Markus Daun scored to hauled the Duisburg right back into the game, and an upset briefly appeared a possibility.
+agent: 08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev4
+predicate: take
+patient: a+sudden+and+dramatic+twist
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_MSV_Duisburg_vs._Bayern_Munich#ev4
+sentence: None
+agent: 08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+predicate: win
+patient: the+2007%2f08+german+championship
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Wolfsburg_vs._Bayern_Munich#ev2
+sentence: The draw gave Cottbus their first away point of the season.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev13
+predicate: point
+patient: of+the+season
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev13
+sentence: Pal Dardai returned, while Sofian Chahed was preferred Tobias Grahn in right of midfield.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev35
+predicate: prefer
+patient: Tobias_Grahn
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev35
+sentence: The game began in a cautious manner and it was the Energie Cottbus who created the first chance in the 20th minute, as Dimitar Rangelov tested Hertha keeper Jaroslav Drobny with a free kick from just outside the penalty area.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev21
+predicate: test
+patient: Hertha_BSC
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev21
+sentence: Hertha Berlin got it's 1st chance in the  35th minute.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev31
+predicate: get
+patient: 1st+chance+in+the+35th+minute
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev31
+sentence: Hertha dominated most of the game.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev23
+predicate: dominate
+patient: most+of+the+game
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev23
+sentence: In the final minute,  match referee Schmidt pointed to the penalty spot.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev13
+predicate: point
+patient: of+the+season
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev13
+sentence: Hertha striker Marko Pantelic missed from the penalty spot when his 90th minute penalty hit the crossbar as Hertha drew 0-0 at home to winless Energie Cottbus.
+agent: 08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev29
+predicate: hit
+patient: the+crossbar
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Hertha_Berlin_vs._Energie_Cottbus#ev29
+sentence: On October 20th, Hertha travel to Werder Bremen for round 10.
+agent: UEFA_Champions_League_2007%e2%80%9308:_Werder_Bremen_vs._Lazio#ev19
+predicate: travel
+patient: Bremen
+event: http://en.wikinews.org/wiki/UEFA_Champions_League_2007%e2%80%9308:_Werder_Bremen_vs._Lazio#ev19
+sentence: Toni completed the victory with a goal from Ze Roberto corner in the 81st minute.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev30
+predicate: complete
+patient: the+victory
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev30
+sentence: The win takes the undefeated streak to 9 games (7 wins and 2 draws) and takes Bayern Munich to 23 points leaving them 5 ahead of Karlsruhe.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev15
+predicate: leave
+patient: Karlsruher_SC
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev15
+sentence: The Reds also boast a league leading goal difference of +22 by scoring at least three times in every home match this term except for 1 (1-1 draw with Schalke).
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev17
+predicate: score
+patient: with+an+angled+shot
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev17
+sentence: Bayern made 1 change to the team which won on Thursday's last Thursday UEFA Cup 2nd leg match.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev33
+predicate: make
+patient: 1+change
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev33
+sentence: Andreas Ottl making a start in place of Mark van Bommel.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev34
+predicate: make
+patient: Mark_van_Bommel
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev34
+sentence: Andreas Ottl making a start in place of Mark van Bommel.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev35
+predicate: start
+patient: Mark_van_Bommel
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev35
+sentence: Bayern coach Ottmar Hitzfeld opted not to Lukas Podolski and Jan Schlaudraff in the absence of Miroslav Klose.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev41
+predicate: opt
+patient: Miroslav_Klose
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev41
+sentence: Toni scored his 7th goal with an angled shot after Blazek spilled Hamit Altintop’s 31st minute free kick.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev17
+predicate: score
+patient: with+an+angled+shot
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev17
+sentence: Bayern doubled their tally when Schweinsteiger flick released Ze Roberto for a run at Blazek 5 minutes before half-time.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev26
+predicate: double
+patient: their+tally
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev26
+sentence: Bayern doubled their tally when Schweinsteiger flick released Ze Roberto for a run at Blazek 5 minutes before half-time.
+agent: 08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev28
+predicate: release
+patient: List_of_recurring_Futurama_characters
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._N%c3%bcrnberg#ev28
+sentence: Bayern Munich set a new record for fewest goals conceded as Luca Toni finished as Bundesliga top scorer on the final day of the season in a 4-1 victory against Hertha BSC Berlin.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev8
+predicate: set
+patient: the+reigning+champions
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev8
+sentence: A series of farewells before kick-off brought the crowd to their feet in a string of standing ovations as Oliver Kahn, Bernd Dreher and Sepp Maier retired, Head Coach Ottmar Hitzfeld left to coach Switzerland and Jan Schlaudraff left for Hannover 96.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev34
+predicate: bring
+patient: the+crowd
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev34
+sentence: A series of farewells before kick-off brought the crowd to their feet in a string of standing ovations as Oliver Kahn, Bernd Dreher and Sepp Maier retired, Head Coach Ottmar Hitzfeld left to coach Switzerland and Jan Schlaudraff left for Hannover 96.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+predicate: leave
+patient: the+club
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+sentence: A series of farewells before kick-off brought the crowd to their feet in a string of standing ovations as Oliver Kahn, Bernd Dreher and Sepp Maier retired, Head Coach Ottmar Hitzfeld left to coach Switzerland and Jan Schlaudraff left for Hannover 96.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+predicate: leave
+patient: the+club
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+sentence: Also leaving the club is Assistant Coach Michael Hanke.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+predicate: leave
+patient: the+club
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev19
+sentence: Luca Toni's 2 goals in the 1st Half  and a Franck Ribery goal put the reigning champions 3-0 up at half-time, before Luca Toni completed his hat-trick in the 2nd Half.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev35
+predicate: goal
+patient: in+the+1st+half
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev35
+sentence: Luca Toni's 2 goals in the 1st Half  and a Franck Ribery goal put the reigning champions 3-0 up at half-time, before Luca Toni completed his hat-trick in the 2nd Half.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev8
+predicate: put
+patient: the+reigning+champions
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hertha_BSC_Berlin#ev8
+sentence: Once referee Thorsten KinhÃ¶fer whistled for the opening kickoff, both teams played attacking style.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev9
+predicate: play
+patient: attacking+style
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev9
+sentence: Hannover answered a couple of headers from Martin Demichelis with Hanno Balitsch's drive.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev23
+predicate: answer
+patient: Martín_Demichelis
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev23
+sentence: Hannover answered a couple of headers from Martin Demichelis with Hanno Balitsch's drive.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev11
+predicate: couple
+patient: of+headers
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev11
+sentence: Bayern Munich took the lead in the 28th minute when Bastian Schweinsteiger fed Luca Toni a pass into the penalty box and scored against Hannover goalkeeper Robert Enke.
+agent: 2007_FIFA_U-17_World_Cup:_Germany_tops_Group_F#ev6
+predicate: take
+patient: Jussi_Jääskeläinen
+event: http://en.wikinews.org/wiki/2007_FIFA_U-17_World_Cup:_Germany_tops_Group_F#ev6
+sentence: Bayern Munich took the lead in the 28th minute when Bastian Schweinsteiger fed Luca Toni a pass into the penalty box and scored against Hannover goalkeeper Robert Enke.
+agent: 08_German_Bundesliga:_Bayern_Munich_has_early_stranglehold_on_championship_after_one-sided_game#ev9
+predicate: lead
+patient: in+the+28th+minute
+event: http://en.wikinews.org/wiki/2007/08_German_Bundesliga:_Bayern_Munich_has_early_stranglehold_on_championship_after_one-sided_game#ev9
+sentence: Bayern Munich sealed the victory with 2 goals from Mark van Bommel and Hamit Altintop in the 2nd half.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev18
+predicate: seal
+patient: the+victory
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev18
+sentence: Munich, Bavaria, Germany
+
+ 
+ 
+69,000 fans packed Allianz Arena and saw Bayern Munich maintained their perfect record on Saturday with a 3-0 victory against Hannover.
+agent: 08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev19
+predicate: maintain
+patient: their+perfect+record+on+saturday
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayern_Munich_vs._Hannover_96#ev19
+sentence: Bayern Munich beat Bayer Leverkusen to remain at the top of the German league table with a goal from Italy striker Luca Toni.
+agent: 08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev3
+predicate: beat
+patient: Bayer_04_Leverkusen
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev3
+sentence: The 1st half saw a series of chances for both side which saw the eventual game winner from Bayern strker Luca Toni.
+agent: 08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+predicate: see
+patient: fewer+scoring+chances
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+sentence: The 1st half saw a series of chances for both side which saw the eventual game winner from Bayern strker Luca Toni.
+agent: 08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+predicate: see
+patient: fewer+scoring+chances
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+sentence: The 2nd half saw fewer scoring chances as Bayern completed the victory.
+agent: 08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+predicate: see
+patient: fewer+scoring+chances
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev14
+sentence: The 2nd half saw fewer scoring chances as Bayern completed the victory.
+agent: 08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev9
+predicate: complete
+patient: the+victory
+event: http://en.wikinews.org/wiki/2007/08_Bundesliga:_Bayer_Leverkusen_vs._Bayern_Munich#ev9
+sentence: Also in the press conference, Taipei New World Shopping Center, the venue owner, mentioned to media: "We [the owner] definitively supported the gaming industry as some good examples like X06 Taiwan, 2006 World Cyber Games Taiwan Qualifier, and NBA 2K8 Asia Championship Taiwan Qualifier successively held in this venue.
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+predicate: support
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+sentence: We hope the public can participate this competition to support the gaming industry in Taiwan."
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+predicate: competition
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+sentence: We hope the public can participate this competition to support the gaming industry in Taiwan."
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+predicate: support
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+sentence: Companies like iKala, Bandai-Namco, International Games System, Kingston Technology, and Seednet all supported this competition to help donations with Child Welfare League Foundation of the Republic Of China on public welfares.
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+predicate: support
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev28
+sentence: Companies like iKala, Bandai-Namco, International Games System, Kingston Technology, and Seednet all supported this competition to help donations with Child Welfare League Foundation of the Republic Of China on public welfares.
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+predicate: competition
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+sentence: According to the main organizer, Aztec Master Plan, the Aztec Cup would be scheduled with different gaming natures and populations by seasonal or friendship competitions.
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+predicate: competition
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+sentence: Several games might be chosen as the official games frequently in different kind competitions.
+agent: 2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+predicate: competition
+patient: the+gaming+industry
+event: http://en.wikinews.org/wiki/2007-08_Aztec_Cup_Winter_Cyber_Games_in_Taiwan_starts_with_charity_and_competitiveness#ev11
+sentence: On Tuesday August 1, 2006 according to The Weather Channel, New York City will have a high temperature of 98ºF in Central Park, however other areas in the New York City area are expected to rise above 100ºF.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: Philadelphia will reach 100ºF, Washington D.C. will have a high of 101ºF and Baltimore and Richmond may see temperatures rise above the 100 mark.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev44
+predicate: have
+patient: a+high+of+101%c2%baf
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev44
+sentence: To exacerbate the situation, heat indices are expected to reach well over the 110s for much of the east coast due to high humidity levels.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev30
+predicate: exacerbate
+patient: the+situation
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev30
+sentence: To exacerbate the situation, heat indices are expected to reach well over the 110s for much of the east coast due to high humidity levels.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: To exacerbate the situation, heat indices are expected to reach well over the 110s for much of the east coast due to high humidity levels.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev45
+predicate: reach
+patient: over+the+110s
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev45
+sentence: An Air Stagnation Advisory has also been issued for much of the urban areas on the eastern seaboard and "BosWash", as rain is expected to be very minimal through Thursday.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: Many residents say this heat is unheard of as temperatures are expected to be higher than that of Florida and some parts of Texas, where it is typically hotter.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: The oppressive and dangerously high temperatures will remain this way well into Thursday afternoon, according to meteorologists, when a cool front is expected to move in and provide much needed relief.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: Baltimore, Washington D.C. and Philadelphia are all expecting highs to reach above 100ºF (37.8ºC).
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+predicate: expect
+patient: heat+indices
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev49
+sentence: The National Weather Service has posted Excessive Heat Warnings for many of the cities in the eastern seaboard that do not normally experience this type of dangerously hot weather.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev50
+predicate: post
+patient: excessive+heat+warnings
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev50
+sentence: On Tuesday August 1, 2006 according to The Weather Channel, New York City will have a high temperature of 98ºF in Central Park, however other areas in the New York City area are expected to rise above 100ºF.
+agent: 2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev42
+predicate: have
+patient: a+high+temperature+of+98%c2%baf
+event: http://en.wikinews.org/wiki/2006_record_heat_wave_moves_across_U.S._eastern_seaboard#ev42
+sentence: MSNBC projects that the Democrats now control 234 seats in the House of Representatives, 16 more seats than the 218 needed to control the House of Representatives as all 435 seats were up for election.
+agent: 2006_U.S._Congressional_Elections#ev7
+predicate: project
+patient: Democratic_Party_(United_States)
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev7
+sentence: MSNBC projects that the Democrats now control 234 seats in the House of Representatives, 16 more seats than the 218 needed to control the House of Representatives as all 435 seats were up for election.
+agent: 2006_U.S._Congressional_Elections#ev9
+predicate: control
+patient: United_States_House_of_Representatives
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev9
+sentence: MSNBC projects that the Democrats now control 234 seats in the House of Representatives, 16 more seats than the 218 needed to control the House of Representatives as all 435 seats were up for election.
+agent: 2006_U.S._Congressional_Elections#ev9
+predicate: control
+patient: United_States_House_of_Representatives
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev9
+sentence: As of 10:00 p.m. EST, AP and Reuters were projecting that the Democrats had picked up all six seats they needed to retake the Senate, including the seats of incumbents Rick Santorum (Penn.
+agent: 2006_U.S._Congressional_Elections#ev7
+predicate: project
+patient: Democratic_Party_(United_States)
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev7
+sentence: As of 10:00 p.m EST November 8, 2006, the Democratic Party is projected to have gained control of both the United States House of Representatives and the United States Senate in the 2006 United States general elections.
+agent: 2006_U.S._Congressional_Elections#ev7
+predicate: project
+patient: Democratic_Party_(United_States)
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev7
+sentence: The Tester victory by less than 3,000 votes was projected at approximately 2 p.m. EST after the State of Montana announced the results of overnight recounts.
+agent: 2006_U.S._Congressional_Elections#ev7
+predicate: project
+patient: Democratic_Party_(United_States)
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev7
+sentence: As of 10:00 p.m EST November 8, 2006, the Democratic Party is projected to have gained control of both the United States House of Representatives and the United States Senate in the 2006 United States general elections.
+agent: 2006_U.S._Congressional_Elections#ev9
+predicate: control
+patient: United_States_House_of_Representatives
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev9
+sentence: The Tester victory by less than 3,000 votes was projected at approximately 2 p.m. EST after the State of Montana announced the results of overnight recounts.
+agent: 2006_U.S._Congressional_Elections#ev23
+predicate: announce
+patient: the+results+of+overnight+recounts
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev23
+sentence: Democrat Jim Webb has prevailed in that race by slightly more than 7,000 votes, though his opponent has not conceded and a recount may still occur.
+agent: 2006_U.S._Congressional_Elections#ev16
+predicate: prevail
+patient: Jim_Webb
+event: http://en.wikinews.org/wiki/2006_U.S._Congressional_Elections#ev16
+sentence: Crash won the Best Picture award, a surprise for many predictors.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+predicate: win
+patient: best+original+screenplay+for+crash
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+sentence: "Before I get into making this movie, I was very tired from two very ambitious work, The Hulk and Crouching Tiger, Hidden Dragon.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev45
+predicate: work
+patient: hidden+dragon
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev45
+sentence: Foreign Language Film winner Gavin Hood (Tsotsi) commented that he felt the Oscar win would "change the way South Africans view their moviemaking... hopefully it means that people will keep investing in our local stories, because this gives investors a little more confidence and what we want more than anything else is that people and human emotion is universal and we're more alike than we think we are around the world... we're actually so similar as human beings inside."
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+predicate: win
+patient: best+original+screenplay+for+crash
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+sentence: Foreign Language Film winner Gavin Hood (Tsotsi) commented that he felt the Oscar win would "change the way South Africans view their moviemaking... hopefully it means that people will keep investing in our local stories, because this gives investors a little more confidence and what we want more than anything else is that people and human emotion is universal and we're more alike than we think we are around the world... we're actually so similar as human beings inside."
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev91
+predicate: view
+patient: their+moviemaking
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev91
+sentence: Foreign Language Film winner Gavin Hood (Tsotsi) commented that he felt the Oscar win would "change the way South Africans view their moviemaking... hopefully it means that people will keep investing in our local stories, because this gives investors a little more confidence and what we want more than anything else is that people and human emotion is universal and we're more alike than we think we are around the world... we're actually so similar as human beings inside."
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev57
+predicate: give
+patient: a+little+more+confidence
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev57
+sentence: Tsotsi was the People's Choice Award winner at the 2005 Toronto International Film Festival, while Crash debuted at the fest in 2004.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev59
+predicate: winner
+patient: tiff+%27s
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev59
+sentence: TIFF's winners often go on to win Best Picture or Best Foreign Language Film; Wo hu cang long (Crouching Tiger, Hidden Dragon), American Beauty, and Whale Rider are such examples.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev59
+predicate: winner
+patient: tiff+%27s
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev59
+sentence: TIFF's winners often go on to win Best Picture or Best Foreign Language Film; Wo hu cang long (Crouching Tiger, Hidden Dragon), American Beauty, and Whale Rider are such examples.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+predicate: win
+patient: best+original+screenplay+for+crash
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+sentence: At one point, Stewart jokingly chastised Hollywood for being "out of touch" with mainstream American values.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev97
+predicate: chastise
+patient: Hollywood
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev97
+sentence: Actor George Clooney later responded to this notion, saying, "We are a little bit out of touch in Hollywood.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev99
+predicate: respond
+patient: to+this+notion
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev99
+sentence: This group of people gave Hattie McDaniel an Oscar in 1939 when blacks were still sitting in the backs of theaters.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev57
+predicate: give
+patient: a+little+more+confidence
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev57
+sentence: Paul Haggis and Bobby Moresco also won best original screenplay for Crash.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+predicate: win
+patient: best+original+screenplay+for+crash
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev33
+sentence: Backstage, Best Director winner Ang Lee commented to the press on how Brokeback Mountain refreshed his will to direct.
+agent: 2006_Oscars_handed_out_at_Kodak_Theatre#ev85_0
+predicate: comment
+patient: Brokeback_Mountain
+event: http://en.wikinews.org/wiki/2006_Oscars_handed_out_at_Kodak_Theatre#ev85_0
+sentence: This was the first time ever that only women carried the flag.
+agent: 2006_Olympic_Winter_Games_open_in_Italy#ev49
+predicate: carry
+patient: the+olympic+flag
+event: http://en.wikinews.org/wiki/2006_Olympic_Winter_Games_open_in_Italy#ev49
+sentence: However, the positives results could be due to the body's acclimation to mountain air, or dehydration.
+agent: 2006_Olympic_Winter_Games_open_in_Italy#ev39
+predicate: acclimation
+patient: to+mountain+air
+event: http://en.wikinews.org/wiki/2006_Olympic_Winter_Games_open_in_Italy#ev39
+sentence: Eight women, Italian actress Sophia Loren, Chilean writer Isabel Allende, American actress Susan Sarandon, Nobel Peace-prize winner Wangari Maathai of Kenya, and three Olympic medal winners carried the Olympic flag.
+agent: 2006_Olympic_Winter_Games_open_in_Italy#ev28
+predicate: winner
+patient: Wangari_Maathai
+event: http://en.wikinews.org/wiki/2006_Olympic_Winter_Games_open_in_Italy#ev28
+sentence: Eight women, Italian actress Sophia Loren, Chilean writer Isabel Allende, American actress Susan Sarandon, Nobel Peace-prize winner Wangari Maathai of Kenya, and three Olympic medal winners carried the Olympic flag.
+agent: 2006_Olympic_Winter_Games_open_in_Italy#ev28
+predicate: winner
+patient: Wangari_Maathai
+event: http://en.wikinews.org/wiki/2006_Olympic_Winter_Games_open_in_Italy#ev28
+sentence: Eight women, Italian actress Sophia Loren, Chilean writer Isabel Allende, American actress Susan Sarandon, Nobel Peace-prize winner Wangari Maathai of Kenya, and three Olympic medal winners carried the Olympic flag.
+agent: 2006_Olympic_Winter_Games_open_in_Italy#ev49
+predicate: carry
+patient: the+olympic+flag
+event: http://en.wikinews.org/wiki/2006_Olympic_Winter_Games_open_in_Italy#ev49
+sentence: The denser portions served as seeds for galaxies that formed later.
+agent: 2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev27
+predicate: serve
+patient: seeds+for+galaxies+that+formed+later
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev27
+sentence: The initial discovery of the Cosmic Microwave Background by Arno Penzias and Robert Wilson led to their award of the 1978 Nobel Prize in physics.
+agent: 2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev45
+predicate: discovery
+patient: of+the+cosmic+microwave+background
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev45
+sentence: Although they measured the approximate temperature of the universe to be about 3.5 kelvins, their ground-based microwave telescope could not pick out the detail available to COBE.
+agent: 2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev46
+predicate: pick
+patient: the+detail+available+to+cobe
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev46
+sentence: The Nobel Prize Committee cited the physicists for their work on the Cosmic Background Explorer (COBE) project.
+agent: 2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev34
+predicate: cite
+patient: cosmic+background+explorer+%28+cobe
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev34
+sentence: Prior to the COBE map of the universe, it was unclear why the universe contained stars and galaxies rather than an evenly distributed dust cloud.
+agent: 2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev22
+predicate: contain
+patient: an+evenly+distributed+dust+cloud
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_physics_awarded_for_microwave_map_of_the_universe#ev22
+sentence: He created the snapshots by crystallizing cellular material partway through transcription, and exposing them to x-rays that produced patterns revealing the intermediate structures.
+agent: 2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev19
+predicate: produce
+patient: the+that+keep+cells+functioning
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev19
+sentence: Kornberg's father Arthur Kornberg won the Nobel Prize in physiology and medicine in 1959 for explaining how organisms make DNA from amino acids.
+agent: 2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev47
+predicate: father
+patient: Großer_Kornberg
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev47
+sentence: Kornberg's father Arthur Kornberg won the Nobel Prize in physiology and medicine in 1959 for explaining how organisms make DNA from amino acids.
+agent: 2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev15
+predicate: win
+patient: the+2006+nobel+prize
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev15
+sentence: Kornberg's prize-winning work explains how information encoded in is used to produce the that keep cells functioning.
+agent: 2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev19
+predicate: produce
+patient: the+that+keep+cells+functioning
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev19
+sentence: Roger D. Kornberg of Stanford University won the 2006 Nobel Prize for chemistry "for his studies of the molecular basis of eukaryotic transcription".
+agent: 2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev15
+predicate: win
+patient: the+2006+nobel+prize
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_chemistry_for_insight_into_cells#ev15
+sentence: Today, the technology is being used by biomedical scientists to fiddle genes involved in diseases such as cancer, and to prevent infection with hepatitis viruses.
+agent: 2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev27
+predicate: fiddle
+patient: in+diseases+such+as+cancer
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev27
+sentence: The statement from the Nobel Assembly of the Karolinska Institute in Sweden said: "This year's Nobel Laureates have discovered a fundamental mechanism for controlling the flow of genetic information."
+agent: 2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev47
+predicate: discover
+patient: the+flow+of+genetic+information
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev47
+sentence: The statement from the Nobel Assembly of the Karolinska Institute in Sweden said: "This year's Nobel Laureates have discovered a fundamental mechanism for controlling the flow of genetic information."
+agent: 2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev17
+predicate: control
+patient: the+flow+of+genetic+information
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev17
+sentence: Today, the technology is being used by biomedical scientists to fiddle genes involved in diseases such as cancer, and to prevent infection with hepatitis viruses.
+agent: 2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev43
+predicate: use
+patient: the+technology
+event: http://en.wikinews.org/wiki/2006_Nobel_Prize_in_Medicine_awarded_to_American_scientists#ev43
+sentence: National Party leader Dr. Don Brash said the option was promoting a "racially-divided electoral system" and National accused the Government of state-sanctioned separatism.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev54
+predicate: promote
+patient: a+%60%60+racially-divided+electoral+system+%27%27
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev54
+sentence: National Party leader Dr. Don Brash said the option was promoting a "racially-divided electoral system" and National accused the Government of state-sanctioned separatism.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev55
+predicate: accuse
+patient: the+government
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev55
+sentence: Brash says getting rid of the Māori Seats is an important policy for his party and that the taxpayer should not have to pay the $4.5 million bill.
+agent: Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+predicate: say
+patient: those+still+left+in+the+buliding
+event: http://en.wikinews.org/wiki/Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+sentence: Brash says getting rid of the Māori Seats is an important policy for his party and that the taxpayer should not have to pay the $4.5 million bill.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev36
+predicate: pay
+patient: the+%24+4.5+million+bill
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev36
+sentence: Māori Party co-leader, Tariana Turia said that National may need the Māori Party after the next election, and that she is "sick to death" of political opportunism.
+agent: Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+predicate: say
+patient: those+still+left+in+the+buliding
+event: http://en.wikinews.org/wiki/Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+sentence: The Māori Option process is held by law every five years following the Census, giving voters of Māori descent the choice of being on the general roll or the Māori roll.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev19
+predicate: voter
+patient: Māori_electorates
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev19
+sentence: Once Māori electors have decided which roll they are on, the Representation Committee will begin the process of redrawing the electoral boundaries.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev19
+predicate: elector
+patient: Māori_electorates
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev19
+sentence: Once Māori electors have decided which roll they are on, the Representation Committee will begin the process of redrawing the electoral boundaries.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev47
+predicate: decide
+patient: which+roll+they+are+on
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev47
+sentence: Once Māori electors have decided which roll they are on, the Representation Committee will begin the process of redrawing the electoral boundaries.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev42
+predicate: begin
+patient: of+redrawing+the+electoral+boundaries
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev42
+sentence: Once Māori electors have decided which roll they are on, the Representation Committee will begin the process of redrawing the electoral boundaries.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev15
+predicate: process
+patient: of+redrawing+the+electoral+boundaries
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev15
+sentence: Once Māori electors have decided which roll they are on, the Representation Committee will begin the process of redrawing the electoral boundaries.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev21
+predicate: redraw
+patient: of+redrawing+the+electoral+boundaries
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev21
+sentence: The Māori roll does not generally affect the proportionality of the Parliament, which is determined by the party vote (see Electoral system of New Zealand).
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev23
+predicate: vote
+patient: to+be+represented+in+parliament
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev23
+sentence: The Māori roll does not generally affect the proportionality of the Parliament, which is determined by the party vote (see Electoral system of New Zealand).
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev48
+predicate: see
+patient: Electoral_system_of_New_Zealand
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev48
+sentence: However the size of the Māori roll does determine how many Māori seats there are, and it is possible (through what is known as an overhang) for a party to win more seats than its share of all votes should allow.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev28
+predicate: win
+patient: a+seat
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev28
+sentence: Also if a party wins a seat, it does not have to meet the 5% party vote threshold to be represented in Parliament.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev28
+predicate: win
+patient: a+seat
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev28
+sentence: The Māori Option process is held by law every five years following the Census, giving voters of Māori descent the choice of being on the general roll or the Māori roll.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev15
+predicate: process
+patient: of+redrawing+the+electoral+boundaries
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev15
+sentence: Also if a party wins a seat, it does not have to meet the 5% party vote threshold to be represented in Parliament.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev23
+predicate: vote
+patient: to+be+represented+in+parliament
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev23
+sentence: The Māori Option process is held by law every five years following the Census, giving voters of Māori descent the choice of being on the general roll or the Māori roll.
+agent: 2006_New_Zealand_Maori_Electoral_Option#ev16
+predicate: hold
+patient: the+m%c4%81ori+option+process
+event: http://en.wikinews.org/wiki/2006_New_Zealand_Maori_Electoral_Option#ev16
+sentence: National Party leader Dr. Don Brash said the option was promoting a "racially-divided electoral system" and National accused the Government of state-sanctioned separatism.
+agent: Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+predicate: say
+patient: those+still+left+in+the+buliding
+event: http://en.wikinews.org/wiki/Australia's_Prime_Minister_Howard_marks_10_years_in_power#ev52
+sentence: In the 113th minute Revolution striker Taylor Twellman finally put the ball into the net from 18 meters out, giving New England a 1-0 lead.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev11
+predicate: put
+patient: the+ball
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev11
+sentence: In the 113th minute Revolution striker Taylor Twellman finally put the ball into the net from 18 meters out, giving New England a 1-0 lead.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev12
+predicate: give
+patient: a+1-0+lead
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev12
+sentence: Minutes later - one commentator mentioned it happened while New England was still celebrating its goal - Houston's Brian Ching, with a header assist from Brian Mullan, brought the score back to a tie at 1-1.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev13
+predicate: celebrate
+patient: its+goal
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev13
+sentence: Five minutes later the championship game went into a best-of-five penalty kick period.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev7
+predicate: game
+patient: the+championship+game
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev7
+sentence: Making the final score 4-3, Brian Ching made the winning kick that finally gave Houston the 2006 Major League Soccer championship as the record crowd of 22,427 in Frisco's Pizza Hut Park watched.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev25
+predicate: make
+patient: the+final+score
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev25
+sentence: Making the final score 4-3, Brian Ching made the winning kick that finally gave Houston the 2006 Major League Soccer championship as the record crowd of 22,427 in Frisco's Pizza Hut Park watched.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev12
+predicate: give
+patient: a+1-0+lead
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev12
+sentence: Ninety minutes wasn't long enough to decide the Major League Soccer's 2006 Championship game last Sunday between the Houston Dynamo and the New England Revolution.
+agent: 2006_MLS_championship_goes_to_Houston_Dynamos#ev7
+predicate: game
+patient: the+championship+game
+event: http://en.wikinews.org/wiki/2006_MLS_championship_goes_to_Houston_Dynamos#ev7
+sentence: It is the first time since Melbourne winning the Australian GP from Adelaide in 1996 that the opening race of the season has not been held in Australia.
+agent: Iranian_refugee_child_granted_$400,000_in_compensation_for_%22psychological_harm%22#ev105
+predicate: hold
+patient: around+460+troops
+event: http://en.wikinews.org/wiki/Iranian_refugee_child_granted_$400,000_in_compensation_for_%22psychological_harm%22#ev105
+sentence: The date was changed to avoid conflicts with the 2006 Commonwealth Games.
+agent: 2006_Formula_1_season_starts_with_GP_of_Bahrain#ev13
+predicate: avoid
+patient: conflicts+with+the+2006+commonwealth+games
+event: http://en.wikinews.org/wiki/2006_Formula_1_season_starts_with_GP_of_Bahrain#ev13
+sentence: Melbourne funk band The Cat Empire provided musical accompaniment as the athletes marched into the arena, playing music specifically written for each continent.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev29
+predicate: play
+patient: music+specifically+written+for+each+continent
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev29
+sentence: About 80,000 spectators were in attendance, and hundreds of thousands lined the riverbank of the nearby Yarra River, watching as the Queen's baton made its way to the stadium.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev16
+predicate: line
+patient: Yarra_River
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev16
+sentence: About 80,000 spectators were in attendance, and hundreds of thousands lined the riverbank of the nearby Yarra River, watching as the Queen's baton made its way to the stadium.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev19
+predicate: make
+patient: its+way
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev19
+sentence: The XVIIIth Commonwealth Games were opened officially by Queen Elizabeth II tonight, in Melbourne, Australia in a two-and-a-half hour spectacular Opening Ceremony held at the Melbourne Cricket Ground.
+agent: New_Zealand_Commonwealth_Games_flag-bearer_announced#ev13
+predicate: open
+patient: the+games
+event: http://en.wikinews.org/wiki/New_Zealand_Commonwealth_Games_flag-bearer_announced#ev13
+sentence: In a change from the traditional format, the teams did not enter in alphabetical order; instead, they entered in order of regions of the Commonwealth, starting with the European nations.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev23
+predicate: enter
+patient: in+alphabetical+order
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev23
+sentence: In a change from the traditional format, the teams did not enter in alphabetical order; instead, they entered in order of regions of the Commonwealth, starting with the European nations.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev23
+predicate: enter
+patient: in+alphabetical+order
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev23
+sentence: Then Africa, Asia, the Americas, the Caribbean and finally Oceania entered the stadium.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev23
+predicate: enter
+patient: in+alphabetical+order
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev23
+sentence: Melbourne funk band The Cat Empire provided musical accompaniment as the athletes marched into the arena, playing music specifically written for each continent.
+agent: 2006_Commonwealth_Games_open_in_Melbourne#ev28
+predicate: provide
+patient: musical+accompaniment
+event: http://en.wikinews.org/wiki/2006_Commonwealth_Games_open_in_Melbourne#ev28
+sentence: Those approximately 80 participants discussed in the municipal library Schanghais the future of the Wikis and tried to give to the movement in China new wind.
+agent: 2006_Chinese_wiki_conference_occurs_in_Shanghai#ev17
+predicate: discuss
+patient: Wiki
+event: http://en.wikinews.org/wiki/2006_Chinese_wiki_conference_occurs_in_Shanghai#ev17
+sentence: Those approximately 80 participants discussed in the municipal library Schanghais the future of the Wikis and tried to give to the movement in China new wind.
+agent: 2006_Chinese_wiki_conference_occurs_in_Shanghai#ev15
+predicate: try
+patient: in+china+new+wind
+event: http://en.wikinews.org/wiki/2006_Chinese_wiki_conference_occurs_in_Shanghai#ev15
+sentence: The site contents were projected via wireless laptop by the Stolenwealth Games General Manager, and a tour of the website was given on the big screen.
+agent: 2006_%22Stolenwealth%22_Games_to_confront_Commonwealth_Games_in_Melbourne#ev29
+predicate: project
+patient: the+site+contents
+event: http://en.wikinews.org/wiki/2006_%22Stolenwealth%22_Games_to_confront_Commonwealth_Games_in_Melbourne#ev29
+sentence: They want the Government to provide a temporary campsite for the supporters, saying "organised chaos was better than disorganised chaos."
+agent: 2006_%22Stolenwealth%22_Games_to_confront_Commonwealth_Games_in_Melbourne#ev24
+predicate: provide
+patient: a+temporary+campsite
+event: http://en.wikinews.org/wiki/2006_%22Stolenwealth%22_Games_to_confront_Commonwealth_Games_in_Melbourne#ev24
+sentence: Da Silva (commonly referred to as Lula) has faced criticism from the leftists set to make up the majority of participants at the forum due to the allegedly weak results of the government social politics and the way the government conducts the Economy ,.
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev42
+predicate: conduct
+patient: the+economy
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev42
+sentence: This is in stark contrast to the reception that he received at the 2003 forum (also in Porto Alegre), where he was hailed as a hero.
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev45
+predicate: receive
+patient: of+journalists+and+other+anti-democratic+acts
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev45
+sentence: Hugo Chávez on the other hand is set to receive a warmer welcome for enforcing a 2001 law allowing for the expropriation of idle agricultural land from large estates.
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev45
+predicate: receive
+patient: of+journalists+and+other+anti-democratic+acts
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev45
+sentence: However, the government of Venezuela has also received criticism for what some feel to be intimidation of journalists and other anti-democratic acts .
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev45
+predicate: receive
+patient: of+journalists+and+other+anti-democratic+acts
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev45
+sentence: This year the event has been tarnished by the Brazilian journalist Políbio Braga, who alleges illicit negotiations between the World Social Forum and GP Equipamentos Elétricos Ltd, a Brazilian company contracted to work on the infrastructure for the forum .
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev53
+predicate: contract
+patient: on+the+infrastructure+for+the+forum
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev53
+sentence: This year the event has been tarnished by the Brazilian journalist Políbio Braga, who alleges illicit negotiations between the World Social Forum and GP Equipamentos Elétricos Ltd, a Brazilian company contracted to work on the infrastructure for the forum .
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev54
+predicate: work
+patient: on+the+infrastructure+for+the+forum
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev54
+sentence: He also accuses the Brazilian government of trying to stop the police investigation into the matter.
+agent: 2005_World_Social_Forum_in_Porto_Alegre#ev60
+predicate: try
+patient: the+police+investigation+into+the+matter
+event: http://en.wikinews.org/wiki/2005_World_Social_Forum_in_Porto_Alegre#ev60
+sentence: Agains membership in the European Union 
+The Socialist Left Party is still clearly opposed to Norway entering the European Union (with only five votes for membership).
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev54
+predicate: oppose
+patient: Norway
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev54
+sentence: As both Socialist Left Party and the Centre Party are clear non-unionist parties, it seems they will block the Labour Party from sending any applications for membership in the upcoming four-year government period.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev55
+predicate: send
+patient: any+applications
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev55
+sentence: More abortion and status quo on prostitution 
+The Socialist Left Party wants to expand the time limit for abortion to 16 weeks after impregnation.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev56
+predicate: want
+patient: the+time+limit+for+abortion
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev56
+sentence: More abortion and status quo on prostitution 
+The Socialist Left Party wants to expand the time limit for abortion to 16 weeks after impregnation.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev37
+predicate: expand
+patient: the+time+limit+for+abortion
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev37
+sentence: The Socialist Left Party does not want to criminalize the act of buying services from prostitutes.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev56
+predicate: want
+patient: the+time+limit+for+abortion
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev56
+sentence: The Socialist Left Party does not want to criminalize the act of buying services from prostitutes.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev39
+predicate: criminalize
+patient: of+buying+services+from+prostitutes
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev39
+sentence: This partly unofficial alliance has lately been leading all polls with the rarity of a majority of the members of parliament ("Stortinget").
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev17
+predicate: lead
+patient: all+polls
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev17
+sentence: Norway has not seen a government with a majority in the parliament since shortly after WWII, when the Labour Party governed.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev50
+predicate: see
+patient: a+government
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev50
+sentence: New gas powerplants in Norway 
+In a resolution from the conference the Socialist Left Party opens for the building of new gas powerplants in Norway, as long as these powerplants do not release any CO2 into the atmosphere.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev25
+predicate: release
+patient: any+co2
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev25
+sentence: This has been a matter of great discussion in Norway and prime ministers have given away their chairs in the dispute.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev27
+predicate: give
+patient: their+chairs
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev27
+sentence: In the latter the Centre Party also made a similar resolution, and so it seems the upcoming government will open for the building of these plants.
+agent: 2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev28
+predicate: make
+patient: a+similar+resolution
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Socialist_Left_Party#ev28
+sentence: The Centre Party opened for a compromise proposed by one of the two second leaders, Lars Peder Brekk, on accepting oil drilling with untraditionally strong demands for environmental safety.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev51
+predicate: accept
+patient: oil+drilling
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev51
+sentence: In the conference Haga was joined by several other active members in underlining the Centre Partys role as the most dedicated decentralizationing-party in Norway.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev31
+predicate: join
+patient: Haga,_Gothenburg
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev31
+sentence: In the conference Haga was joined by several other active members in underlining the Centre Partys role as the most dedicated decentralizationing-party in Norway.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev32
+predicate: underline
+patient: the+centre+partys+role
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev32
+sentence: The conference was clearly inspired by the prospects of a majority in the parliament together with the Norwegian Socialist Left- and Labour Party, according to all polls.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev44
+predicate: inspire
+patient: the+conference
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev44
+sentence: The Centre Youth had clearly announced its opposition to the suggestion at an earlier point.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev48
+predicate: announce
+patient: its+opposition+to+the+suggestion
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev48
+sentence: After a long debate with both very young and very old committed debaters the coalition of the hardest environmentalists, the leader and the Centre Youth surprisingly lost the voting.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev26
+predicate: lose
+patient: the+voting
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev26
+sentence: NORWAY; Kristiansand: In the weekend between the 11. and 13. of March the Norwegian Centre Party held its annual National Conference in Kristiansand.
+agent: 2005_National_Conference_in_the_Norwegian_Centre_Party#ev17
+predicate: hold
+patient: its+annual+national+conference
+event: http://en.wikinews.org/wiki/2005_National_Conference_in_the_Norwegian_Centre_Party#ev17
+sentence: France tied in their total number of medals, but had one less gold medal.
+agent: 2005_Mediterranean_Games_close_in_Almeria#ev7
+predicate: tie
+patient: their+total+number+of+medals
+event: http://en.wikinews.org/wiki/2005_Mediterranean_Games_close_in_Almeria#ev7
+sentence: France tied in their total number of medals, but had one less gold medal.
+agent: 2005_Mediterranean_Games_close_in_Almeria#ev9
+predicate: have
+patient: one+less+gold+medal
+event: http://en.wikinews.org/wiki/2005_Mediterranean_Games_close_in_Almeria#ev9
+sentence: "The Bush administration has decided not to destroy the opium crop in Afghanistan," stated a U.S. intelligence official returning from Afghanistan in relation to the 60% smaller 2002 crop.
+agent: U.N._reports_Afghan_opium_production_is_up_again#ev14
+predicate: crop
+patient: its+opium+production
+event: http://en.wikinews.org/wiki/U.N._reports_Afghan_opium_production_is_up_again#ev14
+sentence: The source, who requested that he not be identified, noted "U.S. forces could destroy the crops using aerial spraying techniques, but no such actions are planned."
+agent: Suicide_bomber_kills_24_children_in_Iraq#ev41
+predicate: destroy
+patient: United_States_Armed_Forces
+event: http://en.wikinews.org/wiki/Suicide_bomber_kills_24_children_in_Iraq#ev41
+sentence: The source, who requested that he not be identified, noted "U.S. forces could destroy the crops using aerial spraying techniques, but no such actions are planned."
+agent: 2005_Afghan_opium_harvest_begins#ev52
+predicate: use
+patient: aerial+spraying+techniques
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev52
+sentence: The source, who requested that he not be identified, noted "U.S. forces could destroy the crops using aerial spraying techniques, but no such actions are planned."
+agent: 2005_Afghan_opium_harvest_begins#ev34
+predicate: spray
+patient: aerial+spraying+techniques
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev34
+sentence: U.S. plans to spray the crops were canceled at the request of Afghan President Hamid Karzai, who has called for jihad or "holy war", but is concerned that aerial spraying could be harmful to the health of Afghan villagers.
+agent: 2005_Afghan_opium_harvest_begins#ev34
+predicate: spray
+patient: aerial+spraying+techniques
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev34
+sentence: The U.S. claims that the spraying would be safe, but is granting Karzai's request.
+agent: Galloway_and_Pasqua_deny_any_wrongdoing_on_their_part_in_the_oil-for-food_program#ev166
+predicate: claim
+patient: that+the+spraying+would+be+safe
+event: http://en.wikinews.org/wiki/Galloway_and_Pasqua_deny_any_wrongdoing_on_their_part_in_the_oil-for-food_program#ev166
+sentence: Congress budgeted $774 million for anti-drug operations in Afghanistan just this year.
+agent: 2005_Afghan_opium_harvest_begins#ev43
+predicate: halt
+patient: to+halt+the+opium
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev43
+sentence: Congress budgeted $774 million for anti-drug operations in Afghanistan just this year.
+agent: 2005_Afghan_opium_harvest_begins#ev44
+predicate: budget
+patient: anti-drug+operations+in+afghanistan
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev44
+sentence: Congress budgeted $774 million for anti-drug operations in Afghanistan just this year.
+agent: Bush_requests_$80bn_to_pay_for_on-going_military_operations#ev7
+predicate: operation
+patient: humanitarian+operations+in+darfur+%2c+sudan
+event: http://en.wikinews.org/wiki/Bush_requests_$80bn_to_pay_for_on-going_military_operations#ev7
+sentence: The cultivators gathering resin from the crop are operating even near the main road through Kandahar and the farmers are out gathering resin from opium poppies in full view.
+agent: 2005_Afghan_opium_harvest_begins#ev13
+predicate: poppy
+patient: from+opium+poppies+in+full+view
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev13
+sentence: Last year 80% of the world's opium came from Afghanistan and production is up over 239% since 2003, according to U.S. government estimates.
+agent: 2005_Afghan_opium_harvest_begins#ev55
+predicate: estimate
+patient: pre-iraq+war
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev55
+sentence: Most heroin sold in Europe comes from Afghanistan's poppies.
+agent: 2005_Afghan_opium_harvest_begins#ev13
+predicate: poppy
+patient: from+opium+poppies+in+full+view
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev13
+sentence: In 2002 Super Bowl ads, the White House sent out the message that "drugs fund terrorists".
+agent: 2005_Afghan_opium_harvest_begins#ev56
+predicate: send
+patient: that+%60%60+drugs+fund+terrorists+%27%27
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev56
+sentence: In 2002 Super Bowl ads, the White House sent out the message that "drugs fund terrorists".
+agent: 2005_Afghan_opium_harvest_begins#ev58
+predicate: message
+patient: that+%60%60+drugs+fund+terrorists+%27%27
+event: http://en.wikinews.org/wiki/2005_Afghan_opium_harvest_begins#ev58
+sentence: This past week, the 2005 opium harvest was in full view and going full speed in Afghanistan.
+agent: U.N._reports_Afghan_opium_production_is_up_again#ev14
+predicate: harvest
+patient: its+opium+production
+event: http://en.wikinews.org/wiki/U.N._reports_Afghan_opium_production_is_up_again#ev14
+sentence: "The Bush administration has decided not to destroy the opium crop in Afghanistan," stated a U.S. intelligence official returning from Afghanistan in relation to the 60% smaller 2002 crop.
+agent: Citizen_groups_ask_Congress_to_file_formal_%22Resolution_of_Inquiry%22_against_Bush#ev66
+predicate: decide
+patient: the+opium+crop+in+afghanistan
+event: http://en.wikinews.org/wiki/Citizen_groups_ask_Congress_to_file_formal_%22Resolution_of_Inquiry%22_against_Bush#ev66
+sentence: "The Bush administration has decided not to destroy the opium crop in Afghanistan," stated a U.S. intelligence official returning from Afghanistan in relation to the 60% smaller 2002 crop.
+agent: Suicide_bomber_kills_24_children_in_Iraq#ev41
+predicate: destroy
+patient: United_States_Armed_Forces
+event: http://en.wikinews.org/wiki/Suicide_bomber_kills_24_children_in_Iraq#ev41
+sentence: "If the rain continues at the same magnitude and according to the forecast, then some of the rivers could reach flood stage either later [Tuesday] or Wednesday morning," said Allan Chapman, a hydrologist with the River Forecast Centre in Victoria.
+agent: 19_Pacific_Northwest_soaked_with_%22Tropical_Punch%22#ev38
+predicate: reach
+patient: flood+stage+either+later+%5b+tuesday
+event: http://en.wikinews.org/wiki/2005/01/19_Pacific_Northwest_soaked_with_%22Tropical_Punch%22#ev38
+sentence: A similar system caused severe flooding and precipitation in 2003.
+agent: 19_Pacific_Northwest_soaked_with_%22Tropical_Punch%22#ev41
+predicate: cause
+patient: severe+flooding+and+precipitation+in+2003
+event: http://en.wikinews.org/wiki/2005/01/19_Pacific_Northwest_soaked_with_%22Tropical_Punch%22#ev41
+sentence: U.S. citizens donating in 2005 to help tsunami victims may write off their donations on their 2004 tax returns, thanks to a bill quickly passed in the U.S. House of Representatives and the U.S. Senate on a voice vote, and signed into law by president George W. Bush.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev11
+predicate: sign
+patient: thanks+to+a+bill
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev11
+sentence: The law is intended to promote donating towards the tsunami relief effort.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev22
+predicate: promote
+patient: donating+towards+the+tsunami+relief+effort
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev22
+sentence: U.S. citizens donating in 2005 to help tsunami victims may write off their donations on their 2004 tax returns, thanks to a bill quickly passed in the U.S. House of Representatives and the U.S. Senate on a voice vote, and signed into law by president George W. Bush.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+predicate: citizen
+patient: United_States_dollar
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+sentence: CBS News reports Indiana University's Center on Philanthropy is estimating approximately 322 million U.S. dollars in goods and cash have been donated by private U.S. citizens and corporations, in addition to the 350 million that was promised by the government.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev25
+predicate: estimate
+patient: approximately+322+million+u.s.+dollars
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev25
+sentence: CBS News reports Indiana University's Center on Philanthropy is estimating approximately 322 million U.S. dollars in goods and cash have been donated by private U.S. citizens and corporations, in addition to the 350 million that was promised by the government.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+predicate: citizen
+patient: United_States_dollar
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+sentence: An AP/ISOS poll has found three in ten U.S. citizens have donated to Tsunami Aid organizations.
+agent: 08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+predicate: citizen
+patient: United_States_dollar
+event: http://en.wikinews.org/wiki/2005/01/08_Tsunami_aid_donations_in_2005_deductible_for_2004_in_the_U.S.#ev4
+sentence: Although not taking many medals, the efforts going into development in nations such as Tonga allowed many of their players to place 5th or 7th.
+agent: 2004_Commonwealth_Judo_Championships#ev24
+predicate: place
+patient: 5th+or+7th
+event: http://en.wikinews.org/wiki/2004_Commonwealth_Judo_Championships#ev24
+sentence: India also performed well, especially their women's team.
+agent: 2004_Commonwealth_Judo_Championships#ev27
+predicate: perform
+patient: their+women+%27s+team
+event: http://en.wikinews.org/wiki/2004_Commonwealth_Judo_Championships#ev27
+sentence: Civil Defence says "It is keeping an eye on the situation, and welfare work is continuing to make sure everyone is coping.
+agent: 2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev25
+predicate: make
+patient: to+make+sure+everyone+is+coping
+event: http://en.wikinews.org/wiki/2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev25
+sentence: Iroquois helicopters are reportedly on standby at Wigram Air Base if needed,"
+
+Chief executive of Orion (a power company) Roger Sutton says, "Another 20 or 30 homes are without power in the Lake Coleridge area."
+agent: 2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev12
+predicate: power
+patient: another+20+or+30+homes
+event: http://en.wikinews.org/wiki/2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev12
+sentence: 2000 Cantabrians are still without power a week after a huge snowstorm struck and took out the electricity in mid and south Canterbury.
+agent: 2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev6
+predicate: strike
+patient: New_Zealand
+event: http://en.wikinews.org/wiki/2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev6
+sentence: The MetService has put severe weather warnings for some of the central cities of the North Island.
+agent: 2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev19
+predicate: put
+patient: severe+weather+warnings
+event: http://en.wikinews.org/wiki/2000_houses_still_have_no_power_in_Canterbury,_New_Zealand#ev19
+sentence: Kuehnlein then tells Darrow that he was being ticketed for not using a turn signal to turn into the lot, but the video clearly proves the officer wrong.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev36
+predicate: come
+patient: with+why+afterward
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev36
+sentence: During the entire incident, Darrow barely spoke a word as the officer threatened him saying "I just had a bad night."
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev92
+predicate: speak
+patient: a+word
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev92
+sentence: After the video was posted on the internet, people from all over started to call the police department and complain about the officers actions.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev95
+predicate: post
+patient: the+video
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev95
+sentence: "I was very displeased when I saw the actions on the video.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev40
+predicate: action
+patient: the+actions+on+the+video
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev40
+sentence: My officers are not trained and taught to act like that," said Scott Uhrig, chief of the St. George police who added "someone either violated the law or they didn't.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev40
+predicate: action
+patient: the+actions+on+the+video
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev40
+sentence: My officers are not trained and taught to act like that," said Scott Uhrig, chief of the St. George police who added "someone either violated the law or they didn't.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev42
+predicate: teach
+patient: to+act+like+that
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev42
+sentence: Darrow states that he did not take the video to the police chief because he thought the whole thing would be forgotten and "swept under the rug.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev36
+predicate: come
+patient: with+why+afterward
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev36
+sentence: The St. Louis, Missouri man, Brett Darrow, 20, had installed a hidden camera inside his car, much like the way some police officers do, and caught the entire incident on tape.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev26
+predicate: instal
+patient: a+hidden+camera+inside+his+car
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev26
+sentence: The St. Louis, Missouri man, Brett Darrow, 20, had installed a hidden camera inside his car, much like the way some police officers do, and caught the entire incident on tape.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev27
+predicate: catch
+patient: the+entire+incident+on+tape
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev27
+sentence: Darrow then posted the video on the internet on places like YouTube.com.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev95
+predicate: post
+patient: the+video
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev95
+sentence: Officer Kuehnlein claims that high crime rates in the lot caused Darrow to be pulled over.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev74
+predicate: claim
+patient: high+crime+rates+in+the+lot
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev74
+sentence: Officer Kuehnlein claims that high crime rates in the lot caused Darrow to be pulled over.
+agent: 20-year-old_captures_abusive_police_officer_on_tape#ev56
+predicate: cause
+patient: Clarence_Darrow
+event: http://en.wikinews.org/wiki/20-year-old_captures_abusive_police_officer_on_tape#ev56
+sentence: A Chicago Tribune computer analysis predicts a win for High Fly, based on its “lack of flaws”.
+agent: 20-horse_field_for_Derby_dash#ev25
+predicate: win
+patient: the+triple+crown
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev25
+sentence: Last year the jammed Churchill Downs drew 140,000 people on a rainy Saturday to watch Smarty Jones win.
+agent: 20-horse_field_for_Derby_dash#ev57
+predicate: draw
+patient: 140%2c000+people
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev57
+sentence: The Derby run is the first leg in USA horse racing's Triple Crown.
+agent: 20-horse_field_for_Derby_dash#ev25
+predicate: win
+patient: the+triple+crown
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev25
+sentence: The last horse to win the triple crown was Affirmed in 1978.
+agent: 20-horse_field_for_Derby_dash#ev25
+predicate: win
+patient: the+triple+crown
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev25
+sentence: Trainer Nick Zito, the 2-time derby winner boasts 5 stable horses running the race, and has the odds-on favorite Bellamy Road.
+agent: 20-horse_field_for_Derby_dash#ev22
+predicate: winner
+patient: breeder+%27s+cup
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev22
+sentence: Trainer Nick Zito, the 2-time derby winner boasts 5 stable horses running the race, and has the odds-on favorite Bellamy Road.
+agent: 20-horse_field_for_Derby_dash#ev47
+predicate: boast
+patient: 5+stable+horses+running+the+race
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev47
+sentence: Trainer Nick Zito, the 2-time derby winner boasts 5 stable horses running the race, and has the odds-on favorite Bellamy Road.
+agent: 20-horse_field_for_Derby_dash#ev23
+predicate: run
+patient: the+race
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev23
+sentence: Trainer Nick Zito, the 2-time derby winner boasts 5 stable horses running the race, and has the odds-on favorite Bellamy Road.
+agent: 20-horse_field_for_Derby_dash#ev44
+predicate: have
+patient: the+odds-on+favorite+bellamy+road
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev44
+sentence: The George Steinbrenner owned horse won convincingly in 4 of its last 5 trips.
+agent: 20-horse_field_for_Derby_dash#ev25
+predicate: win
+patient: the+triple+crown
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev25
+sentence: The 131st run for the roses in Louisville, KY is set for Saturday at Churchill Downs.
+agent: 20-horse_field_for_Derby_dash#ev16
+predicate: set
+patient: the+pace
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev16
+sentence: Given the early starting speed of Spanish Chestnut, it seems unlikely that any horse will easily set the pace.
+agent: 20-horse_field_for_Derby_dash#ev16
+predicate: set
+patient: the+pace
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev16
+sentence: If this horse can hold onto the pace, watch for him at the finish line.
+agent: 20-horse_field_for_Derby_dash#ev22
+predicate: winner
+patient: breeder+%27s+cup
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev22
+sentence: If this horse can hold onto the pace, watch for him at the finish line.
+agent: 20-horse_field_for_Derby_dash#ev34
+predicate: hold
+patient: onto+the+pace
+event: http://en.wikinews.org/wiki/20-horse_field_for_Derby_dash#ev34
+sentence: "APEC is playing the vanguard role of spreading new liberalism in trade which makes the rich richer and the poor poorer," said O Jong-Ryul, head of the People's Action against APEC â€” another of the protest organising groups.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+predicate: say
+patient: that+china+is+not+to+blame
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+sentence: "APEC is playing the vanguard role of spreading new liberalism in trade which makes the rich richer and the poor poorer," said O Jong-Ryul, head of the People's Action against APEC â€” another of the protest organising groups.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev37
+predicate: Action
+patient: Asia-Pacific_Economic_Cooperation
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev37
+sentence: The activists said APEC had become a tool for US multinationals seeking to expand their dominance in the world market "under the pretext of trade liberalization."
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+predicate: say
+patient: that+china+is+not+to+blame
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+sentence: The rally cut off downtown traffic and caused severe congestion.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev50
+predicate: cut
+patient: downtown+traffic
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev50
+sentence: The rally cut off downtown traffic and caused severe congestion.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev61
+predicate: cause
+patient: severe+congestion
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev61
+sentence: The APEC summit of Pacific Rim leaders will include US President George W. Bush.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev16
+predicate: summit
+patient: to+bring+together+21+regional+leaders
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev16
+sentence: The two-day APEC summit, expected to bring together 21 regional leaders, opens officially on November 18 in the South Korean port city of Busan.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev16
+predicate: summit
+patient: to+bring+together+21+regional+leaders
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev16
+sentence: Protesters' placards declared "No Bush visit" and "No APEC", demanding a revision of domestic labour laws to improve conditions for temporary workers.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev69
+predicate: declare
+patient: George_W._Bush
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev69
+sentence: Protesters' placards declared "No Bush visit" and "No APEC", demanding a revision of domestic labour laws to improve conditions for temporary workers.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev57
+predicate: visit
+patient: to+his+ranch
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev57
+sentence: Protesters' placards declared "No Bush visit" and "No APEC", demanding a revision of domestic labour laws to improve conditions for temporary workers.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev70
+predicate: demand
+patient: to+improve+conditions+for+temporary+workers
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev70
+sentence: City police officials said there were no reports of violence.
+agent: 20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+predicate: say
+patient: that+china+is+not+to+blame
+event: http://en.wikinews.org/wiki/20,000_South_Koreans_take_to_the_streets_to_protest_APEC#ev73
+sentence: The third demonstration, much smaller in size, was held by junior government coalition partner, the far-right Christian conservative Liga Polskich Rodzin.
+agent: 20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev24
+predicate: hold
+patient: a+gathering+of+8%2c000+government+supporters
+event: http://en.wikinews.org/wiki/20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev24
+sentence: Polls show over 60% of Poles want early elections, and Platforma is currently in the lead by a sizeable majority.
+agent: 20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev38
+predicate: want
+patient: want+early+elections
+event: http://en.wikinews.org/wiki/20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev38
+sentence: In response to that, Kaczyński's Prawo i Sprawiedliwość held a gathering of 8,000 government supporters in front of the socrealist landmark Palace of Culture and Science in the very centre of Warsaw.
+agent: 20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev24
+predicate: hold
+patient: a+gathering+of+8%2c000+government+supporters
+event: http://en.wikinews.org/wiki/20,000_Poles_demonstrate_on_the_streets_of_Warsaw#ev24
+sentence: The package initially appeared to have enough support to reach the two-thirds majority needed to make the bill a law, but fell short by a single vote.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev18
+predicate: make
+patient: the+announcement
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev18
+sentence: The package initially appeared to have enough support to reach the two-thirds majority needed to make the bill a law, but fell short by a single vote.
+agent: US_Senate_passes_stimulus_package#ev23
+predicate: bill
+patient: the+bill
+event: http://en.wikinews.org/wiki/US_Senate_passes_stimulus_package#ev23
+sentence: On Tuesday, the US state of California announced it is ready to notify approximately twenty thousand state workers that they are being laid off.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev17
+predicate: lay
+patient: 20%2c000+people
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev17
+sentence: The Assembly was at one point in session for thirty hours, breaking the record for the longest legislative session in the history of the state.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev43
+predicate: break
+patient: for+the+longest+legislative+session
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev43
+sentence: Many Republican lawmakers say they disagree with the tax increases that are included as part of the budget package.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev83
+predicate: say
+patient: with+a+catastrophe+of+unbelievable+proportions
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev83
+sentence: The announcement was made by a spokesman for California's governor Arnold Schwarzenegger.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev18
+predicate: make
+patient: the+announcement
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev18
+sentence: "People don't realize where California is at â€” people are losing homes, people are losing jobs," said Republican state senator Abel Maldonado.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev83
+predicate: say
+patient: with+a+catastrophe+of+unbelievable+proportions
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev83
+sentence: On Tuesday, the US state of California announced it is ready to notify approximately twenty thousand state workers that they are being laid off.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev76
+predicate: state
+patient: United_States_dollar
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev76
+sentence: Senate leader Darrell Steinberg wants another session on Tuesday, saying that he would put up the tax provisions of the budget proposal for a vote.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev92
+predicate: want
+patient: another+session
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev92
+sentence: Senate leader Darrell Steinberg wants another session on Tuesday, saying that he would put up the tax provisions of the budget proposal for a vote.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev83
+predicate: say
+patient: with+a+catastrophe+of+unbelievable+proportions
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev83
+sentence: Senate leader Darrell Steinberg wants another session on Tuesday, saying that he would put up the tax provisions of the budget proposal for a vote.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev17
+predicate: put
+patient: 20%2c000+people
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev17
+sentence: "Bring a toothbrush, bring any necessities you want to bring, because I will not allow anyone to go home to resume their lives [...] as long as we know [...] that 20,000 people will be laid off," he warned.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev92
+predicate: want
+patient: another+session
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev92
+sentence: None
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev17
+predicate: lay
+patient: 20%2c000+people
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev17
+sentence: "In the absence of a budget, the governor has a responsibility to realise state savings any way he can," said Aaron McLear, Schwarzenegger's spokesman.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev24
+predicate: responsibility
+patient: state+savings
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev24
+sentence: The state is also planning to put all remaining public work projects on hold, which could cost thousands of construction workers their jobs.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev17
+predicate: put
+patient: 20%2c000+people
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev17
+sentence: The state is also planning to put all remaining public work projects on hold, which could cost thousands of construction workers their jobs.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev27
+predicate: work
+patient: on+hold
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev27
+sentence: California has the world's eighth largest economy.
+agent: Baby_in_California_born_with_12_functioning_fingers_and_toes,_in_a_rare_case_of_polydactylism#ev76
+predicate: have
+patient: the+world+%27s+eighth+largest+economy
+event: http://en.wikinews.org/wiki/Baby_in_California_born_with_12_functioning_fingers_and_toes,_in_a_rare_case_of_polydactylism#ev76
+sentence: It has suffered from unemployment and the housing crisis, with Schwarzenegger declaring a fiscal emergency last December.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev82
+predicate: declare
+patient: a+fiscal+emergency
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev82
+sentence: "We are dealing with a catastrophe of unbelievable proportions," said Alan Lowenthal, a Democratic state senator from Long Beach.
+agent: 20,000_Californian_state_workers_may_lose_their_jobs#ev83
+predicate: say
+patient: with+a+catastrophe+of+unbelievable+proportions
+event: http://en.wikinews.org/wiki/20,000_Californian_state_workers_may_lose_their_jobs#ev83
+sentence: Salem County 911 received approximately 150 calls, but no injuries or deaths were reported.
+agent: 2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev11
+predicate: receive
+patient: approximately+150+calls
+event: http://en.wikinews.org/wiki/2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev11
+sentence: A rare earthquake, registering 2.8 on the Richter scale, struck northern Delaware and southwest New Jersey on Wednesday.
+agent: 2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev5
+predicate: strike
+patient: northern+delaware+and+southwest+new+jersey
+event: http://en.wikinews.org/wiki/2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev5
+sentence: Residents initially feared the rumbling was caused by an explosion.
+agent: 2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev18
+predicate: cause
+patient: the+rumbling
+event: http://en.wikinews.org/wiki/2.8_magnitude_earthquake_rattles_northern_Delaware,_southwest_New_Jersey#ev18
+sentence: The family friend described Nesselroad as "mother of the year."
+agent: 2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev14
+predicate: friend
+patient: the+family+friend
+event: http://en.wikinews.org/wiki/2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev14
+sentence: The National Highway Traffic Safety Administration says the temperature inside a closed vehicle setting in sunlight can raise nearly 20 Fahrenheit degrees (11 Celsius degrees) in just three minutes.
+agent: 2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev29
+predicate: raise
+patient: nearly+20+fahrenheit+degrees+%28+11
+event: http://en.wikinews.org/wiki/2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev29
+sentence: Another three or four minutes, and the administration says a car's temperature can reach 125ºF (~52ºC).
+agent: 2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev35
+predicate: reach
+patient: 125%c2%baf+%28+%7e+52%c2%bac+%29
+event: http://en.wikinews.org/wiki/2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev35
+sentence: High temperatures in the area reached 100ºF (~38ºC).
+agent: 2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev32
+predicate: reach
+patient: 100%c2%baf+%28+%7e+38%c2%bac+%29
+event: http://en.wikinews.org/wiki/2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev32
+sentence: A friend of the family said the child was Cecelia Slaby, however police are not reporting any personal information.
+agent: 2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev14
+predicate: friend
+patient: the+family+friend
+event: http://en.wikinews.org/wiki/2-year-old_dies_in_car_in_100%c2%baF_heat_with_windows_rolled_up#ev14
+sentence: Altogether the tablets had a street value of an estimated NZ$173,000.
+agent: 2,887_ecstasy_tablets_intercepted_at_New_Zealand_International_Mail_Centre#ev38
+predicate: have
+patient: of+an+estimated+nz%24+173%2c000
+event: http://en.wikinews.org/wiki/2,887_ecstasy_tablets_intercepted_at_New_Zealand_International_Mail_Centre#ev38
+sentence: In a £24m deal, Sports Direct have agreed to purchase and rebrand 20 stores as well as purchasing the brand, stock, website, the license to the Slazenger Golf brand and JJB's Wigan headquarters.
+agent: 2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev16
+predicate: purchase
+patient: 20+stores
+event: http://en.wikinews.org/wiki/2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev16
+sentence: In a £24m deal, Sports Direct have agreed to purchase and rebrand 20 stores as well as purchasing the brand, stock, website, the license to the Slazenger Golf brand and JJB's Wigan headquarters.
+agent: 2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev16
+predicate: purchase
+patient: 20+stores
+event: http://en.wikinews.org/wiki/2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev16
+sentence: The deal with Sports Direct will keep 500 employees in work.
+agent: 2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev20
+predicate: keep
+patient: 500+employees
+event: http://en.wikinews.org/wiki/2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev20
+sentence: In addition, 167 employees will continue working for JJB while KPMG, the appointed administrators, wind the company down.
+agent: 2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev35
+predicate: continue
+patient: working+for+jjb
+event: http://en.wikinews.org/wiki/2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev35
+sentence: In addition, 167 employees will continue working for JJB while KPMG, the appointed administrators, wind the company down.
+agent: 2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev23
+predicate: wind
+patient: the+company
+event: http://en.wikinews.org/wiki/2,200_jobs_to_be_lost_as_JJB_Sports_goes_into_administration#ev23
+sentence: Peruvian highway police said that two thousand tourists have been stranded near the ruins of the ancient Machu Picchu citadel, after torrential rains caused mudslides, blocking the train route that goes from the site to Cusco.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+predicate: block
+patient: the+cusco-abancay+highway
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+sentence: Soledad Caparo, a spokeswoman for Perurail commented that the train operator suspended service earlier today, and is trying to remove the mud that is blocking the rail.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev12
+predicate: suspend
+patient: service+earlier
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev12
+sentence: Soledad Caparo, a spokeswoman for Perurail commented that the train operator suspended service earlier today, and is trying to remove the mud that is blocking the rail.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+predicate: block
+patient: the+cusco-abancay+highway
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+sentence: The last leg of the trip from Machu Picchu to Cusco is only possible by rail; Peruvian Tourism Minister Martin Perez remarked that the government might try to evacuate those stranded via helicopter.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev15
+predicate: trip
+patient: Cusco
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev15
+sentence: The last leg of the trip from Machu Picchu to Cusco is only possible by rail; Peruvian Tourism Minister Martin Perez remarked that the government might try to evacuate those stranded via helicopter.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev31
+predicate: remark
+patient: to+evacuate+those+stranded+via+helicopter
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev31
+sentence: The last leg of the trip from Machu Picchu to Cusco is only possible by rail; Peruvian Tourism Minister Martin Perez remarked that the government might try to evacuate those stranded via helicopter.
+agent: Votes_in_Sri_Lankan_presidential_elections_counted#ev56
+predicate: try
+patient: to+evacuate+those+stranded+via+helicopter
+event: http://en.wikinews.org/wiki/Votes_in_Sri_Lankan_presidential_elections_counted#ev56
+sentence: The last leg of the trip from Machu Picchu to Cusco is only possible by rail; Peruvian Tourism Minister Martin Perez remarked that the government might try to evacuate those stranded via helicopter.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev16
+predicate: evacuate
+patient: to+evacuate+those+stranded+via+helicopter
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev16
+sentence: The Cusco-Abancay highway was also blocked due to the overflowing Yanama, with vehicle traffic lining up, unable to get through.
+agent: 2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+predicate: block
+patient: the+cusco-abancay+highway
+event: http://en.wikinews.org/wiki/2,000_stranded_in_Machu_Picchu,_Peru_after_torrential_rains#ev5
+sentence: Two people were killed by the rains.
+agent: Two_killed,_two_seriously_injured_after_boulder_collapses_onto_house_in_Stein_an_der_Traun,_Germany#ev13
+predicate: kill
+patient: two+people
+event: http://en.wikinews.org/wiki/Two_killed,_two_seriously_injured_after_boulder_collapses_onto_house_in_Stein_an_der_Traun,_Germany#ev13
+sentence: The leader of Redcar &amp; Cleveland Borough Council, Councillor George Dunning, said "Today is like being hit by a mini earthquake compared to what's happened in the past."
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Martin Callanan and Stephen Hughes, Tory, and Labour MEPs for North East England, supported the idea that the government should subsidise wages in the plant on a temporary basis.
+agent: UN_hides_facts_about_war_in_Sri_Lanka,_says_French_Le_Monde#ev126
+predicate: support
+patient: the+government
+event: http://en.wikinews.org/wiki/UN_hides_facts_about_war_in_Sri_Lanka,_says_French_Le_Monde#ev126
+sentence: Hughes and Fiona Hall, Lib Dem MEP, suggested that the government should apply to the EU's Globalisation Adjustment Fund.
+agent: 2,000_face_redundancy_at_English_steelworks#ev72
+predicate: suggest
+patient: GlobalisationAdjustmentFund
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev72
+sentence: Hall said "if the worst comes to the worst and jobs are indeed lost, I trust the Government will change its mind and support an application to the European Globalisation Fund in order to fund skills training for those who have lost their jobs."
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Hall said "if the worst comes to the worst and jobs are indeed lost, I trust the Government will change its mind and support an application to the European Globalisation Fund in order to fund skills training for those who have lost their jobs."
+agent: 2,000_face_redundancy_at_English_steelworks#ev48
+predicate: lose
+patient: their+jobs
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev48
+sentence: Hall said "if the worst comes to the worst and jobs are indeed lost, I trust the Government will change its mind and support an application to the European Globalisation Fund in order to fund skills training for those who have lost their jobs."
+agent: 2,000_face_redundancy_at_English_steelworks#ev49
+predicate: change
+patient: its+mind
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev49
+sentence: This move would threaten the jobs of the works' 1,920 employees.
+agent: 2,000_face_redundancy_at_English_steelworks#ev21
+predicate: threaten
+patient: of+the+works+%27+1%2c920+employees
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev21
+sentence: Hall said "if the worst comes to the worst and jobs are indeed lost, I trust the Government will change its mind and support an application to the European Globalisation Fund in order to fund skills training for those who have lost their jobs."
+agent: UN_hides_facts_about_war_in_Sri_Lanka,_says_French_Le_Monde#ev126
+predicate: support
+patient: the+government
+event: http://en.wikinews.org/wiki/UN_hides_facts_about_war_in_Sri_Lanka,_says_French_Le_Monde#ev126
+sentence: Hall said "if the worst comes to the worst and jobs are indeed lost, I trust the Government will change its mind and support an application to the European Globalisation Fund in order to fund skills training for those who have lost their jobs."
+agent: 2,000_face_redundancy_at_English_steelworks#ev48
+predicate: lose
+patient: their+jobs
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev48
+sentence: This move would threaten the jobs of the works' 1,920 employees.
+agent: Redcar,_UK_steelworkers_march_to_save_their_jobs#ev18
+predicate: job
+patient: their+jobs
+event: http://en.wikinews.org/wiki/Redcar,_UK_steelworkers_march_to_save_their_jobs#ev18
+sentence: This move could "bring to an end a fine heritage of steelmaking at Teesside", according to Adams.
+agent: Redcar,_UK_steelworkers_march_to_save_their_jobs#ev18
+predicate: job
+patient: their+jobs
+event: http://en.wikinews.org/wiki/Redcar,_UK_steelworkers_march_to_save_their_jobs#ev18
+sentence: Corus had said it was likely there would be a "very significant number of redundancies" and a 90-day consultation period is due to begin.
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Corus' owner, Tata Steel, are also facing difficulties with another UK operation, automobile company Jaguar Land Rover.
+agent: 2,000_face_redundancy_at_English_steelworks#ev25
+predicate: operation
+patient: its+teesside+operations
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev25
+sentence: Corus may be forced to close its Teesside operations as a consortium has refused to honour a 10-year contract with Corus' Teesside Cast Products, which accounted for 78% of the plant's operations.
+agent: 2,000_face_redundancy_at_English_steelworks#ev24
+predicate: close
+patient: its+teesside+operations
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev24
+sentence: Corus may be forced to close its Teesside operations as a consortium has refused to honour a 10-year contract with Corus' Teesside Cast Products, which accounted for 78% of the plant's operations.
+agent: 2,000_face_redundancy_at_English_steelworks#ev25
+predicate: operation
+patient: its+teesside+operations
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev25
+sentence: Corus may be forced to close its Teesside operations as a consortium has refused to honour a 10-year contract with Corus' Teesside Cast Products, which accounted for 78% of the plant's operations.
+agent: 2,000_face_redundancy_at_English_steelworks#ev25
+predicate: operation
+patient: its+teesside+operations
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev25
+sentence: Corus' chief executive, Kirby Adams, said he was "extremely disappointed that the consortium members have seen fit to take this irresponsible action."
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Corus' chief executive, Kirby Adams, said he was "extremely disappointed that the consortium members have seen fit to take this irresponsible action."
+agent: 2,000_face_redundancy_at_English_steelworks#ev68
+predicate: see
+patient: fit+to+take+this+irresponsible+action
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev68
+sentence: Lord Mandelson, Secretary of State for Business, Enterprise and Regulatory Reform, said "it is essential that Corus does everything it can legally, and with the government's assistance, to reinstate the agreement".
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Lord Mandelson, Secretary of State for Business, Enterprise and Regulatory Reform, said "it is essential that Corus does everything it can legally, and with the government's assistance, to reinstate the agreement".
+agent: 2,000_face_redundancy_at_English_steelworks#ev35
+predicate: assistance
+patient: to+reinstate+the+agreement
+event: http://en.wikinews.org/wiki/2,000_face_redundancy_at_English_steelworks#ev35
+sentence: Gordon Brown, the British Prime Minister, shared this view saying, "We are doing everything in our power to ensure that the contract is upheld."
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: Mandelson also said "we are not prepared to reconcile ourselves to the inevitable closure of this plant".
+agent: Swine_flu_cases_worldwide_top_1,000#ev54
+predicate: say
+patient: what+his+fate+will+be+%27%27
+event: http://en.wikinews.org/wiki/Swine_flu_cases_worldwide_top_1,000#ev54
+sentence: "But we are ready and we have luckily distributed resources all over the state of California, so we are ready at any given time."
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev21
+predicate: give
+patient: mandatory+evacuation+orders
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev21
+sentence: The fire has so far destroyed one house and three mobile homes, damaging the roof of another and burning car garages, horse stables, and other outbuildings.
+agent: Wildfires_in_Russia_cover_Moscow_in_smoke#ev20
+predicate: destroy
+patient: nuclear+missile+warning
+event: http://en.wikinews.org/wiki/Wildfires_in_Russia_cover_Moscow_in_smoke#ev20
+sentence: Throughout the night, fire crews have been battling the wildfire, assisted by cooler temperatures and lighter-than-expected winds which have enabled them to establish containment lines.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+predicate: battle
+patient: battling+the+fire
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+sentence: "Crews went out [Friday] night and did some great work trying to complete more lines and also trying to take care of what we call 'cat eyes' which are embers within the perimeter of the fire, so there will be much more work being done there today," said LACFD Captain Roland Sprewell.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev75
+predicate: try
+patient: to+complete+more+lines
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev75
+sentence: The Crown Fire that has burned through 13,980 acres in the High Desert of Southern California since 2:32 pm (2232 UTC) Thursday was at 82% containment Saturday evening, according to the Los Angeles County Fire Department.
+agent: Wildfires_in_Russia_cover_Moscow_in_smoke#ev20
+predicate: burn
+patient: nuclear+missile+warning
+event: http://en.wikinews.org/wiki/Wildfires_in_Russia_cover_Moscow_in_smoke#ev20
+sentence: On Friday high winds caused the fire to jump the California Aqueduct and spread into the city of Palmdale.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev70
+predicate: cause
+patient: the+fire
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev70
+sentence: At the height of the fire, 1,700 firefighters from all over California were battling the flames, although as of 12:00 pm Saturday afternoon, it has been reduced to around 1,350 personnel.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+predicate: battle
+patient: battling+the+fire
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+sentence: On Friday high winds caused the fire to jump the California Aqueduct and spread into the city of Palmdale.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev20
+predicate: jump
+patient: California
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev20
+sentence: The Los Angeles Sheriffs Department also increased its presence in the Antelope Valley by bringing in response teams from stations outside the AV.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev61
+predicate: increase
+patient: theAntelopeValley
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev61
+sentence: The Los Angeles Sheriffs Department also increased its presence in the Antelope Valley by bringing in response teams from stations outside the AV.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev78
+predicate: bring
+patient: response+teams
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev78
+sentence: Three firefighters have been injured battling the fire, although all injuries are minor.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+predicate: battle
+patient: battling+the+fire
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev43
+sentence: Over 2,000 residents of Leona Valley, Ana Verde, and Rancho Vista were given mandatory evacuation orders.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev21
+predicate: give
+patient: mandatory+evacuation+orders
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev21
+sentence: State Governor Arnold Schwarzenegger arrived in Palmdale on Friday to survey the burned areas.
+agent: 14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev80
+predicate: survey
+patient: the+burned+areas
+event: http://en.wikinews.org/wiki/14,000-acre_Southern_California_'Crown_Fire'_at_82%25_containment,_evacuation_orders_lifted#ev80
+sentence: The festival will be featured at the historic Chinese 6 Theatres on Hollywood Boulevard in Hollywood, California.
+agent: 13th_Annual_Beverly_Hills_film_festival_opens#ev10
+predicate: feature
+patient: multiple+independently+produced+films+and+screenplays
+event: http://en.wikinews.org/wiki/13th_Annual_Beverly_Hills_film_festival_opens#ev10
+sentence: The festival spans five days, ending on May 13th.
+agent: 13th_Annual_Beverly_Hills_film_festival_opens#ev15
+predicate: span
+patient: five+days
+event: http://en.wikinews.org/wiki/13th_Annual_Beverly_Hills_film_festival_opens#ev15
+sentence: The event will feature multiple independently produced films and screenplays.
+agent: 13th_Annual_Beverly_Hills_film_festival_opens#ev10
+predicate: feature
+patient: multiple+independently+produced+films+and+screenplays
+event: http://en.wikinews.org/wiki/13th_Annual_Beverly_Hills_film_festival_opens#ev10
+sentence: McHugh says that the roads were slick which caused the bus to slide into a ditch and roll onto its side.
+agent: Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+predicate: say
+patient: whom+%60%60+leads+the+region
+event: http://en.wikinews.org/wiki/Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+sentence: He says that he was only cut by shattered glass while other passengers were pinned under the bus.
+agent: Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+predicate: say
+patient: whom+%60%60+leads+the+region
+event: http://en.wikinews.org/wiki/Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+sentence: In San Luis de La Balsa, Costa Rica a tourist bus carrying foreign tourist flipped over in the highway about 55 miles Northeast of the capital of San Jose.
+agent: 12_hurt_in_San_Luis_de_La_Balsa_tourist_bus_accident#ev23
+predicate: carry
+patient: foreign+tourist
+event: http://en.wikinews.org/wiki/12_hurt_in_San_Luis_de_La_Balsa_tourist_bus_accident#ev23
+sentence: The nationalities of the other passengers is not immediately known, though McHugh said that there were Australians on the bus and the U.S. Embassy confirmed that there were citizens of the United States also.
+agent: Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+predicate: say
+patient: whom+%60%60+leads+the+region
+event: http://en.wikinews.org/wiki/Turkish_teens_died_of_mutated_strain_of_bird_flu#ev69
+sentence: The nationalities of the other passengers is not immediately known, though McHugh said that there were Australians on the bus and the U.S. Embassy confirmed that there were citizens of the United States also.
+agent: Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev40
+predicate: citizen
+patient: Federal_government_of_the_United_States
+event: http://en.wikinews.org/wiki/Al-Jazeera_airs_new_video_of_Ayman_al-Zawahri#ev40
+sentence: In San Luis de La Balsa, Costa Rica a tourist bus carrying foreign tourist flipped over in the highway about 55 miles Northeast of the capital of San Jose.
+agent: 12_hurt_in_San_Luis_de_La_Balsa_tourist_bus_accident#ev8
+predicate: flip
+patient: a+tourist+bus+carrying+foreign+tourist
+event: http://en.wikinews.org/wiki/12_hurt_in_San_Luis_de_La_Balsa_tourist_bus_accident#ev8
+sentence: The United States Mine Safety and Health Administration issued the mine 208 citations last year, an increase from 68 reported in 2004.
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev25
+predicate: issue
+patient: the+mine+208+citations
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev25
+sentence: The agency has announced that it plans launch a in-depth investigation into the incident at Sago.
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev25
+predicate: issue
+patient: the+mine+208+citations
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev25
+sentence: The investigation will examine the mine's compliance with health and safety standards and how emergency information was communicated.
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev59
+predicate: examine
+patient: with+health+and+safety+standards
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev59
+sentence: The investigation will examine the mine's compliance with health and safety standards and how emergency information was communicated.
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev60
+predicate: compliance
+patient: with+health+and+safety+standards
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev60
+sentence: The family members of the dead miners were notified of the deaths by Ben Hatfield, CEO of the International Coal Groi, at the Sago Baptist Church.
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev41
+predicate: notify
+patient: of+the+dead+miners
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev41
+sentence: Hatfield blamed the reversal on "bad information" and "miscommunication."
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev42
+predicate: blame
+patient: the+reversal
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev42
+sentence: Family members walked out of the church saying that the CEO of the mining company had "lied to them".
+agent: 12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev52
+predicate: say
+patient: the+ceo+of+the+mining+company
+event: http://en.wikinews.org/wiki/12_coal_miners_are_found_dead,_1_in_critical_condition,_in_West_Virginia_mine#ev52
+sentence: A record number of 11 MPs were ejected from the Australian Parliament during the uproar that ensued the introduction of the government's controversial industrial relations legislation.
+agent: Thousands_of_Australian_workers_set_to_rally_against_IR_reform#ev98
+predicate: relation
+patient: industrial+relations
+event: http://en.wikinews.org/wiki/Thousands_of_Australian_workers_set_to_rally_against_IR_reform#ev98
+sentence: A record number of 11 MPs were ejected from the Australian Parliament during the uproar that ensued the introduction of the government's controversial industrial relations legislation.
+agent: 11_MPs_ejected_from_Australian_parliament#ev4
+predicate: legislation
+patient: industrial+relations
+event: http://en.wikinews.org/wiki/11_MPs_ejected_from_Australian_parliament#ev4
+sentence: The new bill of nearly 700 pages sees the end of Australia's 100 year old wage fixing system and will push more workers onto individual contracts, allowed award conditions like penalty rates to be bargained away and removed unfair dismissal laws for most workers.
+agent: 11_MPs_ejected_from_Australian_parliament#ev8
+predicate: push
+patient: more+workers
+event: http://en.wikinews.org/wiki/11_MPs_ejected_from_Australian_parliament#ev8
+sentence: Twenty others, including 10 policemen, were injured in the clash 85 km northwest of Srinagar.
+agent: 10_killed_in_shootout_in_Kashmir#ev53
+predicate: say
+patient: it+was+investigating
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev53
+sentence: And unidentified gunmen shot dead seven labourers -- said to be from the Indian state of Bihar -- in Anantnag district in south Kashmir.
+agent: 10_killed_in_shootout_in_Kashmir#ev53
+predicate: say
+patient: it+was+investigating
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev53
+sentence: And unidentified gunmen shot dead seven labourers -- said to be from the Indian state of Bihar -- in Anantnag district in south Kashmir.
+agent: 10_killed_in_shootout_in_Kashmir#ev53
+predicate: say
+patient: it+was+investigating
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev53
+sentence: No group claimed responsibility and the army said it was investigating.
+agent: 10_killed_in_shootout_in_Kashmir#ev34
+predicate: responsibility
+patient: of+responsibility+for+the+attack
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev34
+sentence: No group claimed responsibility and the army said it was investigating.
+agent: 10_killed_in_shootout_in_Kashmir#ev53
+predicate: say
+patient: it+was+investigating
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev53
+sentence: Suspected Islamist militants threw three grenades at a crowded bus station in Jammu city, police said, killing one person and wounding 22.
+agent: 10_killed_in_shootout_in_Kashmir#ev19
+predicate: throw
+patient: three+grenades
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev19
+sentence: "I was about to board a bus when something exploded between some buses," said Manoj Kumar, who sustained glass splinter injuries and was admitted to a local hospital.
+agent: 10_killed_in_shootout_in_Kashmir#ev53
+predicate: say
+patient: it+was+investigating
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev53
+sentence: There was no immediate claim of responsibility for the attack.
+agent: 10_killed_in_shootout_in_Kashmir#ev34
+predicate: responsibility
+patient: of+responsibility+for+the+attack
+event: http://en.wikinews.org/wiki/10_killed_in_shootout_in_Kashmir#ev34
+
+Mon Dec  3 11:39:54 CET 2018
+*** End of SGE job ***

@@ -3,8 +3,9 @@
 #$ -l mem=2G
 #$ -cwd
 #$ -j y
+#$ -l cuda=0 
 #$ -l h_rt=36:00:00
-#$ -t 1-19751:1000
+#$ -t 1-2252:100
 
 echo "*** Start of SGE job ***"
 date
@@ -21,7 +22,7 @@ echo ""
 echo "Start"
 echo ""
 
-source /net/home/student/j/jschoening/pimv_setup.bash
+source /net/projects/scratch/summer/valid_until_31_January_2019/juhuang/ml4nlp_setup.bash
 
 export PATH=/home/student/j/jschoening/local/cuda-9.0/bin:$PATH
 export LD_LIBRARY_PATH=/home/student/j/jschoening/local/cuda-9.0/lib64:$LD_LIBRARY_PATH
@@ -33,12 +34,12 @@ nvcc --version
 rm /tmp/* -R -f 2> /dev/null
 
 echo "ROOT"
-echo $PIMV_ROOT
-source activate pimv
+echo $ML4NLP_ROOT
+source activate python3
 
 
 echo "rolling..."
-PYTHONPATH=$PIMV_ROOT/$USER WALLTIME=36:00:00 python generate_data.py
+PYTHONPATH=$ML4NLP_ROOT WALLTIME=36:00:00 python generate_data.py
 
 
 echo ""
