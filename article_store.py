@@ -10,6 +10,13 @@ class ArticleCache():
         self.articles = pd.read_csv(all_articles_csv).article
 
 
+    def generate_uris(self, verbose=False):
+        for num, uri in enumerate(self.articles):
+            if verbose:
+                print('Generating Article #'+str(num))
+            yield uri
+
+
     def generate_articles(self, upto=0, verbose=False):
         articles = self.articles[:upto] if upto else self.articles
         with shelve.open(self.cache_file) as cache:
@@ -39,6 +46,7 @@ class ArticleCache():
             if uri not in cache:
                 return ks.run_files_query(uri)
             return cache[uri]
+
 
     def __getitem__(self, item):
         return self.get_article(item)

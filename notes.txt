@@ -8,3 +8,4 @@ res = ks.run_sparql_query("SELECT ?x ?l WHERE {dbpedia:Angela_Merkel ?x ?l}")
 - und die labels ('http://www.w3.org/2000/01/rdf-schema#label'), oder alternaitveName, sind auch super-praktisch für synonyme 
 
 
+{'x': 'http://www.w3.org/2000/01/rdf-schema#label', 'l': 'Operation Iraqi Freedom'}
