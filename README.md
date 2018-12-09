@@ -166,6 +166,40 @@ Along every step of the process, these tools may make mistakes. NER, for example
 
 - - - - 
 
+## Week 7
+
+### 7.1 Current State of Dataset
+
+Our approach was to create a dataset using NLTK tools for NER and relation extraction(sem.relextract) for triples and then create question-answer pairs based on these triples. But we realized that the NER engine has a very low accuracy, this results in many entities to not be identified correctly. This in turn influences the relation extraction part. In the extract_rels method under sem.relextract, we need to provide the two types of entities as well as a parameter called window which specified the max nbr of words between the said entities for a relation. An example of this is 
+
+rels = extract_rels('PER', 'ORG', sent, corpus='ace', pattern=OF, window=17)
+
+Which returns
+
+[PER: u'Software/NNP Architect/NNP'] u'from/IN 2000/CD to/TO 2006/CD ,/, and/CC through/IN 2008/CD when/WRB he/PRP retired/VBD as/IN an/DT employee/NN of/IN' [ORG: u'Microsoft/NNP']
+
+What is happening currently is:
+1.	Since the accuracy of the NER engine is low, the relation extraction doesn’t find one or both of the entities mentioned in the query and thus returns nothing.
+2.	In the case when the NER engine identifies few entities out of all, we can still run the relation extraction by increasing the window but now the relation is too long to be relevant and it might actually be a relation that refers to an entity which wasn’t recognized.
+
+## 7.2 Collaboration with Team Delta
+As a result of the poor performance of our solution, we have decided to use the dataset from team Delta. We looked at both team Delta and Epsilon’s dataset and found Delta’s approach and dataset to be more similar to the way we were approaching the problem.
+
+### 7.2.1 Negatives Generation - Shared Codebase
+Team Delta has already successfully generated triples from news articles; they are, however, still in the process of generating negatives. Since we had already developed a solution for this, we altered our code to be compatible with Delta's data set and provided them with it to complete it. We have a working naive approach that replaces either the agent or the patient (decided by a random-function) with another random agent or patient respectively, taken from the pool of all agents or patients respectively. We are currently discussing implementing another approach where agents and patients are only replaced by candidates from a limited pool of named entities from the original article. We have so far decided against this approach because it greatly limits the amount of negatives we can generate. We will discuss the benefits and downsides of this approach during our next session.
+
+We are able to generate negative examples which number at least the positive examples so that we have a balanced distribution and can compare to a 50-50 baseline. 
+
+
+## 7.3 Proceeding with the Data Set
+### 7.3.1 Splitting up the Data Set
+We should have around 0.35 million examples in the scenario of 50-50 baseline. We can either do a 70:20:10 split or do a 10-fold cross-validation which should give the most reliable results.  
+
+### 7.3.2 Evaluation Metrics
+Accuracy and Cohen’s Kappa seem like suitable metrics for our case. The accuracy tells us how many data points the classifier gets right and Cohen’s Kappa value will tell us how much reliable the classification is compared to random.
+#### Baselines
+We use the 50-50 baseline. We still do not have the final data to determine the evaluation metric.
+
 
 
 # References
