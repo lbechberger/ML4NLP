@@ -102,19 +102,26 @@ At a rate of 3 articles per minute the generation of each chunk will take about 
 Therefore it is an unrealistic expectation that we will have the whole data set up and running by the start of the next seminar session. However, we so far managed to produce 15 data chunks containing the data from the first 750 articles. This should be a good starting point for further exploration and the selection of a suitable classifier. 
 
 ## Week 03.12. - 09.12
-### Data Exploration
-What is the percentage of true values? Perhaps we need to aug. the data to work, i.e. drop systematically false data ("A", "And")
-### Baselines
-Always false, (most predictive feature in the future), we make use of  weighted accuracy,
-### Feature engineering?
-Sliding window (+-10 words, Maybe sentencnces, depending on factors: what kind of words,  )
-Turn words into numbers (either semtantic net, word kind, levenstein distances)
-Filter systematicilly false ("A","AND")
-Synonyms via SPARQL, NER+Gender (For use with Personal Pronouns), Graph for the Agent,Patient (expensive)
-Computation is easy when is can be done for each row individually via apply, but is an issue for actions that require SPARQL, Natural Language Processing (i.e. NER (via spacy?)
-### Split
-10-Fold Crossvalidation , we got enough data.
-Very random, split articles among splits, lower bound of  number of true values.
-To take in account: A lot of "A", "And" etc. no split should consist of only these. We want to split articles -> Random
-Need to zip data to reduce size for git,
+### Current State of the Data Set
+We currently have the classification data from 5000 articles at our disposal. SInce this is about 1/4 of our total data set, we will for the purposes of exploration just assume that the data we have is representative of the whole data set. We will continue working on the generation in the days to come and hope that we will soon have the whole data set from all 19 000 articles. 
+Access to the IKW Grid Computing facility could greatly enhance our generation speed, we are working on that. 
+
+For now, the existing data is stored in single csv files with each 1000 articles in zip containers. This is done mostly due to the file size upload limit of GitHub. Fortunately, pandas can read csv files directly from zip containers without extracting them first, so this is not much of an issue.
+
+### Data Set Exploration
+For the purposes of exploration, we work within the script explorer.py mostly.
+A first examination of the data set has concluded that we have a lot of False classifications, which was to be expected since most words in an article are not the answer to a specific question. 
+In the preliminary data set, we have a total of 10 491 601 False classifications and 37 479 True classifcations, giving us only 0.597 % True classifications.
+
+## Evaluation Metric
+Accuracy seems to be the intuitive answer. However, since we are not really interested in whether the classifier misses other correct answers but only want it to find at least one correct answer, another metric that is interesting for us is precision. Precision will tell us how often the answers our question answering system gives us are actually correct, which is the quality we want to optimize.
+
+## Baseline
+Because of the inbalance in classifications, the only suitable baseline for now is "always false". Once we have properly started with the feature engineering, there may be a most predictive feature which will outscore "always false", but for now it is the champion among the baselines. Precision is not really defined for the baseline "always false", since there are no False Positives or True Positives when your classifier is "always false". Accuracy however is 99.64 % on our preliminary data set. This implies that we will have to involve some kind of weighting if we want to get significant differences in evaluations of our classifiers.
+
+## Split
+We have enough data to do 10-Fold Crossvalidation, which we hold to be the most reliable system. We would also prefer it if the triples generated from one article would not all be in one split, since we want the evaluation to be independent of the articles in question. Another point to consider is that since we only have very few True classifications, they should be evenly distributed among the splits so that there is no split with no True classifications to learn from.
+
+Fortunately, all these requirements are fulfilled in skickit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
+
 
