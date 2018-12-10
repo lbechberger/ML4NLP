@@ -220,4 +220,34 @@ approximate computing time: 6-8 hours with parallelism (if no job is killed)
 The result of our retrieval method seems good. However, we noticed that we can also make use of the entity mention meta-data. For example, alternative names, date of birth, gender and other demographic information of an entity. Result will come soon :D
 
 ​
+## 09.12.2018
+### State of the Dataset 
+Current state of the dataset generate triples solely based on the retrieval algorithm from Sparql. We have total number of 172,758 triples from all news articles in *all_article_uris.csv*. However, this dataset still contains lots of noise. To clean up the dataset and get more meaningful result, several approaches are experimented. We have looked at the *altnames* attribute in the *entity layer* for both agents and patients, which are retrieved with *propbank:A0* and *propbank:A1*. The parsing algorithm in Sparql does not seem to perform well, with many false coreference to simple names (eg., John) and pronouns (eg., He or She or the man). So we gave up this approach in order not to further pollute our dataset. Another approach we proposed with group Zeta is to use their nltk-based code to work on our already existing triples dataset, and to take only the samples that are classified both by zeta's nltk-based extractor and by our extractor. Idea is to filter the samples we have so far, such that we only find realistic ones. We will discuss this approach in more details with group zeta in the next session. 
+
+### Explanation on our codes
+we have three main files for data autogeneration.
+
+1. generate_data.py
+this is to auto-generate triples from news articles stored in *all_article_uris.csv* based on Sparql command.
+
+2. generate_data.sge
+this is to run the parallelism on IKW Grid.
+
+3. entities_meta_information.py
+this is to retrieve meta-information of the entity layer such as alternative names, birth place/data, gender of a given entity, for explorative use.
+
+### Some more collaboration with group Zeta
+First, we collaborate on triples extraction as explained above. 
+
+Second, we collaborate on negative samples generation. Current idea is to substitute the true *agents* and *patients* entities with other random ones (different from the real ones) from all the agents and patients we have in our dataset, using group zeta's *negatives_generation.py*. This guarantees we can have as many negative examples as we want. However, the quality of negatives example is difficult to measure. Alternative approach is to generate negative examples with entities only from the same article, which also greatly limits the number of negative examples generated. For this, we will also need to have further discussion with group Zeta in the next session. (examples of negative examples are in *negatives.csv*)
+
+### Split up the data 
+We decided to split the dataset 50/50 such that we don't have any bias. This can be done after the discussion with group Zeta. For training, 10-fold cross validation would be considered. With the computation power of IKW Grid, this should not be a problem to run.
+
+### Evaluation
+For evaluation, we use either cohen's kappa or matthews correlation coefficient (MCC) as evaluation metrics. Baseline for both is a value of 0 in any case. 
+The reason for the choice of these two evaluation metrics is that, they consider precision and recall at the same time and they are able to offer more intuitive and onformative measurement of the binary classification performance, which range from -1 to 1. Cohen's Kappa approximate the real effect of the classifier considering random effect (using totalAccuracy - randomAccuracy). MCC delivers more informative measurement compared with other metrics such as recall and accuracy and F1 score in binary classification task, as it considers the size of the positive and negative examples. 
+
+
+
 
