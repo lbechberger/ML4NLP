@@ -228,12 +228,15 @@ Current state of the dataset generate triples solely based on the retrieval algo
 we have three main files for data autogeneration.
 
 1. generate_data.py
+
 this is to auto-generate triples from news articles stored in *all_article_uris.csv* based on Sparql command.
 
 2. generate_data.sge
+
 this is to run the parallelism on IKW Grid.
 
 3. entities_meta_information.py
+
 this is to retrieve meta-information of the entity layer such as alternative names, birth place/data, gender of a given entity, for explorative use.
 
 ### Some more collaboration with group Zeta
