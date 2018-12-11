@@ -125,3 +125,15 @@ We have enough data to do 10-Fold Crossvalidation, which we hold to be the most 
 Fortunately, all these requirements are fulfilled in scikit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
 
 
+### Week 10.12 - 16.12
+
+## Brainstorming
+Semantic "Bubble" aroung correct answer as TRUE instead of just TRUE/FALSE for "A"=="A" or "A"=="B" (word2vec) Related to synonims
+Just replace every word with vector (word2vec)
+Remove "stopword" with TF-IDF
+Check for QATriplets with Trigrams, --> Most likely trigram== Correct answer.
+Add synonym information to candidates (Word Net)
+Especially for nouns, the hierachicaly information (Word Net)
+
+
+
