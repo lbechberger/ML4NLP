@@ -35,3 +35,12 @@ In oder to run the code, please use the conda environment provided in `environme
 * [How to deliver on Machine Learning projects](https://blog.insightdatascience.com/how-to-deliver-on-machine-learning-projects-c8d82ce642b0)
 * [Scikit learn: Splitting up the data set](https://scikit-learn.org/stable/modules/cross_validation.html)
 * [Scikit learn: Evaluation metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
+* [Feature Engineering](https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/)
+
+## Useful Machine Learning Resources
+* [WordNet](https://wordnet.princeton.edu/)
+* [NLTK WordNet interface](http://www.nltk.org/howto/wordnet.html)
+* [FrameNet](https://framenet.icsi.berkeley.edu/fndrupal/)
+* [NLTK FrameNet interface](http://www.nltk.org/howto/framenet.html)
+* [Pretrained word2vec embeddings on GoogleNews](https://code.google.com/archive/p/word2vec/)
+
