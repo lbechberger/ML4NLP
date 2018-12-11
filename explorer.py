@@ -30,7 +30,7 @@ def score(classifier, split, X, y):
 
 
 
-def read_data(n=5000):
+def read_data(n=19000):
 	paths = ["merged_data/cdata_articles_{}_to_{}.csv.zip".format(findex, findex + 999) for findex in range(0, n, 1000)]
 	return pd.concat([pd.read_csv(p, index_col=0) for p in paths], ignore_index=True, sort=True)
 
