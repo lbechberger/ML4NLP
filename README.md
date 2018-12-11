@@ -150,6 +150,64 @@ This is an example for a dataset with the hyperparameters articles_per_interest 
 
 Finally, we are now able to create a list, which contains the internal categories (interests) of a user, the user representation for the classifier and the labeled examples in one row. As mentioned above, we want to save this generated dataset in a pickle-file, so that further researchers can just read it in into their code. We did not implement this yet, because we are not sure, which data is exactly necessary to save in order to split it into a training and a test dataset. But after we know more about our training and test data split and about our classifier, we will surely implement this.
 
+## Evaluation and Baselines (Week 6)
+### Dataset split
+After the creation of our dataset, reasonable evaluation metrics and baselines for our model were evaluated. In order of obtaining unbiased results in the end, these factors of final applicability were defined a priori. A special focus was put towards the fact that the classifier should not only be able to classify on the generated dataset as good as possible but generalize well on unseen data, too. An evaluation of the complete dataset would not result in some usable information regarding the latter intent. Therefore we introduce a split of our dataset into a training set, a validation set, and a test set. The training set is used for training the algorithms while the test set is used to measure the generalization of the classifier on unseen data. By using a specialized validation set, we ensure that not even the choice of hyper-parameter might leak training information into the final evaluation.  Due to the automatic generation of our dataset, we have an enormous amount of data available for training purposes. Although we will split up our entire dataset into different parts and therefore reduce the size of the individual data sets, we still have a high amount of samples sufficient for training, validation, and testing. Especially for smaller datasets, a classical cross-validation approach might be a suitable alternative in related literature. Nevertheless, given its downside regarding its complexity due to the multiples and possible costly pieces of training of the same classifier and the available amount of data, we stick to the simpler approach. In summary, a simple shuffling and splitting of the dataset into the above mentioned three parts seems to be the optimal solution for our use case.
+
+In the first run, we consider an 80% - 20% - 20% split, i. e. 80% of our dataset will be the training set, 20% the validation set and 20% the test set. That allows us to train our model still on a large size of training samples while keeping a sufficient amount of samples for validation and testing. As these splits are flexibly defined as another simply settable hyperparameter of the experiment, during the course of experiment multiple different versions might be evaluated.
+
+### Evaluation metrics:
+For evaluating the performance of our model, different applicable metrics were compared. Each of the metrics can be computed by the values of the so-called confusion matrix. This confusion matrix consists of four different numbers classifying the predictions into the four possible outcomes of True positive, False positive, False negative and True negative classified samples.
+
+![ConfusionMatrix](documentation/ConfusionMatrix.png)
+
+The following metrics can be taken into account in order to measure the performance of our model:
+
+Accuracy: 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{(TP&space;&plus;&space;TN)}{(TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{(TP&space;&plus;&space;TN)}{(TP&space;&plus;&space;TN&space;&plus;&space;FP&space;&plus;&space;FN)}" title="\frac{(TP + TN)}{(TP + TN + FP + FN)}" /></a>
+
+False Alarm Rate:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{FP}{(FP&space;&plus;&space;TN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{FP}{(FP&space;&plus;&space;TN)}" title="\frac{FP}{(FP + TN)}" /></a>
+
+False Negative Rate:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{FN}{(FN&space;&plus;&space;TP)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{FN}{(FN&space;&plus;&space;TP)}" title="\frac{FN}{(FN + TP)}" /></a>
+
+Precision:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{TP}{(TP&space;&plus;&space;FP)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{TP}{(TP&space;&plus;&space;FP)}" title="\frac{TP}{(TP + FP)}" /></a>
+
+Recall:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{TP}{(TP&space;&plus;&space;FN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{TP}{(TP&space;&plus;&space;FN)}" title="\frac{TP}{(TP + FN)}" /></a>
+
+F1-Score:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=2&space;\cdot&space;\frac{(Precision&space;*&space;Recall)}{(Precision&space;&plus;&space;Recall)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?2&space;\cdot&space;\frac{(Precision&space;*&space;Recall)}{(Precision&space;&plus;&space;Recall)}" title="2 \cdot \frac{(Precision * Recall)}{(Precision + Recall)}" /></a>
+
+Cohen's Kappa:
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\frac{(p_0&space;-&space;p_e)}{(1&space;-&space;p_e)}&space;\&space;where&space;\&space;p_0&space;=&space;Acuraccy&space;\&space;and&space;\&space;p_e&space;=&space;\frac{(TP&space;&plus;&space;FP)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(TP&space;&plus;&space;FN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;&plus;&space;\frac{(FN&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(FP&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\frac{(p_0&space;-&space;p_e)}{(1&space;-&space;p_e)}&space;\&space;where&space;\&space;p_0&space;=&space;Acuraccy&space;\&space;and&space;\&space;p_e&space;=&space;\frac{(TP&space;&plus;&space;FP)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(TP&space;&plus;&space;FN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;&plus;&space;\frac{(FN&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}&space;\cdot&space;\frac{(FP&space;&plus;&space;TN)}{(TP&space;&plus;&space;FP&space;&plus;&space;FN&space;&plus;&space;TN)}" title="\frac{(p_0 - p_e)}{(1 - p_e)} \ where \ p_0 = Acuraccy \ and \ p_e = \frac{(TP + FP)}{(TP + FP + FN + TN)} \cdot \frac{(TP + FN)}{(TP + FP + FN + TN)} + \frac{(FN + TN)}{(TP + FP + FN + TN)} \cdot \frac{(FP + TN)}{(TP + FP + FN + TN)}" /></a>
+
+In the case of a recommendation system, we are especially interested in the fact of how good we can predict interesting articles for specific users. Therefore we will look especially in detail on the accuracy, the False Alarm Rate, and the precision. The accuracy indicates the overall performance of our model and the amount of correctly classified articles. Therefore, it should be as high as possible in our approach. As we will demonstrate later, for a reliable measurement a balanced dataset is necessary.  Both other metrics are of special semantic interest. On the one hand, the False Alarm Rate indicates how many articles the system recommends to a user being not of further interest for him or her. Minimizing the value is, therefore, a crucial part of the training process. On the other hand, the precision designates how many of the articles recommended by the model are of further interest for a user. This measurement should, therefore, be maximized.
+
+### Baselines
+As simple baselines, we will use the "Always True"-Baseline (predicting all articles as interesting for a user) and the "Based on Label Frequency"-Baseline (predicting articles as interesting for a user based on the distribution of our dataset). Assuming the first dataset with a total amount of 960 samples in the training set and 120 samples in the training set as well as a label distribution between positive and negative articles of 50% - 50% the accuracy, the False Alarm Rate, and precision will result in the following values:
+
+#### "Always True"-Baseline:
+ - Accuracy: 0.5
+ - False Alarm Rate: 1
+ - Precision: 0.5
+
+#### "Based on Label Frequency"-Baseline:
+ - Acuraccy: 0.5
+ - False Alarm Rate: 0.5
+ - Precision: 0.5
+
+For a final evaluation, we will compare the results of potential classifiers in the future with these metrics to these baselines. This comparison should allow us to evaluate in an objective manner, how good our news recommendation system finally will be in predicting interesting articles for different kind of users.
+
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
