@@ -20,5 +20,5 @@ class Element:
     @staticmethod
     def convert_url(relative_url: str) -> str:
         """ Convert a relative WikiNews URL to an absolute one. """
-        return "https://en.wikinews.org{}".format(relative_url)
+        return "http://en.wikinews.org{}".format(relative_url)
 
