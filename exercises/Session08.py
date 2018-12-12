@@ -8,7 +8,6 @@ Created on Mon Dec 10 15:48:37 2018
 """
 
 import sys, pickle, time, string
-import sys
 sys.path.append(".")
 import knowledgestore.ks as ks
 import nltk
