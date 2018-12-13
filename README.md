@@ -166,3 +166,22 @@ As baselines we are planning to use *always true, always false, 50-50, label fre
 | F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
 | Matthew's correlation | 0 | 0 | 0 | 0 |
 | Cohen's kappa | 0 | 0 | 0 | 0 |
+
+
+
+## Session 7, 11.12.18
+
+
+### Remarks concerning the previous documentation part:
+
+Up tp now, we had the same amount of positive and negative examples in our dataset to train the classifier. However, the percentage of articles the user is theoretically interested in is not 50% but 3.1%. We calculated the number of 3.1% by counting the average amount of articles that belong to the user's 3 categories of interest devided by the number of all articles.
+
+
+### Features
+
+We decided to uses word embeddings as well as term frequency - inverse document frequency (tf-idf) as features.
+We are planning to train the word embeddings over all articles of Wikinews. One potential problem of training the word embeddings just of the Wikinews articles that are present until a certain date is that if newer articles are published is that contain unseen words. These unseen words are not present in the word embedding and therefore the classifier is not able to process them. However, in a real life scenario, we would assume regularly trained word embeddings. In our case, a work-around could be to replace unknown words with their categories that are denoted in the dbpedia. For example, if "Trump" was an unseen word, it would be replaced by "politician".
+Eventually, the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in *Handouts_Session_8*, the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. Articles with similar meaning would accordingly show embedding vectors that have a small cosine distance to each other.
+
+
+Another idea to extract features to use for the classifier is to compute the tf-idf for all words in the article to be classified and use the 5 words with the highest tf-idf value. When aiming to figure out if a new article is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum for a uninteresting article would be small.
