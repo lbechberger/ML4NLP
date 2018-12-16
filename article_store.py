@@ -31,6 +31,19 @@ class ArticleCache():
                 yield cache[uri]
 
 
+    def generate_articles_and_uris(self, verbose=False):
+        with shelve.open(self.cache_file) as cache:
+            for num, uri in enumerate(self.articles):
+                if verbose:
+                    print('Generating Article #'+str(num))
+                if uri not in cache:
+                    try:
+                        cache[uri] = ks.run_files_query(uri)
+                    except ConnectionError:
+                        continue
+                yield cache[uri], uri
+
+
     def cache_all_articles(self):
         with shelve.open(self.cache_file) as cache:
             num = len(cache)

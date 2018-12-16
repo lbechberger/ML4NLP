@@ -12,12 +12,22 @@ def main():
     article_cache = ArticleCache()
     entity_set = EntitySet()
 
-    for article in article_cache.generate_uris(verbose=True):
-        mentions = ks.run_resource_query(article, 'ks:hasMention')
-        for mention in mentions:
-            tmp = get_entity(article, mention, entity_set)
-            if tmp:
-                print(tmp)
+    for article, uri in article_cache.generate_articles_and_uris(verbose=True):
+        mentions = ks.run_resource_query(uri, 'ks:hasMention')
+        tmp = list(filter(lambda x: x is not None, [get_entity(article, mention, entity_set) for mention in mentions]))
+        print(tmp)
+    import sys; sys.exit(1)
+
+
+
+def main2():
+    article_cache = ArticleCache()
+    entity_set = EntitySet()
+
+    for article, uri in article_cache.generate_articles_and_uris(verbose=True):
+        mentions = ks.run_resource_query(uri, 'ks:hasMention')
+        tmp = list(filter(lambda x: x is not None, [get_entity(article, mention, entity_set) for mention in mentions]))
+        print(tmp)
     import sys; sys.exit(1)
 
     # article_cache.cache_all_articles()
@@ -28,25 +38,25 @@ def main():
     uri = "http://en.wikinews.org/wiki/SEALs_say_US_officer's_cover-up_was_reported_by_fake_SEAL"
     mentions = ks.run_resource_query(uri, 'ks:hasMention')
     article = article_cache[uri]
-    # print("EVENTS:")
+    # print('EVENTS:')
     # for mention in mentions:
     #     entity = get_event(article, mention)
     #     if entity:
     #         print(entity)
     entities = [get_entity(article, mention, entity_set) for mention in mentions if get_entity(article, mention, entity_set)]
-    print("ENTITIES:")
+    print('ENTITIES:')
     for mention in mentions:
         entity = get_entity(article, mention, entity_set)
         if entity:
             print(entity)
 
-        # positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
-        # print("Going for:", article[positions[0]:positions[1]]) #TODO look these up in a structured knowledgebase, creating a gazetteer?
+        # positions = [int(i) for i in mention.split('#')[1].split('=')[1].split(',')]
+        # print('Going for:', article[positions[0]:positions[1]]) #TODO look these up in a structured knowledgebase, creating a gazetteer?
         # print(ks.run_mention_query(mention, 'nwr:pred')) #interesting, for simple verbs&nouns this is the stem
         # print(get_e(mention))
 
 def get_word_and_sentence(article, mention):
-    positions = [int(i) for i in mention.split("#")[1].split("=")[1].split(",")]
+    positions = [int(i) for i in mention.split('#')[1].split('=')[1].split(',')]
     sentences_and_positions = list(zip(nltk.sent_tokenize(article), list(np.cumsum(np.array([len(i) for i in nltk.sent_tokenize(article)])))))
     try:
         correct_sent = list(filter(lambda x: x[1] > positions[0], sentences_and_positions))[0][0]
@@ -57,20 +67,20 @@ def get_word_and_sentence(article, mention):
 
 def get_event(article, mention):
     tmp = get_e(mention)
-    if tmp and "ev" in tmp.split("#")[-1]:
+    if tmp and 'ev' in tmp.split('#')[-1]:
         word, sent = get_word_and_sentence(article, mention)
         if sent:
-            return "Event:", word, tmp, sent
+            return 'Event:', word, tmp, sent
 
 
 def get_entity(article, mention, entity_set):
     tmp = get_e(mention)
-    if tmp and "http://dbpedia.org/resource/" in tmp:
+    if tmp and 'http://dbpedia.org/resource/' in tmp:
         word, sent = get_word_and_sentence(article, mention)
         stem = ks.run_mention_query(mention, 'nwr:pred')
-        additional_info = entity_set[tmp]
+        # additional_info = entity_set[tmp]
         if sent:
-            return "Entity:", stem or word, tmp.replace("http://dbpedia.org/resource/", ""), sent, additional_info
+            return {'stem': stem, 'word': word, 'dbpedia': tmp.replace('http://dbpedia.org/resource/', ''), 'sent': sent, 'info': additional_info}
 
 
 
@@ -94,7 +104,7 @@ class EntitySet():
     def get_entity_info(self, entity):
         entity_info = {}
         entity = entity.replace('http://dbpedia.org/resource/', 'dbpedia:')
-        entity_info['types'] = ks2.run_dictless_query("SELECT ?l WHERE {"+entity+" rdf:type ?l}") \
+        entity_info['types'] = ks2.run_dictless_query('SELECT ?l WHERE {'+entity+' rdf:type ?l}') \
             + ks2.run_dictless_query('SELECT ?l WHERE {'+entity+' dc:description ?l }', self.prefix_dict)
         if 'http://dbpedia.org/ontology/Person' in entity_info['types']:
             entity_info = {**entity_info, **self.get_person_entity_info(entity)}
@@ -134,8 +144,8 @@ class EntitySet():
 
 
 def get_e(mention):
-    """get entities/events given a mention"""
-    res = ks.run_sparql_query("SELECT ?e WHERE {?e gaf:denotedBy <" + mention + ">}")
+    '''get entities/events given a mention'''
+    res = ks.run_sparql_query('SELECT ?e WHERE {?e gaf:denotedBy <' + mention + '>}')
     return None if not res else res[0]['e']
 
 
