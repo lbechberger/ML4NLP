@@ -125,9 +125,9 @@ We have enough data to do 10-Fold Crossvalidation, which we hold to be the most 
 Fortunately, all these requirements are fulfilled in scikit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
 
 
-### Week 10.12 - 16.12
+## Week 10.12 - 16.12
 
-## Current state of the data
+### Current state of the data
 
 We now have generated the data from all 19 000 articles.
 The following features are already present in our data set as of now: 
@@ -141,7 +141,7 @@ classification (bool) - whether the word under consideration is the correct answ
 
 Note that we do not only want to predict the correct word that completes the <agent, ???, patient> triple, but also its correct occurence - therefore the word "Trump" as the President of the United States may be classified as true in one occurence, but as false in another occurence in the article.
 
-## Feature Extraction
+### Feature Extraction
 
 It is clear that we have to look at the word under consideration within the context of the words surrounding it - the only question is how big of a neighborhood we want to take into account. A preliminary compromise seems to be looking at the word under consideration only within the context of the sentence it is in - in most of the cases, this is where the critical information is going to be stored. 
 Our idea is therefore to extract new features mainly from all the other words in the sentence, filtered perhaps for stopwords using TF-IDF. Since we will further extract features from those surrounding words, a limitation to a small number seems necessary to limit computation time. 
@@ -153,13 +153,13 @@ One possible approach to solving this problem would be the enhancement of the su
 The other features we will extract will also focus mostly on the other words in the sentence that the word under consideration is in.
 We can distinguish between those that work on a syntactic level and those on a semantic level. In general we will focus on features that target positive examples, since we have so many false classifications that our base assumption is always going to be "False", unless  the feature values are deemed decisive by the classifier.
 
-## Syntactic Features
+### Syntactic Features
 
 Possibly one of the most predictive features will be the position of the word under consideration in relation the nearest occurence of the agent and the patient in the text. This alone will be enough to predict a lot of answers, since in the English language the most common syntax is "Subject Predicate Object", where Subject corresponds to agent, Predicate to relation and Object to patient
 Other syntactic features that will seek to extract from (if possible) all the words in the sentence are POS and NER as well as simple grammatical features (tense, plural/singular, gender).
 
 
-## Semantic Features
+### Semantic Features
 
 We are very fascinated by the word2vec model and still considering how to best use its power to extract semantic relations between the words we are looking at. Possibly we could use it also for synonym detection and detecting hierarchical relations, but that is still subject to much experimentation. For now we will focus at first focus on the syntactic features and see how far we can get with this.
 
