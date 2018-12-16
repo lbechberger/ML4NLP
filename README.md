@@ -245,6 +245,7 @@ Other methods still being worked on is a script that checks for entities using t
 
 
 We did also re-decide how we're saving our dataset, to make it more efficient: Our csv-file now only contains the minimal necessary information: The article URI, the positions (in terms of indices) of the agent, predicate, and patient, as well as the set this sample belongs to - for example
+
 | URI | Agent | Predicate | Patient | Set |
 | --- | --- | --- | --- | --- |
 | http://en.wikinews.org/wiki/Zoo_elephants_live_shorter... | [1:10] | [23:27] | [50: 57] | train |
@@ -267,10 +268,10 @@ The function to make negative samples from positive samples is currently not cac
 
 ### Features
 
-`A note on one of Lucas' Questions - I do not understand what is meant by "*do they target positive or negative examples*" - Everything targets positive and negatives examples at once by definition - Something that helps finding positive examples also helps distinguishing it from negative examples.
+*A note on one of Lucas' Questions - I do not understand what is meant by "do they target positive or negative examples" - Everything targets positive and negatives examples at once by definition - Something that helps finding positive examples also helps distinguishing it from negative examples.
 A feature targeting positive examples without targeting negative examples would be, as far as I understand it, something like 'is a word'. Every positive example is a word, so it does target positive samples. As everything that is not a word is a negative example, it doesn't target negative examples. But, as can be seen here, such features are obviously useless.
-A feature that 'targets positive examples' could, for example, be 'is a verb' (if it's looked for relations/predicates). But while this feature targets positive examples (verbs are more likely to be a relation), it (via the law of excluded middle) also targets negative examples, as non-verbs are *less* likely to be a relation.
-So, all our features target positive examples as much as they target negative examples - their value should just be statistically different for positive and negative ones.`
+A feature that 'targets positive examples' could, for example, be 'is a verb' (if it's looked for relations/predicates). But while this feature targets positive examples (verbs are more likely to be a relation), it (via the law of excluded middle) also targets negative examples, as non-verbs are _less_ likely to be a relation.
+So, all our features target positive examples as much as they target negative examples - their value should just be statistically different for positive and negative ones.*
 
 *Note that we will often talk about Agent and Predicate as if they are given, and the Patient as if it was searched for, but this is only meant exemplary and with no loss of generality.*
 
@@ -292,7 +293,7 @@ This list can, of course, be arbitrarily extended to include further, in part le
 * Another idea is to run a dependency-parser[1] on the sentence containing the subject and predicate, saving the start/end positions of the parts of the sentence that are the daughters and parents of the agent/predicate/patient, *with the hope that, for example, the patient is a daughter of the predicate*.
 * Feature-Engineering using word2vec: Parsing the sentences containing agent, predicate and patient, and then using the word2vec-representation of subject, verb, and possible objects in this sentence (sums in the case of multi-word-expressions), as well as the word2vec-representations of agent, predicate, and patient *with the hope that, for example, the patient's vector-representation will be similar to that of the object of the sentence containing the predicate*.
 * Another feature not yet included is the fact if predicate and agent / predicate and patient match in terms of person, gender, case,  singular/plural, ... - *with the hope that words that do not match grammatically are less likely to be correct answers* (this will be a boolean for each feature).
-* Further, annotations from the knowledgestore (and also possibly from WordNet) could be used - some predicates can only be performed by 'agents', so it makes sense to use such information as well. It also makes sense to use super-categories of words as features (again, either using dbpedia (trump -> politician), or using WordNet/FrameNet. 
+* Further, annotations from the knowledgestore (and also possibly from WordNet) could be used - some predicates can only be performed by 'agents', so it makes sense to use such information as well. It also makes sense to use super-categories of words as features (again, either using dbpedia (trump -> politician), or using WordNet/FrameNet.
 
 
 #### Complex version
