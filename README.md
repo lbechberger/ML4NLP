@@ -201,6 +201,21 @@ Accuracy and Cohen’s Kappa seem like suitable metrics for our case. The accura
 We use the 50-50 baseline. We still do not have the final data to determine the evaluation metric.
 
 
+## Week 8
+
+### 8.1 Feature Extraction
+
+#### 8.1.1 Viable Feature Candidates
+1. **Term Frequency - Inverse Document Frequency (TF-IDF):** This metric is useful for finding the most important words in an article and weed out the less important ones like stop words or typical filler words. This might be beneficial to our search for potential candidate answers.
+2. **N-grams:** [Comment for Bhaskar: I changed this bit from what you wrote quite significantly. That's because while writing this I realized that creating a list of subject-predicate-object trigrams would not make sense given the fact that we lack a place to use them. Maybe what I thought on the topic makes sense in your opinion, too!] This method, particularly trigrams, can be useful to gather information regarding frequency of subject-predicate-object form statements that pose viable answer candidates. By gathering information on whether or not an entry in our data set corresponds to a trigram in the source text would provide information about the likelihood of trigrams providing answers.
+3. **Word Vectors:** We can use word embeddings and score elements close to the agent and patient as candidate answers instead of directly disregarding them as wrong. Grouping together semantically related elements like "Trump, America, President" would increase the amount of viable candidates. We are planning to use word2vec (https://code.google.com/archive/p/word2vec/) based on the Google News dataset.
+4. **Word Net:** This feature can help us with synonym information for candidates - for example "Trump", "President of the United States", "Republican Incumbent" - as well as hierarchical information for nouns - for example "America" -> "President" -> "Donald Trump". These could provide useful features in classifying the right answer.
+
+#### 8.1.2 Coreference Resolution
+Coreference resolution poses a problem when trying to find answer candidates in raw text. "Trump is the current president of the USA. He also purchased the 'New Jersey Generals' American football team" contains the answer to the question "Who purchased the 'New Jersey Generals' American football team. "He", however, is not the exhaustively correct answer; it has to be resolved to "Donald Trump" before returning it to the questioner. Our data is currently not impacted by unresolved pronouns but they might pose a problem when extracting further features. Thankfully, the Knowledgestore has a built-in solution for this. While it is not perfectly accurate, it will have to do for our purposes.
+
+
+
 
 # References
 [1] Dat Quoc Nguyen, Dai Quoc Nguyen, Dang Duc Pham and Son Bao Pham. RDRPOSTagger: A Ripple Down Rules-based Part-Of-Speech Tagger. In Proceedings of the Demonstrations at the 14th Conference of the European Chapter of the Association for Computational Linguistics, EACL 2014, pp. 17-20, 2014.
