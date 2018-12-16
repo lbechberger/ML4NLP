@@ -127,13 +127,42 @@ Fortunately, all these requirements are fulfilled in scikit-learn's StratifiedSh
 
 ### Week 10.12 - 16.12
 
-## Brainstorming
-Semantic "Bubble" aroung correct answer as TRUE instead of just TRUE/FALSE for "A"=="A" or "A"=="B" (word2vec) Related to synonims
-Just replace every word with vector (word2vec)
-Remove "stopword" with TF-IDF
-Check for QATriplets with Trigrams, --> Most likely trigram== Correct answer.
-Add synonym information to candidates (Word Net)
-Especially for nouns, the hierachicaly information (Word Net)
+## Current state of the data
+
+We now have generated the data from all 19 000 articles.
+The following features are already present in our data set as of now: 
+
+article_uri (string) - the url where the full text of the article can be obtained
+agent (string) - the word(s) that form the first part of the question, taken from the full text
+patient (string) - the word(s) that form the second part of the question, taken from the full text
+word_start_char (int) - the position in the full text where the word under consideration can be obtained
+word_end_char (int) - the end position of the word under consideration
+classification (bool) - whether the word under consideration is the correct answer to the question formed by agent and patient or not.
+
+Note that we do not only want to predict the correct word that completes the <agent, ???, patient> triple, but also its correct occurence - therefore the word "Trump" as the President of the United States may be classified as true in one occurence, but as false in another occurence in the article.
+
+## Feature Extraction
+
+It is clear that we have to look at the word under consideration within the context of the words surrounding it - the only question is how big of a neighborhood we want to take into account. A preliminary compromise seems to be looking at the word under consideration only within the context of the sentence it is in - in most of the cases, this is where the critical information is going to be stored. 
+Our idea is therefore to extract new features mainly from all the other words in the sentence, filtered perhaps for stopwords using TF-IDF. Since we will further extract features from those surrounding words, a limitation to a small number seems necessary to limit computation time. 
+
+One possible problem with this approach, however, is the loss of information from personal pronouns. For example if we have in an article the sentences "Trump stares angrily at Mueller. He is investigating the president." and the word under consideration is "investigating", agent "Mueller" and patient "Trump", then "investigating" is obviously the correct answer and the completed triple would be <Mueller, investigating, Trump>. However, by looking only at the sentence that "investigating" is in, not even an human could infer what was meant without outside knowledge - for a classifier it would be virtually impossible. 
+
+One possible approach to solving this problem would be the enhancement of the surrounding words using coreference resolution (to get the true meaning of personal pronouns like "him"). Another would be adding synonyms (wordnet) and dbpedia knowledge relations to each word in the sentences to get the true meaning of placeholders like "the president". This will certainly one of the tasks we will have to tackle in the weeks to come.
+
+The other features we will extract will also focus mostly on the other words in the sentence that the word under consideration is in.
+We can distinguish between those that work on a syntactic level and those on a semantic level. In general we will focus on features that target positive examples, since we have so many false classifications that our base assumption is always going to be "False", unless  the feature values are deemed decisive by the classifier.
+
+## Syntactic Features
+
+Possibly one of the most predictive features will be the position of the word under consideration in relation the nearest occurence of the agent and the patient in the text. This alone will be enough to predict a lot of answers, since in the English language the most common syntax is "Subject Predicate Object", where Subject corresponds to agent, Predicate to relation and Object to patient
+Other syntactic features that will seek to extract from (if possible) all the words in the sentence are POS and NER as well as simple grammatical features (tense, plural/singular, gender).
+
+
+## Semantic Features
+
+We are very fascinated by the word2vec model and still considering how to best use its power to extract semantic relations between the words we are looking at. Possibly we could use it also for synonym detection and detecting hierarchical relations, but that is still subject to much experimentation. For now we will focus at first focus on the syntactic features and see how far we can get with this.
+
 
 
 
