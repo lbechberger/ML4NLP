@@ -1,0 +1,29 @@
+ensure that we see new context in validation & test-set
+
+Trying to throw away all stop-words etc (using tf-idf), making sentences simpler, stemming them, ... , such that in the end from "it was reported that bob was eating steak" its only "bob eat steak" left, such that then we can use an n-gram-model (yes, model) to tell what the probability of answer candidates for "bob eats <?>" is
+
+feature-engineering using word2vec: den satz teilweise parsen, und dann als input die word2vec-represenation von subjekt, von verb, und von objekt reinpacken (oder sogar je 2, eins mit dem raw word, eins mit allen modifiern)
+
+...ne smarte möglichkeit dort-wo-es-sinnvoll ist n-grams rauszuziehen, (donald trump), (son of a bitch), und da wo es nicht sinnvoll ist bei 1-grams zu bleiben
+
+maltparser auf dem gesamten corpus laufen lassen, und von jedem satz dann die subject-verb-object's rausziehen
+
+feature: is the candidate relation in between the subject and the object (position-wise)
+
+the knowledgestore probably already has most pronouns resolved, so we can just go for sentence-level recognition, and if the result is a pronoun, we just query it with the knowlegestore API to get what this pronoun refers to
+
+lucas hat ein "better sparql queries" skript, das das ganze schneller ausführt!
+
+
+....simple and stupid version of inputs: simply position & POS (we have subject-predicate-object, and we assume the predicate is a verb which is in between subject and object)
+....the result of dependency-parsing as input? for example the positions of the parts of the text that are daughters/dependencies of the subject/the predicate/the object?
+....really complex version of inputs: we could go for every single word in the article as answer-candidate (such that we have subject-predicate-object, for example 'john stole the cheese'), and go for a textual-entailment-ANN for every single answer-candidate and every single sentence in the article, and the one which has the highest score on any of these sentences is the correct answer
+
+
+
+
+TODO 
+a) write a script that sanity-checks with nltk (/spacey/maltparser,...)
+b) write a (faster) script that checks the entities from knowledgestore
+c) save the dataset more efficiently (agent	article_uri	patient	predicate / [1:10]	http://en.wikinews.org/wiki/Zoo_elephants_live_shorter_lives_than_their_wild_counterparts,_report_warns	[25:28]	[22:25])
+d) write a function that on-the-fly generates negatives from the positives (such that we have a 16-16 minibatch that takes 16 positive samples and makes them negative (with parameters! take word from another article, take another POS maybe, ...?)

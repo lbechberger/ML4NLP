@@ -1,0 +1,27 @@
+Which features do you extract? What kind of values can they have?
+Why do you think they can be useful? Do they target positive or
+negative examples?
+
+A note on one of Lucas' Questions - I do not understand what is meant by "do they target positive or negative examples" - Everything targets positive and negatives examples at once by definition - Something that helps finding positive examples also helps distinguishing it from negative examples.
+A feature targeting positive examples without targeting negative examples would be, as far as I understand it, something like 'is a word'. Every positive example is a word, so it does target positive samples. As everything that is not a word is a negative example, it doesn't target negative examples. But, as can be seen here, such features are obviously useless. 
+A feature that 'targets positive examples' could, for example, be 'is a verb' (if it's looked for relations/predicates). But while this feature targets positive examples (verbs are more likely to be a relation), it (via the law of excluded middle) also targets negative examples, as non-verbs are *less* likely to be a relation. 
+So, all our features target positive examples as much as they target negative examples - their value should just be statistically different for positive and negative ones.
+
+
+Current state of the data, our ideas there ("half implemented")
+-> couldnt finish it due to the really really unstable knowledgestore-API (was down most of the time when we had time to work on the task)
+
+
+article_uri (string) - the url where the full text of the article can be obtained agent (string) - the word(s) that form the first part of the question, taken from the full text patient (string) - the word(s) that form the second part of the question, taken from the full text word_start_char (int) - the position in the full text where the word under consideration can be obtained word_end_char (int) - the end position of the word under consideration classification (bool) - whether the word under consideration is the correct answer to the question formed by agent and patient or not.
+
+Note that we do not only want to predict the correct word that completes the <agent, ???, patient> triple, but also its correct occurence - therefore the word "Trump" as the President of the United States may be classified as true in one occurence, but as false in another occurence in the article.
+
+
+
+-> Problem of unseen word2vec-words may be resolved by using the dbpedia-entries for that (replace 'Merkel' by 'Politician')
+-> 5 Highest tf-idf words, right?
+-o It is clear that we have to look at the word under consideration within the context of the words surrounding it - the only question is how big of a neighborhood we want to take into account.
+-> yes we want to remove stopwords using tf-idf, however we must go for ablation studies with that, as it removes semantic meaning (eg. 'not'). For the same reason, if we decided for sentence vectors in the future, we would try to use a LSTM for sentence vector generation instead of summarization, as it is crucial to understand the sentence as complete as possible when trying to answer questions about it.
+-o Our idea is therefore to extract new features mainly from all the other words in the sentence, filtered perhaps for stopwords using TF-IDF.
+-> our solution for pronouns (also estimate how many pronouns are in the text) -> coreference resolution, using dbpedia
+-> another feature is if predicate and subject / predicate and object match in person, gender, singular/plural, ...). Annotations from the knowledgestore (also possibly wordnet) could also be used - some predicates can only be performed by 'agents', so it makes sense to use such information as well. It also makes sense to use super-categories of words as features (again, either using dbpedia (trump -> politician), or using wordnet/framenet.

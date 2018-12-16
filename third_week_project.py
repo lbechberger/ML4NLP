@@ -1,7 +1,7 @@
 import knowledgestore.ks as ks
 import nltk, re
 from nltk.sem.relextract import extract_rels, rtuple
-import pandas as pd 
+import pandas as pd
 
 ## NER
 # 1. 'ORG'
@@ -22,7 +22,7 @@ def get_sentences(text):
     sentences = [nltk.word_tokenize(sent) for sent in sentences]
     sentences = [nltk.pos_tag(sent) for sent in sentences]
     # print(len(sentences), "sentences")
-    return sentences	
+    return sentences
 
 def per_of_gpe(pos_tags):
     for i, sent in enumerate(pos_tags):
