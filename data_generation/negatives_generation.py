@@ -48,7 +48,7 @@ def smartly_generate_negatives(event_pos):
     and substituting one of the entities in the triple with another non-matching one from the text."""
     actual_agent = agents[event_pos]
     actual_patient = patients[event_pos]
-    article_id_pos = article_ids[event_pos] - 1
+    article_id_pos = int(article_ids[event_pos]) - 1
     lower_bound = article_ranges[article_id_pos][0]
     upper_bound = article_ranges[article_id_pos][1]
     mode = random.randint(1,2)
@@ -84,15 +84,15 @@ def smartly_generate_negatives(event_pos):
 
 if __name__ == '__main__':
     # sets integer determining amount of negatives generated to a value determined by the user
-    # if user omits a value, it is automatically set to 10
+    # if user omits a value, it is automatically set to 2
     if len(sys.argv) != 1:
         generation_factor = sys.argv[1]
     else:
-        generation_factor = 10
+        generation_factor = 2
     
     # read in the information from the csv file
-    with open("demo_triples.csv") as csvDataFile:
-        data_file = csv.reader(csvDataFile, delimiter=';')
+    with open("demo_triples.csv") as csv_data_file:
+        data_file = csv.reader(csv_data_file, delimiter=';')
         index = 0
         temp_lower_bound = 0
         temp_upper_bound = 0
@@ -102,21 +102,23 @@ if __name__ == '__main__':
             # keep track of article ranges
             if index != 0:
                 if row[1] != article_ids[index - 1]:
-                        temp_upper_bound = index - 1
-                        article_ranges.append([temp_lower_bound, temp_upper_bound])
-                        temp_lower_bound = index
+                    temp_upper_bound = index - 1
+                    article_ranges.append([temp_lower_bound, temp_upper_bound])
+                    temp_lower_bound = index
             uris.append(row[2])
             events.append(row[3])
             agents.append(row[4])
             predicates.append(row[5])
             patients.append(row[6])
             index += 1
+        temp_upper_bound = index - 1
+        article_ranges.append([temp_lower_bound, temp_upper_bound])
     
     # start writing a new csv file
-    with open("negatives.csv", "w") as csvDataFile:
-        writer = csv.DictWriter(csvDataFile, fieldnames=fieldnames)
+    with open("negatives.csv", "w") as csv_data_file:
+        writer = csv.DictWriter(csv_data_file, fieldnames=fieldnames)
         writer.writeheader()
         # for each positive, generate n negatives, where n is determined by the user (10 by default, should the user not care)
         for event_pos in range(len(events)):
             for n in range(int(generation_factor)):
-                writer.writerow(naively_generate_negatives(event_pos))
+                writer.writerow(smartly_generate_negatives(event_pos))
