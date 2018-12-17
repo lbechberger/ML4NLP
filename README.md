@@ -238,6 +238,15 @@ number of negative examples: 450.000*0.62= 279.000
 |Recall              |  1              |  0             |  0.5           |  0.35          |
 |Cohen’s Kappa       |  0              |  0             |  -0.19         |  -0.022        |
 
+## Documentation Part 7
+
+#### Feature Selection: 
+We are going to extract the main keywords of a given article through TF-IDF. We are going to save the most relevant (maybe 5) keywords as potential user preferences and annotate them with a weight according to whether the word appears merely in liked articles, merely in disliked articles or in both. Also, the TF-IDF score may influence the weight of the keyword. Extracting this kind of feature may be useful, because it tells the classifier something about the user’s preferences according to the keywords in the liked and disliked articles. Having this, new articles can be easily categorized in rather liked or rather disliked by the according user. 
+
+Furthermore, we thought about using WordNet and extracting synonyms, close hyponyms and close hypernyms of the extracted keywords as even more potential keywords with similar weights ascribed to them (e.g. ‘Earthquake’ is a keyword extracted through TF-IDF, a hypernym may be ‘natural disaster’).  Also, we thought about using dbpnet to look up the class a keyword is an Entity of (e.g. ‘Trump’ is an Entity of ‘Politician’) and use the class as another keyword. We are not quite sure about how both of these ideas will work out, but they are worth to think about more in the next week.
+
+As a second feature, we want to use word embeddings and especially word2vec to calculate the ‘semantic value’ of each word and subsequently of the whole article. We are going to use the word2vec provided by Google (see https://code.google.com/archive/p/word2vec/ ), which takes a text as an input and produces word vectors as an output. These vectors can then be represented in a semantic vector-space. By adding all the values of the word vectors and taking the mean, we yield a (rather abstract but potentially useful) semantic vector of the whole article. We can use these vectors to calculate the semantic similarity of different articles by taking the cosine distance. We can use these features for positive and negative examples equally and it is helpful, because it helps to classify new articles efficiently. 
+
 
 ## Sources: 
 [1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
