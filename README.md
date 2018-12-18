@@ -237,7 +237,7 @@ The reason for the choice of these two evaluation metrics is that, they consider
 ### State of the Dataset
 
 First off, we did not collaborate with group zeta on our dataset, as our approach for generating negatives differs vastly from theirs.
-Second, as our dataset is still very noisy, we are still working on finding effective mechanisms to tackle that noise. We've implemented a second way to gain the dataset using NLTK, as well as using a custom regular grammar, leading to different datasets, and will use as final dataset the set union of those datasets, which (hopefully) contains less noise than the individual ones.
+Second, as our dataset is still very noisy, we are still working on finding effective mechanisms to tackle that noise. We've implemented a second way to gain the dataset using NLTK, as well as using a custom regular grammar, leading to different datasets, and will use as final dataset the set intersection of those datasets, which (hopefully) contains less noise than the individual ones.
 
 Other methods still being worked on is a script that checks for entities using the knowledgestore, that extracts information from these. As, however, the knowledgestore-API was really unreliable in the past week (the server was down almost all of the time when we worked on this task), we unfortunately could not finish this.
 
@@ -265,6 +265,8 @@ Another advantage is that we can modify the ```make_negative``` on demand. Conce
 When doing the inference step of our learner, it is of course the best approach to go through every single word in the text as candidate answer, and simply returning the one yielding the highest value.
 
 The function to make negative samples from positive samples is currently not cached and may slow down the learning process, but should that happen, it will simply be run in a separate pre-fetching process, or implement a cache around it as well.
+
+Another thing worth mentioning is, that the negative generation process must be deterministic. It is important to pay attention to use random seeds and to ensure (using corresponding UnitTests) that the negatives are generated deterministically, no matter what classifier is used.
 
 ### Features
 
