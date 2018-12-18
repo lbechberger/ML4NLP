@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from modules.data import DataSet
 from src.create_dataset import load_categories
 from src import PATH_CONFIG, PATH_RAW_DATA, PATH_DATASETS
@@ -19,7 +17,7 @@ if __name__ == "__main__":
         PATH_DATASETS.mkdir()
 
     # Load all available categories from cache or web and filter for those with at least MIN_ARTICLES
-    interests = load_categories(PATH_RAW_DATA / "articles.pickle", MIN_ARTICLES)
+    interests = load_categories(PATH_RAW_DATA / "articles.pickle", MIN_ARTICLES, num_threads=4)
 
     # Load the dataset parameter from the config file and generate the data with a specific seed
     data = DataSet.Parameter.from_json(PATH_CONFIG / "dataset.json").generate(

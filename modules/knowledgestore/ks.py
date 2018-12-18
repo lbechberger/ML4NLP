@@ -100,7 +100,7 @@ def run_files_query(resource_uri):
     Retrieves the text of the news article stored under the given resource URI. Returns empty string for invalid resource URI.
     """
     p = {"id":"<{0}>".format(resource_uri)}
-    req = requests.get('https://knowledgestore2.fbk.eu/nwr/wikinews/files', params=p)
+    req = requests.get('http://knowledgestore2.fbk.eu/nwr/wikinews/files', params=p, timeout=5)
     try:
         req.json()
         return ''

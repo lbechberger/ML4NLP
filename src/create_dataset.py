@@ -28,9 +28,15 @@ def load_categories(
     """ Load the data either from cache or online. """
 
     if not cache_file.exists():
-        print("Generating articles for KnowledgeStore")
-        with Pool(num_threads) as pool:
-            articles = pool.map(create_article, ks.get_all_resource_uris())
+        print("Loading URLs...")
+        urls = ks.get_all_resource_uris()
+        print("Generating articles for KnowledgeStore from {} urls...".format(len(urls)))
+        if num_threads > 1:
+            with Pool(num_threads) as pool:
+                articles = pool.map(create_article, urls)
+        else:
+            articles = [create_article(url) for url in urls]
+
         with open(cache_file, "wb") as file:
             pickle.dump(articles, file)
     else:

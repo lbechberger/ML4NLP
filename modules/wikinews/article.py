@@ -71,12 +71,11 @@ class Article(Element):
         categories = page["categories"] if "categories" in page else []
 
         url = "http://en.wikinews.org{}".format(url)
-        
         # Get the text
         text = ks.run_files_query(url)
 
         # Get the mentions
-        mentions = mentions = [
+        mentions = [
             (int(start), int(end))
             for start, end in (
                 mention[mention.rfind("#") + 6 :].split(",")
@@ -89,5 +88,5 @@ class Article(Element):
             page["title"],
             text,
             [category["title"][9:] for category in categories],
-            mentions,
+            mentions
         )

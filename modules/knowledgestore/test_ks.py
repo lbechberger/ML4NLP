@@ -123,4 +123,4 @@ class TestKS(unittest.TestCase):
     def test_get_applicable_news_categories_mismatch(self):
         self.assertEquals(0, len(ks.get_applicable_news_categories("http://en.wikinews.org/wiki/Mexican_president_defends_emigration", ["Sports"])))
         
-unittest.main()
+#unittest.main()
