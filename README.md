@@ -18,6 +18,8 @@ In oder to run the code, please use the conda environment provided in `environme
 * [More condensed SPAQRL reference](https://www.dajobe.org/2005/04-sparql/SPARQLreference-1.8.pdf)
 * [Some slides on SPAQRL](http://www.iro.umontreal.ca/~lapalme/ift6281/sparql-1_1-cheat-sheet.pdf)
 * [Wikibook on SPARQL](https://en.wikibooks.org/wiki/SPARQL)
+* [Installing Docker](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04)
+* [KnwoledgeStore Docker](https://github.com/dkmfbk/knowledgestore-docker)
 
 ## Development Environment Links
 * [Spyder IDE](https://www.spyder-ide.org/)
