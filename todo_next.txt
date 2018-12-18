@@ -20,6 +20,8 @@ lucas hat ein "better sparql queries" skript, das das ganze schneller ausführt!
 ....really complex version of inputs: we could go for every single word in the article as answer-candidate (such that we have subject-predicate-object, for example 'john stole the cheese'), and go for a textual-entailment-ANN for every single answer-candidate and every single sentence in the article, and the one which has the highest score on any of these sentences is the correct answer
 
 
+preprocessing! pronoun resolution etc!
+
 
 
 TODO 
@@ -27,3 +29,24 @@ a) write a script that sanity-checks with nltk (/spacey/maltparser,...)
 b) write a (faster) script that checks the entities from knowledgestore
 c) save the dataset more efficiently (agent	article_uri	patient	predicate / [1:10]	http://en.wikinews.org/wiki/Zoo_elephants_live_shorter_lives_than_their_wild_counterparts,_report_warns	[25:28]	[22:25])
 d) write a function that on-the-fly generates negatives from the positives (such that we have a 16-16 minibatch that takes 16 positive samples and makes them negative (with parameters! take word from another article, take another POS maybe, ...?)
+
+
+
+
+
+------------------------- 18.12.2018 ----------------------------
+
+question type (Lexical answer type)
+semantic role labeling  (https://image.slidesharecdn.com/02semanticrolelabellingjm-160120155826/95/semantic-role-labeling-8-638.jpg?cb=1453305885)
+
+look up if the agent of predicates must be a human on framenet (if anywhere, then probably there)
+named entity recognition (what type of it, location)
+Cannot use anything we used to generate the dataset as feature
+on the features where it went wrong, we can check for statistical patterns and add ones finding these as features
+wordnet-distances of agent&patient (...am besten dependent on the predicate)
+if agent/patient fulfills (or is a respective subtype of) what, according to framenet, is supposed to be the type of the agent/patient of a predicate
+
+
+tf_idf to generate the dataset? such that only relevant triples are actually used (not something like 'he did it')
+
+don't generate stopwords as negatives as a parameter
