@@ -50,3 +50,5 @@ if agent/patient fulfills (or is a respective subtype of) what, according to fra
 tf_idf to generate the dataset? such that only relevant triples are actually used (not something like 'he did it')
 
 don't generate stopwords as negatives as a parameter
+
+wissen wann man wordnet und wann dbpedia nutzen soll (trump ist auf dbpedia, nichta uf wordnet)

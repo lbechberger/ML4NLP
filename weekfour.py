@@ -82,7 +82,7 @@ def get_entity(article, mention, entity_set):
     if tmp and 'http://dbpedia.org/resource/' in tmp:
         word, sent = get_word_and_sentence(article, mention)
         stem = ks.run_mention_query(mention, 'nwr:pred')
-        # additional_info = entity_set[tmp]
+        additional_info = None #FIXPRECOMMIT # additional_info = entity_set[tmp]
         if sent:
             return {'stem': stem, 'word': word, 'dbpedia': tmp.replace('http://dbpedia.org/resource/', ''),
                     'sent': sent, 'info': additional_info}
