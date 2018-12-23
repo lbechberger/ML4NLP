@@ -1,0 +1,7 @@
+Symantec, an antivirus software manufacturer, announced Thursday that they had discovered a new Trojan horse that affects Sony PlayStation Portable hand-held gaming consoles. The program deletes required system files, preventing the device from starting correctly. Symantec has named the virus "Trojan.PSPBrick".
+
+The PSP, by default, can only play games approved by Sony. To play other games you must use a software hack. This Trojan pretends to be a program that performs this software hack. The use of any software that attempts to perform this hack, including this Trojan, voids the warranty.
+
+Symantec has said they are not aware of any way a user can restore their PSP after it has been infected. However there have not yet been any confirmed infections. To get infected the user must choose to download the file and copy it to their PSP. "It does not affect the average user," said Eric Chien a software engineer at Symantec.
+
+The Trojan is distributed as an archive file named "EXPLOIT 2G PSP Team V1.RAR". The archive contains two files that must be manually copied to the PSP and run for the user to be infected. Once infected it deletes four files required for the PSP to boot: /vsh/etc/index.dat, /kd/loadcore.prx , /kd/loadexec.prx, and flash6:/kd/init.prx.

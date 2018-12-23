@@ -1,0 +1,5 @@
+Less than a year after the discovery of a record size prime number, the same team from the Central Missouri State University discovered yet another record holder on September 4, 2006. The primality of this number was verified on September 11, 2006. The team were participants of an online project called Great Internet Mersenne Prime Search.
+
+The number is 232,582,657 âˆ’ 1, extending out to an astonshing 9,808,358 decimal digits. These rare prime numbers are known as Mersenne primes. So far, only 44 of these are known.
+
+Although the number is just shy of the 10 million digits required for the $100,000 prize offered by the Electronic Frontier Foundation, participants are always looking forward to new primes.

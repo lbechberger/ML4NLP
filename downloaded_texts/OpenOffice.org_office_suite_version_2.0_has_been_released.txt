@@ -1,0 +1,9 @@
+OpenOffice.org today released version 2.0 of their free software office suite. This release marks over three years of continuous development and boasts many features over version 1.0 which was released in May 2002. The latest release may be downloaded from the OpenOffice.org web site free of charge.
+ 
+The suite is intended to be a replacement for Microsoft's popular office suite, containing near-identical functionality without the price tag. Site administrators from OpenOffice.org say the suite has been downloaded an average of over 400,000 times per week from the official site alone. When taking into account that the suite is freely redistributable, and that it is distributed with many versions of GNU/Linux, the total number of copies in distribution is larger still.
+
+One of the reasons for its significant popularity is the inclusion of several features not found in competing office suites, including in-built export to the PDF format and compatibility with Windows, Linux and Mac OS X operating systems.
+
+Distributed under the terms of the GNU Lesser General Public License, the OpenOffice.org office suite can be run, studied, modified, and redistributed by anybody that receives a copy. This means that any person, group, or company can publish an alternative version - which makes problems such as vendor lock-in impossible. It also guarantees that the development will roughly follow with the wants of the userbase - instead of just the business model of one company.
+
+A lot of work has gone into making this release more visually compatible with the look of Microsoft Office on computers running Windows XP, however, some users were not happy with the effects these changes had on the look of OpenOffice.org when using a dark theme (colour settings).

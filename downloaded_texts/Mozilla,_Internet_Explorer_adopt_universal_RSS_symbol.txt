@@ -1,0 +1,5 @@
+Jane Kim, the program manager for RSS in Microsoft's Internet Explorer 7, announced recently that her team had chosen a graphical representation of Web syndication feeds â€” one popularized by its competitor. Microsoft employees have been posting variations of conceptual designs since earlier this year, but have now announced that they chose an icon used by the rival browser, Mozilla Firefox. The Microsoft team collaborated with Mozilla staff during the selection process.
+
+"I'm excited to announce that we're adopting the icon used in Firefox," wrote Kim. "We'll be using the icon in the IE7 command bar whenever a page has a feed associated with it, and we'll also use it in other places in the browser whenever we need a visual to represent RSS and feeds." 
+
+Microsoft is poised to release IE7 with many of the new features popularized in Firefox, such as browser tabs, feed support, full PNG and CSS support, and other improvements.

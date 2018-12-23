@@ -1,0 +1,9 @@
+British computer magazine PC Pro has investigated the electricity costs of running today's computers.
+
+Their investigations showed that an individual could save £250 a year while a medium-sized business could potentially save £5,000 a year by making changes to the way computers and their peripherals are operated.
+
+A CRT monitor uses £150 of electricity over five years; enough to pay for a new low-power LCD monitor. Using a screen saver, rather than turning the monitor off or using many computers' built-in feature to turn monitors off after a period of inactivity, could cost £100 alone in a year.
+
+It was also discovered that turning a single laser printer off overnight and on weekends would save £70 over the life of the printer.
+
+Many others computer users however run 'distributed computing' projects while their computers are idle, such as the '@home' series of projects (including the well-known 'SETI@home').

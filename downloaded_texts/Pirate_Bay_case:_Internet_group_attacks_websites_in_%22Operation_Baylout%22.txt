@@ -1,0 +1,26 @@
+Anonymous, the loosely defined online activist group most known for organizing mass protests against the Church of Scientology, has begun a campaign against the websites of entities associated with the prosecution in the Pirate Bay Trial, Wikinews has learned.
+
+
+Termed "Operation Baylout", the group claims that hundreds of volunteers are taking part in coordinated efforts to jam the websites of the International Federation of the Phonographic Industry and MAQS, a law firm working with the prosecution in the Pirate Bay case. As of Friday evening MAQS's website read "Our website is currently under attack and we have therefore decided to shut it down until the attack ceases."
+
+The group is also coordinating efforts to jam the fax lines of the MPAA's anti-piracy office and of prosecuting attorney Monique Wadsted.
+
+Andrew Norton of Pirate Party International rejected the attacks, saying, "While we can't condone these acts, it does show there is a wealth of feeling that opposes the decisions and actions of this trade body. Perhaps if this trade group [the IFPI] was not so focused on increasing their members' short-term profits, and focused on long term growth and giving customers what they have wanted for the last 10 years, we would not all be in this situation now. However, if people really want to make a difference, and get a result, then they should be supporting their local pirate parties, which will give a lasting result, by providing a government that is more resistant to the lobbying efforts of the IFPI and their ilk."
+
+While one participant told Wikinews that he or she had taken part in the Church of Scientology protests, and while websites announcing the attacks claim to be affiliated with Anonymous, the decentralized and informal nature of the group makes it difficult to verify whether the attacks are a "legitimate" Anonymous operation.
+
+Some seven hundred to one thousand users took part in an April 20 distributed denial of service (DDOS) "raid" against the IFPI's website, taking it down for several hours.
+
+The group makes use of Anonymous's tactics from Project Chanology in coordinating raids. Ideas for targets are proposed in open discussion forums on a range of websites, mainly spinoffs of 4chan, although both participants Wikinews spoke to expressed disdain for that site particularly. When an idea finds favor with a significant portion of the group, it quickly — sometimes within four hours — evolves and is elaborated through a number of IRC channels. As a plan develops, word is put out to other members, and when enough people are assembled, the members activate customized but rudimentary programs downloaded from popular anonymous upload sites such as RapidShare to their home computers. These programs, "Epic Fail Cannon" and "Bayloutlazer", execute a UDP ping flood against the target website. Most participants are by and large not computer experts, instead relying on the instructions and programming skills of others.
+
+The group also coordinates its efforts through Anonymous's message boards and one message announced, "Do local coordinating for individual cells on their respective Chanology boards." Posters to those boards express common themes in support of The Pirate Bay: against censorship, for freedom of information and in personal concern about being jailed for internet piracy.
+
+However, most participants are casual rather than dedicated members, involved "for lulz" — cheap entertainment at the expense of others. 
+
+One participant quoted to Wikinews the following statement from 888chan.org, a message board where the Baylout raids originated: "Project Chanology began as an online attack against Scientology because they fucked with our Internets. Nothing more. 2) It has since morphed into a caricature of itself, in which moralfags genuinely think it's all about destroying an evil cult. We couldn't care less about how evil they are except that they fucked with our Internets. 3) The lulz value of Project Chanology now lies in the fact that Anon has managed to personal army thousands of people into destroying our enemy for us. People will go to great lengths to participate and contribute to a "cause" when they don't know they're the victims of a very grand and subtle troll. The lulz is not in what they do but in the fact that they are being PA'd by Anons. This moralfag personal army in turn trolls everyone who takes them seriously, because they take themselves seriously, without ever being aware of the fact of the troll themselves. It's pretty slick tbh."
+
+It is, however, entirely possible that this assertion is itself a bluff.
+
+Coordinated attacks against Swedish government and media industry websites have become commonplace in retaliation for legal actions against The Pirate Bay.
+
+The group plans its next raid to take place at 12:00 GMT on April 26, against the IFPI's Swedish website. Previous attacks on websites have been attributed to the same group. On January 20, 2008 Anonymous claimed responsibility for attacking the Church of Scientology's website which resulted in an arrest. In October 2008, Dmitriy Guzner, aged 18, admitted to the DDOS attack on the Church and pleaded guilty to computer hacking.

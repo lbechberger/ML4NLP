@@ -1,0 +1,7 @@
+Microserv Computer Technologies (Internet Service Provider) and Trango Broadband Wireless (fixed-wireless equipment maker) announced on Tuesday August 11 2005 that they wirelessly transmitted data 137.2 miles over an unlicensed spectrum.
+
+They used external PacWireless 2-foot dishes from Trango to connect two mountaintops in Idaho. They were operating on the 2.4GHz and 5.8 GHz wireless spectrum, not the standard 802.11 wireless frequency. They claim they transmitted a file at the rate of 2.3 megabits per second.
+
+This claim of transmission record has been contested by current record holders (Defcon WiFi Shootout Contest). They question the validation of testing methods and subjectivity. "I suppose it's certainly possible for Microserv to have done what they claim to have done," Dave Moore, founder of the Defcon contest, said in an e-mail. "What sets apart the 125-mile record set at the Defcon WiFi Shootout Contest is that it was subject to a strict verification and certification process administered by four independent judges." 
+
+A technical presentation was presented at the WiNOG conference in Park City, Utah August 15-17, 2005. Technical information and pictures can be found at http://www.wifiworldrecord.net

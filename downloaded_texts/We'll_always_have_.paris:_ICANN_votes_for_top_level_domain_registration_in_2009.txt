@@ -1,0 +1,11 @@
+The Internet Corporation for Assigned Names and Numbers (ICANN), a non-profit organisation based in California, United States to regulate internet domain names, will vote on Thursday for a proposal to allow the open registration of top-level domains (TLDs) for Internet addresses. If the proposal succeeds, then as soon as next year any entity with sufficient funds may be able to apply for ownership of a relevant TLD, so that, for example, web sites could have addresses ending in .paris, .ebay or .love.
+
+The range of TLDs has traditionally been heavily restricted by ICANN, with most being country codes (such as .uk for the United Kingdom, or .jp for Japan) or related to the purpose of a website (like .com for commercial websites, .edu for educational sites, and .org for non-profit organisations). 
+
+Some existing owners of TLDs have already set up arrangements that have made use of their flexibility - for example, the countries of Tuvalu and the Federated States of Micronesia have leased many domains on their country code TLDs (.tv and .fm respectively) to entertainment websites based on the association with "television" and "FM radio".
+
+Commentators have pointed out that this may open the way for the controversial .xxx domain, proposed for sites with adult content, which ICANN has previously rejected. Its existence will not be guaranteed in the new system, however, as domain registration will be subject to an independent arbitration process, and granted only when the registrant can demonstrate "a business plan and technical capability", and applications may be rejected on "morality or public order" grounds. While the proposal does not include registration fees, the TLDs are predicted to cost several thousand dollars, at least.
+
+ICANN CEO Paul Twomey, speaking with the BBC, compared the opening of domains to the opening of real estate in the United States in the 19th century. "It's a massive increase in the geography of the real estate of the Internet," he said.
+
+The ICANN International Public Meeting, which opened in Paris, France on Monday, includes workshops and public forums as well as the ICANN Board meeting.

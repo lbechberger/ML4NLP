@@ -1,0 +1,3 @@
+Today, The Mozilla Corporation launches Firefox 2.0 Final, the Second-generation release of Firefox. Firefox 1.0 was originally released on November 9, 2004 , and currently Firefox has a usage share of about 12% .
+
+New features in Firefox 2.0 include enhancements in security, tabbed browsing, performance, and extensions.

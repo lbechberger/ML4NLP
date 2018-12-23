@@ -1,0 +1,9 @@
+The U.S. Supreme Court today ruled that Internet file sharing networks can be sued for copyright infringement. The decision in the case "Metro-Goldwyn-Mayer Studios Inc. et al. v. Grokster, Ltd. et al." had been much awaited by those on both sides of the debate about copyright law and its application to Internet technologies. The court ruled that businesses created with the purpose of letting users commit copyright violations should be held liable for the infringement.
+
+Writing for the court, Justice David Souter wrote: "One who distributes a device with the object of promoting its use to infringe copyright, as shown by clear expression or other affirmative steps taken to foster infringement, going beyond mere distribution with knowledge of third-party action, is liable for the resulting acts of infringement by third parties using the device, regardless of the device's lawful uses."
+
+The strength of the decision was unexpected â€” this is the first major Internet copyright case to reach the Supreme Court in many years, and the Justices' unanimity sends a strong message about their lack of tolerance for companies designed to violate the law.
+
+The decision affects such companies as Grokster and StreamCast, both of which were defendants in this suit. The court's ruling does not have an immediate effect, however, as the Justices referred the decisions to a lower court to be reconsidered.
+
+Fred von Lohmann, senior staff attorney for the EFF, panned the court for not providing a clear test for what constitutes inducement, saying it would discourage innovators unsure of their project's legality. He did however remain optimistic about Grokster and StreamCast's chances in the lower courts.

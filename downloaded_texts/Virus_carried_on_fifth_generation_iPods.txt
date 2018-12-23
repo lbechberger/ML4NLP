@@ -1,0 +1,7 @@
+Apple Computer, Inc. has recently discovered a Windows computer virus on more of their fifth generation iPod 'Video' products.
+
+"We recently discovered that a small number - less than 1% - of the Video iPods available for purchase after September 12, 2006, left our contract manufacturer carrying the Windows RavMonE.exe virus... So far we have seen less than 25 reports concerning this problem. The iPod nano, iPod shuffle and Mac OS X are not affected, and all Video iPods now shipping are virus free."
+
+The RavMonE.exe virus, more commonly known as Win32.RJump.a, is a known Trojan virus which works by opening a "backdoor" that allows others access to the infected computer. After installation, RavMonE.exe sends a message to several different servers in order to let them know about the computer's new vulnerabilities.
+
+Up-to-date anti-virus software installed on Windows OS machines should detect and remove the virus. Apple's web support page is supplying links to trial programs that will remove it free of charge. Affected iPods will need to be restored to factory settings by re-installing the iTunes 7 software.

@@ -1,0 +1,3 @@
+The Ghana-India Kofi Annan Centre for Excellence in ICT introduced the Semacode technology and the Semapedia application to a segment of the Ghanaian public in a presentation delivered by Guido Sohne, Developer-In-Residence at the Centre and Chief Software Architect of CoreNett Ltd, a Ghanaian electronic transaction processing company.
+
+Introduced for the first time in Africa, Semapedia is a way of associating Internet sites with physical barcodes that can be read by cameraphones, enabling one to look up information about physical objects quickly and easily.

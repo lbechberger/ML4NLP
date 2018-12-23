@@ -1,0 +1,33 @@
+On August 21, the Polish weekly Przekrój published an advertisement for Dan-Mark exercise books, bearing the logo of 4fun.tv, a Polish music/interactive TV station. Part of the advertisement contained a definition of the word "exercise book". The wording looked familiar, and Wikinews consulted Wikipedia, the collaborative online encyclopedia.
+
+Upon seeing the Wikipedia definition, it appeared that the entry quoted in the promotional material was identical to the initial two paragraphs of the relevant Wikipedia entry.
+
+Freelance reporters for the Polish Wikinews decided to find out the reason for such a similarity and whether either of the texts (the advertisement's or Wikipedia's) might be a case of copyright violation. 
+
+The reporters contacted a Jarosław Janas, Creative Director of 4fun.tv., where the ad appeared. His reply included the following claim:
+
+
+
+Copyright on text does not last for fifty years as claimed by Janas, but for 70 years after the death of the author.
+
+To investigate the authenticity of the above claims, Wikinews asked the main author of the two paragraphs in question, Wikipedian Julo, about the sources used to write the entry. He confirmed that he had written the text in question, and not copied it from an encyclopedic publication as claimed by Jana.
+
+It is therefore impossible that both Julo and the people responsible for the exercise book advertisement have used the same uncopyrighted encyclopedia, thus coincidentally creating identical texts. The reporters also noted that the first draft of the introduction to the article was written by WaldemarWolskiHuta (February 2006). Afterward the text had undergone some modifications by Julo (September 2006), as well as Picus viridis and Beno (March 2008). However, the text presented in the press promotional material, which - according to 4fun.tv - came from an old-print encyclopedia is identical to the Wikipedia entry after the changes mentioned above had been made. Julo added that he was still alive, together with the other authors of the article in question who constituted the group of the copyright co-holders. This naturally led to a conclusion that neither 50 nor 70 years could have passed since their death. He left 4fun.tv's actions with a comment that although the contents he and the other Wikimedians had made public and free, they are far from making them available in any "free style", but under a specified license.
+
+In follow up messages to Jarosław Janas, Wikinews reporters confronted the creative director over his seemingly inaccurate claims. 
+
+Wikinews was told in a reply that 4fun.tv would ignore the claims unless they see permission from the author of the original content to investigate this story. They were also informed that further e-mails without any specifics sent by the reporter would be qualified as spam. 4fun.tv's creative director further added that he found the reporter's picture on the Internet and asked how the person would feel if this picture was to appear on billboards or press releases that advertised the TV station.
+
+
+
+Wikipedia does allow copying of its content under certain conditions. The encyclopedia's content is released under the GNU Free Documentation License, which means that it can be copied, modified, and used commercially and non-commercially - under the conditions that the license's text is included with the copied content and the five main authors are mentioned. If a part of the article is used, like in the example quoted in this news story, a "right to quote", recognized by Polish law, may be used. In such a case it suffices to mention the source of the text (Polish Wikipedia) and the author of the excerpt. 4fun.tv met none of these conditions, meaning that copyright has been violated.
+
+Over a year ago Polish Wikinews reported on a similar problem, regarding the use of free-licensed photographs. Since that time such "borrowings" have become less frequent, however photos are still being used in discordance with the license. Journalists have gotten used to citing sources, e.g. Wikipedia, although licensing conditions require attributing the actual author, not the source. So instead of attributing John Doe for his contribution, agencies like Polska Agencja Prasowa (Polish Press Agency) are attributing the source, Wikipedia.
+
+In early September 2008 a similar situation occurred in relation to the Polish edition of Wiktionary. Gazeta Wyborcza, a Polish daily, published an IKEA advertisement, on the opening page of which an almost word-for-word Wiktionary entry was placed; additionally the advertisement used the characteristic MediaWiki layout. The reference to the external source used was missing.
+
+In April 2008, an example of an Australian professor was cited; the scientist, in a reply to a news story, quoted a Wikipedia definition almost word-for-word. The same professor condemned the use of Wikipedia in his previous press appearances.
+
+In 2005 Wikipedia material was discovered in the German weekly magazine Der Spiegel, which acknowledged its fault and published appropriate apologies in place of the article in the online edition.
+
+ Frontline magazine in 2007 was found using an image from Wikipedia without proper credit. When pointed out the magazine acknowledged the failing and a correction was promptly given in the subsequent issue.

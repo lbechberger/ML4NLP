@@ -1,0 +1,15 @@
+IBM and Cisco have announced the development of a new platform, based on Eclipse and OSGi (Open Services Gateway initiative), which should unite all communication and collaboration software developers under a single platform.
+
+Before the UC2 (Unified Communication and Collaboration) the unified communication has suffered because of a lack of a platform to be used by all software developers, rather than a series of them and, moreover, provided by different vendors. According to Adam Gartenberg from IBM Lotus Software Group this was the main cause for this partial stagnation.
+
+However, the UC2 is meant to ease the work of software developers. Gartenberg stated that this platform is very flexible and will certainly draw much attention form programmers. They will be able to create different plug-ins and small applications to remotely control other, major application. 
+
+The companies have also unveiled a series of their other joint projects. These project will be based on a set of application programming interface from Lotus (SameTime) and Cisco.
+
+The add-ons planned are integration of a series of additional functions and features into the SameTime software from Lotus. Thus, in a few months, the SameTime users will benefit from such functions as click-to-call and voicemail. This will enable easier instant messaging inside the Cisco's Unified IP phones' system.
+
+The fact that the platform will be based on Eclipse will make the numerous developers create many communications services, mainly for remote users to benefit from a series of new functions of ERP and CRM applications.
+
+Nortel Networks - a partner of Microsoft since last year and Cisco's rival in the area - didn't have much success in the communication services field.
+
+As for Microsoft, the experts are waiting for the reaction of the Bill Gates' company on the ideas and offers made by IBM and Cisco for enterprise communications and collaboration solutions.

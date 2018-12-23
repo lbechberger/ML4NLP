@@ -1,0 +1,13 @@
+The United States announced the declassification of a portion of the Comprehensive National Cybersecurity Initiative, a major part of the US's efforts to thwart cyber warfare, on Tuesday.
+
+The announcement came at the RSA Security Conference in San Francisco, and was given by Howard Schmidt, who is the current US cyber-security coordinator, having been assigned the position in December. 
+
+While only a portion of the document was revealed at the announcement, and much remains classified material, including all material related to plans by the government for offensive cyber-warfare, the program has twelve parts, and has three main strategies:
+
+*To create a defensive mechanism against immediate threats, as well as those possible in the near future;
+*To create a defensive mechanism against a wide variety of threats, both present and future;
+*To initiate efforts to strengthen future cyber-security efforts.
+
+The program includes funding for numerous security measures, including the government's controversial Einstein program, which scans all incoming communications to government-operated websites. The plan also mentions increasing security for classified networks within the government, as well as developing a government-wide plan for counter-intelligence work, although the declassified portions gave little indication as to what that would involve. 
+
+The program was begun by President George Bush in 2008 as a National Security Presidential Directive, and has been entirely classified until now. At its inception, it was intended to serve as a program to unify cyber-security efforts within the government and to develop other security programs for use nationwide. No budget has been released for the program, although estimates place the cost at $40 billion until 2015.

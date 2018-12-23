@@ -1,0 +1,15 @@
+"Buy cheap Viagra through us - no prescription required!" Anyone with an active email account will recognize lines like this one. According to some reports, unsolicited advertisements (spam) for Viagra and similar drugs account for one in four spam messages. 
+
+ 
+BACKGROUND
+
+Spamming remains one of the biggest problems facing email users today. While users and systems administrators have improved their defenses against unsolicited email, many spammers now insert random words or characters into their letters in order to bypass filters. The Wikipedia article Stopping email abuse provides an overview of the various strategies employed by companies, Internet users and systems administrators to deal with the issue.
+ 
+
+Ever since pharmaceutical giant Pfizer promised to cure erectile dysfunction once and for all with its blue pills containing the drug sildenafil citrate, spammers have tried to tap into male anxiety by offering prescription-free sales of unapproved "generic" Viagra and clones such as Cialis soft tabs. Legislation like the U.S. CAN-SPAM act has done little to stem the tide of email advertising the products.
+
+Now Pfizer has entered a pledge with Microsoft Corporation, the world's largest software company, to address the problem. The joint effort will focus on lawsuits against spammers as well as the companies they advertise. "Pfizer is joining with Microsoft on these actions as part of our shared pledge to reduce the sale of these products and to fight the senders of unsolicited e-mail that overwhelms people's inboxes," said Jeff Kindler, executive vice president at Pfizer. 
+
+Microsoft has filed civil actions against spammers advertising the websites CanadianPharmacy and E-Pharmacy Direct. Pfizer has filed lawsuits against the two companies, and has taken actions against websites which use the word "Viagra" in their domain names. Sales of controlled drugs from Canadian pharmacies to the United States are illegal, but most drugs sold in Canada have nevertheless undergone testing by the U.S. Food and Drug Administration. This is not the case for many of the Viagra clones sold by Internet companies and manufactured in countries like China and India. While it was not clear that CanadianPharmacy was actually shipping drugs from Canada, Pfizer's general counsel, Beth Levine, claimed that the company filled orders using a call center in Montreal, reported the Toronto Star.
+
+For Microsoft's part, they allege that the joint effort with Pfizer is part of their "multi-pronged attack on the barrage of spam." As the creator of the popular email program Outlook, Microsoft has been criticized in the past for the product's spam filtering process. Recently, Microsoft added anti-spam measures to its popular Exchange server. Exchange 2003 now includes support for accessing so-called real-time block lists, or RTBLs. An RTBL is a list of the IP addresses maintained by a third party; the addresses on the list are those of mailservers thought to have sent spam recently. Exchange 2003 can query the list for each message it receives.

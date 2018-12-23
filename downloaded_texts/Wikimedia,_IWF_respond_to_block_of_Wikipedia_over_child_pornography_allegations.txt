@@ -1,0 +1,24 @@
+On December 7, Wikinews first reported that some Internet Service Providers (ISPs) in the United Kingdom, were filtering access to an image and an article on the popular, free online encyclopedia Wikipedia, amid allegations that they contain child pornography. The filter was brought into play by the Internet Watch Foundation (IWF), which issued a statement regarding the filtering shortly after Wikinews published the article. Wikimedia, the host of Wikinews and Wikipedia oppose the IWF's actions, also issuing a statement.
+
+"A Wikipedia web page, was reported through the IWFâ€™s online reporting mechanism in December 2008. As with all child sexual abuse reports received by our Hotline analysts, the image was assessed according to the UK Sentencing Guidelines Council (page 109). The content was considered to be a potentially illegal indecent image of a child under the age of 18, but hosted outside the UK," said the IWF in a statement posted on their website.
+
+
+The image and article in question is that of the 1976 album Virgin Killer, a studio album by the Scorpions, a German rock band. The controversy began after the image of the album's original cover, which depicted a naked prepubescent girl, was reported to the IWF in early December. Wikinews first discovered the controversial image in May 2008 after there were several attempts to delete it on Wikipedia. The image had been blocked because the IWF considered it to be "potentially illegal". As a result, the IWF have contacted authorities in the United States and in the UK.
+
+The measures applied redirect Wikipedia-bound traffic from a significant portion of the UK's Internet population through a small number of servers which can log and filter the content that is available to the end user. A serious side-effect of this is the inability of administrators on Wikimedia sites to block vandals and other troublemakers without potentially impacting hundreds of thousands of innocent contributors who are working on the sites in good faith.
+
+Contributors or individuals attempting to view an affected image or file, depending on their ISP, may get a warning saying, "we have blocked this page because, according to the Internet Watch Foundation (IWF), it contains indecent images of children or pointers to them; you could be breaking UK law if you viewed the page.". Other ISPs provide blank pages, 404 errors, or other means of blocking the content.
+
+Wikimedia was not informed that the image would be blacklisted because the IWF "does not issue takedown notices to ISPs or hosting companies outside the UK". The servers for Wikimedia projects are located in Florida in the U.S., and according to Jay Walsh, the head of communications for Wikimedia, the Foundation "opposes" the action taken by the IWF.
+
+"The IWF has confirmed to the Wikimedia Foundation that it has added Wikipedia to its
+blacklist, which also had the unintended consequence of rendering UK-based internet users
+unable to edit the encyclopedia," said Walsh.
+
+"We did advise one of our partner Hotlines abroad and our law enforcement partner agency of our assessment. The specific URL (individual webpage) was then added to the list provided to ISPs and other companies in the online sector to protect their customers from inadvertent exposure to a potentially illegal indecent image of a child," added the statement by the IWF.
+
+"We have no reason to believe the article, or the image contained in the article, has been
+held to be illegal in any jurisdiction anywhere in the world. We believe it's worth noting that the image is currently visible on Amazon, where the album can be freely purchased by UK residents. It
+is available on thousands of websites that are accessible to the UK public," said Mike Godwin, legal counsel for Wikimedia. The cover has since been removed from Amazon.com.
+
+Wikimedia projects such as Wikinews state in their policies that they are "not censored". Wikimedia will continue discussions with the IWF in hopes of resolving the issue.

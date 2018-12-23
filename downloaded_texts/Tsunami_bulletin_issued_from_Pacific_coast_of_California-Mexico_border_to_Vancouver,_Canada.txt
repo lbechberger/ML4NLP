@@ -1,0 +1,45 @@
+On Tuesday night, the National Weather Service issued a tsunami bulletin for the Pacific coast from the California-Mexico border to Vancouver, Canada, after a 7.0 magnitude earthquake occurred approximately 80 miles off the coast of Northern California at 19:50 PDT.
+
+The warning has now been cancelled. The quake's motion was horizontal, not vertical (the movement that typically leads to a tsunami).
+
+Witnesses along the California coast reported buildings shaking, but no major damage or injuries were reported.
+
+Details of the earthquakes which have taken place in the past week (including the three major earthquakes which have taken place in, or close to, the Americas over the last 24 hours) can be found at http://earthquake.usgs.gov/
+
+A full text of the now-cancelled tsunami warning follows:
+
+TSUNAMI BULLETIN NUMBER 001 
+PACIFIC TSUNAMI WARNING CENTER/NOAA/NWS 
+ISSUED AT 0259Z 15 JUN 2005
+
+THIS BULLETIN IS FOR ALL AREAS OF THE PACIFIC BASIN EXCEPT
+ALASKA - BRITISH COLUMBIA - WASHINGTON - OREGON - CALIFORNIA.
+
+... TSUNAMI INFORMATION BULLETIN ... 
+
+THIS MESSAGE IS FOR INFORMATION ONLY. THERE IS NO TSUNAMI WARNING
+OR WATCH IN EFFECT.
+
+AN EARTHQUAKE HAS OCCURRED WITH THESE PRELIMINARY PARAMETERS
+
+ORIGIN TIME - 0251Z 15 JUN 2005 
+COORDINATES - 41.3 NORTH 125.7 WEST 
+LOCATION - OFF COAST OF NORTHERN CALIFORNIA 
+MAGNITUDE - 7.4
+
+EVALUATION
+
+NO DESTRUCTIVE PACIFIC-WIDE TSUNAMI THREAT EXISTS BASED ON
+HISTORICAL EARTHQUAKE AND TSUNAMI DATA. 
+ 
+HOWEVER - EARTHQUAKES OF THIS SIZE SOMETIMES GENERATE LOCAL
+TSUNAMIS THAT CAN BE DESTRUCTIVE ALONG COASTS LOCATED WITHIN
+A HUNDRED KILOMETERS OF THE EARTHQUAKE EPICENTER. AUTHORITIES
+IN THE REGION OF THE EPICENTER SHOULD BE AWARE OF THIS
+POSSIBILITY AND TAKE APPROPRIATE ACTION. 
+
+THIS WILL BE THE ONLY BULLETIN ISSUED FOR THIS EVENT UNLESS
+ADDITIONAL INFORMATION BECOMES AVAILABLE.
+
+THE WEST COAST/ALASKA TSUNAMI WARNING CENTER WILL ISSUE BULLETINS
+FOR ALASKA - BRITISH COLUMBIA - WASHINGTON - OREGON - CALIFORNIA.

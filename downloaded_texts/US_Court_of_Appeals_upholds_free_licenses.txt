@@ -1,0 +1,4 @@
+Wednesday, the United States Court of Appeals for the Federal Circuit reversed a lower court ruling and held that licenses such as Creative Commons (CC) licenses set conditions on the use of copyrighted work as opposed to covenants. This means that if a creative work is being used outside the terms of the license, the person modifying or republishing the work is guilty of copyright infringement for failing to attribute the original work. 
+Academic and political activist Lawrence Lessig stated it was "a very important victory" for free licensing, and expressed his gratitude for the part Stanford Center for Internet and Society, a project he founded, played in achieving the finding.
+
+A previous court ruling had denied relief to the plaintiff stating that its Artistic License only demanded contractual promises; that a violation thereof would not be, in fact a copyright infringement.

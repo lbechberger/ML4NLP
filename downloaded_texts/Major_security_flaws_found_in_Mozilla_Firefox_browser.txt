@@ -1,0 +1,13 @@
+Two serious security flaws have been found in the Mozilla Firefox browser, both rated by security analysts as being 'extremely critical'. 
+
+An attack using a combination of the two flaws has already been posted on the Internet, which can allow an attacker to run code on a victim's computer and take control of it.
+
+One allows for an invisible website 'frame' to navigate back to a URL in the History that contains JavaScript. This allows an attacker to extract sensitive information, such as passwords from that site, using the JavaScript code.
+
+The second allows attackers to put JavaScript into the URL for the icon for downloading programs in the install confirmation dialogue box. This JavaScript code can then execute with enhanced privileges.
+
+The flaws have been confirmed in the latest version of the browser, 1.0.3, and may well be present in older versions too.
+
+A number of changes have been made to update.mozilla.org and addons.mozilla.org to make the example attack useless. This doesn't mean that other sites can't be used to launch the attack, so be careful what you add to the "Allowed Sites" list. The reason that update.mozilla.org and addons.mozilla.org were targeted specifically is that they are added to the "Allowed Sites" list during the install process.
+
+The most popular browser on the web is Microsoft's Internet Explorer, which has had many security exploits in the past. There are currently several outstanding security flaws, the most severe of which is rated 'Highly Critical'.

@@ -1,0 +1,5 @@
+The C programming language creator and co-developer of the Unix operating system Dennis Ritchie died at home on October 8 after an extended illness, at the age of 70. Former colleague Rob Pike first publicly announced the death, which Alcatel-Lucent then confirmed.
+
+Ritchie, born in Bronxville, New York on September 9, 1941, joined Bell Labs in 1967. There, with Ken Thompson, he helped develop Unix, an operating system on which are based many modern systems such as Linux and Mac OS X. Unix provided the infrastructure that led the creation of the Internet. Between 1969 and 1973 he developed the C, one of the most used programming languages, that influenced many languages like C++, Java, and PHP. After Unix was rewritten, C was key to its portability. In 2007 he retired from his post as Bell Labs' head of systems software research.
+
+Ritchie and Thompson were awarded the Turing Award in 1983, the IEEE Richard W. Hamming Medal in 1990, the National Medal of Technology and Innovation in 1998, and the Japan Prize in 2011.

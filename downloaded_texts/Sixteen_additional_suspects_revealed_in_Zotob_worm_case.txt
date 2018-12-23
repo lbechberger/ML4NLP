@@ -1,0 +1,5 @@
+Turkish investigators have connected sixteen more people to the havoc of the Zotob internet worm, which has been adversely affecting computers for the last two weeks. These people were found by analysing communications between them and the two hackers arrested four days ago.
+
+By analysing the code of the Zotob worm, as well as its derivative works, law enforcement officials have found that three internet gangs were involved in the creation of the worm. Farid Essebar, aka 'Diab10', the 18 year old who wrote the worm, as well as others, like Mytob, was a member of the gang '0x90-Team'. The other gangs, 'BlackCarder' and 'MetalHit', wrote some of the variants of Zotob and Mytob. 
+
+The other of the two men arrested four days ago was 21 year old Attila Ekici. Turkish officials say that he was paid by Essebar to distribute Zotob. This type of financial relationship confirms theories that writing viruses has become a profit-making enterprise.

@@ -1,0 +1,11 @@
+Microsoft’s officials admitted that the company’s Windows Live OneCare security suite has been accidentally deleting e-mails of those users that worked with Outlook and Outlook Express.
+
+Microsoft’s OneCare forum included postings that stated the cause of message deletion. Thus the issue occurred thanks to an antivirus application that finds e-mails containing viruses. The problem with the software was that the antivirus, instead of deleting or quarantining the hazardous e-mail, deleted all messages from the personal folder.
+
+The forum, however, gave hope in a post saying that some messages might be recovered but only in case they were quarantined. Thus users are able to find those e-mails in OneCare’s quarantine facility.
+
+The administrator of the forum, Stephen Boots, outlined that he was very unhappy with the issue which, he said, appeared over a year ago and the company thought it fixed the problem with the release of 1.5 version. Boots said that the beta version of the program worked fine but when the final version was launched the problem occurred once again. 
+
+According to the statement, reported by the spokesperson of the software giant, Microsoft is now working to fix the problem and release an updated version of OneCare on March 13.
+
+OneCare was criticized after it failed to pass an independent test of security products that provided a certain certification. In addition to this the program did not provide enough protection for Windows Vista users.

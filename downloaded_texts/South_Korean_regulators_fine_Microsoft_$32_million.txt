@@ -1,0 +1,14 @@
+South Korean antitrust regulators fined the Microsoft company 33 billion Won (US$32m). It also ordered Microsoft to make substantial changes to the Windows operating system. Regulators demanded that Microsoft produce two different versions of Microsoft Windows within 180 days.
+
+*One version must be stripped of the Windows Media Player and instant messenger software. 
+*The other version must come with links to Web pages that allow consumers to download competing versions of such software, the commission said.
+
+These regulations will be in effect for the next ten years, but after five years Microsoft can request a review of the market.
+
+A Microsoft spokesman said the company would appeal the decision in court.
+
+"We are very disappointed with the commission's decision," said Tom Burt, a Microsoft vice president and deputy general counsel. "Ultimately, we will file a lawsuit in Korean court challenging the decision."
+
+Similarily in March of last year, Microsoft was ordered by the European Union to pay â‚¬497 million for antitrust violations. Microsoft was also asked to share Windows operating system code with other companies and offer Windows without the media player.
+
+Microsoft is also appealing this ruling.

@@ -1,0 +1,7 @@
+SpaceX called off the much-delayed inaugural launch of their new Falcon 1 rocket on Saturday from Kwajaleinâ€™s Omelek Island launch site. The intent was to launch the U.S. Air Force Academy's FalconSat 2 satellite, which will monitor plasma interactions with the Earth's upper atmosphere and magnetosphere.
+
+The launch was delayed, then finally cancelled after an oxygen boil-off vent had accidentally been left open. The oxygen was unable to cool the helium pressurant, which then proceeded to evaporate faster than it could be replenished. A main computer issue, probably serious enough to cause a scrub on its own, was also discovered.
+
+This long-anticipated flight was originally expected to be launched in January 2005, however a series of setbacks forced a series of delays, with the flight most recently scheduled to be in early 2006. It was intended to be launched from the Kwajalein atoll in the middle of the Pacific Ocean.
+
+The maiden voyage was originally intended to launch from Vandenberg Air Force Base in California with a Naval Research Laboratory satellite and a Space Services Incorporated space burial payload.

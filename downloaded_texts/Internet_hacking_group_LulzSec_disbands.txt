@@ -1,0 +1,9 @@
+The computer hacking organization Lulz Security disbanded yesterday, said the group in a statement. Released via Pastebin, it states "[o]ur planned 50 day cruise has expired, and we must now sail into the distance."
+
+The announcement comes a day after The Guardian released leaked IRC logs of private conversations between LulzSec members and days after the arrest of a British teenager in connection to the group.
+
+With the announcement the group released previously unseen private information. Included was AT&amp;T and AOL internal data, Battlefield Heros Beta user account data, and user information from the NATO bookstore. In total over 810,000 people's user information was present in this final release.
+
+LulzSec became known after they allegedly hacked the Play Station Network, rendering the service unusable. The group allegedly proceeded to hack US federal government websites such as those of the FBI and CIA. One of their last hacks targeted the Arizona Department of Public Safety in which they allegedly copied hundreds of confidential documents.
+
+While LulzSec has disbanded, there are copycat organizations in Italy and Brazil.

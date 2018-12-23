@@ -1,0 +1,15 @@
+Today, some of the leading biologists in the world announced that they are starting a new project to write the Encyclopedia of Life, a project that aims to bring resources on all 1.8 million species together.
+
+The website will take the form of a wiki-like environment, but in contrast to Wikimedia's project Wikispecies, only scientists will be allowed to edit. The information will be made freely available on the internet. "Sharing what we know, we can protect Earth's biodiversity and better conserve our natural heritage," said said Jonathan F. Fanton, President of the John D. and Catherine T. MacArthur Foundation, which has donated US$10 million to the project. Another US$2.5 million grant came from the Alfred P. Sloan Foundation.
+
+According to their press release, the website aims to become "a global beacon for biodiversity and conservation." The trailer video mentions that the work of classifying all species has barely begun, and that species are disappearing even before we glimpse at them.
+
+The founding partners of the project include the Field Museum of Natural History, Harvard University, the Marine Biological Laboratory, the Smithsonian Institution, and the Biodiversity Heritage Library. The Missouri Botanical Garden later joined, and negotiations are ongoing with the Atlas of Living Australia. Other partners are the American Museum of Natural History (New York), Natural History Museum (London), New York Botanical Garden, and the Royal Botanic Gardens (Kew).
+
+The institutional council is made up of a selection of international advisors, such as a representative of the Chinese Academy of Sciences. Another member is Erik MÃ¶ller of the Wikimedia Foundation Board of Trustees.
+
+According to the press release, the species pages will become available in "all major languages". Initially the focus will be on animals, plants and fungi, but later this could be expanded to microbes. The goal is to document all 1.8 million species over the next 10 years, but the founders warn that it might take up to 4 years before the quality of the pages becomes acceptable. Today, Wikispecies has over 98,000 articles.
+
+The website will partially draw information from existing databases, for example from FishBase which has 29,900 species listed already. Wikipedia is also listed as a source on some of the demonstration pages. Using an indicator for the educational level of the user, novices and experts will be shown just the information that suits them. A system of filters could be used to allow identification of species: for example, if you've just caught a 6-inch-long fish with big teeth in the Amazon River, you could use the filter system to find out what species it might be.
+
+The Biodiversity Heritage Library will scan tens of millions of pages to provide open access to the relevant scientific literature which it holds. The first 1.25 million pages have already been digitized in scanning centers in London, Boston, and Washington, D.C. .

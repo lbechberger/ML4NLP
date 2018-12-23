@@ -1,0 +1,11 @@
+Internet portal and mail-provider Lycos Europe has launched a program to increase spammers' bills by having thousands of voluntary users' computers repeatedly query websites from which spam originates. Such a tactic would increase the bandwidth costs for these websites. However, it also faces legal questions.
+
+Spamming, the mass sending of unsolicited emails, is lucrative in part because each email can be sent for nearly insignificant costs. With such low costs, a commercial spammer needs only to have a very small number of recipients buy their product to make a profit. The goal of many anti-spam proposals has been to increase the cost of spammers sending messages. Lycos' approach is to make it more expensive to maintain servers that send spam.
+
+Volunteers may download the screensaver from the Lycos website for it. The program would run on a user's computer in the background and request about three megabytes (3MBs) of data every day. The screensaver shows which spam server is being targeted by the user, where the server is located, and how many others are attacking it at that moment. Target email servers are selected from blacklists from anti-spam organizations, with Lycos' own verification.
+
+Legal issues arise over whether this can be interpreted as a denial of service attack. In such an attack, computers overwhelm a webserver with requests for data to the point where it does not have the resources to fulfill its normal function. Lycos, in explanatory material on the screensaver's dedicated website ( http://makelovenotspam.com ), claims that its technology closely monitors the screensavers' effects on targeted websites and prevents any of them from being completely shut down by information requests. 
+
+Lycos Europe operates in Germany where, according to Joerg Heidrich of Heise Zeitschriften Verlag, less than completely shutting down a server is not clearly illegal under the penal code. It may, however, be actionable under the civil code. But Lycos may be betting that no one will file a suit, as that would require those participating in illegal spamming to reveal their identity.
+
+The website no longer allows downloads of the screensaver, and users of the screensaver cannot connect to spam sites, but are instead given the message 'Stay Tuned'

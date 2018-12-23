@@ -1,0 +1,6 @@
+missing image|Image:Amos2.jpg|thumb|right|200px|An earlier Soyuz-FG launch 
+At 22:16 GMT yesterday (04:16 today local time), a Russian Soyuz-FG/Fregat carrier rocket was launched from Site 31/6 the Baikonur Cosmodrome in Kazakhstan, carrying the European GIOVE-B experimental Navigation satellite. The launch was conducted by Starsem, a Russo-European organisation which commercially markets Soyuz-FG and Soyuz-2 launches. GIOVE-B was successfully deployed into a medium Earth orbit at 02:01 GMT this morning, after an ascent lasting nearly four hours. 
+
+GIOVE-B will serve as a prototype for the Galileo positioning system. It is the second such prototype, GIOVE-A is already in orbit, having been launched in December 2005. GIOVE-B was originally scheduled to launch in April 2006, but was delayed for a number of reasons. The next Galileo launch is scheduled to be the first cluster of operational satellites, which will be launched in 2010. The next Soyuz launch will be a Soyuz-U in mid-may, with a Progress spacecraft to resupply the International Space Station.
+
+This was the 20th orbital launch of 2008, the 24th Soyuz-FG launch, and the 1,732nd flight of a Soyuz rocket of any variant.

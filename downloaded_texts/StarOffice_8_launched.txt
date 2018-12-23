@@ -1,0 +1,9 @@
+Sun Microsystems has released StarOffice 8 today. StarOffice 8 is a commercial office suite that includes word-processing, spreadsheet, presentation, drawing and database applications.
+
+According to Sun, StarOffice 8 “provides excellent compatibility with Microsoft Office”. This new version improves Word, Excel and PowerPoint import and export filters, improving support for password-protected Word and Excel files and presentations with complex animations, autoshapes and slide transitions. StarOffice 8 also includes a Microsoft Office macro converter allowing many Microsoft Office macros to work in StarOffice.
+
+StarOffice 8 is also the first commercial office suite to support the OASIS Open Document Format for Office Applications (OpenDocument). OpenDocument is an XML based file format created by the Organization for the Advancement of Structured Information Standards. Massachusetts has recently announced the plan to switch to OpenDocument format. Microsoft has said it will not support the OpenDocument format.
+
+StarOffice 8 is based on the open source OpenOffice.org project. OpenOffice.org was founded July 2000, by Sun with the release of StarOffice code under two open source licenses.
+
+StarOffice 8 is available as a download from Sun’s Web site for $69.95, or packaged product can be ordered for $99.95. Enterprise customers can purchase StarOffice 8 for $35 (£20) per user. OpenOffice.org is available for free from openoffice.org.

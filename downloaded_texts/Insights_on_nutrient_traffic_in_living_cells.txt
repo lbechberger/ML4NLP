@@ -1,0 +1,15 @@
+In a new study that may have important applications in medicine, researchers from the University of California Santa Barbara found that cells have evolved a surprising, but efficient, way to regulate the transport of goods to the nucleus and surrounding organelles. 
+
+Nutrients and signals outside of a cell get to the cell nucleus by way of carriers called endosomes. Endosomes travel through a cell on a highway of structural supports called microtubules. 
+
+Researchers studied the motion of endosomes by putting florescent tags, which glow under certain types of light, on individual endosomes and recording their motion through a microscope. They found that endosomes do not travel straight to the nucleus. Instead, they randomly travel toward and away from the nucleus with no preferred direction.
+
+This is a little like getting in the car to drive to work, but instead of being caught in heavy traffic along the main road, randomly choosing a back road to follow. If you end up being caught in traffic going that way, you can also turn around and travel in the opposite direction for a while. It would make getting to work a little slow, but it leads to an even distribution of endosomes all along the microtubules.
+
+This finding surprised the Santa Barbara group. Endosomes are most concentrated around the nucleus of a cell, so researchers expected that the endosomes would usually travel toward the nucleus. 
+
+Computer simulations show that the starburst-shaped layout of the microtubule system is responsible for the high concentration of endosomes at the nucleus. “It’s all in the geometry of the cell,” said Samir Mitragotri, a researcher on the project. 
+
+Endosomes randomly travel toward or away from the nucleus and can change direction. But as in Italy where all roads lead to Rome, the endosomes get to their destination because all roads eventually pass the nucleus. This system does not get a particular endosome to its target as quickly as possible, but ensures that nutrient transport is not disrupted if the cell moves or there is increased traffic. 
+
+Some heart, neurological, and muscular diseases are caused by the break down of proteins that regulate endosome movement. Scientists are not sure what this does to the cell said Samir Mitragotri, a co-author of the study, but research like this could help them discover the “missing link” between disease and transport properties.

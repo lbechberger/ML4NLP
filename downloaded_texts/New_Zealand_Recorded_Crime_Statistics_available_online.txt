@@ -1,0 +1,15 @@
+New Zealand's Recorded Crime Statistics are now available online from Statistics New Zealand.
+
+In an unheralded change to its website on January 20, 2005, Statistics New Zealand now provides the last 10 fiscal years of Recorded Crime Statistics for New Zealand. Using the Table Builder service, the country's Crime Statistics can now be examined and analysed online in unprecedented detail.
+
+Although New Zealand Police has previously published Official Crime Statistics reports online, these statistics have only ever been available at a summary level, as a printed style document. This development allows detailed information, that was only ever available though an information request to Police, to now be seen immediately and desired statistics can be manipulated interactively.
+
+Statistics are available either nationally or by each Police district and area for the each of the last 10 years or each of the last 24 months. Recorded Crime Statistics can be analysed down to the individual offence, with scene information for recorded and resolved crime. Offender apprehension statistics are also analysed down to the individual offence as well as the age, gender, ethnicity and resolution action taken with the offender.
+
+The Recorded Crime Statistics also have a significant amount of accompaning metadata. Relevant legislation for each offence, together with caveats and interpretation notes for each parameter accompany these statistics. Users can now interpret these statistics for themselves, rather than relying on other agencies interpreting, or possibly misinterpreting, their requirements.
+
+This innovation appears to be a leading edge breakthrough in publically available crime statistics. Although a number of jurisdictions place statistical reports and summaries of crime statistics on websites, these all are in the form of printed style documents. This move appears to be the first time that internet users can interact with a website to extract their own customised reports from the available crime statistics.
+
+Internationally, crime statistics have been difficult to obtain, and even more difficult to compare. Interpol, the international policing organisation, for example, does not even make international statistics publically available on its website but restricts them to authorised law enforcement officials. Other countries present their statistics in detailed reports that need to be read and interpreted with care to understand them correctly. Different countries also count crime in different ways, often ignoring less serious offences or only counting the most serious of multiple offences occurring at the same time. 
+
+In New Zealand's case the basic data is now online. The analysis can be done by the user.

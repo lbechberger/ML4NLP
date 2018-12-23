@@ -1,0 +1,3 @@
+On December 15, 2005, a computing effort of the Central Missouri State University (CMSU), led by Curtis Cooper and Steven Boone, as part of the distributed computing project known as the Great Internet Mersenne Prime Search (GIMPS), discovered the largest known prime number, divisible only by the number 1 and itself: 230,402,457-1. 
+
+The discovery, which marks the 43rd known Mersenne prime and the 9th discovered by GIMPS, was made by running a free downloadable program called Prime95. The CMSU team is currently the highest-ranked contributor to GIMPS with over 700 computers running Prime95.

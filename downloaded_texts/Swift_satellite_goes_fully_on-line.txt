@@ -1,0 +1,32 @@
+NASA's Swift satellite has completed all tests since
+its launch last November and with the Ultravioliet/Optical Telescope
+(UVOT) now on line, is now fully functional for the mission's 2 year quest
+for gamma-ray bursts.
+
+
+
+The UVOT was tested on the Pinwheel Galaxy (M101).
+
+"After many years of effort building the UVOT, it was exciting to
+point it toward the famous Pinwheel Galaxy, M101," said Dr. Peter
+Roming, UVOT Lead Scientist at Penn State University. "The ultraviolet
+wavelengths in particular reveal regions of star formation in the
+galaxy's wispy spiral arms. But more than a pretty image, this
+first-light observation is a test of the UVOT's capabilities."
+
+Gamma ray bursts are some of the most powerful objects observed
+in the Universe and are thought to signal the birth of black
+holes.
+
+Swift is designed to detect the bursts and automatically
+re-orient itself to gather images and data of the phenomenon.
+Swift detected and imaged its first official burst on January 17,
+2005, before the UVOT was operational with the aid of the Burst
+Alert (BAT) and X-ray (XRT) telescopes activated several weeks
+earlier. The BAT detects the gamma-ray bursts, automatically and
+immediately turns the telescope, bringing the XRT
+and UVOT to bear on the location of the event which record
+detailed observations of the burst afterglow.
+
+The UVOT is a joint product of Penn State University and the Mullard Space
+Science Laboratory.

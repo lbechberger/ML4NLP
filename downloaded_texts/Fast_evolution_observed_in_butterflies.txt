@@ -1,0 +1,11 @@
+Scientists reported that they had documented very fast evolution in the butterfly species Hypolimnas bolina. After infection by Wolbachia, the fraction of the population that was male dropped drastically to about one percent of the total population. However, after approximately ten generations (about a year) the male population had rebounded to about 39 percent of the overall population. 
+
+In the case of H. bolina, infected females were unable to have male offspring since the male embryos died early on. However, a gene arose which suppressed Wolbachias ability to kill the male offspring, and this gene spread rapidly through the natural H. bolina population.
+
+At this time, it is unknown if the novel gene was a mutation or a pre-existing gene. However, researchers said that regardless, the findings constituted strong evidence that parasites can drive and substantially alter evolution. The research was performed by scientists at the University of Berkeley lead by Sylvain Charlat, a post-doc at Berkeley.
+
+
+
+Wolbachia is a bacterium that is very effective at jumping from species to species, generally infecting arthropods such as insects. Since the bacterium resides in the cytoplasm of cells, males cannot pass Wolbachia onto their offspring because sperms only pass on their nucleus with the DNA, but females can. Wolbachia has thus adapted a number of strategies, such as killing male embryos of infected females or preventing infected males from reproducing with uninfected females.
+
+Wolbachia is dangerous to hosts because it is able to easily jump species barriers and so has little reason to restrain itself -if an infectious organism kills its host, it generally dies along with it. The bacterium is believed to be responsible for some extinction events as well as some speciation events.

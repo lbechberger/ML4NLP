@@ -1,0 +1,11 @@
+Mozilla's new browser Firefox 3.0 has been downloaded over 8 million times in 24 hours. The Mozilla Foundation has encouraged users worldwide to download their latest browser in an attempt to enter the Guinness Book of World Records, with what is referred to as Download Day 2008. The target of five million downloads was reached long before the 24 hour period was over.
+
+The 24 hour download session ended at 18:16 UTC on June 18th, one hour later than the original time of 17:00. This delay is due to technical problems which included the servers being overwhelmed. For a while after the specified launch time, the Firefox website linked to a download for Firefox 2.
+
+Over 2.88 million of the downloads were from the European Union; 2.56 million were from the United States.
+
+The unofficial, unaudited final number of downloads during the 24 hour marathon was 8,320,331. This figure still needs to be checked by the Guinness Book of Records for validity. 
+
+If the unofficial figure is accurate, almost 100 copies of the application were downloaded every second.
+
+John Lilly, the CEO of Mozilla commented on the release of Firefox 3. “We’re really proud of Firefox 3 and it just shows what a committed, energized global community can do when they work together,” he said.

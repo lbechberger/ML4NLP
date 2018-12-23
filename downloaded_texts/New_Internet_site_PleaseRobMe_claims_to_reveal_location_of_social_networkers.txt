@@ -1,0 +1,15 @@
+A new website, PleaseRobMe.com, was created earlier this week, claiming to indicate the location of empty homes based on social networkers' posts online, especially Twitter.
+
+The developers of the site told the BBC they had intended to display how dangerous it is to share one's precise location over the Internet. The site takes its information from posts by users on Twitter who have revealed their address and say when they are not at home.
+
+The information is displayed by copies of posts by Twitter users on a live feed on the website's front page. Most the posts divulge an address, as well as a comment indicating the person is not at home. A reporter for Wikinews estimated about twenty to thirty new posts, called "opportunities" by the website, to be added to the list every minute.
+
+Boy Van Amstel, one of the developers, commented to the BBC: "It started with me and a friend looking at our Twitter feeds and seeing more and more Foursquare posts. People were checking in at their house, or their girlfriend's or friend's house, and sharing the address - I don't think they were aware of how much they were sharing."
+
+The website reportedly took only four hours to create and put up. "It's basically a Twitter search - nothing new. Anyone who can do HTML and Javascript can do this. You could almost laugh at how easy it is," Van Amstel commented.
+
+The developer noted that he does not intend the site to become an aid to burglars. "The website is not a tool for burglary. The point we're getting at is that not long ago it was questionable to share your full name on the internet. We've gone past that point by 1000 miles," he remarked, adding it would be "very difficult" in practice to commit a burglary solely with the information provided.
+
+A statement on the website in question reads: "The danger is publicly telling people where you are. This is because it leaves one place you're definitely not ... home. So here we are; on one end we're leaving lights on when we're going on a holiday, and on the other we're telling everybody on the internet we're not home."
+
+It continued: "It gets even worse if you have 'friends' who want to colonize your house. That means they have to enter your address, to tell everyone where they are. The goal of this website is to raise some awareness on this issue and have people think about how they use services like Foursquare, Brightkite, Google Buzz etc. Because all this site is, is a dressed up Twitter search page. Everybody can get this information."

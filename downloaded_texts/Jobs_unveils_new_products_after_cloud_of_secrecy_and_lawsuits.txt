@@ -1,0 +1,29 @@
+After months of secrecy and lawsuits intended to suppress reporting on unannounced products by independent news outlets, Steve Jobs, CEO of Apple Computer, began his keynote address at 17:11 UTC this morning, before an enthusiastic audience.
+
+The keynote, held at Moscone Center in San Francisco as part of the annual Macworld Expo, began with a recap of Apple's retail progress over the past year, media coverage, and a demo of the new Spotlight search technology in the upcoming Mac OS X Tiger, which was announced at the previous 2004 event.
+
+Jobs then made a number of product announcements as he continued his demonstrations:
+
+* Mail is revamped to include high-speed Spotlight search support.
+* QuickTime 7, a new release with H.264 codec support for future DVD formats, will be included with Tiger.
+* Dashboard will provide miniaturized applications, or "widgets", for controlling iTunes, performing currency conversion, obtaining stock quotes, looking at the weather, and more. Developers will be able to create new widgets using the developer APIs provided by Apple.
+* iChat, Apple's A/V conferencing tool, will provide support for 10 simultaneous participants over an audio-only feed, and four simultaneous participants over a video feed.
+
+* iLife '05 is a major upgrade with major new versions of three of its included applications:
+** iPhoto 5 now supports MPEG-4 and RAW photo format (for increased control over color fidelity and filtering).
+** iMovie HD now supports video in the High-Definition (HD) format.
+** iDVD 5 now supports both DVD-R and DVD+R.
+** GarageBand 2 upgraded to record up to 8 tracks of audio simultaneously, with "real-time music notation", a new "loop authoring tool", "vocal transformation filters" and other features from Apple's higher-end Logic audio tool.
+
+* Final Cut Express HD to ship in February.
+
+* iWork '05 suite:
+** Keynote 2 has new features for animation and self-running kiosks.
+** Pages is a new word processor with PDF support and Apple designed templates.
+
+*Mac mini is a new $499 "headless", small form-factor Macintosh with no monitor, no keyboard, nor a mouse. Dimensions were given as "6.5 inches wide and 2 inches tall". 1.25GHz G4 CPU, 256MB RAM, 40GB hard disk, FireWire, USB, modem and Ethernet. Upgraded unit with 1.42GHz G4 CPU and 80GB disk for $599. Scheduled to ship Jan. 22.
+
+Jobs then made his final announcement, in his trademark "One More Thing" style:
+*iPod shuffle is a $99, miniature version of the iPod with 512MB of flash memory. $149 for the 1GB version. Shipping today.
+
+Jobs then exited as music artist John Mayer began his live entertainment act.

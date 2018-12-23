@@ -1,0 +1,14 @@
+team1=Germany |
+|score=0 – 1
+|team2= Spain|
+|goals1=Kevin Kurányi Michael Ballack 
+|goals2= Fernando Torres Fernando Torres Iker Casillas |
+|stadium=Ernst Happel Stadion, Vienna
+|attendance=51,428
+|referee=Roberto Rosetti 
+
+Spain has won its first UEFA European Football Championship since 1964 by defeating Germany in the final match.
+
+Fernando Torres scored the lone goal of the match in the 33rd minute. The match started at 19:45 UTC, and although the score was only 1-0, BBC Sport has reported that Spain dominated the match.
+
+Germany got close to scoring at some points in the game, one shot by German captain Michael Ballack missed the goal by a narrow margin.

@@ -1,0 +1,9 @@
+A team of 55 researchers led by University of Western Ontario biologist Miodrag Grbic has sequenced the genome of the spider mite Tetranychus urticae, a pest that costs over USD 1 billion to control annually. Their results were published in the journal Nature yesterday. The genome is the smallest arthropod genome sequenced so far.
+
+The study was funded by the US Depeartment of Energy Joint Genome Institute programme, Genome Canada, and the European Union.
+
+The pest is resistant to major plant toxins, and it takes a spider mite from two to four years to become resistant to new pesticides. University of Utah assistant professor of biology Richard M. Clark, a study co-author, said, "One key thing that makes spider mites unique is they can eat many, many different plant species... These mites are ... a major cause of people's house plants turning yellow and getting sick. They also are a major problem for agricultural nurseries and greenhouses, and for field crops. ... [the spider mite] has been found to rapidly develop resistance to multiple types of pesticides, often within a couple of years after a pesticide is introduced."
+
+The study found the mite's genome includes a variety of genes responsible for digestion and toxin degradation, possibly including some genes from bacteria and fungi. Because these bacterial/fungal genes are peculiar to spider mites, they appear to be a rare example of lateral gene transfer â€” gene transfer between distant species.
+
+The study also found 17 web-production genes. The spider mite's webs provide weather- and predator-protection and are somewhat stronger than webs of other species.

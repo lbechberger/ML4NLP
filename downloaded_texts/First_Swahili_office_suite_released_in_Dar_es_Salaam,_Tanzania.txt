@@ -1,0 +1,95 @@
+On Monday, February 28, 2005, Jambo OpenOffice.org, the first Swahili office suite, was released at the University of Dar es Salaam in Tanzania. The office suite was translated from the English version of OpenOffice.org, an open source suite based on Sun Microsystems' StarOffice. Jambo OpenOffice.org was translated by a multinational team including Swedish and Spanish programmers, as well as linguists from the University of Dar es Salaam. Monday's release included builds for Linux and Windows.
+
+
+
+The office suite has four components: a word processor, a spreadsheet, a presentation creator, and a drawing program. The translation effort required translating 18,000 English strings, made up of one or more words, many of which have previously had no direct Swahili equivalent. As part of the translation, the team developed a glossary of 1500 technical words in Swahili. The office suite also includes a spellchecker with a lexicon of 70,000 words.
+
+Swahili is not the only African language into which OpenOffice is being translated. According to Ethan Zuckerman, a fellow at Harvard University's Berkman Center for Internet and Society, OpenOffice is being translated into nine official languages of South Africa by Translate.org.za. The same organization is also supporting translation efforts to bring the software into the Rwandan language Kinyarwanda, and Hausa, a language spoken largely in Nigeria.
+
+
+
+Swahili is spoken by approximately 55 million people worldwide, predominantly in East African countries, including Tanzania and Kenya.
+
+Interview with the project coordinator
+
+Replies to questions from Pingswept by Alberto Escudero-Pascual, March 3, 2005
+
+ &gt; 1. Is the suite 100% translated to Swahili now?
+
+The suite contains more than 99% of the strings in Swahili. The ones
+that are left in English (less than 100 strings out of 18,000) will
+be worked out in the next release. Yes, this release is fully functional
+in Swahili.
+
+ &gt; 2. What would people who speak only Swahili 
+ &gt; do before Monday's release if they needed a 
+ &gt; word processor? Are there any alternatives?
+
+No alternatives. This is the first ever release of a word processor in Swahili.
+
+ &gt; 3. How widely do you expect the suite to be distributed? 
+ &gt; What sort of IT infrastructure exists in East Africa?
+
+I "expect" the software to get installed in all the primary schools of
+the country. I also expect the software to be installed in the main
+universities of the country and colleges. We have postive feedback
+from them but this is a rather "political" decision out of my (our)
+control.
+
+The secondary schools have compulsory English so they might not want
+to install it.
+
+East Africa, ufff that is like asking what IT infrastructure is in the
+whole Europe :-D
+If you mean connectivity, all is satellite VSAT upstreams. Most of
+the local loops in Dar are based on IEEE 802.11b. It is expensive for
+most of the locals. But there is an Internet Exchange already in Dar es Salaam
+where the ISP peer together. Things will always get
+better. The software is placed in the IX.
+
+The software will spread slowly, but I am sure that will spread.
+
+ &gt; 4. What next? How many words are there to translate 
+ &gt; in a small Linux distribution like Knoppix?
+
+The Tanzanian team will start translating OOo training documentation,
+and next they will work with Firefox. A Linux desktop might come next
+year.
+I have no idea what will it take to translate Knoppix, but the
+priorities should be in getting first a couple of good tools as
+OpenOffice and Firefox and do loads and loads of training material in
+Swahili.
+
+ &gt; 5. How will future versions be compiled once you 
+ &gt; return to Sweden?
+
+I have developed an almost automatic version to update JambOOo 1.1.3 in
+Kiswahili. The UDSM has access to one of the build servers. I expect a
+new release of JambOO, maybe 1.1.4 with all the bug corrections in six
+months. The next step is to migrate to OOo 2.0, I have no clear
+picture of how that will happen.
+
+ &gt; Will it all come through one copy of Visual Studio
+ &gt; in Dar es Salaam?
+
+Nope, the Win32 version was developed entirely in Sweden and Spain during
+Christmas 2004 . The new build system does not require Visual Studio
+to "update" the Swahili strings.
+
+ &gt; 6. How was the project funded? How can people contribute to this
+ &gt; project, or similar projects in the future?
+
+SIDA (Swedish International Cooperation Agency) has funded the
+University of Dar es Salaam and the Institute of Kiswahili Research
+for one full year. My company IT+46 also was funded by SIDA to support
+the project technically.
+
+IT+46 has contributed 50% of its working-time at no cost to the project.
+
+ &gt; 7. What is the plan for IT +46?
+
+Our plan was to be in Tanzania only six months and handle all the
+technology and the training back to the university as we want them to
+keep on with the development by themselves. Now, we are trying to find
+similar projects that need support. There are many languages out there
+after all.

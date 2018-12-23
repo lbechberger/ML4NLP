@@ -1,0 +1,11 @@
+The Institute of Electrical and Electronics Engineers (IEEE) approved two new IEEE 1394 Firewire standards last week.
+
+S1600 and S3200 — which enable data transmission rates up to 1.6 Gbps and 3.2 Gbps respectively — would make Firewire (Apple's name for the standard) theoretically four times faster than is currently possible.
+
+According to IEEE, the new standards are based on IEEE 1394b (FireWire 800) Standard. The new standard will allow peer-to-peer transfer without linking computers. In addition, the S1600 and S3200 standards will continue supporting the S400 and S800 previous standards through backward compatibility.
+
+"The new standard includes all of the amendments, enhancements and more than 100 errata which have been added to the base standard over the last 12 years," Les Baxter, chair of the working group which developed the standard, said in a press release cited in several sources. "This update provides developers with a single document they can rely upon for all of their application needs." 
+
+The standard should be ready for deployment in October. Though not as common as the USB standard, Firewire serves a niche market, especially the aviation industry.
+
+USB 3.0, the next generation of the competing USB standard, is due in 2010 with reported speeds of 4.8 Gbps.

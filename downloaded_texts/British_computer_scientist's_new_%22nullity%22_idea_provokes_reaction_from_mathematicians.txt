@@ -1,0 +1,9 @@
+On December 7, BBC News reported a story about Dr James Anderson, a teacher in the Computer Science department at the University of Reading in the United Kingdom. In the report it was stated that Anderson had "solved a very important problem" that was 1200 years old, the problem of division by zero. According to the BBC, Anderson had created a new number, that he had named "nullity", that lay outside of the real number line. Anderson terms this number a "transreal number", and denotes it with the Greek letter \Phi . He had taught this number to pupils at Highdown School, in Emmer Green, Reading. 
+
+
+ 
+Dr James A.D.W. Anderson is a member of the British Computer Society and a teacher in the Computer Science department (School of Systems Engineering) at the University of Reading. He was
+a psychology graduate who worked in the Electrical and Electronic Engineering departments at the University of Sussex and Plymouth Polytechnic (now the University of Plymouth). His doctorate is from the University of Reading for (in Anderson's words) "developing a canonical description of the perspective transformations in whole numbered dimensions".
+ 
+
+=

@@ -1,0 +1,15 @@
+NASA's Kepler Telescope, which will search for planets orbiting other stars, was successfully launched by a Delta II rocket from Cape Canaveral Air Force Station at approximately 10:51 p.m. (EST). 
+
+NASA regained the rocket's signal at 12:11 a.m. EDT Saturday, shortly after confirming the satellite's separation from the rocket.
+
+According to the Kepler Mission page on NASA's website, the telescope "is specifically designed to survey our region of the Milky Way galaxy to discover hundreds of Earth-size and smaller planets in or near the habitable zone and determine how many of the billions of stars in our galaxy have such planets." The telescope is named after Johannes Kepler, an astronomer, astrologist and mathematician from Germany in the late 1500 and early 1600s.
+
+The Kepler Telescope will use the 'Transit Method' of detecting planets. When planets pass in front of their parent star, a small black dot is cast over the star, called a transit. Transits by terrestrial planets produce a small change in a star's brightness of about one part in ten thousand (.01%), lasting for 2 to 16 hours.
+
+Kepler's view is 105 square degrees and will be focused on one area all the time. It will orbit around our Sun, maintaining a constant distance from Earth of 950 miles. It will continuously and simultaneously monitor the brightnesses of more than 100,000 stars for the life of the mission, which is expected to be three and a half years.
+
+"Even if we find no planets like Earth, that by itself would be profound. It would indicate that we are probably alone in the galaxy," said William Borucki, the mission's science principal investigator.
+
+Although planets orbiting stars other than the Sun had been theorized for centuries, it was only in 1988 that a team of Canadian astronomers made the first detection of extrasolar planets orbiting the star Gamma Cephei. Now over 300 extrasolar planets are said to have been discovered.
+
+The launch comes just weeks after NASA's failed launch of the Orbiting Carbon Observatory, which crashed into the ocean off Antarctica's coast. It would have been the first spacecraft dedicated to studying atmospheric carbon dioxide, the most significant human-produced greenhouse gas and the principal human-produced driver of climate change. The cost of the project was US$273 million.

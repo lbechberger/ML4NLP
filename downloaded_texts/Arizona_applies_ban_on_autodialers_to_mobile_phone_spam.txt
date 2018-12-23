@@ -1,0 +1,5 @@
+On Tuesday an Arizona appellate court ruled that the Telephone Consumer Protection Act of 1991, a federal law that bans using autodialers to call mobile phones or pagers, also applies to text messages sent to mobile phones.
+
+The three-judge Court of Appeals panel upheld the trial judgeâ€™s ruling in favour of Rodney L. Joffe. He sued Acacia Mortgage Corp. in 2001, for $55,000 in damages for harassment. 
+
+Acacia used a web-based system to send the text messages, which translates the users phone number into an e-mail address. Acacia argued that the company was not making calls to mobile phones, but rather sending e-mails. "Even though Acacia used an attenuated method to dial a cell phone telephone number, it nevertheless did so," wrote Judge Patricia K. Norris.

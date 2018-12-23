@@ -1,0 +1,19 @@
+Psiphon is being launched the end of this month as a highly anticipated software program that allows Internet users inside China, Iran, Saudi Arabia and Myanmar (formerly Burma), to get around censorship without being detected by the censors.
+
+Three University of Toronto students, Ron Deibert, Nart Villeneuve, and Michael Hull combined their political passion and love of free expression to create the software program that is attracting attention globally from people like Sharon Hom, executive director of New York-based "Human Rights in China".
+
+"We've been trying to circumvent both the firewalls and the censorship surveillance," said Hom; "So it's something we are very, very interested in."
+
+"It's enormous," says Deibert who directs the Citizen Lab at the U of T's Munk Centre for International Studies, where the threesome works. "If it works the way we hope it does and is distributed worldwide, it will have a huge impact on freedom of speech."
+
+According to Andrew Chung of the Toronto Star, "China blocks countless websites, from ones featuring porn to those devoted to Falun Gong, a spiritual movement banned in China. Anything on human rights is off-limits. Same for democracy." Although the precise material filtered out by the Chinese government is dynamic and more specific than this implies, any censorship of the internet is seen by some free-speech advocates a gross violation of human rights. 
+
+The Citizen Lab taking on powerful censors such as China is like the people of Lilliput taking on Gulliver. "It's a huge uphill battle," Deibert agrees. "The trajectory in terms of global politics is toward greater state control (of the Internet). I see closure everywhere."
+
+Villeneuve, 31, shrugs his shoulders and smirks, "It just seems like the right thing to do."
+
+The Citizen Lab even has "black boxes," mini-computers that can be "planted" discreetly inside these countries to run the tests. "This kind of research is illegal in almost every country we do it in."
+
+Psiphon is supposed to be able to effectively turn anyone's personal computer into a proxy server. The censored user may then connect to the computer running Psiphon and accesses banned content from there, all out of the view of censors. Psiphon data is also encrypted and moves globally on a network reserved for secure financial transactions, so the Censor wouldn't be able to tell a Psiphon request from a MasterCard purchase.
+
+"We're making the Internet run the way it's supposed to," said Villeneuve; "Because people have broken it."

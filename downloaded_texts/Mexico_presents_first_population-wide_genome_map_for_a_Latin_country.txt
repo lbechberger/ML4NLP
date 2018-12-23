@@ -1,0 +1,20 @@
+National Institute of Genomic Medicine of Mexico (Inmegen) Director Gerardo Jiménez Sánchez presented in Los Pinos the genome map of Mexicans, a stepping-stone for Latin American genomic medicine.
+
+Previous endeavours of this kind had so far only covered some of the most ancient races on the planet, native from Africa, Europe and Asia, leaving out the recently admixed races of Latin America.
+
+During the ceremony Jiménez, who led the project, symbolically presented President Felipe Calderón with a hard copy of the results. Calderón then uploaded the map to the Internet making it publicly available for researchers around the world. The President commented on the research being a step towards population-specific predictive medicine and medications, and particularly useful for Latin America for being genetically closer to the Mestizo peoples of those countries than genome maps published so far.
+
+Among other results, the five year-long work found that, while sharing the 99.9% of the genome common to all humans, in the remaining portion the Mexican population has significant genetic variation from the world's other known genetic subgroups. This makes importing genome maps from other groups unfeasible, and hence justifies the study.
+
+Also, by comparing with data sets from the HapMap Project (a map of the human genome's haplotypes, which are clusters of the possible genetic variations a human individual can present), it was found that Mexicans share 64% of their haplotypes with West Africans, 74% with East Asians and 81% with Northern Europeans. 
+ 
+
+Genetic analyses aimed at common disorders in Mexico like diabetes, obesity and breast cancer are yet to be performed. "With a drop of saliva we would be able to tell whether to prescribe a medication or not", forecast Jiménez about the applications of the genome map in the long run.
+
+"Studies such as this are helping us define the future of the genome era", commented U.S. Translational Genomics Research Institute President Jeffrey Trent. "Gaining a clearer understanding of how genetic variation plays a role in disease, including the risk to some infections, will help tip the scales in our favour in terms of understanding and treating disease at the individual level", he added.
+
+"It is not possible today to say genetic variation is responsible for the unique H1N1 Influenza A mortality rate in Mexico. However, knowledge of genomic variability in the Mexican population can allow the identification of genetic variations that confer susceptibility to common diseases, including infections such as the flu", said Jiménez when talking about the current swine flu outbreak.
+
+Recently, however, Inmegen's Multifactorial Diseases Genomic Research Laboratory head Lorena Orozco revealed that one fifth of the Mexican population have genes in their immune system that can trigger an immune overreaction in presence of some diseases. According to Orozco one of these genes is responsible for symptoms similar to the ones A/H1N1 victims presented, which makes it a strong candidate for explaining these deaths.
+
+Although blood samples were collected from 10 different states and 4 Amerindian populations, the published results are based on data from only 6 states and 1 Amerindian population. The presentation ceremony and the online publication of the research paper in the PNAS journal came just days after the Mexican Government came under criticism for its low investment in science and the resulting dependency on other countries in the beginning of the current sanitary crisis.

@@ -1,0 +1,10 @@
+A district court in Berlin has issued a preliminary injunction against the Wikimedia Foundation for displaying the true name of a computer hacker on the German Wikipedia. The family of the deceased German hacker, known as "Tron," obtained the provisional order in Berlin on December 14. The order was corrected on December 19 because it was at first addressed to Saint Petersburg, Russia instead of Saint Petersburg, Florida.
+
+Tron became famous as the first person to crack the encryption of Pay TV and calling cards. He died in 1998, at the age of 26, in an apparent suicide. Questions have arisen as to the nature of the hacker's death.
+
+The court has ordered the German Wikipedia to remove all forms of the hacker's complete civil name "Boris Floricic". The court states that this is justified by the fact that the hacker never worked under his civil name, but instead his Internet alias.
+
+The legality of the order is in question, because the Wikimedia Foundation servers are not located in Germany, but instead in the United States. Whether the Foundation will comply or if the family's attorneys have any means to enforce the decision remains in doubt. The case prompted many German media outlets to publicly display the hacker's real name.
+ 
+
+On January 17 the same court also issued a preliminary injunction against Wikimedia Deutschland e.V., the German chapter of the Wikimedia Foundation, citing the same reasons. In that injuction, the chapter was ordered to cease redirecting www.wikipedia.de to de.wikipedia.org. Wikimedia Deutschland complied, but its lawyers announced that they will appeal the decision, saying that Tron's civil name has long since been public knowledge.

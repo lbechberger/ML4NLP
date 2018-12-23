@@ -1,0 +1,26 @@
+Traralgon remain the only undefeated team after five rounds of the 2010 Gippsland Football League season after they defeated Warragul by seventy points and Sale defeated Maffra by one point. Warragul remain the only team without a win.
+
+The Gippsland Football League (officially Gippsland League) is the only major Australian rules football competition in the Gippsland region according to the Victorian Country Football League.
+
+In other games, Morwell defeated Drouin and Moe defeated Wonthaggi.
+
+After five rounds, the standings are;
+* Traralgon (five wins, no losses - 166.67%)
+* Maffra (four wins, one loss - 150.8%)
+* Sale (three wins, one loss, one bye - 126.32%)
+* Morwell (three wins, two losses - 115.62%)
+* Drouin (two wins, two losses, one bye - 128.28%)
+* Moe (one win, three losses, one bye - 85.58%)
+* Leongatha (one win, three losses, one bye - 68.82%)
+* Wonthaggi (one win, four losses - 46.68%)
+* Warragul (no wins, four losses, one bye - 48.6%)
+
+Scores are quoted as goals-behinds (total).
+
+ Footballbox-ver
+| team1 = Traralgon
+| score1 = 20-16 (136)
+| team2 = Warragul
+| score2 = 10-6 (66)
+| date = May 8, 2010
+| stadium

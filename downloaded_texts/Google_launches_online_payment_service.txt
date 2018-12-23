@@ -1,0 +1,7 @@
+Google has today launched its foray into the world online payment processing with Google Checkout. This is considered by many to be a rival to the payment giant PayPal, owned by eBay. This service is currently only available to U.S. residents.
+
+Google has created the service in a similar way to PayPal. There are two types of Google Checkout account, Buyer and Seller. Only a Seller account can receive payments through the service, a Buyer account can only make payments. This is tied in very closely with the Google Adwords service — adverts selling items can now display a small shopping cart icon — which indicates that the advertiser accepts Google Checkout as a method of payment.
+
+The selling rate is also closely tied in with the Google AdWords service. Other online payment services generally charge a set percentage per transaction, whereas Google Checkout credits you with a certain amount of "free transactions" when you purchase Google AdWords (For every US $1 spent on AdWords, US $10 in sales can be processed at no charge) — or a rate of 2% plus US $0.20 if the Seller is not a Google Adwords subscriber. There are no charges associated with Buyer Accounts.
+
+Currently, Google Checkout only accepts Visa, MasterCard, American Express, and Discover Credit Cards for inclusion on a buyer's or seller's account. They also offer a special deal for users of a Citicard credit card — US $5 (or 1000 ThankYousm Points) for signing up. Google has announced its' intentions to "to make the service available to merchants internationally" in the near future.

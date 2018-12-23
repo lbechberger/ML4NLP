@@ -1,0 +1,12 @@
+Author of the Sasser worm, Sven Jaschan (19), was convicted today for 
+three cases of computer sabotage and four of illegal data modification, to which he had pleaded guilty at the start of his four-day trial. 
+
+The regional court in Verden, Germany, condemned Jaschan to a 21 month suspended sentence. He is also expected to undertake 30 hours of community service and will not have to pay court costs. Public prosecutor Lutz Gaebel had called for 200 hours of community service and a two-year suspended sentence.
+
+Jaschan, an 18 year old computer science student at the time, was arrested in May 2004 after international investigations were launched. He was then released pending trial. The arrest followed tip offs to the police, which may have been prompted by Microsoft's offer of US$250,000 for information leading to the arrest of the person responsible. He was tried as a minor since he authored Sasser at the age of 17. The trial was held behind closed doors, with details reported to the press by Katharina KrÃ¼tzfeldt, the court spokesperson.
+
+The worm began to spread in April 2004 on Windows XP and Windows 2000 operating systems which had not been patched with MS04-011. The worm hit companies and home users worldwide, with reported cases at Agence France-Presse, Delta Air Lines, HM Coastguard, Goldman Sachs, Deutsche Post, Australia Railcorp, and the European Commission. 
+
+The BBC reported that the worm had affected millions worldwide, and Heise noted that experts had estimated several million euro worth of damage.
+
+According to various sources Jaschan was 'fingered' by a couple of his friends who were after the 'Microsoft Anti-Virus Reward' of $250,000 US Dollars. According to Microsoft's Web site, rewards of $250,000 can still be collected for information that leads to the arrest and conviction of those responsible for launching the MyDoom.B worm, the Sobig virus and the MSBlast.A [aka Blaster] worm. Furthermore, Microsoft have another $4 Million in hand for rewards required for future malicious software authors they want to have arrested and prosecuted.

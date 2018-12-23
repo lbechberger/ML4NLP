@@ -1,0 +1,9 @@
+In a recent press conference by the Ministry of Justice of the Republic of China, Armorize Technologies disclosed details on web-phishing crimes related to the "Edison Chen photo scandal". 
+
+The scandal which has become a hot topic in the Chinese-language world - especially in Hong Kong - has seen some governments discipline the public for distributing these related photos.
+
+According to Armorize Technologies, organized crime gangs have distributed malicious code recently masquerading as "Edison's photos" through phishing, e-mail hacking, and peer-to-peer file transfer. Even though Google will attempt to tag these phishing sites as dangerous to a user's computer, there are many instances where the malicious code will not be found by anti-virus software such as Norton AntiVirus, Kaspersky Anti-Virus, Trend Micro Internet Security, and NOD32.
+
+Also in this conference, Armorize described their HackAlert service:
+
+Edison Chen had claimed to quit the entertainment industry in Hong Kong, but the (photo) scandal shows yet another information security crisis on the World Wide Web that includes Taiwan.

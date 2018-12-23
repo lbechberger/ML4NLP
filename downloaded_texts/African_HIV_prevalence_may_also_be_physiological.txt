@@ -1,0 +1,7 @@
+A new study shows that a variation in a gene known as the Duffy antigen receptor for chemokines, or simply DARC, may introduce an unknown vulnerability that could lead to a 40% greater risk of contracting HIV, the precursor to AIDS. The genetic variation is found in two-thirds of sub-Saharan Africans.
+
+This particular variation on the gene, in which a single genetic letter is flipped, is thought to be a defense mechanism against malaria. It stops the growth of the malaria-causing parasite Plasmodium vivax. Concurrently, it also causes chemokines (proteins secreted by cells) to avoid red blood cells, an opposite behavior of the typical Duffy gene. 
+
+An on-going study of African American Airmen has found that the group infected with HIV was more likely to lack red blood cells that host the Duffy gene. The study, published in Cell Host &amp; Microbe, does not identify why the absence of the chemokine receptor in red blood cells increases susceptibility to HIV, but the occurrence of the virus in such people is beyond the levels of chance.
+
+The study also found that those carrying the DARC variant lived longer with HIV/AIDS. While this comes as good news to those already infected, it also means that the window for the unwitting spread of HIV is now known to be wider, since infected individuals with the gene mutation can take an average of two years longer to show symptoms. In terms of numbers, the two years of unknowingly being a source for infection translates into as much as 11% of AIDS cases in Africa.

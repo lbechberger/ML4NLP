@@ -1,0 +1,5 @@
+The state of Massachusetts unveiled plans to officially end use of the Microsoft Office suite, instead switching to an open document format currently implemented by many open-source groups. Massachusetts is believed to be the first major public-sector group to implement such a plan in the United States.
+
+Target implementation date is January 1, 2007. The task is considered challenging, as most government documents were created in closed-source programs such as Office, Lotus Notes, and Corel WordPerfect. 
+
+OpenDocument is an XML-based standard for creating documents, spreadsheets, charts and graphs. The OpenDocument format is supported by many software suites, including OpenOffice and StarOffice. While Microsoft document formats are generally the most commonly used, government officials worried about the proprietary nature of the formats.

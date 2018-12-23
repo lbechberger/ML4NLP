@@ -1,0 +1,7 @@
+The electronic programme guide, TV-Browser, announced their intention to remove 16 private tv-channels on January 1st, 2008. These include the German channels ProSieben, RTL Television and Sat.1.
+
+According to a press release by the TV-Browser team, the collecting society VG Media plans to collect a usage fee for channel-program-data in EPGs beginning next year. Users will be charged between 0.02 and 0.04 € cents per page-view with a minimum fixed fee of at least 2000€.
+
+The Open-Source-project can not and does not wish to pay this fee; developers are considering showing certain programme highlights from the channels in question.
+
+A petition has been started to convince VG Media to abandon this charge fee.

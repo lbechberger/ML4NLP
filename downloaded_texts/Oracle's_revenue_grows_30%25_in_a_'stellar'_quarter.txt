@@ -1,0 +1,9 @@
+"There's no doubt we're gaining share across all product lines," said Oracle's CFO, after a quarter where net income grew 29% and revenue grew 30% to $3.6bn. 
+
+Applications license revenue climbed 78% on a constant currency basis. CEO Larry Ellison noted that, in comparison, SAP saw its application license revenue grow a more modest 8%. Oracle's president claimed 88 head-to-head wins against SAP in the quarter.
+
+Some commentators noted that, though impressive, Oracle's results may not persist. Unlike industries with huge fixed costs, competitors in the software industry can quickly gain and lose market share through new product launches and mergers.
+
+Ovum noted that the integration of acquisitions such as PeopleSoft, JD Edwards, and Siebel now seem to have been accomplished, and that both Oracle and SAP are benefitting from the increasing symbiosis between the middleware and application markets.
+
+SAP replied with a statement noting that it offers "market-leading SOA applications today, while Oracle's next-generation applications exist only in PowerPoint and won't be delivered until 2008 or beyond."

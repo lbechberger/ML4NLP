@@ -1,0 +1,5 @@
+After two months, Google Toolbar for Firefox, a downloadable extension for the popular Firefox web browser, has been released from beta testing. 
+
+In addition to providing a Google search field, it also includes spell checking, the ability to automatically fill in forms, translates English into other languages, and offers a new feature called Search Suggest, which recommends query text as the user types in search terms. Google Suggest is also available as a separate extension that works with the standard Firefox search box.
+
+In response to user requests, Google has made it possible to rearrange all icons on the toolbar, including the search box. The Google Toolbar for Firefox is available in 17 languages and requires Firefox 1.0 or above with the Windows XP/2000 SP3+, Mac OS X 10.2+, or Red Hat Linux 8.0+ operating systems. Users have also reported success with other Linux distributions. Another version for the Internet Explorer web browser is also available.

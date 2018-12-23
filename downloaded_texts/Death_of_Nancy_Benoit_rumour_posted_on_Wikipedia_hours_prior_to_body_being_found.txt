@@ -1,0 +1,19 @@
+Wikinews has learned through an investigation that anonymous edits on the Wikipedia article Chris Benoit were added about the death of his wife Nancy Benoit 14 hours before police entered the Benoit home to find the former professional World Wrestling Entertainment (WWE) Canadian wrestler and his family dead.
+
+An anonymous edit from IP address 69.120.111.23 using the Internet service provider Optimum Online was made at 04:01 UTC on Chris Benoit's Wikipedia article. On a paragraph about an earlier fight: "However, Chris Benoit was replaced… due to personal issues,…", the anonymous editor added " stemming from the death of his wife Nancy." The edit was reversed just under one hour later with the comment: "Need a reliable source. Saying that his wife died is a pretty big statement, you need to back it up with something."
+
+Then just one hour later after the first edit reversion, another anonymous edit by 125.63.148.173 using unwiredAustralia.com.au, a wireless Internet service provider, was made adding about the aforementioned personal issues: "which according to several pro wrestling websites is attributed to the passing of Benoit's wife, Nancy." That edit was reverted just under 20 minutes later, with the comment: "Saying 'several pro wrestling websites' is still not reliable information."
+
+Further investigation shows that the IP address used to make the first edit is located in Connecticut, but the IP address is not linked to any computers or servers used by the WWE, but according to Cary Bass, Volunteer Coordinator for the Wikimedia Foundation, the IP address matches a location in Stamford, Connecticut where the WWE headquarters is located. Bass also informed the local authorities in Atlanta about the unusual edits, but it is not known if the edits were investigated by the police. The second edit was made by a computer in Australia from a wireless network.
+
+"It didn't become apparent until someone put the pieces together and realized that the comment was made by someone who apparently knew about the murders," added Bass.
+
+Fayette County Sheriff deputy Lt. Tommy Pope stated that police found the family at about 2:30 p.m. ET, which is 18:30 UTC, on Monday when the WWE called police and asked them to do a "welfare check" after employees of WWE received calls and text messages from Chris Benoit. Early Sunday, Benoit sent repeated text messages that read "My physical address is 130 Green Meadow Lane, Fayetteville Georgia. 30215." Another text message reportedly said "The dogs are in the enclosed pool area. Garage side door is open." The messages were sent around 4:00 a.m. ET.
+
+Earlier, on Saturday afternoon, Chris Benoit placed a series of calls that explained why he missed his flight to Houston. The stories he told were mostly about his wife and son being sick with food poisoning and vomiting. Although, in one call he said that he and Nancy were at the hospital to be with Daniel who was hospitalized. Throughout he insisted that he would attend that live event in Houston.
+
+When he missed the live event on Sunday, and the WWE couldn't get hold of him, they contacted authorities. Police say that Benoit strangled his wife on Friday, smothered his son on late Friday or early Saturday, and then hanged himself inside his weight room on Sunday or Monday.
+
+The Wikinews investigation is unable to conclude whether the anonymous editors had inside information about the death of Nancy Benoit.
+
+This is not the first time Benoit's article has been edited to show false or unsourced information, as the article's edit history indicates a long history of promotional spam and vandalism. Around the time of the edits, the article contained a hidden warning to editors of the section mentioned, warning against adding rumours and speculations. For the time being, Benoit's article has been protected in an attempt to stop the addition of fraudulent information.

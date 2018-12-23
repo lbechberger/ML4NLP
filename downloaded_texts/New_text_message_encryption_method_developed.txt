@@ -1,0 +1,7 @@
+It was reported a month ago on The Prague Post that two Czech programmers, Dr. Marian Kechlibar and Jiří Šatánek, have developed SMS007, which is a program that advertises that no third party would be able to read text messages sent with this method. "We felt that there is too much phone tapping going on in this country," Šatánek said. "Everyone has a right to their privacy."
+
+The two are working on a version, set for release next northern hemisphere summer (June-August 2006), that will encode phone calls made from cell phones as well. Their Prague company, Circle Tech, is offering a 1 million Korona reward ($40,270 U.S.) to anyone who can crack their code.
+
+The program took about a year to develop and uses AES, a symmetric cipher. There are two keys to their code, one on the sender end and one on the recipient end. The keys to the code are not generated until after a person installs the software on his or her mobile phone.
+
+Dr. Kechlibar is a mathematics professor at the Charles University in Prague.

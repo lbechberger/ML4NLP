@@ -1,0 +1,12 @@
+According to press releases from the French Nuclear Safety Authority (ASN), Unit 2 of the Penly Nuclear Power Plant in France shut down Thursday afternoon after operators were alerted to "small quantities of burning oil." The plant is operated by Électricité de France (EDF). Emergency crews were dispatched to the 1,330-megawatt French reactor following an alarm triggered there at 11:20 UTC Thursday. According to EDF, there were "no consequences for the environment" and no one was injured.
+
+ 
+The ASN said in a statement the anomaly had been provisionally placed at level 1 on the International Nuclear Event Scale, which ranks occurrences at nuclear power plants on a scale ranging from 1 to 7, with 7 representing an event with lasting consequences for health and the environment such as the Fukushima Daiichi disaster following a Tsunami in Japan in March 2011.
+
+ 
+The alarm was triggered after two fires broke out in the reactor building. The fires are reported to have been caused by leaks in one of the cooling pumps that are part of the reactor's cooling system. The source of the fire was determined to be one or more pools of oil which had leaked from one of a pump's joints, catching fire. They were quickly suppressed and the reactor remains shut down due to damage to the cooling pump. 
+
+ 
+After the fires were put out, radioactive water was then discovered to be leaking from the pump into the reactor's drainage bin. The ASN released a statement at 05:00 UTC saying they had received "confirmation by EDF that the leak in the primary pump n°1 of the reactor n°2 at the Penly NPP had stopped." ASN has undertaken an investigation into the causes of the incident which will later be published on their website. The reactor will remain shut down until the damage is repaired and the cause of the incident is known.
+
+ The Penly nuclear site, located on the coast to the northwest of Paris, is home to two Pressurized Water Reactor (PWR) units and is cooled using water from the English Channel. PWRs are a common variety of nuclear reactors named for their use of highly pressurized water in their primary cooling systems. All of the 58 nuclear power plants which supply France with over 75% of its energy, are of this type.

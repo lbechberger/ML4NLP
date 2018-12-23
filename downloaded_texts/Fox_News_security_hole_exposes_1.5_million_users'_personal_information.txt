@@ -1,0 +1,11 @@
+A security hole on the Fox News web server Sunday exposed sensitive content to the public, including login information that allowed hackers to access names, phone numbers, and email addresses of at least 1.5 million people. 
+
+Wikinews has learned that an FTP server belonging to publishing company Ziff-Davis could be accessed with a username and password found on the Fox News site, with customer details among the internal data publicly available.
+
+The FTP site, used for collaboration between different global aspects of Ziff-Davis business, contains data ranging from expense sheets to resumes to opt-out lists used by customers who wish to avoid receiving unsolicited emails. Many of the compromised files make reference to Acxiom, a data management company that, in 2003, experienced a similar theft of personal information. Unlike in the 2003 breach, however, it is not believed that the files exposed due to the Fox News security oversight contain customer Social Security numbers or bank accounts. However, telephone and address details appear in the data. A number of the email addresses appearing on the list end in .gov or .mil, suggesting the named individual is a member of the U.S. government or military, respectively.
+
+Internet vandals were quick to leave their mark on the compromised Ziff-Davis server, uploading pornography and claiming to have come from popular Internet comedy site eBaum's World. 
+
+The Ziff-Davis access details are believed to have been on the Fox News server as a part of collaboration between the two media companies for technology news coverage.
+
+Security expert David Utter says the Fox News mistake is an example of "sloppiness", though the hole had been patched by noon Monday. Neither Fox News nor Ziff-Davis have commented on the breach.

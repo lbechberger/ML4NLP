@@ -1,0 +1,75 @@
+Just five years ago, when Jimbo Wales founded Wikipedia, the project's goal of 100,000 articles seemed ambitious. Yet today, the project, now one of the top 25 websites in the world according to Alexa, is nearing closer 1,000,000 articles in English, and 3.5 million articles across all languages. This week, we interviewed Jimbo Wales. 
+
+ Color-free version Colored version 
+
+ Wikinews: Raul654 asks: "Recently, there were revelations about organized attempts by US Congressmen to whitewash their articles. What is your take on this, as well as earlier reports of Corporate astroturfing?" 
+
+ Jimbo Wales: The question is invalid. There were no revelations of organized attempts by US Congressmen to whitewash their articles. Not any evidence of "corporate astroturfing" of which I am aware. There was evidence that some congressional staffers edited Wikipedia in inappropriate ways. But the internal evidence of the type and style of these edits do not suggest "organized attempts". 
+
+ WN: Nichalp asks: "Budget permitting, are there any plans to increase the number of Wikipedia servers, specifically into the less developed countries?" 
+
+ JW: We are always buying new servers. There are no specific plans to add servers in less developed countries, but we have looked into it as a possibility. We are particularly interested in doing so if it helps increase access and reduce costs for those users. 
+
+ WN: An anonymous reader asks: "How much of a role do you feel the Wikipedia community (and the communities of its sister projects) should have in the running of the Wikimedia Foundation? Do you see an increasing separation of the organization from the projects? If so, do you regard that as beneficial or a potential problem?" 
+
+ JW: The community has always been and will always be absolutely crucial to the running of the Wikimedia Foundation. We are increasing the community input and activity in the foundation through a new series of committees to delegate things to community members which have traditionally been handled by me or the Board. I do not see any increasing separation of the organization from the projects, quite the opposite. I consider the increasing integration of the community and the foundation as overwhelmingly beneficial. 
+
+ WN: ALoan asks: "English Wikipedia is approaching 1 million articles, but less than 1 in a thousand are Featured articles. The list of featured articles English Wikipedia should have has few featured articles, and recent surveys of articles chosen at random show that many articles are poorly written. How can we get from here to an encyclopedia of well-written articles? Or should we not worry too much about coverage and content?" 
+
+ JW: We should be tightly focused on the quality of our coverage and content. The goal of Wikipedia is to create and distribute a freely licensed high quality encyclopedia. The path to that goal will require us to be flexible and thoughtful. The first steps will come soon with the article review system, which will initially be used simply to gather data. After we have data, we can begin to work on how we will focus our attention to improve quality. 
+
+ WN: GeorgeStepanek asks: "You've said that 'Wikimedia's mission is to give the world's knowledge to every single person on the planet in their own language.' But very few of the wikipedias in the languages of third-world countries are seeing as much activity as the first-world language wikipedias. Do you have any ideas on how this could be turned around?" 
+
+ JW: I am a believer in outreach. I would like for the Foundation to raise money specifically to pay one or more minority language co-ordinators. The goal would be to reach out in a more organized way to professors and graduate students and expat communities who have good Internet access, to seed projects for languages where the majority of speakers have poor internet access. 
+
+ WN: Jacoplane asks: "How do you feel we will be able to reach Wikipedia 1.0? The tools currently available for vetting our articles are crude at best. The Featured article process seems too slow, and the article validation feature seems to have died a quiet death. Are you planning a big push on this front?" 
+
+ JW: Isn't that the same question as the quality question? The article validation feature has not died a quiet death at all. 
+
+ WN: Quadell asks: "Most important decisions on Wikimedia projects are handled with consensus. However, we sometimes have to deal with legal issues, especially related to copyright law. For instance, we as a community may need to decide whether to consider a certain use "fair", or how to deal with conflicting copyright claims. Dealing with this through consensus is problematic, since we can't do something illegal even if there is widespread misguided support for it. In general, how can we as a community deal with these issues?" 
+
+ JW: I don't think there is any real problem with this. The community is strongly in support of following the law. I don't know of any particular cases of widespread misguided support for something illegal. In particular cases, there can of course be [dis]agreement, but I have never seen anyone in the community argue that we should not listen to the advice of our legal team. 
+
+ WN: Raul654 asks: "Where do you see Wikipedia in 10 years?" 
+
+ JW: I don't know. My favorite answer to this is to say, the real question is: where will the world be after 10 more years of Wikipedia. :) Seriously, I think we'll eventually see a tapering off of new article creation in the large language wikipedias as more and more "verifiable" topics are covered. At this point, most changes will be expansions and updates and quality improvements to existing articles. But in 10 years, it seems likely to me that many languages which are now quite small will have very large Wikipedia projects. Our community will continue to become more diverse as more and more people worldwide come online. 
+
+ WN: Kevin Myers asks: "The values reflected in certain Wikipedia policies (anti-censorship, neutral point-of-view) are problematic in cultures where freedom of expression is limited, as the blocking of Wikipedia in mainland China and arguably the Muhammad cartoons controversy attest. As Wikipedia expands internationally, do you foresee Wikipedia becoming increasingly controversial in countries where "Western values" are seen as a potential threat?" 
+
+ JW: I don't think that neutrality and objectivity are really controversial among most people of the world. It is true that the leadership in some places does not value these things, and may actually work against these things, but we can not deviate from our goals to accommodate them. 
+
+ WN: On a similar topic, Vsion asks: "Are there currently any efforts being undertaken by the Foundation to address the People's Republic of China's blocking of Wikipedia or to alleviate its effect?" 
+
+ JW: Beijing-area Wikipedians are working to have the block lifted. Our position is that the block is in error, even given China's normal policies. Wikipedia is not propaganda, it is basic information. We expect that the block will be lifted. 
+
+ WN: David.Monniaux asks: "The Foundation receives daily accusations of libel from semi-well-known people who have an entry on Wikipedia or are mentioned in some Wikipedia entry. What do you propose? Would a strict application of the rule of citing controversial claims suffice, in your opinion?" 
+
+ JW: Yes. I think that our current systems do a good job of addressing these sorts of complaints, although it is very time-consuming for us here in the office. What really works wonders is a very strict application of the rule of citing controversial claims particularly relating to biographies of living persons. The new policy on biographies of living persons is a very strong step in the right direction. 
+
+ WN: Tony Sidaway asks: "In the past six weeks the number of userboxes on English Wikipedia has risen from 3500 to 6000 and, despite your appeals for restraint, the number pertaining to political beliefs has risen from 45 to 150. Can the problem of unsuitable userboxes still be resolved by debate?" 
+
+ JW: My only comment on the userbox situation is that the current situation is not acceptable. 
+
+ WN: Larsinio asks: "How can Wikipedia effectively explain to the public its open-contribution model without simultaneously worrying the public about inaccurate information?" 
+
+ JW: I think we do a reasonably good job of that. The best thing is to point to our overall quality while at the same time pointing out that we are currently a work in progress. Over time, this answer will change as we move toward '1.0'. At that time, we can point to '1.0' for those who are made nervous by the live editing. 
+
+ WN: Rob Church asks: "Do you consider the encyclopedia to be 'finished'? Do you think it ever can be?" 
+
+ JW: Nothing is ever finished. Human knowledge is always growing. 
+
+ WN: Raul654 and Pavel Vozenilek both asked, "What kind of cool new features/announcements can we expect to see in the next year or two?" 
+
+ JW: I think this question is too hard for me to answer. I almost never "announce" anything, and features are developed publicly by the community. I think other people have a better idea than I do what will happen in the next year or two. :) Ask Brion [Vibber]. 
+
+ WN: Celestianpower asks: "If you had not founded Wikipedia, and had just been referred to it by a friend, how active a contributor do you think you would be?" 
+
+ JW: [I] dream fondly of such a scenario. I might actually get to edit articles then. Instead of spend the morning (this morning) documenting transactions and taking phone calls. 
+
+ WN: OpenToppedBus asks: "The last fundraising drive was less successful than had been anticipated. Do you see a shortage of money holding back Wikipedia/Wikimedia in the short-to-medium-term, and are there any plans to bring in income from sources other than individual donations?" 
+
+ JW: The last fundraising drive was more successful than had been anticipated, by a long shot. It was the most successful fund drive in our history. [Regarding a quoted goal of $500,000], Mav wrote something like that somewhere, in a scratchpad kind of way. That number was just a placeholder and had nothing to do with me or the official view of the foundation. He's apologized repeatedly for it. 
+
+ WN: Thryduulf asks: "What is your single greatest wish for Wikipedia?" 
+
+ JW: I would have to just point back to our original goal: a freely licensed high quality encyclopedia for every single person on the planet. That's what I remain focused on daily.

@@ -1,0 +1,7 @@
+Light has been stopped in its tracks for more than one second, setting a new record over a thousand times longer than the previous one.
+
+Researchers at the Australian National University used a technique called electromagnetically induced transparency in which a beam of laser light puts the atoms in a solid sample into a state in which a signal light pulse can be trapped.
+
+Most previous stopped-light demonstrations have used gases rather than solid materials. Light had previously been stopped in a solid (yttrium-silicate doped with atoms of praseodymium), but only for a few milliseconds.
+
+Although the efficiency of the storage was low in this experiment, the researchers believe they can improve the efficiency by using a thicker sample and by increasing the concentration of praseodymium in the sample. The technique could be useful in quantum information processing applications such as quantum computers.

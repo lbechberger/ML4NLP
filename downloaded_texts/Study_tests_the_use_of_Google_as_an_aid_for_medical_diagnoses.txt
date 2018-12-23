@@ -1,0 +1,10 @@
+In an internet-based study published today on the website of the British Medical Journal, Australian investigators tested how well Googling could help to establish a difficult diagnosis. The search results met against their criteria in 15 out of 26 cases.
+
+Previous anecdotes of the use of Google in reaching a difficult diagnosis are presented in the paper. In a case described in the New England Journal of Medicine (NEJM), a physician diagnosed IPEX syndrome after submitting the typical diagnostic clues to the search engine. A patient's father replied to doctor's saying that his son had acute subclavian vein thrombosis of unknown origin: "But of course he
+has Paget-von SchrÃ¶tter syndrome."
+
+Hangwi Tang and Jennifer Hwee Kwoon Ng from the Princess Alexandra Hospital in Brisbane selected clinical cases from the NEJM blind to the correct diagnosis. They selected 3 to 5 rather specific features, searched Google, and selected the 3 disorders from the results that seemed to fit the case best. If one of those was right, Google was said to be "right".
+
+The scientists admit that an internet search probably works better with specific symptoms rather than with phrases such as "fever ill pain". Also, the percentage may depend on the operating physician's knowledge base, and the test was not double-blind.
+
+Experts commented that the internet is not a replacement for doctors, but should be seen as a way of supporting doctors and patients. A spokeswoman for the Patient Association added that "a lot of sites are not credible. There are lots of good sites out there, but we also know that there are many that are not credible."

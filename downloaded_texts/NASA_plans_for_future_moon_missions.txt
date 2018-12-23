@@ -1,0 +1,33 @@
+NASA has announced plans for sending humans back to the Moon, as a first step to Mars.
+
+
+A 2018 lunar mission is proposed, where a crew of four would remain on the Moon for as long as a week. A minimum of two lunar missions a year is planned, with astronauts remaining as long as six months.
+
+Some of the technology had previously been proposed for replacement of the Space Shuttle.
+* Astronauts will be launched in a capsule, similar in concept to that used for the Project Apollo but three times larger. The top part of an Exploration Transportation System (ETS), the Crew Exploration Vehicle (CEV) will be a capsule attached to a service module which contains supplies, power, and propulsion units. The CEV is designed for use in Earth orbit.
+* On lunar missions, crew or cargo versions of a Lunar Surface Access Module (LSAM) would be used with a CEV. The LSAM will have design concepts related to the Apollo Lunar Module, with a four-legged landing unit carrying an ascent stage.
+* An Earth Departure Stage (EDS), a powerful propulsion unit, will be used to move CEV and LSAM units out of Earth orbit, such as on lunar missions.
+* Heavy Launcher unmanned cargo rockets will be used for heavy loads of equipment.
+* The launch rockets, Shuttle Derived Launch Vehicles, will use engines developed for the Shuttle program.
+** CEV will be launched atop a Crew Launch Vehicle (CLV), a single solid fuel booster with a second stage using a shuttle main engine. The CLV can carry a payload of 25 metric tons into low Earth orbit.
+** The heavy-lift system uses a pair of longer solid rocket boosters and five shuttle main engines to put up to 125 metric tons in orbit -- about one and a half times the weight of a shuttle orbiter.
+* The use of a Launch Escape System (LES) will improve safety. A LES is a top-mounted rocket that can quickly remove the crew capsule away from an exploding or otherwise dangerous rocket.
+
+For a lunar mission, the LSAM and EDS would be placed in orbit by a cargo launcher, then a CEV would dock with the assembly before leaving Earth orbit.
+
+
+The goal is to begin production of the new spacecraft by 2011.
+* Robotic missions will be sent, probably the first one in 2008.
+* Past experience with lunar dust is being used in designing equipment and spacesuits which may encounter it.
+* Surface mobility with open and pressurized rovers for use in such missions is also being developed.
+* The CEV can be reused up to ten times.
+* Crew capsule, upon return to Earth, will set down on dry land. It can also land on water.
+* The CEV and lunar lander ascent stage use methane as fuel, as methane may be available on Mars.
+* Eventually the designs could be expanded to support six astronauts for a trip to Mars.
+
+
+The plans are a means to implement President Bush's "Vision for Space Exploration" program. Goals include:
+* Implement a sustained and affordable human and robotic program to explore the solar system and beyond;
+* Extend human presence across the solar system, starting with a human return to the Moon by the year 2020, in preparation for human exploration of Mars and other destinations;
+* Develop the innovative technologies, knowledge, and infrastructures both to explore and to support decisions about the destinations for human exploration; and
+* Promote international and commercial participation in exploration to further U.S. scientific, security, and economic interests.

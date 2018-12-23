@@ -1,0 +1,19 @@
+A strong earthquake struck off the southern tip of Taiwan at 12:26 UTC, triggering a warning from Japan's Meteorological Agency that a 3.3 foot tsunami could be heading towards Basco, in the Philippines. The head of the earthquake monitoring agency in the Philippines disputed the Japanese agency's warnings, however.
+
+Conflicting reports have placed the magnitude of the quake between 6.7 and 7.2 on the Richter Scale, with the Taiwan Central Weather Bureau marking it at 6.7, the United States Geological Survey estimating it at 7.1, and the Japan Meteorological Agency putting the magnitude at 7.2.
+
+Despite the Japanese Meteorological Agency's warning of a tsunami threat to the Philippines, Renato Solidum, the director of the Philippine Institute of Volcanology and Seismology, denied that a tsunami is headed towards the Philippines, saying that the Pacific Tsunami Warning Center in Hawaii had not released any tsunami advisory. Nevertheless, Solidum said that residents in low-lying areas in the Philippines should, as a precaution, move to higher ground.
+
+In the aftermath of the quake, news agencies have aired reports of collapsed houses, hotel guests being trapped in elevators, and telephone outages due to severed lines across Taiwan. Two people were reported killed and 42 injured.
+
+The earthquake has damaged six submarine fiber-optic communications cables, restricting internet access to millions of users in Asia and Australia.
+
+Home users are experiencing severe connection issues, with timeouts becoming very common. The Internet Storm Center is reporting a 100% packet loss on certain routers. A sample ping test from Singapore to Wikinews came up with a 380 millisecond average round trip at 50% packet loss.
+
+The financial markets are facing an even more alarming situation, with financial news and stock quotes from the U.S. and Europe not being able to reach Asian markets.
+
+Repairing the lines "is not a matter of days," says Hong Seoung-Yong, a ministry official from South Korea handling the problem. 
+
+Taiwan's internet capacity has dropped to 40%, and consequently the networks there are jammed. Service providers may choose to bypass those lines in favour of European ones, say a spokesman for Japanese telecoms firm KDDI Corp, Satoru Ito.
+
+The quake took place exactly two years from the day that the 2004 Indian Ocean Earthquake struck, devastating Southeast Asia. That 2004 earthquake registered as a magnitude 9.1, and caused a tsunami with waves reaching as high as 33 feet.

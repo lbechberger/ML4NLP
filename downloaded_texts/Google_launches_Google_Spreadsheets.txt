@@ -1,0 +1,9 @@
+Google has launched an online spreadsheet site, in a private beta. 
+
+The site will allow spreadsheets to be shared between up to 10 users, which is aimed to be useful to teams and small businesses. "Many people already organise information into spreadsheets. Where they are struggling is to share it" said the product manager, Jonathan Rochelle.
+
+Google recently bought the online word-processor Writely, launched a calendar product, as well as a desktop search tool. Many see this as them straying into Microsoft's markets.
+
+Google Spreadsheets uses very advanced AJAX (Asynchronous Javascript And Xml) and Client Side Scripting to mimic very effectively it's desktop counterparts' functions.
+
+It is surprisingly fast, has very good formatting and advanced formula support, but best of all it has complete support for Microsoft Excel .xls files, and very good collaboration: just enter the e-mail address and you can share easily.

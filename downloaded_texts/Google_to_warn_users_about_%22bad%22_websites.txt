@@ -1,0 +1,7 @@
+Google is introducing warnings in its search results, notifying users about websites which are known to distribute "badware", malicious software such as spyware, deceptive adware, viruses and trojans that disrupt the smooth running of computers. Google search users will be warned before they enter suspect websites: "The site you are about to visit may harm your computer!"
+
+"To begin we'll only be identifying a small number of sites, but we'll be expanding our coverage over time," the company said. "Finding new and better ways to protect our users is a perpetual project, and we'll continue to work hard in this area." 
+
+Google, along with Lenovo and Sun Microsystems, has sponsored StopBadware project, in which researchers from Harvard and Oxford universities are creating a clearinghouse for information on spyware and other malicious software and the ways they are disseminated. 
+
+Jonathan Zittrain, a Harvard and Oxford professor involved with StopBadware, said the project may one day release lists of suspect sites still under investigation, but would most likely do so for everyone and not just sponsors like Google.

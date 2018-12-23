@@ -1,0 +1,15 @@
+Dell Inc. announced on Tuesday that it will partner up with the Microsoft-Nortel Innovative communications alliance (ICA) team to sell Unified Communications and VoIP products.
+
+The announcement on Tuesday the 16th of October 2007 includes Dell selling VoIP, data and wireless networking products from Nortel and the Microsoft Office Communications Server 2007 and other unified communications products.
+
+The partnership with both manufacturers should allow Dell to provide a pre-integrated solution.
+
+In March 2007, competitors IBM and Cisco announced they would join in the competition for developing unified communications applications and the development of open technologies around the unified communications and collaboration (UC2) client platform an application programming interfaces (APIs) offered by IBM as a subset of Lotus Sametime.
+
+"We want to make it simple for our customers to deploy unified communications so their end users can get access to all their messages in one place – whether its e-mail, phone or mobile device. This will pave the way for more business-ready productivity tools," said vice president of solutions, Dell Product Group, Rick Becker.
+
+*Customers have four options:
+** Core Office Communication Server 2007 – provides instant messaging and on-premise Microsoft Live Meeting.
+** Office Communication Server: Telephony – enables call routing tracking and management, VoIP gateway and public branch exchange (PBX) integration.
+** Audio and Video Conferencing – allows point-to-point conference, video conference and VoIP audio conference.
+** Exchange Unified Messaging – provides voicemail, e-mail and fax in Microsoft Outlook, and anywhere access of Microsoft Outlook Inbox and Calendar.

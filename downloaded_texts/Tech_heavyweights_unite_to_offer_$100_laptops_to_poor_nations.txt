@@ -1,0 +1,5 @@
+MIT media lab, together with AMD, Google and Rupert Murdoch's News Corporation, is developing a laptop which will cost $100 or less, after making a $10 profit on each unit when it is mass-produced. The laptops will be used by children in the developing world.
+
+The project aims to allow children to take a laptop home after school hours, to enable more families to "cross the digital divide".
+
+The laptops will have a processing power of 500MHz; 1GB storage; a 1 Megapixel, 12 inch display; and USB, Wi-Fi, and cell phone connectivity. The laptops will use open source software, running on GNU/Linux, to reduce the cost.

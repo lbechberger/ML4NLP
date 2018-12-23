@@ -1,0 +1,27 @@
+The Associated Press (AP) news agency has come under fire from the blogging community after issuing a number of DMCA (Digital Millennium Copyright Act) takedown notices against bloggers who have used extracts from AP articles.
+
+Quoting from correspondence surrounding the takedown notices, a Drudge Retort contributor claims in his personal blog that not only is AP asserting that the quotes are a copyright violation, but that they also constitute '"hot news" misappropriation.
+
+Wikinews contacted several people in an effort to get to the bottom of this issue. Rogers Cadenhead, one of the copublishers of the Drudge Report blog, brought Wikinews up to speed on the DMCA notices. The takedown notices were received by email on June 10, he said. This, in and of itself, constitutes an improper filing. The letter of the law requires that a DMCA notice be sent to the appropriate party by recorded postal delivery.
+
+Cadenhead remains unaware of any other bloggers who have been similarly notified, and says receiving seven takedown notices left him "dumbfounded". Previous Drudge Retort interaction with AP's legal team had seen AP complain about people posting entire reports in the comments section of the site. These were quickly removed and users warned that this was inappropriate and indisputably a copyright violation, says Cadenhead.
+
+Cadenhead goes on to discuss how blogs, and other social networking sites, are of benefit to mainstream media such as AP. He describes how the posting of excerpts and quotes helps drive visitors to the sites where the full article text can be found, "MSNBC publishes its news videos with an "embed" button that makes it possible to share them on blogs. If NBC sees the value of that, print-based media should recognize the benefits of encouraging the link-and-excerpt culture of bloggers. I heard on NPR yesterday that 20 percent of the New York Times web traffic is referred by blogs."
+
+There may be a longer-term strategy behind these actions from the Associated Press. A report on ChannelWeb indicates that AP wants to charge for excerpts of their online content. The pricing schedule reported on this site starts at US$12.50 for quoting five to twenty-five words and goes up to US$100.00 for over 251 words. This, a challenge to the very existence of fair use, is to be managed by the company iCopyright operating as a copyright protection service. Cory Doctorow goes into this in some depth on the Boing Boing site, commenting that those who inform on violators may receive up to one million dollar rewards. In addition, the "no disparagement" clause is highlighted, whereby AP reserves the right to revoke the license where they are unhappy with the usage.
+
+"Welcome to a world in which you won’t be able to effectively criticize the press, because you’ll be required to pay to quote as few as five words from what they publish," Doctorow wrote.
+
+The controversy provoked by these moves from AP, apparently, prompted them to schedule a meeting with the Media Bloggers Association to hammer out a set of guidelines.
+
+
+
+The Associated Press case seems to rely on the 1918 U.S. Supreme Court case, International News Service v. Associated Press where, following INS being prevented from using allied telegraph lines following unfavourable reporting, they used AP reports as a source to rewrite in their own words. With one vigorously dissenting justice, the case was closed in AP's favour, with the INS usage described as "misappropriation". Today sees a similar battle played out where bloggers and other citizen journalists simply do not have the resources to place their own reporters at the scene and must excerpt or rewrite from sources such as AP.
+
+According to Michael Kwun, a senior staff attorney with the EFF, one of their blog entries describes the action as biting the hand that feeds them. Kwun questioned whether the 1918 ruling could still be considered "good law", that changes in Federal law likely rendered it inapplicable, and that there was only a small chance that at state level this could still be applied.
+
+Despite several attempts to get input from the Associated Press, they had not responded to Wikinews at time of publication. Attempts to contact Reuters and the BBC for input also went unanswered.
+
+On June 20, Cadenhead released a statement saying that after receiving additional information from AP, he is "glad" the dispute is over. AP said it had a "constructive exchange" with a "number of interested parties in the blogging community" and will seek to continue dialogue.
+
+"I think it would be helpful for bloggers and users of social news sites to know what the AP believes to be fair use of their copyrighted work," said Wade Duchene, attorney for Cadenhead. "I hope that any guidelines that are issued are not interpreted as an agreed definition of fair use."

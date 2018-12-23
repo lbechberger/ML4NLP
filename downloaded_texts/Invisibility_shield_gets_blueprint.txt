@@ -1,0 +1,7 @@
+Two engineers, Andrea AlÃ¹ and Nader Engheta of the University of Pennsylvania in Philadelphia have come up with a 'plasmonic cover' which they claim could render objects "nearly invisible to an observer".
+
+The idea is still in its infancy, but it is said not to violate any obvious laws of physics. John Pendry, a physicist at Imperial College in London, UK: "The concept is an interesting one, with several important potential applications. It could find uses in stealth technology and camouflage."
+
+Earlier attempts at constructing an invisibility screen resulted in the chameleon-principle: screens were coloured to match their background, rendering them hard, but not impossible to see, but usually from only a limited point of view.
+
+The principle on which the technology is founded can be explained as follows: an object can be seen because light scatters from its surface back to our eyes. If the scattering of light could be prevented, the object could not be seen. By making a screen resonate in tune with the light, scattering of light would be prevented. This can be achieved by using plasmons, waves of electronic density caused by electrons in a metalic surface moving in sync. If the frequency of the light is close to that of the shield, the light scattered by the object will be negligible compared to the light scattered by the shield. For visible light, silver and gold can be used as metals, for other frequencies, such as infrared and ultra-violet, other metals will have to be used.

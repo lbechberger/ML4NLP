@@ -1,0 +1,9 @@
+The United States decided on Friday to indefinitely retain control the 13 root servers that direct all internet traffic to the right locations. This decision drew concern from foreign officials who would rather see an international group such as ICANN oversee the control of the servers. 
+
+David Gross, a U.S. ambassador and the coordinator for international communications and information policies of the US State Department, insists that the announcement was not related to U.N. discussions. He also said other countries should see the move as positive because "uncertainty is not something that we think is in the United States' interest or the world's interest."
+
+This decision reverses a statement made by the United States in 1998 in which they said would hand power over to ICANN after meeting a number of set conditions. A spokesman said that the declaration was in response to growing security threats and global communications and to the fact that commerce is becoming more reliant on the Internet. 
+
+"There have been strong opinions that essentially allowing the United States alone to check this process is not right given the nature of the internet today," said Masahiko Fujimoto of the Japanese Ministry of Internal Affairs and Communications, who also said the decision is likely to alienate many in the international community. A worst-case scenario could see countries refusing to accept U.S. control of the root servers leading to a separate set of networks. 
+
+This means that people typing the same URL in different locations could see an entirely different website in their browsers. This announcement came several weeks before a U.N. panel releases a report on Internet governance which addresses issues including control of root servers.

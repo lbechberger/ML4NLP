@@ -1,0 +1,7 @@
+The flight simulation website Avsim has recently been "destroyed" after an attack by hackers. The website was used for all types of computer flight simulation, but it was mainly devoted to Flight Simulator X. It was launched thirteen years ago, in 1996.
+
+"The method of the hack makes recovery difficult, if not impossible, to recover from," said Tom Allensworth, the founder of Avsim. "AVSIM is totally offline at this time and we expect to be so for some time to come. We are not able to predict when we will be back online, if we can come back at all." The attack destroyed both of the site's servers. 
+
+"Some have asked whether or not we had back ups. Yes, we dutifully backed up our servers every day. Unfortunately, we backed up the servers between our two servers," said Allensworth. "The hacker took out both servers, destroying our ability to use one or the other back up to remedy the situation." 
+
+"It looks like 13 years of hard work on Tom's part could have been wiped out. Avsim is an important site, because it services the whole community as a source of community developed terrains, skins, and mods - its contribution has been immeasurable," the editor of PC Magazine, Derek Davis, told the BBC news agency.

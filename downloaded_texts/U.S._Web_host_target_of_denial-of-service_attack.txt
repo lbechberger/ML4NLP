@@ -1,0 +1,17 @@
+The servers of a U.S. Web hosting company that hosts several high-profile weblogs was the target of several denial of service attacks (DoS) on Friday.
+
+Hosting Matters, a Web host located in Jacksonville, Florida, experienced an abnormal surge in Internet traffic at approximately 10:00 a.m. EDT (1400 UTC). Upstream providers confirmed shortly afterward that one of their servers was the target of a massive denial-of-service attack. 
+
+System administrators took steps to isolate the target server from the network. Partial recovery was achieved and minor disruptions were reported after 12 noon EDT. 
+
+The host suffered another attack around 8:30 p.m. EDT, which was resolved shortly before 9:30 p.m. 
+
+Glenn Reynolds, whose popular Instapundit blog was one of the sites affected, reports that the attack appears to have originated from computers in Saudi Arabia, though it is not clear whether the perpetrators were also located there. On its emergency operation forum, Hosting Matters would not elaborate as to the target or likely source of the attack, except that it appears to have come from outside U.S. borders. One of their administrators, known only as "Stacy," said, "I sincerely doubt that country's leadership has the least bit of concern for extraditing over something like this." 
+
+It is believed, but not confirmed, that the target of the attack was aarons.cc, a weblog that had apparently been hacked in the past. At the time of this writing, the site is still down. Hosting Matters has stated that the target site would not be brought back online in order to avoid further problems. 
+
+Hosting Matters hosts several high-traffic blogs, many of which, like Instapundit and Power Line, are generally supportive of the policies of President George W. Bush. 
+
+Syndicated columnist Michelle Malkin commented on her weblog, "We are all affected by cyberterrorist tactics, wherever they may originate." 
+
+David Allyn of Grouchy's Liberaltopia, one of the few blogs critical of Bush hosted on Hosting Matters and found via Technorati, commented, "Hopefully, they have isolated the fucknozzles that have been attacking the servers. I can only hope that whoever is doing this DoS attack dies a horrible death that is dragged out for hours."

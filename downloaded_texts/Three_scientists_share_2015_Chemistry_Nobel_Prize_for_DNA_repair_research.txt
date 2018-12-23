@@ -1,0 +1,11 @@
+Yesterday, GÃ¶ran K. Hansson, permanent secretary of the Royal Swedish Academy of Sciences, announced this year's Nobel Prize in Chemistry is awarded to three scientists for their work on DNA repair. 
+
+Tomas Lindahl, Paul Modrich and Aziz Sancar showed how damaged DNA is repaired and genetic information is safeguarded by the cells at the molecular level.
+
+Swedish scientist Tomas Lindahl found that DNA molecules decay too quickly for life, or evolution, to be sustainable. This led to the discovery of base excision repair, a cellular mechanism that repairs damaged DNA by removing erroneous sections and replacing them.
+
+Turkish molecular biologist Aziz Sancar mapped nucleotide excision repair, a DNA repair mechanism that targets larger-scale damage caused by mutagens and ultraviolet radiation.
+
+US professor of biochemistry Paul Modrich showed how errors caused during DNA replication are usually rectified. DNA mismatch repair increases the precision of DNA replication when cells divide.
+
+The prize is shared 1/3rd to each scientist.

@@ -1,0 +1,7 @@
+The Mozilla Foundation announced today a plan to patch vulnerability in Mozilla Firefox 1.5 in late January or early February 2006.
+
+Mike Schroepfer, vice president of engineering of the Mozilla Foundation, states "it's a low-severity issue, but we will address it anyway."
+
+Packetstorm Security posted that Firefox 1.5, released on November 30, has vulnerability in its history.dat file, such that Firefox becomes very slow after restarting from a visit to a website exploiting the vulnerability. A URL of a few million characters takes advantage of the vulnerability. History.dat stores the user's recently visited sites. Initially Packetstorm posted that a tailored URL could crash Firefox. When attempting to recreate the problem, Mozilla engineers found that the browser works slowly and takes an extremely long time to load a website, but does not crash.
+
+If one does encounter the problem after visiting an exploiting website, clearing out the history will fix it.

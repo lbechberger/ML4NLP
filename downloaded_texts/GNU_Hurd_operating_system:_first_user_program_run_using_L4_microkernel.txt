@@ -1,0 +1,20 @@
+banner(6), the first user application to be successfully executed on GNU Hurd running on the L4 microkernel, the screenshot shows a GNU/Hurd running on the QEMU CPU Emulator.]]
+A collaboratively-developed operating system kernel known as GNU Hurd has been made bootable using the L4 microkernel, which provides room for significant speed improvements over an existing implementation using the Mach microkernel. The newer architecture also has a more lively developer community.
+
+Developer Marcus Brinkmann made the historic step and finished the process initialization code, which enabled him to execute the first software on Hurd-L4. In a message to the L4 port of GNU Hurd mailing list, Brinkmann wrote, "We can now easily explore and develop the system in any way we want. The dinner is prepared!". However, the kernel's current feature set is very limited. "With my glibc port, I can already build simple applications, but most won't run because they need a filesystem or other gimmicks (like, uhm, fork and exec), and I only have stubs (dummy functions which always return an error) for that now," he added in a later posting. 
+
+Compared with Linux and BSD Unix's monolithic kernel architecture, a microkernel based operating system provides developers greater modularity and isolation from hardware, a big win with L4 already being available for a large number of hardware varieties.
+
+There is a cost in speed for such abstraction, and this cost was higher on Mach, at around 15%, compared with only around 5% on L4 and it's predecessor L3, both developed by Dr. Jochen Liedtke. 
+
+The greater modularity and abstraction of a microkernel approach means that the microkernel itself does not need constant modification as is seen in the Linux kernel today, since it provides only the very minimum of services, and does so very carefully. Thus, the fact that L4 was developed in 1996 is seen as exemplifying this stability -- rather than showing its age -- since few, if any, improvements in approach have been imagined in the meantime.
+
+However, the Mach kernel first developed ten years earlier at Carnegie Mellon University is seen as a flawed first implementation, with the lessons learned being implemented in microkernels like L4, known as second-generation microkernels.
+
+The GNU Hurd forms the base of the GNU operating system, much of which has been widely adopted by users of other Unix-like operating systems, including Linux. The GNU Project has been developing the Hurd since 1983. In 1990, the GNU Project decided to use the Mach kernel, rather than writing their own. The Hurd is released as free software under the GNU General Public License (GPL).
+
+The Hurd kernel is an experiment which aims to surpass existing Unix kernels in functionality, security, and stability, while remaining largely compatible with them. It currently runs on Intel IA32 machines. According to the GNU Hurd project, "The Hurd should, and probably will, be ported to other hardware architectures or other microkernels in the future" .
+
+`Hurd' stands for `Hird of Unix-Replacing Daemons'. And, then, `Hird' stands for `Hurd of Interfaces Representing Depth' - perhaps the first software to be named by a pair of mutually recursive acronyms.
+
+A limited port of Linux already runs on L4, known as L4Linux.

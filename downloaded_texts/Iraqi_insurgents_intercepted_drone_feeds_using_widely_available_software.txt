@@ -1,0 +1,18 @@
+United States defense officials acknowledged that Iraqi insurgents successfully intercepted live video feeds from U.S. MQ-1 Predator unmanned aerial vehicles with widely available software. The story broke on Thursday in the Wall Street Journal with a defense official, anonymously, informing them it is an old problem, which has already been fixed.
+
+The Journal says U.S. military personnel in Iraq discovered the problem late last year when they seized a Shi'ite militant's laptop containing drone video feeds.
+
+Senior defense and intelligence officials say insurgents were able to take advantage of an unprotected communications link in the systems of the remotely-piloted aircraft. The insurgents used software that is available online and costs about $26.
+
+While U.S. defense officials say the issue has been fixed, the Journal quoted senior intelligence officials as saying it was not yet clear if the problem had been completely resolved.
+
+
+U.S. officials say there is no evidence that militants had been able to take control of the drones. But the intercepted video feeds could show where the planes are operating.
+
+The Journal also reported that U.S. drone feeds have also been intercepted in Afghanistan.
+
+Officials say the U.S. government has known about a flaw in the drone communication system since the NATO intervention in Bosnia in the 1990s. At the time, the military assumed local adversaries would not know how to exploit it.
+
+The report says fighters in Iraq used software programs such as one called "SkyGrabber" from the Russian company SkySoftware, which is designed to intercept data transmitted by satellite Internet.
+
+The Journal quoted one of the program's developers, Andrew Solonikov, as saying it was designed to download legal content — such as music and video — and that it was never intended to intercept military data. Solonikov said in a email to the paper, "It was developed to intercept music, photos, video, programs and other content that other users download from the Internet — no military data or other commercial data, only free legal content."

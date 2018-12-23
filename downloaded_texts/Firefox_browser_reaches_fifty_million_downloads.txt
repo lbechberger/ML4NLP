@@ -1,0 +1,9 @@
+Mozilla Firefox, the Gecko-based open source browser, has now been downloaded over fifty million times from the official download sites and mirrors.
+
+The fifty millionth download itself came at 8:58am PST on April 29. The number excludes upgrades. A real time counter is available at http://www.spreadfirefox.com/fifty.html .
+
+ The browser was first released to the public as major release 1.0 on November 9, 2004. There have since been three minor security upgrades, with the current version being 1.0.3.
+
+The browser can trace its roots back to the Netscape Navigator of the 1990s. Development of Firefox itself began in 2002, when Dave Hyatt and Blake Ross began writing the new browser using the codebase of the Mozilla Suite as their starting point, which itself was an open-sourced version of Netscape Navigator.
+
+Originally named Phoenix, the browser was renamed Firebird and then Firefox due to a series of trademark issues.

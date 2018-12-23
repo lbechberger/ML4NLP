@@ -1,0 +1,5 @@
+The weather satellite GOES-12, which provides most of the weather pictures for the United States, became unusable on Tuesday, December 4. The satellite is positioned in geostationary orbit over the Amazon. A normal station-keeping maneuver to adjust its location was not completed as usual and services could not be continued.
+
+The National Oceanic and Atmospheric Administration (NOAA) operates the satellites for its National Weather Service (NWS). NOAA's satellite division intends to attempt Wednesday night to return GOES-12 to normal mode. The satellite is in its "safe" mode, which is used to protect it until problems can be identified and repaired. It is properly oriented toward the Sun so it will have full electrical power for further commands.
+
+The GOES-10 satellite, located slightly further east, has been taken from South American coverage and is providing North American service. GOES-13 is in orbital storage in case it is needed for replacing a failed satellite.

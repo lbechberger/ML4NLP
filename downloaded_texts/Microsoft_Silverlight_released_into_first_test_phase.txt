@@ -1,0 +1,7 @@
+Microsoft has finally released its long awaited "Silverlight" into Alpha Testing for the general public. "It's the biggest challenge for Microsoft right now," said Brent Thill, an analyst from Citigroup. This is the most direct threat to date, that Microsoft has posed to Adobe (makers of the popular Flash platform).
+
+The creators of Silverlight have been promising a single plug-in which will work across all browsers and operating systems and will offer a rich video and interactive media experience which can be embedded within Web sites.
+
+Microsoft has also promised to make some of the Silverlight technologies open source. This has been a popular decision among the computing industry, and has been a step away from the usual protection of their products.
+
+While at MIX07, Microsoft also discussed its new package called Expression, which is set to be released in June, and will be an alternative to Adobe Creative Suite 3 (CS3).

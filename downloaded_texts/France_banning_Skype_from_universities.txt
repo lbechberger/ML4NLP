@@ -1,0 +1,9 @@
+France has banned use of the Skype PC telephony application in Universities. The exact reason is unclear, but state security was one of the reasons given by the authorities responsible. Several other possible reasons have been cited including fears of research secrets being handed over to the United States and the fact that in order to make calls to the public phone network you pay a company in Luxembourg and not the local phone company. 
+
+The Skype software uses an encryption algorithm that makes it next to impossible to monitor calls; this is frequently cited as China's reason for banning the application.
+
+Some media reports have suggested that French authorities are fearful that whilst they were unable to monitor calls made with Skype, they might be monitored by the US.
+
+However, this version of facts, which has spread like wildfire, was promptly refuted by French authorities who called attention to the fact that the ban only applies to university research centers and laboratories, and not to the general student and faculty population. 
+
+The real reasons behind the ban remains a hot point of debate and controversy, although public opinion in France is not sympathetic to Skype's new profile. Skype has recently been purchased by eBay, which the French consider a mammoth e-company with questionable practices and a dubious reputation.

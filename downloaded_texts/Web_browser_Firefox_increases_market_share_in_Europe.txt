@@ -1,0 +1,7 @@
+The French web survey provider XiTiMonitor reports that in their study conducted from Monday, July 2 to Sunday, July 8, 2007 on 95,827 websites, web browser Mozilla Firefox reached a 27.8% share in Europe, compared to 21.1% during the same period last year.
+
+Firefox has its biggest market share in Slovenia and Finland where it amounts to 47.9% and 45.4%, respectively, while only 14.6% of people from the Netherlands and 15.2% of surfers in Denmark used Firefox in this survey. The share rose most in Ireland: from 24.9% to 38.6% (i.e. +13.7 points).
+
+Microsoft's web browser Internet Explorer remains the most used browser in Europe with a market share of 66.5%. Opera and Safari have a 3.5% and 1.7% share respectively, with other browsers at less than 1%.
+
+Oceania remains the region with the highest usage of the freely licensed and open source software browser Firefox, with 28.9%. The continent with the strongest relative increase in market share is South America, where there is a 30% increase compared to last March. Numbers from the U.S. based company Net Applications Inc. last month showed a fall in Firefox's share from 15.42% in April to 14.54%.

@@ -1,0 +1,5 @@
+Wikipedia, one of the top ten websites on the internet, will soon be receiving a face lift. The first part of the change is a new skin called Vector. This skin, currently used on Wikinews, will be enabled for Wikipedia on April 5th and provide a more updated look and feel. The second part will change the toolbar when editing, and is intended to ease common tasks. Both changes are important to encourage new people to edit and update content. The improvements have been tested by more than 500,000 beta-testers.
+
+The wiki code will also be altered; editors will be able to change tables data and other elements with what is intended as an easier form, in addition to editing an article while watching it.
+
+On the other hand, the staff of Wikimedia requested more editors to add and update articles in their wikis. Wikipedia is a website maintained by users in unprecedented numbers. Maintenance and updating processes are dependent on just one percent of their users. Based on some statements, fewer than a thousand users do the maintenance and updating work.

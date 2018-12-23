@@ -1,0 +1,19 @@
+Google Inc. may offer hosting services to Wikipedia, a free community-built encyclopedia, and other projects hosted by the Wikimedia Foundation. Preliminary talks are scheduled to continue in March. 
+
+The steps of Google towards Wikipedia are not surprising. Google's competitors, such as Clusty.com, MSN Search, and Yahoo, already offer searching of encyclopedias as a dedicated search category. Clusty.com offers the English Wikipedia, MSN Search links to Encarta, and Yahoo has access to the Columbia Encyclopedia.
+
+Wikipedia is often one of the top results of many searches. Anyone can distribute and even modify Wikipedia content in compliance with its license, called the GNU Free Documentation License. Besides attribution, the license requires that modifications are made available under the same conditions, a principle known as "copyleft" and most frequently applied to computer software such as the free operating system Linux.
+
+How would a tight Wikipedia integration into Google look? 
+* A Wikipedia-specific search category like Google's Newsgroups Index Google Groups that even is editable. You can subscribe to Google Groups and post a response to a message thread.
+* A Wikipedia-specific search category that is non-editable and links to the original project like Google Category that uses the Open Content the Open Directory Project. 
+#An inline feature that emphasizes Wikipedia results at the top of a search result. For details see Google Web Search Features.
+The technical side of Google hosting also leaves various possibilities:
+* Google could place a daily updated mirror of Wikipedia that is Google-owned and hosted as a subdomain like news.google.com. That option could be perceived negatively by the Wikipedia users. There is already a discussion on Wikipedia how to deal with Mirrors of Wikipedia that are listed in Google search results higher than the original content. Wikipedia:Send in the clones
+* Google could offer some Web servers with unlimited bandwidth for the Wikimedia Foundation without conditions. That would have benefits for both sides: Wikipedia, that is currently in the Top 200 Web sites according to Alexa.com, would have no problems with delivering the content to the users. Google could index Wikipedia content instantly and would not be restricted to the limited number of requests to index it by Google Webspiders. 
+
+Here is an excerpt of a page about hosting posted on Wikimedia's "Meta-Wiki", which is used by the community to coordinate project organization: 
+
+"Google Inc. have made a proposal to host some of the content of the Wikimedia projects. The terms of the offer are currently being discussed by the board. The developer committee have been informed of some of the details via email. A private IRC meeting with Google is planned for March, 2005. Please note that this agreement does not mean there is any requirement for us to include advertising on the site." 
+
+The original summary was written by Angela Beesley, one of the two elected board members of the Wikimedia Foundation, which operates Wikipedia and its sister projects. According to a message posted to a public Wikimedia discussion list by the second elected trustee, Florence Nibart-Devouard, Wikipedia founder and Wikimedia president Jimmy Wales met with Google founders Larry Page and Sergey Brin on February 10, "who were extremely enthusiastic about the whole project."

@@ -1,0 +1,23 @@
+The two unique prime factors of a 200-digit number have been discovered by researchers in Germany and the Netherlands. The number, named RSA-200, is one of a series of challenges issued by security company RSA Security in March 1991 in order to track the real-world difficulty of factoring such numbers, used in the public-key encryption algorithm RSA. The factorisation of RSA-200 beats the previous record number "c176" (176 digits, factored on May 2nd, 2005), and RSA-576 (174 digits, factored on December 3rd, 2003). 
+
+Written out, RSA-200 is:
+:27,997,833,911,221,327,870,829,467,638,722,601,621,070,446,786,
+:955,428,537,560,009,929,326,128,400,107,609,345,671,052,955,360,
+:856,061,822,351,910,951,365,788,637,105,954,482,006,576,775,098,
+:580,557,613,579,098,734,950,144,178,863,178,946,295,187,237,869,
+:221,823,983
+
+The two factors are:
+:3,532,461,934,402,770,121,272,604,978,198,464,368,671,197,400,
+:197,625,023,649,303,468,776,121,253,679,423,200,058,547,956,528,
+:088,349
+
+and
+
+:7,925,869,954,478,333,033,347,085,841,480,059,687,737,975,857,
+:364,219,960,734,330,341,455,767,872,818,152,135,381,409,304,740,
+:185,467
+
+The researchers had been working on factoring the number since Christmas 2003. The result was a collaboration between researchers at Bonn University and the German Federal Agency for Information Technology Security (BIS) in Germany, and the CWI (Netherlands). Friedrich Bahr, M. BÃ¶hm, Jens Franke, and Thorsten Kleinjung report that they used the general number field sieve (GNFS) to factor the number. The factoring was performed using a number of machines in parallel. The initial "sieving" step took the equivalent of 55 CPU-years on a single machine (2.2Ghz Opteron CPU). Some work was also performed by Peter Montgomery, Herman te Riele and F. Bahr. Bahr, Franke, Kleinjung, te Riele and Bahr were also part of the team who factored a previous record number, RSA-576.
+
+RSA-200 was part of the original RSA Factoring Challenge, which was discontinued and replaced with a different set of numbers in 2001. One number in the new challenge, named RSA-640, has only 193 digits (compared to the 200 of RSA-200), and carries a prize of US$20,000 for its factorisation.

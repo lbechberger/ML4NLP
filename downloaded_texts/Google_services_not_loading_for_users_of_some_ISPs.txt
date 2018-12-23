@@ -1,0 +1,13 @@
+On Tuesday morning, many Comcast internet users were reporting problems connecting to Google services, such as web search, personalized pages, and Gmail.
+
+Since the original reporting, other US ISP users also reported that they could not connect to Google.
+
+Google released a statement saying that they are investigating the problem. Comcast support states that a ticket has been filed.
+
+Internet users also reporting that other leading websites, such as YouTube and Amazon were not loading on the same ISP networks.
+
+Outages by the leading websites are not uncommon, such as a technical glitch at AOL back in June that delayed emails for several hours.
+
+The Google outage brought up the topic of Net Neutrality on many internet websites and forums, such as Digg.
+
+It has been announced that a DNS server in Massachusetts went down, causing the problems and that it has been fixed.

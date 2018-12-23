@@ -1,0 +1,17 @@
+A final report by the United Kingdom's Aviation Accident Investigation Branch (AAIB) has found that a LOT Polish Airlines airliner became lost over London airspace due to pilot error. After a navigational system failed due to a mistake entering the jet's position the plane struggled to return to London Heathrow under Air Traffic Control's guidance as the Polish pilots struggled to understand English.
+
+LOT Flight 282, a Boeing 737, was carrying 89 passengers bound for Warsaw, but ran into trouble immediately after takeoff because the co-pilot entered an Easterly longitude instead of a Westerly one. The error occurred because Heathrow is just to the West of the nearby Prime Meridian Line.
+
+The navigational equipment was unable to function properly and shut down as a result, forcing the pilots to rely on ATC instructions. The pilot-in-command handled radio communications while the co-pilot flew the aircraft. However, the aircraft wandered lost around the surrounding airspace for the next 27 minutes because the pilots had such a poor grasp of English.
+
+The pilots, who still had some standby instruments functioning, were unable to follow the instructions and several times the aircraft was turned in the exact opposite direction to that commanded by ATC. A full transcript of communications between the plane and the controllers shows at one point ATC was forced to ask "At what heading do you think you are flying at the moment?"
+
+The jet also forced another aircraft to take evasive action after triggering a Short Term Conflict Alert. At the end of the emergency, the crew finally made visual contact with the runway at Heathrow and landed safely.
+
+The pilots had no idea what caused the instrument failure and suggested it may be mobile phone interference but testing revealed no anomalies with the aircraft systems. The report found that "A fairly simple error...went undetected and led to a serious incident."
+
+It went on to say that "An incident like this demonstrates how reliant pilots have become on the Flight Management System." The FMS is a central semi-automated control system that handles navigation and positioning, amongst other duties.
+
+The report also says that the close proximity of all London's airports to the Meridian Line "can lead crews to make such co-ordinate entry errors of this nature," and that as LOT rarely uses airports to the West of the line they will usually only deal with Easterly co-ordinates. 
+
+Criticism is also levelled at ATC, who the report says should have been quicker to realise the serious nature of the problems on board the aircraft. The entity running the control tower says they intend to use this incident for training purposes.

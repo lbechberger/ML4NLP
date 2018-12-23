@@ -1,0 +1,26 @@
+name=United Kingdom on Wikinews|
+ 
+category=Published
+category= 
+notcategory=Disputed
+suppresserrors=true
+count=10
+ 
+
+* Newsroom
+* Style Guide - how to write
+* Content Guide - what to write
+
+
+
+
+
+Currency exchanges offices in the United Kingdom have today stopped the sale of €500 notes after an investigation by the Serious Organised Crime Agency (SOCA) concluded that up to 90% of the notes were being used by money launderers and other organised criminals. Ian Cruxton, deputy director of SOCA, said that the Euro had been chosen as the currency of choice by criminal gangs due to the large denomination of the notes, adding "[i]t should now be impossible now to buy a €500 note over the counter from one of the suppliers. And that's going to have an effect on the criminals — it means they are going to have to find other means of trying to move their money."
+
+The note was introduced by the European Central Bank in 2002, when the currency itself officially entered into circulation. The notoriety of the note's criminal uses has earned it the nickname "the Bin Laden" after Al-Qaeda suspect Osama bin Laden — something that everyone knows is out there, but law-abiding people rarely see. The Euro is the official currency of 16 European countries, colloquially known as the Eurozone, as well as unofficially in a further 4 nations. 
+
+Since its introduction, there has been mounting international concern over criminal use of the large denomination note, which facilitates money laundering by allowing large concentrations of cash to be concealed in small spaces, for example, €20,000 can be concealed in a cigarette packet and £1 million in €500 notes weighs 2.2kg while the equivalent in £20 notes weighs 50kg. The highest denomination note in Sterling is £50, making high-value denominations in other currencies, such as the Euro, tempting for those wishing to move large amounts of money. 
+
+When asked if criminal demand for the note would simply be displaced to other high-value notes, such as the €200 note (the next-highest denomination), Ian Cruxton, deputy director of SOCA said he believed that would be the case, however, with less of the €200 note in circulation, their movements would be easier to track than those of the €500. 
+
+Tourists returning to the UK from holidays in Europe will still be able to change their €500 notes for Sterling but will be unable to purchase them. The European Central Bank has no plans for a withdrawal of the note, given the legitimate demand for it in countries such as Germany and Italy, where cash is used far more frequently than alternatives such as credit cards.

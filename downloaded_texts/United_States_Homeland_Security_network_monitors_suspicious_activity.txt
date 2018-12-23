@@ -1,0 +1,7 @@
+The United States Department of Homeland Security (DHS) is deploying its new Homeland Security Information Network - Secret (HSIN-Secret) in all 50 state Emergency Operations Centers as well as 18 additional state and local law enforcement sites. "The secret network is a component of the HSIN, which is the primary conduit for DHS to share information on terrorist threats, suspicious activity and incident management with state, local, tribal and private-sector officials." reports Government Computer News.
+
+Development on this $350 million system by Northrop Grumman Corporation was begun in March of 2004 with basic operation achieved in just 4 months.
+
+"The Homeland is more secure when each hometown is more secure," said Secretary of Homeland Security Tom Ridge in DHS's February 24, 2004 press release that launched the program. "Future program expansion will include the county level, communication at the classified SECRET level, and the involvement of the private sector." it continues.
+
+With the "Secret" component in place, classified information can now be disseminated to authorized individuals at all levels of government and business throughout the country almost instantly. HSIN lets most government agencies as well as many private companies doing business with the government share information on the whereabouts and suspicious activities of anyone that comes to their attention. Internal policies and the judgement of the system's users provide privacy and civil rights protections, while who can access the system is determined by DHS.

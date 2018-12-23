@@ -1,0 +1,9 @@
+The European Space Agency has spotted a pair of supermassive black holes orbiting one another, believed to be the product of two merging. The results were published on Tuesday in The Astrophysical Journal.
+
+The agency's XMM-Newton Observatory, which is in space, detected X-rays emitted from the black holes pulling a star to shreds. Called 'tidal disruption events', items being consumed by black holes and giving off X-rays as they do are the primary method of spotting black holes. 
+
+This is problematic because only younger galaxies where stars are still forming are regular hosts to such events, with most galaxies believed to have a supermassive black hole at the centre. Mature systems, known as quiescent galaxies, only see items enter black holes from time to time and scientists have to be looking in the right place at the right time to find them.
+
+The discovery dates to June 2010 when Dr Fukun Liu from China's Peking University noticed an apparent tidal disruption coming from a galaxy known as J120136. XMM-Newton was tasked to investigate, as was NASA's Swift satellite. The resultant data indicates a pair of black holes orbiting one another.
+
+"There might be a whole population of quiescent galaxies that host binary black holes in their centers," said co-discoverer Stefanie Komossa of Germany's Max Planck Society. She said ongoing work to spot tidal disruptions could lead to "reliable statistics about the rate at which galaxies merge".

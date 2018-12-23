@@ -1,0 +1,9 @@
+Some personal details of 3 million British learner drivers who had applied for the 'theory test' component of their Driving licence have been lost in Iowa, in the USA.
+
+The data was lost on a hard drive that was owned by Pearson Driving Assessments Ltd, a private contractor to the UK driving standards agency.
+
+Details were given by the UK Transport Secretary, Ruth Kelly, in the House of Commons at 1730 UTC yesterday. It is the first major loss of data in the UK since information on 25 million people was lost by HM Revenue in October.
+
+In her statement to MPs, Ruth Kelly confirmed that no banking information was contained within the lost data, nor were individuals' dates of birth. She highlighted that security measures had been taken, and that the information that had been stored was not in a format "readily usable or accessible" by standard means.
+
+Political figures in the UK continue to raise concerns about both the specific loss of this information, and the nature of governments ability to safely gather and maintain information. Susan Kramer, representing the Liberal Democrats stated "This constant attempt to gather data, to get more data, to know more about you, to link it more together, all of that it seems to me is what comes into question."

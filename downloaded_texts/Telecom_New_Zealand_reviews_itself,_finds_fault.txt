@@ -1,0 +1,17 @@
+New Zealand's monopoly ISP, Xtra, owned by Telecom New Zealand, is going to credit 60,000 customers after completing an internal review of itself last week and finding that there was an error with its traffic management policy on their Go Large plan.
+
+The 60,000 customers, less than 10% of Telecom's subscribers, who subscribed to Go Large, which boasts full speeds and no data cap, since December 8, 2006 till late February, 2007 will receive up to NZ$160 in credit. Telecom has temporarily stopped either new or existing customers from signing up to the new plan, and will also ask existing customers in the next couple of weeks if they wish to change plans, stay on the same plan with a changed traffic management policy, or cancel their service.
+
+The credit, automatically applied to the affected customers monthly bill, will cost Telecom itself around $7.5-$8.5 million.
+
+Kevin Bowler, general manager of Telecom's consumer marketing, said that the traffic management policy process was found to be not what they had originally intended it to do. The fault applied to all forms of Internet use, instead of certain applications, like large music, or movie downloading. "Clearly it is not an ideal situation and therefore we are crediting Go Large customers for plan charges incurred during this period."
+
+"In this instance with the Go Large plan our internal technical review showed we had made an error and we believe that we are doing the right thing by crediting customers," Mr Bowler said.
+
+New Zealand's Commerce Commission has been investigating complaints by customers who say that they are not receiving what Xtra promised since the same time when Xtra initiated its traffic management policy, December. Deborah Battell, fair trading director, said that the Commerce Commission is pleased Telecom is crediting customers for its error. "However, the Commission is concerned that Telecom's actions may not address the full extent of the problems. The Commission will continue its investigation into whether the promotion breached the Fair Trading Act. In particular, the Commission is considering whether Telecom's initial representation that Go Large gave customers unlimited access was misleading, as the company's reasonable use policy in effect placed limits on use."
+
+The reasonable use policy meant subscribers could not download BitTorrents, or use other peer-to-peer services without giving priority Internet access to other subscribers.
+
+Ernie Newman, chief executive of the Telecommunications User Association of New Zealand (TUANZ), said that it is good that Telecom is to repay its subscribers for their own error, but says that it will diminish their trust in Telecom, and other phone companies. "We applaud their openness. But sadly it is another episode in a chain of events where customers have signed up for broadband services that were advertised as offering attractive speeds or data limits, but in reality have delivered a whole lot less."
+
+"Something in Telecom needs to change. There have been too many disappointments, too much over-promising and under-delivering. This simply adds to the concern of many people that when it comes to the impact of broadband on customers lives and businesses, Telecom has not yet got the message," Mr Newman said.

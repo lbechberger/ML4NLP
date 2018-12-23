@@ -1,0 +1,5 @@
+A Queenstown, New Zealand Automated teller machine (ATM) that was incorrectly stacked allowed customers to double their money. A contractor incorrectly stacked the NZ$10 note slot with $20 notes, and vice versa. The problem only affected small withdrawals of $20 or $10.
+
+Dozens of customers, mostly backpackers, exploited the Kiwibank ATM with several people making up to 40 transactions.
+
+Due to the complexity of the issue, the bank does not plan to attempt to track down the customers who got extra money, but they do plan to reimburse those who lost money.

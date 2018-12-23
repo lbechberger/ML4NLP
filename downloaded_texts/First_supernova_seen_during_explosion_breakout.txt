@@ -1,0 +1,9 @@
+Astronomers have for the first time watched a supernova explosion break out of the surface of the parent star. Previously only the remnants after an explosion have been found. The new object, SN 2008D, is in another galaxy.
+
+Alicia Soderberg, a Hubble and Carnegie-Princeton Fellow at Princeton University in Princeton, New Jersey, explained the significance: "For years we have dreamed of seeing a star just as it was exploding, but actually finding one is a once in a lifetime event... This newly born supernova is going to be the Rosetta Stone of supernova studies for years to come."
+
+Observations were being made of a different supernova in galaxy NGC 2770 when Soderberg noticed a new X-ray ray source had appeared. A burst of X-rays is produced when the explosion of a supernova reaches the surface of the exploding star. Because the SWIFT orbiting telescope was being used, which provides images as they are received, there was no delay in getting the images and an alert was sent to other major telescopes.
+
+Other observers who joined the watch were the 3.5-meter telescope at the Apache Point Observatory in New Mexico, the Chandra X-ray Observatory, the Gemini North telescope in Hawaii, the Hubble Space Telescope, the Keck I telescope in Hawaii, the 200-inch and 60-inch telescopes at the Palomar Observatory in California, and the Very Large Array in New Mexico.
+
+The primary task of SWIFT is rapid detection of gamma ray bursts, and because of their short duration the observatory requires constant monitoring. The observations of galaxy NGC 2770 were being done while the satellite was not busy with its major task.

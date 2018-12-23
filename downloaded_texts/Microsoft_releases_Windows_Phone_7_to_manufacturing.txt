@@ -1,0 +1,11 @@
+On Wednesday, Microsoft announced that the next version of Windows Mobile OS series, Windows Phone 7, had been after more than 6 months of its development. The announcement outlined some of the changes in this version, and was generally positive about the milestone.
+
+The term "release to manufacturing", also known as "going gold", is a term used to indicate that the software has reached a point that it is ready to be provided to the customer. After the event, Windows Phone 7 code has been locked down. The work in progress is the testing of Windows Phone 7 on other hardware, software, and networks. The structure of the system itself is not expected to be changed any more before the final release. "We are ready," Terry Myerson said.
+
+"Today is the day that the Windows Phone team has been driving towards, and we’re very excited to say that we’ve reached the biggest milestone for our internal team – the release to manufacturing (RTM) of Windows Phone 7", Terry Myerson announced in a post on the official Windows Phone Blog.
+
+The internal testing of the system had been finished. It included usage of the operating system by the development team itself on regular basis, and millions of hours of automated tests daily, as Terry Myerson said: "We had nearly ten thousand devices running automated tests daily, over a half million hours of active self-hosting use, over three and a half million hours of stress test passes, and eight and a half million hours of fully automated test passes."
+
+The system is now named "Windows Phone" instead of "Windows Mobile", with a redesigned user interface and a changed development environment, which is called "Windows Phone Developer Tools". It features a combination of Silverlight, XNA technologies, and Visual Studio 2010 to make use of these possible in the applications developers create.
+
+Microsoft did not confirm any planned commercial release date, calling October as an optimistic estimate.

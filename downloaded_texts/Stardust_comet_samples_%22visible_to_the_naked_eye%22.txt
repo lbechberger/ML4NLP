@@ -1,0 +1,21 @@
+Stardust, a NASA space probe, returned with more than scientists bargained for.
+
+"I didn't see anything," said University of Washington astronomer, Don Brownlee, from NASA's Johnson Space Center Tuesday.
+
+But then, technicians flipped over the collection grid and scientists all around let out a huge gasp of excitement.
+
+"It's better than we could have possibly hoped for," Brownlee said. "It exceeds all expectations. We have a huge number of impacts, and some are quite big and visible to the naked eye. It's a huge success."
+
+In a memo from NASA, scientists said "hundreds of particles" could be seen in the collection tray. "There were two particularly large comet particles that had 'exploded' inside," said the memo.
+
+A lot of the largest particles shattered into little bits of black debris when they landed on the collecter. But many other visible particles left tracks as they landed at 13,000 MPH and stopped fully intact. "I remember warning people not to be disappointed if these tracks were very hard to see, but they are absolutely stunning," Brownlee said.
+
+Before they opened the collector, Brownlee admitted that no one really knew whether or not the device had actually caught any particles. "You just don't know if nature is going to cooperate or not. It has been a magic mission."
+
+"The capsule tumbled several times when it landed by parachute in the Utah desert, but the impact didn't crack the aerogel," said Brownlee.
+
+NASA researcher Scott Sandford said the collection effort "succeeded well beyond our wildest hopes. I am not sure if it is good clean-room protocol to hug each other, but there was a lot of it going on for the first 10 minutes or so," he added.
+
+Stardust traveled nearly 3 billion miles and went around the Sun 3 times. Stardust's mission in space lasted 7 years.
+
+Scientists also hope to use Distributed Computing to help with looking over the samples. They will use a VM (Virtual Microscope) which will be developed by the University of California at Berkeley. The developers, computer scientist David Anderson, director of the SETI@home project and physics graduate student, Joshua Von Korff, are expected to design the program which is expected to go public in March.

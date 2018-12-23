@@ -1,0 +1,7 @@
+Following complaints by users, Google has removed the section of Google Chrome's end-user license agreement which claims that Google has the right to use any content submitted through its browser in virtually any way it wants. The agreement said that "by submitting, posting or displaying the content you give Google a perpetual, irrevocable, worldwide, royalty-free, and non-exclusive license to reproduce, adapt, modify, translate, publish, publicly perform, publicly display and distribute any Content which you submit, post or display on or through, the Services."
+
+After being removed, a new notice was added that says that "you retain copyright and any other rights that you already hold in Content that you submit, post or display on or through the Services."
+
+A spokesperson for Google has said that the claim was originally there due to a mistake. The spokesperson said that, in order to keep the license agreements simple for users, they regularly copy license agreements between different pieces of software. "Sometimes, as in the case of Google Chrome, this means that the legal terms for a specific product may include terms that don't apply well to the use of that product," said the spokesperson, when describing the effect of copying EULAs.
+
+A similar controversy occurred last year with Google Docs, which originally gave Google similar rights.

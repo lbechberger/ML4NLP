@@ -1,0 +1,8 @@
+The Chatterbox Challenge is a competition for chatbots (computer programmes designed to imitate human conversation). It has categories such as Best Learning Bot and Most Knowledgeable Bot, but also has a contest for the Most Popular Bot, which is decided by users voting. The voting runs through April, so time is running out to vote for your favorite bot.
+
+The 2005 competition has over 100 bots entered. Well-known bots, such as AI Alex, ALICE, Ella, and Jabberwacky, are in the competition, as well as newer creations such as Barry DeFacto from two-time Loebner winner Robby Garner, and RoboMatix X1 from Egypt. The current leader is the relatively new SmarterChild, but a lot can change in the next ten days.
+
+Contest organiser Wendell Cowart says, "The sheer variety of the chatbots entered is quite amazing... Chatbot names range from Aib to Zoe, and personalities vary from a banjo plucking hill-billy to a serial killer".
+
+To vote in the Chatterbox Challenge, go to the contest website at
+www.chatterboxchallenge.com,

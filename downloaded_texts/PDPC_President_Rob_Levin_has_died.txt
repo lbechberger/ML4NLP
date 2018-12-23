@@ -1,0 +1,12 @@
+The president of the Peer-Directed Projects Center, Rob Levin, has today passed away after being hit by a car whilst riding his bike on Tuesday. He is survived by his wife Debbie and his son Benjamin.
+
+Mr. Levin was known to many as "lilo", his favoured IRC moniker. He entered a coma after being struck by the vehicle on Tuesday. It is believed he was not wearing a cycle helmet at the time of the collision. The incident is being treated as a hit and run.
+
+A global notice on freenode was sent:
+ [17:18] -christel- [Global Notice] On the 12th September Rob Levin, known to many as Freenode's lilo,
+ was hit by a car while riding his bike. He suffered head injuries and passed away in hospital on the
+ 16th. For more information please visit #freenode-announce
+
+His funeral will be held in Houston, Texas. He was 50 years old at the time of death.
+
+A special e-mail address, condolences[at]freenode[dot]net, has been setup for people to send their messages to. All messages sent to this address will be published in the online "Book of Memories" and passed on to his wife and family.

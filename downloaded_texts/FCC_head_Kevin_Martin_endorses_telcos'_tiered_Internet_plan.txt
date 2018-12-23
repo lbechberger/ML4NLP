@@ -1,0 +1,11 @@
+Kevin Martin, current head of the FCC, voiced his support on Wednesday for a tiered Internet. This plan would open the door for AT&amp;T, BellSouth, Verizon, and other telcos to limit bandwidth to popular web sites such as Google unless those sites paid significantly higher rates.
+
+Network neutrality is usually taken to mean that telcos and ISPs may not limit services or bandwidth, charge extra fees, or otherwise discriminate based upon a site's identity or content type.
+
+However, Mr. Martin said he viewed network neutrality as applying only to outright blocks, and that other forms of content- or identity-based pricing were acceptable and did not violate network neutrality.
+
+When the telcos began their recent lobbying campaign, Professor Michael Geist (University of Ottawa, Faculty of Law) said that "While prioritising websites or applications may hold some economic promise, the lack of broadband competition and insufficient transparency surrounding these actions will rightly lead to growing calls for regulatory reform that grants legal protection for the principle of network neutrality."
+
+According to The Nation, the multi-tiered approach being considered by the telcos could eventually expand to set limits on the number of downloads, media streams, or even email messages.
+
+Senator Ron Wyden (D-Oregon) has proposed legislation to prevent a two-tiered Internet.

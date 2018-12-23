@@ -1,0 +1,11 @@
+This Monday Hewlett-Packard is to announce that it is expanding its partnership with SAP. The partnership will be working with NetWeaver around several new services. The company is also expected to mention about its new enterprise solutions that are currently in development.
+
+Hewlett-Packard will offer its clients services for upgrading servers, storage and NetWeaver â€“ SAP's application builder platform meant for integrating business processes throughout different systems. Among other services that the company is going to provide comprise assessment, governance and some architecture services for R3.
+
+The manager of Worldwide Packaged Applications for Enterprise Applications Services at HP Services Consulting &amp; Integration, Tim Treat, stated that the company first of all looks at servers, storage and management and only afterwards it makes a proposal regarding the things that are to be updated. He mentioned that when Hewlett-Packard will work on upgrading servers and management, it will turn its attention towards Intel. 
+
+After performing all the upgrades, the company is going to offer its clientele a variety of services package options that are related to NetWeaver. The services offered by Hewlett-Packard will include: enabling the service, design and implementation, application development and management.
+
+Tim Treat said that adaptive infrastructure is one of the company's new things that are to come. Recently the company's clients have put in place enough hardware capacity and infrastructure with the goal of supporting peak or quarter-end processes. However, a big amount of that capacity is unused till peak times. This is why Hewlett-Packard looks forward to bring solutions that are to allow users pay for the things they really use.
+
+Treat also outlined the fact that, besides its new services, the company is to announce business-process consulting together with IDS Scheer - software and consulting company, which is one of the leading providers of Business Process Management and IT solutions.

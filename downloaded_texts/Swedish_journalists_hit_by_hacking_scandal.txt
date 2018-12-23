@@ -1,0 +1,11 @@
+Journalists in Sweden are amongst the victims of a mass hacking carried out on a popular Swedish blog site. Passwords of over 90,000 accounts associated with site Bloggtoppen.se were published on Tuesday. Officials have since confirmed that 180,000 accounts across roughly 60 websites could be compromised.
+
+The information was released through the Twitter account of member of parliament William Petzäll. Petzäll released a statement through his lawyer saying he had nothing to do with the release and his account had been hijacked. 
+
+The operator of Bloggtoppen.se, Jimmy Holmlund, later confirmed the site was shut down after being hacked.
+
+A number of journalists have been identified as having information leaked, which has allowed access to email accounts. The Expressen newspaper reported an email received allegedly from the hacker claiming the event shows people "their information hasn't been managed correctly." 
+
+Politicians are also among those affected. 79 Moderate Party email users and 50 Liberal Party had their passwords made public.
+
+The dramatic breach in security has now been referred to Swedish security service Säpo and affected users are being advised to immediately change all online passwords.

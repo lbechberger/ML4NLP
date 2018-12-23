@@ -1,0 +1,7 @@
+Google announced on July 25 that its search engine has indexed over 1 trillion unique web pages from all over the globe.
+
+"We knew the web was big," the article on Google's official blog begins. "Even after removing those exact duplicates, we saw a trillion unique URLs." This article also discussed the indexing technology behind the stage. 
+
+Google, known as a popular international search engine, has servers all around the world to index web pages. With the rapid development of the Internet, the number of web pages with unique URL (Uniform Resource Locator) is growing by several billion per day. In 1998, Google had an index of only about 26 million pages. Within 10 years, that number has increased by 38 thousand times.
+
+Originally called Backrub, Google gained popularity in the early 90s, and has since released products including Gmail, Blogger, and Google Apps.

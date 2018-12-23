@@ -1,0 +1,9 @@
+Valence Media, the parent company behind popular BitTorrent index site TorrentSpy, has filed a federal lawsuit against the Motion Picture Association of America (MPAA), alleging that the organization hired a hacker to break into TorrentSpy's servers and steal private information.
+
+The lawsuit, which Valence Media and various employees filed in the United States District Court for the Central District of California, charges the MPAA with conspiracy, unlawful business practices, misappropriation of trade secrets and violations of the California Invasion of Privacy Act and the Electronic Communications Privacy Act of 1985.
+
+According to the lawsuit, MPAA employee Dean Garfield paid an unnamed hacker US$15,000 to steal email correspondence and other sensitive information, allegedly telling him that they "don't care how you get it".
+
+In June of 2005, TorrentSpy alleges, the hacker then broke into the servers, obtaining private emails, invoices, billing information and an Excel spreadsheet detailing TorrentSpy's income and expenses.
+
+In an interview with CNET, Kori Bernards, the vice-president of the MPAA, called the allegations "false" and implied that TorrentSpy might be trying to deflect attention from the MPAA's own lawsuits against the site.

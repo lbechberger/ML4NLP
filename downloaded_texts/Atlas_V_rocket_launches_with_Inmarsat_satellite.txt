@@ -1,0 +1,21 @@
+A Lockheed-Martin built Atlas V launch vehicle, successfully launched from Cape Canaveral, Florida at 21:42 UTC (4:42 p.m. EST). It placed the Inmarsat 4 F-1 communications satellite into orbit. This was Lockheed-Martin's second try to launch the satellite. Yesterday's attempt ended in a scrub when the flight control computer passed a red-line with less than three minutes remaining in the countdown.
+
+This was the fifth launch of the Atlas V vehicle, and the first launch where the rocket used three of the first stage, Aerojet built, solid rocket motors. It also had the narrower 4 meter payload fairing. 
+
+For the first part of the flight, the rocket was powered by a common booster core with two RD-180 rocket engines plus three solid rocket motors. When their fuel was expended the solid rocket motors burned out and were jettisoned. 
+
+The common booster core then continued pushing the payload and upper stage, with its two RD-180 engines producing 806,000lbf of thrust. The common booster core expended its fuel around four and a half minutes into the flight. At this point the first stage common booster core separated from the upper stage and payload.
+
+After the stage separation, the Centaur upper stage started its engine and burned for nearly ten minutes. During this burn, the payload fairing separated from the spacecraft, leaving the satellite exposed on the nose of the rocket in the vacuum of space. When the ten minute burn was up, the Centaur coasted with the satellite for another ten minutes waiting to get to the optimal point for the final burn. At around 24 minutes into the flight, the final burn of the Centaur stage occurred, placing the spacecraft in a super-synchronous transfer orbit. After this burn was complete, the Centaur separated, leaving the spacecraft on its own. 
+
+Now the spacecraft must attempt to open its solar arrays and place itself in the final geostationary orbit. Because of this special type of orbit, where the spacecraft goes around once every 24 hours, the satellite will appear to sit in one place over the equator. From this location, Inmarsat will use it to provide BGAN (Broadband Global Area Network) which is a 3G compatible, 432kbit/s data service, to much of the world. 
+
+
+
+The Atlas vehicle was rolled out of its vertical integration facility 1800 feet from the launch pad early yesterday morning (before the first launch attempt). The reason for this launch day move is because of the clean pad concept. 
+
+Past American rockets (with the exception of the Saturns and Space Shuttles) have always been assembled on the launch pad. In the case of a delay in launching, this would cause delays in all the rockets that needed to be launched after the one that experienced the delay. With the new clean pad concept, rockets can be assembled and checked out before being moved to the pad, saving delays in the schedule. 
+
+The launch tower and rocket move out to the pad along a set of railroad tracks, making the 1800 foot journey in approximately half an hour, topping out around two miles per hour. 
+
+Because of the clean pad concept, none of the launch control electronics or spacecraft environmental systems are on the pad. Instead, they are run along the railroad tracks with the rocket as it moves to the pad on launch day. When they get there, they slide into concrete enclosures so that they are not destroyed during the rocket launch.

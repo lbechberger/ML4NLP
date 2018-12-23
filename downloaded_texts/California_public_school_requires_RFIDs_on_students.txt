@@ -1,0 +1,9 @@
+An elementary school in northern California has been testing a radio frequency identification (RFID) tag-based identification program on its 7th and 8th grade students since January 18th, 2005. According to the ACLU, this is the first time that public school students in the United States have been required to wear devices that enable automatic identification. RFIDs have previously been used to track students in Japan.
+
+RFID tags contain antennas to enable them to receive and respond to radio-frequency queries from an RFID transceiver, enabling identification of pupils when they are in the vicinity of the detectors.
+
+Each student is required to wear an ID card on a lanyard around their neck. An RFID tag, manufactured by local Sutter corporation Incom, is attached to the card. The school has installed RFID detectors at the doors of seven classrooms as well as the bathrooms, though they claim that the bathroom units were not turned on, and subsequently been removed after complaints from parents.
+
+While some parents have complained about the system, local high school teacher Tim Crabtree told the San Francisco Chronicle, "It's baffling why so many people are bothered by the district being able to tell them where their kids are at,"
+
+On the other side, the San Francisco Chronicle quotes the 13-year-old daughter of Michelle and Jeff Tatro as saying:"Look at this. I'm a grocery item. I'm a piece of meat. I'm an orange." Another couple in Sutter, Michael and Dawn Cantrall, filed a complaint with the American Civil Liberties Union, or ACLU. The complaint centered on the violation of privacy and concerns about safety.

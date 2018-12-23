@@ -1,0 +1,95 @@
+George W. Bush vowed to get the USD 700 billion economic rescue plan through congress in a statement to the media made today.
+
+"Yesterday, the House of Representatives voted on a financial rescue plan that had been negotiated by Congressional leaders of both parties and my administration," Bush reminded the audience. "Unfortunately, the measure was defeated by a narrow margin. I'm disappointed by the outcome, but I assure our citizens and citizens around the world that this is not the end of the legislative process."
+
+"Producing legislation is complicated, and it can be contentious. It matters little what a path a bill takes to become law," he continued. "We're at a critical moment for our economy, and we need legislation that decisively address the troubled assets now clogging the financial system, helps lenders resume the flow of credit to consumers and businesses, and allows the American economy to get moving again."
+ Market Data Template:Stock Markets
+| date = 30 September, 2008
+| hour = 23:45
+| extrainfo = 
+| align = left
+| width = }
+| countries = }
+| FTSE 100 = 4.902,45
+| FTSE 100-tl = 
+| FTSE 100-c = 83,68
+| FTSE 100-p = 1,74
+| DAX = 5.831,02
+| DAX-tl = 
+| DAX-c = 23,94
+| DAX-p = 0,41
+| CAC 40 = 4.032,10
+| CAC 40-tl = 
+| CAC 40-c = 78,62
+| CAC 40-p = 1,99
+| SMI = 6.654,89
+| SMI-tl = 
+| SMI-c = 154,76
+| SMI-p = 2,38
+| AEX = 331,45
+| AEX-tl = 
+| AEX-c = 7,90
+| AEX-p = 2,44
+| BEL20 = 2.672,20
+| BEL20-tl = 
+| BEL20-c = 82,73
+| BEL20-p = 3,19
+| MIBTel = 19.512,00
+| MIBTel-tl = 
+| MIBTel-c = 110,00
+| MIBTel-p = 0,56
+| IBEX 35 = 10.987,50
+| IBEX 35-tl = 
+| IBEX 35-c = 41,80
+| IBEX 35-p = 0,38
+| DJIA = 10.850,70
+| DJIA-tl = 
+| DJIA-c = 485,21
+| DJIA-p = 4,68
+| Nasdaq = 2.082,33
+| Nasdaq-tl = 
+| Nasdaq-c = 98,60
+| Nasdaq-p = 4.97
+| S&amp;P 500 = 1.166,36
+| S&amp;P 500-tl = 
+| S&amp;P 500-c = 59,97
+| S&amp;P 500-p = 5,42
+| Merval = 1.598,170
+| Merval-tl = 
+| Merval-c = 52.720
+| Merval-p = 3,41
+| Bovespa = 49.541,27
+| Bovespa-tl = 
+| Bovespa-c = 3,513.21
+| Bovespa-p = 7,63
+| S&amp;P TSX = 11.752,90
+| S&amp;P TSX-tl = 
+| S&amp;P TSX-c = 467,83
+| S&amp;P TSX-p = 4.15
+| IPC = 24.888,90
+| IPC-tl = 
+| IPC-c = 933,23
+| IPC-p = 3,90
+| All Ordinaries = 4.631,30
+| All Ordinaries-tl= 
+| All Ordinaries-c = 207,90
+| All Ordinaries-p = 4,30
+| Nikkei = 11.259,90
+| Nikkei-tl = 
+| Nikkei-c = 483,75
+| Nikkei-p = 4,12
+| Hang Seng = 18.016,20
+| Hang Seng-tl = 
+| Hang Seng-c = 135,53
+| Hang Seng-p = 0,76
+| SSE Composite = 2.293,78
+| SSE Composite-tl = 
+| SSE Composite-c = 3,72
+| SSE Composite-p = 0,16
+ 
+"I recognize this is a difficult vote for members of Congress. Many of them don't like the fact that our economy has reached this point, and I understand that. But the reality is that we are in an urgent situation, and the consequences will grow worse each day if we do not act. The dramatic drop in the stock market that we saw yesterday will have a direct impact on the retirement accounts, pension funds, and personal savings of millions of our citizens. And if our nation continues on this course, the economic damage will be painful and lasting."
+World and US markets today are up after severe declines yesterday. Most have recovered 30% of their previous losses, meaning that the potential government expenditure was similar to the market losses.
+
+Bush then said that he knows "many Americans are especially worried about the cost of the legislation." He then attempted to justify the cost. "The bill the House considered yesterday commits up to 700 billion taxpayer dollars to purchase troubled assets from banks and other financial institutions. That, no question, is a large amount of money. We're also dealing with a large problem. But to put that in perspective, the drop in the stock market yesterday represented more than a trillion dollars in losses."
+
+If passed, the bailout plan would have allowed for the United States government to purchase devalued mortgage backed securities, resulting from the subprime mortgage crisis, from troubled financial institutions. The US Treasury Secretary Henry Paulson said the plan could cost up to $700 billion.

@@ -1,0 +1,74 @@
+April 6, 2005
+
+
+In another first for the NASA-led space telescope mission called
+Swift, five months into its mission it measured the distance to two
+gamma-ray bursts (GRB), back to back, from opposite parts of the sky.
+The GRB's are over nine billion light years away from the Earth.
+
+The measurements were obtained utilizing the Ultraviolet/Optical
+Telescope (UVOT).
+
+"Swift will detect more gamma-ray bursts than any satellite that has
+come before it, and now will be able to pin down distances to many of
+these bursts too," said Peter Roming, UVOT Lead Scientist at Penn
+State. "These two aren't distance record-breakers, but they're
+certainly from far out there. The second of the two bursts was bright
+enough to be seen from Earth with a good backyard telescope."
+
+The Swift science team said these types of distance measurements
+will become routine, allowing scientists to create a map to understand
+where, when and how these brilliant, fleeting bursts of light are
+created.
+
+Gamma-ray bursts, the most powerful
+explosions known in the Universe, are thought to signal the birth of
+black holes; either from a massive star explosion or a merger of
+smaller black holes or neutron stars. Several
+appear each day from Earth's vantage point. They are difficult to
+detect and study because they occur randomly from any point in the sky
+and last only a few milliseconds to about a minute.
+
+Swift, with three telescopes, is designed to detect bursts and turn on
+its own to focus its telescopes, within seconds, on the burst
+afterglow, which can linger for hours to weeks. The UVOT is a joint
+product of Penn State University and the Mullard Space Science Laboratory in
+England.
+
+Swift detected the bursts on March 18 and 19, as indicted in their
+names: GRB 050318 and GRB 050319. The UVOT team estimated that the
+redshifts are 1.44 and 3.24, respectively, which corresponds to
+distances of about 9.2 billion and 11.6 billion light years. (The
+second estimate reflects a more precise measurement made with the
+ground-based Nordic Optical Telescope.)
+Distance measurements are attained through analysis of the burst
+afterglow.
+
+Swift detected 24 bursts so far. GRB 050318 was the first burst
+where the UVOT detected an afterglow. The lack of afterglow detection
+is interesting in its own right, Roming said, because it helps
+scientists understand why some bursts create certain kinds of
+afterglows, if any. For example, Swift's X-Ray
+Telescope (XRT) has detected afterglows from several bursts. The UVOT
+detected afterglows in GRB 050318 and GRB 050319 in optical light, but
+not significantly in ultraviolet.
+
+"Every burst is a little different, and when we add them all up we
+will begin to see the full picture," said Keith Mason, the U.K. UVOT
+Lead at University College London's 
+Mullard Space Science Laboratory.
+
+Mason said UVOT distance measurements will become more precise in
+the upcoming months as new instruments aboard Swift are employed.
+
+Swift is a medium-class explorer mission managed by NASA Goddard Space
+Flight Center in Greenbelt, Maryland. Swift is a NASA mission with
+participation of the Italian Space Agency and the Particle Physics and
+Astronomy Research Council in the United Kingdom. It was built in
+collaboration with national laboratories, universities and
+international partners, including Penn State; Los Alamos National
+Laboratory in New Mexico; Sonoma State University in California; the
+University of Leicester in Leicester, England; the Mullard Space
+Science Laboratory in Dorking, England; the Brera Observatory of the
+University of Milan in Italy; and the ASI Science Data Center in Rome,
+Italy.

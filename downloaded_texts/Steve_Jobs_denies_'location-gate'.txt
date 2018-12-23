@@ -1,0 +1,11 @@
+Apple Inc. CEO Steve Jobs announced on Wednesday that iPhone technology is not being used to monitor the location of its customers. The scandal arose from concern that data collected by Apple would make it possible for anyone with access to a person's private computer to retrieve information about their movements.
+
+Jobs acknowledged that while iPhones keep a database of Wi-Fi and cell tower hotspots these do not reveal anything about individual users' location. “That’s what people saw on the phone and mistook it for location”
+
+In a separate statement, Apple clarified the device is merely caching data in order to improve the speed of locating users in the future. 
+
+Jobs confirmed during the interview that Apple would testify before the United States Congress. “They have asked us to come and we will honour their request, of course.”
+
+Apple have since made plans to release software updates that will cut the size of the wireless hotspot location database stored on its iPhones.
+
+The data scandal, coined ‘Location-gate’ has overshadowed news of Apple’s announcement for sales of the delayed white iPhone 4 which will begin shipping from Thursday.

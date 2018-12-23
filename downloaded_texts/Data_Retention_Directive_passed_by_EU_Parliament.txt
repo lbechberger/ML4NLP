@@ -1,0 +1,3 @@
+On December 14th, after a single reading, the EU Parliament passed the Data Retention directive. 378 parliamentarians voted in favour of the Directive, 30 abstained and 197 voted against.
+
+The so-called "Big Brother" directive, highly controversial at least among those even aware of its existence, requires all internet and telecommunications service providers to log all traffic metadata (who called who, who visited what sites) in Europe for 6 to 24 months and turn the data over to police forces, secret services, and other organisations, as decided on by national governments. The law was drafted and passed in three months, an extraordinarily rapid process, and was heavily influenced by earlier UK legislation that failed to pass in Britain.

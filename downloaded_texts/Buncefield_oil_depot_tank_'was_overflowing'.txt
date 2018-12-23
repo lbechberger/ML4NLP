@@ -1,0 +1,11 @@
+A report by the British Health and Safety Executive (HSE) into the Buncefield oil depot fire of December 2005 has suggested that an oil tank at the site was overflowing for 40 minutes before the first explosion took place. A fire soon spread throughout the depot and some of the surrounding area, sending huge plumes of smoke into the air, and the fire took several days to be extinguished.
+
+The HSE report, the third progress report into the disaster, explains with 'reasonable confidence' that Tank 912 in bund A of the site started receiving unleaded motor fuel from 7 p.m. UTC on December 10, 2005. By 5:20 a.m. the next day, the tank had started to overflow, spilling through air vents at the top of the tank and down the outside. Vapour from the fuel started to form from 5:38 a.m., and by 5:46 a.m. was 2 metres deep, flowing in all directions. The first explosion took place at 6:01 a.m.
+
+Control systems measuring the levels within the tank should have prevented overspilling. A 'servo level gauge' should have sent data back to the control room, but this gave an unchanged reading from 3 a.m., despite the levels continuing to rise. Additionally, a second, float-based safety cut-out should have stopped the inward flow once the 'ultimate high level' was reached, but this too appears to have failed.
+
+It is not known for certain what caused the spark that led to the first explosion. Any evidence is likely to have been destroyed in the fire, and so the exact cause may never be known.
+
+The HSE report did not place any blame, for fear of jeapodising future court cases. Some, including MP for the Hemel Hempstead Mike Penning, have called for a full public inquiry. Many local residents were forced to leave their homes after suffering damage to their houses from the explosion.
+
+The explosion and fire, whilst being one of the biggest health and safety disasters in Britain, did not cause any deaths.

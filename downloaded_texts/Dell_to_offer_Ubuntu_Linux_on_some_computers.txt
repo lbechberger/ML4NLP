@@ -1,0 +1,11 @@
+Dell Inc. (Dell) announced Tuesday that, due to public demand, they will be offering an alternative to Microsoft Windows on a selection of their desktop and laptop computers. Dell will partner with Canonical Ltd. to pre-install the recently released Ubuntu 7.04 distribution of the Linux operating system.
+
+Until recently, Linux distributions have not been adopted by mainstream computer makers due to concerns over ease-of-use. Newer distributions, such as Ubuntu 7.04, have become much more user-friendly, with features such as automatic updates and software installation.
+
+Ubuntu director of business development Chris Kenyon told the BBC that one of the reasons Ubuntu was selected was its support features and hardware compatibility. "Dell are going to work with us to make sure Ubuntu works fully on its hardware," said Kenyon. A Dell representative suggested that the Ubuntu distribution was chosen due to public demand as expressed on a Dell-run forum website, IdeaStorm. "It was overwhelming, the response we got to the survey," said Jeremy Bolen, a Dell spokesman. 
+
+Tuesday's announcement was not the first for Dell's Linux offerings. They have offered servers and workstations with an optional enterprise version of Red Hat Linux for some time now. The chairman and CEO of Dell, Michael Dell, is reported to have Ubuntu installed on his own laptop. 
+
+Perry Donham, an analyst with Aberdeen Group of Boston, suggested that the Dell-Ubuntu partnership will benefit Ubuntu more than it will Dell. "It's going to be a small part of [Dell's] market," said Donham. "But it's a great win for Ubuntu and for Linux in general."
+
+Dell indicated that the Ubuntu-based computers would be available in the next few weeks, from Dell USA only for the time being. The pricing structure has not been revealed, or when such computers would be available in countries other than the United States.

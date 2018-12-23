@@ -1,0 +1,13 @@
+James Gosling, the creator of the Java programming language, said last week that he believes Microsoft is wrong in its decision to support C and C++ programming languages in the common language runtime in Microsoft .NET. According to him, this decision may lead to severe security flaws in .NET. Gosling is currently in Australia, giving talks and visiting friends.
+
+According to Gosling, the problem lies with the programming languages and some of their characteristics: “C++ allowed you to do arbitrary casting, arbitrary adding of images and pointers, and converting them back and forth between pointers in a very, very unstructured way." 
+
+The Java language was developed due to limitations of C++. Gosling began using C++ for the former Sun Microsystems's star-seven project. At that time Gosling concluded C++ was inadequate and created the Oak language. The Oak language would become the language known today as Java. The former star-seven project shares its defining characteristics with networked software applications today: safety and portability.
+
+Gosling continues: "If you look at the security model in Java and the reliability model, and a lot of things in the exception handling, they depend really critically on the fact that there is some integrity to the properties of objects. So if somebody gives you an object and says 'This is an image', then it is an image. It's not like a pointer to a stream, where it just casts an image."
+
+Charles Sterling, a Microsoft developer and product manager of the .NET framework, didn’t entirely disagree with Gosling’s thoughts. But he said that .NET defines different types of code. And there is the code which is managed by the .NET framework. All new Microsoft languages, such as C* and Visual Basic.NET, produce only code managed by the .NET framework, so they are safe.
+
+A key idea that has not shown up in Gosling's talk is that Java itself allows a very similar process to occur. Java's JNI (Java Native Interface) allows the integration of the same unsafe code that prompted Gosling's central thesis.
+
+However, Gosling says languages like C and C++ can still produce unsafe code which would not follow the rules of safety of .NET. This sort of code, usually found in old software applications, requires additional .NET permissions to execute. Sterling says it is up to developers to decide whether or not to use unsafe code in their .NET applications.

@@ -1,0 +1,17 @@
+The scientific journal RNA Biology will require authors of articles in a new section on RNA families to submit summaries of their work to Wikipedia, Nature News reports.
+
+Since 2007, the RNA family database (Rfam) has been synchronized with Wikipedia, so that editing Wikipedia alters the database. A small core group of scientists updates the entries in Wikipedia, but a long tail of scientists and other Wikipedians have contributed as well. Due to the scientific nature of the entries, vandalism has not been a large problem, according to Sean Eddy, a computational biologist at the Janelia Farm Research Campus of the Howard Hughes Medical Institute in Ashburn, Virginia.
+
+"The novelty is that for the first time it creates a link between Wikipedia and traditional journal publishing, with its peer-review element," Alex Bateman from the Rfam database told Nature News. This way, scientists are encouraged to submit to Wikipedia, while they are rewarded with a citable publication in a peer review journal (which in turn drives their funding). In the interview with Nature, the journal's editor expressed her hopes that other journals would adopt the model.
+
+The new Wikipedia entry will be peer reviewed separately before it is published on Wikipedia. The first article in the new journal section will deal with SmY RNA, a family which now has its own Wikipedia article. According to the online version of the article, it was submitted on November 21, 2008, and accepted five days later. The Wikipedia article was moved from the userpage of one of the co-authors to the article section one day before submission.
+
+In an accompanying editorial, the new Associate Editor-in-Chief of the new section, Paul P. Gardner, explained: "...A Wikipedia entry is usually among the top few hits from a Google search with a molecular biology keyword. Therefore, we would like to ensure that the RNA relevant information in Wikipedia is both reliable and current. We think that this track will provide an important mechanism by which time will be spent by experts to improve the record."
+
+The author guidelines for this new section contain a mini-guide for the scientists to publishing their first Wikipedia article, mostly from a technical aspect (explaining syntax) rather than as a style guide.
+
+In the field of molecular biology, wiki technology is increasingly being used. For example, two biochemists and Wikipedians, Professor William J. Wedemeyer and Tim Vickers, MSc, PhD, hosted a Wikipedia workshop last Tuesday at the American Society for Cell Biology Annual Meeting. 
+
+The Wiki approach is not met with undivided enthusiasm; last March, 250 scientists wrote a petition in the magazine Science to ask GenBank to allow community annotation of its DNA sequences, but their request to 'Wikify' GenBank was denied.
+
+In an e-mail to Wikinews and on the Nature website, Prof. Wedemeyer called the new initiative a "promising method for outreach, connecting the scientific world with the public that usually pays for the research," by "centralizing public outreach in the widely read Wikipedia." He said that the initiative "seems likely to be effective."

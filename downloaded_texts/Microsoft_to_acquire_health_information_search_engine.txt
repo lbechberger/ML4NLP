@@ -1,0 +1,9 @@
+Microsoft decided to buy a health information search engine called Medstory. This is the company's first step towards an involvement in the health market. The software that Medstory develops involves artificial intelligence techniques which are applied to both medical and health information stored in medical journals, as well as government documents. No additional information on the Medstory purchase was disclosed.
+
+According to Peter Neupert, vice president for health strategy at Microsoft, the acquisition of Medstory represents the first step in assembling technologies which can serve well for the consumer experience in health care.
+
+In 2006 Microsoft bought Azyxxi, which is a clinical health care service system. It searches and displays information about the patient from many sources. The information might be provided by: scanned documents, X-rays and even ultrasound images.
+
+Microsoft decided to make its move into the health care system at a time when many websites, that provide various information on health, started to significantly raise their traffic and receive investments. 
+
+The industry analyst and Medstory investor, Esther Dyson, mentioned that the technology provided by Medstory is not just a search engine, it also represents an ontology engine. He also outlined the fact that Microsoft has acquired "some of the best deep technology" in the fast growing field of medical search engines.

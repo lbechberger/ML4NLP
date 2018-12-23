@@ -1,0 +1,12 @@
+EUCD.info, a group opposing the bill, garned 170,000 signatures on a petition, which it attempted to bring to prime minister Dominique de Villepin]]
+The French parliament has today finally adopted a law known as DADVSI implementing the 2001 European directive on copyright, roughly an equivalent to the US Digital Millennium Copyright Act. The final text criminalizes sending copyrighted data over peer-to-peer networks, and enacts tough penalties for those designing programs "evidently designed" to send copyrighted data or meant for circumventing DRM protection techniques.
+
+Free software groups contend that the law could in effect make it impossible to implement free software capable of reading DRM-encumbered formats. EUCD.info denounces the "worst copyright law imaginable". 
+
+The text started to be examined in Parliament in December 2005, when it took an unexpected twist with an amendment decriminalizing peer-to-peer networks (in exchange for the payment of a flat fee), since repealed. In March, other amendments were strongly criticized by Apple Computer, and as a result the US government pressured the French government to rescind them.
+
+The ruling UMP party voted in favor of the law, but a number of its parliamentarians, including a vice-president of the National Assembly, expressed strong reservations; the centrist UDF split over it, with its president FranÃ§ois Bayrou being opposed to the bill, but some other members abstaining from voting; the left-wing opposition PS and PCF voted against it. The opposition has announced it would mount a challenge over the law before the French Constitutional Council.
+
+Proponents of the bill claim that it will rein in unauthorized copying of copyrighted content, which they claim jeopardizes artistic creation in France. Opponents opposed both the way the bill was examined in Parliament, which they claim was put under pressure, and some clauses that they claim may violate civil liberties or jeopardize free software.
+
+The bill is due to be signed into law by president Jacques Chirac following the probable examination by the Constitutional Council.

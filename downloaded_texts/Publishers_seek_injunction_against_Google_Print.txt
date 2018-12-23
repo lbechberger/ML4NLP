@@ -1,0 +1,12 @@
+A number of publishers represented by the trade union group Association of American Publishers (AAP) filed an injuction in U.S. District Court in New York on Wednesday to stop Google from moving forward with plans for its Print Library Project.
+
+The current situation between the publishing industry and Google requires that copyright holders notify the search engine if they do not want works to appear on the internet in full by November 1. Where requests by copyright holders exist, the search result will display only a snippet of the text and a link to where users can buy a hard copy. Google denies it is violating U.S. copyright law.
+
+Negotiations broke down when Google rejected a proposal by AAP to use ISBN. 
+
+Parties to the injunction want to implement a system where a listing of permissible works and books is populated by the discretion of the publisher or author. By default, all other copyrighted content would be excluded.
+
+Google offers this explanation of how Google Print works:
+ Just do a search on the Google Print homepage. When we find a book whose content contains a match for your search terms, we'll link to it in your search results. Click a book title and you'll see the page of the book that has your search terms, along with other information about the book and "Buy this Book" links to online bookstores (you can view the entirety of public domain books or, for books under copyright, just a few pages or in some cases, only the titleâ€™s bibliographic data and brief snippets). You can also search for more information within that specific book and find nearby libraries that have it. 
+ 
+Plaintiffs involved in the case are McGraw-Hill, Pearson PLC, Penguin Group, Simon &amp; Schuster, Inc. and John Wiley &amp; Sons. Recovery of court costs are being sought, but no punitive damages.

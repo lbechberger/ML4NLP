@@ -1,0 +1,3 @@
+The website wikileaks.org has recently been brought back online following the lifting of a court injunction forcing the site to be taken down. According to a Wikileaks press release from when the site was taken offline, the injunction stated that "Dynadot [Wikileaks host] shall immediately clear and remove all DNS hosting records for the wikileaks.org domain name and prevent the domain name from resolving to the wikileaks.org website or any other website or server other than a blank park page, until further order of this Court."
+
+As Wikleaks is a wiki and is therefore not run by anyone, Jonathon Winterview interviewed a spokesperson of Wikileaks, who answered all the below questions.

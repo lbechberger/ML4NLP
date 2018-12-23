@@ -1,0 +1,9 @@
+The instant messaging (IM) and VoIP communications company Skype has suffered from an unexpected outrage across Europe since 10:00 AM UTC today. Users were not able to log in and Skype did not announce a cause of the problem.
+
+Skype initially left a message on its website and Twitter which reads, "A small number of you may have problems signing in to Skype. We’re investigating the cause, and hope to have more details to share soon."
+
+It was suggested by many users that Microsoft might be related to the Skype behaviour, however the purchase of Skype by Microsoft is not yet completed — Microsoft do not currently have any operational control over the Skype servers.
+
+Skype investigated a similar issue two weeks ago, its solution for which included an automatic update. This update deleted a file called "shared.xml" on users' computers. While it seemed to resolve the issue, the reason for this was not clear. Online newspaper The Register reports that today's issue is not dissimilar from that experienced previously.
+
+Further investigation by Skype showed that the event was caused by "configuration problems", but Skype has not published further details. The situation was claimed to be "stabilizing" by Skype later in the evening.

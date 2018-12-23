@@ -1,0 +1,7 @@
+From approximately 1:00 p.m. (18:00 UTC) to 4:00 p.m. (22:00 UTC) Eastern Standard Time (EST), the popular free encyclopedia Wikipedia, alongside its sister projects (including Wikinews), went offline due to major server outages. Downtime was later attributed to overheating at the Project's central data center in Amsterdam. 
+
+According to a post made by Mark Bergsma at the Wikimedia Foundation's technical blog, the servers "shut themselves down" to avoid further heat damage.
+
+Administrators reportedly attempted a shift of traffic to the Project's servers in Florida. However, "it turned out that this failover mechanism was now broken, causing the DNS resolution of Wikimedia sites to stop working globally."
+
+According to the Project's official Twitter account, programmers were able to resolve most of the server problems by around 4:00 p.m. EST. Since the situation with the servers in Amsterdam is still ongoing, some users may still experience lingering service glitches due to "caching effects".

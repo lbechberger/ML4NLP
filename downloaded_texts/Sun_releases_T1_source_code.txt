@@ -1,0 +1,9 @@
+On March 21, 2006, Sun Microsystems released the source code for its newest processor, the UltraSPARC T1. The UltraSPARC T1 is available with four, six or eight cores, each able to work on four threads at a time. The concept is similar to that of the Intel Pentium EE which uses two cores with two threads.
+
+A multicore processor is like having many CPUs on the one chip. Multiple threads allow each core to work on a number of tasks concurrently on a single core. This is particularly useful in a server environment where the UltraSPAC T1 was designed to be used.
+
+Sun call the open source version of their processor the OpenSPARC T1 and have made the source code (in Verilog format) and specifications available on the OpenSPARC T1 website under the General Public License, the same license under which most distributions of Linux are released.
+
+Industry observers say that the move is triggered by the SPARC architecture's shrinking market share to the likes of IBM's POWER architecture and x86 based chips from Intel and AMD.
+
+Open Source Hardware has been gaining momentum since 2002, when Kofi Annan issued a challenge to technology companies. Despite Sun's OpenSPARC T1 not being the first open source processor in the world, it is the first time that the design for a proprietary design processor has been released to the open source community.

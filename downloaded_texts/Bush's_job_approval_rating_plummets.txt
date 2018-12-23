@@ -1,0 +1,5 @@
+A CNN news program, The Situation Room, today reported that George W. Bush's job approval rating has dropped to 31 percent, with 63 percent disapproving of the job he is doing.
+
+The Situation Room also reported that leaders of Iran and Syria have said that if the president were to ask for help from them, "...all their problems will be solved." 
+
+President Bush has not yet responded to the announcement made by the leaders of Iran and Syria, but The Situation Room said that Bush should definitely "take the deal".

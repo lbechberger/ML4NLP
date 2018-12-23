@@ -1,0 +1,9 @@
+The Amtsgericht Berlin-Charlottenburg has repealed an injunction that it had issued in January against Wikimedia Deutschland, the German chapter of the Wikimedia Foundation.
+
+The court found that identifying the deceased Boris Floricic as the hacker Tron in an article of the German Wikipedia does not constitute a breach of the personal rights of Floricic or his parents, the plaintiffs in the lawsuit. It said that those rights only protect deceased persons from libelous or disfiguring characterisations of their biography; this is not the case in the Wikipedia article. The court also found that the personal rights of the parents were not infringed upon as well, as the article does not enable anyone to identify them.
+
+The lawyer of the parents, Friedrich Kurz, called the decision "arbitrary", "tangibly illegal" and a "misjudgment" as his clients have a unique surname which would make it possible to connect Tron to them. He announced that he would appeal the decision, even to the European Court of Human Rights if necessary.
+
+The chairman of Wikimedia Deutschland, Kurt Jansson, said they are happy that the court "confirmed our interpretation of the law completely" and hoped that the attorney of the plaintiffs would refrain from taking further legal actions due to the "decidedness" of the ruling.
+
+The court in Berlin had issued an injunction against Wikimedia Deutschland on January 17th, banning them from redirecting www.wikipedia.de to de.wikipedia.org.

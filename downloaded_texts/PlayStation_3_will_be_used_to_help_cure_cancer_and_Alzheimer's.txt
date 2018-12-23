@@ -1,0 +1,15 @@
+The upcoming Sony PlayStation 3 game console is going to assist scientists in finding cures for cancer and Alzheimer's disease using the Folding@home distributed computing program.
+
+Folding@home is run by the Pande group of Stanford University (America) to research protein folding, this is the process whereby proteins build themselves inside the cells in the body. Analyisis of how proteins fold (specifically how the folding goes wrong) can give insights into how diseases form. The simulation processes used in the research take months just for a single protein so the data is split into small packets (called workunits by the community) and distributed to volunteers around the world. By downloading a program called a 'client' users can receive units and perform the simulations on them - results are then sent back to the Stanford servers.
+
+Currently more than 150,000 computers run the folding 'client' worldwide. The new client can be downloaded to the users PlayStation 3 console and will then begin to calculate "work units" when users are not playing games. Since the PS3 has a 'Cell' processor with a total of 8 cores the calculations should be performed faster than on a PC. With this new program scientists aim to create a super computer faster than IBM's BlueGene/L System (which currently calculates more than 280.6 trillion bits of information per second). The new calculations are expected to process a thousand trillion bits of information across the whole project every second.
+
+A statement on Folding@home's website explained further: "Using the Cell processor of the PS3, we should be able to do more folding than what one could do on a PC. Also, since the PS3 has a powerful GPU, the PS3 client will offer real time visualization for the first time."
+
+The new program is part of an expansion of the project and the first of 2 new clients that have been developed. The second, scheduled for release later on, will utilise a computer's graphics card (supporting only ATI graphics cards at first) to perform folding calcualtions.
+
+"We will release more details on all of this as the new software rolls out," said the statement, "We are beta testing the ATI GPU client software internally at the moment and will likely announce an open beta in four to five weeks (end of September)."
+
+The Pande group noted their ultimate aim as being to create an even faster super computer, with the ability to process over a million trillion bits of data every second: "The PS3 client and GPU client are together part of our new broader goals to push Folding@Home to the next stage, reaching calculations on the petaflop to 10 petaflop scale."
+
+The PS3 client is expected to be available at the end of September.

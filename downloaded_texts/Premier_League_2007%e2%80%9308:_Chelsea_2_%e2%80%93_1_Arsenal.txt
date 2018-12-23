@@ -1,0 +1,15 @@
+team1=Chelsea|
+score=2-1|
+team2=Arsenal|
+report=|
+goals1=Drogba Drogba Ballack Makelele Cole Belletti Anelka Obi |
+goals2=Sagna Sagna Diabi Walcott Sagna Flamini Bendtner |
+attendance=|
+stadium= Stamford Bridge, London|
+referee=Steve Bennett 
+
+There were no goals in the first half of the game, with the first goal, which was for Arsenal, being scored in the 59th minute from a corner taken by Francesc Fabregas. The goal was scored by Bacary Sagna.
+
+The second goal was scored for Chelsea by Didier Drogba in the 73rd minute of the match. The ball was shot into the bottom-right of the goal. Drogba was booked one minute after the match for "unsporting behavior."
+
+The final was also scored by Drogba, with this goal being nine minutes after his previous goal. This time the ball was shot into the bottom-left hand corner of the goal.

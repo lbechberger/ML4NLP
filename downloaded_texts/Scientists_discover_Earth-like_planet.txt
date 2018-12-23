@@ -1,0 +1,24 @@
+An international group of 73 scientists using 4 projects (PLANET led by Jean-Philippe Beaulieu and Martin Dominik, RoboNet led by Michael
+Bode and Keith Horne, OGLE led by Andrzej Udalski, and MOA led by Phil Yock) from 32 institutions in 12 countries have discovered the smallest Earth-like planet yet.
+
+The new planet is about 25,000 light years away and is close to the center of the Milky Way.
+
+The discovery was announced in the journal Nature. The journal also states the planet was found using a method called gravitational microlensing, which detects small planets with a mass like that of Earth.
+
+Gravitational microlensing is where a light from a distant star is bent and magnified by the gravitational field of a foreground star. The presence of a planet around the foreground star causes light from the distant star to become momentarily brighter.
+
+However, scientists say that the cold temperatures on the planet make the chance of finding any life on it "unlikely."
+
+"We may predict with reasonable probability that microlensing will discover planets with masses like that of Earth at a similar distance from their stars and with comparable surface temperature," said study co-author Bohdan Paczynski from Princeton University.
+
+So far the planet only goes by OGLE-2005-BLG-390Lb, and takes about ten years to orbit its parent star, a red dwarf, a star that is smaller and much cooler than our own Sun.
+
+Scientists say the new planet, which is about five and a half times the mass of Earth, could either have a rocky core and a thin atmosphere, or be a small ice/gas world like Neptune, but in either case, its "very large orbit and cooler parent star, makes it a very cold world."
+
+The predicted surface temperature is -220° Celsius (-364° F), which means that should it have a rocky core, the planet may more closely resemble a massive version of Pluto with a surface of frozen liquids and gas. Otherwise the planet would be a liquid mass, wrapped in clouds of ice crystals and gas, much like Neptune.
+
+"This is very exciting and important," said Professor Michael Bode from Liverpool John Moores University, a principal investigator for the RoboNet project which helped to collaborate on the research. "This is the most Earth-like planet we have discovered to date, in terms of its mass and the distance from its parent star. Most of the other planets that have been discovered are either much more massive, much hotter or both."
+
+This is the third planet in two years that scientists have found using gravitational microlensing.
+
+In the past, more than 150 planets outside our solar system were found using a technique known as the radial velocity method. This method observes a wobble in stars caused by the planet's gravitational effects.

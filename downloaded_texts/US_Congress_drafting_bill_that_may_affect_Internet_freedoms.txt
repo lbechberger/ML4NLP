@@ -1,0 +1,21 @@
+The United States Congress is currently drafting a bill known as the Communications Opportunity, Promotion, and Efficiency Act of 2006 that would revise and update the 1996 Telecommunications Act. Currently phone and cable lobbyists who own the broadband networks, such as those from AT&amp;T and BellSouth, are calling on the federal government to permit them to operate Internet and other digital communications services as private networks. The bill as it now stands states that certain classes of Internet providers "may not unreasonably" impair, interfere, restrict or limit applications or services, such as Web sites or voice-over-IP phone connections. 
+
+Consumer advocates such as Common Cause and some large Internet companies such as Google and Yahoo are concerned that this change will result in a loss of what is being called network neutrality, and are demanding specific language in the bill to address it. Three weeks ago, the House Subcommittee on Telecommunications rejected an amendment to the bill that would have strengthened provisions for network neutrality. The amendment was defeated by a vote of 28 to 8.
+
+Network neutrality is a principle of computer networking that describes networks designed so that no communication, application, or service is either given preferential treatment or restricted. 
+
+Advocates of network neutrality fear that allowing broadband networks to operate unregulated could lead to preferential treatment toward certain companies at the expense of others. Phone companies who oppose network neutrality legislation contend that some mechanism needs to be in place in order to pay for expansion of the public Internet. 
+
+Edward Whitacre, AT&amp;T's chief executive officer, had made remarks on the issue that consumer groups found inflammatory. In remarks made on November 7, 2005, presumably referring to Internet sites using their network connections, he called for "some mechanism for these people who use these pipes to pay for the portion they're using. Why should they be allowed to use my pipes?" 
+
+Whitacre has since reversed his public statements, saying on March 21, 2006, "Any provider that blocks access to content is inviting customers to find another provider. And that's just bad business."
+
+Federal Communications Commission chairman Kevin Martin believes that the FCC already has the authority to enforce network neutrality provisions, citing a North Carolina case in which the FCC acted against Madison River Communications for blocking Vonage VoIP phone service.
+
+Representative Fred Upton from Michigan, chairman of the Telecommunications and the Internet Subcommittee, describes the bill as a way to "ignite the marketplace — unleashing great advances in technology and delivering to consumers a variety of new services at a lower cost that were once never even imagined. Every consumer in the nation with a telephone, television and access to the Internet will be better for it — the wave of the future is now." 
+
+Michael Copps, a FCC Commissioner, said recently, "This Internet may not be the one we know in the future there are threats to it out there... Entrenched interests are already jockeying to constrain the openness that has been the Internet's defining hallmark." 
+
+A recent poll done by The Consumer Federation of America (See source 5) shows that the Internet has taken on an important role in the daily life of Americans. With two-thirds reporting it is important for personal communications and researching products, over half said it is important for getting news and, about 40 percent cited online banking, e-commerce, and retrieving government information as significant ways in which they used the internet. They expressed a great deal of concern about discriminatory practices of communications network operators.
+
+The revision of the 1996 Telecommunications Act was proposed by House Energy and Commerce Committee Chairman Joe Barton, R-Texas, and U.S. Rep. Bobby Rush, D-Ill., in late March and went on to the full committee on April 5.

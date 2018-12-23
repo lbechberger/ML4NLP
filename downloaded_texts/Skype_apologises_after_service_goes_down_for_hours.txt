@@ -1,0 +1,10 @@
+Skype, an Internet phone service, has apologised after millions of people around the globe found the program had gone down. The outage, which occurred on Wednesday, reportedly affected the United States, Europe and Japan, and lasted several hours. The company wrote on Twitter on Thursday morning that, more than twelve hours after the outage, some users were still experiencing problems.
+
+
+The chief executive of Skype, Tony Bates, said his company took the technical issues "really seriously," and apologised to users. "Right now it looks like clients are coming on and offline and sometimes they are crashing in the middle of calls. We are deep in the middle of investigating the cause of the problem and have teams working hard to remedy the situation," he said.
+
+In a blog post, Skype stated that, "we’re sincerely sorry for this disruption - like you, all of us at Skype rely on Skype every day. We understand just how important Skype is to your friendships, family, and work, and so are particularly aware of the impact of rare problems like this." 
+
+Industry expert Om Malik said the outage would be of concern for Skype. "Skype is one of the key applications of the modern web," he said. "It is already a hit with consumers, and over the past few years it has become part of the economic fabric for start-ups and small businesses around the world. I am not sure we can comprehend the productivity cost of this outage. The outage comes at a time when Skype is starting to ask larger corporations for their business." Malik added: "If I am a big business, I would be extremely cautious about adopting Skype for business, especially in light of this current outage."
+
+Bates said he did not know what had caused the outage, but, speaking to the BBC, he said "all avenues" would be investigated. Reports suggest the program did not work on any system, including computers and mobile devices. "Some of you may have problems signing in to Skype – we’re investigating, and we’re sorry for the disruption to your conversations," the company wrote on Twitter when the outage began. 20 million people use the service every day.

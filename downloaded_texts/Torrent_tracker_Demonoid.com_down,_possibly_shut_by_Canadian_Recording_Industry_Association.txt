@@ -1,0 +1,7 @@
+Unconfirmed reports are claiming that Demonoid, a popular semi-private torrent tracker, has been shut down by the Canadian Recording Industry Association (CRIA). If true, this would be the latest in many shutdowns of peer-to-peer websites by anti-piracy groups. Earlier this week, trackers Torrentbox, isoHunt, and Podtropolis were disabled for visitors in the United States due to a lawsuit by the Motion Picture Association of America (MPAA).
+
+Demonoid is one of the largest torrent trackers on the internet, second only to The Pirate Bay, and tracks over a million torrent files. The site has recently moved its servers from the Netherlands to Canada in June after a Dutch piracy group BREIN subpoenaed Demonoid's ISP, demanding that the site be taken offline.
+
+The site founder and administrator Deimos has not commented yet regarding the shutdown. Both the tracker and the website are inaccessible as of September 26 at 0700 UTC.
+
+Some within the company have suggested that it all simply is a case of heavy maintenance.

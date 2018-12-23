@@ -1,0 +1,9 @@
+A hacker who has claimed to be loosely associated with internet group Anonymous managed to hack into the email account of Alaskan Governor and Republican vice-presidential nominee Sarah Palin in the early morning hours of Wednesday, September 16. 
+
+Partial contents of her email account - including two family photos, email messages and contact lists - were subsequently hosted online at Wikileaks.org, a website that anonymously hosts leaked government and corporate documents. Anonymous, who were responsible for attacks on Scientology in the past, have claimed credit for the intrusion. The email account has been used by Palin for conducting government business and communication, circumventing transparency laws.
+ 
+The hacker gained access to Palin's account by answering Yahoo!'s security questions, finding the answers on websites like Wikipedia.org. The hacker was apparently careless and frightened, and posted the new password on 4chan.org as well as a few hasty screenshots. In the screenshots were proxy data, which Ctunnel.com owner Gabriel Ramuglia plans to use to help with FBI investigations. 
+
+
+
+"White hat" hackers, however, have discovered that the hacker's online identity was linked to the email address of David Kernell, the son of Democratic Tennessee state representative Mike Kernell. When confronted, Kernell made no confirmation of that. While 4chan has deleted all images of the email account, the screenshots have quickly spread to blogs and news websites online.

@@ -1,0 +1,6 @@
+The Wikimedia Board of Trustees has decided to change the licensing of Wikinews from either public domain or other licenses which some language versions had chosen based on their community decision to the Creative Commons Attribution 2.5, following a poll of Wikinewsies and the Wikimedia community. This license received 31 votes, beating other options such as the GNU FDL, Creative Commons Sharealike, BSD license, custom-made Wikinews licenses, and other combinations.
+
+Before switching, most of Wikinews were in public domain, however, three language versions including Polish one were released under GNU FDL, and one version, Japanese one, was released under Creative Commons Attribution 2.1 Japan, since there is no 2.5 version aiming to Japanese jurisdiction in Creative Commons licenses. 
+
+
+The poll, which ended September 20, 2005, was set up in response to criticisms of releasing Wikinews into the public domain. Perceived disadvantages of releasing content into public domain were particularly focused around the fact that a public domain does not exist in some countries and that it could lead to plagiarism of Wikinews stories. Also differences of chosen licensing between each Wikinews editions was worried.

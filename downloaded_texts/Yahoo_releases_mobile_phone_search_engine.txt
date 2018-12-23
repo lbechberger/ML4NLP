@@ -1,0 +1,19 @@
+On Monday the second largest Internet search engine Yahoo introduced its new service called oneSearch. The service represents a search system that delivers locally relevant answers for mobile phone users. 
+
+The company will first launch its service in the United States and then make it international. OneSearch is to push aside Yahoo's main competitor Google in the field of mobile Web search.
+
+Marco Boerries, who works as a senior vice president of Yahoo's Connected Life business unit, said that the company is now working on putting search on every phone that includes a browser.
+
+OneSearch provides several services including: news headlines, images from Yahoo's Flickr photos site, business listings, local weather and links to other Web sites. 
+
+Yahoo's officials said that the company has already begun offering OneSearch on 85% of existing mobile phones that include Web browsers.
+
+The search results are delivered on a single page and are set in categories. The results are prioritized according to the calculation that Yahoo computers make about a specific information that the customer is trying to make.
+
+The company signed deals with several major mobile phone manufacturers, including: Samsung Electronics Inc., Nokia, Motorola Inc. and LG Electronics Inc.
+
+Yahoo also promised to help advertisers gain phone customers. Because users make their searches on their phones, they can directly reach the advertiser by clicking on a link.
+ 
+Yahoo's new service, oneSearch runs sponsored ad which is being linked to Web search results and display advertisements. OneSearch may also run mini-banner ads developed for mobile phone screens.
+
+It might take some time before Yahoo could actually see positive financial results of its product. Nevertheless its developers are quite happy with the result of their work.

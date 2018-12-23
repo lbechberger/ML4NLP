@@ -1,0 +1,13 @@
+Oral arguments in the landmark case of MGM v. Grokster legal battle were heard before the Supreme Court of the United States March 29. In the case, 28 entertainment companies have joined together to sue StreamCast, maker of Morpheus software, and Grokster.
+
+A final ruling is expected on the case within a few months. The issue heard before the court was an appeal of prior decisions made since 2001 at the U.S. district court level and from the Ninth Circuit Court of Appeals. Both of those decisions were in favor of Grokster's right to market its P2P software.
+
+P2P stands for peer-to-peer software, which uses the Internet as a medium for millions of users to distribute digital content, such as music, movies, books, and software, among themselves. By far the majority of the content distributed through this method is without the permission of the copyright holder.
+
+Morpheus is one of the most-popular peer-to-peer software products worldwide. StreamCast also operates MusicCity.com. Lawyers from the EFF Foundation (www.eff.org) are serving as defense counsel in the case.
+
+The result of this case could determine the ultimate fate of P2P software in the U.S., whether it is legal for software companies to produce and sell software that, in the opinion of some, facilitates profit illegally from the trade in copyrighted materials. However, even if illegal in America, such software might still be widely available from international hosts due to technological limitations of enforcing such a ruling. The companies behind this effort are aiming to hold technological innovators legally responsible for infringing uses of their technology.
+
+"About 36 million Americans — or 27 percent of internet users—say they download either music or video files and about half of them have found ways outside of traditional peer-to-peer networks or paid online services to swap their files". As a measure of public opinion on the issue, they stated, "49% of all Americans and 53% of internet users believe that the firms that own and operate file-sharing networks should be deemed responsible for the pirating of music and movie files," according to Pew Internet &amp; American Life Project in their most recent survey,
+
+The landmark Betamax decision of 1984 (Sony Corp. v. Universal City Studios) is the most relevant U.S. case law in this matter (note: the precedent Betamax case supports the legality of P2P netowrks). A decision in the MGM v. Grokster case could either affirm Betamax, or overturn it. This is the case that essentially created the VCR market in America for distributing movies at home, and so in this modern technologically updated version, there are billions of dollars in future revenues now at stake.

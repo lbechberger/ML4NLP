@@ -1,0 +1,10 @@
+team1=Arsenal|
+score=7–0|
+team2=Slavia Prague|
+report=Match Report|
+goals1=Fabregas Flamini Hubáček Walcott Hleb Clichy Walcott Fabregas Hleb Hleb Adebayor Flamini Rosický Bendtner Gilberto Bendtner |
+goals2= Kalivoda Jablonský Ivana Volešák Tavares Belaid Volešák|
+stadium=Arsenal Stadium, London|
+attendance=|
+referee=Stefano Farina 
+Arsenal equalled the biggest-ever UEFA Champions League win today with a 7-0 win against Slavia Prague. The win, which matched Juventus mark against Olympiacos CFP in December 2003, was the Arsenal's 12th consecutive win in all competitions. The win keeps Arsenal's UEFA Champions League record this season perfect. The rematch comes in 15 days in Prague.

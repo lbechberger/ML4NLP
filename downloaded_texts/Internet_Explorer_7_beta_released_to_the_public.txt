@@ -1,0 +1,15 @@
+The screen shot above shows several renderings of the Acid 2 CSS test, used to identify web page rendering flaws in web browsers and HTML authoring tools:
+*Green — Optimal (Konqueror)
+*Yellow — Firefox 1.5
+*Red — Internet Explorer 7
+
+
+The long awaited Internet Explorer 7.0 beta preview was released to the public on January 31. 
+
+Large amounts of the architecture, including the security framework, have been completely overhauled. Partly as a result of these security enhancements, the browser will be a stand-alone application, rather than integrated with the Windows shell. 
+
+The final Beta 2 is scheduled by Microsoft to be released in April, with the full version scheduled for the Summer of 2006.
+
+According to Microsoft's announcement, the beta will only run on Windows XP Service Pack 2 systems, but the final release version is intended to be able to run on Windows Vista, Windows XP Professional x64 Edition, and Windows Server 2003 as well.
+
+=

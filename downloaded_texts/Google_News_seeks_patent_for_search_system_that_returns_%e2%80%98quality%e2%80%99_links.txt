@@ -1,0 +1,11 @@
+Google News submitted patent applications both in the United States and world-wide in September 2003 for a system of ranking search returns. The patent protection filings seek to control Google's approach that filters headlines through a complicated algorithm, including the quality of the news organization. How much of this system is currently in use by the search engine giant is unknown.
+
+Primitive search engines are expected to organically evaluate links based on how closely the keywords typed in the search field match an object link, and how many other links are attached to the object. Then a measure of relevance is calculated before returning a reply.
+
+It seems some measure of the work being done at Google is a reaction to search engine optimization (SEO) campaigns which can, if done effectively, skew results to certain domains. A challenge for Google is to develop its technology to nullify efforts on the dark side of SEO and link-spamming. 
+
+What also seems to be coming out from this, according to research from the Internet Search Engine Database, is that Google does indeed have a 'sandbox' where domains are evaluated first by a human factor before being released into its algorithms.
+
+In its first ever Securities and Exchange Commission filing since the company went public last year, Google indicated that it intends to spend US$500 million on technology development, more than double the $177 million it spent two years ago.
+
+The language used in the lengthy patent application itself is difficult to understand. An excellent article titled "Google United - Google Patent Examined" found below, describes some of the nuts and bolts of Google's techniques.

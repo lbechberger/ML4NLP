@@ -1,0 +1,11 @@
+Microsoft's subscription-based MSN Explorer Internet browser left many of its users frozen out beginning on Friday of last week. Launching the application brought the user to a window stating that the software encountered a problem and had to be closed.
+
+The Internet Explorer browser software bundled with the Windows operating system remains operable, along with other non-MSN software. Subscribers to MSN are still able to retrieve e-mail by accessing their Hotmail account. Telephone support wait times to resolve the connectivity problem with the browser exceeded 45 minutes on Sunday evening. Beginning on Saturday, callers were prompted that wait times were "unusually long due to high call volume".
+
+A query to on-line chat with technical support to resolve the issue was met with, "I sincerely apologize for the length of time that it took you to get to us. We have been swamped with sessions and I am just glad that you finally got me to help you out." 
+
+The silent and automatic upgrade to the 9.5 version of MSN Explorer, from verson 9.0, is experiencing difficulties on some machines. Users can log on to support using their account at membercenter.msn.com, click the Support button on the left column of the page, and then select under Subscribed Services / Sign In the link "MSN Internet Access". On-line chat, e-mail, and phone support is available there. Hint: on-line chat is probably the fastest support option.
+
+The existing MSN Explorer software will need to be removed, some Windows registry folders may need to be removed, and the software completely re-downloaded and re-installed.
+
+Dial-up accounts can expect the download to be 93 minutes, for broadband, 9 minutes.

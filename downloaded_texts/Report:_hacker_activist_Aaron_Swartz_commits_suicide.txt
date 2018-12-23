@@ -1,0 +1,5 @@
+The programmer, activist, and early Reddit cofounder Aaron Swartz reportedly committed suicide yesterday in New York City. He was 26. Swartz's death is reported confirmed by both Swartz's uncle and his attorney to The Tech, the campus newspaper of the Massachusetts Institute of Technology.
+
+In 2011, Swartz was arrested and charged for downloading two-thirds of the material on JSTOR, a repository of academic journal articles. Last year, on September 24, he pleaded not guilty to the charges against him. He had previously attracted the attention of the FBI for downloading 20% of PACER, a database of documents related to US federal court cases. 
+
+Swartz was active in the world of free culture and open source software. When he was 14, he worked on the RSS 1.0 specification, a standard for syndicating news articles in XML. He also worked on a Y Combinator-backed startup called Infogami which was merged with the popular news sharing site Reddit. Swartz also founded Demand Progress, a progressive activist group dealing with civil liberties issues.

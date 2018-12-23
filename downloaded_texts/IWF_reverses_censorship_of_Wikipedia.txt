@@ -1,0 +1,11 @@
+On December 7, Wikinews first reported that some Internet Service Providers (ISPs) in the United Kingdom, were filtering access to an image and an article on the popular, free online encyclopedia Wikipedia, amid allegations that they contain child pornography. The filter was brought into play by the Internet Watch Foundation (IWF), which has stated that today they have removed the ban.
+
+The IWF said, in a statement on its website, that "the decision has been taken to remove this webpage from our list." However, the organization does maintain that "the image in question is potentially in breach of the Protection of Children Act 1978."
+
+At approximately 19:45 UTC, the ban was removed for customers of Virgin Media, who were previously unable to access the Virgin Killer article or the associated image.
+
+The image and article in question is that of the 1976 album Virgin Killer, a studio album by the Scorpions, a German rock band. The controversy began after the image of the album's original cover, which depicted a naked prepubescent girl, was reported to the IWF in early December. Wikinews first discovered the controversial image in May 2008 after there were several attempts to delete it on Wikipedia. The image had been blocked because the IWF considered it to be "potentially illegal". As a result, the IWF have contacted authorities in the United States and in the UK.
+
+The measures applied redirect Wikipedia-bound traffic from a significant portion of the UK's Internet population through a small number of servers which can log and filter the content that is available to the end user. A serious side-effect of this is the inability of administrators on Wikimedia sites to block vandals and other troublemakers without potentially impacting hundreds of thousands of innocent contributors who are working on the sites in good faith.
+
+Contributors or individuals attempting to view an affected image or file, depending on their ISP, may get a warning saying, "we have blocked this page because, according to the Internet Watch Foundation (IWF), it contains indecent images of children or pointers to them; you could be breaking UK law if you viewed the page.". Other ISPs provide blank pages, 404 errors, or other means of blocking the content.

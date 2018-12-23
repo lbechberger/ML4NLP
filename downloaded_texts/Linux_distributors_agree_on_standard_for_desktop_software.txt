@@ -1,0 +1,7 @@
+Major distributors of the operating system Linux have agreed on a new standard that includes common elements for desktop software, in a move to make Linux a more effective competitor to Microsoft Windows.
+
+The Free Standards Group (FSG) will unveil the Linux Standard Base (LSB) 3.1 on Tuesday at the Desktop Linux Summit in San Diego. The first distribution to include LSB 3.1 support, Xandros, is expected to be released on May 1, followed shortly by versions by Red Hat, Novell, and others. The status of Ubuntu's upcoming version is still unclear .
+
+The standards aim to resolve difficulties that programmers face in developing software for Linux. Because Linux, developed by Finnish programmer Linus Torvalds, defines the kernel or core of the operating system, there is a wide variety of graphical interfaces for it and differing software libraries. LSB 3.1 standardizes core pieces of Linux to make development easier.
+
+"One of the big things that's difficult is consistency, and that's Windows' biggest strength," Jim Zemlin, executive director of the Free Standards Group, told the Associated Press. "If you buy a Windows program, you know it will run on a Windows computer, and Linux needs to work the same way. [...] If you really want to become a broadly adopted and used technology, you have to have that degree of standardization," he said.

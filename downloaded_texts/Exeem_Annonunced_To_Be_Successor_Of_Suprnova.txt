@@ -1,0 +1,7 @@
+December 31, 2004
+
+Yesterday on Novastream, Sloncek announced officially that the Suprnova index for BitTorrent, a program used to download music, video, and program files, and responsible for approximately one third of all transfers over the internet, will have a successor. Suprnova was voluntarily shut down earlier in the year due to threats made by the MPAA regarding copyright violation.
+
+The program to take the place of Suprnova, "Exeem", is a blending of 'the tracker', the BitTorrent client, and its 'decentralized indexing'. As the program is in a state of testing, its current form is only designed to run on Windows. Although currently undergoing a Beta Test, the program will be released some time in the near future. The program also contains a rating and commenting system that, although basic and primitive, seems to be comparable to that of Suprnova in its quality.
+
+There are also unconfirmed rumours that Sloncek is receiving payment from a third party for participating in the Exeem team's efforts. This raises the question: is Exeem actually related with Suprnova and, in turn, can it be said to be its successor?

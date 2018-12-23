@@ -1,0 +1,15 @@
+After several months in beta, Opera 8 for Windows and Linux was released yesterday. The Opera browser is considered by many to be fast, small and standards-compliant.
+
+HÃ¥kon Wium Lie, the CTO of Opera Software said "The vast majority of Internet users have had to deal with a slow and insecure browser for too long. People are spending more time online, and with the increase in online fraud it is vital that they have a browser that is fast, secure and easy to use. That's what we offer with Opera 8." He described Opera 8 as a "major leap in browser innovation".
+
+This version included many new features including a new unique security feature, advanced page-resizing, tabbed browsing, and pop up blocking. Among the new features for Opera 8 is the support for voice; Opera can be both voice controlled and act as a screen reader.
+
+Opera 8 for Windows is available in English, German, Dutch, and Polish, with more languages to soon follow. The Linux version is available in English, with more languages to follow. A beta version of Opera 8 for Mac (English) is also available.
+
+A spyware-free, ad-supported version of Opera 8 is available free of charge. A small banner or text ad appears at the top of the screen. A version of Opera without ads is available for US$39 or US$20 for students.
+
+Opera Software ASA is headquartered in Oslo, Norway. According to the company itself, it is an industry leader in the development of Web browser technology, particularly in smartphone, PDA, home media, and vertical markets.
+
+Opera is cross platform with versions for Windows, Linux, Mac OS, Symbian OS, Windows Mobile, BREW, QNX, TRON, FreeBSD, Solaris, and Mediahighway.
+
+Opera 8 can be downloaded at Opera's official website.

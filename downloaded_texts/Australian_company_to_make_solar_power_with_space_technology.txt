@@ -1,0 +1,7 @@
+Solar Systems Pty Ltd, Hawthorn, Victoria, have announced an agreement with Boeing Australia Ltd for supply of Spectrolab solar cells. The agreement will result in the supply of 500,000 cells, capable of generating 11MW of electricity.
+
+Spectrolab produces multi-junction solar cells, originally designed for powering satellites. The solar cells are three times more efficient than the cells used in typical domestic solar panels, and are capable of converting light energy to electrical energy with up to 34% efficiency according to NREL's National Centre for Photovoltaics. Solar Systems utilise Spectrolab's multi-junction solar cells to increase the output of their dish systems.
+
+Solar Systems have already trialed the cells in one of their CS500 concentrating solar dishes installed at a solar power station in Hermannsburg, Central Australia, established to reduce the consumption of diesel in the remote community. Simply replacing the existing cells with the Spectrolab multi-junction solar cells increased output from 24kW to 34kW.
+
+Solar Systems is planning to use the technology in a solar power station it will build in northern Victoria, with a capacity of 154MW.

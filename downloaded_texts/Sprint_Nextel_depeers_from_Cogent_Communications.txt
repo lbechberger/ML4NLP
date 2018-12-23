@@ -1,0 +1,5 @@
+On October 30th Sprint Nextel severed their network connection with Cogent Communications, according to a statement from Cogent. As a result, it is impossible for most Sprint and Cogent customers to communicate directly between each other across the Internet. The actual reasons for the dispute are unknown, though Cogent has had similar disputes in the past with Level3, Telia, Limelight, France Telecom, and AOL.
+
+The two ISPs are currently in litigation over peering, the free exchange of traffic between the ISPs for little or no cost. In shutting down the peering, according to Cogent, Sprint is in violation of a contractual obligation to exchange Internet traffic. However, according to Sprint, Cogent has failed to meet its criteria for the peering agreement, and should be required to pay for the traffic, which Cogent refused to do.
+
+The de-peering has resulted in some customers of both companies experiencing dropped connections. However, most consumer ISPs and college networks are "multihomed", and thus could connect through separate lines to both companies.

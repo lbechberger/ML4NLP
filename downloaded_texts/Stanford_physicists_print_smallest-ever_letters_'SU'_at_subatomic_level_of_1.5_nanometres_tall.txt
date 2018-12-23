@@ -1,0 +1,49 @@
+A new historic physics record has been set by scientists for exceedingly small writing, opening a new door to computing's future. Stanford University physicists have claimed to have written the letters "SU" at sub-atomic size.
+
+Graduate students Christopher Moon, Laila Mattos, Brian Foster and Gabriel Zeltzer, under the direction of assistant professor of physics Hari Manoharan, have produced the world's smallest lettering, which is approximately 1.5 nanometres tall, using a molecular projector, called Scanning Tunneling Microscope (STM) to push individual carbon monoxide molecules on a copper or silver sheet surface, based on interference of electron energy states. 
+
+A nanometre (Greek: νάνος, nanos, dwarf; μετρώ, metrό, count) is a unit of length in the metric system, equal to one billionth of a metre (i.e., 10-9 m or one millionth of a millimetre), and also equals ten Ångström, an internationally recognized non-SI unit of length. It is often associated with the field of nanotechnology.
+
+"We miniaturised their size so drastically that we ended up with the smallest writing in history," said Manoharan. "S" and "U," the two letters in honor of their employer have been reduced so tiny in nanoimprint that if used to print out 32 volumes of an Encyclopedia, 2,000 times, the contents would easily fit on a pinhead.
+
+In the world of downsizing, nanoscribes Manoharan and Moon have proven that information, if reduced in size smaller than an atom, can be stored in more compact form than previously thought. In computing jargon, small sizing results to greater speed and better computer data storage. 
+
+"Writing really small has a long history. We wondered: What are the limits? How far can you go? Because materials are made of atoms, it was always believed that if you continue scaling down, you'd end up at that fundamental limit. You'd hit a wall," said Manoharan.
+
+
+In writing the letters, the Stanford team utilized an electron's unique feature of "pinball table for electrons" — its ability to bounce between different quantum states. In the vibration-proof basement lab of Stanford's Varian Physics Building, the physicists used a Scanning tunneling microscope in encoding the "S" and "U" within the patterns formed by the electron's activity, called wave function, arranging carbon monoxide molecules in a very specific pattern on a copper or silver sheet surface. 
+
+"Imagine [the copper as] a very shallow pool of water into which we put some rocks [the carbon monoxide molecules]. The water waves scatter and interfere off the rocks, making well defined standing wave patterns," Manoharan noted. If the "rocks" are placed just right, then the shapes of the waves will form any letters in the alphabet, the researchers said. They used the quantum properties of electrons, rather than photons, as their source of illumination. 
+
+According to the study, the atoms were ordered in a circular fashion, with a hole in the middle. A flow of electrons was thereafter fired at the copper support, which resulted into a ripple effect in between the existing atoms. These were pushed aside, and a holographic projection of the letters "SU" became visible in the space between them. "What we did is show that the atom is not the limit — that you can go below that," Manoharan said. 
+
+"It's difficult to properly express the size of their stacked S and U, but the equivalent would be 0.3 nanometres. This is sufficiently small that you could copy out the Encyclopaedia Britannica on the head of a pin not just once, but thousands of times over," Manoharan and his nanohologram collaborator Christopher Moon explained.
+
+The team has also shown the salient features of the holographic principle, a property of quantum gravity theories which resolves the black hole information paradox within string theory. They stacked "S" and the "U" - two layers, or pages, of information — within the hologram. 
+
+The team stressed their discovery was concentrating electrons in space, in essence, a wire, hoping such a structure could be used to wire together a super-fast quantum computer in the future. In essence, "these electron patterns can act as holograms, that pack information into subatomic spaces, which could one day lead to unlimited information storage," the study states.
+
+The "Conclusion" of the Stanford article goes as follows:
+*
+
+The team is not the first to design or print small letters, as attempts have been made since as early as 1960. In December 1959, Nobel Prize-winning physicist Richard Feynman, who delivered his now-legendary lecture entitled "There's Plenty of Room at the Bottom," promised new opportunities for those who "thought small." 
+
+Feynman was an American physicist known for the path integral formulation of quantum mechanics, the theory of quantum electrodynamics and the physics of the superfluidity of supercooled liquid helium, as well as work in particle physics (he proposed the parton model).
+
+
+Feynman offered two challenges at the annual meeting of the American Physical Society, held that year in Caltech, offering a $1000 prize to the first person to solve each of them. Both challenges involved nanotechnology, and the first prize was won by William McLellan, who solved the first. The first problem required someone to build a working electric motor that would fit inside a cube 1/64 inches on each side. McLellan achieved this feat by November 1960 with his 250-microgram 2000-rpm motor consisting of 13 separate parts.
+
+In 1985, the prize for the second challenge was claimed by Stanford Tom Newman, who, working with electrical engineering professor Fabian Pease, used electron lithography. He wrote or engraved the first page of Charles Dickens' A Tale of Two Cities, at the required scale, on the head of a pin, with a beam of electrons. The main problem he had before he could claim the prize was finding the text after he had written it; the head of the pin was a huge empty space compared with the text inscribed on it. Such small print could only be read with an electron microscope. 
+
+In 1989, however, Stanford lost its record, when Donald Eigler and Erhard Schweizer, scientists at IBM's Almaden Research Center in San Jose were the first to position or manipulate 35 individual atoms of xenon one at a time to form the letters I, B and M using a STM. The atoms were pushed on the surface of the nickel to create letters 5nm tall.
+
+In 1991, Japanese researchers managed to chisel 1.5 nm-tall characters onto a molybdenum disulphide crystal, using the same STM method. Hitachi, at that time, set the record for the smallest microscopic calligraphy ever designed. The Stanford effort failed to surpass the feat, but it, however, introduced a novel technique. Having equaled Hitachi's record, the Stanford team went a step further. They used a holographic variation on the IBM technique, for instead of fixing the letters onto a support, the new method created them holographically. 
+
+In the scientific breakthrough, the Stanford team has now claimed they have written the smallest letters ever - assembled from subatomic-sized bits as small as 0.3 nanometers, or roughly one third of a billionth of a meter. The new super-mini letters created are 40 times smaller than the original effort and more than four times smaller than the IBM initials, states the paper Quantum holographic encoding in a two-dimensional electron gas, published online in the journal Nature Nanotechnology. The new sub-atomic size letters are around a third of the size of the atomic ones created by Eigler and Schweizer at IBM.
+
+
+A subatomic particle is an elementary or composite particle smaller than an atom. Particle physics and nuclear physics are concerned with the study of these particles, their interactions, and non-atomic matter. Subatomic particles include the atomic constituents electrons, protons, and neutrons. Protons and neutrons are composite particles, consisting of quarks.
+
+"Everyone can look around and see the growing amount of information we deal with on a daily basis. All that knowledge is out there. For society to move forward, we need a better way to process it, and store it more densely," Manoharan said. "Although these projections are stable — they'll last as long as none of the carbon dioxide molecules move — this technique is unlikely to revolutionize storage, as it's currently a bit too challenging to determine and create the appropriate pattern of molecules to create a desired hologram," the authors cautioned. Nevertheless, they suggest that "the practical limits of both the technique and the data density it enables merit further research." 
+
+In 2000, it was Hari Manoharan, Christopher Lutz and Donald Eigler who first experimentally observed quantum mirage at the IBM Almaden Research Center in San Jose, California. In physics, a quantum mirage is a peculiar result in quantum chaos. Their study in a paper published in Nature, states they demonstrated that the Kondo resonance signature of a magnetic adatom located at one focus of an elliptically shaped quantum corral could be projected to, and made large at the other focus of the corral.

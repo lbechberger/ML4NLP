@@ -1,0 +1,11 @@
+Computer hacking group Lulz Security has attacked a server of one of the United States affiliates of Nintendo, a Japanese-based video gaming company. Nintendo themselves confirmed the news on Sunday, with a statement from the corporation reporting that the unit was illegally accessed "a few weeks ago".
+
+Speaking on behalf of the corporation, Ken Toyoda had claimed that "[t]here were no third-party victims" but acknowledged "there was some kind of possible hacking attack". According to Tomokazu Nakaura, Nintendo in Japan considers "protection of our customer information" to be the "utmost priority". To adhere to this claim, the corporation does "constantly monitor our security".
+
+In this instance, the hackers were not able to gain consumer details as the attacked server did not have any on it, according to Nintendo. On social networking website Twitter LulzSec defended their actions, tweeting: "We're not targeting Nintendo. We like the N64 too much - we sincerely hope Nintendo plugs the gap. This is just for lulz. w|Emoticon|&lt;3 "
+
+Nintendo has reported that the issue has now been rectified and that the incident will have no effect on their intentions to launch an e-shop in association with one of their products, the Nintendo 3DS, a games console which allows users to play games in a three-dimensional space without the requirement of glasses.
+
+Recently, LulzSec has claimed responsibility for a number of Internet attacks that have occurred during 2011. Amongst those were three aimed at the Sony online network. The first attack occurred in April, when the group hacked the PlayStation Network, placing the personal details of 77 million users at risk. This prompted Sony Pictures Entertainment to remove access to the network for in excess of one month.
+
+The second attack occurred on May 23, when LulzSec unlawfully gained access to the details 52,000 Sony Pictures Entertainment consumers, as well as illegally taking them. In a third incident, LulzSec accepted responsibility for an alleged database hacking on the website for Sony Music in Japan on May 23.

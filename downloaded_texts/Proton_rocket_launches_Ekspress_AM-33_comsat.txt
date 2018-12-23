@@ -1,0 +1,7 @@
+A Russian Proton-M/Briz-M carrier rocket launched this morning at 00:18 UTC, carrying the Ekspress AM-33 (also known as Express AM-33) communication satellite.
+
+Launch, from area 200/39 at the Baikonur Cosmodrome in Kazakhstan took place on schedule, and the satellite was successfully placed into an intermediate transfer orbit. Operations to place the satellite into its final Geosynchronous orbit, through further burns of the Briz-M upper stage, should have been completed, however no official announcement has yet been made.
+
+This is the third orbital launch of 2008, and the first to be conducted by Russia.
+
+The satellite will provide C, L and Ku-band communication services. It has a mass of 2600kg, and an expected orbital lifetime of 12 years. It was constructed by NPO PM and Thales Alenia Space, and will be operated by the Russian Space Communication Company, and RKA. It will be placed in a geosynchronous orbit, about 36,000 kilometres above the Earth, at a longitude of 95.5Â°E. It will replace the AM-11 satellite, which malfunctioned in 2006.

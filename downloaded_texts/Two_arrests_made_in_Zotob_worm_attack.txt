@@ -1,0 +1,13 @@
+Turkish and Moroccan authorities arrested two suspects who are believed to be the creators of the Zotob worm that took down CNN’s computer network and crippled other computers in the U.S. and worldwide earlier this month.
+ 
+The FBI traced an electronic trail that led to two men from the Middle East and North Africa. An 18-year old Moroccan, Farid Essebar, is believed to have written the worm in return for a payment from a 21-year old Turk Atilla Ekici. Both were arrested Friday and await prosecution in their respective countries.
+
+It appears that Essebar and Ekici never met personally, and conducted the entire cyber crime through contact with each other over the internet. The online monikers for the two is believed to be "Diabl0" for Essebar and “Coder” for Ekici.
+
+The speedy pace at which investigators made arrests is credited from working closely with the Microsoft Corp., and Moroccan and Turkish authorities, said the FBI assistant director Louis Reigel. "Had we not had those entities involved in this investigation, I suspect it would still be ongoing today."
+ 
+Microsoft investigators began in March to analyze an e-mail variant called Mytob, which emerged in late February. The two suspects are believed to have authored the predecessor to Mytob, known then as 'Rbot'. These worms could plant in infected computers a backdoor that could be used to gain remote access to the computer and their networks at a later date.
+
+The release of the Zytob worm yielded more evidence of the perpetrators’ identities. The motive for the attacks appears to be financial gain and not terrorist related. The two men allegedly forwarded stolen financial information to a credit-card fraud ring, according to the Moroccan government.
+
+The 5-year-old Windows 2000 operating system is most vulnerable to attack. The worm uses a flaw in the Windows Plug and Play service; a flaw for which Microsoft has issued a patch. But an August 23 Microsoft advisory notes that some non-default configurations of Windows XP Service Pack 1 systems could also be at risk. XP SP2 users are not at risk.

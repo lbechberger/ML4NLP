@@ -1,0 +1,7 @@
+A more efficient way to produce useable hydrogen has been demonstrated by researchers. It uses very high-temperature electrolysis to separate hydrogen from water, so that hydrogen may be used for energy production.
+
+Electrolysis is one method by which laboratories and factories produce hydrogen. An electrical current is passed through water, breaking it down into hydrogen and oxygen gas, which are then collected above the water reservoir.
+
+Researchers in Salt Lake City, Utah, at Ceramtech Incorporated, in collaboration with workers at The Idaho National Engineering and Environmental Laboratory report that when water is superheated to 800 degrees Celsius, far less electricity is required to produce the same volume of hydrogen. The researchers envision that future nuclear fission plants could be used both to heat the water as part of their cooling system, and generate the needed electricity.
+
+Concerns have been raised regarding the safety of such arrangements, however. Jeremy Desterhoft, an independent consultant on nuclear energy safety, warns the "elevated levels of radiation required to sufficiently lower the atomic separation point is beyond the current capabilities of any recent cooler." He does not believe that economically viable cooling technology will be available for at least four to six more years.

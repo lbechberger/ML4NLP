@@ -1,0 +1,9 @@
+A former contractor of Intel, who was convicted more than a decade ago for bypassing the security systems of the semiconductor company in 1993, is now free from charge. 
+
+The hacker used a special program, named "Crack", that was able to detect the passwords of his former colleagues. He worked at Intel Supercomputer Systems Division and afterwards he suspiciously left the company. 
+
+When Randal L. Schwartz was accused, the court sentenced him to pay Intel a restitution, estimated at US$68,000. Then the hacker was imposed to spend five years of probation and 480 hours of community service. In addition, the court sentenced Schwartz to 90 days of deferred jail time. All in all, the legal bills of the former Intel contractor exceeded US$170,000.
+
+Randal Schwartz told the court that the reason he used "Crack" is that he wanted to show the disadvantages of Intel's security system, especially when he left the company. He also mentioned about reestablishment of his respect, which, according to Schwartz, was lost. 
+
+After more than a decade, he appealed to a Democratic governor. In February 2007 a court in Oregon expunged his conviction. Schwartz stated that it will take some time for him to absorb the result. The 13-year journey still keeps him in shock.

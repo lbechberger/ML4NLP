@@ -1,0 +1,9 @@
+Facebook announced Thursday it will begin to share some of the technology from their social network. The company indicated it would like to share specifications and design documents to help startups and to support innovation. Facebook hopes that they will be able to benefit from the innovations of others.
+
+Mark Zuckerberg, Facebook's CEO, announced the company's "Open Compute Project" at an event held for reporters at the company's headquarters in Palo Alto, California.
+
+Facebook will not directly make any money from the new project. However, by making the designs of its servers open source, the company hopes others will find ways to improve them. They can then incorporate those advances into their own servers. Anything that can make Facebook's servers run more efficiently provides a major benefit for the company.
+
+More efficient servers will also drive down utility costs for the social media giant, which relies on massive data centers around the United States to keep its operations going.
+
+Facebook says it is already working with manufacturers, including Dell, that are manufacturing servers based on its designs. Some new servers are already available.

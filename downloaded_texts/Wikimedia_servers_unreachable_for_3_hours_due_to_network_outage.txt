@@ -1,0 +1,7 @@
+Earlier today, Wikipedia, the free encyclopedia, and other projects hosted by the Wikimedia Foundation suffered downtime due to network issues. Thanks to the efforts of Wikimedia staff and volunteers, service was restored relatively quickly. The downtime lasted from about 17:20 UTC to 20:00 UTC, according to Wikimedia's Chief Technology Officer, Brion Vibber.
+
+According to Vibber, Cogent Communications readvertised routing to Wikimedia's primary IP address block, rendering the site unreachable to most visitors. The reason behind Cogent's actions remain unclear at this time. According to a reliable anonymous source, the service outage was due to a dispute between Cogent and the hosting provider used by Wikimedia, and had nothing to do with Wikimedia's services or content in any way. Rumors that the outage was related to a DMCA takedown notice received by Cogent are false, according to the same source. 
+
+Whilst some users were still able to access the site, projects such as Wikipedia were temporarily switched to read-only mode in order to combat vandalism. This block on editing was removed once normal service resumed.
+
+"This was an unfortunate case of collateral damage" said Brad Patrick of WMF. "It was a shock that something like this could happen to us without warning. We will do everything necessary to make sure our users have continuous access to our projects."

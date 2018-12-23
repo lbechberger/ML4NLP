@@ -1,0 +1,15 @@
+A discussion group about weblogs, or blogs for short, that meets at Harvard University's Berkman Center for Internet &amp; Society last week began releasing video tutorials about how to blog using various web and software tools.
+
+Harvard University's Berkman Center hosts the blogging discussion group, which has met weekly for the past two years.
+
+After months of discussion and collaboration on the new tutorials, at Friday's evening meeting presenters showed off some of their early video tutorials, which stream recorded audio, and previously-captured video of a computer screen, along with simultaneous live audio from a microphone.
+
+Participants learned how similar tutorials can be constructed using free software tools such as CamStudio. Audio of the session was made available on the World Wide Web.
+
+Shimon Rura, a local software developer, presented 
+ 
+a recent screen-capture + voiceover flash file he had made, demonstrating how to use a bookmarklet in the Frassle blogging package. Other participants discussed video demonstrations of how to podcast, and how to use specific blogging tools such as WordPress. 
+
+There was also disussion of a recent initiative to set up a Blogging101 site for distributing and translating these instructional materials. Rebecca MacKinnon, a noted blogger and Berkman Fellow, spoke about the BloggerCorps initiative to connect non-profits who want broader exposure with local blogging enthusiasts.
+
+The meeting was held inside the main conference room in the Berkman Center's Cambridge offices on Massachusetts Avenue.

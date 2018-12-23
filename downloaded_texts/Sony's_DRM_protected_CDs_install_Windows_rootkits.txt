@@ -1,0 +1,11 @@
+Mark Russinovich, of SysInternals.com, has discovered a so-called "rootkit" which is installed by Sony's new digital rights management-protected music compact disks (CDs). A rootkit is a common name for malicious software that is used by computer criminals to hide their presence on a compromised computer. Rootkits frequently contain hidden files and are designed to be difficult for the user to detect and remove.
+
+Russinovich classifies Sony's rootkit as malware because it is alleged to introduce several serious security holes, one of which can be exploited to hide files and prevent the user from removing them. In particular, all executable files which begin with '$sys$' are hidden when the software is installed. He points out that these security holes could be exploited by hackers, or other malware producers besides Sony.
+
+Russinovich explains that naively removing the files will result in a crippling of the operating system on the user's computer. He provides an explanation of the difficult step required to remove Sony's malware. 
+
+Playing the same CDs on computers not running the Windows operating system, or on a non-computer based CD player remains safe. As removing Sony's malware would violate the Digital Millennium Copyright Act's anti-circumvention provisions, ripping the CDs on computers running a non-Windows operating system may be the best legal and technically safe option for those who wish to listen to them under Windows.
+
+The software is automatically installed when a Sony CD is played on a computer, and is not mentioned in their EULA. The rootkit has been commercially developed by First 4 Internet and licensed to Sony. 
+
+Other rights management techniques used by music publishers recently include breaking the Red Book compact disc standard format. This technique causes many CD players to not be able to play the new CDs, but also protects against casual ripping. Fiona Apple's recent album release in the United States uses such technology.

@@ -1,0 +1,13 @@
+Australia's High Court, in a unanimous decision today, found modchips to be legal. Mod-chips are attached to the system's motherboard to allow users to bypass copy detection and regional controls on game consoles such as PlayStation 2 and Xbox. 
+
+While playing illegally copied games is a primary reason for some people to install modchips, modchips are still considered legal. They allow users to play games imported from different regions, play homebrew games, and create archival copies of games. Imported games are often cheaper and available sooner than from countries with late official release dates, such as Australia. The court recognised that by the time a mod chip acts upon a copied game, the copyright violation has already taken place -- the mod chip is not responsible for the copyright violation.
+
+In many other countries selling and using modchips is illegal. In the UK the EU Copyright Directive has been used by Microsoft and Sony to prevent sales of modchips. The EU Copyright Directive makes it illegal to circumvent copy protection systems. A similar law, the Digital Millennium Copyright Act (DMCA), makes it illegal in the USA.
+
+The defendant in the case was retailer Eddy Stevens, who sold and installed PlayStation 2 modchips. Sony, the manufacturer of the Playstation 2, sued, arguing that modchips were in violation of Australian copyright law.
+
+The court ruled that because the modchips merely allow users to play copied or imported games, and do not enable the copying of games, modchips do not breach copyright. "There is no copyright reason why the purchaser should not be entitled to copy the CD-ROM and modify the console in such a way as to enjoy his or her lawfully acquired property without inhibition," said the court. "This is a hell of a victory for the consumer. That's why we did it," said Mr. Stevens.
+
+The court also ruled that reading a program into RAM, while the game is being played, does not count as making a copy under copyright law.
+
+The Australian case is unique in that it is considered to be the first time DMCA-like provisions have been considered by a court of final appeal anywhere in the world.

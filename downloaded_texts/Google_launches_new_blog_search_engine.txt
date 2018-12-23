@@ -1,0 +1,7 @@
+In mid-September, Google launched a new search engine: Google Blogsearch. The new search engine, whose development was announced over two years ago, allows you to search blogs by dates, date ranges, language, authors, and by the blog itself, in addition to keywords. It is then possible to set up your own custom newsfeed with these search criteria.
+
+Despite the features, there has been criticism related to this new engine. One example is how their index only dates back to March 2005. In addition, flaws in the search algorithm may result in duplicate blog entries, as well as other "blog noise" to receive high results.
+
+This new search engine was made supposedly to help compete with other search engines, such as one by Yahoo!.
+
+Google Blogsearch has joined the group of other Google search engines, including Google Image search, Google Groups, and the famous Google Web search.

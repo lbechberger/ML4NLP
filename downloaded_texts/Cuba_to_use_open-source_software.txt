@@ -1,0 +1,11 @@
+The government of Cuba decided to change the OS on thousands of its computers. These will run on GNU/Linux instead of Windows. This step made by the Cuban government raises tensions between the country and the U.S. - based company Microsoft. 
+
+The idea was welcomed by several Cuban ministers. This includes Ramiro Valdez, communication minister, who at a technology conference stated his position towards moving to free software. 
+Richard Stallman, heading the Free Software Foundation, criticized the proprietary software saying that today it is rather insecure, and that unlike
+proprietary software, free software develops democratically under the control of its users.
+
+Heading one of the largest universities in Cuba, Hector Rodriguez also showed his positive attitude towards the migration of the country to free software. He outlined that Cuban customs service has already moved to Linux and several ministries are still to migrate. Among them are the ministries of culture, of higher education and of communication.
+
+Although it will take some time for Cuba to move to free software, Rodriguez, as quoted by the Associated Press, declined to state the time it will take for the government of Cuba to move entirely to GNU/Linux. The pace of migrating to free software and open source software is very fast in Cuba. 
+
+GNU/Linux has been adopted as an operating system by millions of computer enthusiasts around the world, and a number of local, regional and national governments have also advocated its adoption.

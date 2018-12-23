@@ -1,0 +1,17 @@
+Results of gene therapy trials at the US National Cancer Institute, Bethesda to fight cancer published online yesterday by the scientific journal Science show some levels of success. However experts have warned that despite the promise more work is needed for this to become a viable cure.
+
+Dr Stephen Rosenberg, who lead the research team, said "It's important to emphasize this is a highly experimental treatment that's still in the course of development."
+
+The team treated 17 terminal skin cancer patients with modified cells from their immune systems. The technique uses genetically modified white blood cells (more specifically T cells) to attack and kill the cancer cells. Of the 17 subjects only 2 were cured of the disease (an aggressive form of skin cancer called a melanoma which is usually fatal in advanced stages). Before the treatment, which lasted 18 months, the patients were only expected to live for up to 6 months. The remaining 15 patients were not affected by the treatment.
+
+One of the successful patients was Mark Origer (53) from Wisconsin. He has been fighting cancer since first being diagnosed in 1999. After finding out about the new trial on the internet he applied and, after interviews, was accepted along with 16 other candidates. The treatment removed Origer's melanoma and also shrunk another tumor in his liver - to the extent it could be removed surgically. Doctors confirmed he was free of the disease last week, nearly 2 years after treatment began. A second man (39) was cleared of his cancer which had spread to the lungs, liver and lymph nodes. Cancer that progresses to the lymph nodes is usually untreatable and fatal.
+
+T cells can attack and destroy bacteria and other harmful cells like cancer cells. However cancer cells sometimes reduce the signals on their outer surface by which they are recognised, so the immune system cannot affect them. Gene therapy involves modifying some of a patients T cells to contain a new receptor. (Receptors are what enable the immune cell to identify harmful cells, like those corrupted by viruses. The new receptor is inserted with the use of a viral vector, i.e. a virus made safe to insert the receptor in the cell.
+
+In the trial, T Cells were removed from each patient and modified in the laboratory. Patients underwent chemotherapy to kill most of their current immune system, which was replaced by the mutated cells. The modified cells successfully survived after injection into the body - making up 10% of the subject's T cell count during the first 2 months. The team is now looking for ways to enable the cells to survive longer and in greater numbers.
+
+Experts have called this a significant technical advance but warn that more patients need testing and the technique refining before any conclusive results can be drawn. Dr Edel O'Toole, consultant dermatologist and British Skin Foundation spokesman, said: "I think that the success of this approach in two patients shows promise, however 15 patients did not respond to the treatment suggesting that further work is needed to optimise this approach for all patients, which could take many years."
+
+Rosenberg now hopes to run a new trial with possibly stronger gene therapy treatments, he is currently awaiting FDA approval.
+
+Gene therapy was much hyped after it's first successful application in so called "bubble boys" (patients with severe combined immunodeficiency). After follow-up, these trials were stopped when it was discovered that three of eleven patients in one trial had developed leukemia.

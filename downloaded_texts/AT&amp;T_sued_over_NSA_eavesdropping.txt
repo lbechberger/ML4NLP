@@ -1,0 +1,11 @@
+A class action suit has been filed on Tuesday by the Electronic Frontier Foundation (EFF) against the telecom giant AT&amp;T. The suit, filed in San Francisco, alleges that AT&amp;T violated federal laws by collaborating with government to eavesdrop on U.S. citizens.
+
+The Bush Administration and NSA have come under fire over the issue. They defend the program by saying they are only listening in on suspected terrorists.
+
+The EFF claims that AT&amp;T turned over 2 databases consisting of their subscribers' communication and internet usage records.
+
+Attorney Kevin Bankston representing the EFF said the government could not conduct their surveillance without the help of companies like AT&amp;T. He also said their goal is to tell AT&amp;T that it is not in their fiscal best interests, along with not being legal, to cooperate with the President's wiretap program.
+
+According to the class action suit, AT&amp;T granted "access to all or a substantial number of the communications transmitted through its key domestic telecommunications facilities, including direct access to streams of domestic, international and foreign telephone and Internet communications." The lawsuit is seeking damages of $22,000 for each AT&amp;T customer in addition to punitive fines.
+
+AT&amp;T is also facing scrutiny from the Federal Communications Commission and possibly fines for failing to properly certify that customer records were safeguarded.

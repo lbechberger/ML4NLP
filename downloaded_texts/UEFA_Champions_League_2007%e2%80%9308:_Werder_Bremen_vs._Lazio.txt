@@ -1,0 +1,14 @@
+team1=Werder Bremen|
+score=2–1|
+team2=Lazio|
+report=Match Report|
+goals1=Sonogo Pasanen Pasanen Tošić Almeida Sanogo Rosenberg Borowski Andreasen |
+goals2= Pandev Meghni Del Nero Mutarelli Zauri Pandev Makinwa Rocchi Tare Manfredini Mudingayi|
+stadium=Weserstadion, Bremen|
+attendance=36,587|
+referee=Olegário Benquerença 
+Werder Bremen beat Lazio at home to claim their 1st 3 points of this season's UEFA Champions League. The win allows Werder Bremen to move ahead of Lazio in the standings with Werder Bremen now 3rd. The win also brings them 1 point behind Olympiacos.
+
+Werder Bremen, who held the majority of the possession throughout the game, broke through in the 28th minute through Sonago. Almeida gave the Germans a two-goal cushion nine minutes into the second half. Clemens Fritz sent a long low cross to the Hugo Almeida, who then doubled the lead. Lazio managed to pull 1 back before the final whistle.
+
+The 2 clubs match up again in 13 days from now with both teams needing to pick up points to have a shot for 2nd place in Group C.

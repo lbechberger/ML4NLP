@@ -1,0 +1,18 @@
+A rare antibody has yielded insight into creating an effective AIDS vaccine. 
+
+Scientists at The Scripps Research Institute in La Jolla, California and several other institutions say that the neutralizing antibody broadly defuses HIV. 
+
+Neutralizing antibodies are secreted into the bloodstream following exposure to a virus, where they bind to viral particles, prevent them from infecting cells and spur their destruction. Because neutralizing antibodies attack viruses before they enter cells, they could form the basis for effective AIDS vaccines if present before exposure to HIV. But while the body makes many antibodies against HIV, they are usually unable to neutralize the virus. Some people, however, do produce effective neutralizing antibodies for HIV. 
+
+Dennis Burton of Scripps and colleagues have now described the structure of one of these, called 4E10. In tests, the antibody neutralized nearly 100 strains of HIV from around the world. 
+
+Isolated about a decade ago from an HIV-infected person by study coauthor Hermann Katinger of the Institute for Applied Microbiology of the University of Agriculture in Vienna, Austria, the antibody shows what type of structure can neutralize HIV. 
+
+It appears that 4E10 targets an area on the HIV surface protein GP41 that the virus uses to fuse its membrane to a human cell's membrane during infection. 
+
+Because the antibody's structure shows what this area on HIV's surface looks like, it provides scientists with a template for reverse-engineering components for AIDS vaccines. 
+
+The research is reported in the journal Immunity. 
+
+*
+*

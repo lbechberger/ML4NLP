@@ -1,0 +1,14 @@
+team1=Bayer Leverkusen|
+score=1–0|
+team2=Toulouse|
+report=Match Report|
+goals1=Kiessling Gekas Freier Barbarez Sinkiewicz Freier Papadopulos |
+goals2= Ebondo Fabinho Bergougnoux Sirieix Dieuze Gignac Dupuis|
+stadium=BayArena, Leverkusen|
+attendance=15,267|
+referee=Jonas Eriksson 
+Bayer Leverkusen are in 2nd place after a 1-0 victory against French side Toulouse FC. Bayer Leverkusen trail FC Zürich on the 2nd tiebreaker.
+
+The only goal and eventual winner came from the Stefan Kiessling 1st half stike as Bayer Leverkusen held on to the lead after seven saves.
+
+Bayer Leverkusen goes to Moscow to play Spartak Moscow on November 8 as Toulouse is home to Sparta Prague on the same day.

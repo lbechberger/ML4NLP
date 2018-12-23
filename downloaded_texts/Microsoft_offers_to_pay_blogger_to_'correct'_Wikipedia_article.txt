@@ -1,0 +1,18 @@
+Software giant Microsoft has attempted to correct a Wikipedia article concerning the Microsoft Office Open XML format.
+
+Wikipedia strongly discourages contributors involved with the subject of an article from editing the article, when a conflict of interest is likely. Instead, such contributors are advised to comment or suggest changes to the articles for the broader community of editors to review and implement, if found acceptable. Wikipedia founder Jimmy Wales and administrators have on occasion blocked users thought to have violated these guidelines from editing Wikipedia.
+
+
+Doug Mahugh from Microsoft contacted Rick Jelliffe, who is the top technical officer for Sydney computing company Topologi - and offered to pay him for the time it would take to modify the article.
+
+“Wikipedia has an entry on Open XML that has a lot of slanted language, and we'd like for them to make it more objective but we feel that it would be best if a non-Microsoft person were the source of any corrections,” reads the email Microsoft employee Mahugh wrote to Jelliffe.
+
+One of Wikipedia's core policies is that articles must be written from a "neutral point of view" or NPOV.
+
+“Would you have any interest or availability to do some of this kind of work? Your reputation as a leading voice in the XML community would carry a lot of credibility, so your name came up in a discussion of the Wikipedia situation today."
+
+The e-mail also stated that Microsoft would not stop Jelliffe from disclosing the deal and rather encouraged him to post it on his blog at oreillynet.com. It also reassured Jelliffe that Microsoft did not have to approve any changes he made to the article.
+
+"We were very disappointed to hear that Microsoft was taking that approach," Wikipedia founder Jimmy Wales said. Wales stated that the proper thing for Microsoft was to write a "white paper" concerning the article, post it on an outside website and then link it to the discussion page of the Wikipedia articles' discussion forums. "It seems like a much better, transparent, straightforward way," Wales said.
+
+Microsoft spokeswoman Catherine Brooker said she believed the articles were heavily written by people at IBM, which is a supporter of the rival ISO-approved OpenDocument standard used by two leading Open Source office suites rather than the controversial Microsoft Office Open XML format.

@@ -1,0 +1,9 @@
+Over the summer a customized distribution of the Linux (or GNU/Linux) operating system was installed on 2,460 desktops in the Italian South Tyrol province of Bolzano. This deployment included all 70 of the province's private and public schools and affects more than 16,000 students.
+
+The distribution installed, FUSS Soledad GNU/Linux, is a customized version of the popular Debian GNU/Linux distribution. FUSS Soledad GNU/Linux has multi-language support and uses the GNOME desktop environment.
+
+In addition to the desktops in the schools, more than 20,000 LiveCDs are scheduled to be created and given free of charge to the students and their families. These LiveCDs allow students to use the same software on their home computers that they are going to use at school.
+
+Project co-director Antonio Russo said, "With the participation of all the public and private schools, this will give to all the students, families, teachers, and operators from the educational world the opportunity to use a entirely free operating system, both at school and at home."
+
+The switch was funded by the province of Bolzano, the European Social Fund, and the Center for Professional Formation in Italian Language.

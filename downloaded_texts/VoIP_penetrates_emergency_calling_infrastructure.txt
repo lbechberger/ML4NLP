@@ -1,0 +1,9 @@
+Leading VoIP provider Vonage negotiated access to the Qwest Communications emergency calling infrastructure, allowing Vonage customers in 14 states the ability to connect directly to emergency dispatchers by dialing 911.
+
+With the exception of Rhode Island, VoIP's 911 callers were delivered to the administrative offices of a public-safety answering point, instead of connecting directly to a standard 911 dispatcher. The resulting time delay was a consequence of the phone provider's refusal to give VoIP providers access to the 911 infrastructure. Vonage Chairman and CEO Jeffrey Citron in a recent letter to Qwest Chairman and CEO Richard Notebaert, wrote "I applaud you [Qwest] for your willingness to put the health and safety of Americans before short-term competitive considerations."
+
+“With the access that Qwest has agreed to provide, Vonage will be able to route emergency service calls placed by its customers directly to public-safety operators, which will help save lives and safeguard property" Citron said.
+
+Verizon agreed to begin a trial in New York City soon, and BellSouth also started "making some movement" on the issue, according to Vonage.
+
+Vonage claims "that SBC has agreed to begin discussions on working cooperatively to improve 911 offerings available to customers using VoIP." Vonage attorney William Wilhelm, in a letter to the FCC, "noted its concern that SBC has already provided 911 interconnection access to its unregulated VoIP affiliate.”

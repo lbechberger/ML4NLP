@@ -1,0 +1,9 @@
+The United Kingdom-based mobile Linux developers OpenedHand have announced that they have been acquired by the Intel Corporation, merging the Linux company with the Intel Open Source Technology Center.
+
+"We are pleased to announce that OpenedHand Ltd has been acquired by Intel Corporation," said OpenedHand in a statement it released on the acquisition. "The OpenedHand team will join the Intel Open Source Technology Center and will focus on the development of the Moblin Software Platform, the optimized software stack for Intel Atom processors."
+
+The statement continued by stating that "Intel will continue supporting open source projects currently led by OpenedHand staff such as Clutter and Matchbox projects, and in most cases, will accelerate these projects as they become an integral part of Moblin."
+
+Rob Bamforth, an analyst for Quocirca, said that this move showed the importance of Linux on mobile devices. He said that "we saw it [large companies purchasing mobile Linux development companies] earlier this year with Nokia buying Trolltech, it's a sign that the mobile space is not as clear cut as the something like the PC one." He continued by stating that in the PC market "you have a market dominated by PCs with Macs for some specialist users, but mobiles are not like that - there's a diverse range of products, and, if anything, it's becoming more diverse." 
+
+OpenedHand has previously sold its products to companies such as One Laptop Per Child, iRex, Openmoko, ST Microelectronics, Access Co., Vernier and Nokia.

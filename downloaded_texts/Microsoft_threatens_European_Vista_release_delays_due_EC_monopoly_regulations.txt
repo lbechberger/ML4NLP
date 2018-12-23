@@ -1,0 +1,5 @@
+Microsoft has warned that it may delay Vista, the next release of Windows, in Europe unless it receives clear guidance from the European Commission (EC) about its antitrust requirements for the operating system. Microsoft says it has received numerous requests from its partners seeking assurance about the regulatory status of Vista in Europe.
+
+Microsoft has also claimed that the EC may require that some security features be removed from Vista, possibly referring to internal firewall changes in Vista. The EC had expressed concern that the firewall changes might lock out third party security companies &amp; decrease security by creating a more homogeneous computing environment.
+
+The EC denies any responsibility for a potential shipment delay of Vista, stating that the onus is upon Microsoft to comply with the competition laws of Europe and not for the EC to tell Microsoft how to design Vista.

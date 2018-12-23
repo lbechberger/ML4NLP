@@ -1,0 +1,11 @@
+A team of scientists at Stanford University claim to have detected a subtle, missing element of Einstein's theory of relativity.
+
+In a press release dated February 16th, Robert Kahn, Stanford University's Public Affairs Coordinator, announced the experimental confirmation of frame dragging, an effect in which the presence of a rotating body causes space itself to be pulled along as the body rotates. While the effect was theorized by Josef Lense and Hans Thirring as far back as 1918, the small scale of the effect, as little as one part in a trillion for a satellite orbiting the Earth, made detecting the effect difficult.
+
+The observation was made by the Gravity Probe B satellite, which carries finely-machined gyroscopes. Scientists looked for small changes in the motion of the gyroscopes to detect the frame dragging effect, as well as the much larger geodetic effect â€“ small corrections to the Earth's gravitational field due to differences between Einstein's and Newton's theories of gravity.
+
+The experiment was conducted on the satellite from 2004 to 2005. However, the complexity of the data analysis along with unforeseen engineering problems have made finding the effect in the experiment's results difficult. In particular, the presence of small electrical charges on the gyroscopes interfered with their results.
+
+Francis Everitt, the experiment's Principal Investigator, stresses in an interview with the New York Times that their announcement is only preliminary and that, with further analysis, they hope to improve the precision of their results; currently, they say they have only detected the frame dragging effect to within plus or minus fifteen percent of its expected value.
+
+The theory of general relativity was developed by Albert Einstein in the early 20th century to explain the behavior of moving objects in space, after the discovery that the speed of light was always the same no matter how the person measuring it was moving. While it successfully explains many strange behaviors in space, such as the slow shifting of the orbit of Mercury and the bending of light by massive objects such as black holes, testing the theory on Earth has always been difficult due to the small scale of relativity's effects in everyday life.

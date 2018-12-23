@@ -1,0 +1,5 @@
+The BBC announced today that it plans to expand the license terms on its numerous RSS feeds to allow other websites to reuse its content. The license currently proscribes that the feeds are only for "personal use," according to BBC editor Peter Clifton. According to Clifton's statement, "in May we'll be happy for outside websites to dip in and take our headlines." The announcement did not specify whether the new license would allow the use of entire articles, or just the headlines.
+
+The BBC currently has 18 feeds, ranging in topic from Business and Technology to Health and Entertainment. They also provide feeds with regional news, focusing on, for example, Scotland or Northern Ireland. In its current setup, the BBC provides a headline plus a lead sentence in its feeds.
+
+RSS ("Really Simple Syndication") is a protocol that allows users to aggregate articles from many sources in a program called a "news reader" or "aggregator." A news reader works by reading simple files from user-targeted websites and parsing them into a presentable format.

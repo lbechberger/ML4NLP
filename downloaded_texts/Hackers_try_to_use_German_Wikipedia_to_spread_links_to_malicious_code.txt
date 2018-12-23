@@ -1,0 +1,11 @@
+The German version of the encyclopedia Wikipedia, has been used in an attempt to spread a "malicious code" which would unleash a virus on to personal computers worldwide. 
+
+The page titled: "W32.Blaster" (link in German) was edited in a way where a link was placed in the article directing users to a site where an alleged fix for the Lovesan/MS Blaster worm, but the fix turned out to be false and the file was considered "malicious." Computers that were target would receive e-mails from what appeared to be the Wikipedia.org website telling them to download the fix and including a link to it.
+
+"The good news is that the authorities at Wikipedia quickly identified and edited the article on their site," said senior technology consultant at Sophos anti-virus, Graham Cluley.
+
+Although the edit has since been reverted or removed, until recently the edit remained in an archived version of the page; eventually, the archived version was also removed.
+
+"A version of the page remained in the archive, allowing the hackers to send out spam and continue to direct visitors to the malicious code," added Cluley.
+
+It is not known how many computers have been affected by the worm, if any at all. It is also not known when the edit was made and how long it was active on the site before it was deleted. However it appears that it was deleted on October 31, as the page was partially deleted on that day twice, according to log files (english translation courtesy of google translate).

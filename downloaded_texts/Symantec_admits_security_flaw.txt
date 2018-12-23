@@ -1,0 +1,5 @@
+Symantec, owner of the security software Norton SystemWorks admits the existence of a security flaw that can be exploited by malwares. The flaw is of the "rootkit" type.
+
+A "rootkit" is a set of tools capable of concealing processes, files and other information preventing the detection of malwares such as virus, spywares and invasion programs. 
+
+In Norton, the "rootkit" works as the following: a folder named NProtect keeps all the files deleted by the user. It allows files to be undeleted. The problem is that Norton (as a "rootkit") hides the folder not only from the user but also from the operating system. It prevents antivirus and security tools from scanning the folder creating a hiding place for malwares. Symantec said that it was to "ensure that a user would not accidentally delete the files in the directory". They also claim to have no knowledge of any attempt to use this flaw and the problem can be easily solved by a normal software update.

@@ -1,0 +1,17 @@
+The United States government officially charged 11 individuals today for the theft and sale of over 40 million credit and debit card numbers. The card numbers were stolen from nine US retailers including Barnes &amp; Noble.
+
+The indictment includes computer intrusion, conspiracy, identity theft and fraud. This case is suspected to be the largest computer hacking and identity theft case ever to be prosecuted by the US Justice Department.
+
+The 11 people charged include three from the US, three from the Ukraine, two from China, and one each from Estonia and Belarus. The remaining person is only known by an alias, and his/her place of origin is not known.
+
+The reported "ringleader" of the group was Albert "Segvec" Gonzalez, of Miami, Florida. If Gonzales, who is in custody in New York because of another computer hacking charge, is convicted of the numerous indictments, he could face life in prison.
+
+According to the Justice Department, after hacking into wireless computer networks of the victim companies, the group would install a sniffer program to identify card numbers and steal information required for use of the numbers. The compiled information was then stored in computer servers owned by the group. 
+
+The credit card numbers were then sold online to the customers who would "cash out" the numbers by scanning them on to the magnetic strips of blank cards. 
+
+The funds earned by the group from the sale of the numbers were either transferred to internet currencies where the money was laundered, or transferred directly to eastern European banks.
+
+The nine companies that were stolen from are T.J. Maxx, Marshalls, Barnes &amp; Noble, J's Wholesale Club, OfficeMax, Boston Market, Sports Authority, DSW and Forever 21. Several of these retailers belong to TJX Companies.
+
+"They used sophisticated computer hacking techniques, that would allow them to breach security systems and install programs that gathered enormous quantities of personal financial data, which they then allegedly either sold to others or used themselves," said US Attorney General Michael Mukasey.

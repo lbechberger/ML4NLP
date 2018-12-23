@@ -1,0 +1,5 @@
+NASA's Centennial Challenges program has announced its latest prize contest, the Astronaut Glove Challenge. The competition, a collaboration between NASA and the non-profit Volanz Aerospace, will be held in late 2006 and will award $250K to the team which produces the best-performing glove within contest parameters. 
+
+The basic idea was originally proposed last year on Rand Simberg's Transterrestrial Musings to improve on current gloves, which have difficulties with remaining flexible while maintaining constant internal pressure. 
+
+Previously-announced competitions include prizes for superstrong tethers, beaming power, and extracting oxygen from lunar regolith. These are all part of a large recently-announced program, which will potentially include 'an eight-figure prize for the first privately developed robotic moon lander.'

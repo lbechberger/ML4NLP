@@ -1,0 +1,7 @@
+South Korean electronics giant Samsung has begun mass production of a new 4 gigabit flash memory. This is twice the size of almost all the biggest solid state memory devices currently available.
+
+The firm is using a new 70-nanometer process which enables it to produce the smallest cell on the market, enabling a far higher density than competitors. The device can write data at 16-megabytes per second, twice as fast as a 90nm 2Gb device.
+
+Possible applications of the new memory will most likely be as a component in MP3 players, top end mobile phones, USB memory sticks, digital cameras, and other portable devices.
+
+The new form of EEPROM memory writes and reads data faster than previous versions â€” up to 16 megabytes per second. The storage of real-time high-definition video is feasible on the chips, according to Samsung. The company also believes their Flash-based disk drives could replace hard drives in laptops since they will work faster, quieter and cooler than drives currently in use.

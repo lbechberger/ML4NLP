@@ -1,0 +1,5 @@
+Six Apart, the owners of the blogging software Movable Type and TypePad, have acquired the RSS reader Rojo, for an undisclosed amount, rumoured to be less than US$5,000,000.
+
+Six Apart does not plan to continue development of Rojo, and "intends to sell a majority interest in Rojo's newsreader services in the coming months", making them a minority stockholder. Rojo founder and CEO Chris Alden and CTO Aaron Emigh will join Six Apart's executive team.
+
+Rojo was founded in June 2003, and launched in October 2004. Rojo had a promising start and its userbase is still growing gradually. But the feed reader market is dominated by Ask.com's Bloglines and NewsGator.

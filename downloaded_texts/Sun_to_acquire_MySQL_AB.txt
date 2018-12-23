@@ -1,0 +1,5 @@
+Sun Microsystems, the company behind the UNIX-based Solaris Operating System, the Java platform as well as OpenOffice.org, has announced that it is acquiring MySQL AB, the company behind the open source database application MySQL, for a reported US$1 billion: $800 million to purchase MySQL's stock, and $200 million worth of options.
+
+Sun CEO Jonathan Schwartz said in his blog Wednesday that in addition to this acquisition, Sun will provide global support offerings for the popular database platform. Sun already provides support for another database platform, PostgreSQL.
+
+MySQL is used by many web sites, such as Facebook, LiveJournal, Google, as well as the non-profit Wikimedia Foundation and the MediaWiki software that powers it.

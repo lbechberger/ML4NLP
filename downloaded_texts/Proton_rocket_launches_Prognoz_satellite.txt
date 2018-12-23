@@ -1,0 +1,7 @@
+At 23:59 GMT yesterday, a Russian Proton rocket, with a Block DM-3 upper stage, launched from Site 81/24 at the Baikonur Cosmodrome in Kazakhstan, placing a Prognoz satellite for the Russian Ministry of Defence into a geosynchronous orbit. Prognoz satellites are used for missile detection, as a defence against nuclear attacks.
+
+The Proton-K configuration was used for this launch. The Proton-K, also known as the Proton 8K72K, is an old configuration, which is out of production. It is believed that three more Proton-K rockets are in storage. The modernised Proton-M, which will replace it, has been in use for commercial launches for several years, and made its first military launch last December.
+
+This is the first launch of a Proton since a failure in March, which left the AMC-14 satellite stranded in a useless orbit. The Briz-M upper stage, whose malfunction resulted in the launch failure, was not used in today's launch, with an older Block DM stage being flown instead. The Briz-M has been cleared for return to flight, and was not used on this mission due to payload requirements, rather than reliability concerns. AMC-14 has now been sold to a new company, and is now in the process of raising itself into a geosynchronous orbit, where it will operate in a limited capacity for a fraction of its planned lifetime. 
+
+The launch is the 33rd of 2008, and the 335th flight of a Proton rocket. The next Proton launch is currently planned for July, when a Proton-M with a Block DM-2 upper stage will launch three GLONASS navigation satellites.

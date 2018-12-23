@@ -1,0 +1,9 @@
+Earlier this week a Belgian court ruled that Google News could not use material from "Belgian publishers of the French- and German-speaking daily press" without paying a copyright fee. The ruling followed a case brought by Copiepresse, an association of French- and German-language newspaper editors in Belgium, challenging the right of Google to run their news aggregator under the current copyright laws.
+
+Google removed the newspapers Le Soir, La Libre Belgique and La Dernière Heure from its indexes immediately, causing them to disappear from google.be as well. However, Google Inc. faced daily fines of €500,000 (USD$640,000) for not posting the 2315 word court ruling on its google.be and news.google.be pages. Google appealed that part of the verdict, but the judge now confirms it, and both sites now display the court's ruling.
+
+Investigation of the extent of Google's compliance with the court order reveals that all links and cached copies of material from Le Soir's site have been rendered inaccessible. A search for pages on the site www.lesoir.be returns the message, "In response to a legal request submitted to Google, we have removed 1260 result(s) from this page. If you wish, you may read more about the request at ChillingEffects.org."
+
+Google News displays photographs, headlines, and opening paragraphs of articles by members of the print, broadcast, and online-only media. This content forms topical homepages for web users, who then are encouraged to read the complete article on the news source's website. During the trial, internet adviser Luc Golvers argued that Google News is not a search engine, but a news portal. 
+
+Google News was launched as a beta edition in April 2002, and came out of beta January 2006. A similar trial is being held in France, with Agence France-Presse (AFP) as the plaintiff.

@@ -1,0 +1,23 @@
+A bill introduced by a Republican representative from Texas, Lamar Smith, would require all ISPs in the United States to maintain a log of all on-line activity by IP addresses for an unspecified period of time, imposing fines and prison time of one year on service providers that fail to do so.
+
+The proposed legislation would require:
+
+
+
+The bill, titled Internet Stopping Adults Facilitating the Exploitation of Today's Youth Act (SAFETY) of 2007, was introduced to the House of Representatives on February 6.
+
+Smith, along with seven House republican co-sponsors, designed the legislation as an effort to combat on-line child pornography. A separate portion of the legislation reads: "Whoever, being an Internet content hosting provider or email service provider, knowingly engages in any conduct the provider knows or has reason to believe facilitates access to, or the possession of, child pornography ... shall be fined under this title or imprisoned not more than 10 years, or both."
+
+The legislation's effect would, in practice, attempt to force ISPs to connect dynamically assigned IP addresses to specific individuals. It would also extend the responsibility to any Internet content hosting provider which the bill defines as any service that:
+
+:(A) stores, through electromagnetic or other means, electronic data, including 
+::the content of web pages, electronic mail, documents, images, audio and video files, 
+::online discussion boards, and weblogs; and
+
+:(B) makes such data available via the Internet
+
+Internet privacy advocates are skeptical over the vagueness of the bill. In its present form the bill leaves to the U.S. attorney general, Alberto Gonzales, unspecified powers in setting the limits of the legislation. 
+
+Bloggers cite the bill as an invasion into something, "That includes, well, everything. IM conversations, E-mails and Web surfing will all be recorded and maintained, lest the ISP face penalties of up to a year in prison," wrote William K. Wolfrum at WorldGolf.com.
+
+Marvin Johnson of the ACLU's Washington legislative counsel said, "This represents an incredible invasion into our privacy and freedom to use the Internet without the government reading over our shoulders," according to InternetNews.com.

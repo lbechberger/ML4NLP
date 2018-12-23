@@ -1,0 +1,9 @@
+Information on 650,000 credit card holders held by United States retail stores is reported to be lost. The lost data includes 150,000 social security numbers.
+
+Card holder data from J.C. Penney and other major retailing outlets was being stored on a backup computer tape owned by GE Consumer Finance and went missing in October. Theft or foul play is not believed to be involved.
+
+The tape's last known whereabouts was a storage facility operated by Iron Mountain Incorporated. There are no records of the tape being signed out, but no one is able to locate it. The location of the facility is not yet known.
+
+None of the accounts have been compromised and GE says that the tape does not contain enough information on one individual to open another card account. GE will offer all of those affected 12 months of free credit monitoring.
+
+Iron Mountain says that only an individual with "special skills" could access any of the data on the tape, but they regret the incident because they have made mistakes in the past.

@@ -1,0 +1,31 @@
+Starting in 2006, HM passport service of Britain will begin use of biometric chips in the issuance of passports. Essential to this scheme is the creation of a central database for passport holders that contains fingerprint and biometric data. This database, along with fingerprinting facilities, will be shared by the controversial Identity Card scheme.
+
+The UK Passport Service is a royal prerogative, meaning the proposals do not require parliamentary approval. Critics say this is an attempt by the government to introduce key elements of the Identity Card scheme by stealth, without approval, appearing to reduce the cost and novel controversiality of the scheme.
+
+The national fingerprint and biometric database is the most controversial element of the British government's Identity Card proposal, which drew debate prior to the recent election. All UK residents would be required to register on a central computer database â€” containing at least the fingerprint, iris scan, photograph, address and birth date and place of each resident.
+
+Further information stored on individuals may include police, motoring, financial, health, telephone and email communications and movement data.
+
+This would be used by government agencies including the police, immigration, medical and social security. Access would likely be extended to overseas intelligence agencies such as CIA and Interpol. Partial access would be given to banks and other parties interested in secure identification.
+
+The database itself may be administered by the private sector. Critics argue that there is huge potential for willful misuse of this personal data.
+
+Speaking to The Guardian, the Liberal Democrats' home affairs spokesman, Mark Oaten, said the government was trying to hide the true costs of its Identity Card scheme by turning the passport into a biometric identity card.
+
+"The compulsory identity cards scheme is an expensive white elephant and a serious threat to civil liberties. It is an abuse of democracy for Labour to use the royal prerogative to put the nuts and bolts of the system in place without parliamentary approval," Mr Oaten told The Guardian. "There are no international obligations on the UK to put fingerprints in passports. The idea raises important privacy questions which must be properly debated, both in public and in Parliament."
+
+Other elements of the Identity Card Scheme are being trialed and costed under the UKPS. Silicon.com reports:
+
+"Other projects under way at the UKPS include:"
+
+"- Trials of the Personal Identification Project (PIP), testing the use of data sharing with the private sector and other government departments to strengthen identity authentication"
+
+"- Cutting fraud by creating an electronic link to birth, marriage and death records to eliminate reliance on paper documentation"
+
+"- Launch of an electronic passport application system integrated with UKPS' back-office processing in the third quarter of this year."
+
+"- Creation of a person-centric database. UKPS said there could be significant benefits in storing the data on a person-by-person rather than a passport-by-passport basis."
+
+The British Government has not yet answered critics claims that the scheme is unwarranted and harmful.
+
+European governments have come under pressure from the USA to produce passports that incorporate a biometric chip. They have imposed a deadline of 26 October 2005 after which EU citizens without a biometric chip will require a visa to visit or transit in USA. Presently USA ports take fingerprint and iris scans on arrival.

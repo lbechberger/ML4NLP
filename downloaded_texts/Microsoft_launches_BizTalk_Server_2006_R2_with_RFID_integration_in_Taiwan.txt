@@ -1,0 +1,7 @@
+On Tuesday, Microsoft launched BizTalk Server 2006 R2 with Radio-frequency Identification (RFID) technology in Taiwan. Microsoft Taiwan held a launch seminar with "Pulse the Operations with the Communication of Enterprises" topic and invited hardware and software companies to highlight the integration of RFID, SOA, and EDI with BizTalk Server 2006 R2.
+
+At the press conference, Steven Martin (Director of Product Management for BizTalkÂ® Server Product Group at Microsoft Corp.) mentioned the improvements to BizTalk Server 2006 R2 and the lower costs, which could increase the opportunities for enterprises. Martin also praised Taiwan for having an environment conducive to the development of RFID technology, and suggested that was the reason Microsoft Global Headquarters chose Taiwan as the first location for the product launch.
+
+Aside from seminars and exhibitions, Microsoft Taiwan also welcomed Chang Jung Christian University, Telecommunication Laboratories of Chunghwa Telecom Co., Ltd., Tekho Inc., Formosa Petrochemical Co., Ltd., and Quanta Computer lnc. to introduce their solutions from their earlier integration and show the strength of RFID technologies in Taiwan.
+
+After the launch series in Taiwan, Microsoft Global Headquarters announced that the next launch for BizTalk Server 2006 R2 would be Sydney, Australia on September 13, followed by Chicago, United States on October 2.

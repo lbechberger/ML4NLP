@@ -1,0 +1,5 @@
+This past Saturday at 2007 Taipei IT Month, Intel of Taiwan invited hardware engineers, overclocking experts, and gamers to participate in the "Intel Taiwan Overclocking Live Test" at the Taipei World Trade Center to share techniques and technology for overclocking and other hardware tweaking.
+
+According to Intel Taiwan, this "Live Test" event was a friendly competition for participating engineers. It was similar to the "Live Test Center" previously held by Russian computing magazine PC Professionel. At this overclocking festival, Intel provided high-standard hardware on which the participants challenged the extremes of overclocking as measured by benchmark records on PCMark05, 3DMark 2006, and Super PI 1M.
+
+Throughout these tests, the organizers frequently reminded spectators not to get too close to the hardware due to the dangers of overclocking and tweaking hardware. Finally, a new Taiwan Record of 15335 points on PCMark05 was established by Wei-che Chang.

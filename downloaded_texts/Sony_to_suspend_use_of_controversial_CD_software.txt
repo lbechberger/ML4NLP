@@ -1,0 +1,3 @@
+Sony BMG has announced it will suspend production of CDs with their controversial "anti-piracy" software. The move follows litigation being brought against the company for the software which allegedly opens up Microsoft Windows to malicious attacks.
+
+In an ironic turn of events, it now appears that Sony's software violates the copyright of the popular LAME mp3 player, which is distributed under a public license. In the past, German courts have forced companies to release their source code to the public when it was based upon software distributed under such a license.

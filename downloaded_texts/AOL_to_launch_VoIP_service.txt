@@ -1,0 +1,5 @@
+Today, AOL had announced that it is launching a new VoIP service to be named TotalTalk. TotalTalk is much like Google Talk due to its unification of verbal conversation and instant messenger into one client. However, much like Skype, client-to-phone conversations are possible. Other features include caller ID, voice mail integration with e-mail, three-way calling, and more.
+
+Unlike AOL's current VoIP service, TotalTalk will not require AOL membership. However, access to this service may cost upwards of $34.99 per month.
+
+Later this week, AOL will also release its new instant messenger client, Triton. Triton will contain a softphone feature that can be used with TotalTalk.

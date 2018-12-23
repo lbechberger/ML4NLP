@@ -1,0 +1,77 @@
+Old books never die. They don't even fade away. Instead, their copyright expires and they are released into the public domain, where hordes of volunteers breathe new life into them. Groups like Project Gutenberg, Distributed Proofreaders and Wikisource digitize, preserve and categorize classic works of literature, old encyclopedias, and even periodicals.
+
+Hugh McGuire, a writer from Montreal, decided that he did not only want to read these voices from the past — he wanted to hear them. "On a practical level," he says, "I wanted to download a free audiobook." Disappointed with the somewhat meager outcome of his search, he decided to create an open community website dedicated to creating spoken word versions of public domain texts. In August 2005, LibriVox was born. The call to action is simple enough:
+
+: "Would you like to record chapters of books in the public domain? It's easy to volunteer. All you need is a computer, some free recording software, and your own voice."
+
+Less than a year later, the website features a hundred or so completed books, and 300 people have contributed chapters or poetry. "Probably another 400
+have done or are expected to do chapters for books not yet completed or cataloged," McGuire explains. The finished audio files, like the texts they come from, are released into the public domain and offered in the MP3 and Ogg Vorbis file formats. Volunteers use the active forums and a wiki to collaborate. We asked Hugh McGuire about the state of the project, internationalization, and the place of LibriVox in the larger free content community.
+
+Why did you decide to take the acoustic fate of public domain works into your own hands, and how did you go about it? 
+
+I think that a vibrant public domain is very important to a healthy world, and so I thought: here's a way to help the cause. I launched LibriVox, emailed some friends and some podcasters who where doing literary stuff, and invited them to record a chapter of Joseph Conrad's Secret Agent. Things have grown steadily since. By the way, AKMA was the first guy I know of to do something like this, with [Lawrence] Lessig's Free Culture. That, I think, started my thinking about this, but it took a while for the idea to crystallize.
+
+Do you personally record audiobooks, and did you already do so before LibriVox?
+
+LibriVox was my first experience recording audiobooks. I still do the odd chapter, but i am a bit delinquent in finishing some of them these days!
+
+Is there a particular LibriVox book which you think stands out because of the quality, the overall effort involved, its popularity, or for some other reason?
+
+My personal favourite is Notes from the Underground (Dostoyevsky). Other random good ones: 
+* Austen, Jane. Pride and Prejudice
+* Christie, Agatha. The Mysterious Affair at Styles 
+* London, Jack. White Fang
+* Macaulay, Thomas Babington. History of England (Volume 1, Chapter 1)
+* Marx, Karl and Engels, Friedrich. The Communist Manifesto (solo)
+* Twain, Mark. A Connecticut Yankee in King Arthur's Court (solo)
+
+Ed.: See the LibriVox catalog for a full index.]
+
+Browsing the catalog, I find that the quality of the spoken audio varies greatly from text to text or even from chapter to chapter. If someone wanted to re-record a chapter because they didn't like the speaker, would you then offer two versions?
+
+Yes. We take the Wikipedia approach: if you think it should be better, please help it be so. You'll note we offer a couple of versions of some books. Indeed our weekly poetry project celebrates this diversity of voice: each week a new short poem is chosen and as many readers as wish to record a version, so you get 20+ versions of the same poem, a very interesting audio experience.
+
+Besides works whose copyright has expired, there is an increasing number of modern books available under Creative Commons and similar licenses. You mentioned Larry Lessig's Free Culture, but it also includes some out of print titles by publishers who are open to the concept, such as O'Reilly. Do you want to limit the scope of LibriVox strictly to old public domain works, or do you have plans to include recent works under reasonably permissive licenses as well?
+
+We are only doing public domain works, for a number of reasons, partly to keep simplicity in our copyright situation -- public domain means its as simple as can be. CC makes things more complex. Also, there are other sites, notably podiobooks.com, which are better suited to CC works than LibriVox. we find it makes things clear and easy to say: published works, public domain, and leave it at that.
+
+As far as I can tell, podiobooks.com features "free as in beer" content — material which you can download, but which isn't under a free content license. Instead of "public domain", wouldn't "free content" work just as well, using something like the Free Content Definition to limit the scope?
+
+This needs more discussion obviously: we chose public domain because the texts we use are public domain and we didn't want to add new
+restrictions, especially not non-commercial, since already our recordings are being used for a number of commercialish projects (I can't recall any specific project names, but some pay-education sites use LV stuff). That's good and well and fine with us. We don't want to have to give anyone permission to use our recordings, we want anyone to use them for whatever they want.
+
+Also, for the thing to work you need to have many dedicated volunteers willing to do the management (onerous) and many willing to do the reading. While Pride and Prejudice will attract many readers, I don't know about O'Reilly's latest tome on XML... though I might be wrong.
+
+Are there plans to fully internationalize the website?
+
+LV is a totally open project, so where the volunteers go, we go. We have books in German, Italian, French, Spanish, Hebrew, Finnish, Japanese, Old English... and possibly a few more. We also have a wiki, and our response to such questions is to encourage any non-anglos to make translations there, and we can incorporate into the site as needed. We have a language policy, which basically says that in general the forum language is English (so that admin know what's going on) but that if a non-English book project is started, the language in that thread can be whatever volunteers wish to use.
+
+I was thinking specifically about things like the user interface of the website and the forums. Are there plans to internationalize these? Many people speak no English at all, so an English website might not work for them.
+
+In order for this to happen we need volunteers willing to do it. We have no budget (literally zero) and our structure is totally loose and open, so if a volunteer or group of volunteers offer to do this, we will find a way to help make it happen. There is the constraint that we'd be most comfortable with active volunteers doing it, who understand the project and its particularities. 
+
+Since everything is volunteer, the current admin would have to find the time to manage this, too, but I expect if there were a serious desire on the part of some volunteers, we'd have no problem adding the text. We have a wiki, where anyone is welcome to write the text in whatever language, and then we could easily post pages up to the site.
+
+Has podcasting helped you in gaining more awareness?
+
+Sure! Podcasting was the inspiration for LV ... easy, cheap, do-it-yourself audio! Superb. Podcasting is an important part of our distribution, but torrents and regular downloads are probably bigger.
+
+So, do you have an idea how many people listen to your podcast?
+
+Last estimation was in the 5000 range.
+
+Besides human readers, there's also the fully automated approach of turning text into sound. Text-to-speech software is getting better every year, with an increasing focus on "natural" voices.
+
+I don't find text-to-speech very interesting. LV is about people reading to you, which is very different than having a computer - no matter the naturalness - read to you. Our recordings have mistakes, fumbles, coughs, and beautiful human voices being human, reading wonderful works of literature. It's not just transmission of audio information, it's something much more, and something no computer, robot etc. could ever replicate. 
+
+Do you not sometimes get worried that your work might eventually be made obsolete by technology?
+
+See above, but we don't really feel like we are in competition with other projects. Many of us are working for similar goals, and there's room for many of us. Personally, I am very much interested in what the readers get out of the process, as much as the listeners. If there are computer-generated public domain audiobooks, so much the better. There are also many other audiolit projects, and we all seem to be doing parallel stuff. I think that's great. The beauty of LV, podcasting etc. is that it's all so cheap to do - you can have your choice. I will choose a real human reading over a computer reading any day, but others might not agree. That's fine. LVers read out of love of literature, and nothing more. 
+
+Wikisource is the Wikimedia project which digitizes and archives free content texts. There's also an existing Wikimedia effort to create spoken versions of Wikipedia articles. Are you guys aware of each other, and possibly already working together?
+
+We're aware of some of these projects, and have corresponded with some of these and others. There's so much to do! It's great that so many are doing this stuff, and that people can choose the things that interest them. this is the thing about LV (as with Wikipedia etc) ... we can't control our volunteers, nor do we want to. We just give a framework, and hope for the best. 
+
+What is the last audiobook you've listened to?
+
+To be honest, I haven't listened to a full book in a long while! Last chapter I listened to was from Whitman's Leaves of Grass.

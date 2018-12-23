@@ -1,0 +1,7 @@
+Blizzard Entertainment has won a federal ruling in the U.S. Court of Appeals against the programmers of bnetd, a software package that emulates Blizzard's Battle.net service. The court reaffirmed the original judgement, given in October, that the Digital Millennium Copyright Act and click-through EULA's prohibited the reverse engineering of Blizzard's software in order to improve their playability. This was the first real test of the DMCA's applicability.
+
+Bnetd, released under the GNU General Public License, was created to enable users to play multiplayer games, bypassing Blizzard's freely accessible Battle.net servers, which have sometimes been unreliable or slow for gamers. The software also disabled the CD-Key check which is present in Battle.net to prevent users of pirated copies from being able to connect to Blizzard's servers. Offers by bnetd developers to incorporate Blizzard's CD-Check system were declined.
+
+The CD-Check system itself has faced controversy, with some users complaining it borders on breaching privacy in the same way as adware and other malevolent software. This is not confined to Blizzard: controversy occurred when Sony Online Entertainment's EverQuest had a similar system which was later disabled due to complaints. Other games designed for network play are also known to have similar systems in place, the most prominent perhaps being Valve Software's Steam system developed for Half-Life 2.
+
+Blizzard has produced many popular titles such as Starcraft, World of Warcraft and the Diablo series.

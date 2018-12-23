@@ -1,0 +1,5 @@
+In recent days, reports have surfaced that Microsoft may plan to backport its WinFS system to Windows XP.
+
+The technology, intended to track file metadata for better organization and searching capability, had previously only been planned as part of the forthcoming Microsoft Windows Longhorn operating system release.
+
+Support for Windows XP, while surprising, may aid developers in speeding adoption of the new technology in their applications.

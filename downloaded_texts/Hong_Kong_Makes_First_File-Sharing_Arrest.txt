@@ -1,0 +1,7 @@
+A 38 year-old man has been arrested by the Customs and Excise Department of Hong Kong, for illegally distributing three copyrighted movies via BitTorrent file-sharing technology. This is the world's first criminal arrest of its kind.
+
+The unemployed male was arrested last Thursday for uploading "torrents" to a local message board. The torrents allowed people to download three movies from computers at his home in Tuen Mun, Hong Kong. However, the suspect was not immediately charged, and investigations are still underway, according to the Hong Kong Government. The law in Hong Kong allows for a sentence of up to four years in prison, and a US$6,400 fine per violation â€” defined as a single unauthorized copy of a protected work.
+
+BitTorrent is an ultra-fast file-sharing technology which allows users (or "peers") to share files of any size via the unused upload bandwidth of other peers, even though their downloads are still in progress. The technology was developed by Bram Cohen three years ago.
+
+In the past several weeks, major BitTorrent websites in the United States have closed down due to, or in order to avoid civil charges initiated recently by the MPAA. According to the former operator of one of these sites, Suprnova.org, software developers have already worked out a solution and are beta-testing a new peer-to-peer program called eXeem. The software will bring together the strengths of Kazaa (another peer-to-peer program) and BitTorrent.

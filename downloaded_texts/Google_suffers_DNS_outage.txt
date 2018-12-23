@@ -1,0 +1,5 @@
+Access to Google, including its other projects, was abruptly interrupted late Saturday when a DNS outage caused the search engine giant to be unreachable by the domain Google.com. Google Labs and Google Maps, as well as products of Google such as the blogging service Blogger and free photo-album software Picasa, were unaffected. Google.com and its subdomains were once again functioning as of 0100 UTC.
+
+During the brief outage, some browsers were redirected to SoGoSearch. The site http://www.google.com.net has a link to Gigantics, and normally redirects to SoGoSearch. This is probably a procedure that specific browsers implement when they cannot find the proper address. Others were also reported to be redirected to Microsoft's MSN Search.
+
+Barbobot reports the DNS may have been stolen for a short time.

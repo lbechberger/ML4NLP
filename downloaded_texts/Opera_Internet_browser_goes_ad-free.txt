@@ -1,0 +1,8 @@
+Opera Software has ended the use of ads in the zero cost version of its Opera web browser. Opera is intended as closed source software, its license states that You shall not modify, translate, reverse engineer, decompile or disassemble the Software or any part thereof or otherwise attempt to derive source code or create derivative works therefrom. . Until now the program displayed an advertisement when being used, however the program had an option that would remove the advertisement in return for a fee.
+Company Officials expressed hope that this move would prompt more users to download the Opera browser and thus increase the company's revenue from its search engine product.
+
+Opera's features compete directly with Mozilla Firefox, and include tabbed browsing, pop-up blocking, integrated search, mouse gestures and voice control for various features. Its license does not compete with Mozilla Firefox, since Mozilla Firefox is free software, which can be freely modified and redistributed.
+
+You can download Opera at the Opera website for Windows, Apple and Linux.
+
+Opera is also offering torrents of the new release to ease the load on their servers.

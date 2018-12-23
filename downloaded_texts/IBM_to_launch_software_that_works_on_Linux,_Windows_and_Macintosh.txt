@@ -1,0 +1,15 @@
+On Sunday the representatives of International Business Machines Inc. said that the company will launch its new desktop software system for businesses. IBM's new product is called “Open Client Offering”. The company hopes that its product will put Macintosh or Linux software on a more equal footing with Windows.
+
+The Open Client Offering software was developed by IBM in-house, as well as with partners like Novell Inc. and Red Hat Inc. It is to answer the questions regarding the cost-effectiveness of managing Linux or Apple desktop personal computers alongside Windows PCs. 
+
+IBM officials stated that Open Client Offering will allow enterprises to use the same software on Windows, Linux or Apple's OS X. It will be unnecessary for companies using Open Client to pay Microsoft for licenses for operations because these will no longer rely on Windows-based software.
+
+Scott Handy, IBM's vice president of Linux and open source, stated that the company worked together with the open source community and in the end found a way to develop a software that is able to function regardless of the operating system.
+
+To create an alternative to Microsoft, IBM is going to offer Open Document Format software that the company developed for word processing, spreadsheets or presentations, instant messaging and blog tools and Internet Explorer's long time rival – Firefox Web browser. 
+
+The software developers at IBM believe that the usage of Open Client Offering can cut the cost of managing applications as well as maintenance and cost regarding customer support on company networks that require other software rather than Windows.
+
+PSA Peugeot Citroen, being the second largest car manufacturer, signed a multi-year agreement with Novell, which is the provider of Linux software, to run Linux on its 20,000 desktop PCs. In addition Linux will be installed on 2,500 server computers. 
+ 
+RedMonk's analyst, Stephen O'Grady, said that today there is a strong appetite for Windows alternatives. However, he said, this doesn't mean that the alternatives are to displace Windows wholesales. O'Grady outlined that no one is going to significantly damage the desktop dominance of Microsoft.

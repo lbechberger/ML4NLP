@@ -1,0 +1,15 @@
+Computer vendor Sun Microsystems released on Tuesday the first offerings of its OpenSolaris operating system code for free, under a license which allows anyone to use or work on the code and distribute the changes they make..
+
+The full operating system is expected to be released for download sometime in the second quarter of 2005. Following along with the system source code are 1,670 patents Sun will make available for use by open-source developers. Sun hopes to leverage greater innovation in software from the open source community, in return for allowing the code to be used without charge.
+
+"This is not an EOL (end of life) release. It's a supercharged, turbocharged rocket launching," Sun CEO Scott McNealy said. "No one else has done what we have just done."
+
+The move follows a recent move by IBM to grant use of 500 patents freely to open source software developers. Open source developers had been becoming concerned that bureaucracy and legal issues associated with software patents could be damaging to their livelihoods and to innovation. The moves by Sun and IBM seem intended to placate this growing fear.
+
+Dynamic Trace, or DTrace is the first OpenSolaris component to be released. DTrace is a performance-analysis tool that tells developers how to optimize their applications for maximum performance. 
+
+The code is to be released under Sun's own licensing scheme, the Common Development and Distribution License (CDDL) Version 1.0. This license has been approved by the Open Source Initiative (OSI).
+
+Sun's license is based on the Mozilla Public License. The Free Software Foundation has stated on its website that Sun's license, while free, is not compatible with the GNU Public License (GPL) used for the popular open source Linux operating system. This does not mean that Linux software and OpenSolaris software cannot be used together, but limits the extent of integration which may be achieved.
+
+Sun had previously allowed free use of the operating system Solaris by some users, for example students. This move greatly extends the range of free uses permitted, and allows users to read and modify the source code without charge or non-disclosure agreement.

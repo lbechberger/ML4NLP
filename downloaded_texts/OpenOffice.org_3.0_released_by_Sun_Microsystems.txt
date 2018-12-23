@@ -1,0 +1,15 @@
+Sun Microsystems released version 3.0 of its free and open source (FOSS) office suite Openoffice.org on Monday. It has been reported that the new version comes with a number of performance enhancements and new features. Openoffice.org 3.0 now claims to work out of the box in Mac OS X as a native Aqua application.
+
+News sources report the official download servers of OpenOffice.org crashed soon after the release due to heavy downloads. Downloads are however available from a number of mirror sites.
+
+
+
+Openoffice.org 3.0 suite includes spreadsheet, word processor, equation editor, presentation tool, relational database and vector drawing software. Full interoperability is available for Microsoft Office 98/XP formats, but offers read only support for OOXML file formats. This version supports the new ODF 1.2 document format. The software is available for many platforms including Linux, Microsoft Windows and Mac, as well as in multiple languages.
+
+Users report OpenOffice.org 3.0 has introduced a new graphical and text-based hybrid equation editor, a mail merge wizard, improved label templates and better interface for outlining. Solver, a spreadsheet add-on for combinatorial optimization problems is included in this version.
+
+Other enhancements highlighted by enthusiasts include collaborative options that allow multiple users to edit documents at the same time and improved drawing and charting tools. OpenOffice.org 3.0 can now display multiple pages during editing and workbooks up to 1024 columns in each spreadsheet.
+
+The download size of OpenOffice.org 3.0 is 163 MB for Mac and requires OS X Tiger or later and an Intel Mac. The installer for Windows is about 145 MB in size. 
+
+"As government after government, enterprise after enterprise adopt the Open Document Format, they frequently adopt OpenOffice.org and love it. With 3.0, the application is more interoperable with MS Office, more capable, more extensible. It frees the desktop from vendor lock-in," claimed Louis SuÃ¡rez-Potts, community manager of OpenOffice.org.

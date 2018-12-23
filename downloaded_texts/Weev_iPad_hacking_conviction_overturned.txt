@@ -1,0 +1,9 @@
+Yesterday, the United States Court of Appeals for the Third Circuit overturned the conviction of Andrew "weev" Auernheimer, who had been sentenced to three and a half years in federal prison after exploiting a bug in AT&amp;T's website, allowing him access to confidential data about their iPad customers.
+
+The hacker and self-described "" was convicted of conspiracy to unlawfully access AT&amp;T's servers and identity theft by federal jury in November 2012 by a New Jersey court under the Computer Fraud and Abuse Act. Co-defendant Daniel Spitler plead guilty. 
+
+Spitler discovered AT&amp;T had inadvertently made data publicly available through their website, and wrote a script allowing him to obtain the email addresses of approximately 120,000 customers, including that of then-New York mayor Michael Bloomberg. Auernheimer passed this information to Gawker, who published a redacted version.
+
+The three judges on the Philadelphia-based court, in a unanimous decision, ruled the New Jersey courtroom was an inappropriate venue for the initial trial. Michael Chagares, circuit judge, wrote "the improper venue here—far from where he performed any of his allegedly criminal acts—denied Auernheimer's substantial right to be tried in the place where his alleged crime was committed". The court said the issue represented a basic constitutional right and not a mere technicality.
+
+Prosecutors argued that approximately 4,500 of the affected users lived in New Jersey and the state was therefore a valid place for the trial, but the court noted neither the servers accessed, nor the Gawker reporter, nor the defendants, were based in that state. Auernheimer's attorney, Tor Ekeland, said that the government was "trying to find courts that are favourable to them".

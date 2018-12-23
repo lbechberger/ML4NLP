@@ -1,0 +1,24 @@
+Wikimania 2006 is the second annual Wikimedia conference. Hosted by the Berkman Center for Internet and Society at the Harvard Law School campus in Cambridge, Massachusetts, it began August 4 and will run until August 6. 
+
+Wikimania began with a keynote presentation from Jimmy Wales, the founder of Wikipedia and the Wikimedia Foundation. Wales played a short portion of a clip from a recent episode of U.S. television program The Colbert Report discussing Wikipedia. In the clip, Colbert says that "any website that has a longer entry on truthiness than Lutheranism has got its priorities straight." His keynote continued by re-emphasising Wikimedia's mission, as stated by Wales in a Slashdot interview: "Imagine a world in which every single person on the planet is given free access to the sum of all human knowledge. That's what we're doing".
+
+Wales stated that Wikipedia is "not as good as Britannica â€” yet". Additionally, he also stated that in the coming year, Wikipedia will be making "a turn towards quality". "We have always had this goal, but we all know we're not there yet - in the coming years one of the themes is going to be a turn towards quality." said Wales.
+
+He then introduced Brad Patrick, the general counsel and recently-appointed interim CEO of Wikimedia. Patrick said he found Wikimedia after reading Wales' list Ten Things That Will Be Free on Lawrence Lessig's blog. After discovering the Wikimedia Foundation, Patrick emailed Wales about meeting for lunch. He had lunch with Wales a few months later and was hired as general counsel shortly after.
+
+Wales went on to describe Wikia, the company he co-founded with Angela Beesley. He announced that Wikia has received venture capital, allowing them to hire full-time engineers to work on the MediaWiki software. He emphasized that Wikia, has "a total commitment to free knowledge and respect for communities."
+
+Later, Wales announced that the One Laptop Per Child project will be including Wikipedia as the first element in the content repository. He also announced that the board has approved Wikiversity as "a center for the creation and use of free learning materials and activities". Wikiversity will "create and host a range of free-content multilingual learning materials for all age groups in all languages". It will be launched soon with a three language, six month, beta trial period.
+
+Wales described a project called Wikiwyg: a WYSIWYG editor for the wiki. Wikiwyg is an attempt to make the wiki easier to edit. "An intelligence test by making it hard to edit, just does not work," noted Wales. While the release date is uncertain both Wikia and Socialtext are devoting full-time engineers to the project. 
+
+Wales emphasized the need to focus on quality. He also briefly discussed the commitment in the German Wikipedia to rolling out a stable version. He stated that if we do not have it rolled out by next year's keynote "we are making a big mistake".
+
+Wales finished his keynote by giving an update on his Ten Things That Will Be Free and proposing "that the foundation seek funding to hire community coordinator and recruiters for important languages where we currently do poorly".
+
+
+Other notable speakers included Ward Cunningham, Lawrence Lessig, Eben Moglen and many members of the Wikimedia communities.
+
+The day wrapped up with a poster reception and a party celebrating Wikia's 250,000 articles and Wikia's founders Angela Beesley and Jimmy Wales birthdays. 
+
+Archived copies of many of the presentations are available on the Wikimania wiki.

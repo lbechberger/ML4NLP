@@ -1,0 +1,5 @@
+An ATM in Virginia Beach, Virginia was cracked so it would give out 4 times as much money as it was supposed to; and this was done just by entering numbers into the keypad.
+
+A man bought a pre-paid card and used it in the ATM. The attack consisted of a magic number which was entered in the PIN keypad, which caused the machine to disburse $20 bills when it recorded giving out $5 dollar bills.
+
+No one in authority noticed for nine days, until an honest ATM user reported the machine was giving out too much money.

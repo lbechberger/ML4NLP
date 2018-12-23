@@ -1,0 +1,19 @@
+NASA's comet busting spacecraft Deep Impact has moved into its cruising phase towards a rendezvous and collision with Comet Tempel 1 on July 4, 2005.
+
+The cruising phase is the second of five phases mission planners have set for the mission. The first commissioning phase was begun soon after launch and was designed to test and calibrate the instruments on board the two-part spacecraft. All instruments have checked out except for the High Resolution Instrument (HRI).
+
+Mission controllers performed a "bake-out" or heating of the HRI to remove moisture that accumulated during the craft's final hours on the launch pad and its travel through the atmosphere. Test images taken after the procedure indicate the device has not reached perfect focus. A special team has been assigned to investigate and bring the instrument into full focus.
+
+"This in no way will affect our ability to impact the comet on July 4," said Rick Grammier, Deep Impact project manager at NASA's Jet Propulsion Laboratory. "Everyone on the science and engineering teams is getting very excited and looking forward to the encounter."
+
+Deep Impact has four data collectors to observe the effects of the cometary collision: the High Resolution Instrument consisting of a camera and infrared spectrometer; the Medium Resolution Instrument; and a duplicate camera on the Impactor Targeting Sensor. They will record the vehicle's final moments before it slams into comet Tempel 1 at a relative velocity of 37,000 kilometers per hour (23,000 miles per hour). The Medium Resolution Instrument and Impactor Targeting Sensor are performing as expected.
+
+Dr. Michael A'Hearn of the University of Maryland added, "We are very early in the process of examining the data from all the instruments. It appears our infrared spectrometer is performing spectacularly, and even if the spatial resolution of the High Resolution Instrument remains at present levels, we still expect to obtain the best, most detailed pictures of a comet ever taken."
+
+Deep Impact is a two part vehicle: the flyby spacecraft and a smaller impactor. 24 hours prior to impact, the flyby craft will aim tracking telescopes at the comet and release the impactor.
+
+The impactor is a battery-powered spacecraft that operates independently of the flyby spacecraft for just one day. It is called a “smart” impactor because, after its release, it takes over its own navigation and maneuvers into the path of the comet. The crater produced by the impactor is expected to range from the width of a house up to the size of a football stadium and be from two to 14 stories deep. Ice and dust debris will be ejected from the crater revealing the material beneath.
+
+NASA's Hubble, Spitzer and Chandra space telescopes, along with the largest telescopes on Earth, will observe the effects of the material flying from the comet's newly formed crater along with the imagers aboard Deep Impact.
+
+Deep Impact was launched on January 12, 2005 on board a Delta 2 rocket.

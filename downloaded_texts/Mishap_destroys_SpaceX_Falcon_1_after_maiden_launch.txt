@@ -1,0 +1,4 @@
+The Falcon 1 rocket, launched by SpaceX, was destroyed shortly after its maiden launch today. Despite an earlier highly successful static test firing off the main engines, this fourth attempt at launch failed during the first stage burn. After clearing the tower, an onboard webcam revealed a swirl of flame around the base of the rocket before contact was lost.
+Both the Falcon 1 launcher and its Falconsat payload were lost.
+
+It was later revealed that a fire had cut a helium pneumatic line causing the safety valves in the fuel system to automatically close, shutting down the main engine. The cause of the fire and the fuel leak that fed it has yet to be determined.

@@ -1,0 +1,7 @@
+The space shuttle Discovery landed at the Kennedy Space Center in Florida on Saturday, ending its thirteen-day mission to the International Space Station (ISS). The spacecraft's landing was delayed for two hours due to low-lying clouds and heavy winds.
+
+Discovery had been sent out to the ISS in order to install a new set of solar panels that would increase its power supply.
+
+“Welcome home, Discovery, after a great mission to bring the International Space Station to full power,” said an astronaut, George Zamka, radioing from the mission control center in Houston, Texas.
+
+NASA tested an experimental tile under the Discoverys left wing during its approach for landing. The tile was almost eight centimetres thick, and had a bump in it, intended to disturb the otherwise smooth airflow over the shuttle's wing, thus exposing it to high amounts of heat. Engineers installed the tile in order to measure the excess heat that was generated on downstream tiles. A military airplane monitored the heat with an infrared camera. The findings will be used to help determine better designs for future shuttles.

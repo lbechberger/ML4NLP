@@ -1,0 +1,9 @@
+Sharman Networks, owner of the popular Kazaa peer-to-peer software, lost against a coalition of record labels in an Australian federal court. The court ruled that Kazaa infringed on artists' copyright and facilitated piracy. The list of plaintiffs included EMI, Sony BMG, Warner, Festival Mushroom and Universal. 
+
+The court has ordered Sharman to modify the software within two months to prevent further piracy. While this order is only valid in Australia, Sharman is incorporated in the country and thus the effect of the ruling will be felt in the peer to peer community worldwide. Sharman was also ordered to pay 90% of the plaintiff's legal fees, with damages to be considered at a later date. Sharman has said it will appeal.
+
+It is unclear whether this will have a significant effect on preventing piracy in the music industry. Surveys have shown that users have already abandoned Kazaa, which used to be the dominant peer to peer program used for sharing files, in favour of newer networks such as eDonkey and BitTorrent. This trend amongst users was also observed to happen with Grokster and Napster, two legacy peer-to-peer networks which faced similar suits.
+
+This is not the first case in which Sharman has had to defend itself: in a related case in the U.S. Supreme Court which concluded two months ago, the court ruled that file sharing networks could be held responsible for the actions of their users in some circumstances. This may have influenced this most recent case, where the court found the Kazaa website encouraged visitors to feel 'cool' about breaking copyright law and downloading illegal music.
+
+Kazaa, or other versions of it, has been estimated to be installed on up to 300 million computers worldwide.

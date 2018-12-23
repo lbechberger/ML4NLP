@@ -1,0 +1,5 @@
+Qrio, a humanoid robot developed by Sony Intelligence Dynamics Laboratories, has been "attending" a nursery school in California since March. Qrio is taken to the school in San Diego every day, and spends time playing with ten children under the age of two. A researcher is on-hand to observe and document the interactions that take place.
+
+The children were apprehensive about the robot at first, but have grown to accept it, and will help it up when it falls. "The children think of Qrio as a feeble younger brother", according to researcher Fumihide Tanaka.
+
+Sony's aim in this endeavor is to work on developing a robot that can "live in harmony with humans in the future". The data gathered thus far have helped the researchers gain a better understanding of how robots should act around humans, in particular that balancing timely responses and unexpected movements are of integral importance.

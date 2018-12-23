@@ -1,0 +1,7 @@
+The California-based non-profit organization Electronic Frontier Foundation, as well as the Attorney General of Texas, has filed a law suit against Sony Computer Entertainment of America for their controversial use of anti-piracy software.
+
+The EFF claims that the digital rights management software on the CDs BMG Music (a subsidiary of Sony) produces acts as spyware, which the EFF claims is against Texas law. The program, known as XCP, is said to install software on one's system when they insert the CD into their computer for purposes such as adding to iTunes music software.
+
+Sony currently rejects the idea of XCP technology being considered as spyware, however they have agreed to replace CDs with the software and to temporarily discontinue the installation of it on their CDs.
+
+Among the controversy that Sony's moves to counter piracy have raised is the accusation that their software leaves a machine more vulnerable to attacks across the Internet. A trojan horse has already been found in the wild that utilizes one of the anti-piracy software's functions.

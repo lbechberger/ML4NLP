@@ -1,0 +1,7 @@
+The University of Toronto SciNet Consortium went online yesterday with the IBM System x iDataPlex Supercomputer.
+
+U of T's IBM System x is now the fastest computer outside of the United States, the largest Intel processor based IBM installation internationally and the twelfth most powerful globally. It will be used for a wide variety of operations, such as analysing climate change models, aerospace, astrophysics, genetics, bioinformatics, chemical physics, medical imaging research and other highly calculation-intensive tasks. 
+
+The C$50 million dollar supercomputer can perform 300 trillion calculations per second and uses the equivalent amount of energy which would power 4,000 homes. The supercomputer will be cooled by outdoor winter air assisted by a water based cooling system during warmer summer months.
+
+The computer will provide computations for the Large Hadron Collider (LHC) that started preliminary experiments on September 10, 2008 at CERN in Geneva, Switzerland. The LHC will produce cataclysmic collisions that will mimic the conditions that existed shortly after the beginning of time. The IBM System x's 30,240 Intel 5500 series 2.53 GHz processor cores — arranged in 45 file-like stacks — will examine the results of the particle collisions.

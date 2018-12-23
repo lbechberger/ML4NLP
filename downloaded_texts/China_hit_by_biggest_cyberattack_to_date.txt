@@ -1,0 +1,9 @@
+Early last night, massive attacks targeted China's Internet, slowing access to a crawl. The Chinese .cn domain was targeted in the latest of many denial of service attacks against China. According to the China Internet Network Information Center, which manages the .cn domain, this attack was the largest of its kind. 
+
+The domain was attacked twice, once at 2am local time, and again at 4am. The second was larger, and Chinese officials said work to restore service was progressing slowly. State-run newsmedia said numerous .cn websites and microblogging website Sina Weibo were targeted. 
+
+This outage comes at a sensitive time for China, with the trial of Bo Xilai, a former government official, having just ended. The attack also comes amidst rumors that the Chinese government will be cracking down on social media commentators, according the The Wall Street Journal.
+
+According to a Wall Street Journal interview with Matthew Prince, CEO of CloudFlare, a company that tracks web traffic and metrics, during the attack Chinese Internet traffic dropped by 32%. He also claimed this attack is an indicator of the susceptibility of Chinese Internet infrastructure to these attacks.
+
+Sina Weibo access is presently working as normal.

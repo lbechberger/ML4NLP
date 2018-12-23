@@ -1,0 +1,14 @@
+At 10:30pm on November 23, 2008, near the airport in McGregor, Texas, Space Exploration Technologies Corporation (SpaceX) tested their new Falcon 9 rocket at full thrust for nearly 3 minutes (160 seconds). The engineers then shut down two of the nine engines — in order to limit potential damage to the launch pad — and continued the test for 18 more seconds before finally shutting the rocket down. "We ran the engines just like they would run during flight, but instead of being up in the air, they were held down. They weren’t moving," said Lauren Dreyer, SpaceX's manager for business development. This was the Falcon 9's first major test firing, and it marks a milestone for the company in its plans to capture a section of the commercial launch market.
+
+The test reportedly shook the windows of houses 5 miles away, causing agitation among residents who felt that they had not received adequate warning. "I appreciate the fact that the company notified [the City of] McGregor, but did they not think the test would affect the surrounding communities?" asked commenter Lorena Resident on the website for the Waco Tribune-Herald. Waco lies just east of McGregor.
+
+The Falcon 9 rocket, and its smaller sibling the Falcon 1, are the first rockets capable of entering Low Earth Orbit (LEO) to have their design be privately funded in its entirety. According to SpaceX the Falcon 9 can generate 4 times the maximum thrust of a Boeing 747 while firing in a vacuum, and will eventually be able to perform interplanetary missions in addition to its initial role as an orbital launch vehicle. SpaceX is also designing a crew and cargo capsule for the Falcon 9, which it has named the "Dragon".
+
+SpaceX is a contender for future commercial contracts from various government run space agencies, with NASA expressing particular interest. NASA will be retiring their fleet of Columbia Class Space Shuttles in 2010, but will not have the Shuttles' replacements (the Ares I and Ares V rockets) ready until at least 2014. NASA hopes to fill some of this gap using commercial launches from companies such as SpaceX. SpaceX has already reached an agreement with NASA to conduct three test flights of the Dragon capsule in conjunction with the Falcon 9. The first of these flights is expected in 2009.
+
+Elon Musk, CEO and CTO of SpaceX, said, "The full mission-length test firing clears the highest hurdle for the Falcon 9 first stage before launch. In the next few months, we will have the first Falcon 9 flight vehicle on its launch pad at Cape Canaveral, preparing for lift-off in 2009."
+ htab-box
+|
+|title1=Science and Technology
+|
+|title2=Space

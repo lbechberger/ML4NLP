@@ -1,0 +1,11 @@
+The 6th annual RoboGames, a robot competition that takes place in the United States, was held this month with 403 robots from 18 different parts of the globe competing in the categories of combat, sumo, robo-one/androids, open, hockey, art bots and junior league.
+
+This year's medals went to the United States, Mexico, the United Kingdom, Brazil, India, Canada, Indonesia, South Korea and Russia (see table below). Other participants were Australia, Austria, Colombia, Egypt, Hong Kong, Iran, Japan, Peru and Taiwan.
+
+
+
+Although the host country carried off most of the medals, visiting countries stood out at some events, like Mexico at 1 lb autonomous combat, 500 g autonomous sumo, 100 g autonomous sumo and autonomous line follower, Brazil at 3kg sumo (both autonomous and radio-controlled), and the United Kingdom in the "best of show" and "walker challenge" modalities.
+
+"Taking part gave us the opportunity to test our knowledge against students from other nations, and proved that we are at the same level or better than other students from famous schools", said Mexico's National Polytechnic Institute student Erick Rodríguez who, along with his fellow team member Rogelio Baeza, took gold in the autonomous line follower event.
+
+RoboGames, previously ROBOlympics, holds the Guinness Record for “world’s largest robot competition”. It was founded in 2004 by David Calkins to help robot builders exchange ideas and learn from each other.

@@ -1,0 +1,9 @@
+A week after having been ordered to pay a one-and-a-half-billion dollar fine by courts in the United States, El Mundo reports today that Microsoft has won a case brought by Alcatel-Lucent against Microsoft involving the violation of patents on voice-recognition technology.
+
+Alcatel-Lucent's spokesman said that the company planned to appeal against the verdict by a federal judge in San Diego, California, and were confident of victory on appeal.
+
+On the other hand, Tom Burt, a member of Microsoft's legal team, said that Microsoft were confident that the appeal court would uphold the verdict of the trial court.
+
+Last week, a jury in the San Diego federal court upheld a complaint against Microsoft for the violation of patents on the MP3 format, used on computers and portable media players. Sources said that the $1.5bn fine, the largest ever awarded in a patent case, took into account the number of computers sold pre-installed with the Microsoft Windows operating system since May 2003.
+
+The verdict - which Microsoft has confirmed it intends to appeal - could have implications far beyond Microsoft's Redmond, WA headquarters, due to the high volume of devices which use the MP3 format; the format is the most popular method of storing digital music on portable music players, etc.

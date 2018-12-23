@@ -1,0 +1,9 @@
+Audible Magic, a company in Los Gatos, California, is developing a new software that can filter music and video uploaded on the Internet without permission of copyright holders. The company's chief executive, Vance Ikezoye, demonstrated how the system works. He downloaded a poor-quality video from YouTube and fed it to the filtering software, which identified the video as a fighting scene of “Kill Bill: Vol. 2,” the rights to which are owned by Miramax.
+
+The entertainment industry is already demanding the adoption of the new system by the Internet companies. One of the major social networks owned by News Corporation, MySpace, has agreed to adopt the filter. However, not all websites want to adopt the system as soon as it is launched. The main holdout is YouTube, owned by Google.
+
+The site's officials earlier said they would adopt a filtering software by the end of last year, but so far YouTube has not begun using any type of filtering system. The company's officials said that they would only use the filter if copyright owners will broaden their license with Google. The executives of NBC and Viacom have already stated their complaints regarding Google's delay on placing filters.
+
+The new system uses a large database that includes digital representations of various copyrighted audio and video files. This technology of spotting copyrighted material, called “digital fingerprinting,” checks for matches and decides whether to post the material on the site or not. However, Audible Magic's software is not considered finalized since it can still be "fooled"--e.g., by cropping the image. 
+
+Analysts say that the filtering software is to improve the relations that are currently quite tense between the standard media companies and Internet companies.

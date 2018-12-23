@@ -1,0 +1,3 @@
+This interview intends to provide some insight into OpenSync, an upcoming free unified data synchronization solution for free software desktops such as KDE, commonly used as part of the GNU/Linux operating system.
+
+=

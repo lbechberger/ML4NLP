@@ -1,0 +1,5 @@
+To challenge the possibility of WiMAX connection on high speed rails, Industrial Technology Research Institute (ITRI) and Taiwan High Speed Rail Corporation (THSRC) started an experiment on Mobile WiMAX technology for the THSR. It's the first-ever WiMAX experiment on high speed rails in the world. Industrial companies including Nippon Telegraph and Telephone Broadband Platform Inc., Nippon Telegraph and Telephone, Corning Incorporated, and ZyXEL are confirmed to provide solutions in this first-ever experiment.
+
+"THSR is a must-have transportation way for the public besides of inter-city buses and railways in Taiwan." stated THSRC. "There are three critical difficulties that this experiment should be overcome: 'Speed of the THSR', 'Base station construction inside the rails', and the most important one - 'Internet connection on tunnels'." stated ITRI.
+
+"If this [difficult] experiment can be succeeded, Taiwan will become the first nation to provide the Internet connection on high speed rails in the world." said by Moses Yen, Director of Exhibition Department of Taiwan External Trade Development Council.

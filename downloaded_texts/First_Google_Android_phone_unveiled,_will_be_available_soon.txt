@@ -1,0 +1,11 @@
+The first phone that runs on Google Android was unveiled today by T-Mobile. The announcement of this new handset, named the T-Mobile G1, was made in an event run by T-Mobile USA which took place today.
+
+The event started at 14:30 UTC (10:30 local time) when Cole Brodman, the chief technology and innovation officer of T-Mobile USA, started introducing the people who were going to be present at the launch. These people were Andy Rubin, who represents Google, and Christopher Schlaffer, who is the CTO of Deutsche Telekom.
+
+Five minutes later Schlaffer announced that Google Android will be available for Christmas 2008 on T-Mobile for customers of Deutsche Telekom. The new phone was then revealed by Cole Brodman, who described the phone as "iconic." 
+
+Commentators, however, dismissed claims that the phone was iconic. Marguerite Reardon from CNET said that Android looks rather like the iPhone, and as a result she does not think the phone can be described as iconic. She also said that the Android device looks the Danger Hiptop device, which is also known as the T-Mobile Sidekick.
+
+The new phone will be available free in the UK for users with contracts that cost over 40GBÂ£ (Approximately 74 US$) per month. These planned tariffs are expected to include unlimited web access.
+
+Android is completely open source, and was developed by Google and the Open Handset Alliance, a partnership of over thirty companies working to develop open source software for mobile phones.

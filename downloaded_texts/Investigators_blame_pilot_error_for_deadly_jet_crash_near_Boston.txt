@@ -1,0 +1,19 @@
+The US federal National Transportation Safety Board (NTSB) yesterday concluded a "series of errors" by flight crew caused a business jet crash near Boston, Massachusetts last year. Seven were killed when the Gulfstream IV overran a runway.
+
+The NTSB found the pilots failed to conduct preflight checks, mistakenly took off with flight control systems locked in position, and then failed to abort takeoff until too late. Manufacturer Gulfstream was criticised for an inadequate safety system; the US Federal Aviation Administration (FAA) was accused of failing to properly check the system before certifying the aircraft.
+
+On the evening of May 31 the passengers and crew were returning from Hanscom Field to Atlanta International Airport. Pilot Bauke "Mike" de Vries and co-pilot James McDowell each had thousands of hours' experience, and had flown together for years. They skipped over preflight checks; the NTSB found this was routine for the pair.
+
+The plane set off with the gust lock engaged. This system, which is intended to be disconnected before engine startup, locks various flight control surfaces in position on the ground. Unable to takeoff, it overshot the runway, crashing through airport equipment and a fence, before landing in a watery ravine and bursting into flames. Nobody survived.
+
+De Vries says several times "lock is on" on the voice recording, adding "I can't stop it" moments before the crash. Gulfstream had installed a mechanism to prevent the throttle fully moving when gust lock was engaged, to give pilots a clear early warning something was amiss.
+
+The NTSB found the throttle could still be pushed far enough to reach takeoff speed. The FAA had certified the system based on technical drawings. The NTSB said the FAA process was "inadequate" because there were no "engineering certification tests or analysis[...] to verify that the system had met its regulatory requirements." Gulfstream say they are working with the FAA to rectify the issue.
+
+The NTSB says it took ten seconds from noticing the problem before the crew began braking and another four seconds to power down the engines. The NTSB believes doing both within eleven seconds would have brought the flight to a halt on the runway.
+
+The lock was applied upon landing six hours earlier. The flight was carrying four passengers, including entrepreneur and philanthropist Lewis Katz, back from a fundraiser. The seventh fatality was a flight attendant. Katz had co-engineered an $88 million takeover deal for the Philadelphia Inquirer four days earlier.
+
+The Katz family later sold his stake in the paper to a business partner. Katz had hoped to boost the paper's reputation.
+
+"Complacency does not have a place in the cockpit of any aircraft", NTSB Vice Chairman Bella Dinh-Zarr said. The probe found skipped checks on 98% of the prior 175 flights the pilots undertook together. "If you're acting that way, you are just fooling yourself," said NTSB member Robert Sumwalt, who has 32 years of commercial flight experience.

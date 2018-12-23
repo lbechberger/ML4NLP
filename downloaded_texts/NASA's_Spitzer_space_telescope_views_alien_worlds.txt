@@ -1,0 +1,24 @@
+For the first time since the discovery of planets outside the solar system, light from two of the 145 confirmed extrasolar planets has been directly captured by NASA's Spitzer Space Telescope.
+
+Astronomers Dr. David Charbonneau of the Harvard-Smithsonian Center for Astrophysics and Dr. Drake Deming of NASA's Goddard Space Flight Center (GSFC), working separately on one each of the two planets used a simple technique to gather the infrared glow that the planetary bodies emit.
+
+The planets, designated HD 209458b and TrES-1, are classified as "hot Jupiter" planets. These types of extrasolar planets orbit closely around their suns, absorbing the starlight and brightly radiating in the infrared wavelengths.
+
+Using the Spitzer telescope, the astronomers first collected and measured the total infrared output from both the stars and planets. The stars alone were again measured when the planets disappeared behind them during their natural orbits. By comparing the differences between the two measurements, the scientist were able to determine how much infrared light each planet emits.
+
+"In visible light, the glare of the star completely overwhelms the glimmer of light reflected by the planet," Charbonneau said. "In infrared, the star-planet contrast is more favorable because the planet emits its own light."
+
+The data obtained indicates the planets are at least 1,340 degrees Fahrenheit, justifying the classification of "hot Jupiter". More observations from Spitzer could provide information about the planets winds and atmospheric compositions.
+
+"Spitzer has provided us with a powerful new tool for learning about the temperatures, atmospheres and orbits of planets hundreds of light-years from Earth," said Dr. Deming.
+
+"It's fantastic," Dr. Charbonneau said. "We've been hunting for this light for almost 10 years, ever since extrasolar planets were first discovered."
+
+Dr. Deming's paper on his findings appears today in Nature's online publication; Dr. Charbonneau's paper will be published in an upcoming issue of the Astrophysical Journal.
+
+The Spitzer telescope was launched August 25, 2003 and is scheduled to be de-orbited sometime in 2008. Spitzer was named for Dr. Lyman Spitzer who, in the mid-1940s, first proposed placing telescopes in space.
+
+The Harvard-Smithsonian Center for Astrophysics is located in Cambridge, Massachusetts.
+The Goddard Space Flight Center is located in Greenbelt, Maryland.
+
+NASA's Jet Propulsion Laboratory manages the Spitzer Space Telescope mission for NASA's Science Mission Directorate. Science operations are conducted at the Spitzer Science Center, Pasadena, California.

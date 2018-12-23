@@ -1,0 +1,9 @@
+Microsoft announced Thursday that it plans to release seventeen security bulletins, known as patches, to address 64 security flaws on Tuesday. Nine of the patches are deemed "critical" and eight as "important."
+
+The enormous number of security flaws addressed in the April Patch update is a record for Microsoft. The company also released seventeen security bulletins in December, but these addressed 40 flaws, only two being rated as critical; also a record is the number of flaws being addressed in the update; the most previously addressed was 49 in the October 2010 update, reports Jason Miller of Shavlik Technologies. 
+
+The April update covers security vulnerabilities in Windows 7, Windows Vista, Windows XP and various Windows Server editions, as well as versions of Office applications, Visual Studio, .NET Framework, Graphics Device Interface, Internet Explorer (IE) including IE6 (which Microsoft is seeking to discontinue) and other applications.
+
+Although Microsoft did not provide details, Microsoft said the update will address a SMB browser bug, discovered in February, that could potentially cause a denial-of-service attack, and the Windows MHTML flaw which has allowed client-side scripts to be run by an attacker in "limited, targeted attacks," Microsoft has said. 
+
+"This is a huge update and system administrators should plan for deployment," disclosed Wolfgang Kandek, CTO of Qualys.

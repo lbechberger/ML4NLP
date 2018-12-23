@@ -1,0 +1,9 @@
+At 9:00 p.m. PDT Monday (0400 UTC Tuesday), Microsoft rolled out the first stable Internet Explorer 9 (IE9) release, available in 39 languages, for Windows Vista and Windows 7. Internet Explorer is the most used web browser, responsible for 56% of webpage hits. The new version adds support for new technologies with relation to the HTML5 specification and several feature changes. The browser was released as a beta with a campaign promoting the benefits of HTML5.
+
+It includes support for SVG and the HTML5 canvas, audio, and video tags. It has a failing Acid3 score of 95/100, below Mozilla Firefox 4.0's 97/100, rating and the 100/100 in Google Chrome 10. The program is the first of its series not to run on Microsoft Windows XP. It includes a redesigned layout of the address bar and the ability to pin sites to the taskbar on Windows 7, along with several minor improvements.
+
+The browser received mixed reviews. "IE9 as a Consumer Browser â€” Not Worth It," Jason Mick, DailyTech, concluded. A study by Which? on Tuesday showed that IE9's Tracking Protection Lists, an optional anti-tracking feature, may mislead users. "We're disappointed with the way these lists work, and feel consumers who install multiple lists could be left with a false sense of security." Dr. Rob Reid, Which? Policy senior advisor, said.
+
+In a more positive review, a PC Magazine reviewer said that the positives of the new browser outweighed the negatives, and it is "a major improvement over its predecessor."
+
+The announcement comes after the company launched a campaign to get Internet Explorer 6 usage down to 1%. Microsoft delayed the Japanese release "to reduce load on network bandwidth at such a critical time" with reference to the earthquake and tsunami in Japan this past Friday.

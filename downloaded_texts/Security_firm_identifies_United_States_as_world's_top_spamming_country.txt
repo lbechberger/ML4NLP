@@ -1,0 +1,7 @@
+December 28, 2004
+
+According to research done by an anti-spam research company Sophos, the United States is the point of origin of over 42% of all spam. Trailing are South Korea with 13% and China with 8% of the world's spam. The security firm performed an audit of its honeypots to come up with the figures — a honeypot is a special system set up to attract spam or spammers in order to gauge spammer activity. 
+
+Such activity is not entirely unexpected. The United States accounts for slightly over 25% of all Internet usage, whereas South Korea and China have about 4% and 11% of the world's Internet users, respectively. Yet these percentages still point to the U.S. as being a disproportionate source for spam.
+
+The Sophos team noted the inefficacy of the CAN-SPAM act in its report — the act has been frequently criticized in the technology media as not doing enough to stem the flow of unsolicited commercial and fradulent email, and the new numbers from the research company only serve to further that claim. Indeed, the security company MX Logic reported that while compliance with the CAN-SPAM act continues to grow, the growth is not enough to stem the increasing flow of spam. Analysts blame the increase in spam on spammers' increased use of networks of zombies — computers that have been hacked into in order to send the bulk email.

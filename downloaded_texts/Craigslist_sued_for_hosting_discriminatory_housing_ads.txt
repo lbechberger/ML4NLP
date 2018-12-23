@@ -1,0 +1,17 @@
+Craigslist.com, a popular free online classifieds site, has been sued for hosting discriminatory housing ads by the Chicago Lawyers' Committee for Civil Rights Under Law Inc., a fair housing group.
+
+The housing ads cited as objectionable included such statements as "NO MINORITIES," "Requirements: Clean Godly Christian Male," and "Only Muslims apply."
+
+Stephen Libowsky, a lawyer for the housing group, said "Our goal is to have the Internet places like Craigslist treated no differently than newspapers and other media who have traditionally been posting real estate advertisements. All of the gains are going to get lost if the same rules don't apply."
+
+Craigslist CEO Jim Buckmaster conceded "We admit that one or two postings per 100,000 are discriminatory" but explained that Craiglist's 19 employees could not physically screen the 8 million new ads posted each month. He continued, "Instead, we've done something much more powerful and effective, in providing our users with a flagging system whereby problematic ads are promptly removed by users themselves." Buckaster claimed the "NO MINORITIES" ad was removed within two hours.
+
+Buckmaster wrote on the site that, "Though well-intentioned, this lawsuit misguidedly demands that we regress to primitive, mistake-prone, and wholly inadequate methods, methods which would actually be less effective in catching discriminatory ads than what we have in place currently, and which would vastly reduce the number of legitimate non-discriminatory ads that the site could process."
+
+He continued, "Ironically, if this lawsuit were to succeed the net effect would be to deal a double blow to civil rights - by significantly reducing access to equal opportunity housing, and by undercutting our fundamental free speech rights - thereby doing a great disservice to the very persons these lawyers purport to represent."
+
+Buckmaster also said "It is our understanding that the law is very clear to the effect that sites like Craigslist cannot be held legally liable for the content of postings submitted by end users." This claim appears based upon Section 230 of the Communications Decency Act which states that "No provider or user of an interactive computer service shall be treated as the publisher or speaker of any information provided by another information content provider."
+
+Under section 7b of the web site's Terms of Service agreement, users are not allowed to post an ad "that violates the Fair Housing Act by stating, in any notice or ad for the sale or rental of any dwelling, a discriminatory preference based on race, color, national origin, religion, sex, familial status or handicap (or violates any state or local law prohibiting discrimination on the basis of these or other characteristics)".
+
+ --&gt;

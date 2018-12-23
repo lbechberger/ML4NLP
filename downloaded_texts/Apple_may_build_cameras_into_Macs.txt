@@ -1,0 +1,9 @@
+According to a recent patent published by Apple Computer, Inc., future Mac laptops will come with built-in video cameras. Ostensibly, they would be used with the company's iChat AV video conferencing software, which allows for four-way video conferencing, and up to ten-way audio conferencing.
+
+The patent reveals plans for a laptop with a swiveling lid, which rotates on the base. The camera, or, as the patent describes, "data capture device," would be placed on top of the lid of the laptops, where it would "secure the lid to the base," according to the patent. 
+
+The patent is not unclear; it is firmly in the direction of developing a video camera built into a laptop.
+
+However, it is not entirely focused on laptops; a quote from the patent says it all: "For example, although the invention is primarily directed at a camera latch for a laptop computer, it should be noted that concepts disclosed herein may also be applied to other electronic devices, including but not limited to PDAs, music players, mobile phones and the like or I/O devices such as monitors, televisions and the like."
+
+The camera could be configured to produce either streaming video, video stills, or images taken at intervals, and the camera would most likely have a built-in microphone.

@@ -1,7 +1,6 @@
 """ Uses the scripts contained within explorer.py to generate training and test data."""
 from knowledgestore import ks
 import pandas as pd
-import re
 import time
 
 all_article_uris = pd.read_csv("all_article_uris.csv")

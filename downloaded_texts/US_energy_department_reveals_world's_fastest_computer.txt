@@ -1,0 +1,7 @@
+The US Department of Energy yesterday unveiled the IBM Roadrunner, the world's fastest computer. The computer, which is designed to conduct virtual tests for nuclear weapons, is able to carry out 1,000 trillion (or 1 quadrillion) calculations in one second.
+
+The machine cost USD100 million to build and works at twice the speed of Blue Gene, which is now the world's second fastest computer.
+
+“Roadrunner will not only play a key role in maintaining the U.S. nuclear deterrent, it will also contribute to solving our global energy challenges, and open new windows of knowledge in the basic scientific research fields,” said Samuel Bodman, the US secretary of energy.
+
+Roadrunner, which was produced by the US Government in collaboration with IBM, can be found at the Los Alamos National Laboratory.

@@ -1,0 +1,15 @@
+Recent tests have shown that an inexpensive drug may be able to kill cancer cells in humans. Dichloroacetate, a drug generally used to treat rare metabolic disorders, has shown the potential to assist in the treatment of brain, lung, and breast cancers, researchers at the University of Alberta in Edmonton, Canada say. 
+
+Dr. Evangelos Michelakis of the University of Alberta in Edmonton, Canada found that that DCA causes tumor regressions in animals with human cancers. Testing showed that DCA attacked cancer cells but did not attack healthy cells. 
+
+The researchers and the Alberta Cancer Board and Capital Health do not advise the use of DCA to treat cancer yet, as clinical trials for the drugs use to treat cancer have not been performed yet. 
+
+
+Unlike healthy cells, cancerous cells do not convert food molecules into energy in the mitochondria. Instead, they rely on a process 
+known as glycolysis, which takes place in the main body of the cell, while the mitochondria are "shut down", researchers believe possibly due to the lack of oxygen supply to cells in the middle of a tumor.
+
+This means that another key function of the mitochondria - to activate an abnormal cell's self-destruct mechanism, apoptosis - is also blocked. 
+
+When Dichloroacetate (DCA) enters a cancer cell, it restarts the mitochondria which in turn activate apoptosis, and the cancerous cell destroys itself.
+
+DCA is known to be relatively safe, although pain, numbness and gait disturbances may occur. The drug is also expected to be cheaper to manufacture than other drugs since there is no patent for it.

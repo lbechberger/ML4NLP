@@ -1,0 +1,12 @@
+team1=Bayern Munich|
+score=2â€“1|
+team2=Wolfsburg|
+report=Match Report|
+goals1=Klose Ribery |
+goals2= Dejagah Baier|
+stadium=Allianz Arena, Munich|
+attendance=69,000|
+referee=Knut Kircher 
+Bayern Munich beat Wolfsburg 2-1 to remain at the top of the Bundesliga table. Franck Ribery scored a goal and assisted on Miroslav Klose's goal as Bayern won for the 1st time in 4 Bundesliga games.
+
+Bayern Munich's next game is against Sporting Braga in UEFA Cup action.

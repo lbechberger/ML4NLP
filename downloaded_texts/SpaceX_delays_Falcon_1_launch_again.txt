@@ -1,0 +1,5 @@
+SpaceX Corporation has postponed the launch of the maiden flight of their Falcon 1 rocket again at their Kwajalein launch facility. Although not as damaging as the previous delay on November 11, this is certainly a significant set back for Elon Musk, the founder and CEO of SpaceX.
+
+A full engine test was conducted on the rocket, and the launch pad equipment which holds the rocket on the launch pad after engine firing seemed to work as planned. This safety equipment is designed to keep the rocket from causing damage or being destroyed in the event that some equipment malfunction occurs immediately after the rocket engines start. Under similar circumstances with other rockets the entire rocket together with its payload would have been destroyed due to a computer report of malfunction.
+
+The exact reasons for failure were not disclosed by SpaceX, but Elon Musk said on his web site, "I will post a longer update next week, after we have enough time to finish forensics of recent events and formulate next steps."

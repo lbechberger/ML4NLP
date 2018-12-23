@@ -1,0 +1,11 @@
+California, Italy and New York are the first to bring litigation against Sony BMG's digital rights management (DRM) software found in at least 20 music discs released by Sony. The software automatically installs after the user agrees to a end user license agreement (EULA) before the music disc can be played, and includes a rootkit that can create vulnerabilities in the user's Windows computer. One trojan horse exploiting the hole has already been discovered online.
+
+The California lawsuit, filed on November 1, claims that the software violates the Consumer Legal Remedies Act, the Consumer Protection Against Computer Spyware Act, and the California Unfair Competition Law. The upcoming lawsuit in New York would seek restitution for consumers nationwide. 
+
+Mathew Gilliat-Smith, the CEO of First 4 Internet, the company that created the software, claims it is "benign content." Meanwhile, in an NPR interview, a Sony BMG Music Entertainment Vice President said, "Most people, I think, don't even know what a rootkit is, so why should they care about it?"
+
+Sony and First 4 Internet have released "patches" and uninstall kits, after programmer Mark Russinovich discovered the hidden files from the rootkit. However, these uninstall kits are only installable online through an ActiveX application, a technology many security experts advise users to deactivate due to its high execution privileges on host computers.
+
+In addition to questions of legality, the DRM software has come under fire from media rights activists and even artists who unwittingly found their albums more stringently protected than they approved of. Furthermore, Sony's DRM software "phones home" each time one of their CDs is played. The license agreement does not reveal this behavior, nor does it acknowledge the existence of the rootkit itself.
+
+Thomas Hesse of Sony BMG recently told the San Francisco Chronicle that 60 percent of Sony BMG CDs released in the United States currently have copy protection measures, and that they aim to hit 100 percent by early 2006.

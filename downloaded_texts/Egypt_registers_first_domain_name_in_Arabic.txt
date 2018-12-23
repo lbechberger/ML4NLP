@@ -1,0 +1,11 @@
+Egyptian Communication and Information Technology Minister Tarek Kamel announced on Sunday that the country had filed an application for the ".misr" (".Egypt") top-level domain (مصر‎ in Arabic) and that registrations for second-level domains would begin as of midnight (2200 UTC) at an Internet conference sponsored by the United Nations. According to Internet Corporation for Assigned Names and Numbers (ICANN) chief executive Rod Beckstrom, six countries have applied for top-level domains in three languages since the Internet coordinator opened up the use of non Latin scripts yesterday.
+
+"Now we can really say that Internet will speak Arabic," said Kamel at the start of the Internet Governance Forum (IGF)'s fourth conference at Sharm el-Sheikh.
+
+The expansion of Internet domain names with Internationalized Domain Names (IDN), containing non-Latin characters is the fruit of six years of discussions and technical work, resulting in the ICANN voting on October 30 to allow the new domain names. It has been called the move the "biggest change" to the Internet "since it was invented 40 years ago".
+
+"Over half the Internet users around the world don't use a Latin-based script as their native language," commented Rod Beckstrom, president of the ICANN. "IDNs are about making the Internet more global and accessible for everyone."
+
+The IGF conference will address access to the Internet, notably local content reflecting different cultures and languages. Other key topics are cybercrime and safe Internet usage. The theme of the conference is "Creating Opportunities for All", reflected in a speech by the United Nations Undersecretary-General for Economic and Social Affairs, Sha Zukang. "The voice of developing world must be heard," he said.
+
+ICANN, a non-profit, private organisation, currently limits the application for new domains to national governments or territories, although domain names will be available to individuals at a later date via national registries.

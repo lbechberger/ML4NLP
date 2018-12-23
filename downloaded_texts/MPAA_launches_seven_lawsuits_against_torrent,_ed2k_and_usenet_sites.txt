@@ -1,0 +1,11 @@
+The Motion Picture Association of America (MPAA) has launched seven separate lawsuits against Internet sites in its latest anti-piracy crackdown. The MPAA claims the targeted sites had been "facilitating the distribution of copyright works".
+
+The MPAA has commenced legal action against the following BitTorrent tracking sites—isohunt.com, bthub.com, and torrentbox.com which are all owned by the same person; torrentspy.com; niteshadow.com as well as ed2k site ed2k-it.com and Usenet search engines—nzb-zone.com, binnews.com, and dvdrs.net.
+
+The lawsuits mark the first time that the MPAA has targeted Usenet related sites; in the past the MPAA has only brought action against sites who actually hosted copyrighted material or who assisted in the running of the networks used to distribute it.
+
+Generally, the Digital Millennium Copyright Act (DMCA) limits the liability of search engines for providing links to unauthorised copies, so long as the site operators do not know the content is infringing, are not making profit from the distribution of copyright works, and remove links when requested by copyright owners.
+
+It is thought that the DMCA limitations will not apply to the sites targeted as they are allegedly filled with almost nothing but copyrighted movies, software, and music. 
+
+Isohunt.com, one of the search engines targeted, provides a copyright statement claiming that "We respect copyright, and will filter such P2P links at your request".

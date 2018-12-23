@@ -1,0 +1,11 @@
+Engineers at China's Yellow Sheep River have developed a desktop computer, called a Municator, which costs only â‚¬123 ($150 US). The machine is designed to help bridge the digital divide in China and to expand China's small domestic semiconductor industry. Its development has been heavily subsidized by local governments.
+
+The Municator measures 14.5 x 18 x 3.7 cm. (5.7 x 7.1 x 1.5 in.), and weighs 0.65 kg. (1.4 pounds). It is expected to use an existing TV as a monitor. The operating system is a GNU/Linux distribution, known as Thinix 3.0, which is developed by YellowSheepRiver Inc. itself and overseen by the Chinese government for security reasons. The Municator was shown last week at the 2006 CeBIT Fair in Hannover, Germany.
+
+Video coverage from CeBIT 2006 speculated that the Municator will include applications such as: Firefox for web browsing, Thunderbird for e-mail, Gaim for instant messaging, Skype for VoIP, Red Office (99 percent compatible with Microsoft Office and based on Open Office) for Linux for word processing, and MPlayer for audio/video playback. The Skype application for VoIP is currently only available from Skype on i386-32 processors under Linux, but CeBit's video briefly shows a beta version of Skype running on the Municator's screen.
+
+The 64-bit Godson 2c 400-800 MHz CPU used in the machine has a MIPS-like instruction set, and is roughly as fast as a 500-mHz Pentium III. The Godson II is made exclusively in China, and consumes relatively little power for its speed in comparison to x86 Intel and compatible AMD chips. A similar Chinese laptop project called the Longmeng also uses the Godson II.
+
+No version of Microsoft Windows supports the Godson II, and due to the independent nature of the Chinese government, the Municator is unlikely to ever run Microsoft Windows or its applications. Banners at CeBIT 2006 proclaim "Say No To Wintel Try Now!"
+
+The MIT Media Lab has a similar initiative to develop an inexpensive Linux machine, known as the $100 laptop, which seeks to begin production by the end of 2007.

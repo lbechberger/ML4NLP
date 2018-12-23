@@ -1,0 +1,11 @@
+NASA has announced that the launch of Space Shuttle Atlantis, mission STS-122, will once again be postponed, this time until late January or early February. The reason behind the delay is believed to be a faulty connector that caused erratic fuel sensor readings during the previous two launch attempts in December.
+
+Space shuttle program manager Wayne Hale gave January 24 as the earliest possible launch date, but stated that February would be a more realistic expectation. "I think it's much more likely that we'll be going to be ready somewhere in the February 2 to 7 time frame, given that we don't have any more findings as we go through our testing," Hale stated.
+
+The initial launch date for the shuttle was December 6, but failed fuel gauges in the external tank forced the launch to be moved to December 9. The fuel sensors are part of a system to prevent the shuttle from running on an empty tank, which could cause pumps in the engine of break and possibly trigger a disastrous explosion. 
+
+When the problem reoccurred, NASA ran a fuel test, which led them to believe the problem lied in the faulty connector. The connector was then removed from the tank and taken to Marshall Space Flight Center in Huntsville, Alabama, where it is currently undergoing extensive analysis and modification. The new connector is scheduled to be installed by January 10.
+
+"What we're doing ... is addressing what we think is the most probable cause, and there's a lot of information that points to that connector and that this is the right design fix," deputy space shuttle program manager John Shannon said. "We're fairly confident that if the problem is where we think it is, that this will solve that."
+
+The main objective of mission STS-122 is to deliver the European science laboratory Columbus to the International Space Station.

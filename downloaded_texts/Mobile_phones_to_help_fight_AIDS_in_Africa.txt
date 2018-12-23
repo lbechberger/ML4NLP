@@ -1,0 +1,11 @@
+Mobile phones are to fight HIV/AIDS in Africa. Health-care workers will be able to report current health data from the field to a central database using their mobile phones, under a project to be launched with the help of leading phone companies and the U.S. government.
+
+The US$10 million project, called “Phones-for Health”, was announced on Tuesday at the 3GSM World Congress in Barcelona. 
+
+The software used in this project is loaded on to a standard handset developed by Motorola. The information will be transmitted with the help of the standard GPRS mobile data communication protocol or, if this is not available, by the ubiquitous SMS.
+
+Africa lacks fixed-line telephone as well as Internet connections. Most often people use pen and paper to record the spread of disease. However, today more than 60 percent of people living in Africa have mobile phone coverage and the number of areas to have mobile phone coverage is expected to increase up to 85 percent by 2010. This data was provided by the GSM Association, which is a global trade group that represents some of the leading operators of mobile telephony.
+
+The scheme, under which the project will be launched, was designed after the success of another project launched earlier in Rwanda. It will focus mainly on fighting HIV/AIDS in 10 African countries. The first to enter the program is South African mobile phone operator - MTN. 
+
+The new scheme hopes in long-term to be spread from Africa to Asia so to turn its attention towards other diseases like malaria and tuberculosis.

@@ -1,0 +1,41 @@
+The Frugalware Development Team describes ­­Frugalware as a general purpose Linux distribution, designed for intermediate users who are not afraid of text mode. Frugalware also plans to offer a live CD with desktop options, to be developed by one of its teams. A live CD enables running the Linux software on most compatible Intel and AMD chipset architectures, without having to partition a drive. 
+
+ A freelance journalist writing for Wikinews interviewed the founder of Frugalware Linux, Miklós Vajna. 
+
+Wikinews: Frugalware is a slack distribution at present. Are there plans for developing binary package management platforms of it?
+
+Miklós Vajna: Our package manager is called pacman, and its primary purpose is to install binary packages. If you want to install packages from source, you can use our "repoman" tool.
+
+Wikinews: What are your visions for the future of Frugalware, do you plan to globally distribute it as a product, and would you consider allowing a major corporation to sponsor your efforts?
+
+Miklós Vajna: The second. Frugalware is free, but maintaining it needs hardware, mirrors, money. We got several donations already (build servers), and we continuously need them. If a corporation want to sponsor us, I think that is totally O.K. :-)
+
+Wikinews: What is Arch Linux in relationship to your project? And how do their efforts fit into your game plan?
+
+Miklós Vajna: The common [thing] in Arch Linux and Frugalware is the package manager. (To be strict: nothing else.) Developing our package manager is a common effort. If anyone [is] interested in its development, he/she can subscribe to the pacman development mailing list.
+
+Wikinews: I've successfully installed Frugalware, OpenSUSE, and WinXP on the same box. Do you see a lot of people doing this sort of thing in the future?
+
+Miklós Vajna: We support having more than one operating system on a single machine — though this matters only in case Frugalware is the last installed operating system. We do not have any statistics about what operating systems do other people use besides Frugalware, if they have more than one.
+
+Wikinews: Is it possible that PearPC and Frugalware may have a relationship to distribute the PearPC Emulator with Frugalware in the future?
+
+Miklós Vajna: It is already available .
+
+Wikinews: What kinds of software might you include with further editions of Frugalware? Is Muse part of the base package for electronic musicians, or will you have those sorts of things?
+
+Miklós Vajna: No . It is not available at the moment. You can request a package by filing a feature request to our Bug Tracking System, at .
+
+Wikinews: Is the autoupdating feature of Frugalware unique to Frugalware and perhaps a keystone to future developments?
+
+Miklós Vajna: I have never tried other autoupdating features. What one can see is that upgrading even from the previous stable release — which means installing 6 months of update at once — requires only a few tricks, and these are documented. So it works as it should, and we always pay attention not to break this great feature.
+
+Wikinews: What can new users of Frugalware do to test and relay infotmation back to the developers through the correct channels?
+
+Miklós Vajna: We have released stable versions two times a year. There are testing releases every two months. If one would like to help us, then download these releases, test them, and if something is broken, then file a bug report to the BTS (mentioned above already).
+
+ Frugalware has new X Windows video drivers that provide a major speed improvement over available patches for previous editions of Linux. Alex Smith has been working on them as a developer. 
+
+ In addition, the PearPC emulator mentioned above, which comes with the package manager, may, with proper tuning and installation of a legal copy of Mac OSX, enable many Intel and AMD Frugalware users to use the Apple OS on their desktops. Alex Smith is also a contact person for the PearPC project, which can also be found in irc://irc.freenode.net and at http://www.pearpc.net. 
+
+ The official release time of the latest edition frugalware-0.4 was Mar 30 07:42:21. The developers can be reached for comment through IRC at #frugalware in the irc.freenode.net network.

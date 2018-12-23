@@ -1,0 +1,11 @@
+April 6, 2005 
+ 
+Google Maps has incorporated 
+satellite images
+as a feature in their Beta Google Maps service. Now users can opt for a satellite image after they search for an address or driving directions, by clicking the satellite link at top left of the page. 
+
+Satellite images are provided by Keyhole Corp. which was acquired by Google six months ago. Satellite images will be at least 6 months old. According to John Hanke, Keyhole's general manager, nobody will be able to read a license plate on a car from an image or see what an individual doing at the time it was taken.
+
+Google Maps still only covers road maps in North America.
+
+=

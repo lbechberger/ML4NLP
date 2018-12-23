@@ -1,0 +1,7 @@
+A routine upgrade of anti-virus software has disabled tens of thousands of PCs in China, according to local media reports. The faulty upgrade caused Symantec's Norton AntiVirus software to remove critical Windows XP system files, the reports state.
+
+The system files moved or deleted by the software include netapi32.dll and lsasrv.dll, according to Sohu News. The software incorrectly identifies the files as being infected with the Backdoor.Haxdoor trojan. With these files removed, Windows XP will no longer start up, and even the system safe mode no longer functions. Only Chinese-language versions of Windows appear to be affected so far.
+
+The Norton AntiVirus application is part of Norton's 360 suite and it is pre-installed in many PCs sold in China, indicating that the problem could potentially affect millions of users.
+
+=

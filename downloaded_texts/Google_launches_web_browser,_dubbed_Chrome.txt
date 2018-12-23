@@ -1,0 +1,8 @@
+Google announced on Monday that it is launching an open source web browser, dubbed Chrome, to compete with browsers such as Internet Explorer from Microsoft, Firefox from Mozilla, and Safari from Apple.
+
+In a post on the company's official blog, Sundar Pichai, vice president of product management, and Linus Upson, an engineering director at Google said Chrome would represent a "fresh take on the browser" and that it believes Chrome "can add value for users and, at the same time, help drive innovation on the web."
+
+
+Google chose to announce the launch of Chrome through a comic book, through which the company hoped to help tell the "story" of the web browser. Google said the browser supports a new JavaScript engine more advanced than is currently available in competing web browsers on the Windows platform, and said it was "hard at work building versions" for Mac and Linux.
+
+The browser is said to be based on the WebKit framework, although Google only went so far as to say that they had "used components from Apple's WebKit and Mozilla's Firefox" in the blog entry announcing Chrome.

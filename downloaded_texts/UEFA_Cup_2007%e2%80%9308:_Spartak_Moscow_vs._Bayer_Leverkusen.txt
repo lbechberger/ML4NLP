@@ -1,0 +1,12 @@
+team1=Spartak Moscow|
+score=2–1|
+team2=Bayer Leverkusen|
+report=Match Report|
+goals1=Pavlyuchenko Pavlyuchenko Mozart |
+goals2= Kießling Freier|
+stadium=Luzhniki Stadium, Moscow|
+attendance=23,000|
+referee=Kristinn Jakobsson 
+Spartak Moscow defeated Bayer Leverkusen 2-1 in UEFA Cup action today. 
+
+Spartak Moscow opened the scoring when Pavlyuchenko fired his penalty shotdown the middle goal after Stefan Kießling fouled Dmitri Torbinskiy. Adler brought down Ukraine midfielder Maxym Kalynychenko. Mozart scored on the issuing penalty. Freier cut the lead in half but the Bayer Leverkusen were unable to find an equaliser.

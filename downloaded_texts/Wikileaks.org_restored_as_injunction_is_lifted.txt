@@ -1,0 +1,9 @@
+The website wikileaks.org has been brought back online following the lifting of a court injunction forcing the site to be taken down. According to a Wikileaks press release from when the site was taken offline, the injunction stated that "Dynadot [Wikileaks' host] shall immediately clear and remove all DNS hosting records for the wikileaks.org domain name and prevent the domain name from resolving to the wikileaks.org website or any other website or server other than a blank park page, until further order of this Court."
+
+Wikileaks has described the lifting of the injunction as a "blow to Bank Julius Baer." Wikileaks also claims that Judge White lifted the case because he realized the injunction "trampled the First Amendment."
+
+The injunction, which a Wikileaks user described as 'blind' and 'unlawful' was granted in the California Northern District Court in San Francisco, California. The case was regarding several documents allegedly obtained from a whistleblower of the Bank Julius Baer &amp; Trust.
+
+Matt Zimmerman from the Electronic Frontier Foundation (EFF) has said that "We're [the EFF are] very pleased that Judge White recognized the serious constitutional concerns raised by his earlier orders." He continued by saying that "attempting to interfere with the operation of an entire website because you have a dispute over some of its content is never the right approach. Disabling access to an Internet domain in an effort to prevent the world from accessing a handful of widely-discussed documents is not only unconstitutional - it simply won't work."
+
+In the first press release from Wikileaks after the injunction was removed, Wikileaks started by just saying “Wikileaks wins :),” followed by a series of web links. Wikileaks did, however, release more information in a future press release.

@@ -1,0 +1,19 @@
+Software giant Microsoft's chief lawyer Brad Smith claimed in an interview published in the magazine Fortune on Monday that open-source software products violate 235 of Microsoft's patents. The main transgressors are claimed to be Linux (107 patents) and OpenOffice.org (45), with e-mail programs infringing 15 patents. Microsoft wants royalties to compensate for the patent breaches.
+
+According to Microsoft's Vice-President of intellectual property and licensing, Horacio Gutierrez, the company wants to negotiate with the open-source companies rather than sue them. "If we wanted to litigate we would have done that a long time ago. Litigation is not an effective way of going about solutions," Gutierrez said. According to him, Microsoft has over the last years tried to work towards a "constructive" solution to the alleged problem of patent violation.
+
+Microsoft in the past has used the strategy of cross-licensing to get royalties from companies who infringe their patents, for example in their deal with Novell. On a company blog, Novell reiterated that their deal "is in no way an acknowledgment that Linux infringes upon any Microsoft intellectual property."
+
+"We don't think that customers will want to continue on without a solution to the problem," Gutierrez said about Microsoft's approach to guaranteeing companies that they won't get sued because they use the allegedly patent-infringing Linux operating system.
+
+The upcoming third version of the GPL licence, the licence under which Linux is released, will prohibit Linux distributors to agree to patent royalty deals. Microsoft called these "attempts to tear down the bridge between proprietary and open-source software that Microsoft has worked to build with the industry and customers."
+
+A related U.S. Supreme Court ruling from April 30th showed how software patents can be subject to court challenges; basically, if the innovations patented are "obvious", the patent is weakened. Joe Lindsay, information officer for a mortgage company, pointed out that the Unix code that Linux is based upon preceded Microsoft Windows, which might also be a reason for some patents to be invalid.
+
+Red Hat, the biggest Linux distributor, said in a statement on Monday:
+
+
+Larry Augustin, former CEO of a company called VA Linux (now VA Software), responsible among other things for launching SourceForge.net, an open-source software development community, posted a message on his blog under the title "It's Time for Microsoft to Put Up or Shut Up":
+
+
+According to the Fortune report, more than half of the Fortune 500 companies are estimated to use Linux in their data centers.

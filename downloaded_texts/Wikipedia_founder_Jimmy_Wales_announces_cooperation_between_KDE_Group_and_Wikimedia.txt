@@ -1,0 +1,7 @@
+A co-operation between the KDE group - makers of a free desktop for Linux - and the Wikimedia Foundation has been announced at the LinuxTag Conference in Karlsruhe. They intend to build a protocol which will make it possible to access Wikimedia project's data from any application, but especially from the KDE suite.
+
+The KDE Group will try to integrate some of the applications from the package with Wikimedia data. For example, AmaroK, media player, will use Wikipedia data to show information about music being played at the moment. Some other applications, including chemical database Kalzium, a database of information about the sky KStars and office suite KOffice will use data from Wikipedia, or from its sister projects.
+
+It will be based on SOAP/WSDL technology, which is already used by the Google API. It could be used on almost every platform and programming environment.
+
+It is also possible to include the Wikipedia archive in some of KDE's CD editions to make it possible to use the data from Wikipedia on machines without an internet connection.

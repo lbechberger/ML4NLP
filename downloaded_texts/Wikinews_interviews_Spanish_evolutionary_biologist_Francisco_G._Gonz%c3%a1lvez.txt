@@ -1,0 +1,19 @@
+In a study published on October 29, Spanish researchers studied Singapore rhododendron interaction with ants. The researchers discovered that the flower produces substances to attract weaver ants to drive away the smaller Nomia bees, which are a worse pollinator than larger carpenter bees. The ants don't drive away the larger bees, which pollinate the flowers and visit them more often as they get better.
+
+Today, Wikinews interviewed Spanish evolutionary biologist Francisco G. Gonzálvez, one of the lead researchers of this study.
+
+ What prompted your curiosity in the rhododendron flowers and bees?
+
+::Francisco G. Gonzálvez: I am an evolutionary biologist interested in how ambush predators on flowers, such as crab spiders, praying mantises or ants, can modify pollinator-plant interactions. By doing field observations in Singapore I realized that the aggressive weaver ant, Oecophylla smaragdina, spent a lot of time on rhododendron flowers causing different responses in their floral visitors. While the presence of the weaver ants on flowers deterred small floral visitors, large carpenter bees were unaffected by the presence of the ants. Since then we conducted a number of experiments and observations to elucidate the role of the weaver ants, flowers visitors and the plant species in this complex system. 
+
+ What activities did the study involve?
+
+::Francisco G. Gonzálvez: Mostly the study involved many hours fieldwork. We quantified bee visit rates at plant with and without ant nests, assessed the pollination effectiveness of the different flower visitors, examined the association between weaver ant presence ant fruit an seed set and finally we tested whether weaver ants were attracted to flowers. Additionally we developed a simple optimal-foraging model and compared its prediction with observed patterns. 
+
+ What was the study timeline? What activity took the most time and attention?
+
+::Francisco G. Gonzálvez: The experiments and observations in field were conducted from April to June 2010 in MacRitchie Reservoir, Singapore. However, the activity that took most time and attention was to determine pollen production per flower in order to evaluate pollination effectiveness of the floral visitors. We spent almost two months counting pollen grains under a microscope. It was definitely the most tedious part of our work.
+
+ What technology was involved in the study?
+
+::Francisco G. Gonzálvez: Basically it was an observational study so we did not use complex technology. Probably the most sophisticated technology we used was the microscope under which we counted pollen grains.

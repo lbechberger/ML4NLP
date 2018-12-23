@@ -1,0 +1,7 @@
+The body’s immune system is less effective at quashing disease than it could be - but if it were better the immune system might do more harm than good, according to new research by Michael Deem and colleagues of Rice University in Houston.
+
+The immune system has apparently evolved to be mildly inefficient so that it achieves a balance between quick response to disease and decreased probability of autoimmune disease, a condition in which the immune system attacks healthy tissue.
+
+The authors drew their conclusions from a model of the dynamics of antibody evolution. Their simulations show that while there are mechanisms that would allow the immune system to develop antibodies that respond faster and more strongly against invading pathogens, those mechanisms would also create antibodies that are likely to attack the body’s own healthy cells. The model also bolsters controversial suggestions that chronic infections could lead the immune system awry, ultimately resulting in rheumatoid arthritis or other autoimmune ailments.
+
+The study will be detailed in a forthcoming issue of the journal Physical Review Letters.

@@ -1,0 +1,7 @@
+A tiny pneumatic hand, with the ability to grasp objects smaller than a millimeter across has been developed by Yen-Wen Lu and Chang-Jin Kim of UCLA's Mechanical and Aerospace Engineering Department.
+
+The researchers developed the microhand, which has four fingers built of minuscule silicon segments and polymer-balloon joints, to have a firm but gentle grip to facilitate manipulating tiny, delicate objects. 
+
+The hand opens and closes when the balloons in the joints are inflated and deflated. Because it is constructed of inert materials and is operated pneumatically rather than electronically, the micro-hand can operate in air or water, giving it the ability to grasp small biological samples which tend to be moist or submersed in a liquid environment.
+
+Lu and Kim presented their robotic hand in the article "Microhand for biological applications", published October 16 in the American Institute of Physics journal Applied Physics Letters.

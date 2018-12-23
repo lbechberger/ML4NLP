@@ -1,0 +1,5 @@
+The network run by the file sharing program WinMX, as well as the WinMX homepage, has become the first casualty of a Recording Industry Association of America (RIAA) crackdown on file-sharing programs.
+
+In mid-September, the RIAA sent Frontcode Technologies a cease and desist letter asking them to implement filters to make it impossible for users to download copyrighted material from their site, or shut down. Frontcode seems to have shut down the network for now. 
+
+Earlier this year, the U.S. Supreme Court decided that maintainers of a network can be held responsible to the content shared on P2P networks.

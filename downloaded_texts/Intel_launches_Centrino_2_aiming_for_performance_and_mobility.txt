@@ -1,0 +1,5 @@
+After the launch of Intel Atom for low-price PCs during the 2008 COMPUTEX Taipei, Intel globally unveiled the Centrino 2 Processor Technology (formerly codenamed "Montevina") products for laptops yesterday July 15.
+
+This Centrino 2 continues support for features on the earlier-released 45 nanometer (45nm) "Penryn" processor, and implements enhanced security and management features to the Vpro version. "HD-to-Go" for mobile entertainment and "802.11n" for wireless networking were embedded into this new processor technology. Due to the difference on networking infrastructure in several nations, the WiMAX feature will be added in Europe and North America before this December.
+
+According to Intel Corp., wireless network transmission with 802.11 draft-N feature will be up to 450 Mbps, it delivered five times the speed and twice the range of older 802.11a/g technology in this processor technology. In addition, Intel Centrino 2 also provided the horsepower and battery life for mobile entertainment and mobile business.

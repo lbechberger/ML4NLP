@@ -1,0 +1,11 @@
+Lead programmer of Microsoft Word, Joe Friend, wrote on his blog that the upcoming version of Microsoft Word (which will be a part of Microsoft Office 2007 suite) will have blog editing and publishing functions.
+
+Friend said: "When I write a blog post using my blog providers web-based editor I miss some of the familiar Word features that I've come to rely on, specifically background spelling (those little red squiggles) and autocorrect. These features keep me from making stupid mistakes."
+
+Friend also said that Word 2007 will not generate unnecessary HTML code. "Bold become , Italic becomes , Heading 1 become , Quotes become and on it goes."
+
+Previously, critics of Microsoft Word's HTML generation capabilities held that the application generated unneeded and bulky HTML code.
+
+Graphic files that users would use in blog entries will be converted to the PNG format, which includes support for alpha channel (i.e. partial) transparency.
+
+To create new or publish post, there will be three mouse-clicks: to create File → New... → New Blog Post); to publish File → Publish → Blog.

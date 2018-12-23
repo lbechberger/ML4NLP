@@ -1,0 +1,13 @@
+Sony's recently introduced Playstation Portable has proved popular with curious geeks who discovered various talents hidden within the new handheld video console.
+
+The biggest 'hack' so far has been the manipulation of a web browser embedded within the PSP game 'Wipeout Pure', which can be easily coaxed into accessing the majority of Internet via a suitable portal. Jonathan Terleski was able to monitor the digital conversation held between his PSP and Sony's website when the browser in his game 'Wipeout Pure' would try to download new software from Sony via the Internet. Using a suitably set up DNS server, Terleski configured his handheld console to access his own custom PSP portal, instead of Sony's website, and then invited other owners to use his gateway to the web. 
+
+From this discovery, Robert Balousek later created a web based IRC interface that allows people to talk to each other and hold conversations in real time via the Internet on their PSP consoles. According to Reuters, his IRC website has to date been used by as many as 100,000 visitors and Balousek now plans to introduce a web based interface to the AOL instant messaging network for PSP users.
+
+Other notable recent 'hacks' include reading ebooks and comics and watching pre-recorded television shows, taken from a TiVo, on the Sony PSP.
+
+None of the 'hacks' have yet employed writing custom software for the device. So far, most are spin-offs of Jonathon Terleski's web browser hack. Other hacks, like the ebook reader and television show viewer, are made possible through use of the PSP's built in tools for viewing video and images. Sony has not yet released an SDK which would allow end-users to write 'homebrew' software, therefore hackers are tied to manipulating software included with the PSP or available through the games purchased separately.
+
+Speaking to Wikinews, Jacob Metcalf, who documented the web comic's hack on his website, explained his motivation: "Web comics are already designed for on-screen reading and they have some of the same audience as people who play games - lots of the most popular web comics are about gamers, like PVP and Penny Arcade."
+
+He added: "I do wish that [Sony] would come out with an actual web browser like the Dreamcast had. South Korea is going to get a real web browser and I have a feeling in my gut that there is going to be Internet software for the PSP like a web browser and email announced at E3 this year."

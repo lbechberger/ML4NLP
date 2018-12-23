@@ -1,0 +1,12 @@
+Eben Moglen, Columbia University Law Professor, will head the new
+Software Freedom Law Center (SFLC). An initial 4 million dollars has been provided by Open Source Development Labs (OSDL) to fund the project.
+
+The law center will provide free legal service for open source projects and developers. In 2004 OSDL established a separate $10 million Linux Legal Defense Fund providing legal support for Linus Torvalds, Linux kernel creator and end user companies subjected to Linux-related litigation by the SCO Group. The new law center will not be affiliated with the OSDL.
+
+"This is about taking care of the goose that laid the golden egg and not letting wolves come in the middle of the night and steal it away," Moglen said during a press conference. "This is a legal firm not involved so much in litigating and defending as it will be for counseling and advising and nurturing non-profits and to prevent millions of dollars in litigation."
+
+Moglen will serve as chairman and director-counsel of the non-profit organization. Also on board as directors are: Lawrence Lessig, law professor at Stanford Law School; Daniel Weitzner, director of the World Wide Web Consortium's technology and society activities; and Diane Peters, general counsel at the OSDL. Daniel Ravicher, executive director of the Public Patent Foundation, will help manage as legal director.
+
+Moglen, one of the world.s leading experts on copyright law as applied to software, will run the new Law Center from its headquarters in New York City. The Law Center will initially have two full-time intellectual property attorneys on staff and expects to expand to four attorneys later this year. Initial clients for the Law Center include the Free Software Foundation and the Samba Project.
+
+Other services provided by the SFLC include: asset stewardship, to avoid intellectual property claim conflict; license review and compatibility analysis; legal consulting and lawyer training.

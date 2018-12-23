@@ -1,0 +1,19 @@
+In an exclusive report, Wikinews has learned that on Wednesday two users, one anonymous and the other only known as MODX, added code on the collaborative encyclopedia Wikipedia for a computer virus known as the LoveLetter or ILOVEYOU virus.
+
+The users inserted the VBScript code into various pages including the Wikipedia Sandbox, a page used for editorial testing. This was relatively harmless, as the code could not be activated despite causing some antivirus software to issue an alert.
+
+A Wikipedia administrator began blocking the users and reverting their edits. "I went further and deleted the contributions of these editors where I could in the hopes of preventing follow-up attacks, copycat actions, and random editors stumbling into viral traps whilst walking through a page history", said Scientizzle, the administrator who found the code and attempted to clean up the additions.
+
+However, a major problem arose when he tried to delete the edits from the sandbox. This involves deleting the entire page and restoring good revisions, but the sandbox has such a "massive revision history" that this caused Wikipedia's servers to overload for half an hour, locking countless users out of editing the encyclopedia.
+
+"My action caused the site to come to a screeching halt for half an hour and filled my [user discussion page] page with 'wikitrout'," added Scientizzle jokingly.
+
+Developers for Wikimedia (the parent foundation of Wikipedia and its sister projects) quickly implemented a check on such massive deletions to prevent such an event from occurring again. Brion Vibber, Wikimedia's Chief Technical Officer, added restrictions on the deletion of any page with more than 5000 revisions.
+
+"A couple times a year somebody does something like trying to delete the Wikipedia:Sandbox, which reaaalllly bogs down the server due to the large number of revisions. While there are warnings about this, I'm hacking in some limits which will restrict such deletions to keep the system from falling over accidentally," said Vibber on a Wikipedia community discussion page.
+
+Scientizzle was advised that the edits should have been removed via oversight. Oversight is the process of deleting edits from public view, usually reserved for non-public personal information and libel, but also used for selective deletion of revisions on pages with extremely long edit histories. Only a few administrators have access to the process.
+
+"I was advised that oversight was a better option for removing contributions on huge pages and, as such, contacted the oversight mailing list to request the complete deletion of all contributions by these users," added Scientizzle.
+
+The ILOVEYOU virus or worm started in the Philippines on May 4, 2000 in e-mails titled 'I Love You'. Over the course of a single working day it spread across the entire globe, traveling to Hong Kong, to Europe, and then the United States. At least 10% of the world's computers that had Internet access were infected with the virus. The virus overwrote files on computers with copies of itself, including system files and multimedia.

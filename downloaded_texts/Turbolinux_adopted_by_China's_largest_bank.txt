@@ -1,0 +1,19 @@
+The Turbolinux operating system, a variety of GNU/Linux free/open source software, has been chosen as the in-house server software for the front-end banking operations of China's largest bank, replacing SCO Unix. The Industrial and Commercial Bank of China (ICBC) announced the migration on Thursday, April 28.
+
+The announcement is significant in terms of the sheer size of the bank. "This is the biggest Linux implementation in China," said General Manager Claude Zhou of Turbolinux China. The ICBC serves more than 108 million customers and manages their combined assets of US$640 billion (5.3 trillion renminbi). Its 390,000 employees are scattered across 20,000 branch offices throughout China. The planned deployment will be undertaken in steps and is estimated to take three years. 
+
+
+
+Zhou described the reasons for the planned migration as the stability and security of Linux. Nielse Jiang, an analyst at IDC, also attributed the switch to insufficient support by the SCO Group. "In China, SCO Unix offers very weak support for customers; they have so few employees," Jiang said.
+
+ICBC selected Turbolinux over its various competitors, including Microsoft Corporation, in part because of its need to maintain its custom-written Unix-based software. The increasing scalability and stability of Linux also were factors in the decision.
+
+Turbolinux has been China's number one source of Linux for the past 4 years. In 2004, Turbolinux held 62.0% of the Chinese server market, and also had 24.9% desktop market share, a much larger portion of desktop share than GNU/Linux holds in the United States.
+
+Turbolinux is an Asian-Pacific distribution of Linux with its corporate headquarters located in Tokyo, Japan, and offices in China and the United States. Turbolinux claims that its "Turbolinux 7 Server was the first-ever to conform to Internationalization standards to help simplify development of applications that require multiple language support â€” a critical requirement for software distributed globally," and supports the use of its software in the Japanese and Chinese languages.
+
+Turbolinux was also used as the operating system of choice for China's recent supercomputer, the Dawning 4000A. With its unveiling on November 15, 2004, China became the third country, after the U.S. and Japan, to surpass the 10 teraflops level of performance in a single machine. The computer, located in Shanghai Supercomputing Center, contains 2,560 64-bit Opteron processors from AMD, each running at 2.2 GHz, and at its introduction was the 10th fastest computer in the world.
+
+Turbolinux is being spread throughout China, both throughout government and the business sector, in key areas such as transportation and telecommunications. In December 2004, ZTE Corporation, the largest telecommunications manufacturer in China, partnered with Hewlett-Packard and Turbolinux to bring the benefits of GNU/Linux software to that industry.
+
+The other three largest banks in China have either already announced plans for major migrations to GNU/Linux servers running various distributions, or are expected to do so later this year.

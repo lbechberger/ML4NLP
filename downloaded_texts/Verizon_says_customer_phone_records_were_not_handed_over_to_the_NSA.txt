@@ -1,0 +1,13 @@
+On May 11, 2006, the USA Today published an article claiming that the United States National Security Agency (NSA) collected millions of call logs from telecommunications companies in 2001 under a contract the NSA claims to have had with phone companies.
+
+Since the publication, telecommunications giant Verizon has denied that customer phone records where handed over to the NSA in the time frame "from the time of the 9/11 attacks until just four months ago." 
+
+"Contrary to the media reports, Verizon was not asked by NSA to provide, nor did Verizon provide, customer phone records from any of these businesses, or any call data from those records. None of these companies -- wireless or wireline -- provided customer records or call data," Verizon said in a statement. This does not address the question whether the long-stance carrier MCI, that Verizon bought in January, handed over records to the NSA, and whether they still continue to do so.
+
+Verizon also says that records from local calls are not tracked. "Phone companies do not even make records of local calls in most cases because the vast majority of customers are not billed per call for local calls."
+
+On Tuesday, BellSouth also denied that it gave their call records to the NSA.
+
+However; USA Today said that they are "confident" about their story and "will look closely into the issues raised by the BellSouth and Verizon statements. Sources told us that BellSouth and Verizon records are included in the database," said Steve Anderson, spokesman for USA Today. The paper was using anonymous sources that they claim had "direct knowledge of the arrangement." Anderson also stated that they will not "dismiss" the denials made by Verizon or BellSouth "without taking a closer look"
+
+Qwest's former chief executive Joseph P. Nacchio confirmed through his lawyer that the NSA requested Qwest to provide calling data, but that Qwest declined to do so citing a lack of legal process.

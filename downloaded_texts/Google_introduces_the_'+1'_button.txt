@@ -1,0 +1,9 @@
+On Monday, Google added the "+1" button to its search results. It works similarly to the Facebook "Like" button. Today, Google began planning to add it to text ads, globally known as "AdSense".
+
+Google Product Manager Nick Radicevic commented at Google's AdSense blog: "Today, +1's will start appearing on Google search pages globally. .... We'll be starting off with sites like google.co.uk, google.de, google.jp and google.fr, then expanding quickly to most other Google search sites soon after." 
+
+Individual websites also can use this feature. People with a Google account can add a "+1" button to their personal websites. If a large number of readers click the button, the site will move closer to the top in Google search results.
+
+Google also plans to eventually add the "+1" button to its text advertisements, globally known as "AdWords". A user would be able to add rank to an ad and optionally make it available at their Google profile. 
+
+Google expects the experiment to be useful to improve search results and to combat poor websites and content farms.

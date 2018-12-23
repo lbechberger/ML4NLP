@@ -1,0 +1,7 @@
+IBM and Google have partnered to start production on a desktop search program for corporate users. 
+
+Previously, IBM's OmniFind could only look inside standard applications such as Oracle, and Google's Desktop Search program didn't have any extensive network capabilites. The end product of this collaboration will allow for searching managed databases, as well as many unmanaged files, such as personal e-mails, Microsoft Word documents, and rich media files, within corporate servers.
+
+"Getting these two products together makes sense for both of us," David Girouard, general manager of Google's enterprise business unit. "If you want to have a good corporate search product, you have to have desktop search," he said.
+
+No exchange of money has been made between the two companies, and this announcement comes only a few weeks after Google announced its partnership with Sun Microsystems, Inc. Some speculate that Google is making a move to directly challenge Microsoft Corp. in the field of PC Desktop software.

@@ -1,0 +1,14 @@
+The United States Federal Aviation Administration (FAA) has tightened the deadline imposed earlier for inspection of all Boeing 737 Next Generation worldwide.
+
+The mandatory inspections were imposed after it was discovered that the China Airlines 737 that exploded in Japan had a hole in it's right wing fuel tank, which had been caused by a loose bolt from the wing slat assembly.
+
+The wing slats are panels mounted to the leading edge of a wing. They are moved forward during final approach for landing to increase lift from the wing, allowing the plane to fly slower than it can when the aircraft is configured for cruise without entering a stall. The bolt in question is mounted to the main slat tracks, on which the slats slide back and forth. As they are extended for landing, they can cause the bolt to be pushed through the adjacent wing fuel tank, rupturing it in the way it is believed the China Airlines plane's tank was.
+
+Thus far, the inspections have discovered four airliners in which the bolt was loose. These discoveries give the authorities cause to believe that loose wing slat track bolts may be more widespread than originally considered, and accordingly reduced the inspection deadline from 24 days to 10 days. After that, inspections must be made every 3,000 operational hours, an unchanged schedule from the original set out at the same time as the 24-day deadline.
+
+
+The Emergency Airworthiness Directive that the inspections are laid out in is believed to affect a total of 2,287 aircraft sold by Boeing around the world, although the FAA only has the authority to make the inspections compulsory for the 783 aircraft currently being operated in the U.S.
+
+Although the FAA refused to release any details on which aircraft were found to have loose bolts, CNN and Agence France-Presse both reported that a fifth plane also exhibited the fault, belonging to Air Nippon and in operation in Japan. Although the fault was located elsewhere in the assembly, it is believed to have an identically high chance of causing a rupture to the fuel tank. All 22 other 737 NextGens in Japan have been checked, with no problems being identified.
+
+Meanwhile, Norwegian Air Shuttle demonstrated it's faith in the aircraft by placing a US$3.1bn (UKÂ£1.5bn) order for 42 Boeing 737-800 passenger jets with an option to buy 42 more, having already ordered 11 in May this year.

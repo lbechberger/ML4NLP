@@ -1,0 +1,23 @@
+Mars Exploration Rover Opportunity and its tracks are captured in this enhanced-resolution image. 
+
+The picture was taken from Mars orbit with the Mars Orbiter Camera
+on board the Mars Global Surveyor. The image was captured on April 26, 2004,
+Opportunity's 91st martian day. The rover was on its way to
+Endurance Crater.
+
+
+Also visible and labeled on this image are the spacecraft's
+lander, backshell, parachute and heat shield, plus effects of its
+landing rockets.
+
+The camera captured this image with use of a technique called
+compensated pitch and roll targeted observation. In this method,
+the entire spacecraft rolls as it passes over the target area so
+the camera can scan in a way that sees details at three times
+higher resolution than the camera's normal high-resolution
+capability.
+
+Sunlight illuminates the scene from the left. North is toward the
+top of the image. The 100-meter scale bar is 109 yards long.
+
+Image credit: NASA/JPL/MSSS

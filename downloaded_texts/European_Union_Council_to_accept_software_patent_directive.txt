@@ -1,0 +1,20 @@
+December 22, 2004
+
+The controversial European Union Directive on the Patentability of Computer Implemented Inventions, also called the "software patent directive" has been put to rest for 2004. The directive was expected to easily pass through the European Council's Fisheries Council on Tuesday, December 21, but was removed from the agenda at the request of 
+Poland's Minister of Science and Computerisation, Wlodzimierz Marcinski. 
+
+The directive's opponents, some of whom had conceded defeat on Tuesday before the vote was taken, will continue the debate informally until meetings resume in 2005. 
+
+Software developers, who supported the European Parliament's proposal last year to definitively rule out software patents, welcomed the delay as a chance to reintroduce those provisions into the current draft.
+
+Florian Mueller, campaign manager of NoSoftwarePatents.com, which is supported by three IT companies (1&amp;1, Red Hat, and MySQL AB), applauded Poland's move.
+
+"The Polish government deserves greatest admiration for its courage!" said Mueller in a press release. "Now Europe has the opportunity to have a constructive debate on the severe shortcomings of the current Council text, under the new Luxembourgish EU presidency next year." 
+
+Germany's representative also backed the delay, saying it would allow everyone to align the current proposal to changes proposed by the European Parliament last year. 
+
+"We were well aware that [the current proposal] has room for improvement with an eye to the objective of arriving at a consensus position between the EU Council and the European Parliament," Germany's Federal Minister of Justice Brigitte Zypries said in a Tuesday statement. "We will continue to work constructively toward finding a solution that even better meets the needs of those concerned than the decision taken in May of this year."
+
+On May 18, 2004 EU Council reached a political agreement on a "Common Position" on the directive which ignored the European Parliament's vote from last year. The Council vote generated a lot of controversy. Later, the Dutch parliament failed to convince its EU representatives to reverse their vote. 
+
+According to the new voting weights which took effect on November 1, the majority needed to formally adopt the Common Position (after translations were done) is questionable. The 20 countries that supported the Directive on May 18 fall short of the new qualified majority by 16 votes.

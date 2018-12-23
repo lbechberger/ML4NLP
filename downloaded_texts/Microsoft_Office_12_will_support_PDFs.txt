@@ -1,0 +1,9 @@
+Microsoft announced yesterday that the next version of Microsoft Office, currently code-named "Office 12", will support PDF format exportation. Microsoft Senior Vice President Steven Sinofsky said Microsoft receives 120,000 requests monthly to save documents created in Office as PDF files.
+
+PDF is a file format created by Adobe Systems that ensures files appear similarly on any computer operating system. PDF is an open standard, and programs can read and write PDFs royalty-free. Adobe distributes software at no cost to read PDF files on many platforms. Many open source readers are also available.
+
+There are many ways to create PDFs from Office documents. Users can purchase Adobe Acrobat Standard (MSRP US $299.00), and can already export any Microsoft Office document to PDFs using the free Office Suite OpenOffice.org software. They can also use one of the many free programs that act as print drivers such as the open source PDFCreator. Adobe also offers a somewhat slower, but free online PDF converter on their website. While such options have long been available, the high cost, moderate difficulty and lack of awareness has discouraged PDF use in most daily exchanges of Office created documents.
+
+Because Microsoft has no plans to create a PDF importer, it will be impossible for the Office PDF export functionality to fulfill Massachusetts' recent requirements Open Standards drive for official, state created documents.
+
+The first, or beta version, of Office 12 is expected in November.

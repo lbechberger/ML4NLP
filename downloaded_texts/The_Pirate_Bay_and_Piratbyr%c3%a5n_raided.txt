@@ -1,0 +1,21 @@
+A raid involving 50 members of the Swedish National Criminal Police has taken the servers of The Pirate Bay and Piratbyrån (the Pirate Bureau) — a Swedish lobby organisation that originally developed The Pirate Bay — into custody. The search warrant was given on grounds of alleged copyright violation and assisting copyright violation. This move comes as a bit of a surprise, as the legality of the site has been under public debate for over three years, with the operators frequently issuing public press releases. 
+
+WiredFire, in an interview with Rickard Falkvinge, head of the Swedish Pirate Party, is reporting that police arrested three staff members, ultimately taking only two into custody. The Associated Press, however, is reporting that Ulf Goranzon, a police spokesman, is claiming that none were arrested, they were just under suspicion of violating copyright law.
+
+The site operators speculate that the police wish to test the legality of the operation. Purportedly, this move comes due to political pressure exerted by United States media corporations. Swedish public broadcaster Sveriges Television has backed this claim. Rickard Falkvinge has stated that the Svenska antipiratbyrån (Swedish Anti-Piracy Bureau) has admitted to being behind the police action, and he suspects the IFPI is also involved. Tobias Andersson, of Piratbyrån agrees, claiming that The Antipiratbyrån "has clearly misled the police" and "has fooled the police into shutting down its antagonists, the Piratbyrån. The Antipiratbyrån previously gained notoriety by paying an infiltrator to plant copyrighted material on the Swedish ISP Bahnhof's servers.
+
+Dan Glickman, CEO of the Motion Picture Association of America (MPAA), has applauded the move, citing it as a reminder that "there are no safe harbors for copyright thieves". Kori Bernards, an MPAA representative, claimed The Pirate Bay to be "one of our No. 1 targets." The MPAA allege that The Pirate Bay made available over 150 thousand files, including summer blockbusters such as "Mission: Impossible III" and "X-Men 3". 
+
+However, The Pirate Bay claimed that as they only host .torrent files and not copyrighted material, they are not in contravention of copyright laws. The Pirate Bay also served as a distribution point for freely licensed material such as some Linux distributions and independent music and film.
+
+The Pirate Bay claims to be the world's largest BitTorrent tracker.
+
+In the raid, the police also took several private servers unconnected to The Pirate Bay. Some have claimed that there is no legal basis for these seizures.
+
+Initially, there were also rumors that this could be another stunt by The Pirate Bay to promote awareness. This possibility, however, has been already dismissed and only had some credibility given the fact that approximately one year ago today they claimed something similar like this, but instead were simply updating their servers. At current there are already some publications made available by officials confirming the authenticity of the raid.
+
+On June the 1st The Pirate Bay site changed its "Site down" note to "Site down - will be up and fully functional within a day or two".
+
+Gottfrid Svartholm, owner of webhotel PRQ said "I was arrested for interrogation, and they begun to ask question about Pirate Bay, what I knew and what connections I had to it. I got no public defender, and my regular legal representative was also under arrest, so I said nothing at all". According to Mr. Svartholm, the police told him that they were not obligated to provide a public defender, as the crime he was accused of doesn't lead to jail sentence if he is found guilty. 
+
+The day after the raid, Mr. Svartholm is trying to limit the damage for PRQ's other customers that also had their servers confiscated, even if they didn't have any connections to The Pirate Bay.

@@ -1,0 +1,14 @@
+team1=Bochum|
+score=1–2|
+team2=Bayern Munich|
+report=Match Report|
+goals1=Grote Zdebel Imhof Concha Epalle Mięciel Maltritz Drsek |
+goals2= Altintop Ribéry Klose van Bommel Altintop Schweinsteiger Schweinsteiger Klose Podolski Ribéry Schlaudraff|
+stadium=rewirpower Stadion, Bochum|
+attendance=30,000|
+referee=Herbert Fandel 
+Bayern Munich came from behind to beat Bochum 2-1 to extend their lead to six points.
+
+A sell-out crowd saw a the home side take an early lead in the 11th minute. Bayern Munich had blew a string of chances until Franck Ribery's equaliser nine minutes before the half-time.
+
+Bayern Munich found chances hard to come by against the defensive formation by the home season in the 2nd half, but Bayern Munich were rewarded with 12 minutes left when substitute Bastian Schweinsteiger converted the eventual winner.

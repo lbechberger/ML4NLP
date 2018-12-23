@@ -1,0 +1,14 @@
+U.S. District Judge Claude Hilton ruled Friday to grant a request for a permanent injunction against Vonage for violating patented intellectual property rights of Verizon.
+
+The injunction would not take effect until after a hearing scheduled for April 6. The court will rule on whether the request by Vonage to stay the decision has sufficient merit during the time it would take for the largest U.S. VoIP provider to appeal the March 8 jury finding that the company violated what it maintains are Verizon innovations too broadly defined to be patentable. 
+
+"Despite this obvious attempt by Verizon to cripple Vonage, the litigation will not stop Vonage from continuing to provide quality VoIP service to our millions of customers," said Mike Snyder, the Vonage chief executive officer.
+
+The March 8 jury findings dismissed Vonage of wrong-doing on 4 of Verizon's 7 claims that Vonage infringed on its patent rights.
+
+Verizon noted as part of its complaint against Vonage that, "Vonage's expanded marketing and advertising of its infringing services threaten to shift more customers and goodwill to its business at Verizon's expense," according to Olga Kharif of CIO Today.
+
+Vonage says it did not know it was infringing on patents rights of the 3 Verizon claims that held up in court. The effect of an injunction on the 2.2 million Vonage customers using the services would mean:
+#an inability to place Internet calls to traditional phone line services
+#the elimination of voice mail and call waiting
+#the lack of wireless to Internet phone calls

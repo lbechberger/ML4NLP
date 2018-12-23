@@ -1,0 +1,15 @@
+The trial against internet file-sharing network Kazaa in Sydney, Australia, is coming to an end, as closing arguments began today. Kazaa pleaded it could not be held responsible for the copyright infringements perpetrated by its users, as it cannot control how the software is used.
+
+The peer-to-peer distribution software and its owner, Sharman Networks Ltd. and its directors were sued by a group of Australian record labels for copyright infringements by the network's estimated 100 million members worldwide. Members of the software share music files with each other, and download up to three billion songs and music files monthly. The music industry claims it has lost millions of dollars in unpaid royalties as a result.
+
+Lawyer Tony Meagher argued that Sharman is no more responsible for the uses of its software than the designers of the photocopiers and video recorders were responsible for the illegal copying of materials on those machines. The remaining question is whether Kazaa authorises its users to download files illegally.
+
+"We tell these users in our Web site and we tell them in our license that they cannot use this (software) for infringing copyright," Meagher told Judge Murray Wilcox. By consenting to this license by users, Kazaa is exempted from responsibility.
+
+The record industry claims Kazaa not only enables but encourages copyright infringement. Record industry lawyer Tony Bannon argued that as Kazaa collected information from its users through spyware and sold it to advertisers, the company's claim that it had no control over the software was "completely mind boggling."
+
+This is not the first trial against Kazaa, and other programs of its kind. In August last year, Judge Stephen Wilson ruled that the distribution by Grokster and Morpheus of peer-to-peer software does not violate U.S. copyright law. Rod Dorman, lead trial council for Sharman Networks in the U.S., said, "As a result of this decision, Sharman Networks will be filing a motion for summary judgement, nearly identical to the successful motions filed by Grokster and Morpheus, and we are confident that Judge Wilson will find that our product, Kazaa, is a lawful product as well." However, the ruling held no precedential effect in the Australian trial, as the principles differed.
+
+Kazaa and the FastTrack protocol are the brainchild of the Scandinavians Niklas ZennstrÃ¶m and Janus Friis, and were introduced in March 2001 by their Dutch company Consumer Empowerment. It appeared during the end of the first generation of P2P networks. Napster shut down in July of that year. (Wikipedia)
+
+The trial is expected to wrap up later today. A verdict should be passed within six weeks.

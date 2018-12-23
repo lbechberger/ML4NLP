@@ -1,0 +1,15 @@
+A final report released today by the Indonesian National Transport Safety Committee found that Adam Air Flight 574 crashed because the pilots were distracted by an instrument failure. The loss of the budget carrier's Boeing 737 into the sea near Sulawesi on New Year's Day 2007 left all 102 on board missing and presumed dead.
+
+The report found that the 737, registered PK-KKW, suffered a Inertial Reference System (IRS) failure. While pilots were troubleshooting for this navigational system they first unintentionally disconnected the autopilot, then failed to monitor other instruments informing them they were approaching the sea, crashing into it and destroying the aircraft.
+
+The flight had been a scheduled domestic passenger service between Djuanda Airport at Surabaya and Sam Ratulangi Airport at Manado, and disappeared from radar screens at 35,000 feet.
+
+National Transportation Safety Committee head Tatang Kurniadi told a press conference "This accident resulted from a combination of factors including the failure of the pilots to adequately monitor the flight instruments, especially in the last two minutes of the flight. Preoccupation with a malfunction of the Inertial Reference System diverted both pilot's attention from the flight instruments and allowed the increasing descent and bank angle to unnoticed...
+
+"The Cockpit Voice recorder revealed that both pilots were concerned about navigation problems and subsequently become engrossed with trouble shooting Inertial Reference System (IRS) anomalies for at least the last 13 minutes of the flight, with minimal regard to other flight requirements. This included identification and attempts at corrective actions."
+
+He also supplied a number of statistics concerning the final moments of the flight. Whilst in a right bank with sustained elevator input pushing up the nose the aircraft reached Mach 0.926 and 3.5g. The airspeed had reached 490 KCAS by the end of the recording. Investigator Santoso Sayogo said that the high speed impact caused the plane to disintegrate.
+
+Adam Air had suffered previous navigational problems. In 2006 another B737 suffered a navigational problem and flew into a radar blackspot, leaving it lost for several hours before performing an emergency landing hundreds of miles from the intended destination. Sayogo said today that in the three months preceding the accident the airline had registered 154 defects in PK-KKW's navigational equipment.
+
+The accident has had wide-ranging effects. The crash, coupled with Adam Air Flight 172, which snapped in half during a hard landing, and Garuda Indonesia Flight 200, which overshot the runway in Yogyakarta, killing 21, prompted the European Union to add all Indonesia's airlines to the list of air carriers banned in the EU. Earlier this month another Adam Air flight departed the end of a runway during landing, injuring five and damaging the plane. This prompted the authorities to ground Adam Air for three months after a regular evaluation, after which they may be permanently shut down. The airline is also in financial difficulty. All the accidents involved Boeing 737s.

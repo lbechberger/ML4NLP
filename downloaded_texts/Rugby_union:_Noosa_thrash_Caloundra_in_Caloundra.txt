@@ -1,0 +1,12 @@
+Caloundra, Queensland —
+Today in A-grade rugby union on Australia's Sunshine Coast, a five-try second half has seen Noosa thrash Caloundra by 40 points — 62 points to 22. Caloundra opened the scoring with a converted try but Noosa hit back with two tries of their own to lead 14–7.
+
+ Footballbox-ver
+| team1 = Caloundra
+| score1 = 22
+| goals1 = 
+| team2 = Noosa
+| score2 = 62
+| goals2 = 
+| date = 
+| stadium

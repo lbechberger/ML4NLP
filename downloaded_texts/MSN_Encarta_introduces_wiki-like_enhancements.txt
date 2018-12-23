@@ -1,0 +1,9 @@
+April 9, 2005 
+
+Microsoft's Encarta has announced the addition of a blog as well as some wiki-like functionality to the online subscription encyclopedia.
+Encarta is welcoming revision suggestions from their users, but they have a disclaimer:
+: Encarta is different from open-content encyclopedias found elsewhere on the Web that post users' changes immediately.
+
+When the changes are implemented at Encarta, readers can click an "Edit this article" link to have their contribution reviewed by editors at Microsoft for possible use. 
+
+The web enhancement has introduced a minor security glitch for the subscription service. When trying to look up an article on Encarta as a non-subscriber, web surfers receive a teaser page suggesting the user sign up for a subscription . However, using the editor URL for the same article will get a WYSIWYG display of the article requested; a simple way around the subscription requirement .

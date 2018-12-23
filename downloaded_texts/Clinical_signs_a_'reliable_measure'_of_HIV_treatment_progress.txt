@@ -1,0 +1,25 @@
+Researchers have found that, in terms of survival, assessing the status of a HIV/AIDS patient by clinical examination is almost as reliable as laboratory blood testing during their course of treatment.
+
+Poor access to laboratory tests should therefore not be a barrier to rolling out antiretroviral (ARV) drug programmes for HIV in developing countries, they say.
+
+The findings were published in The Lancet recently.
+
+Patients on first-line ARVs in the developed world are monitored regularly for the amount of HIV circulating in their blood. When this falls below a certain level, treatment switches to second-line ARVs.
+
+But because of limited access to laboratory tests, the WHO recommends that people in the developing world are monitored for clinical signs of HIV progression, such as bacterial infection in the mouth and certain types of cancer.
+
+Monitoring of CD4 cell levels — an indicator of the health of a patient's immune system — is also used when laboratory testing is available. Until now, little was known about the effectiveness of this strategy.
+
+The researchers used a computer model to simulate the course of HIV infection and estimate the impact on survival of monitoring by viral load, CD4 count or clinical observation. 
+
+The model was initially developed for wealthy countries, but was adapted for lower-income countries by taking into account factors such as interruptions in drug supply.
+
+It predicts that after five years, 83 per cent of patients monitored by viral load, 82 per cent of patients monitored by CD4 cell count, and 82 per cent of patients monitored by clinical examination alone, would have survived. This decreases to 67, 64 and 64 per cent, respectively, after 20 years.
+
+Andrew Phillips, professor of epidemiology at the UK-based Royal Free &amp; University College Medical School and lead author of the study, says the findings shouldn't dissuade people from relying on viral-load monitoring.
+
+"I certainly wouldn't want to inhibit the roll-out of viral-load monitoring and the development of cheap and robust tests that don't rely heavily on infrastructure or highly skilled laboratory staff," he told SciDev.Net.
+
+But, he says, that shouldn't be done at the cost of getting ARVs to everyone who needs them.
+
+"The issue of whether to use viral-load monitoring or not pales into insignificance when dealing with whether you've actually got everyone who needs ARVs on therapy. Having drugs without viral-load monitoring is a lot better than not having drugs."

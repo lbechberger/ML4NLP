@@ -1,0 +1,13 @@
+Last month Microsoft Corporation made accusations against the European Commission, stating that it may cause delays in the final release of their latest operating system, Windows Vista (formerly known as Longhorn).
+
+Microsoft's general counsel, Brad Smith, stated:
+
+"We recognize that the European Commission does not give 'green lights' for new products, and we have not asked for one. We appreciate the constructive dialogue we have had with the Commission and the guidance the Commission has provided," Smith added. Based on this guidance, we have made changes to ensure that we're in compliance with our competition law obligations.". 
+
+The news should be welcomed by all those anticipating Windows Vista within the European community, with Microsoft showing compliance to follow the regulations set out by the European Commission.
+
+The entire debate started when Microsoft were responding to a letter received by the European Competition Commissioner, Neelie Kroes, that showed concerns over "The possible bundling into Vista of certain products, such as internet search and certain security features that are currently available on a standalone basis from Microsoft and other vendors". In July, Smith had made a statement that Microsoft had offered to create changes to its system to comply with the commission, and that it had asked the commission to state which changes would make Vista apply to its standards and regulations.
+
+"We told the Commission that we would be prepared to do any one of four things and they could simply tell us which of those things they wanted us to do" said Smith.
+
+Since Bill Gates announced the removal of WinFS from its new operating system in October 2003, the company has been plagued by many setbacks and legal issues. Only time will tell whether Brad Smith's announcement from Microsoft is entirely truthful instead of a way of covering Microsoft's back.

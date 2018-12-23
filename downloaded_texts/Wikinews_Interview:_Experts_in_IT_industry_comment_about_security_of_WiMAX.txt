@@ -1,0 +1,9 @@
+Computers and technology make our modern lifestyle more convenient, but they also create new risks like computer viruses and hacking. Many people want to enjoy the convenience of new technology, but they may not be aware of its problems.
+
+WiMAX is being promoted in Taiwan by the Taipei Computer Association, the Industrial Technology Research Institute and the Ministry of Economic Affairs of the Republic of China. It is considered by some to be the communication standard for the next generation of mobile devices.
+
+Information security companies are concerned increasingly by Internet crime, and some of them question the security of WiMAX. After all, everyone wants to welcome this new technology but is afraid of its potential to cause security issues.
+
+Some companies have analyzed potential security issues which threaten the success of WiMAX. But what have they found?
+ 
+Taking the opportunity of two press conferences in Taiwan, Wikinews Journalist Rico Shen briefly interviewed both Hsiao-wen Hung, President of Microsoft Research Asia and Li Chang, Deputy Secretary General of Taipei Computer Association. With their experience in the IT industry, they agreed to comment on this question.

@@ -1,0 +1,11 @@
+A company named Numenta was founded today by Jeff Hawkins, founder of handheld computer company palmOne, and his longtime partner Donna Dubinsky. The company is focused on the creation of technology to emulate the workings of the human brain. They are based in Menlo Park, California. 
+
+Hawkins has been intrigued by the faculties of the human brain for years. In 2002, he founded the Redwood Neuroscience Institute. His theories on the working of the brain were explained in "On Intelligence: How a New Understanding of the Brain Will Lead to the Creation of Truly Intelligent Machines," co-written with Sandra Blakeslee. Hawkins' official recognition with the company will only be as 'founder', as the company will be led by Dubinsky. Hawkins will continue as chief technical officer of palmOne and remain at Redwood.
+
+The company will not charge fees for its products during the first few years in order to encourage further development of the technology and build up a development community. The annual budget of more than $1 million will be paid by Hawkins and Dubinsky, who have raised an undisclosed amount from a handful of friends and associates.
+
+Hawkins and third co-founder of Numenta, Dileep George, have been working on developing the technology since 2003, and have devised an example piece of software. Data is put into the program by showing it 90 different pictures. The software can then recognise any of the 90 objects, even when drawn incomplete or in bad quality. Pattern matching is still difficult for today's hardware and software technologies. If outfitted with a camera, a sophisticated pattern matching system could be used by law enforcement to recognise the faces of wanted criminals in crowds.
+
+Other notable attempts at creating more powerful computer systems include Artificial intelligence, which started in the 1950s and took off in the mid 1980s and led to disappointment due to high expectations, and the Quantum Computer, both fields are still in active development.
+
+Jeff Hawkins and Dileep George will be publishing a paper on 'A Hierarchical Bayesian Model of Invariant Pattern Recognition in the Visual Cortex' at an upcoming neural networks conference.

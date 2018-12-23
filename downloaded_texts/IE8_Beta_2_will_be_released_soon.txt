@@ -1,0 +1,7 @@
+Internet Explorer 8 beta 2 is expected to be released in the third quarter of 2008, which is between 1 July and 30 September, says Microsoft employee Nick MacKechnie in a blog written and posted yesterday. The beta will be aimed at end-users, whereas beta 1 was aimed at web developers.
+
+The long awaited browser is said to comply with HTML and CSS standards. These are codes that are used to create the appearance and structure of a web page. Internet Explorer is notorious for not complying with these standards, so this release is expected to be an important release in its history. In beta 1, many websites have failed to display in the "IE8 standards mode," but many bug reports have been submitted to Microsoft regarding this issue, so rendering may improve.
+
+The beta 2 release is expected to improve its standards compliant mode even more as well as adding a more customisable graphical user interface that is expected to be similar to Microsoft Office 2007. This is the first version of Internet Explorer that will have this customisable interface.
+
+The final version of Internet Explorer 8 is expected at the end of the year.
