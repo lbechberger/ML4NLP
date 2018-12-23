@@ -4,16 +4,8 @@ import time
 
 
 def main():
-	dgen = data_gen()
-	data = next(dgen)
-	n = 1
-	while len(data) > 0:
-		print("-------> Iteration " + str(n))
-		article_uris = data["article_uri"].unique()
-		download(article_uris)
-		data = next(dgen, [])
-		n += 1
-	print("Successfully downloaded all articles.")
+	stop_words = pd.read_csv("all_stop_words.csv", index_col=0)
+	print(stop_words)
 
 
 def download(article_uris):
