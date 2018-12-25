@@ -1,0 +1,14 @@
+char,sent_n,token_i,word
+0,1,0,explanation
+12,1,2,Publication
+32,1,5,article
+44,1,7,suspended
+61,1,10,previous
+70,1,11,publication
+83,2,13,It
+90,2,15,decided
+108,2,18,article
+125,2,21,infringed
+139,2,23,copyright
+154,2,26,competing
+164,2,27,agency
