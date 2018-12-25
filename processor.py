@@ -1,6 +1,4 @@
 import pandas as pd
-from knowledgestore import ks
-import time
 import numpy as np
 
 def main():
