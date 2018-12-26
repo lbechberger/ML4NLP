@@ -1,3 +1,0 @@
-Approximately 100 students gained access to their Higher School Certificate results, before the official release date of Friday 17th December 2004. Police are pursuing the matter.
-
-The access was gained through the Board of Studies website. To read their results, the student required a .zip archive, which was being distributed among students using the Internet. This archive seems to have contained a URL. This URL was either directly to the board of studies site, or to a script/site which allowed as student to enter information then assembled a URL to the board of studies site, allowing students to view their results early.

@@ -1,5 +1,0 @@
-Users worldwide are reporting that they are unable to login to Microsoft's (MS) live services such as Hotmail, Windows Live Messenger, and in some cases Xbox Live. Problems reportedly began around 6:30 a.m. eastern time.
-
-"We are aware that some customers may be experiencing difficulty accessing their Windows Live accounts. Weâ€™re actively investigating the cause and are working to take the appropriate steps to remedy the situation as rapidly as possible. We sincerely apologize for any inconvenience and disruption this may be causing our customers," said MS in a statement to the media.
-
-The exact number of users affected by the outage is not yet known. MS has not stated when the problem will be fixed.

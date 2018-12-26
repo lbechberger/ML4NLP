@@ -1,9 +1,0 @@
-Schools in the United Kingdom have been advised not to upgrade to the newest Microsoft products, Vista and Office 2007, according to a report by the British Educational Communications and Technology Agency (BECTA). Becta said that there were no "appropriate benefit" that would offset the additional cost and possible compatibility issues created by upgrading. 
-
-An agency of the UK department for education and skills, Becta oversees the procurement of all IT equipment and e-learning solutions for schools. 
-
-One of the main reasons given is also compatibility, especially the new Microsoft document format OOXML (Office Open XML), a competitor to the ISO standard ODF (Open Document Format). The report says that "Microsoft should provide native support for the ODF file format increasingly used in competitor products and those that are free to use". Schools that do upgrade are advised not to use the OOXML format. Other reasons were that upgrading graphics hardware to support the new Windows Aero Graphics system used in Windows Vista, which would cost additional money according to PC World
-
-The report also says that "Schools and colleges should make pupils, teachers and parents aware of the range of free-to-use products (such as office productivity suites) that are available, and how to use them". BECTA is not the first government institution to advise against upgrading to newer Microsoft products, media reports about a similar move by the Department of Transportation in the US were reported last year according to InformationWeek.
-
-According to PC World, the cost of upgrading would be Â£175 million (US$350 million), with a third of that going to Microsoft.

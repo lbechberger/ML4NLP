@@ -1,8 +1,0 @@
-According to a 2002 email exchange obtained by lawyers in an Iowa case, Microsoft executives wanted to "whack" Dell because it was focusing on Linux deals a little too much. 
-
-The first email by Bill Veghte, currently a company vice president, describes a Linux panel where a Dell executive explains their plans to increase Linux in the enterprise market. The responses to his email start in a worried tone over market competition but quickly escalates as Paul Flessner, a senior vice president in Microsoft's server applications unit, states: 
-
-Paul Flessner then goes on to describe the advantages to promote Linux over Windows for Dell:
-
-
-A recent study funded by the EU Commission concluded that "in almost all the cases, a transition toward open source reports of savings on the long-term costs of ownership of the software products." In addition, Microsoft has long been at the center of criticism and allegations over its alleged unfair and anticompetitive business tactics in Europe and elsewhere.

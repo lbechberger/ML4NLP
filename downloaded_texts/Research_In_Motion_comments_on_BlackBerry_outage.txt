@@ -1,9 +1,0 @@
-All eight million users of BlackBerry have been relieved of a large system failure that left them without email for two days.
-
-Emails were lost after a large system failure blocked all of their users worldwide, Tuesday. It is reported at 8 p.m. ET on Tuesday the system failure began. It ended Wednesday morning leaving its millions of users with a backlog of emails.
-
-BlackBerry, owned by Waterloo, Ontario based Research In Motion (RIM), apologised for the outage Wednesday and said they will take further measures to ensure this will never happen again.
-
-Research In Motion said that a system upgrade caused the large system failure and when they tried to fix the problem "it did not fully perform to its expectations".
-
-"It wasn't a capacity issue, it wasn't a security issue. It was an outage overnight when there was an upgrade," said Co-CEO of RIM, Jim Balsillie. "I think it's pretty likely that the systems are in place that this kind of thing, as incredibly unlikely as it is to happen, is all the more unlikely to happen again."

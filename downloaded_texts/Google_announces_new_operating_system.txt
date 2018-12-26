@@ -1,7 +1,0 @@
-Google announced today that they are developing Google Chrome OS. The operating system, announced on their official blog, will be based on their Chrome browser, which is now nine months old.
-
-Google said that at first it will be targeted toward netbooks, but in the future, will eventually expand. The company said that it will continue to be developed alongside Android, their operating system currently being used on mobile devices.
-
-The system will run in a windowing system atop a Linux kernel and will be fully open source. It is planned to be released in 2010. On their blog, Google said, "Speed, simplicity and security are the key aspects of Google Chrome OS. We're designing the OS to be fast and lightweight, to start up and get you onto the web in a few seconds," said the blog post written by Sundar Pichai, Vice President Product Management, and Google's engineering director, Linus Upson.
-
-Both men said that "the operating systems that browsers run on were designed in an era where there was no web" and that the new OS is "our attempt to re-think what operating systems should be".

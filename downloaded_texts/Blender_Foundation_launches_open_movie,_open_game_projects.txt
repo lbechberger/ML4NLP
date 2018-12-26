@@ -1,7 +1,0 @@
-The Blender Foundation, which maintains the open source 3D tool Blender, has announced two new projects, codenamed Peach and Apricot. Project Peach will be a new open source movie, following in the footsteps of last year's Elephants Dream project (which was initially codenamed Orange). Apricot, on the other hand, will use Blender in conjunction with open source 3D framework Crystal Space to create an open game, thereby showcasing both technologies.
-
-The Blender Foundation published the plans on its website on Sunday. In order to support these and future projects, it will also set up a permanent studio called the "Blender Institute", where software developers and artists can work together in a single location. 
-
-The Peach movie project will be headed by Sacha "Sago" Goedegebure from the Netherlands and Lyubomir Kovachev from Bulgaria. Goedegebure is well known in the Blender community for the "Man in Man" animation, which won the 2006 Suzanne Award for Character Animation. Where the theme of Elephants Dream was dark and industrial, Peach will be "funny and furry", according to the project announcement. The project is to be completed within 6 months, beginning October 1.
-
-Blender's open game project is still at an earlier planning stage, and details will be announced at the Crystal Space Conference in July. According to the published plans, the project will also be completed within 6-8 months, and it will have a budget of more than 50,000 Euros.

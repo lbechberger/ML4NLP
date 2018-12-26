@@ -1,9 +1,0 @@
-The New York Public Library launched a new website that offers over 275,000 historic images culled from the library's collections. The images have been digitized by the library's Digital Imaging Unit with assistance from outside contractors, according to a press release issued by the library.
-
-Most of the images are over 100 years old, and many have entered the public domain. Despite the public domain status of the images, the library will be charging for reproduction rights for the images. The images are freely downloadable for "personal use." The library's notes that, "This use is solely for oneâ€™s private study or display, and the image(s) are not to be disseminated."
-
-In an email to a Wikinews reporter, Tom Lisanti, the library's Manager of Photographic Services &amp; Permissions noted that, "The usage fee is not a copyright fee. You are free to obtain a copy of these images from a source other than NYPL. Usage fees help ensure that the Library is able to continue to acquire, preserve and provide access to the accumulated knowledge of the world."
-
-The issue of whether the library is creating a new work with a new copyright when it scans in the public domain images has not been resolved, according to Stanford Law School professor Lawrence Lessig.
-
-In an email to the same Wikinews reporter, Lessig writes, "This hangs on a tough, unresolved question: whether the digitization produces a 'thin' copyright around the public domain work. That copyright would not forbid you from extracting the public domain component, though how you would do that is hard to see (and hence this is a hard question)."

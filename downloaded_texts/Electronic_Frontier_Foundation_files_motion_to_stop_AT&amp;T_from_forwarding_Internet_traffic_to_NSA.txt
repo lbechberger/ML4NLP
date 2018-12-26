@@ -1,7 +1,0 @@
-The California-based non-profit organization Electronic Frontier Foundation (EFF) filed a brief on Wednesday claiming that AT&amp;T has been illegally forwarding Internet traffic directly to the National Security Agency.
-
-The EFF has asked that the forwarding be stopped immediately. According to EFF staff attorney Kevin Bankston, "The evidence that we are filing supports our claim that AT&amp;T is diverting Internet traffic into the hands of the NSA wholesale, in violation of federal wiretapping laws and the Fourth Amendment. More than just threatening individuals' privacy, AT&amp;T's apparent choice to give the government secret, direct access to millions of ordinary Americans' Internet communications is a threat to the Constitution itself. We are asking the Court to put a stop to it now."
-
-The motion was filed under seal allowing only the judge and litigants to view the complaint. The procedure allows AT&amp;T five days to explain to the court their reasons for keeping the information from the public.
-
-In the class action lawsuit, EFF is representing all AT&amp;T residential customers nationwide.

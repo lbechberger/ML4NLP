@@ -1,5 +1,0 @@
-The SpaceX Falcon 1 rocket has failed to place a DARPA demonstration payload into orbit, on its first flight into space. The rocket launched from Omelek Island, at 01:10 GMT on 21 March, just less than a year after its maiden flight which failed just seconds after launch.
-
-The rocket, which is the first privately-funded liquid-fueled launch vehicle, was intended to place the payload into a low-Earth orbit, but all contact with the rocket was lost just over five minutes into the flight.
-
-The first stage burn proceeded nominally, and separation occurred on schedule. As the first stage fell away from the second, it was observed to have impacted on the engine bell of the second stage. About five minutes into the flight, the second stage began to roll out of control. All data was lost at T+5 minutes, 5 seconds.

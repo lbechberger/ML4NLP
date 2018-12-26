@@ -1,5 +1,0 @@
-On March 31, 2006 the AMSAT-DL/IUZ team in Bochum, Germany managed to receive a signal by the American space probe Voyager 1 using the 20m antenna. It is the first time that a group of radio amateurs has successfully attempted this. The team included: Freddy de Guchteneire, James Miller, Hartmut PÃ¤sler and Achim Vollhardt. 
-
-Voyager 1 had been launched on September 5, 1977 by NASA and was the first spacecraft to transmit close-up pictures of Jupiter and Saturn. In 2004 Voyager 1 entered the termination shock region, the region where the solar wind has weakened enough to mix with the interstellar medium, thereby leaving the Solar System.
-
-Voyager 1 is now 98 AU from Earth (14.7 billion km or three times the distance from Earth to Pluto). It is the most distant human-made object. The nuclear powered probe continues to measure the properties of the interstellar magnetic field.

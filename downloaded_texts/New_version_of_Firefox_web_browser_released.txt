@@ -1,9 +1,0 @@
-The Mozilla Foundation recently released an update to Mozilla Firefox. According to the developers, Mozilla Firefox 1.0.1 patches 17 security flaws and improves stability. The update is available from Getfirefox.com by clicking 'Download Now' or 'Other Systems and Languages'.
-
-Windows users should currently be seeing a small icon on the menu bar of the browser indicating that an Automatic Update to the new version is now available for installation.
-
-Mozilla Firefox 1.0.1 is available at the time of writing in US English, French, Spanish (Latin American), German, Italian, Dutch, Finnish and Polish, among many other languages.
-
-However the updated Windows version has a flaw affecting anyone who previously installed Firefox as a 'zipped' build, rather than using the standard automatic installer method. (Zipped builds are often customized versions designed for increased speed or development work). If version 1.0.1 is installed over a zipped build, users are reporting that the browser crashes when attempting to enter text into the location or search boxes.
-
-Anyone encountering this problem is advised to delete their Mozilla Firefox folder in 'Program Files', then re-install. Their bookmarks, extensions etc will not be affected.

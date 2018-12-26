@@ -1,5 +1,0 @@
-Mountain View, CA - Users of the beta Google Maps service may see the world in a new way with the introduction of the "hybrid view." Here, hybrid means offering a combined satellite and map view, the hybrid button that appears on map search queries adds new functionality to the map service, combining the other choices of either map or satellite views.
-
-The competing and similar MSN Virtual Earth service launched July 25 by Microsoft, also offers a hybrid-type view.  Both services offer hybrid map and satellite views and scrollable images.
-
-Initial public response to both services on Slashdot has been generally positive, but users noted glitches that need to be worked out, including discrepancies between satellite and map data.

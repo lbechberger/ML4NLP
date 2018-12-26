@@ -1,9 +1,0 @@
-Security firm F-Secure announced on Monday they have confirmed rootkit-like behavior within the software provided by electronics giant Sony in their MicroVault USB memory sticks.
-
-F-Secure had received a report that their DeepGuard software was highlighting an issue when the memory stick was connected.
-
-After closer analysis by F-Secure it was identified that the software was creating a hidden directory within the users computer that neither the user or anti-virus software could detect. They say that the issue is similar to the one in 2005 where Sony DRM software allowed malware to be hidden from users.
-
-Mcafee, another major security firm, said: "The apparent intent was to cloak sensitive files related to the fingerprint verification feature included on the USB drives."
-
-"As with the Sony BMG case we, of course, contacted Sony before we decided to go public with the case. However, this time we received no reply from them," said F-Secure in a blog post.

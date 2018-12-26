@@ -1,5 +1,0 @@
-The U.S. Naval Observatory in Washington D.C. will adjust atomic clocks by pausing (adding) a second, and thus let time pass without counting it for the Coordinated Universal Time or UTC on December 31st. The mark-time will occur on the last tick prior to the 2006 new year.
-
-The accuracy of atomic clocks is based upon the resonance of caesium 133, which was used to define (in 1958) the second as the length of time for 9,192,631,770 cycles of vibration as they pass through a magnetic field. The resonate constancy of caesium exceeds the accuracy of the Earth’s rotation around the Sun.
-
-Because the Earth’s spin will fluctuate due to lunar tides and atmospheric winds, the International Earth Rotation and Reference Systems Service has had to request 22 'leap seconds' since 1972. The last adjustment made to the UTC was in 1998.

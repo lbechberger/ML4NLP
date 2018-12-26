@@ -1,5 +1,0 @@
-In a recently published article in the journal PLoS One, researchers at MIT's Lincoln Laboratory claim to have developed a new drug that has the potential to cure nearly all types of viral infections ranging from the common cold to highly deadly hemorrhagic fevers. 
-
-The new drug, known as DRACO (double-stranded RNA activated caspase oligomerizer), is able to discriminate between healthy cells and those infected by viruses. It essentially signals the infected cells to die, preventing the virus from replicating and moving into other cells, all while leaving adjacent healthy cells completely unaffected. Furthermore, scientists believe that it would be difficult for viruses to develop a resistance to this kind of treatment.
-
-The researchers involved in the project have already tested this drug on mice who have been infected with lethal amounts of influenza and found that the mice were completely cured as a result. They hope to test this drug against several other types of viruses in mice before moving on to human trials in the future.

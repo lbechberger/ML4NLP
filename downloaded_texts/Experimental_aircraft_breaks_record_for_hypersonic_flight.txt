@@ -1,9 +1,0 @@
-The experimental Boeing X-51A Waverider scramjet managed to break a hypersonic flight record Wednesday during a test flight.
-
-The United States Air Force (USAF) said that the scramjet was able to fly for 200 seconds, achieving a top speed of around Mach 5 and setting a new record for what the Air Force called "the longest supersonic combustion ramjet-powered hypersonic flight." The previous record of twelve seconds was set by the NASA X-43 in 2004. This hypersonic flight, also the first to use hydrocarbon fuel, was hailed by US government officials as a success. Despite an unknown failure which caused the X-51 to lose acceleration, an X-51 program manager said that the USAF was "ecstatic" about the event's accomplishments.
-
-The X-51 is 14 feet (4.2 metres) long and has no real wings, allowing it to withstand the shock wave created during flight. The aircraft launched around 10 a.m. PDT (1700 UTC) from Edwards Air Force Base in California. It was carried by a Boeing B-52 Stratofortress to a height of 50,000 feet (15,240 metres) and then released over the Point Mugu Naval Air Warfare Center Sea Range. The X-51 was then propelled by a solid rocket booster to Mach 4.8.
-
-After about 200 seconds in flight, Boeing said that "something then occurred that caused the vehicle to lose acceleration. At that point, the X-51A was terminated as planned." Although it was expected to fly for about 300 seconds and reach Mach 6, the scramjet only managed Mach 5 at a height of about 70,000 feet (21,336 metres), possibly due to an engine blowout. The aircraft landed in the ocean as planned, and there are no plans to retrieve it.
-
-This test is the first of four planned flights for the X-51 program, with the other three planned for this coming fall. Previously, the X-51 had flown twice, but was attached to the B-52 both times.

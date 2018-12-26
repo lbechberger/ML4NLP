@@ -1,9 +1,0 @@
-The 2013 Sunshine Coast Rugby Union regular season came to a close yesterday with Maroochydore claiming the minor premiership. Maroochydore defeated Caloundra 40 to 23 at Cotton Tree Oval while second-placed Noosa defeated Fraser Coast 55 to 8 in Urangan.
-
- Footballbox-ver
-| team1 = University
-| score1 = 40
-| team2 = Nambour
-| score2 = 10
-| date = August 10, 2013
-| stadium

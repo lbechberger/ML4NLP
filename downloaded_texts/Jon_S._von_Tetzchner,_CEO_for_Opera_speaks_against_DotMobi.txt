@@ -1,3 +1,0 @@
-Opera CEO Jon S. von Tetzchner has spoken against the creation of .mobi, a domain extension for mobile devices saying that it is a "total waste of time" and "completely unnecessary." He continued saying "There should be one Internet... What if you're using another device? Should we have .gameconsole? .car? .fridge? .plane? We don't need .mobi at all." and "There are capabilities for sites to query the browser to figure out exactly what you're using. That's a much more elegant solution than having the user choose which site to go to." Opera and Sun are actually developing a browser for refrigerators.
-
-Microsoft, Google, and Nokia are some of the supporters of .mobi.

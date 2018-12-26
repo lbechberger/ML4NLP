@@ -1,7 +1,0 @@
-A Sea Launch Zenit-3SL rocket has been launched from the Ocean Odyssey platform in the Pacific Ocean, carrying a communications satellite into geosynchronous transfer orbit. Lift-off occurred at 09:43 GMT this morning, and the satellite was deployed into its transfer orbit about an hour later.
-
-The satellite, Galaxy 18, will be operated by Intelsat from an orbital slot of 123Â° West longitude in geosynchronous orbit. It will provide communications services for Intelsat customers in Canada, Mexico and the United States.
-
-The launch of Galaxy 18 was delayed from last year, following the January 2007 explosion of a Zenit rocket on its launch pad. It was originally built for PanAmSat, which merged with Intelsat in August 2005. It had a launch mass, fully fuelled, of 4700 kilograms, and was built by Space Systems Loral around an LS-1300 satellite bus. It is expected to remain operational for around 15 years.
-
-This is the 24th orbital launch of 2008, and the 66th launch of the Ukranian-built Zenit rocket. The next scheduled Zenit launch is currently planned for July, with the Echostar XI satellite. Another Zenit-3SL will launch Intelsat's next satellite, Galaxy 19, in August.

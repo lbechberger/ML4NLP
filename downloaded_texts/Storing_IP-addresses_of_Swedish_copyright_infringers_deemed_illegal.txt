@@ -1,9 +1,0 @@
-The Swedish organization Antipiratbyrån (The Swedish Anti-Piracy Bureau) suffered a massive blow today when the Swedish government's Data Inspection Board stated that the Bureau's storage of Internet user's IP addresses is illegal.
-
-Antipiratbyrån is an organization representing the movie and software industry in Sweden, working to protect the intellectual property of its beneficiaries. This spring they started collecting IP-addresses of suspected copyright infringers. They used the collected information to press charges and to contact the suspect's Internet service providers, demanding repercussions.
-
-The Data Inspection Board's press release established that the collection of IP-addresses is in fact a violation of the Swedish Personal Data Law, prohibiting electronic storage of information about individuals without their consent.
-
-- If they don't cease with the activities we might follow up with a penalty order, the supervising director Britt Marie Wester at the Data Inspection Board says to TT.
-
-Both the Swedish organization Piratbyrån - celebrating the verdict as a great victory - and the CEO of Jens of Sweden - a Swedish manufacturer of MP3-players - have stated that they might file a class action suit against the Anti-Piracy Bureau, together with the individuals registered.

@@ -1,9 +1,0 @@
-Canadian think tanks SecDev Group and the Munk Centre for International Studies at the University of Toronto have released findings from a 10 month investigation exposing an internet spy network based mostly in China which has hacked into computers and networks owned by government and private organizations in 103 countries.
-
-Allegations that the Chinese government was infiltrating computers set up by the Tibetan exile community prompted the initial investigation. Following up on the leads, investigators found at least 1,295 computers belonging to a range of governments and private organizations world wide were affected, including the Tibetan exiles' centres in Brussels, India, London, and New York.
-
-The spy network, dubbed 'GhostNet', appears to have focused on Foreign Affairs ministries, embassies, and international organizations including breaking into at least one computer at NATO. 30% of the machines infected were considered high-value targets according to the report published Sunday in Information Warfare Monitor. The report details the malware used in the attacks, pointing out that it provides extensive control of the infected computer to the outside source, even to monitoring microphones or cameras attached to the machine.
-
-Wenqi Gao, spokesman at the Chinese consulate in New York City told the New York Times that allegations of Chinese governmental involvement were "old stories" and "nonsense." 
-
-Another report released on Sunday from Cambridge University alleges the Chinese government or a group working closely with it initiated the attacks on the Tibetan organizations. In that attack, control of an e-mail server was also achieved, giving the attackers access to all messages sent by the Dalai Lama's supporters.

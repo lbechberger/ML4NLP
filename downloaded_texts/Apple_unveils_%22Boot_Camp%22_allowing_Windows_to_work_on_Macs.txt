@@ -1,9 +1,0 @@
-Apple unveiled today a new program called "Boot Camp" which will allow Macintosh users to switch between running Mac OS X and Windows on start-up of their Intel-based Macintosh computer. Shares of the company rose roughly 7% in response to the news.
-
-After Apple switched to Intel processors, enthusiasts and hackers have been trying to install Windows XP on a Mac. Because Macs boot using a faster and more modern system that Windows does not support, booting Windows was a very complicated task. 
-
-Mac enthusiasts reportedly achieved this task in mid-March when the website OnMac.net hosted a contest . The winning solution found involved a lengthy process that took both operating systems off and put them both back on. In addition, individual files had to be downloaded and installed, and there were no drivers for many things, most notably games. 
-
-Apple fixed both of these problems, with all major drivers included, and the process reportedly now takes less then an hour as compared to 3-9 hours. 
-
-The program is available for download, in beta form, from the Apple website. It will be included in the newest Mac OS, called Leopard, once that operating system is released.

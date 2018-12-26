@@ -1,7 +1,0 @@
-US-based Oracle Corporation announced Friday it had acquired Innobase OY for an undisclosed sum. Innobase is a Finnish company that has developed several open-source database technologies. They are best known for InnoDB. 
-
-InnoDB is an add-on storage engine for MySQL used by many popular websites, including Slashdot, EDS/Sabre, Yahoo Finance, Google and Wikimedia. It is an open source tool, distributed under the GNU General Public License (GPL).
-
-“Oracle has long been a supporter of open source software such as Linux and Apache. Innobase is an innovative small company that develops open-source database technology. Oracle intends to continue developing the InnoDB technology and expand our commitment to open source software.” said Charles Rozwat, executive vice president of Database and Middleware Technology at Oracle.
-
-Innobase is the 11th company to be acquired by Oracle in under a year. The most recent acquisition was of rival Siebel Systems on September 13 for $5.85 billion.

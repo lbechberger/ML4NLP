@@ -1,9 +1,0 @@
-MIT this week plays host to the Technology Review's Emerging Technologies Conference (ETC); not to be confused with the O'Reilly Emerging Technology Conference (ETech). ETC is supported and organized by the Technology Review magazine, and features celebrated innovators and engineers from around the country. 
-
-The conference, like the publication, prides itself on fostering innovation. Two tables outside the main audience hall display information about many other programs at MIT to support innovation, including the world-famous Lemelson-MIT Prize and awards highlighting work by high school students across the country. This afternoon, they presented the winners of their annual young tech innovators award, this year issued to the 35 best innovators under the age of 35.
-
-In addition to recognizing those 35 innovators, two special awards were presented, one for humanitarian design and the other for innovation in general. 
-
-This year's "Innovator of the Year" is Kevin Eggan, noted for his August publication in Science showing that cheek cells could be reprogrammed to become pluripotent stem cells. This could potentially end debates over whether it is moral to harvest stem cells from rarer sources.
-
-And the "Humanitarian of the Year" is Saul Griffith, founder of Squid Labs, which pioneered a system to make customized glasses 'for $5 in 5 minutes' -- covering the complete range of prescription lenses. In prototype: a machine roughly the size of a desktop inkjet that produced the lenses, and a hand-held machine (basically a set of goggles) which determines your prescription. You can send instructions to the first machine like you would to a printer; a production model is expected to be out in two to three years.

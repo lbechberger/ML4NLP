@@ -1,7 +1,0 @@
-Online organisations around the world are today testing Internet Protocol Version 6 (IPv6) — a new system of Internet addresses hoped to resolve the issue of the present system being at capacity. World IPv6 Day is checking everything works as planned.
-
-The current IPv4 standard was set up in the 1980s; it gives everything on the Internet a twelve-digit address and allows for 4.3 billion combinations. With these exhausted, IPv6 is designed to increase the limit 340 undecillion — that's 340 trillion trillion trillion.
-
-Major websites including services run by Google, Facebook, and Yahoo! are taking part in the test, switching their content to use the new system. Facebook predicts 99.97% of users to be unaffected and Google anticipates 99.5% will not encounter problems. The remainder may encounter slow page loading.
-
-Fiji and Australia are among the first countries to have business-hours web traffic during the test. Internet Society of Australia President Tony Hill claims more than 100 global companies are involved.

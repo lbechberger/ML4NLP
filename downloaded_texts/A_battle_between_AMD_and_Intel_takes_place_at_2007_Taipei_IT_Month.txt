@@ -1,7 +1,0 @@
-On the third day of the 2007 Taipei IT Month in Taiwan yesterday, notebook computers and desktop computers built with AMD's Phenom processor and Intel Penryn processor openly battled for the consumer-market after each company launched their quad core processors.
-
-Intel with partners like Acer, Genuine, ASUS, and Lenovo promoted their desktops with Core 2 Quad and notebooks with Centrino Duo, even though Intel didn't plan to exhibit in IT Month. Intel's Taiwan division is holding two road shows for DIY experts. One was on December 1 while the second will be on December 8.
-
-AMD, on the other hand, put on a showcase for IT Month with a "Bee Movie" booth-style exhibit at halls 1 and 3 of the Taipei World Trade Center. AMD's subsidiary company ATI showcased HDMI and Full HD with a demonstration of a new graphic card named "Radeon HD2000".
-
-As the two rivals postured over factors like performance and high-definition, Wikinews reporter Rico Shen interviewed some of their partners. BenQ and Micro-Star International both said: "No matter whether the consumer chooses a computer with AMD or Intel, the consumer should consider it based on functionality and practically before purchasing. For example, some low-price notebook computers (EeePC, OLPC) were launched before the show because notebook computer manufacturers had considered and evaluated what a consumer really want. Sincerely, I recommend a consumer not be fooled by a its price but to consider its functionality first!"

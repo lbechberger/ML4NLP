@@ -1,5 +1,0 @@
-After a six month voting window, adoption of the Open Document Format (ODF) as an ISO/IEC standard has become official, with a unanimous vote supporting the ODF (and some abstentions). The ODF format allows developers to produce office-type applications which use an inter-operable standard, allowing users to share documents without requiring a specific application to read them. The format covers text documents, spreadsheets, databases, charts and presentations.
-
-ISO Secretary-General Alan Bryden said, "[this publication] reflects the international community's recognition of the importance of open formats in enabling business interoperability."
-
-So far, the two major applications which support the ODF format are OpenOffice.org and KOffice. Microsoft Office currently dominates the market for office applications, although several third-party applications also contain limited support for the Microsoft Office formats.

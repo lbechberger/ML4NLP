@@ -1,7 +1,0 @@
-Surfwax, Inc., a metasearch engine and knowledge-tool provider announced its release of Wikiwax, a new portal for searching Wikipedia article titles. This is the latest addition to its offerings of narrowly focused search portals, such as its News Accumulator and ShopEasier shopping portal.
-
-Wikiwax claims to index over 600,000 Wikipedia terms, and its list of titles was last updated sometime in March, 2005. Once you enter terms into the search field, a menu of matching titles is shown; selecting one of the titles takes you directly to its Wikipedia entry.
-
-Wikiwax uses a Surfwax feature called LookAhead to suggest auto-completions of search terms as a user types them. It matches both articles whose titles start with the search terms, and articles containing those terms in that order. For example, a search for "Wales, Jimmy" would find the article "Jimmy Wales". A search for "The Earth" would also match "The Earth Stood Still, The Day". Surfwax offered visitors this manner of LookAhead auto-complete searching for over a year.
-
-Other Surfwax projects include Nextaris, an all-in-one "information exchange" portal offering searching/uploading/sharing/publishing/social-networking, and search packages targeted to specific industries, such as the Surfwax Scholar portal offered to educational institutions.

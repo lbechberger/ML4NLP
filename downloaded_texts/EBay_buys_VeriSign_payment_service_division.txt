@@ -1,9 +1,0 @@
-eBay and VeriSign announced an agreement late Monday for eBay to acquire VeriSign’s debit and credit card processing division. This division would become a part of eBay’s PayPal.
-
-eBay will pay VeriSign $370 million in cash and stock for this division. Starting in the coming year eBay will begin using two-factor authentication from VeriSign. Two-factor authentication is a type of transaction protection that gives users digital certificates or one-time passwords helping to protect against identity theft.
-
-"This acquisition allows PayPal to give our customers more choice in payment services and grow our merchant services business even more quickly," said president of PayPal Jeff Jordan.
-
-"In working with PayPal and eBay, we are going to be offering them our security technology, allowing them to offer their users stronger forms of authentication," said VeriSign CEO Stratton Sclavos.
-
-Last year VeriSign's gateway business processed $40 billion in transactions. It is expected to generate an additional $100-million revenue for eBay in 2006. It is also expected to increase the customer base by 100,000. The acquisition is expected to close this quarter.

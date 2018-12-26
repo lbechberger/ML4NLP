@@ -1,7 +1,0 @@
-The MIT Emerging Technologies Conference started its first day with a keynote by the Media Lab's Nicholas Negroponte, who presented the accelerating development of their $100 laptop initiative. This initiative aims to mass produce robust laptops at a cost of $100 apiece for use throughout the third world. 
-
-In November, at the second World Summit on the Information Society gathering in Tunis, the Media Lab will showcase working prototypes of the laptop. Five to fifteen million "beta" units are expected to be produced within a year, and deployed in five countries. Massachusetts governor Mitt Romney has suggested distributing the laptop to half a million students across his state. They hope to produce 150 million units by the second year, at even lower costs. Negroponte noted that "$100 is still too expensive.â€�
-
-The laptops will come with free software and content. Negroponte highlighted Wikipedia as an ideal content source for the initiative, calling it "by far the best encyclopedia on the planet." He later referred to the $100 laptop initiative as "the Wikipedia equivalent" of laptop design. 
-
-The Media Lab has previously provided laptops to groups of children in Senegal and Costa Rica. At the World Economic Forum earlier this year, Negroponte announced he was founding the One Laptop Per Child non-profit to push development of the notebook. Since then, the project has developed quickly, forming partnerships with organizations including Google, News Corp, Red Hat, and Advanced Micro Devices.

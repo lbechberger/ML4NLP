@@ -1,9 +1,0 @@
-China's Central Government Procurement Center, citing Microsoft's shutdown of Windows XP security support on April 8, issued a notice this week banning use of the Windows 8 operating system (OS) on new desktops, laptops and tablets by government agencies. Personal machines are not affected by the ban.
-
-The Windows XP shutdown comes thirteen years after the launch of XP, and deprives XP users of ongoing security updates against attacks by hackers and computer viruses.
-
-As Windows XP still enjoys wide use in China, the official Chinese news agency Xinhua has stated "The Chinese government obviously cannot ignore the risks of running OS without guaranteed technical support", in response to the shutdown. "It has moved to avoid the awkwardness of being confronted with a similar situation again in future if it continues to purchase computers with foreign OS." According to a Microsoft spokesperson, the ban from China also includes an online message prohibiting bids from Windows 8 for government contracts.
-
-Microsoft has officially responded to the notice and expressed their desire to continue providing assistance in reaching a solution. "Microsoft has been working proactively with the Central Government Procurement Center and other government agencies through the evaluation process to ensure that our products and services meet all government procurement requirements", said a Microsoft spokesperson. Microsoft has also reportedly said their earlier operating systems such as Windows 7 would still be made available to the Chinese government.
-
-Chinese software security companies have offered their assistance in maintaining security standards for Windows XP following Miscrosoft's shutdown. Xinhua reported Linux based operating systems are in development for the Chinese market, and the announcement presents business opportunities for those working in the information technology sector.

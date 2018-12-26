@@ -1,7 +1,0 @@
-Nine months after announcing the interoperability between their instant messaging (IM) services, Internet rivals Microsoft and Yahoo! began limited public beta (pre-release) testing of the program. This enables users of the two services to communicate with each other using their existing IM client, Microsoft's Windows Live Messenger (formerly MSN Messenger) and Yahoo! Messenger with Voice.
-
-Users wishing to use the new feature can go to a special page on the service's website, where they have to review and accept an agreement. After signing out and signing in again, the interoperability is enabled without downloading any new software.
-
-The service is designed to allow users to see each others' online presence, view personal status messages, share select emoticons, view offline messages and add new contacts from either service. However, more advanced features, like voice calls and shared folders are not interoperable between the two services.
-
-The program is available internationally in more than 15 markets.

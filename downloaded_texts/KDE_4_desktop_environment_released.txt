@@ -1,9 +1,0 @@
-The fourth major version of the K Desktop Environment, KDE 4.0, was released today after several years of development and testing.
-
-KDE is a free software project which aims to provide an easy to use desktop for UNIX and Linux workstations. As part of KDE also comes applications for many daily needs, and a complete platform for developers with the tools and documentation needed to write applications for the system.
-
-The release is a major break from the last major version, KDE 3. The most immediately obvious new feature is Plasma, a new desktop shell. Plasma provides a panel, a menu and other means to interact with the desktop and applications. Plasma also features a widget engine, that allows users to use various desktop widgets that are referred to as plasmoids.
-
-Among other major changes are Phonon, a framework independent multimedia API, Solid, a device integration framework and Oxygen, a new style guide and default icon set and a move to Qt 4, the most recent release of the Qt application development framework.
-
-KDE 4.0 packages are available for Debian, Fedora, Gentoo, Kubuntu, Mandriva and openSUSE.

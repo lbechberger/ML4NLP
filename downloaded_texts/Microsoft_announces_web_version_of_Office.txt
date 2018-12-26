@@ -1,7 +1,0 @@
-Microsoft has announced they will launch web versions of their popular Office software in 2010. It will be included in all versions of Office 2010 when it ships next year. All Windows Live customers will also reportedly have access. Testers will be given access at the end of this year.
-
-The service will go into direct competition with Google Docs, launched three years ago. Last week Google announced they were going to launch a new operating system, called Google Chrome OS. Like Google Docs, Microsoft Office will be compatible with Firefox, Safari, Google Chrome and Internet Explorer.
-
-Microsoft's group product manager for Office stated, "We believe the web has a lot to offer in terms of connectivity. We have over a half a billion customers world-wide and what we hear from them is that they really want the power of the web without compromise. They want collaboration without compromise. And what they tell us today is that going to the web often means they sacrifice fidelity, functionality and the quality of the content they care about. We knew that if and when we were ever going to bring applications into a web environment, we needed to do the hard work first because we hold such a high bar."
-
-Microsoft's business software division, which includes Office, made USD 9.3 billion in profit during the first three-quarters of its 2009 fiscal year. Analysts from The Wall Street Journal have predicted that the move "could put at risk as much as $4 billion (Â£2.46 billion) in revenue."

@@ -1,9 +1,0 @@
-The United States announced it does not agree with the European Union officials' proposal to share more of the control of the Internet with the United Nations. U.S. Bureau of Economic and Business Affairs Ambassador David Gross said, "We will not agree to the U.N. taking over the management of the Internet." Mr. Gross is coordinator for international communications and information policy at the U.S. Department of State and said further, "Some countries want that. We think that's unacceptable. No intergovernmental body should control the Internet, whether it's the U.N. or any other." 
-
-E.U. spokesman Martin Selmay said, "We are looking for a new cooperation model; a model that allows Internet governance and the laying down of public policy principles in coordination by all countries which are interested in the governance of the Internet, because the Internet is a global resource."
-
-The Internet Corporation for Assigned Names and Numbers (ICANN), a non-profit organization responsible for the assignment of domain names and Internet Protocol addresses, currently controls the root zone files for the Internet. They are overseen by the U.S. Commerce Department, which granted them the original contract to oversee those tasks. 
-
-Many nations have expressed displeasure at the U.S. having sole control of the Internet and suggest such control should be given to an intergovernmental body, such as the U.N. Other proposals include limiting ICANN to a technical role and establishing a new external organization to handle policy issues. 
-
-The issue is scheduled to be discussed in November at the U.N. World Summit on the Information Society in Tunis, Tunisia.

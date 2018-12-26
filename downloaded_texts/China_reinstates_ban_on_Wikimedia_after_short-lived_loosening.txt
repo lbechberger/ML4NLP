@@ -1,7 +1,0 @@
-HEFEI, China (Wikinews) After about one week of free access to Chinese Wikipedia, millions of netizens in mainland China found their access blocked once again. All requests for pages on the site are now answered only with the error message "The page cannot be displayed."
-
-According to test results and feedback available so far, everything has been reverted to what it was before mid-October. No direct access to any project page under the Wikimedia Foundation is available, and the keyword "zh.wikipedia.org", which is the URL of Chinese Wikipedia, is a banned search term. Attempts to search for that string in any search engine outside mainland China (Google, Yahoo, AltaVista, etc) results in the blocking of access to that search engine for several minutes.
-
-The Chinese government had lifted its ban on all non-Chinese versions of Wikipedia in mid-October, and the Chinese version on November 12. Whether the five-day partial absence of censorship (with politically sensitive contents still forbidden) was intentional or accidental is still unknown, however it had allowed millions in China to witness the Chinese Wikipedia's attainment of 100,000 entries. Many netizens had expressed their delight on online bulletin boards and chat rooms all over the country.
-
-No reason has been given as to why this happened.

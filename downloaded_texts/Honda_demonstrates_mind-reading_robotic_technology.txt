@@ -1,9 +1,0 @@
-missing image|File:Robot asimo cropped.jpg|thumb|left|Honda's Robot ASIMO At its headquarters in Tokyo, Japan, Honda Motor Company demonstrated on Tuesday technology which links a person's thoughts with robots.
-
-The operator wears a helmet which scans for electric currents stimulated by brain activity, but also uses infrared sensors to detect changes in blood flows in the head. The information is sent to a computer, which can then execute robotic movements such as opening the trunk of the vehicle or turning on the car's air conditioning. The commands usually take just seconds to reach the robot.
-
-Honda also released a video where a humanoid robot named Asimo was operated by a person wearing the helmet. The employee was stated to be thinking about raising his right hand, after which Asimo moved its right arm.
-
-Honda states that it could be quite some time before the technology is ready to go live due to difficulties such as the human brain's liability to become distracted, creating mixed thought patterns. A related problem is the amount of focus required by the operator. 
-
-"Practical uses are still way into the future." said Honda Research Institute Japan Co executive, Yasuhisa Arai. "I'm [just] talking about dreams today."

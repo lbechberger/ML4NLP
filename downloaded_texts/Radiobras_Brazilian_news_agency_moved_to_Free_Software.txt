@@ -1,7 +1,0 @@
-The Brazilian government news agency Radiobrás (ABr) website has completed a move to free software. As of January 9th, the agency's website is in compliance with the Brazilian government's program to use free software throughout the public sector.
-
-Free software is software which, once obtained, can be used, copied, studied, modified and redistributed. It is often made available online without charge or offline for the cost of distribution; free software is not limited to being given away, but can be "free as in free speech" and sold for profit. Some of the most well-known examples of free software are the Linux operating system, the Mozilla web browser and the OpenOffice office suite. 
-
-About 25 people worked on this change. The change has taken about a year and a half, since the first changes of some workstations and servers of Radiobrás. 
-
-The switch to free software is being implemented by the National Institute of Technology of Information (ITI), inspired by similar decisions made in another countries. A reduction in service costs is expected.

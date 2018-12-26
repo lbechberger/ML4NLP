@@ -1,9 +1,0 @@
-Big Linux 2.0 Beta 3 has been released. Big Linux is a Live Compact Disc Brazilian Linux distribution, based on Knoppix.
-
-A Linux distribution is a software set with the Linux operating system and GNU software. The source code of Linux and GNU software is freely available and can be legally distributed among users. Big Linux is a Live Compact Disc version of Linux, which means it may run directly from the CD or optionally be installed on the hard disk.
- 
-According to its developers, Big Linux aims to be easy to use and comes with many programs that are used by home users and offices. Some included programs are: KDE, Java, XMMS, Kaffeine, xine, Kopete, YES, XChat, Fullt, aMSN, the Windows runtime environments Wine and Cedega, the peer-to-peer applications xMule, BitTorrent and Apollon, OpenOffice.org, GIMP and AbiWord, the email clients Kmail and Thunderbird, and the internet browsers Mozilla and the proprietary Opera browser.
-
-Some features of version 2.0 beta 3 are: 3 versions of the Linux kernel -- 2.4.25 (for those who use Winmodems), 2.4.27 (stable) and 2.6.8 (performance) --, automatic detection of printers, higher boot speed, complete system of network and servers and an automatic hardware detection mechanism. The graphical environment (known as X11) can have several configurations separated by kernel. In this way, the user can have an accelerated graphical environment configuration and an unaccelerated graphical environment configuration at the same time. If there is some trouble with the accelerated graphical environment configuration, this allows the user to switch to the unaccelerated one.
-
-Big Linux can be downloaded without charge at Big Linux downloads. This distribution is primarily intended for Brazilian users, although anyone can use it.

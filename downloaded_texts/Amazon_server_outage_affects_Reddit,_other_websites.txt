@@ -1,7 +1,0 @@
-Amazon.com's Elastic Compute Cloud (EC2) experienced outages Thursday, taking down major websites, including Reddit, Foursquare, Hootsuite, and Quora. The company reported on its Web Services "Service Health Dashboard" that it first noticed "instance connectivity, latency and error rates" at 1:41 a.m. PDT (08:41 UTC) Thursday morning.
-
-The outage, which occurred at Amazon's northern Virginia data center, affected some of the company's US EC2 clients for much of the day. EC2, which hosts thousands of websites, is an elastic cloud computing platform.
-
-Quora, an online knowledge market, was taken offline by the outage. Reddit, a social news site, was accessible by mid-Thursday, but was still running at limited functionality. Location-based social network Foursquare experienced disruptions in service early Thursday, but appeared to have resumed normal operation by the afternoon. Other sites, such as Hootsuite and SCVNGR, displayed error messages instead of their normal home pages.
-
-Amazon has experienced outages before, including one in 2008 that lasted two hours due to technical problems at a data center. The company did not comment on the cause or scope of Thursday's outage, but continued to post public updates on its health dashboard. By Thursday evening, Amazon said it had resolved most of the issues affecting EC2, but one service availability zone had still not recovered.

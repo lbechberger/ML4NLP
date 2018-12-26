@@ -1,8 +1,0 @@
-Jatalla.com, a new search engine, provides search engine results pages that are derived strictly from user-generated submissions. The relevance ranking procedure relies upon "lexivotes", which consist of two parts: (1) a word or phrase (similar to a folksonomic tag, but potentially much longer than a traditional tag) and (2) at least one URL. When a user submits a search query, all lexivotes that exactly match the search query are counted, and results are ranked according to number of votes.
-
-Such an approach, which appears to be the first of its kind for this application, differs from the approach of traditional search engines, which rely upon web crawlers to gather content and then analyze this content using one or more algorithms. Jatalla's lexivote system also differs from traditional ranking mechanisms, such as those of the search engine leader Google, which rank relevance according to sites that link to a given web page.
-
-The Jatalla page for Frequently Asked Questions states, "When you perform a search on Jatalla.com, you are interviewing the entire world of Web users, and only those opinions matching your query -- character-for-character -- are counted in generating search results...
-If you believe (as do we!) that humans are still smarter than computers, you have come to the right place."
-
-The beta launch for the search engine is expected in July.

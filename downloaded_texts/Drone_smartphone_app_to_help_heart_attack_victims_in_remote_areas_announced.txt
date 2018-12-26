@@ -1,9 +1,0 @@
-German non-profit organization Definetz announced on Friday the development of the 'Defikopter': a medical drone, launched by smartphone app, designed to be able to fly defibrillators to heart attack victims in remote areas quicker than an ambulance.
-
-The Defikopter is to be launched by an app that sends out the GPS coordinates of the victim. With the ability to fly at 70km per hour in all weather conditions, the eight-armed octocopter could reach any patient within a ten kilometre radius.
-
-The invention has received cautious praise from German medical services; the drone is still in the development and testing stage. Definetz and collaborating drone builder Height Tech have not issued any information about the release of the smartphone app or about when the drone will be available for medical services to purchase. 
-
-"We'll have to see how much these drones can help," German emergency services union representative Marco König told The Local. German news site Mittelbayerische reports a price tag of €20,000 (US$26,000) apiece.
-
-One major problem Definetz faces is the law that requires all unmanned flying vehicles in Germany to be supervised. Another is that only members of the public who downloaded the app 'just in case' of an emergency, plus emergency workers with the app, could summon a drone.

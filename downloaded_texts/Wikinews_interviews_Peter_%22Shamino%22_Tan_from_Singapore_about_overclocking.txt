@@ -1,3 +1,0 @@
-Last Saturday, the "Intel Taiwan Overclocking Live Test" took place in the Taipei World Trade Center in Taipei, Taiwan, which drew many spectators to come and see the hardware experts at work. Overclocking (running computer hardware at a higher clock rate than normally) is more of an enjoyment for senior gamers or engineers, while the average computer users may lack the basic concepts of it, causing hardware to halt when they attempt it.
-
-With those issues in mind, Wikinews freelance reporter Rico Shen interviewed Peter "Shamino" Tan, an overclocking expert from Singapore, to clear up some of the basic issues relating to overclocking.

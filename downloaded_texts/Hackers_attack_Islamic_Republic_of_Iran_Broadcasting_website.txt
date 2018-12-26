@@ -1,7 +1,0 @@
-Wikinews has learned that the Islamic Republic of Iran Broadcasting (IRIB) website has been hacked and is suffering from an apparent Distributed denial-of-service attack (DDoS). As of this report, the main IRIB website could be reached. Just after 6:00 p.m. (EDT) the site came back online with only a few connection issues.
-
-On further investigation, it was discovered that an individual or group claims responsibility for attacking the website on an Iranian internet forum. As part of the attack, at least one section of the IRIB website, an apparent user space, was replaced with what appears to be videos and images of protests within Iran. The page also contains the statement "hacked by the Iranian people."
-
-It was also discovered that citizens have set up internet channels on IRC in an attempt to disseminate proxy servers and addresses to bypass the blocking of the internet by the Iranian government. Proxy servers can also be used to attack websites.
-
-The Iranian government has blocked access to the Internet, or access to websites, in nearly all of Iran. A partial list of blocked websites includes Facebook, BBC, and several Iranian based websites.

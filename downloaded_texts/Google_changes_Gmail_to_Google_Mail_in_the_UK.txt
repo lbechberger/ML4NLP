@@ -1,5 +1,0 @@
-Following a dispute with London-based company Independent International Investment Research (IIIR), Internet company Google Inc. has dropped the use of its "Gmail" name for its free email service. IIIR launched its own web-based email service called Gmail more than two years prior to Google's own service. All other countries (except Germany, where a similar dispute also resulted in a name change) will continue to use the Gmail name and domain (gmail.com).
-
-The change took place on Wednesday, when all new Gmail accounts created from a UK IP address will use the @googlemail.com domain, instead of the former @gmail.com. As the service is still "invite-only", invitations for the service will also be made for the @googlemail.com domain.
-
-Former UK Gmail users will continue to use the @gmail.com domain for the near future.

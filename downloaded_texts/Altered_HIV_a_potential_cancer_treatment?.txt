@@ -1,9 +1,0 @@
-At UCLA, a team of researchers has developed a harmless version of HIV that is designed to seek out, and potentially destroy, cancer cells. 
-
-In a laboratory-mouse experiment, the treated cells headed directly for melonoma and lung cancer cells, clustering around them with a surprising level of intuitiveness. Gene therapy for cancer has been at an impasse for the last 20 years, said the team, but now an effective carrier has been found in the most unlikely of sources. Essentially, one of the worldâ€™s largest health threats is now being considered to fight another.
-
-Says Dr. Irvin Chen, from UCLA's AIDS Institute, "The disarmed AIDS virus acts like a Trojan horse, transporting therapeutic agents to a targeted part of the body, such as the lungs, where tumors often spread." 
-
-First the virus's coating is removed and the virus is reprogrammed so that it recognizes and attaches to the p-lipoproteins of a cancer cell, one of cancer's primary defenses. The retro-virus was also altered with a fluorescent protein for easy tracking within the lab mice. The next step will be to graft a cancer-killing gene onto the modified AIDS virus's genetic structure. 
-
-Currently, a case of melanoma skin cancer spreading to the lungs is a confirmed death sentence. Should this method of treatment improve into a workable treatment, both life-threatening cancers and the AIDS retro-virus could be effectively neutered. But the team cautions that the treatment is in the very early stages and will take several more years to develop.

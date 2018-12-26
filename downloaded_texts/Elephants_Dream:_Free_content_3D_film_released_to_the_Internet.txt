@@ -1,9 +1,0 @@
-See also: Interview with Ton Roosendaal about Elephants Dream and free content movies
-
-
-
-The 3D animated short film Elephants Dream, formerly known as Project Orange, was released to the Internet yesterday. The film is available under the Creative Commons Attribution License, allowing anyone to download, modify and distribute it. The 10-minute film has been called "the first open source movie" by NewsForge. Not only is the movie itself free content, even the computer files containing the 3D models used in the film are available under the same terms.
-
-The project was first announced one year ago and was jointly produced by the Blender Foundation and the Netherlands Media Art Institute. The film tells the story of Emo and Proog, two men trapped inside a surreal machine world. Only freely available open source software was used to create the movie. Most of the work was done using Blender, a 3D modelling and rendering tool. The Blender Foundation is selling an extended edition on DVD, which includes subtitles in 34 languages, a Making Of documentary, commentary tracks, and all files used to create the movie.
-
-In spite of the successful completion of the project, the Blender Foundation "has no intention to grow or expand into a company or studio" according to the project website. "Instead, the Foundation aims at endorsing and supporting activities within (educational) institutes, universities and companies."

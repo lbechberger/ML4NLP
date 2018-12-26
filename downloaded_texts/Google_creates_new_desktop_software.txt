@@ -1,7 +1,0 @@
-Recently, Google had released Google Desktop 2 (beta), software that aims to provide information on a side-bar that sticks to the right end of your screen. Content on Google Desktop include e-mail searching, news and weather, subscribing to RSS-syndicated websites, and more features.
-
-One particular feature of Google Desktop is how it sends anonymous information of your computer use to Google (at option) in order to help choose RSS feeds and the like for you. This is much akin to how spyware works, however, said features can be disabled rather simply. Along the same lines are the ability to automatically find Weather and Stocks you would like at the first time you open it. This is a Beta so there are a few kinks in this system that can be expected to be sorted out at the full release.
-
-Google Desktop replaces the "Gmail Notifier", so you can check your gmail emails directly from the Sidebar. In addition to the Gmail mail checker, if you have Outlook, Outlook Express or Thunderbird email clients on your computer then it will check the email accounts in them. All this is automatic, so you get all these emails. Emails can be hidden by using filters.
-
-The program is a 1.3MB download and requires Windows 2000 or Windows XP. It automatically starts up when you load your computer.

@@ -1,5 +1,0 @@
-Jimmy Wales, the founder of Wikipedia, has announced that Wikia will be providing a new search engine that will be based on user input. This future search engine will differ from other search engines which use automatic indexing and ranking. It is based on the idea that because automated search engines can be manipulated, a search engine based on human judgment would be better. An initial launch is expected in early 2007.
-
-"Google is very good at many types of search," notes Wales in an interview with UK newspaper The Times, "but in many instances it produces nothing but spam and useless crap. Try searching for the term 'Tampa hotels', for example, and you will not get any useful results."
-
-The search engine has widely been reported as being called "Wikiasari", but Wales has stated this is a misconception. That name refers to an old codebase for a similar, abandoned project, and according to a large notice placed on search.wikia.com, the project is not affiliated with Amazon, A9, or Wikipedia. The name "Wikiasari" was derived from "wiki," a Hawaiian term meaning "quick," referring to wiki software, and "asari," which is Japanese for "rummaging search."

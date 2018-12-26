@@ -1,7 +1,0 @@
-Mobile phone operating software maker Symbian is licensing the Microsoft ActiveSync technology in a move that surprised analysts. The license would allow Symbian to develop a plug-in for mobile phones to let users check email that is served by Microsoft Exchange Server mail system.
-
-Symbian was formed in 1998 by Ericsson, Nokia, Motorola and Psion in a collaborative desire to counter Microsoft's emerging market power in operating systems for handheld devices. While Microsoft now provides the Windows Mobile software for mobile phones, it has not attained significant market penetration. At the same time, in part through the increased popularity of Research in Motion's BlackBerry mobile email device, users have come to expect their mobile phones to synchronize email with various mail servers â€” including Exchange Server.
-
-Symbian appears to be sensitive to the appearance of collaborating with the very competitor that spurred their creation. Symbian's press release emphasized that the licensing of the technology introduces just one of the many methods the Symbian software communicates with email servers. The spokesperson for the company, Peter Bancroft, was also on the defensive: "Microsoft isn't a monolithic company" he said, referring to the fact that Exchange Server and Windows Mobile are created by two different divisions of Microsoft.
-
-Shares of Research in Motion dropped on the news.

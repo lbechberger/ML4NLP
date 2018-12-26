@@ -1,7 +1,0 @@
-Microsoft has announced its plans to drop the part of its Windows Genuine Advantage (WGA) tool that sends data back to Microsoft saying if the user's copy of Windows XP is genuine or not. There has been a huge amount of controversy over that part of the application, mainly because every time a PC with the software is booted, it sends the data. If the PC, or more accurately, the operating system of the PC, is reported to be a pirated version the user is presented with numerous pop-ups and icons stating that the PC is running an illegal version of Windows.
-
-The dropping of pirate checks in WGA could be because of a class action lawsuit that was filed last week by San Diego lawyer, Scott Kamber, on behalf of U.S. users on allegations that the software is spyware. 
-
-A statement from Microsoft Australia says, "WGA is not spyware. It's installed with the consent of the user and seeks only to notify the user if a proper licence is not in place."
-
-Ian Smith, a user angered by the WGA pirating checks, said to Australian IT "I bought my software legitimately, I validated it, I go to Microsoft for updates, and if they want to check it then, that's okay. But coming back every day is too much."

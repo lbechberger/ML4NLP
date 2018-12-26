@@ -1,7 +1,0 @@
-The 2005 Cyberarts Festival, which runs through May 8, 2005, opened with a gala at the Hotel@MIT, a hotel near the Massachusetts Institute of Technology. The gala, which took place in a series of function rooms on the third floor of the hotel, started at 6:00 p.m. and ran past its stated end time of 9:00 p.m. The event featured food and drink, as well as computer art from a variety of artists whose work will be featured in the festival.
-
-Local Wikipedia contributor Samuel Klein displayed a customization of Daniel Wunsch's rcbirds program, which converts Wikipedia recent changes feeds into a series of bird calls and other sounds from the open-sound peep project, differentiating edits by the anonymity of the user, the name and namespace of the article involved, and the user's contribution history. Different types of edits produced different bird calls; once or twice during the evening, conversation was briefly interrupted to undo vandalism signaled by the stream of sound.
-
-Martin Wattenberg, a researcher at IBM's local research lab, who has also developed software to visualize the history of changes to Wikipedia pages, exhibited his visualization of the decision tree of a computer playing chess, described jokingly as "Tiny Blue."
-
-Other presenters included Newbury Open.net's new Boston Music Project.

@@ -1,9 +1,0 @@
-An Apple iPhone and two HTC Hero[es] ]]Apple sued HTC, a Taiwanese manufacturer of mobile phones, on Tuesday, in a lawsuit claiming 20 different patent infringements, largely relating to the user interface of the iPhone, which is manufactured by Apple.
-
-According to the lawsuit, filed with both the United States District Court in Delaware and the United States International Trade Commission, HTC violated Apple patents pertaining to both multi-touch gestures, which allow users to interact with a device's touchscreen using multiple fingers, as well as patents involving more general touch features. Devices mentioned in the suit are all phones manufactured by HTC that use Google's Android software. The lawsuit says that HTC, in selling the phones, knowingly induced those using the mentioned products to violate patents owned by Apple, some of which were filed in the mid-1990s.
-
-Although the lawsuit named only HTC as a defendant, many viewed the action as an indirect challenge to Google, as the lawsuit only covered HTC devices running Google's Android software. The operating system has seen increasing popularity in the last year, and has increasingly included multi-touch input of the type mentioned in the lawsuit. 
-
-One analyst, from Kaufman Brothers, said, "I think this is kind of an indirect lawsuit against Google." Others said that Apple was suing HTC instead of Google because the phone manufacturer was an easier target than Google. Another analyst from MKM Partners said that "HTC is an optimal target for Apple-it's a relatively small vendor with a weak brand."
-
-In the documents, Apple said that their goal was to permanently block HTC from importing and selling devices that had the offending qualities, as well a significant cash payment in damages.

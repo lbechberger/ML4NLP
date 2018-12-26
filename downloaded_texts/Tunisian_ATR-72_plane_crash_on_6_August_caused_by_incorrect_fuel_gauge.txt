@@ -1,7 +1,0 @@
-Investigation of the crash into sea of a Tunisian airplane ATR-72 near Sicily on August 6, 2005 has arrived at an astonishing conclusion. The wrong type of fuel gauge was installed in the aircraft. The gauge was designed for another type of aircraft, the much smaller ATR-42.
-
-
- 
-The level indicated by the gauge was wrong, causing the pilot to think that the plane needed less fuel that it did. Then, when fueling at the airport, less fuel than was needed was loaded in the airport of Bari. While in flight the airplane ran out of fuel, although the gauge still showed fuel available.
-
-After this conclusion by the Italian National Security Flight Agency (ANSV) the Italian National Agency for Civil Aviation (ENAC) has suspended Tunisian airline Tuninter's authorization to operate commercial flights in Italy. A warning was also send to European Authority about what has happened asking that all fuel gauges installed on ATR-42 amd ATR-72 be checked.

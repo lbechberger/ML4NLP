@@ -1,7 +1,0 @@
-As Microsoft had previously announced, they will stop supporting three older versions of their flagship Windows operating system software, Windows 98, Windows 98 Second Edition and Windows Millennium Edition (Me).
-
-On July 11, 2006 technical and public support and critical security updates for these products will end, as part of the Microsoft Lifecycle Policy. In their customer notification about the change, the software giant says they are ending support "because [these products] are outdated and these older operating systems can expose customers to security risks", and that customers are advised to upgrade to the company's newer Windows XP.
-
-IDC analysts say that seventy million will be affected by the change. Because of the lack of security updates for Windows 98, it is possible that any still-existing security problems can be exploited.
-
-Support questions on the Microsoft website relating to the software products can still be accessed and will remain for at least another year. Microsoft ended free support for these products in 2003. The end date of Extended Support for Windows 98 was originally January 16, 2004.

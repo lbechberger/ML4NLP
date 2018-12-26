@@ -1,5 +1,0 @@
-An American inventor has patented a pair of new time formats with a footprint less than 50% of that of conventional four-digit time. The more unusual of the two new formats, called "TWELV", dispenses with numerals altogether. In place of clock hands or digits, the new clock uses color to convey the hour and a moon image to convey the minute, which moon slowly grows throughout the course of an hour from a narrow crescent to a full-fledged circle.
-
-The second and more approachable of the new formats retains numerical digits to indicate the minute but uses colors to convey the hour.
-
-Early critics question whether the aesthetic benefits of the moon-clock will be sufficient to encourage users to learn the color-based time-telling system. However, the size advantages of the new system may make it particularly suitable for mobile applications, particularly cell phones, wearable computers, and head-mounted displays.

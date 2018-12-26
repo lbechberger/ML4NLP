@@ -1,9 +1,0 @@
-Larry Sanger announced Citizendium.org, a fork of the English Wikipedia, at the Wizards of OS conference in Berlin today.
-
-Sanger was employed by Jimmy Wales to work on Nupedia and later Wikipedia from 2000-2002. He currently works on the Digital Universe initiative with entrepreneur Joe Firmage and astrophysicist Bernard Haisch, but does not anticipate Citizendium being part of Digital Universe.
-
-Citizendium will be free content, licensed under the GNU Free Documentation License as Wikipedia is, but with a different editorial structure.
-
-Brad Patrick, General Counsel and interim Executive Director of the Wikimedia Foundation, said "A great strength of the free culture movement is in the freedom to experiment. It is good to see Mr Sanger continuing to push forward with freely licensed content in his new project."
-
-Many static mirror sites exist of the English Wikipedia. The only fork that is actively edited is Wikinfo.org, run by Fred Bauder, an administrator and arbitrator on the English Wikipedia.

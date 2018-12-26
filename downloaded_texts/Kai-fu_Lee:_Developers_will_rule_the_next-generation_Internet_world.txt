@@ -1,5 +1,0 @@
-The 2008 Google Developer Day started its second day today at Beijing International Convention Center, China. "Cloud Computing" was chosen as its theme for this event, driving more discussions between several participating programmers on the applications of Internet APIs.
-
-
-
-Since Google Gears, Android, and the Google App Engine was already discussed in Japan, Google China announced that they will cooperate with several local internet communities including MySpace, Tianya Club, and Xiaonei Web on an interactive platform - "OpenSocial" in China.

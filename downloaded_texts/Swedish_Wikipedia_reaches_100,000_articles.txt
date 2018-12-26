@@ -1,9 +1,0 @@
-The Swedish language edition of the multilingual Wikipedia project passed 100,000 articles this evening at 18:11 CEST. Swedish is the fifth language to reach this milestone, joining English, French, German, and Japanese.
-
-The article growth was quite modest when 100 articles remained, but at 18:09, with less than 50 articles left, people started submitting a lot of articles. Most of them were written in advance, according to visitors at the IRC channel. The 100,000th article is believed to be about a minister of the Faroe Islands, Jógvan við Keldu, according to announcement pages on the site minutes after the milestone was passed. Some concerns were raised, however, and a Wikipedian claimed on the village pump that the article Epiglottal klusil ("linguistic subject") was number 100,000.
-
-The Swedish edition is said to have been started in May 2001, but didn't see much growth until November 2002 when several contributors arrived. The 50,000 mark was passed less than a year ago.
-
-The Swedish Wikipedia operates using the same basic principles as its larger English language sister edition, which include writing from a Neutral Point of View and making content open using the GNU Free Documentation License.
-
-The size is quite large compared to the number of speakers of Swedish worldwide (about 9 million). The Swedish edition is larger than some languages with hundreds of millions of speakers such as Spanish, Portuguese, Chinese and Hindi. The reason for this is somewhat obscure, but discussions on the central discussion forum of the site, Bybrunnen (a literal translation of "village pump"), say this is because articles are considerably shorter than on other Wikipedias and that the Internet connectivity is very high in Sweden. Other Wikipedias for languages spoken in Northern Europe (including Norwegian, Danish and Finnish) also have a high number of articles compared to the number of speakers.

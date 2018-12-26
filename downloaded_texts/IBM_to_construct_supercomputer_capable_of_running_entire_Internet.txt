@@ -1,7 +1,0 @@
-IBM has announced a new project called Kittyhawk, which entails constructing a global-scale shared supercomputer capable of hosting the entire Internet on one platform as an application. Currently the Internet is a collection of interconnected computer networks.
-
-IBM has prepared a white paper detailing the project. The Kittyhawk will be based on the previously developed IBM supercomputer called Blue Gene. In theory the Kittyhawk will have up to 16,384 racks, providing a maximum of 67.1 million cores with 32 petabytes of memory.
-
-According to the introduction of the white paper, "Project Kittyhawkâ€™s goal is to explore the construction and implications of a global-scale shared computer capable of hosting the entire Internet as an application. This research effort is in an early stage, so this paper describes our conjectures and our ongoing work rather than a completed set of results."
-
-The Kittyhawk project has created much discussion in the technology community. One of the main topics of discussion is the comparison of Kittyhawk to Skynet the fictional supercomputer, in the movie series Terminator, which attempts to destroy all human life and take over Earth.

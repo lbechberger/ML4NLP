@@ -1,9 +1,0 @@
-A research team from the Australian National University have generated complex surface flows driven by three-dimensional waves. Their results show possibility of remote manipulation of floating objects and were published in Nature Physics this Sunday.
-
-As Dr Horst Punzmann told ABC, "A tractor beam is a popular term which, I think it captures quite well the basic principle. You put an object there and it propagates, it floats backwards to the source of the wave". Professor Michael Shats clarified that "We found that above a certain height, these complex three-dimensional waves generate flow patterns on the surface of the water. The tractor beam is just one of the patterns, they can be inward flows, outward flows or vortices".
-
-Professor Michael Shats spoke about the experiments: "First I thought it was impossible and I thought that it was the effect of the boundaries nearby. So the first idea was to build a bigger tank. We did, and it worked". As Dr Horst Punzmann noted, "The ability to move films on the ocean, like oil films... would be an opportunity". Professor Michael Shats explained that "The power requirements for the wave maker are relatively small because we generate only the motion in the top layer".
-
-To visualise the three-dimensional flows and trajectories, Houdini animation software was used and help was provided to the researchers by National Computational Infrastructure. To create a figure of 2D unstationary flow, finite-time Lyapunov exponent analysis was used.
-
-This study was supported by the Australian Research Council, the Minerva Foundation and the Binational Science Foundation (BSF).

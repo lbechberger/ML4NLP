@@ -1,9 +1,0 @@
-This past Tuesday, a United States federal judge ordered the popular video sharing website YouTube to hand over a record of every video that users have watched, including registered accounts and IPs.
-
-Viacom, which owns several U.S. television networks such as MTV and Nickelodeon, launched a $1 billion lawsuit last year alleging that YouTube wasn't doing enough to stop its copyrighted material from appearing in over 160,000 unauthorized clips that have been viewed over 1.5 billion times. Viacom argued that since they claimed that copyright material is more popular than user-made videos, they needed access to the information to strengthen the case, in which US District Court judge Louis L. Stanton agreed and ordered Google to turn over such information.
-
-Google argued that this would cause privacy issues, but Stanton said it was just speculation. The Electronic Frontier Foundation, a San Francisco-based privacy advocate group, said the ruling was "a setback to privacy rights, and will allow Viacom to see what you are watching on YouTube." said EFF's senior staff attorney Kurt Opsahl.
-
-Viacom had also requested for the code used to search keywords for each video and access to Google's advertising database to see if Google was receiving revenue from ads from the alleged videos, but these requests were denied by the judge, arguing that code and ad data was too valuable.
-
-There are concerns that Google is violating the Digital Millennium Copyright Act which allows a video provider service to not to be sued if it removes copyrighted material.

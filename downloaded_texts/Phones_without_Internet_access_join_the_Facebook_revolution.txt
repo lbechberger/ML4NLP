@@ -1,7 +1,0 @@
-Amsterdam-based electronics company Gemalto has announced that it has developed a way of putting Facebook compatibility on to a mobile phone SIM card, to allow mobile phones with no data or internet connection to access the popular social networking site.
-
-The report, appearing on the Slovenian tech site Monitor, says that users will be able to communicate directly with the site via SMS messages, as well as being able to exchange messages online and having the facility to write on other Facebook users walls. The formal announcement of the technogical breakthrough was made at the Mobile World Congress in Barcelona, Spain, on February 14.
-
-Users will see the changes to the website appear as messages on their phones, so they will be able to keep track of updates to the site. The announcement has drawn much interest from mobile phone companies and service providers, who are keen to take advantage of the new functionality which would significantly increase revenue due to the scaling up of SMS messages passing through their networks.
-
-"Increasingly people want to be able to stay connected and communicate with their friends on Facebook anytime, anywhere. Gemalto has developed a creative solution in Facebook for SIM that enables people without mobile data plans to stay connected to their friends on Facebook in an affordable way," Gemalto's Head of Mobile Business (Facebook), Henri Moissinac, said in a statement.

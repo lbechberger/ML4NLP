@@ -1,5 +1,0 @@
-Microsoft has announced a low-cost Windows XP Starter Edition is to be launched in Brazil.
-
-Windows XP Starter Edition has been previously released in several other countries in Asia and Russia. These editions are sold only as a low-cost OEM bundle. The edition is quite similar to Windows XP Home but with some restrictions: only three applications may be run concurrently, 800Ã—600 is the maximum display resolution and home networking is disabled.
-
-Brazil has been increasingly adopting open source software for IT projects, rather than using Microsoft products. The country recently launched the PC Conectado initiative, which aims to greatly increase the use of computers in homes, schools and businesses by making them as much as 50% cheaper. An important cost-saving measure is the exclusive use of open source software. No Microsoft software is being used.

@@ -1,7 +1,0 @@
-The Lower Saxony, Germany tax authority is migrating 12,000 desktops to use SuSE Linux with KDE as the desktop environment. The systems are being migrated from Sun's Solaris x86 version 8, which has been in use at the organization since 2002.
-
-According to Eva Brucherseifer, president of the KDE community in Germany and managing director of basysKom, the migration process in its "peak phase" and is porting 300 systems every day. The company basysKom is configuring the desktops.
-
-Brucherseifer said "The decision made by the Regional Tax Office in Lower Saxony represents an important step towards increased flexibility, enhanced usability and — last but not least — reduced training and support costs." 
-
-German cities using or planning to use open source software include Schwäbisch Hall, Mannheim, Treuchtlingen, Leonberg and Isernhagen. Mannheim is planning to deploy Linux on 110 servers and 3,700 desktops.

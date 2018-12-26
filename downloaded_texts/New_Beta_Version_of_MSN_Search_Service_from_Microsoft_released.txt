@@ -1,5 +1,0 @@
-Microsoft has released the new MSN Search service. According to Microsoft press release, the new MSN Search offers the largest, up to date selection of information and a new class of search tools, reducing time and effort required by users to find information.
-
-Some major characteristics of the new MSN Search service include: up to date information, direct answers, direct actions, content specific searching, Search Near Me feature (results tailored geographically), Search Builder (the user can customize search results by defining search criteria).
-
-The global beta version of MSN Search is available here.

@@ -1,3 +1,0 @@
-The 10.10 version of Ubuntu (codename Maverick Merkaat), a free operative system is to be released in the next few days. French Wikinews contributor Savant-fou (Baptiste) has interviewed Fabrice (fabrice_sp on Ubuntu), an Ubuntu's MOTU (Master Of The Universe), member of the development team of the operative system.
-
-Ubuntu is a computer operating system, based on Debian, which is created collaboratively by thousands of people. There are three official Ubuntu versions: Ubuntu Desktop Edition (for desktop and laptop PCs); Ubuntu Netbook Edition (for netbooks); and Ubuntu Server Edition (for use in servers).

@@ -1,7 +1,0 @@
-The search engine Google announced the removal of the official German BMW web site from its search results today. Google is reported to have removed the website due to the use of a trick to raise its website ratings in the search engine's results.
-
-The online version of Forbes magazine reported that the German word for used car, Gebrauchtwagen, appeared 42 times in a doorway web page created by the German car manufacturer. Doorway web pages contain many keywords designed to attract search robots. The page presented to Google's robot for indexing was significantly different from the page presented to the site's visitors.
-
-According to a recent blog post by Matt Cutts, one of Google's software engineers, this technique is "a violation of our webmaster quality guidelines." These guidelines encourage webmasters to "avoid tricks intended to improve search engine rankings."
-
-BMW reacted to the measure by claiming that it had no intention of manipulating the search results, but instead used the doorway pages with the objective of "offering a better service" to those looking for used cars.

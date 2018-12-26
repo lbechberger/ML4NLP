@@ -1,7 +1,0 @@
-Microsoft Corporation has announced that the official name of the next version of its Windows operating system will be "Windows Vista". The system was formerly referred to by the codename “Longhorn.”
-
-
-Brad Goldberg, the general manager of Windows product development, said the new name is aimed at "communicating the idea of clarity." Microsoft has said that this new version will include better graphics and security.
-
-Windows Vista is scheduled to launch in the second half of 2006; this will make five years after the launch of Windows XP, the longest interim yet between releases of Windows. 
-Additional details on Windows Vista will be released at a developer's conference in September. Beta testing of the software targeted at developers and IT professionals will begin on August 3.

@@ -1,9 +1,0 @@
-Three Gonets satellites have been launched by the Russian Space Forces atop a Ukranian-built Rokot carrier rocket. Lift-off, from site 133 at the Plesetsk Cosmodrome in Northern Russia, occurred at 15:20:09 GMT this afternoon.
-
-The three Gonets satellites will be used to provide store-dump communication services. This is the second launch of modernised Gonets-D1M satellites. They will be operated by Gonets SatCom, an organisation which was previously part of the Russian Federal Space Agency, but which was privatised in 1996. Whilst Gonets is a civilian system, it has been reported that these satellites will also be used for military applications. Reports have suggested that the satellites have received military designations of Kosmos-2437, 2438 and 2439 under the Kosmos system. Such designations have previously been assigned to, and in some cases later removed from, civilian satellites.
-
-A small technology demonstration satellite, Yubileiny, was also launched. It was built to celebrate the 50th anniversary of the launch of Sputnik 1, and will be operated by NPO PM. It will broadcast audio and visual programmes on amateur radio frequencies, detailing the history of the space programmes of Russia and the Soviet Union, as well as signals imitating those of Sputnik 1.
-
-The Rokot is a small carrier rocket derived from the UR-100 missile. Its upper stage, the Briz-KM, is a scaled-down version of the Briz-M upper stage used on Proton rockets. This is the first launch of a Briz upper stage of either type since the failure of a Briz-M during a March Proton launch, which left the AMC-14 satellite stranded in Medium Earth orbit.
-
-This is the 25th orbital launch of 2008 in spaceflight, and the 13th launch of a Rokot. The next Rokot launch is scheduled for early-mid September, with the GOCE satellite for the European Space Agency.

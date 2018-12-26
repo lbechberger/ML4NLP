@@ -1,5 +1,0 @@
-According to Wikipedia founder, Jimmy Wales, the first draft of the new version of the GNU Free Documentation License is expected to be released soon.
-
-Jimmy Wales, who is visiting Poland to establish the Polish branch of Wikia, was speaking on the occasion of the fifth "birthday" of the Polish language Wikipedia, on 23rd September. 
-
-Wales, asked what he is planning to do to make usage of Wikipedia content easier, admitted that the current GFDL license (version 1.2) under which the whole content of Wikipedia is released, is very complicated and parts of it are hard to understand. However, he said that earlier in the day, he received a call from Eben Moglen, main lawyer of Free Software Foundation, which created the license, who promised that the first draft of new version of GFDL license would be released soon and it would solve the problems present in current version.

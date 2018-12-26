@@ -1,5 +1,0 @@
-Internet search giant Google announced yesterday that it will move its servers hosting Google.cn - aimed at Chinese internet users - to the United States. 
-
-Until now the servers being in mainland China has forced Google to comply with the censorship policies of the PRC government. The reason for the move is that Google fears local officials could access the servers' search-data without the company's consent. According to Google, their policy of saving the IP addresses of its users is to gain more knowledge on how the search engine is used.
-
-Google has been heavily criticized for agreeing to the censorship, but nonetheless admits that Chinese officials can also censor its contents through internet service providers, so refusing to remove pages from the search-index wouldn't be a solution. Google also underlines the fact that the service will let the user know when search results have been censored.

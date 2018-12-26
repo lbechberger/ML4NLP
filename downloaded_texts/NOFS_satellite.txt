@@ -1,5 +1,0 @@
-A Pegasus-XL carrier rocket, air-launched by a Lockheed L-1011 TriStar flying from Kwajalein Atoll in the Marshall Islands, has placed the much-delayed C/NOFS satellite into a low Earth orbit.
-
-C/NOFS, which stands for Communications/Navigation Outage Forecasting System, will investigate and forecast scintillations in the Earth's ionosphere, which are responsible for degradation of signals from navigation and communications satellites. It was originally scheduled to launch in 2003, but owing to a string of delays, it was finally launched at 17:01 GMT today. It will be operated by the Air Force Research Laboratory and Space Test Program offices of the United States Air Force.
-
-The launch was conducted by Orbital Sciences Corporation. It is the first launch of a Pegasus rocket in almost a year. The next Pegasus is scheduled to launch in July, with NASA's IBEX satellite. The launch of C/NOFS is the 17th launch to orbit this year and the 39th orbital Pegasus launch.

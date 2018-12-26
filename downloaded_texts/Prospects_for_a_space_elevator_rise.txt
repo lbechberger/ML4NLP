@@ -1,9 +1,0 @@
-During a NASA competition, a group of researchers managed to create a robot, powered by a ground based laser, to climb a cable 1 kilometer high dangling from a helicopter.
-
-The contest winners will receive US$2 million for inventing a functioning robot which climbs to the set height in a reasonable amount of time. 
-
-The competition took place in the Mojave desert at NASA's Dryden Flight Research Center on Edwards Air Force Base, and teams from Missouri, Alaska, and Seattle competed for the prize. It was held to further the research on technology capable of making the 22,000 mile journey into outer space.
-
-The laws of physics are playing against the researchers. The cost of implementing a project where these laws could be handled and orbit achieved is very high: an estimated $22 Billion. Although a working space elevator is a futuristic idea, the projects used in the research today could potentially create such an elevator.
-
-A team from Seattle was announced as the second place winner, winning $990,000 in prize money. They did not earn the full $2 million because they were unable to achieve the required speeds. Despite their research, none of the teams were able to get their robots to the top.

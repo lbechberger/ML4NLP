@@ -1,7 +1,0 @@
-The name Robert Cailliau may not ring a bell to the general public, but his invention is the reason why you are reading this: Dr. Cailliau together with his colleague Sir Tim Berners-Lee invented the World Wide Web, making the internet accessible so it could grow from an academic tool to a mass communication medium. Last January Dr. Cailliau retired from CERN, the European particle physics lab where the WWW emerged.
-
-Wikinews offered the engineer a virtual beer from his native country Belgium, and conducted an e-mail interview with him (which started about three weeks ago) about the history and the future of the web and his life and work.
-
-Wikinews: At the start of this interview, we would like to offer you a fresh pint on a terrace, but since this is an e-mail interview, we will limit ourselves to a virtual beer, which you can enjoy here.
-
-Robert Cailliau: Yes, I myself once (at the 2nd international WWW Conference, Chicago) said that there is no such thing as a virtual beer: people will still want to sit together. Anyway, here we go.

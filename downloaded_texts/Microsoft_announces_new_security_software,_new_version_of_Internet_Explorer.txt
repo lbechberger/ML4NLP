@@ -1,9 +1,0 @@
-Bill Gates announced in a RSA security conference that Microsoft will release major security changes to Internet Explorer and will release a new version prior to the release of Longhorn, the replacement for Windows XP expected any time after 2005.
-
-Microsoft plans to include many features to increase security. These features are to protect against threats such as computer viruses, spyware, and phishing.
-
-Release of a test copy of the new version is expected some time in the middle of this year. Also in the works is a Microsoft developed anti-virus program. This move puts pressure on other major players such as McAfee and Symantec. The anti-spyware product is currently planned for release to Windows users for free.
-
-Analysts contend that these plans to rework Internet Explorer are likely due to increased competition from smaller browsers such as Firefox. AOL plans to release a new version of Netscape Browser with protection against phishing as well.
-
-To further compete, more content related services may be incorporated into the browser. Martin Reynolds, a vice president of technology forecasting firm Gartner Inc., said, "I don't think we will see a whole bunch of new features. We will see the existing features of the browser tightened up so the security becomes more manageable."

@@ -1,7 +1,0 @@
-Last Tuesday in Taipei, Google Taiwan held an annual summary press conference named "Collective Intelligence &amp; Innovation" (In Chinese: 匯聚智慧、集體創新). With many products had already been presented to the public like wikis, blogs, and photo albums in the Web 2.0 era, Google served to provide lots of services like Google Apps, Google Maps and YouTube with suitable versions in Taiwan differing other countries this year.
-
-Global Deputy Director of Google Kai-Fu Lee said: "The contents on the Internet were mostly limited with some copyright issue in the past, but after many products in the Web 2.0 era are presented, several contents are progressively released and opened to the public in the presence. As those factors, we [Google] hope developers in Taiwan can develop useful tools for local people to apply with people's life."
-
-"In order to change minds in public, we [Google] conjoined some required elements into people's life, and services on iGoogle in Taiwan are progressively more and newer because of the improvements of developers. We hoped a simple service can be multiplied with releases of useful and functional tools," he also said.
-
-Also in this conference, the Engineering Director of the Google Taiwan R&amp;D Center Li-feng Chien also announced the achievements on the "Google Taipei Developers' Day" and invited developers named Chi-pao Hu and Yi-ru Lin to share some actual applications on iGoogle.

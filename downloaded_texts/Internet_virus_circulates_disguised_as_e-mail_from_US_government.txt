@@ -1,9 +1,0 @@
-E-mails containing the Sober X worm are being sent around the Internet disguised as an e-mail from either the Federal Bureau of Investigation or the Central Intelligence Agency, both organizations of the United States government. Opening the e-mail on a system running on the Microsoft Windows operating system should be avoided at all costs, experts say.
-
-The e-mail claims that the recipient has been caught visiting illegal websites, and asks the user to open an attachment to answer some questions. Once this virus is opened, a variety of system-damaging events may occur. It is reported that anti-virus and other security measures are disabled, and accessing websites for said assistance is disabled, and that your contacts on your address book can be sent this e-mail, and that your privacy may be invaded.
-
-BBC News reported the virus was unleashed on November 22. MessageLabs caught at least three million copies within 24 hours after the breakout, and McAfee, a system security research firm, reports over 70,000 cases of the virus on consumer computers. This is also the 25th variant of the Sober worm, the first of which was released in October 2005.
-
-The FBI and the CIA claim on their website that they did not send out the e-mail, and they discourage opening the e-mail. The Washington Post names this worm as the "worst computer worm of the year". 
-
-A similar e-mail circulated in Germany last week. Claiming to be sent by the Bundeskriminalamt the e-mail told its readers that they were caught downloading pirated software. An attachment also included the Sober worm.

@@ -1,9 +1,0 @@
-Wikinews has confirmed that the unblocking of the Chinese Wikipedia in China has probably been extended to cover the whole of China. Ting Chen, who is currently the community elected board member of the Wikimedia Foundation, said at 09:54 (UTC) today on Wikimedia’s foundation-l mailing list that he has “reports from provinces and cities from very different corners of the country, that the users have direct access.”
-
-Wikinews previously reported that the Chinese Wikipedia was unblocked in China, although that unblock did not cover the whole of the country. Wikipedia user Aphaia has also said that Wikipedia can even be accessed in remote districts such as Fujian. She said that “Fujian is rather near to Taiwan so this lifting would be nationwide, I suppose.” Using a Website Testing tool, Wikinews has also confirmed access in Shanghai, Beijing and Hong Kong. However, access to controversial pages such as the article on the Tiananmen Square protests of 1989 was found to remain restricted.
-
-Despite the fact that the ban has been lifted, the Chinese Wikipedia continues to tell readers a way to get around the firewall. At the top of every page there is a message telling users (who are not logged in) to view Wikipedia using the https server to bypass the block.
-
-Some Wikipedia contributors have said that the block may reappear after the Olympic games have finished. Titan Deng, an active Wikimedia who organized Wikimania 2007 said that “the lift of the ban is brought by the Olympic Game[s] which is going to be held next week.” He then said that “the lift[ing of the block] might end after the Olympic Game[s] finishes.”
-
-The International Olympic Committee warned China in April that it wanted the internet freely accessible for the entire duration of the Olympic Summer Games. Unrestricted access is guaranteed to the 30,000 reporters and media staff expected for the Olympics under Beijing's "host city contract".

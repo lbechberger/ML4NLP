@@ -1,9 +1,0 @@
-The website of international news service Al Jazeera was hacked Tuesday by a group idenitified only as Al-Rashedon. The type of group and its exact purposes are unclear at this stage, although it appears to be supportive of Syrian President Bashar al-Assad. 
-
-A screenshot of the hacked page contains the current Syrian flag displayed on the top left and a screenshot of a regular Al Jazeera homepage, overlaid by a graphic resembling a rubber stamp with the word "HACK" written on it and a silhouette of two men sitting at a desk.
-
-As well as identifying the group which hacked the website in English and Arabic, the bottom left of the image also contains an Arabic language statement from the group criticising Al Jazeera for its coverage of the Syrian civil war. When roughly translated, the message means: "We have hacked you because your lack of support of Syrian government and militant groups backed by that government. Al Jazeera has been spreading lies. We're compelled to do so on behalf of the Syrian people."
-
-According to technological weblog Gizmodo, reports have emerged of the .net and not the .com version of the website being hacked. The site reports that some users have not been able to access the website.
-
-Wikinews contacted Al Jazeera English about the incident and as of 8:31pm UTC, had received no response.

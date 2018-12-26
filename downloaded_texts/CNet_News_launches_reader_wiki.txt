@@ -1,5 +1,0 @@
-As an experiment in the use of wiki technology for news, CNET News has launched a web site where readers can collaborate with other readers to predict the future of India's technology industry, collectively supplementing a CNET report on India published on June 27, 2005. 
-
-The wiki uses Wikipedia's software, MediaWiki, with a custom design. Editing is not restricted. The wiki was set up by Andrew Lottmann of the technical production team at CNET News.com. "I would love to know if readers feel this wiki is a good medium for feedback or even 'citizen journalism' on News.com", Lottman stated in his user profile.
-
-As of July 2, 2005, the wiki was still relatively inactive, with only one "legitimate content page" and 176 page edits according to the site's statistics.

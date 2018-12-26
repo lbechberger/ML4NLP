@@ -1,3 +1,0 @@
-After its previously expected July roll-out date was delayed, Jatalla, has made available a prototype of its search engine. The new search engine appears unique in that relevance rankings are produced only by users themselves, rather than through the use of webcrawlers and page analysis algorithms.
-
-In this way, Jatalla resembles Wikipedia, Digg, and del.icio.us as part of a growing trend of user-controlled content, collective processing, and transparency. This approach may be contrasted with that of search engines in which rankings are produced by a formula that is determined internally, as indicated in a recent court ruling.

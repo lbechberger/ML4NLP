@@ -1,5 +1,0 @@
-After discovery by a blogger, Microsoft has announced that on their next operating system, Windows 7, users will have the ability to remove Internet Explorer and other select Microsoft programs. Microsoft has been accused of forcing users to run their own software while competitor products get pushed out of the market because of this. 
-
-On the Microsoft blog they wrote "In Windows 7 we are expanding the number of features you have control over in this regard, giving customers more control, flexibility and choice in managing the features available in this version of Windows." It goes on to list a number of common Microsoft add-ons including: Internet Explorer 8, Windows Media Player and Microsoft Search. If a user chooses to turn off a feature in Windows 7, it will remove the executable from the userâ€™s computer but the rest of the program will still be installed.
-
-In Europe, Microsoft was charged for abusing the market by having Internet Explorer and Windows bundled together. According to Net Applications, Internet Explorer currently has 67% of the web browser market, with Firefox trailing a distant second with 21% of the market.

@@ -1,5 +1,0 @@
-Google has today launched the final version of its Google Desktop Search program. Google Desktop is a search engine for Windows which allows the user to search their computer's files' contents for a specified phrase, and includes support for many different file types, including audiovisual media, web pages stored in the local cache, e-mail, and various kinds of document files.
-
-In Beta since last Autumn, version 1.0 adds the ability to search PDFs, Netscape/Mozilla/Firefox browser histories, and Thunderbird emails. The software also has an added a plugin facility to allow third-party developers to add support for additional file formats. A registry for a small initial set of plugins is currently available, as well as incentives such as T-shirts and free advertising for developers who submit new plugins.
-
-Competing Windows desktop search products have also been released by Yahoo!, Microsoft, and Copernic. Mac OSX Tiger is planned to offer similar functionality through "Spotlight", and future Linux distributions are expected to include "Beagle" desktop search.

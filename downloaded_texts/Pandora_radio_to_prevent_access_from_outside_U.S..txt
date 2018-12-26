@@ -1,9 +1,0 @@
-In a blow to internet radio, Tim Westergren, founder of Pandora radio, today announced that from May 3 the station will be "proactively preventing access to Pandora's streaming service for most countries outside of the U.S.". 
-
-In an email to all international users, Westergren cited "international licensing constraints" and the lack of any "global licensing organization" as reasons for the new policy.
-
-The station had been asking listeners to provide a U.S. zipcode before accessing the service. From tomorrow, the station will be identifying the listener's country of origin based on the IP address from which they are accessing the service. Listeners from outside the U.S. will not be allowed to log in.
-
-The shift in policy comes in the wake of good news for the industry's Save Net Radio campaign. The campaign has found support within U.S. Congress to overturn a ruling by the Copyright Royalty Board which threatened to increase licensing fees from 300% to 1,200%.
-
-Westergren has promised that the personalised stations created by international listeners will be preserved, in the hope of a future solution to the licensing issue.

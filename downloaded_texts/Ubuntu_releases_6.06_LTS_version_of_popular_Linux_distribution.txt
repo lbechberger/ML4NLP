@@ -1,9 +1,0 @@
-The Ubuntu Foundation released its fourth version of the popular GNU/Linux operating system distribution yesterday. Codenamed "Dapper Drake", the release improves on its predecessor, Breezy Badger, or 5.10. The 6.06 LTS version will be the first to offer Long Term Support: three years on the desktop and five years on the server.
-
-Upgrades to existing Ubuntu 5.10 installations can be accomplished by running the update manager program, where an option to upgrade to 6.06 will be displayed.
-
-Because the software in the GNU/Linux operating system comes with permission for everyone to modify and redistribute it, there are many versions (called "distributions") of the operating system available. Ubuntu builds on the popular Debian GNU/Linux distribution. Like Debian, it is made almost entirely of free software.
-
-Users quickly swarmed Ubuntu's servers and mirrors trying to download the new version. The servers are currently responding slowly; moderators at the Ubuntu Forums suggested that users download with BitTorrent if at all possible, which is much less prone to such slowdowns.
-
-Since its first official release in October 2004, Ubuntu has become one of the most popular Linux distributions. It is intended to be user-friendly without being insecure by design, a charge sometimes leveled against other beginner-friendly distributions like Linspire. The distribution is offered for free, and CDs are available for order via the Internet without charge (including shipping).

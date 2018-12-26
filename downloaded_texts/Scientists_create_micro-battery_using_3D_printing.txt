@@ -1,7 +1,0 @@
-Scientists have successfully created a Lithium ion micro-battery the size of a grain of sand. A team of researchers from Harvard University and the University of Illinois were able to create the tiny battery using 3D printing technology. 
-
-In order to achieve this feat, the separate parts of the battery were printed layer-by-layer using materials thinner than a human hair. This resulted in two separate comb-like structures which, when interlocked, act as the anode and cathode. These were then immersed in an electrolyte solution which created a working battery.
-
-This created a micro-battery comparable to what is commercially available in "charge and discharge rate, cycle life and energy densities." For years, scientists have been trying to develop miniature devices in a range of areas including medicine and communications. However, due to current manufacturing techniques, the batteries have often been larger than the devices they are supposed to power. 
-
-This development could pave the way for new types of miniature technologies, as well as technologies deemed not feasible due to limitations in existing battery design.

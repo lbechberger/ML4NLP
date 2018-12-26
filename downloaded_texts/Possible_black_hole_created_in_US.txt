@@ -1,9 +1,0 @@
-US particle physicists at Brookhaven National Laboratory in Upton, New York have created a fireball in a particle accelerator that bears a striking similarity to a black hole. It was generated at the Relativistic Heavy Ion Collider (RHIC) by smashing beams of gold nuclei together at almost the speed of light. 
-
-The collision produces a ball of plasma which is about 300 million times hotter that the surface of the Sun. The fireball can be detected because it absorbs jets of particles produced by the collision, but in this case 10 times as many jets were being absorbed as had been predicted by calculations. 
-
-Physicist Horatiu Nastase of Brown University in Providence, Rhode Island says that the calculations show that the fireball has properties similar to that of a black hole. Nastase says this could help explain why so few jets are seen coming out of the fireball. He thinks the particles are being absorbed into the core and reappearing as thermal (Hawking) radiation, just like theory predicts happens in a black hole. 
-
-Other physicists have pointed out possible holes in Nastase’s calculations. Carlos Nunez of MIT in Cambridge, Massachusetts said, “I wouldn’t say his model is wrong, but it’s clearly under construction.”
-
-Even if Nastase turns out to be right, the black holes created pose no danger. At this scale gravity is not the dominant force in a black hole and they quickly evaporate away - this one lasted a mere 10-23 seconds, that is 10 million, billion, billionths of a second.

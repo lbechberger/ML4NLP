@@ -1,7 +1,0 @@
-Between 10 to 15 of Bucharest's 61 Unirii Boulevard residents will be able to connect to the Internet through their power lines. Starting from May of this year, a trial was organised by Electrica Muntenia Sud, the electricity company of Bucharest and Southern Romania.
-
-The technology, known as Power Line Communications (PLC), enables the transmission of broadband Internet and fixed line telephony data through the existing electrical power network. The technology, in use by 13,000 people in 30 countries throughout the world, is considered very advantageous due to its high speeds and low cost. It uses infrastructure that is already available in most people's homes.
-
-Once the Unirii Boulevard trial concludes, and if it is successful, Electrica Muntenia Sud will roll-out the PLC Internet plan to the mass market. It is expected to be embraced by Romanians because its data transfer speed of 5Mps is available for a monthly subscription fee of less than 15 euro.
-
-Bucharest is the first city in Southeastern Europe to trial such innovative technology.

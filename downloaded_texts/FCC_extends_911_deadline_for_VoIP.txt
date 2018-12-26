@@ -1,7 +1,0 @@
-The US Federal Communications Commission has extended the deadline for Enhanced 911 compliance by (Voice over Internet Protocol) providers until Oct 31, 2005. Last May, the FCC issued an order requiring VoIP providers to implement E911 within 120 days. This order also required providers to notify customers of the 911 limitations. Customers who did not acknowledge these limitations would have their services terminated. 
-
-This extension gives providers extra time to connect the networks to 911 services, and warn users of the limitations. If the FCC had not granted this extension, at least 10,000 users would have been disconnected.
-
-According to the FCC at least 21 VoIP providers have received an acknowledgment from all customers of the 911 limitations. 32 additional VoIP providers have received an acknowledgment from 90 percent or more of their customers. VoIP providers who have not met the 90% goal could face enforcement proceedings starting October 31, 2005.
-
-FCC said in a statement “it is evident that many providers have devoted significant resources to notifying each of their subscribers of the limitations of their 911 service and obtaining acknowledgements from each of their subscribers.”

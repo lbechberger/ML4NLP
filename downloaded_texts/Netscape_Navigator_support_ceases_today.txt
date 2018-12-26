@@ -1,7 +1,0 @@
-Support for one of the earliest popular web browsers, Netscape Navigator, will be discontinued as of today. The browser, now owned by United States internet services company AOL, was once used by 90% of internet users, however the sharp decrease in usage to around 0.06% has lead to all support from AOL being stopped. 
-
-The decision was said to be due to "AOL's current business focus and the success of the Mozilla Foundation."
-
-The move was announced in December, and it was said that all support was to cease on February 1, 2008. This was extended until March 1, 2008 in order to allow AOL to "provide tools to ease the migration of existing Netscape browser users to ... alternatives" such as Mozilla Firefox or Flock.
-
-The decision means that there will no longer be any security patch updates, or new functions for the browser.

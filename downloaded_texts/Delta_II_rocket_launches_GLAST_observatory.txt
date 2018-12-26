@@ -1,8 +1,0 @@
-The Gamma-ray Large Area Space Telescope (GLAST) satellite has been launched aboard a United Launch Alliance Delta II Heavy carrier rocket. Lift-off occurred from Launch Complex 17B at the Cape Canaveral Air Force Station in Florida, United States, at 16:05 GMT. Spacecraft separation occurred about 75 minutes after launch, just before 17:20 GMT. The launch was reported to have been successful.
-
- 
-The Delta II rocket flew in the 7920H configuration, with nine GEM-46 solid rocket motors, and no third stage. This is the fifth flight of a Delta II Heavy, which differs from the standard Delta II in that it has more powerful solid rocket motors, originally developed for the Delta III. At 4627 kg (10201 lbs), GLAST is the heaviest payload ever launched by a Delta II. It will operate in a low Earth orbit, approximately 550 kilometres above the Earth's surface.
-
-GLAST will be used to study gamma rays emitted from supermassive black holes in other galaxies, and pulsars in our own galaxy. It is a replacement for the Compton Gamma Ray Observatory, which operated between April 1991 and June 2000. It will be used by scientists in France, Germany, Italy, Japan, Sweden and the United States. The spacecraft will be operated by the US space agency, NASA. The United States Department of Energy is also involved in the mission.
-
-This is the 29th orbital launch of 2008, and the second to be conducted by a Delta II. The next Delta II launch will occur in just over a week, when a lighter configuration 7420 rocket will be used to place the Jason-2 satellite into orbit. In total, this is the 136th launch of a Delta II, the 134th successful Delta II launch, and the 81st consecutive success.

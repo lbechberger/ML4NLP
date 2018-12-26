@@ -1,3 +1,0 @@
-On Tuesday, Google and Sun Microsystems announced that they are working to get software such as Google Toolbar and OpenOffice.org (both products of Google and Sun Microsystems, respectively) more widely available. The companies stated that this collaboration will make software by each respective company more enhanced. The New York Times reports that this event is to help compete with Microsoft, although they were not explicitly mentioned at a press conference.
-
-Sun and Google agreed to explore opportunities to promote and develop Sun technologies. Despite being a clear announcement, the exact effects of this deal are not yet known. It is known, however, that Java programming software will be equipped with Google Toolbar, and that Google will purchase more from Sun.

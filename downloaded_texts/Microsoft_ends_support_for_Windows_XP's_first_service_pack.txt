@@ -1,7 +1,0 @@
-As Microsoft had previously announced, they will stop supporting the first service pack of their flagship operating system software, Windows XP. The company will not provide any security updates or incident support options for Windows XP Service Pack 1 (SP1) and Service Pack 1a (SP1a).
-
-On October 10, 2006 support and security updates for these two products will end, as part of the Microsoft Lifecycle Policy. In their customer notification about the change, the software giant advises customers to update to the newer Service Pack 2 (SP2), released in 2004.
-
-Windows XP SP1 was released on September 9, 2002, offering more than 300 security updates in one package. Other than the security updates, SP1 also introduced USB 2.0 support and a new utility, Set Program Access and Defaults, which let users to have control over Microsoft's bundled products. On February 3, 2003, the service pack was re-released as Service Pack 1a which, as a result of a lawsuit with Sun Microsystems, removed the Microsoft virtual machine (VM), which provided support for Java programs.
-
-The support end date for SP1 was originally September 17, 2006.

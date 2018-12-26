@@ -1,9 +1,0 @@
-Launched yesterday with funding for bandwidth and storage donated by Internet Archive, a new website called Ourmedia aspires to serve as a global repository for free content, which donors are encouraged to license for re-use by others.
-
-Started by Internet Archive employee J.D. Lasica and Marc Canter, who founded Macromind, which became Macromedia, Ourmedia has a team of what Lasica refers to as "moderators" that will ensure that the site does not host pornography or copyrighted or defamatory materials. Their note that the moderators will be the "sole arbiters" of what will be hosted on the site.
-
-Lasica and Canter have been working on the site with a cadre of volunteers since they met at a Supernova conference 9 months ago, according to Lasica's blog. The site was started in the summer of 2004, and announced its official launch on March 21, 2005.
-
-While the server initially hosting Ourmedia was not able to handle the load imposed when publicised on tech news sites such as Slashdot and BoingBoing (reported by ITConversations, among others), it has now been replaced and improved. According to a post on the Ourmedia blog, "The transition to a new dedicated server has been completed, the database configuration has been given an overhaul, and some of the code has been cleaned up."
-
-The software running Ourmedia is an open source content management system called Bryght, described at Bryght.com as "the Drupal core set of modules plus a set of contributed Drupal modules." Ourmedia describes their system as being "alpha" quality; they note that because all of the media files on their site are being hosted by the Internet Archive, users will need to register with both sites with the same username and password until the registration systems are unified.

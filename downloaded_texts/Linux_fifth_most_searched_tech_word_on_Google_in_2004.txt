@@ -1,5 +1,0 @@
-According to Google's 2004 Year-End Google Zeitgeist report, Linux scored fifth on a list of most-searched technology terms, beating out all other operating systems. Linux was the No. 4 technology search term on Google in 2002.
-
-This ranking follows a banner year for the community-built operating system. The 2.6 kernel, deemed the first enterprise-level release of the software, became available for users in 2004 and made significant inroads into the enterprise computing industry. The IDC recently reported a prediction that the worldwide market revenue for Linux will exceed $35 billion by 2008. 
-
-"SCO" was the No. 1 company query for 2004 in Google's report. High-profile lawsuits by SCO against IBM and other companies for alleged copyright or patent infringement were filed and dominated Linux news throughout the year.

@@ -1,8 +1,0 @@
-A Delta II rocket blasted off from NASA's Cape Canaveral launch pad today, carrying five satellites designed to investigate the northern lights and the electromagnetic storms that cause them. The launch had been twice delayed due to bad weather, but was eventually performed at 23:00 UTC.
-
-
-NASA and the Canadian Space Agency have collectively invested $200 million in the mission, known as the THEMIS Project. Through this mission, they hope to develop better techniques to forecast electromagnetic storms, in order to protect communication satellites, power grids, and spacewalking astronauts. Scientists from the University of Alberta and the University of Calgary also helped with the project.
-
-The Sun continuously sends a stream of charged particles, called the solar wind, at the Earth. We are generally protected from the solar wind by the Earth's magnetosphere. During substorms, however, the magnetosphere gets overloaded by the solar wind and the magnetic field lines stretch until they eventually snap back, energizing and flinging electrically charged particles towards Earth.
-
-Scientists want to find out what snaps in the overloaded magnetosphere to trigger a substorm.

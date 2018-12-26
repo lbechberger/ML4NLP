@@ -1,8 +1,0 @@
-Anti-virus software publisher Symantec has reported that outbreaks of two varieties of worm are imminent following system failures on two unnamed major corporate networks in the United Kingdom. After receiving several eyewitness accounts from on-site personnel this reporter noted similarities to the MSBlast worm which made headline news two years ago (on the 16th of July 2003) after causing massive outages. 
-
-The worms are limited to Microsoft Windows products based on the NT architecture such as Windows 2000 or Windows XP, exploiting administrator services applets which shut a computer down when a certain service fails. The worms cause these "administrator services" to fail, provoking the computer into shutting down immediately. 
-
-Microsoft has announced that a critical update is available for all users, even
-for those who use pirated versions of Windows.
-
-Chrysler, Kraft Foods and many other US corporations are feeling the brunt of the attack as the US was in the middle of the work day when new more virulent variants emerged.

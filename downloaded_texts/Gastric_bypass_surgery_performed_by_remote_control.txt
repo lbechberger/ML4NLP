@@ -1,7 +1,0 @@
-A robotic system at Stanford Medical Center was used to perform a laparoscopic gastric bypass surgery successfully with a theoretically similar rate of complications to that seen in standard operations. However, as there were only 10 people in the experimental group (and another 10 in the control group), this is not a statistically significant sample. 
-
-If this surgical procedure is as successful in large-scale studies, it may lead the way for the use of robotic surgery in even more delicate procedures, such as heart surgery. Note that this is not a fully automated system, as a human doctor controls the operation via remote control. Laparoscopic gastric bypass surgery is a treatment for obesity.
-
-There were concerns that doctors, in the future, might only be trained in the remote control procedure. Ronald G. Latimer, M.D., of Santa Barbara, CA, warned "The fact that surgeons may have to open the patient or might actually need to revert to standard laparoscopic techniques demands that this basic training be a requirement before a robot is purchased. Robots do malfunction, so a backup system is imperative. We should not be seduced to buy this instrument to train surgeons if they are not able to do the primary operations themselves." 
-
-There are precedents for just such a problem occurring. A previous "new technology", the electrocardiogram (ECG), has lead to a lack of basic education on the older technology, the stethoscope. As a result, many heart conditions now go undiagnosed, especially in children and others who rarely undergo an ECG procedure.

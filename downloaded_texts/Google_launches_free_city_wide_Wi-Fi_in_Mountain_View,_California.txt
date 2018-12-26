@@ -1,9 +1,0 @@
-Google on Wednesday inaugurated a free city-wide Wi-Fi system in its home town of Mountain View, California. Google insisted that it had no plans to offer a similar service nationwide. Most residents of Mountain View, can connect to the Internet via a Mesh Wi-Fi network for free. Google said that its network "eventually will cover the entire city" and serve as "testing ground for future innovations." The network is currently setup in downtown Mountain View, and much of the suburbs are yet to be hooked up.
-
-The wireless network (Wi-Fi) covers 90% of Mountain View. It offers maximum data transfer rate of up to 1 Megabit per second, which is slightly slower than DSL.
-
-The system costs about US$1 million to build and uses 380 transceivers mounted on street-lights throughout the 31 kmÂ² city. Reviews of the network say that it works smoothly in open areas, but that connections can be patchy in enclosed spaces.
-
-Chris Sacca, Google's head of special initiatives, said that "the main purpose of his company's backing local wi-fi access is to clear the way for broadband entrepreneurs and overcome legal roadblocks by established telephone and cable TV providers".
-
-Mountain View, which has about 72,000 residents, is the largest U.S. city with totally free Internet access available throughout the entire community.

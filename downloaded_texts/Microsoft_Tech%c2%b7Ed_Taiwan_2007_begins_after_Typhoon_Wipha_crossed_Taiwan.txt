@@ -1,7 +1,0 @@
-Microsoft Tech路Ed Taiwan 2007, organized by Microsoft Taiwan, began today after Typhoon Wipha crossed Northern Taiwan yesterday and it goes to the 13th this year. Though this international seminar reduced from 3 days to 2 days, it still attracted more than 2500 technical engineers and developers, and some companies exhibited aside of Tech路Ed Taiwan 2007.
-
-This year of Tech路Ed Taiwan 2007 is focused on future software by Microsoft such as Windows Server 2008 (code name "Longhorn"), Visual Studio 2008 (code name "Orcas"), SQL Server 2008 (code name "Katmai") and title the topic with "Make Your Mark". Also, Microsoft Taiwan provided Hands-On-Lab for attendees who can experience the frontier technologies.
-
-Bob Kelly (General Manager of Infrastructure Server Marketing Department, Microsoft Global) emphasized the importance of "Dynamic IT" and predicted that virtual environment of collaboration is the main future on IT industry, he also remarked that Microsoft provided solutions on Dynamic Systems Initiative, Trustworthy Computing, and .NET with the trend of enterprise IT from basic system infrastructure, standard, rational, to dynamic.
-
-Except from seminars and exhibitions, Microsoft also held "IT Master Challenge" and "Tech路Ed Taiwan 2007 Show Girls" competitions, and Tenlong Computer Book Co., Ltd. was invited to set up temporarily bookstore at 3F South Lounge of Taipei International Convention Center (TICC). On the other hand, Microsoft Taiwan also set up Free Internet Access Area at 3F North Lounge of TICC.

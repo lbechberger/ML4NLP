@@ -1,7 +1,0 @@
-Chemists modeling the structure of strongly acidic solutions have found that hydronium ions can associate into unusual ion pairs.
-
-Hydronium ions form whenever an acid dissolves in water, but it had always been assumed that they would repel each other. This new work suggests that at certain concentrations a fraction of the hydronium ions can in fact pair up. 
-
-Gregory A. Voth and Sergei Izvekov of the University of Utah, in collaboration with Feng Wang of Boston University, were examining the structure of highly acidic solutions (pH 0 to 1) of hydrochloric acid using sophisticated computer modeling. It is known that in water such acids dissociate into positive ions (cations) and negative ions (anions), with the H+ part solvated by water molecules to form cations such as hydronium (H3O+). It might be expected that positive ions such as these would repel one another, but it turns out that some of these cations unexpectedly associate into pairs at acid concentrations of 0.43 - 0.85 M . The pairing disappears at even higher concentrations where larger aggregates of cations and anions instead begin to form. The authors note that "cation pairs are stabilized by a nonclassical charge delocalization of the excess proton charge defects over multiple water molecules". They explain the phenomenon in terms of the amphiphilic nature of the hydronium ion discovered in their 2004 work.
-
-Recent work by Wallace et al. indicated the presence of hydronium ion pairs in crystals, but this is the first time such an association has been predicted for an aqueous solution.

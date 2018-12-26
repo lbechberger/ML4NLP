@@ -1,9 +1,0 @@
-On Thursday the European Commission threatened to fine Microsoft €2 Million per day if the corporation does not comply with a ruling made in March 2004, stating that Microsoft must provide interoperability with its protocols and other competing services. Microsoft has until January 25, 2006 to respond to the charges, and may also be fined for days after December 15, 2005 as well.
-
-The European Commission says Microsoft has failed to comply with an order to supply competitors with "interoperability information" for the protocols implemented in Windows Server operating systems. These include those used to "deliver file
-and print services and group and user administration services, including the Windows
-Domain Controller services, Active Directory services and Group Policy services" according to page 299 of the European Commission's decision. 
-
-Microsoft argues that to do this breaches its intellectual property rights as it would be opening Windows Server up for cloning. It has previously appealed to the European Court of First Instance, a bid which failed and where Microsoft was given until December 15, 2005 to comply with the original decision. Microsoft has launched a second appeal attempt.
-
-The decision in March 2004 also forced Microsoft to provide a version of Windows XP without the eponymous Windows Media Player and to pay fines of €497 million (US$586 million).

@@ -1,7 +1,0 @@
-According to several pages on Google’s website, Google is launching a free WiFi service. This program, called Google Secure Access, creates a Virtual Private Network allowing secure access to the Internet. Google Secure Access encrypts all traffic to and from a user’s machine while the user is connected to the wireless access point.
-
-Google provides its engineers with time to work on independent research projects. Google Secure Access was created as an independent research project by a Google engineer after he discovered that WiFi was insecure at most locations.
-
-According to the Google Secure Access FAQ, the service is only available at "certain Google WiFi locations in the San Francisco Bay Area". According to some reports, the service is working from some independent (non-Google) WiFi locations in NYC.
-
-Like many of Google’s other popular services such as Gmail, Google Secure Access is still in the beta testing stage.

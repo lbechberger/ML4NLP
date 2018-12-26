@@ -1,7 +1,0 @@
-Yesterday, September 2, Sun Microsystems announced the retirement of the Sun Industry Standard Source License (SISSL) scheme. The Open Source Initiative had been discussing ways of reducing the quantity of Open Source licenses to make it easier for developers and companies to chose a license. Dropping the SISSL takes them one step closer to this goal. Sun's decision to drop the SISSL comes a few months after Intel's similar decision to drop its Open Source License in March. 
-
-Simon Phipps, the director of Sun's Open Source Office, said in his blog that he will ask the OSI to put the SISSL on the "not recommended" list. He also said “I'd encourage any project that's currently using it to make other plans at the time of their next major release”.
-
-No future Sun open-source projects will use the SISSL, and current Sun projects using a dual-license scheme will drop the SISSL “as soon as the development cycle allows”. One of Sun's most popular open-source projects, OpenOffice.org, is licensed under both the LGPL and SISSL. As of September 2, all OpenOffice.org 2.0 code is now licensed exclusively under the LGPL. 
-
-Sun prefers the Community Development and Distribution License, a variant of the Mozilla Public License. Sun released OpenSolaris and the Glassfish Java server under the Community Development and Distribution License.

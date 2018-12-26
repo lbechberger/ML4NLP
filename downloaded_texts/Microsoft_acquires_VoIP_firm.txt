@@ -1,9 +1,0 @@
-Microsoft Corp. has acquired voice over Internet protocol (VoIP) provider Teleo Inc., on August 30, for an undisclosed sum. Teleo was founded in 2003, in San Francisco, USA. 
-
-Teleo had been running a public beta test of its VoIP software, but it has now been discontinued. A beta version of the Microsoft/Teleo product is expected later in the year.
-
-Teleo users could call both other PCs and regular telephones. Calls to regular telephones cost US$0.02 per minute to many countries. Teleo’s software also integrates with Microsoft Outlook and Internet Explorer to provide a feature called “click to call”. This feature turns any phone number displayed within a website or e-mail into a link that will dial the number.
-
-Teleo Inc website now redirects to a page on MSN. This page states: that “Microsoft plans to incorporate and expand upon Teleo’s technologies, integrating them into the MSN services infrastructure, with plans to ultimately deliver new VoIP consumer applications in future releases of MSN services, such as MSN Messenger”.
-
-Many of Microsoft competitors in the instant messaging market already offer VoIP service or are working on providing it in the near future. Google recently launched Google Talk, an instant messaging program with free PC to PC calling. PC to Phone calling is rumoured to be in the works. Yahoo! has said it plans to add calling to regular telephones from its instant messaging program in the coming months. MSN Messenger is by far the most popular instant messaging program, Yahoo!'s instant messenger is the second most popular as of July.

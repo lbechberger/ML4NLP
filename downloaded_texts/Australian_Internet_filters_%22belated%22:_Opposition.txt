@@ -1,9 +1,0 @@
-Speaking in the Australian House of Representatives on Thursday, opposition leader Kim Beazley (Brand, Labor) asked Australian Prime Minister John Howard (Bennelong, Liberal) why the government had not adopted Labor's policy on Internet filtering.
-
-Mr Beazley said that the government's Protecting Families Online initiatives were a belated response to Labor's policy of "clean-feed" filtering - where pornographic and other inappropriate material is filtered at the Internet Service Provider level. He asked why the government would not "swallow its pride" and introduce the policy proposed by Labor.
-
-In response, the Prime Minister said that the package announced by his government on Wednesday achieves the goals of protecting children without "imposing the unreasonable restrictions and cost burdens of the Labor Partyâ€™s policy".
-
-In April, the Internet Industry Association - the apex body representing Internet related businesses in Australia dismissed the idea of ISP-level filtering, calling it "inappropriate and heavy handed". The association said despite network level filtering working in schools and large corporations, it would more than likely impact network performance on large service provider networks.
-
-The IIA said that providing users with filtering software and supervision of children's online activities by parents are the most appropriate means by which to protect children using the Internet.

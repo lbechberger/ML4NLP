@@ -1,9 +1,0 @@
-NASA engineers announced on Friday that the Discovery ' s launch is being put on hold indefinitely.
-
-"We are going forward on a day by day basis," Space Shuttle Program Deputy Manager Wayne Hale said at a press conference this afternoon. "As soon as we fix the problem, we will be four days from launch. What is that date going to be? We don't know."
-
-Launch controllers are still optimistic about a launch in the current window of opportunity, which lasts until the end of the month. Twelve teams of engineers are working across the US in order to resolve the problem with the fuel tank sensor.
-
-The fuel tank sensor is vital as it shuts down the main engines when fuel is exhausted - if the engines run dry, the results could be disastrous.
-
-When the huge main fuel tank was drained on Wednesday, the sensor continued to indicate "wet" instead of "dry", but in a series of later tests the sensor began performing properly.

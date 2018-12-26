@@ -1,8 +1,0 @@
-The twelfth-annual Asia Pacific Regional Internet Conference on Operational Technologies (a.k.a APRICOT) returned to Taiwan this year at the Taipei Howard Plaza Hotel. This is the first appearance since the 2003 conference held by the Taiwan Network Information Center (TWNIC) at the Taipei International Convention Center and Grand Hyatt Taipei.
-
-
- 
-When Wikinews journalist Rico Shen reported on the recent "Edison Chen photo scandal" incident, Philip Smith of Cisco Systems commented:
-
-
-Workshops with varied topics and different technology levels took place from February 20 to 24, while several main seminars and speeches for industry, governmental, and academic executives ran from February 25 to 29. Several industry experts such as Wilfred Kwan (Chief Technology Officer of AsiaNetCom), Chung-laung Liu (Taiwan Chapter Chair of ISOC), and Maemura Akinori (EC Chair of APNIC) will give several speeches related to the Internet industry at the conference.

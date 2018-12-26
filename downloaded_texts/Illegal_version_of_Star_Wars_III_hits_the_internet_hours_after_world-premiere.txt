@@ -1,9 +1,0 @@
-Hours after the premiere, files purporting to be computer-viewable copies of the movie Star Wars III: Revenge of the Sith were available on internet filesharing networks.
-
-The film, which is one of the years most eagerly anticipated, has already been downloaded by over 16,000 people through the BitTorrent file-sharing network. Some torrent downloaders reported being able to download the movie at "DVD-quality" as early as 11pm Eastern on May 18th, an hour before the US premiere. The versions available thus far are however "workprint copies." As such these copies have a large time indicator on the top of the screen.
-
-Although Lucasfilm has not yet commented on the issue, the Motion Picture Association of America has condemned it, telling the media, "There is no better example of how theft dims the magic of the movies for everyone than this report today regarding BitTorrent providing users with illegal copies of 'Revenge of the Sith.'"
-
-It should be noted that the Bit Torrent network, by design, does not provide files itself. It only allows computers using it's program to form connections with other Bit Torrent computers on the internet to provide files on each individual computer. Thus the MPAA's statement of "BitTorrent providing users with illegal copies of 'Revenge of the Sith'" is factually incorrect.
-
-Despite the downloading, the latest Star Wars movie grossed a record breaking $50 million dollars it first day.

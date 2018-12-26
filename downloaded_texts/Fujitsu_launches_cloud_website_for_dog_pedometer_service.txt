@@ -1,9 +1,0 @@
-Japanese multinational company Fujitsu launched a website for a dog pedometer which allows customers to monitor their dog's health online. The device measures data while attached to the dog's collar. Customers are also able to add more data to the website manually, then it displays the complete set of data graphically. Fujitsu launched the website today (Tuesday) and plans to start the sales in Japan tomorrow (Wednesday).
-
-The pedometer is called "Wandant", from Japanese "Wan" equivalent to "woof", and the "dant" of "pendant". The latter refers to the pedometer, because it is attached to a dog collar. The users can transfer data to an Android phone using a touch-card to make it available online.
-
-Fujitsu said Wandant would be the first cloud-based dog health-care service.
-
-The data include walking, temperature, and shaking motion statistics. The users can manually enter additional data such as food quantities, weight, custom notes, and photos.
-
-Fujitsu said, "The data are presented graphically on a custom website that makes trends in the dog's activities easy to understand at a glance. This helps owners get a stronger sense of their dog's health, while enabling communication with the dog."

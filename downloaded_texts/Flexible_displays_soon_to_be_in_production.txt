@@ -1,5 +1,0 @@
-Roll up displays for use in hand-held gadgets will be available for mass production by March 2007 according to co-developer Philips. Working with US based paper pioneer E-ink, Philips have developed a 13cm wide screen which is just 0.1 millimetres thick and can be rolled up so that it is only 15 millimetres in diameter. 
-
-The screen, which Philips hope to license to makers of in-car satellite navigation systems, mobile web browsers and smart phones, uses no back light and displays a monochrome image in four shades of grey as well as black and white. According to Philips the screen is able to give a “paper-like contrast”.
-
-The screen consists of a backing layer of plastic film which contains a matrix of transistors. This is topped off with layer transparent “electronic ink” capsules and a layer of clear plastic. The capsules are approximately 50 micrometres in diameter and contain polarised black and white particles. Using the transistors, a pattern of positive and negative charge can be applied which manipulates the particles to form monochrome images.

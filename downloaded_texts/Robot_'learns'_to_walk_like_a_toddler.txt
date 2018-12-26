@@ -1,8 +1,0 @@
-Engineer Russ Tedrake has designed a robot that is engineered to walk like a human. Tedrake did his work in the Massachusetts Institute of Technology. 
-
-The robot uses a method called "passive-dynamics" to move, taking advantage of gravity and kinetic energy to move its limbs. This approach differs from standard motorized robots (such as the famed Asimo), and requires only a small fraction of the energy to achieve the same amount of locomotion. 
-
-These passive-dynamic robots have sensors that collect information two hundred times every second, constantly sending new instructions to the motors. The sensors also dictate the course of actuators that control tension in the robot's ankles.
-
-The robots learn from their experience walking, getting a bit more precise with each step. Effectively, the robot will also learn to walk on different types of terrain, like going from grass to sand. Tedrake comments on this:
-:"Every time it takes a step, it changes the parameters a little bit, based on its experience. It will walk on any surface and adjust the way it walks."

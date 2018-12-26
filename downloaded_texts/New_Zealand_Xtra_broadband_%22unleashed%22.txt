@@ -1,9 +1,0 @@
-New Zealand Internet service provider (ISP) Xtra, owned by telecommunication giant Telecom New Zealand, has today "unleashed" the downstream lines as fast as the line will allow. The speed could reach up to 7 megabits per second. All new plans will allow maximum downstream bandwidth, although upstream bandwidth will still be constrained. The maximum downstream bandwidth previously available was 3.5 megabits per second.
-
-Neither Xtra nor ihug responded to questions sent via e-mail.
-
-Along with the improved bandwidth, two new plans have been introduced. These include the Go Large which has no data cap and the Go Express which offers "fast upstream connection."
-
-On September 26, 2006 Telecom announced the speed changes and Kevin Bowler, Telecom's general manager of Consumer Marketing, said: "With maximum speeds customers may find it easier to do things online that are bandwidth-intensive. Some customers will notice a difference in the time it takes to do things like download music... watch video or send and receive large email attachments."
-
-Xtra says existing customers will be transferred onto the new plans progressively from October 26, 2006.

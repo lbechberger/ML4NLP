@@ -1,7 +1,0 @@
-The Brazilian government news agency Agencia Brasil, or Radiobras, says that it is transmitting audio and video through the internet using free software. Proprietary software like Windows Media Player is not necessary to watch or hear the radio and TV transmissions.
-
-According to Diogos Gonzaga, from Agencia Brasil technology division, the agency is using the following software: Icecast for the Ogg Vorbis codec radio transmissions and the Ogg Theora codec for the video ones.
-
-The user who wants to hear Brazilian radio transmissions can select among the following stations from Agencia Brasil: the National Radio(AM), the National Radio (FM), the National Radio from Rio de Janeiro or the National Radio from Amazon. TV transmissions can be watched by the NBR TV channel.
-
-Agencia Brasil started the change to free software in 2003.

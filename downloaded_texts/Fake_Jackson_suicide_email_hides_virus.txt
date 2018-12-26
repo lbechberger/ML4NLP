@@ -1,7 +1,0 @@
-An e-mail virus affecting Microsoft Windows is currently making the rounds, trying to ensnare victims by claiming that pop-star Michael Jackson has attempted suicide.
-
-The message itself hopes to catch people's attention, because of the huge interest in his on-going child abuse trial. The fake message contains a web link that supposedly links to Mr Jackson's suicide note.
-
-A security consultant from security firm Sophos says "That may not surprise people who think it might contain genuine breaking news about Michael Jackson," and that "The sick minds behind viruses and other malware often exploit celebrity names and news stories in an attempt to infect as many people as possible," said Ms Theriault.
-
-She urged users to be very wary when opening e-mail attachments in unsolicited e-mail messages.

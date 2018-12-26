@@ -1,9 +1,0 @@
-Results published in the science journal Nature suggest previous Inter-Governmental Panel on Climate Change (IPCC) predictions will need to be revised upwards.
-
-Climateprediction.net has released it's first results, indicating that global temperatures could rise by up to 11Â° C, even if global carbon dioxide levels are limited to twice those found before the Industrial Revolution; levels that high are expected to be reached in the middle of this century.
-
-The results indicate that carbon dioxide emissions will have an even bigger affect on the global climate than previously thought.
-
-The Climateprediction.net is a distributed computing project. More than 95,000 people around the world have downloaded the software which runs calculations when the user's computer is idle, releasing computer power greater than that of even the largest supercomputers.
-
-The project is a collaboration between several UK universities and the Met Office, funded by the British Natural Environment Research Council and the Department of Trade and Industry. In the summer of 2004 the project joined forces with the SETI program, with University of California computer scientists developing a version of the SETI software to run climate change models.

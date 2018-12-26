@@ -1,9 +1,0 @@
-A team of scientists from universities in France and Brazil have developed a theory that explains the patterns of fine bubbles that arise in a freshly poured glass of champagne. 
-
-The bubble patterns evolve as the amount of dissolved carbon dioxide changes in the glass. They start out as strings of bubbles that rise in pairs, then gradually transition to bubbles in groups of threes, and finally settle down in a clockwork pattern of regularly spaced individual bubbles.
-
-The researchers observed the carbon dioxide bubbles in a champagne glass as they rise from nucleation points on the glass wall. The nucleation points are small defects in the glass that trap tiny vibrating pockets of carbon dioxide. Dissolved gas in the champagne gradually collects in a vibrating bubble inside the defect, causing it to grow and soon expel gas from the defect, forming another bubble that sticks to the outside of the defect. That bubble, in turn, grows as more dissolved carbon dioxide collects inside it and it eventually breaks free of the defect to rise through the champagne. Then the process begins again with a new bubble expelled from the defect, forming rising strings of tiny bubbles.
-
-The patterns are determined by the vibration rate of the gas trapped in the defect and the growth rate of the bubbles outside the defect, which are in turn determined by such things as the pressure of the atmosphere on the surface of the champagne, the champagne temperature, and the size of the nucleation defect in the glass, among other factors.
-
-The work could be important in understanding bubbles formed of dissolved gasses in other situations, such as nitrogen bubbles that grow in the blood vessels of surfacing divers and can cause the bends, and the explosive release of carbon dioxide gas from Cameroon's Lake Nyos that killed over 1800 people in 1986.

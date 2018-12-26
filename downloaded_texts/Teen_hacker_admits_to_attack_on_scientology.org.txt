@@ -1,9 +1,0 @@
-A teenager, belonging to the anti-scientology group Anonymous, has admitted that he launched a distributed denial of service (DDoS) attack on the official website of the Church of Scientology, scientology.org.
-
-Dmitriy Guzner, aged 18, will admit to the charges related to carrying out the DDoS attack. He now faces a maximum sentence of ten years imprisonment.
-
-In response to incidents such as these, Scientology have called Anonymous "cyber-terrorists."
-
-A DDoS attack occurs when multiple computers are used to attack a certain website with so much traffic that it is not accessible. The hackers attack the servers taking up all the available space, preventing the legitimate user from accessing. 
-
-United States Attorney's Office released a statement on this issue. "A New Jersey man was charged today for his role in an attack on Church of Scientology websites in January 2008 that rendered the websites unavailable," they said. "Dmitriy Guzner, 18, of Verona, New Jersey, has agreed to plead guilty to computer hacking for his role in the distributed denial of service (DDOS) attack against the Scientology websites. "

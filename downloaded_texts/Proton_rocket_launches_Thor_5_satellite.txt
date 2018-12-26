@@ -1,7 +1,0 @@
-In the sixth orbital launch of 2008, an International Launch Services Proton-M/Briz-M rocket has launched from area 200/39 at the Baikonur Cosmodrome in Kazakhstan, with the Norwegian Thor 5 communication satellite aboard. Liftoff of the 53 metre long Russian rocket occurred at 11:33 GMT, and the launch ended with the satellite's injection into a geosynchronous orbit, some 9 hours and 23 minutes later.
-
-At 13:20, the second burn of the Briz-M upper stage was confirmed to have been successful. At 15:50, the third burn, and separation of the upper stage's auxiliary propellant tank, were reported to have been completed successfully. The fourth burn occurred about five hours later, and spacecraft separation followed at 20:57 GMT.
-
-Thor 5 will be positioned at 1Â°W longitude, and will provide direct-to-home broadcasting services to Europe. The satellite was constructed by Orbital Sciences Corporation, and is based on the Star-2 satellite bus. It will be operated by Telenor, and is equipped with 24 Ku-band transponders.
-
-The launch was delayed from 2007 after the failure of another Proton rocket, and scrubbed yesterday due to a problem with the rocket's guidance system, detected shortly before fuelling.

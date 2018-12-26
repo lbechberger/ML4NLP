@@ -1,9 +1,0 @@
-Recent cyber attacks in Estonia that have paralyzed the high tech country's Web sites are a threat to national security, according to the country's Minister of Defense. This has concerned NATO, seeing that Estonia is a member state of the organization. The attacks have subsided this week.
-
-The Defense Minister Jaak Aaviksoo also mentioned that Russia may have been behind the attacks. He stated that the IP numbers in the initial attack belong to Russian government offices, but says that it's insufficient evidence that the government is behind it. The Kremlin is dismissing the accusations, saying that its caused by hackers producing fake Kremlin IP addresses.
-
-The cyber attacks came after Estonia removed a Soviet-era statue of a Bronze Soldier in Tallinn, which angered many Russians. Riots have left 160 injured, and 1 dead.
-
-Both NATO and the European Union views this as an attack on one of their member states. Three hundred Estonian IT specialist worked day and night to fix the problem.
-
-The Estonian government plans to analyze server logs and data to find out who is behind the attacks.

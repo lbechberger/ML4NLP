@@ -1,7 +1,0 @@
-The 48th International Mathematical Olympiad (IMO) is taking place from July 19 to July 31 in Hanoi, Vietnam, the first South-east Asian country to host the annual mathematics competition for high school students since it began in 1959.
-
-This year the actual competition will take place July 25-26, with jury meetings before those dates and excursions and a closing ceremony in the days following. The Olympiad challenges mathematically gifted youngsters with a series of problems submitted by IMO member states, and awards individual prizes.
-
-More than 90 countries are members of the IMO, which is held in a different country each year. Other Asian countries that have hosted the Olympiad in the past include Japan (2003), South Korea (2000), Taiwan (1998), and China (1990). Madrid, Spain will host the 2008 IMO.
-
-The website of the 2007 contest displays an animated solution to the Tower of Hanoi puzzle, which involves moving disks stacked on pegs without placing a bigger disk on top of a smaller one.

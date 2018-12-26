@@ -1,9 +1,0 @@
-Even though the USB 3.0 standard, with transmission speeds nearing 5Gbit/s (600MB/s), has not yet matured and is not expected until 2009 or 2010, technology leaders Intel, AMD, and nVidia are battling to take the lead on the USB 3.0 specifications.
-
-The USB Implementers Forum (USB-IF) was founded in 1995 by Intel, Microsoft, Hewlett-Packard, Texas Instruments, NEC, and NXP Semiconductors. These companies are also promoting the new standard of USB 3.0.
-
-But AMD, nVidia, and VIA Technologies have jointly made an attempt to develop another "USB 3.0" standard to compete with Intel. The opportunity arose because Intel has yet to release their standard for USB 3.0.
-
-"If the USB 3.0 have two different standards in the future, the consumer will be the greatest loser in this 'standard' battle. As of this issue, we [the Federal Trade Commission] decided to investigate Intel on monopolizing the specification of USB 3.0 and hope this conflict can be smoothly solved." said the Federal Trade Commission in a statement.
-
-Nick Knupffer, a spokesperson for Intel, claimed that Intel will release related technical specifications on USB 3.0 for the Information Technology industry to prevent unnecessary conflicts on standards and specifications.

@@ -1,7 +1,0 @@
-Gmail, Google's popular e-mail service launched earlier last year, is now available to any American cell phone user via text messaging.
-
-Cell phone owners can send Google their phone number, and are then sent an access code via SMS that enables them to open an account. Google has stated that the number is only used to "manage the number of accounts created per phone", and that it "will never be sold or shared for marketing purposes" without the user's permission.
-
-The service is not necessarily free â€” cell phone service providers may charge for the delivery of the code.
-
-While the system currently only works in the U.S., Google says it has plans to add more countries.

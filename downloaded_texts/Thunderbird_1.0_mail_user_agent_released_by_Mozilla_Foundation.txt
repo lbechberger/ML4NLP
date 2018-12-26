@@ -1,7 +1,0 @@
-Mozilla Thunderbird 1.0, a free open-source mail user agent, has been released within the last twenty-four hours by the Mozilla Foundation. Thunderbird has been in development for more than one and a half years. The release of Thunderbird 1.0 comes less than one month after the Foundation released Firefox 1.0, its internet browser.
-
-The new version contains many updates in the areas of security and ease of use. A newsgroup and a RSS reader is integrated into the application, which also features adaptive junk mail filters. Common mail protocols POP3 and IMAP are both supported, so users will be able to access some brands of webmail from within the program.
-
-Thunderbird is directly competing with Microsoft Outlook.
-
-The free download is 5.8 megabytes.

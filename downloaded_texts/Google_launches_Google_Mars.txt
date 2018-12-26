@@ -1,9 +1,0 @@
-If you thought Google Maps, Google Earth and Google Moon was enough, then meet Google Mars. 
-
-Google officially launched the new Google Mars yesterday as another add-on to Google Maps. The service offers three different ways to view Mars: elevation, visible landscape, and infrared view. The images come from two different NASA missions, Mars Global Surveyor and 2001 Mars Odyssey, and the data was prepared in collaboration with NASA researchers at Arizona State University.
-
-The color-coded elevation data is a shaded-relief map taken by the Mars Orbiter Laser Altimeter (MOLA) on NASA's Mars Global Surveyor spacecraft. The visible data is made from black and white images taken by the Mars Orbiter Camera (MOC), which is also located onboard the Mars Global Surveyor, and the infrared images were produced by the Thermal Emission Imaging System (THEMIS) on NASA's Mars Odyssey spacecraft. The THEMIS data is the sharpest map of Mars made so far, as it shows colder areas in darker colors and warmer regions in brighter colors, and as they are infrared images dust and clouds are transparent.
-
-Google has added various bookmarks showing points of interest such as landings of spacecraft, locations of mountains, and craters. 
-
-The data is not currently available through Google's Google Earth client.

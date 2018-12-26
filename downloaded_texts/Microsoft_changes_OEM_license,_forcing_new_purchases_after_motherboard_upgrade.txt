@@ -1,7 +1,0 @@
-Microsoft has recently made changes to the Windows license agreement, saying that, “An upgrade of the motherboard is considered to result in a new personal computer to which Microsoft OEM operating system software cannot be transferred from another computer."
-
-This will force users who upgrade their motherboard, even via the OEM, to purchase a new license agreement. The only exception is a defect for which the OEM replaces the motherboard.
-
-Microsoft claims it needs to have "one base component left standing that would still define that original PC. Since the motherboard contains the CPU and is the heart and soul of the PC, when the motherboard is replaced (for reasons other than defect) a new PC is essentially created.”
-
-Microsoft has asked its OEM partners to begin enforcing the new policy when they upgrade a client's computer.

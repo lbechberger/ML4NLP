@@ -1,9 +1,0 @@
-Google today released Google Talk (link) in beta, an Instant Messaging (IM) and computer-to-computer voice talk product, using the Jabber protocol (built from XMPP). 
-
-At this early stage the service is only available to users with a Google Gmail account. The official client, required for the voice functionality, is only available for Windows XP/2000 although existing IM clients such as Gaim and iChat on Mac and GNU/Linux platforms can be used for text chatting. 
-
-The new service does not offer "Voice over IP" - users cannot call telephones, nor can telephones dial Google Talk users. It also has no voice-mail system, unlike rival Yahoo's offering, which is also no longer in beta. Google Talk also does not log chats, and offers no method of searching conversations. Only the last 20 lines of any conversation are recorded.
-
-This positions Google to compete with the popular service Skype. Like Google Talk, Skype's PC-to-PC communications are free. Skype also offers gateways to and from various regional phone services for which it charges. It is not known at this stage if Google intends to enter that market.
-
-The largest search engine on the web, Google receives over 200 million queries each day through its various services. Other recent releases include the Gmail email service and Google Earth, which lets users view satellite photos and other map information.

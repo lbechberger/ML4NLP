@@ -1,7 +1,0 @@
-The home town of a Washington Post article source about hackers attacking and controlling networks of personal computers to install spyware and send spam advertising was revealed by a Slashdot reader. The reader found meta-data information inside the Washington Post image of the hacker and was able to extract the town entered as the location of the photo. The article in the February 19th Washington Post details 0x80's earnings of around $6,800 a month sending out spam from controlled personal computers
-
-The hacker, calling himself "0x80" agreed to be interviewed for the Post article under the condition that he not be identified by name or home town.
-
-After a link to the article on Slashdot, a reader uses the IPTC information encoded into the image to learn the location entered as part of the picture's metadata: Roland, OK. Posters on Slashdot said that the Washington Post removed the image in an effort to contain the damage.
-
-The Washington Post has not commented on if this will instigate a change in their use of meta information for undisclosed sources.
