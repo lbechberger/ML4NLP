@@ -81,14 +81,13 @@ def isWWC2010(keyString):
 
     
 # generates a dataset in the format [users:[[userProfile],[[positiveExamples],[negativeExamples]]]]
-def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and_category):
+def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles):
     # we only take subcategories, "category" here means subcategory
 
 
     # this is done in order to later find twice as many articles: one half for the user profile and one half for the positvie examples for the classifier
-    articles_per_user_and_category *= 2
+    articles_per_user_and_category = profile_articles_per_subcategory + liked_articles_per_subcategory
 
-    #
     
     # categories that should not be taken into account:
     categories_to_be_deleted = ['Published','Archived','Original reporting','AutoArchived','Pages with template loops',
@@ -96,14 +95,11 @@ def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and
                                'Reviewed articles','Pages with irredeemable missing-image template calls','Corrected articles','Writing contest 2010','Imported news','Translated news','Featured article','Writing Contests/May 2010','News articles with translated quotes','News articles with telephone numbers']
    
    
-   
-   
     # get subcategory-articles matching. Create a dictionary
     dic = ks.create_category_articles_dictionary()
 
     for entry in categories_to_be_deleted:
         del dic[entry]
-
     
     # get rid of categories that have less articles than articles_per_user_and_category or less than 15 or more than 506
     entries_to_delete=[]
@@ -112,6 +108,7 @@ def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and
     for entry in dic:
         if (len(dic[entry]) <= articles_per_user_and_category or len(dic[entry]) <= 15 or len(dic[entry]) > 506): 
             entries_to_delete.append(entry)
+
     for entry in entries_to_delete:
         del dic[entry]
         
@@ -139,10 +136,8 @@ def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and
         length_list.append(len(dic[entry])/normalization_factor)
 
 
-    
     # creating user profiles by drawing random articles from the user's topics of interest
-    
-    
+       
     users= list()
 
     # all users
@@ -154,28 +149,26 @@ def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and
         # one user
             
                 # randomly draw the topics the user is interested in. replace=false means that a user cannot have the same interest multiple times - e.g. like twice as many articles of a certain topic
-        sub = np.random.choice(list(dic.keys()),size=subcategories_per_user,replace=False,p= length_list)
+        sub = np.random.choice(list(dic.keys()),size = subcategories_per_user,replace = False,p = length_list)
 
                 # draw articles from each subcategory
         for topic in sub:
-            articles = np.random.choice(dic[topic],size=articles_per_user_and_category,replace=False)
-            userProfile.extend(articles[:int(articles_per_user_and_category/2)])
-            userPositives.extend(articles[int(articles_per_user_and_category/2):])
+            articles = np.random.choice(dic[topic],size = articles_per_user_and_category,replace=False)
+            userProfile.extend(articles[:profile_articles_per_subcategory])
+            userPositives.extend(articles[liked_articles_per_subcategory:])
                     
                 # draw articles the user is not interested in
-        userNegatives = getNegativeExamples(sub,   subcategories_per_user * articles_per_user_and_category/2,dic)
+        userNegatives = getNegativeExamples(sub, disliked_articles ,dic)
         users.append([userProfile,[userPositives,userNegatives]])
-        
-        
 
     return users
 
-dataSet = generate_dataset(1000,3,10)
+dataSet = generate_dataset(10,3,5,2,32*2*3)
 
 #print(dataSet)
 #with open("dataset.csv","w+") as my_csv:
 #    csvWriter = csv.writer(my_csv,delimiter=' ')
 #    csvWriter.writerows(dataSet)
     
-#with open('dataset.pickle','wb') as f:
-#    pickle.dump(dataSet,f)
+with open('dataset.pickle','wb') as f:
+    pickle.dump(dataSet,f)
