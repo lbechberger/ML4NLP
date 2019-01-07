@@ -38,6 +38,7 @@ In oder to run the code, please use the conda environment provided in `environme
 * [Scikit learn: Splitting up the data set](https://scikit-learn.org/stable/modules/cross_validation.html)
 * [Scikit learn: Evaluation metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
 * [Feature Engineering](https://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/)
+* [Scikit learn: Feature selection](https://scikit-learn.org/stable/modules/feature_selection.html)
 
 ## Useful Machine Learning Resources
 * [WordNet](https://wordnet.princeton.edu/)
