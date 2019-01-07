@@ -8,6 +8,7 @@ Created on Mon Dec 10 15:48:37 2018
 """
 
 import sys, pickle, time, string
+
 sys.path.append(".")
 import knowledgestore.ks as ks
 import nltk
@@ -15,7 +16,6 @@ from nltk.corpus import wordnet as wn
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import gensim
-
 
 print('\nSETUP')
 with open("data_set_split.pickle", "rb") as f:
@@ -26,7 +26,7 @@ train = data_set['Sports']['train']
 articles = []
 for i in range(10):
     articles.append(ks.run_files_query(train[i][0]))
-    
+
 # computing most frequent bigrams
 print('\nMOST FREQUENT BIGRAMS')
 text = ' '.join(articles)
@@ -37,10 +37,9 @@ freq_dist = nltk.FreqDist(bigrams)
 frequency_list = []
 for bigram, freq in freq_dist.items():
     frequency_list.append([bigram, freq])
-frequency_list.sort(key = lambda x: x[1], reverse=True)
+frequency_list.sort(key=lambda x: x[1], reverse=True)
 for i in range(10):
     print(frequency_list[i])
-
 
 # computing tf-idf
 print('\nTF-IDF')
@@ -48,10 +47,10 @@ vectorizer = TfidfVectorizer()
 tf_idf_vectors = vectorizer.fit_transform(articles).todense()
 print(tf_idf_vectors.shape)
 print(vectorizer.get_feature_names()[42:45])
-print(tf_idf_vectors[:5,42:45])
+print(tf_idf_vectors[:5, 42:45])
 
 tf_idf_similarities = cosine_similarity(tf_idf_vectors)
-print(tf_idf_similarities[:5,:5])
+print(tf_idf_similarities[:5, :5])
 
 # accessing WordNet
 print('\nWORDNET')
@@ -75,7 +74,7 @@ woman_embedding = embeddings['woman']
 king_embedding = embeddings['king']
 queen_embedding = embeddings['queen']
 summed_embedding = king_embedding - man_embedding + woman_embedding
-print(cosine_similarity(queen_embedding.reshape(1,-1), summed_embedding.reshape(1,-1)))
+print(cosine_similarity(queen_embedding.reshape(1, -1), summed_embedding.reshape(1, -1)))
 
 # efficient SPARQL queries
 print('\nSPARQL')
@@ -99,9 +98,9 @@ counter = 0
 slice_size = 50
 better_results = []
 while counter < len(mentions):
-    better_results += ks.run_sparql_query(sparql_better_first 
-                        + ' '.join(preformatted[counter:counter+slice_size]) 
-                        + sparql_better_second)
+    better_results += ks.run_sparql_query(sparql_better_first
+                                          + ' '.join(preformatted[counter:counter + slice_size])
+                                          + sparql_better_second)
     counter += slice_size
 end_better = time.time()
 print(len(better_results), end_better - start_better)
