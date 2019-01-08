@@ -165,4 +165,20 @@ We are very fascinated by the word2vec model and still considering how to best u
 
 
 
+## 07.01 - 13.01
 
+### Notes
+Final report 17.03, in any form we like
+Optional single page "taster" of the final report for getting some feedback by 3.3
+
+Next step: Dimensionality Reduction, reducing the number of features
+Either feature projection (via PCA etc.)
+or feature selection
+Feature selection methods:
+  Wrapper Methods:
+    Choose a subset and evalute it with a classifier (Bruteforce, greedy, etc.) and remove weak features based on performance
+   Filter Methods:
+    Use heuristics instead of a classifier (i.e. Mutal Information, Correlation,Variance), for either single features or feature subsets
+   Embedded Methods:
+    Generate subsets during classifier work (i.e. via SVM/ Random forests, tracking feature scores by themselves, or via regularization, forcing weights to zero, and removing those that stay at zero)
+    
