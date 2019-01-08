@@ -181,4 +181,6 @@ Feature selection methods:
     Use heuristics instead of a classifier (i.e. Mutal Information, Correlation,Variance), for either single features or feature subsets
    Embedded Methods:
     Generate subsets during classifier work (i.e. via SVM/ Random forests, tracking feature scores by themselves, or via regularization, forcing weights to zero, and removing those that stay at zero)
+
+Everything is implemented in sklearn
     
