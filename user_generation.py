@@ -1,5 +1,3 @@
-import pickle
-import numpy as np
 import pandas as pd
 import gensim
 from generation_functions import *
@@ -15,7 +13,6 @@ categories, uris, _ = pickle.load(open("user_articles.pickle", "rb"))
 # articles = get_articles_from_link(uris)
 articles = pickle.load(open("articles.pickle", "rb"))
 
-
 # create a dataframe with 100 users (rows) who get randomly assigned 0 or 1 for each category (cols)
 # correct subcategory labels if superior category is disliked (=0)
 # users_db = pd.DataFrame(np.random.randint(2, size=(100, len(categories))), columns=categories)
@@ -25,17 +22,30 @@ articles = pickle.load(open("articles.pickle", "rb"))
 #       .format(len(categories), len(articles), len(input_data)))
 
 # get the word2vec of each category name for later comparison in feature extraction process
-if os.path.isfile('./embed_categories.pickle'):
-    print("Found embed_categories.pickle file. Continuing ..")
-    with open("embed_categories.pickle", 'rb') as ppf:
-        embedded_categories = pickle.load(ppf)
-else:
-    print("Did not find embed_categories.pickle file. Create embedding of categories ..")
-    embedded_categories = []
-    embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
-    for c in categories:
-        embedded_categories.append(get_w2v_string(c, embedding))
-    pickle.dump(embedded_categories, open("embed_categories.pickle", "wb"))
+# if os.path.isfile('./embed_categories.pickle'):
+#     print("Found embed_categories.pickle file. Continuing ..")
+#     embedded_categories = pickle.load(open("embed_categories.pickle", "rb"))
+# else:
+#     print("Did not find embed_categories.pickle file. Create embedding of categories ..")
+#     embedded_categories = []
+#     embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
+#     for c in categories:
+#         embedded_categories.append(get_w2v_string(c, embedding))
+#     pickle.dump(embedded_categories, open("embed_categories.pickle", "wb"))
+
+embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
+a_counter = 0
+embedded_articles = []
+if os.path.isfile('./embed_articles.pickle'):
+    embedded_articles, a_counter = pickle.load(open("embed_articles.pickle", "rb"))
+
+for a in articles[a_counter:]:
+    embed = get_w2v_string(a, embedding)
+    mean_embed = [sum(x)/len(x) for x in zip(*embed)]
+    embedded_articles.append(mean_embed)
+    a_counter += 1
+    print("Number of embedded articles: {}. With dim: {}".format(a_counter, len(embedded_articles[a_counter])))
+    pickle.dump([embedded_articles, a_counter], open("embed_articles.pickle", "wb"))
 
 
 # split dataset into test and training data via k-fold
