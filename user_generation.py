@@ -43,8 +43,8 @@ for a in articles[a_counter:]:
     embed = get_w2v_string(a, embedding)
     mean_embed = [sum(x)/len(x) for x in zip(*embed)]
     embedded_articles.append(mean_embed)
+    print("Article: {} /{}".format(a_counter, len(articles)))
     a_counter += 1
-    print("Number of embedded articles: {}. With dim: {}".format(a_counter, len(embedded_articles[a_counter])))
     pickle.dump([embedded_articles, a_counter], open("embed_articles.pickle", "wb"))
 
 
