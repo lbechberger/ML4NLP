@@ -1,4 +1,4 @@
-import pickle, os, csv
+import pickle, re, os, csv
 import numpy as np
 import knowledgestore.ks as ks
 import gensim
@@ -93,121 +93,6 @@ def get_articles_from_link(uris):
     return articles
 
 
-# def feature_extraction(uris):
-#     # if there's already a pickle file in the dir, append features to it; otherwise create neww one
-#     if os.path.isfile('./features.pickle'):
-#         with open("features.pickle", 'rb') as ppf:
-#             features, cat_counter, a_counter = pickle.load(ppf)
-#             print("Found pickle file")
-#     else:
-#         features = []
-#         cat_counter = 0
-#         a_counter = 0
-#         print("Found no pickle file. Creating new list")
-# 
-#     embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
-#                                                                 binary=True).wv
-#     for category in uris[cat_counter:]:
-#         for a in category[a_counter:]:
-#             article_features = []
-#             articles_word_list = []
-#             if a[4] == 's':  # replace s from https if it exists
-#                 a = a[:4] + a[5:]
-#             mentions = ks.run_resource_query(a, "ks:hasMention")
-#             for m in mentions:
-#                 types = ks.run_mention_query(m, "@type")
-#                 if "nwr:ObjectMention" not in types:  # or "nwr:EntityMention" in types:
-#                     continue
-#                 else:
-#                     m_title = ks.run_mention_query(m, "nif:anchorOf")
-#                     word = ""
-#                     counter = 1
-#                     # word2vec only accepts single words and not expressions (i.e. Saddam Hussein is an invalid input)
-#                     # split string into its words and feed them in the embedding one by one
-#                     # need for differentiation between space and end of string because if we add the space to the end of a
-#                     # word it becomes an invalid input as well. Same holds for apostrophes: cut word before to include it
-#                     # in feature space
-#                     for char in m_title[0]:
-#                         if char != " " and counter != len(m_title[0]):
-#                             word += char
-#                             counter += 1
-#                             continue
-#                         else:
-#                             if counter == len(m_title[0]):
-#                                 word += char
-#                             if len(word) >= 2 and word[-2] == "\'":
-#                                 word = word[:-2]
-#                             if word not in articles_word_list:
-#                                 print("{}: {}".format(m_title, word))
-#                                 try:
-#                                     articles_word_list.append(word)
-#                                     article_features.append(embedding[word])
-#                                 except KeyError:
-#                                     print("Word \'{}\' not in vocab".format(word))
-#                             word = ""
-#                         counter += 1
-# 
-#             features.append(article_features)
-#             a_counter += 1
-#             print("Article #{} has {} features. In total: {}".format(a_counter,
-#                                                                      len(features[cat_counter][a_counter]),
-#                                                                      len(features)))
-#             # save data to pickle
-#             with open('features.pickle', 'wb') as pf:
-#                 print("Dumping data ..")
-#                 pickle.dump([features, cat_counter, a_counter], pf)
-# 
-#         cat_counter += 1
-#         a_counter = 0
-# 
-#     return features
-
-def get_w2v_text(text, embedding=[]):
-    """
-    Get the Google word2vec for each word in an string array
-    :param text: string array of words
-    :param embedding: embedding matrix. If empty, word2vec from Google will be used
-    :return embeddings: array with word2vec values for each word of input text
-    """
-    forbidden_list = ['and', 'or', 'to', 'from', 'in', 'the', 'for']
-    if not embedding:
-        print("Found no embedding matrix. Loading Google's word2vec ..")
-        embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
-    embeddings = []
-    word_list = []
-    char_counter = 0
-    word = ""
-    for char in text[0]:
-        if char != " " and char_counter != len(text[0])-1:
-            word += char
-            char_counter += 1
-            continue
-        else:
-            char_counter += 1
-            if char_counter == len(text[0]):
-                word += char
-            if word[-1] == ',' or word[-1] == '.' or word[-1] == ')':
-                word = word[:-1]
-            if word[0] == '(':
-                word = word[1:]
-            if len(word) >= 2 and word[-2] == '\'':
-                word = word[:-2]
-            if word in forbidden_list:
-                print("Skip {}".format(word))
-                word = ""
-                continue
-            if word not in word_list:
-                try:
-                    print("Include word {}".format(word))
-                    embeddings.append(embedding[word])
-                    word_list.append(word)
-                    word = ""
-                except KeyError:
-                    print("Unknown word '{}'".format(word))
-                    continue
-    return embeddings
-
-
 def get_w2v_string(word_string, embedding=[]):
     """
     Get the Google word2vec for each word in an string array
@@ -215,14 +100,18 @@ def get_w2v_string(word_string, embedding=[]):
     :param embedding: embedding matrix. If empty, word2vec from Google will be used
     :return embeddings: array with word2vec values for each word of input text
     """
-    forbidden_list = ['and', 'or', 'to', 'from', 'in', 'the', 'for']
-    if not embedding:
-        print("Found no embedding matrix. Loading Google's word2vec ..")
-        embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
+    forbidden_list = ['and', 'from', 'the', 'for', 'the', 'they', 'he', 'she']
+
     embeddings = []
     word_list = []
     char_counter = 0
     word = ""
+
+    # remove periods in acronyms, punctuations and afterwards replace new lines, tabs, multiple spaces by single space
+    word_string = re.sub(r'(?<!\w)([A-Z])\.', r'\1', word_string)
+    word_string = re.sub(r'[^\w\s]', ' ', word_string)
+    word_string = re.sub('\s+', ' ', word_string)
+
     for char in word_string:
         if char != " " and char_counter != len(word_string)-1:
             word += char
@@ -230,26 +119,19 @@ def get_w2v_string(word_string, embedding=[]):
             continue
         else:
             char_counter += 1
-            if char_counter == len(word_string):
+            if char_counter == len(word_string)-1:  # if not a space
                 word += char
-            if word[-1] == ',' or word[-1] == '.' or word[-1] == ')':
-                word = word[:-1]
-            if word[0] == '(':
-                word = word[1:]
-            if len(word) >= 2 and word[-2] == '\'':
-                word = word[:-2]
-            if word in forbidden_list:
-                print("Skip {}".format(word))
+            if (len(word) < 4 and not word.isupper()) or word.isdigit():  # probably irrelevant word
                 word = ""
                 continue
-            if word not in word_list:
-                try:
-                    print("Include word {}".format(word))
-                    embeddings.append(embedding[word])
-                    word_list.append(word)
-                    word = ""
-                except KeyError:
-                    print("Unknown word '{}'".format(word))
-                    continue
+            if word in forbidden_list or word in word_list:
+                word = ""
+                continue
+            try:
+                embeddings.append(embedding[word])
+                word_list.append(word)
+            except KeyError:
+                word = ""
+                continue
+            word = ""
     return embeddings
-
