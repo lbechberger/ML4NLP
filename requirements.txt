@@ -7,3 +7,4 @@ wordcloud
 jupyter
 scikit-learn
 beautifulsoup4
+spacy

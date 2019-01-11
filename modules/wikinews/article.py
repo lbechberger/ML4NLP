@@ -51,6 +51,11 @@ class Article(Element):
         else:
             return True
 
+    def parsed_text(self, parser):
+        if not hasattr(self, "__parsed_text"):
+            self.__parsed_text = parser(self.text)
+        return self.__parsed_text
+
     @staticmethod
     def parse(url: str) -> Tuple[str, str, List[str], List[Union[int, int]]]:
         """ Generates an article from a given URL. """
@@ -64,7 +69,7 @@ class Article(Element):
         response = json.loads(requests.get(json_url, timeout=5).content)
         pages = response["query"]["pages"]
         if len(pages) != 1:
-            raise "Invalid number of pages."
+            raise RuntimeError("Invalid number of pages.")
 
         # Parse the returned object
         page = next(iter(pages.values()))
@@ -88,5 +93,5 @@ class Article(Element):
             page["title"],
             text,
             [category["title"][9:] for category in categories],
-            mentions
+            mentions,
         )
