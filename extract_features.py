@@ -1,87 +1,100 @@
 import sys
-from statistics import mean, median
+from typing import Sequence, Optional
 
 import spacy
 import numpy as np
-from sklearn.metrics.pairwise import cosine_distances
+import pandas as pd
+import json
 from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, precision_score
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
 
 sys.path.append("..")
-from src import PATH_RAW_DATA, PATH_DATASETS
+from src import PATH_DATASETS, PATH_CONFIG
 from modules.data import DataSet
+from modules.features import FeatureExtractor
 
 
-def calculate_cosine_distance(articles, candidate):
-    candidate_vector = candidate.vector.reshape(1, -1)
-    cosine_diff = [
-        float(cosine_distances(article.vector.reshape(1, -1), candidate_vector)[0, 0])
-        for article in articles
+def get_unique_articles(dataset: pd.DataFrame):
+    article_columns = [
+        column for column in dataset.columns.values if column.startswith("article_")
     ]
-    return mean(cosine_diff), median(cosine_diff), min(cosine_diff), max(cosine_diff)
+    return pd.unique(dataset[article_columns + ["candidate"]].values.ravel("K"))
 
 
-def calculate_entity_iou(articles, candidate, label):
-    def extract_entities(text, label):
-        return frozenset(
-            entity.lemma_.split()[-1]
-            for entity in text.ents
-            if entity.label_ == label and len(entity.lemma_) > 0
-        )
+def extract_features(
+    nlp_parser,
+    dataset: pd.DataFrame,
+    feature_extractors: Sequence[FeatureExtractor],
+    length: Optional[int] = None,
+):
+    # Extract columns of articles and unique articles in a dataset
+    article_columns = [
+        column for column in dataset.columns.values if column.startswith("article_")
+    ]
+    unique_articles = pd.unique(
+        dataset[article_columns + ["candidate"]].values.ravel("K")
+    )
 
-    candidate_entities = extract_entities(candidate, label)
-    ious = []
-    for article in articles:
-        entities = extract_entities(article, label)
-        union = len(candidate_entities.union(entities))
-        ious.append(
-            len(candidate_entities.intersection(entities)) / union if union > 0 else 0
-        )
+    # Parse all texts, create a mapping and prepare the feature extractors
+    articles_parsed = list(
+        nlp_parser.pipe((article.text for article in unique_articles))
+    )
+    articles_mapping = {article.url: i for i, article in enumerate(unique_articles)}
+    for feature in feature_extractors:
+        feature.prepare(articles_parsed)
 
-    return mean(ious), median(ious), min(ious), max(ious)
-
-
-def extract_features(dataset, feature_extractors, length=None):
+    # Create the required outputs
     length = length if length is not None else len(dataset)
-    feature_vectors = np.zeros((length, len(feature_extractors) * 4), dtype=np.float32)
     data = dataset.iloc[:length]
     labels = [x for x in dataset["label"][:length]]
+    feature_vectors = np.zeros(
+        (length, sum(extractor.get_num_features() for extractor in feature_extractors)),
+        dtype=np.float32,
+    )
 
     for representation_id, representation in data.iterrows():
-        candidate = representation["candidate"].parsed_text(nlp)
-        articles = [
-            value.parsed_text(nlp)
+        id_candidate = articles_mapping[representation["candidate"].url]
+        ids_articles = [
+            articles_mapping[value.url]
             for key, value in representation.iteritems()
-            if key.startswith("article_")
+            if key in article_columns
         ]
 
+        # Fill the feature vector
+        feature_index = 0
         for extractor_id, extractor in enumerate(feature_extractors):
-            extractor_id = extractor_id * 4
             feature_vectors[
-                representation_id, extractor_id : extractor_id + 4
-            ] = extractor(articles, candidate)
+                representation_id,
+                feature_index : feature_index + extractor.get_num_features(),
+            ] = extractor(
+                [(i, articles_parsed[i]) for i in ids_articles],
+                (id_candidate, articles_parsed[id_candidate]),
+            )
+
+            feature_index += extractor.get_num_features()
 
     return feature_vectors, labels
 
 
-if __name__ == "__main__":
-    dataset = DataSet.load(PATH_DATASETS)
-    nlp = spacy.load("en_core_web_lg")
+def load_feature_extractors(file_name="features.json"):
+    with open(PATH_CONFIG / file_name, "r") as json_file:
+        data = json.load(json_file)
 
-    #%%
-    LENGTH = len(dataset["training"])
-    FEATURE_EXTRACTORS = [
-        calculate_cosine_distance,
-        lambda articles, candidate: calculate_entity_iou(articles, candidate, "PERSON"),
-        lambda articles, candidate: calculate_entity_iou(articles, candidate, "NORP"),
-        lambda articles, candidate: calculate_entity_iou(articles, candidate, "ORG"),
-        lambda articles, candidate: calculate_entity_iou(articles, candidate, "GPE"),
-        lambda articles, candidate: calculate_entity_iou(articles, candidate, "EVENT"),
+    return [
+        FeatureExtractor.from_name(extractor["name"], extractor.get("arguments", None))
+        for extractor in data["extractors"]
     ]
 
-    X_train, y_train = extract_features(dataset["training"], FEATURE_EXTRACTORS)
-    X_test, y_test = extract_features(dataset["testing"], FEATURE_EXTRACTORS)
+
+if __name__ == "__main__":
+    dataset = DataSet.load(PATH_DATASETS)
+    feature_extractors = load_feature_extractors()
+
+    nlp = spacy.load("en_core_web_lg")
+
+    X_train, y_train = extract_features(nlp, dataset["training"], feature_extractors)
+    X_test, y_test = extract_features(nlp, dataset["testing"], feature_extractors)
 
     #%%
     pipeline = Pipeline([("rf", RandomForestClassifier(n_estimators=50))])

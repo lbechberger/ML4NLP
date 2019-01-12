@@ -1,7 +1,7 @@
 {
     "user": {
         "representation": {
-            "articles_per_interest": 1,
+            "articles_per_interest": 3,
             "positive_samples": 2,
             "negative_samples": 2
         },

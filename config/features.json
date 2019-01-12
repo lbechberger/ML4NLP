@@ -1,0 +1,30 @@
+{
+    "extractors": [
+      {
+        "name": "DocumentSimilarity"
+      },
+      {
+        "name": "NamedEntities",
+        "arguments": ["PERSON"]
+      },
+      {
+        "name": "NamedEntities",
+        "arguments": ["NORP"]
+      },
+      {
+        "name": "NamedEntities",
+        "arguments": ["ORG"]
+      },
+      {
+        "name": "NamedEntities",
+        "arguments": ["GPE"]
+      },
+      {
+        "name": "NamedEntities",
+        "arguments": ["EVENT"]
+      },
+      {
+        "name": "TfIdfSimilarity"
+      }
+    ]
+}
