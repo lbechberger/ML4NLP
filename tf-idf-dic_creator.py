@@ -11,19 +11,20 @@ import pickle
 
 def get_five_highest(uri):
     
-    vector = vectorizer.transform([ks.run_files_query(uri)]).toarray()
-    print("filesquery",ks.run_files_query(uri))
-    if(ks.run_files_query(uri) == ""):
+    article_text = ks.run_files_query(uri)
+    vector = vectorizer.transform([article_text]).toarray()
+    print("filesquery",article_text)
+    if(article_text == ""):
         print("empty")
         return []
     else:
-        return five_highest_tf_idf_words(vector)
+        return highest_tf_idf_words(vector,5)
 
-def five_highest_tf_idf_words(vector):
+def highest_tf_idf_words(vector, word_amount):
     vector = np.reshape(vector,-1)
     #print("vector: ",vector)
     argsorted = np.argsort(vector)
-    five_highest_indices = argsorted[-5:]
+    five_highest_indices = argsorted[-word_amount:]
     #print("indices: ",five_highest_indices)
     five_highest_words = []
     for i in five_highest_indices:
@@ -63,3 +64,4 @@ except FileNotFoundError:
 
 
 print(get_five_highest("http://en.wikinews.org/wiki/'Jesus_Camp'_shuts_down"))
+

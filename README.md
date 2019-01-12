@@ -71,3 +71,117 @@ By chosing the automatic generation of idealized user profiles to build the data
 
 However, in order to aquire the data set, an intermediate step to model user's interests is taken. Interests are defined by a small number of topics the user is interested in. To enable the automatic generation, the topics of interest match the categories into which the articles of Wikinews are sorted. As the amount of top level categories is low at 16, we use the much bigger number of subcategories.
 A user profile consists of number (still to be defined) of articles that belong into the topics of interest for a user. In order to generate the user profiles, we created a python dictionary that lists for each topic all articles that fall into that topic. The articles are drawn from a random distribution where each topic is weighted by the number of articles that belong to that topic. We chose this approach because we assume that topics that contain a large number of articles are more important as more people are interested in these topics.
+
+
+
+## Session 5, 20.11.18
+
+During this week, we finished the creation of the dataset. *dataset_generation.py* holds the method *generate_dataset(amount_users, subcategories_per_user, articles_per_user_and_category)* which creates a desired number of user profiles, each one consisting of a defined number of categories of interests per user and a defined number of articles per user's interest. This ensures a uniform format in which each user profile is defined by an equal amount of articles the user liked (the user's categories of interest are not specified in the dataset). The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category are randomly drawn.
+The dataset is returned as a list of URIs and can be saved e.g. in a csv-file.
+
+Topics of interest are chosen from the category mapping of Wikinews. Note that the top-level categories aren't taken into account but only the level-2-categories, so subcategories. We excluded the first ones because if such a category was chosen for a user's topic of interest, the thematic range of articles belongig to that category would be high compared to articles belonging to a subcategory.
+
+The python code for generating users uses the method *create_category_articles_dictionary()*, for which we extended *ks.py* in the *knowledgestore* folder. *create_category_articles_dictionary()* creates a dictionary that matches news articles to the subcategories to which they belong. In order to get the subcategories for an article, the method *get_all_news_subcategories(resource_uri)* looks at the HTML code of the corresponding Wikinews article website, given by the parameter *resource_uri*. The HTML code contains the string *wgCategories*, which is followed by a list of categories that article belongs to. The top-level categories are excluded as explained above. 
+The extraction of categories for every article took roughly two hours, so the resulting dictionary is stored in the file *subcategory_resource_mappings.pickle*. If *create_category_articles_dictionary()* finds that file, it loads the dictionary from there instead of creating it anew.
+
+
+## Session 6, 27.11.18
+
+In this week we finished creating the dataset. The code for generating the dataset can be found in the file *generate_dataset.py*. 
+The dataset consists of 1000 user profiles. Each user profile contains 30 articles the user liked - 10 from each of the 3 topics the user is interested in.
+Apart from that, there are also 30 positive and 30 negative training examples per user which can later be used for training the classifier.
+
+The data is saved in a nesting of lists, which have the following hierarchical structure (example for two users):
+
+<pre>
+[                                                       dataset                                  ]
+
+[ [                         user1                                 ] , [         user2          ] ]
+
+[ [ [   profile    ] , [               training                 ] ] , [ [profile] , [training] ] ]
+
+[ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
+</pre>
+    
+The *generate_dataset.py* program does the following:
+Firstly, a dictionary with a matching from all subcategories to a list of all articles that belong to the specific subcategory is created. Afterward, certain categories are deleted:
+* all categories that contain too few articles (less than 15 or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
+* all categories that contain too many articles (over 506). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
+* all categories that denote a specific date, e.g. 'January 1, 2008'. 
+* all categories that just describe authorship. For example 'Cocoaguy (Wikinewsie)' or 'Juliancolton (WWC2010)'. The reason for that is that some authors write about a wide, seemingly unrelated variety of articles, hence they do not have anything to do with a certain topic.
+* the following categories: 
+  * 'Published'
+  * 'Archived'
+  * 'Original reporting'
+  * 'AutoArchived'
+  * 'Pages with template loops'
+  * 'Pages using duplicate arguments in template calls'
+  * 'Pages with pull-quotes'
+  * 'Pages with defaulting non-local links'
+  * 'Pages with categorizable local links'
+  * 'Pages using two-parameter languageicon'
+  * ''
+  * 'Pages with missing-image template calls'
+  * 'Pages with forced foreign links'
+  * 'Pages using three-parameter languageicon'
+  * 'Reviewed articles'
+  * 'Pages with irredeemable missing-image template calls'
+  * 'Corrected articles'
+  * 'Writing contest 2010'
+  * 'Imported news'
+  * 'Translated news'
+  * 'Featured article'
+  * 'Writing Contests/May 2010'
+  * 'News articles with translated quotes'
+  * 'News articles with telephone numbers'
+   
+After deleting these unsuitable categories, we used a weighted random distribution to chose three distinct topics of interest for each user. The more articles a category has, the more likely it was chosen. 
+Then, for each topic of interest, there were 20 articles drawn - 10 for the user profile and 10 for the positive training samples. Afterward, 30 articles that do not belong to any of the three categories of 
+interest were drawn in order to be used as negative training samples.
+Finally, the dataset was saved as a pickle file.
+
+## Session 7, 04.12.18
+
+### Splitting up the dataset
+
+As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, test and validation. As there is a lot of data present in the set, we can use different parts of the set for training, test and validation.
+Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We want the same for our classifier for news recommendation. One solution that comes into mind is the reservation of articles that a newer than a certain date and putting them aside for test and validation data.
+
+### Evaluating the classifier's performance
+
+For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. A decision still to be made is if we use the balanced F1-score or the F2-score to weigth recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
+Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
+At last, the accuracy should be calculated for having a metric that is widely used.
+
+### Baselines
+
+Currently, the users of our dataset have the same number of articles in which they are interested and in which they are not. Feeding the whole data for training into our classifier could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice. We consider changing the relation between the number of positive and negative examples in the dataset.
+
+As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
+
+|  | Always “True” | Always “False” | 50-50 | Label Frequency |
+|-----------------------|---------------|----------------|-------|-----------------|
+| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
+| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
+| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
+| Matthew's correlation | 0 | 0 | 0 | 0 |
+| Cohen's kappa | 0 | 0 | 0 | 0 |
+
+
+
+## Session 7, 11.12.18
+
+
+### Remarks concerning the previous documentation part:
+
+Up tp now, we had the same amount of positive and negative examples in our dataset to train the classifier. However, the percentage of articles the user is theoretically interested in is not 50% but 3.1%. We calculated the number of 3.1% by counting the average amount of articles that belong to the user's 3 categories of interest devided by the number of all articles.
+
+
+### Features
+
+We decided to uses word embeddings as well as term frequency - inverse document frequency (tf-idf) as features.
+We are planning to train the word embeddings over all articles of Wikinews. One potential problem of training the word embeddings just of the Wikinews articles that are present until a certain date is that if newer articles are published is that contain unseen words. These unseen words are not present in the word embedding and therefore the classifier is not able to process them. However, in a real life scenario, we would assume regularly trained word embeddings. In our case, a work-around could be to replace unknown words with their categories that are denoted in the dbpedia. For example, if "Trump" was an unseen word, it would be replaced by "politician".
+Eventually, the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in *Handouts_Session_8*, the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. Articles with similar meaning would accordingly show embedding vectors that have a small cosine distance to each other.
+
+
+Another idea to extract features to use for the classifier is to compute the tf-idf for all words in the article to be classified and use the 5 words with the highest tf-idf value. When aiming to figure out if a new article is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum for a uninteresting article would be small.
