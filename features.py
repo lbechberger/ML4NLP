@@ -1,8 +1,29 @@
+
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Jan 15 12:53:46 2019
+
+@author: patri
+"""
+
 import knowledgestore.ks as ks
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import gensim, pickle, nltk, string
+
+
+
+def makeString(listi):
+    string = ""
+    for i in listi:
+        string = string +i+" "
+    return string
+
+def get_tf_idf_wordvector(text,numberOfWords,weighted):
+    highestWords = highest_tf_idf_words(text, numberOfWords)
+    return get_summed_word2vec(makeString(highestWords),weighted)
+    
 
 def get_five_highest(article_text):
     
@@ -15,7 +36,7 @@ def get_five_highest(article_text):
     else:
         return highest_tf_idf_words(article_text, 5)
 
-def tf_idf_scores(text):
+def get_tf_idf_scores(text):
     matrix = vectorizer.transform([text])
     matrix = matrix.toarray()
     vector = np.reshape(matrix,-1)
@@ -81,7 +102,7 @@ def get_summed_word2vec(text, weighted = False):
     summed_vector = 0
 
     if weighted:
-        scores = tf_idf_scores(text)
+        scores = get_tf_idf_scores(text)
 
     for token in tokens:
         if token in model.vocab:
@@ -95,30 +116,83 @@ def get_summed_word2vec(text, weighted = False):
 
     ms = model.most_similar([summed_vector])
 
-    for x in ms:
-        print(x[0],x[1])
+    #for x in ms:
+    #    print(x[0],x[1])
     
     return summed_vector
+
+
+
+def get_distances(articleVector, otherArticlesVectors):
+    distancesArray = []
+    for otherVector in otherArticlesVectors:
+        #print("vector1 : ",articleVector, articleVector.shape)
+        #print("vector2 : ",otherVector, otherVector.shape)
+        distancesArray.extend(cosine_similarity([articleVector],[otherVector]))
+    distancesArray = np.sort(distancesArray)
+    return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[:3])
+
         
 def get_features(user_profile, article_uri):
 
     features = []
     articles_text = []
+    summedVectorsWeighted = []
+    summedVectorsUnweighted = []
+    fiveHighestVectorsWeighted = []
+    fiveHighestVectorsUnweighted = []
+    tenHighestVectorsWeighted = []
+    tenHighestVectorsUnweighted = []
+    tf_idf_scores = []
+    lengths = []
+    
+    article_text = ks.run_files_query(article_uri)
+
+    # five highest tf_idf words in den anderen Artikeln nachschauen
+    five_highest_words = get_five_highest(article_text)
+
 
     #features for articles in profile
     for profile_article in user_profile:
-        articles_text.append(ks.run_files_query(profile_article))
+        articles_text = ks.run_files_query(profile_article)
+        summedVectorsWeighted.extend(get_summed_word2vec(articles_text,True))
+        summedVectorsUnweighted.extend(get_summed_word2vec(articles_text,False))
+        fiveHighestVectorsWeighted.extend(get_tf_idf_wordvector(articles_text,5,True))
+        fiveHighestVectorsUnweighted.extend(get_tf_idf_wordvector(articles_text,5,False))
+        tenHighestVectorsWeighted.extend(get_tf_idf_wordvector(articles_text,10,True))
+        tenHighestVectorsUnweighted.extend(get_tf_idf_wordvector(articles_text,10,False))
+        
+        # five highest tf_idf words in den anderen Artikeln nachschauen
+        scores = get_tf_idf_scores(articles_text)
+        score = 0
+        for word in five_highest_words:
+            if word in all_words:
+                score = score + scores[all_words.index(word.lower())]
+        tf_idf_scores.append(score)
+        
+        lengths.append(len(articles_text))
+            
 
     #features for article to be classified
-    articles_text.append(ks.run_files_query(article_uri))
 
-    for article_text in articles_text:
-        features.append(len(article_text)) #length of article
-        features.append(get_five_highest(article_text)) #5 words with highest tf-idf-score
-        features.append(get_summed_word2vec(article_text, False)) #summed word vector
-        features.append(get_summed_word2vec(article_text, True)) #summed word vector with words weighted according to their tf-idf score
+   
+    features.append(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
+    features.append(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
+    features.append(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
+    features.append(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
+    features.append(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
+    features.append(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
 
-    ## TODO: relate features, so features aren't single vectors, but distances between vectors, maybe minimum distance
+    tf_idf_scores = np.sort(tf_idf_scores)
+    feature = (tf_idf_scores[0],tf_idf_scores[-1],np.mean(tf_idf_scores),np.mean(tf_idf_scores[-3:]))
+    features.append(feature)
+    
+    distances = [abs(len(article_text)-length) for length in lengths]
+    distances = np.sort(distances)
+    feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
+    features.append(feature)
+    
+    #features.append(len(article_text)) #length of article
 
     return features
 
@@ -135,5 +209,4 @@ with open("splitted_dataset.pickle", "rb") as f:
 user = dataSet[0][0]
 
 features = get_features(user[0],user[1][0][0])
-
-
+print(features)
