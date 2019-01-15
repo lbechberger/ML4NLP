@@ -1,6 +1,7 @@
 from pydoc import locate
 from typing import Sequence, Dict, List, Tuple, Any
 from abc import ABC, abstractmethod
+from statistics import mean, median
 import re
 
 class FeatureExtractor(ABC):
@@ -31,6 +32,10 @@ class FeatureExtractor(ABC):
             return feature_class(**arguments)
         else:
             return feature_class()
+
+    @classmethod
+    def aggregate(cls, individual_scores):
+        return mean(individual_scores),  median(individual_scores), min(individual_scores), max(individual_scores)
 
     @staticmethod
     def string_to_snake_case(input: str) -> str:

@@ -1,5 +1,3 @@
-from statistics import mean, median
-
 from modules.features import FeatureExtractor
 
 
@@ -24,4 +22,4 @@ class NamedEntities(FeatureExtractor):
                 len(candidate_entities.intersection(entities)) / union if union > 0 else 0
             )
 
-        return mean(ious), median(ious), min(ious), max(ious)
+        return NamedEntities.aggregate(ious)

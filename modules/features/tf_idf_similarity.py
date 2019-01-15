@@ -1,5 +1,3 @@
-from statistics import mean, median
-
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.spatial.distance import cosine
 import numpy as np
@@ -29,9 +27,4 @@ class TfIdfSimilarity(FeatureExtractor):
             cosine(self.__matrix[i].todense(), candidate_tfidf) for i, _ in articles
         ]
 
-        return (
-            mean(tfidf_similarities),
-            median(tfidf_similarities),
-            min(tfidf_similarities),
-            max(tfidf_similarities),
-        )
+        return TfIdfSimilarity.aggregate(tfidf_similarities)
