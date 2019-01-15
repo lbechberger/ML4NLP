@@ -232,16 +232,16 @@ The basic idea can be seen in the image below. We compare the labeled article wi
 
 To compare the articles to each other, we use three different approaches:
 
-1. Word-Embeddings-Similarity
+#### 1. Word-Embeddings-Similarity
 
 For this approach, we extract the Word Embeddings for every word in the articles, so that we obtain a vector of word vectors for each article. We then reduce each word vector to a single number by taking the mean. Now we have for each article a numeric vector consisting out of the mean values of the word vectors. The single articles can now be compared by taking the cosine similarity of the numerical vectors. In the end, we obtain for this approach one feature vector consisting out of six entries (max, min, mean, median, variance, standard deviation).
 
-2. TF-IDF-Similarity
+#### 2. TF-IDF-Similarity
 
 In the first step, we calculate the TF-IDF score of the whole vocabulary of our training corpus. This results in a very high dimension, so we limit this dimension by just taking 1000 words with the highest TF-IDF score over out entire training corpus. Based on this we end up with a numerical vector with 1000 entries for each article. The single articles can now be compared by taking the cosine similarity
 of the numerical vectors. In the end, we obtain for this approach one feature vector consisting out of six entries (max, min, mean, median, variance, standard deviation). 
 
-3. Named-Entity-Similarity
+#### 3. Named-Entity-Similarity
 
 Using the spacy-API (https://spacy.io/usage/linguistic-features), we extract for each article the following named entities: ```PERSON``` (People, including fictional), ```NORP``` (Nationalities or religious or political groups), ```ORG``` (Companies, agencies, institutions, etc.), ```GPE``` (Countries, cities, states), ```EVENT``` (Named hurricanes, battles, wars, sports events, etc.). From this, we get a list of named entities for every article. We lemmatize these lists of named entities per article so that we end up with the word stems, and then we build the set. Now we are able to compare each set to each other set by taking the Intersection over Union. In the end, we obtain for this approach then five feature vectors (for each named entity) consisting out of six entries (max, min, mean, median, variance, standard deviation).
 
