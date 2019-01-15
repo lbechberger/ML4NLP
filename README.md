@@ -184,3 +184,10 @@ Feature selection methods:
 
 Everything is implemented in sklearn
     
+    
+### Notes 2
+Instead of real pos in articel, related to an anchor(agent, patient?)/
+Imbalance!
+Grid can use an external file server to make use of more than 5 gb data
+Cluster the vectors?
+
