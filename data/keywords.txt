@@ -1,0 +1,56 @@
+Crime and law: ["bill", "Missing", "Murder"‎, "Drug", "Terrorism"‎, "Police", "Al-Qaeda"‎, "trial", "Court"‎, "Sexual Assault", "form"]
+Culture and entertainment: ["Film"‎, "Food‎", "Game"‎, "Music"‎, "Religion"‎, "Television TV"‎, "Museum‎", "Literature", "Theatre", "Hollywood"]‎
+Disasters and accidents: ["Earthquake", "Fire", "Natural Disaster", "Missing", "Accident", “Attack”, "Flood", "Oil spill", "bomb", "crash"]
+Economy and business: ["Energy", "Tourism", "Shipping‎", "2008", "Financial Crisis‎", "Market‎", "Labor‎", "Dollar", "Bank", "Euro"]
+Environment: ["Climate", "Species", "Endanger"‎, "Oil spill", "Waste", "Nuclear", "Greenpeace", "Recycling", "Pollution", Energy"]
+Health: ["Disease", "Drug", "Food‎", "Mental health‎", "Vaccination"‎, "Abortion"‎, "Medicine", "Prevention"‎, "AIDS", "Cancer"]
+Science and technology: ["scientist", "Climate Change", "announce", "Research", "develop", "release", "found", "discover", "Astronomy"‎, "software"]
+Sports: ["Auto racing‎", "Ball", "Cricket"‎, "League", ‎"Hockey", "Olympics‎", "Rugby", "Game", "Cup", "Champion"]
+Wackynews: ["Pet", "Bizarre", "Absurd", "Incident", "UFO", "Conspiracy", "World record", "claim", "witness", "fall"]
+Weather: ["Climate", "Flood", "Hurricane", "Tornadoes", "Cyclones", "Typhoon", "Storm", "Heat", "Winter", "Rain"]
+Politics and conflicts: ["President", "Immigration", "Parliament", "law", "Elections", "War", "Human Rights", "Military", "Protest", "Terrorism", "Party"]
+Obituaries: ["Death", "dies", "dead", "cancer", "overdose", "suicide", "family", "testament", "pass away", "funeral"]
+Transport: ["road", "rail", "traffic", "crash site", "cargo", "ship", "metro", "accident", "tram", "vehicles"]
+World: ["World War", "Interpol", "World Health Organisation WHO", "Intergovernmental Panel on Climate Change IPCC", "Climate Change", "International", "Summit", "global", "earth"] X
+Internet: ["Web", "Cyber", "Anonymous", "Google", "Digital", "Wiki", "Facebook", "Privacy", "Online", "Hacker"]
+Religion: ["Pope", "Vatican", "Islam", "Church", "Scientology", "Dalai Lama", "Mosque", "Muslim", "Hinduism", "Buddhism"]
+Africa: ["Somalia", "South Africa", "African Union", "Ethiopia", "HIV", "Pirates", "United Nations", "Humanitarian aid", "refugee", "North Atlantic Treaty Organization NATO"]
+Asia: ["Russia", "India", "China", "Indonesia", "Taipei", "Monsoon", "Tsunami", "Japan", "Iran", "Korea"]
+Europe: ["European Union EU", "Euro", "Brexit", "UEFA", "Brussels", "Britain", "France", "Germany", "European Space Agency ESA", "Commission"]
+Middle East: ["Arab Spring", "Egypt", "Iran", "Israel", "Iraq", "Lebanon", "Palestine", "Saudi Arabia", "Syria", "Bomb"]
+
+North America: ["Canada", "United States US", "Arctic", "Mexico", "Caribbean", "Pacific", "NATO", "Hurricane", "American"] X
+Oceania: ["Australia", "New Zealand",] XXXXX 
+
+Aviation: ["Airplane", "Airbus", "Boeing, "Helicopter", "Flight", "Federal Aviation Administration FAA", "Airport", "crash", "pilot", "air"]
+Computing: ["Apple", "Microsoft", "Google", "develop", "IBM", "Computer", "software", "operating system", "launch", "hack"]
+Space: ["National Aeronautics and Space Administration NASA", "Astronaut", "Planet", "European Space Agency ESA", "Space Station", "Satellite", "Launch", "Orbit", "Telescope", "Astronomy"]
+Elections: ["Candidate", "Vote", "Election Results", "President", "Chancellor", "Party", "Parliament", "Campaign", "Senate", "Liberal"]
+Human rights: ["Free Speech", "Lesbian Gay Bisexual Transgender LGBT", "Human Rights Watch", "Women Right", "Human trafficking", "Amnesty International", "Refugee", "Civil Rights", "Protest", “Racism"]
+United Nations: ["World Health Organization WHO", "Ambassador", "Ban Ki-moon", "Gaza", "UNESCO", "Crisis", "Security", "Red Cross", "Troops", "UNICEF"]
+Football (soccer): ["Fédération Internationale de Football Association FIFA", "David Beckham", "Lionel Messi", "Champions League", "England", "Cristiano Ronaldo", "Penalty", "Score", "World Cup", "Win"]
+China: ["Beijing", "Hong Kong", "Chinese", "Ban", "Export", "Korea", "Pollution", "Economy", "Shanghai", "Tibet"] // “Journalism”
+India: ["Indian", "Delhi", "Mumbai", "Bollywood", "Pakistan", "Ghandi", "Tsunami", "Pollution", "Climate Change", "Maharshtra"]
+Russia: ["Russian", "Putin", "Medvedev", "United States US", "Oil", "Moscow", "Saint St Petersburg", "Soviet", "Nuclear", "Ukraine"] //“Journalism”
+Iraq: ["War", "Islamic State IS", "Saddam Hussein", "United States US", "Baghdad", "Bomb", "Iraqi", "Military", "Bush", "Kurdish"]
+Israel: ["Jerusalem", "Netanyahu", "Palestine", "Tel Aviv", "Hamas", "Israeli", "Gaza", "United Nation UN", "Nuclear", "Jordan"]
+Australia: ["Melbourne", "Sydney", "Queensland", "Australian", "Australian Rules Football", "New South Wales", "Fire", "Canberra", "Victoria", "Tony Abbott"]
+
+New Zealand: ["Clark", "Cricket", "Australia", "Auckland", "ANZAC", "Christchurch", "Pacific", "All Blacks", ] XX
+
+Canada: ["Ottawa", "Trudeau", "British Columbia BC", "Ontario", "Ice Hockey", "National Hockey League NHL", "Alberta", "Ontario", "Toronto", "Quebec"]
+
+United States: ["Trump", "Bush", "Obama", "Central Intelligence Agency CIA", "New York", "Washington", "Democrat", "National Football League NFL", "Federal Bureau Investigation FBI", "Republican"]  # "American"
+
+California: ["Los Angeles LA", "San Diego", "Schwarzenegger", "San Francisco", "Hollywood", "San Jose", "Santa Clara County", "Google", "Amazon", "Sacramento"]
+United Kingdom: ["Theresa May", "BBC", "Scotland", "Wales", "Brexit", "Tony Blair", "Queen", "Britain", "David Cameron", "British"] 
+
+France: ["Paris", "Tour de France", "Macron", "Chirac", "French", "Sarkozy", "Front National", "Le Pen", "Renault"] X
+
+Germany: ["Berlin", "Merkel", "German", "Volkswagen VW", "World War", "Munich", "Football", "Automobile", ] XX
+
+England: ["Liverpool", "Birmingham", "Manchester", "Britain", "Chelsea", "Arsenal", "Yorkshire", "Essex", "Football"] X
+
+London: ["Parliament", "London Underground", "Camden", "Metropolitan Police", "Khan"] XXXXX
+
+South America: ["Brazil", "Chile", "Bolivia", "Argentina", "Rainforest", "Venezuela", "Colombia", "Corruption", "Uruguay", "Union South American Nations"]
