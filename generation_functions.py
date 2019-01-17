@@ -1,7 +1,9 @@
-import pickle, re, os, csv
-import numpy as np
-import knowledgestore.ks as ks
+import pickle, re
 import gensim
+import nltk
+import numpy as np
+from nltk.tokenize import RegexpTokenizer
+import knowledgestore.ks as ks
 
 
 def create_dataset(database, articles, number_articles_per_categories):
@@ -89,49 +91,30 @@ def get_articles_from_link(uris):
         articles.append(ks.run_files_query(uri))
 
     # save all articles in pickle file
-    pickle.dump(articles, open("articles.pickl", "wb"))
+    pickle.dump(articles, open("./data/articles.pickle", "wb"))
     return articles
 
 
-def get_w2v_string(word_string, embedding=[]):
+def get_w2v_string(word_string, embedding):
     """
     Get the Google word2vec for each word in an string array
     :param word_string: single string of words
-    :param embedding: embedding matrix. If empty, word2vec from Google will be used
+    :param embedding: embedding matrix
     :return embeddings: array with word2vec values for each word of input text
     """
-    forbidden_list = ['and', 'from', 'the', 'for', 'the', 'they', 'he', 'she']
-
+    stop_words = set(nltk.corpus.stopwords.words('english'))
     embeddings = []
-    word_list = []
-    char_counter = 0
-    word = ""
-
-    # remove periods in acronyms, punctuations and afterwards replace new lines, tabs, multiple spaces by single space
+    # remove periods in acronyms, transform text string into single words and remove duplicates
     word_string = re.sub(r'(?<!\w)([A-Z])\.', r'\1', word_string)
-    word_string = re.sub(r'[^\w\s]', ' ', word_string)
-    word_string = re.sub('\s+', ' ', word_string)
+    word_string = set(RegexpTokenizer(r'\w+').tokenize(word_string))
 
-    for char in word_string:
-        if char != " " and char_counter != len(word_string)-1:
-            word += char
-            char_counter += 1
+    for word in word_string:
+        if word in stop_words:
             continue
-        else:
-            char_counter += 1
-            if char_counter == len(word_string)-1:  # if not a space
-                word += char
-            if (len(word) < 4 and not word.isupper()) or word.isdigit():  # probably irrelevant word
-                word = ""
-                continue
-            if word in forbidden_list or word in word_list:
-                word = ""
-                continue
-            try:
-                embeddings.append(embedding[word])
-                word_list.append(word)
-            except KeyError:
-                word = ""
-                continue
-            word = ""
+        if (len(word) < 4 and not word.isupper()) or word.isdigit():
+            continue
+        try:
+            embeddings.append(embedding[word])
+        except KeyError:
+            continue
     return embeddings
