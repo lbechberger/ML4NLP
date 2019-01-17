@@ -1,19 +1,19 @@
 import pandas as pd
+import os
 from generation_functions import *
+from feature_extraction import FeatureExtraction
 from sklearn.model_selection import KFold
-
 
 # always use same numbers (for performance comparison)
 np.random.seed(0)
 
 # load categories, articles and URIs from file
-categories, uris, _ = pickle.load(open("user_articles.pickle", "rb"))
+categories, uris, _ = pickle.load(open("./data/user_articles.pickle", "rb"))
 # get texts of all articles. Will be dumped in pickle file to avoid unnecessary computations when re-running code
-if os.path.isfile('./articles.pickle'):
-    articles = pickle.load(open("articles.pickle", "rb"))
+if os.path.isfile('./data/articles.pickle'):
+    articles = pickle.load(open("./data/articles.pickle", "rb"))
 else:
     articles = get_articles_from_link(uris)
-
 
 # create a dataframe with 100 users (rows) who get randomly assigned 0 or 1 for each category (cols)
 # correct subcategory labels if superior category is disliked (=0)
@@ -21,40 +21,19 @@ users_db = pd.DataFrame(np.random.randint(2, size=(100, len(categories))), colum
 users_db.apply(lambda row: check_subcategories(row), axis=1)
 
 
-# Embedding of each category
-embedding = []
-if os.path.isfile('./embed_categories.pickle'):
-    print("Found embed_categories.pickle file. Continuing ..")
-    embedded_categories = pickle.load(open("embed_categories.pickle", "rb"))
-else:
-    print("Did not find embed_categories.pickle file. Create embedding of categories ..")
-    embedded_categories = []
-    embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True).wv
-    for c in categories:
-        embedded_categories.append(get_w2v_string(c, embedding))
-    pickle.dump(embedded_categories, open("embed_categories.pickle", "wb"))
+# Extract the features
+features = FeatureExtraction(articles, categories)
+# calculate the cosine similarities between articles and categories based on user preferences
+# TODO: make it work
+# a, b, c = features.extract_user_similarities(users_db)
+check = features.category_check()
+article_lengths = features.get_article_length()
+file = open("./data/keywords.txt")
+lines = [line.rstrip('\n') for line in file]
 
-
-# Embedding of each article
-if os.path.isfile('./embed_articles.pickle'):
-    embedded_articles, a_counter = pickle.load(open("embed_articles.pickle", "rb"))
-else:
-    a_counter = 0
-    embedded_articles = []
-    if not embedding:
-        embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
-                                                                    binary=True).wv
-    for a in articles[a_counter:]:
-        embed = get_w2v_string(a, embedding)
-        mean_embed = [sum(x)/len(x) for x in zip(*embed)]
-        embedded_articles.append(mean_embed)
-        print("Article: {} /{}".format(a_counter, len(articles)))
-        pickle.dump([embedded_articles, a_counter], open("embed_articles.pickle", "wb"))
-        a_counter += 1
-
-print("Number of embedded articles: {} with following dimensions: {}".format(len(embedded_articles),
-                                                                             len(embedded_articles[0])))
-
+# max_similarities, min_similarities, mean_similarities = features.extract_similarities(articles, similarities)
+# for val in zip(max_similarities,min_similarities,mean_similarities):
+#     print("{}\t\t{}\t\t{}".format(val[0], val[1], val[2]))
 
 # split dataset into test and training data via k-fold
 input_data, labels = create_dataset(users_db, articles, 100)
