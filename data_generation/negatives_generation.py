@@ -28,7 +28,7 @@ def naively_generate_negatives(event_pos):
         while same_as_before:
             new_agent_id = random.randint(0, len(agents) - 1)
             replacement_agent = agents[new_agent_id]
-            if replacement_agent != actual_agent: 
+            if replacement_agent != actual_agent:
                 same_as_before = False
         # returns a dict that can be written into the csv file
         return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": replacement_agent, "predicate": predicates[event_pos], "patient": patients[event_pos]}
@@ -40,7 +40,7 @@ def naively_generate_negatives(event_pos):
             if replacement_patient != actual_patient:
                 same_as_before = False
 
-        return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": agents[event_pos], "predicate": predicates[event_pos], "patient": replacement_patient}      
+        return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": agents[event_pos], "predicate": predicates[event_pos], "patient": replacement_patient}
 
 
 def smartly_generate_negatives(event_pos):
@@ -63,7 +63,7 @@ def smartly_generate_negatives(event_pos):
             # added condition to check for similarity and try if it is still similar when patient from that triple is used instead
             if replacement_agent == actual_agent:
                 replacement_agent = patients[new_agent_id]
-            if replacement_agent != actual_agent: 
+            if replacement_agent != actual_agent:
                 same_as_before = False
         # returns a dict that can be written into the csv file
         return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": replacement_agent, "predicate": predicates[event_pos], "patient": patients[event_pos]}
@@ -78,7 +78,7 @@ def smartly_generate_negatives(event_pos):
             if replacement_patient != actual_patient:
                 same_as_before = False
 
-        return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": agents[event_pos], "predicate": predicates[event_pos], "patient": replacement_patient}      
+        return {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": agents[event_pos], "predicate": predicates[event_pos], "patient": replacement_patient}
 
 
 
@@ -89,7 +89,7 @@ if __name__ == '__main__':
         generation_factor = sys.argv[1]
     else:
         generation_factor = 2
-    
+
     # read in the information from the csv file
     with open("demo_triples.csv") as csv_data_file:
         data_file = csv.reader(csv_data_file, delimiter=';')
@@ -113,7 +113,7 @@ if __name__ == '__main__':
             index += 1
         temp_upper_bound = index - 1
         article_ranges.append([temp_lower_bound, temp_upper_bound])
-    
+
     # start writing a new csv file
     with open("negatives.csv", "w") as csv_data_file:
         writer = csv.DictWriter(csv_data_file, fieldnames=fieldnames)
