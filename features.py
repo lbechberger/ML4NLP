@@ -104,8 +104,10 @@ def get_summed_word2vec(text, weighted = False):
     if weighted:
         scores = get_tf_idf_scores(text)
 
+    anyword = False #True, if summed_vector contains any word
     for token in tokens:
         if token in model.vocab:
+            anyword = True
             if weighted:
                 if not token.lower() in all_words:
                     continue
@@ -114,12 +116,17 @@ def get_summed_word2vec(text, weighted = False):
                 score = 1
             summed_vector += score * model[token]
 
-    ms = model.most_similar([summed_vector])
+    #print("Text: ",text,"\nSummed Vec",summed_vector)
+    if (anyword == True ):
+        ms = model.most_similar([summed_vector])
 
-    #for x in ms:
-    #    print(x[0],x[1])
-    
-    return summed_vector
+        #for x in ms:
+        #    print(x[0],x[1])
+        
+        return summed_vector
+    else:
+        #print(model["for"]*0)
+        return model["for"]*0 #Nullvector
 
 
 
@@ -155,12 +162,12 @@ def get_features(user_profile, article_uri):
     #features for articles in profile
     for profile_article in user_profile:
         articles_text = ks.run_files_query(profile_article)
-        summedVectorsWeighted.extend(get_summed_word2vec(articles_text,True))
-        summedVectorsUnweighted.extend(get_summed_word2vec(articles_text,False))
-        fiveHighestVectorsWeighted.extend(get_tf_idf_wordvector(articles_text,5,True))
-        fiveHighestVectorsUnweighted.extend(get_tf_idf_wordvector(articles_text,5,False))
-        tenHighestVectorsWeighted.extend(get_tf_idf_wordvector(articles_text,10,True))
-        tenHighestVectorsUnweighted.extend(get_tf_idf_wordvector(articles_text,10,False))
+        summedVectorsWeighted.append(get_summed_word2vec(articles_text,True))
+        summedVectorsUnweighted.append(get_summed_word2vec(articles_text,False))
+        fiveHighestVectorsWeighted.append(get_tf_idf_wordvector(articles_text,5,True))
+        fiveHighestVectorsUnweighted.append(get_tf_idf_wordvector(articles_text,5,False))
+        tenHighestVectorsWeighted.append(get_tf_idf_wordvector(articles_text,10,True))
+        tenHighestVectorsUnweighted.append(get_tf_idf_wordvector(articles_text,10,False))
         
         # five highest tf_idf words in den anderen Artikeln nachschauen
         scores = get_tf_idf_scores(articles_text)
@@ -175,8 +182,12 @@ def get_features(user_profile, article_uri):
 
     #features for article to be classified
 
-   
+    print("blub1",article_text)
+    print(get_summed_word2vec(article_text,True))
+    print("\n",summedVectorsWeighted)
+    print("\nShape: ",len(summedVectorsWeighted))
     features.append(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
+    print("blub2")
     features.append(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
     features.append(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
     features.append(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
