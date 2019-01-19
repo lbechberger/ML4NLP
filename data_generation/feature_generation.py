@@ -35,20 +35,22 @@ def extract_features(triple_index):
     # determine position(s) of agent (given the fact that an agent may be multiple words long)
     if ' ' in agent:
         agent = nltk.word_tokenize(agent)
+    if ' ' in patient:
         patient = nltk.word_tokenize(patient)
+    if ' ' in predicate:
         predicate = nltk.word_tokenize(predicate)
 
-        # find sequence of agent tokens in source sentence
-        # previous_index = -1
-        agent_token_indices = []
-        patient_token_indices = []
-        predicate_token_indices = []
-        lower_sent = [word.lower() for word in sent]
-        for token in agent:
-            try:
-                agent_token_indices.append(lower_sent.index(token.lower()))
-            except ValueError:
-                pass
+    # find sequence of agent tokens in source sentence
+    # previous_index = -1
+    agent_token_indices = []
+    patient_token_indices = []
+    predicate_token_indices = []
+    lower_sent = [word.lower() for word in sent]
+    for token in agent:
+        try:
+            agent_token_indices.append(lower_sent.index(token.lower()))
+        except ValueError:
+            pass
             # check on whether tokens actually follow one another
             # if token_index != -1:
             #     # if this is the first token or token order so far is correct, update information accordingly
@@ -107,12 +109,12 @@ def extract_features(triple_index):
                 for token in agent:
                     if token in word:
                         match_detected = True
-                        agents[triple_index] += ("\/" + chunk.label())
+                        agents[triple_index] += (r"\/" + chunk.label())
                         break
                 for token in patient:
                     if token in word:
                         match_detected = True
-                        patients[triple_index] += ("\/" + chunk.label())
+                        patients[triple_index] += (r"\/" + chunk.label())
                         break
                 if match_detected:
                     break
