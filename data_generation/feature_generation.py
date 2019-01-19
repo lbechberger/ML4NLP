@@ -43,8 +43,12 @@ def extract_features(triple_index):
         agent_token_indices = []
         patient_token_indices = []
         predicate_token_indices = []
+        lower_sent = [word.lower() for word in sent]
         for token in agent:
-            agent_token_indices.append(sent.index(token))
+            try:
+                agent_token_indices.append(lower_sent.index(token.lower()))
+            except ValueError:
+                pass
             # check on whether tokens actually follow one another
             # if token_index != -1:
             #     # if this is the first token or token order so far is correct, update information accordingly
@@ -53,15 +57,30 @@ def extract_features(triple_index):
             #         previous_index = token_index
             #     else:
         for token in patient:
-            patient_token_indices.append(sent.index(token))
+            try:
+                patient_token_indices.append(lower_sent.index(token.lower()))
+            except ValueError:
+                pass
         for token in predicate:
             for index in range(len(sent)):
-                if token in sent[index]:
+                if token.lower() in sent[index].lower():
                     predicate_token_indices.append(index)
-        agent_relpos.append(agent_token_indices[-1])
-        patient_relpos.append(patient_token_indices[0])
-        predicate_relpos_temp = [predicate_token_indices[0], predicate_token_indices[-1]]
-        predicate_relpos.append(predicate_relpos_temp)
+        # only append relpos list if position was in the sentence
+        if agent_token_indices:
+            agent_relpos.append(agent_token_indices[-1])
+        else:
+            agent_relpos.append(-1)
+        if patient_relpos:
+            patient_relpos.append(patient_token_indices[0])
+        else:
+            patient_relpos.append(-1)
+        if len(predicate_token_indices) > 1:
+            predicate_relpos_temp = [predicate_token_indices[0], predicate_token_indices[-1]]
+            predicate_relpos.append(predicate_relpos_temp)
+        elif len(predicate_token_indices) == 1:
+            predicate_relpos.append(predicate_token_indices[0])
+        else:
+            predicate_relpos.append(-1)
 
     temp_agent_pos = []
     temp_patient_pos = []
@@ -103,36 +122,30 @@ if __name__ == '__main__':
     # read in the information from the csv file
     with open("demo_triples.csv") as csv_data_file:
         data_file = csv.reader(csv_data_file, delimiter=';')
-        index = 0
-        temp_lower_bound = 0
-        temp_upper_bound = 0
         for row in data_file:
-            event_ids.append(row[0])
-            # print("Event ID:" + row[0])
-            article_ids.append(row[1])
-            # print("Article ID:" + row[1])
-            # keep track of article ranges
-            if index != 0:
-                if row[1] != article_ids[index - 1]:
-                    temp_upper_bound = index - 1
-                    article_ranges.append([temp_lower_bound, temp_upper_bound])
-                    temp_lower_bound = index
-            uris.append(row[2])
-            # print("URI: " + row[2])
-            events.append(row[3])
-            # print("Event: " + row[3])
-            agents.append(row[4])
-            # print("Agent: " + row[4])
-            predicates.append(row[5])
-            # print("Predicate: " + row[5])
-            patients.append(row[6])
-            # print("Patient: " + row[6])
-            text.append(row[7])
-            # print("Text: " + row[7])
-            index += 1
-            # print("Row Nr. " + str(index))
-        temp_upper_bound = index - 1
-        article_ranges.append([temp_lower_bound, temp_upper_bound])
+            # prune of all rows that do not contain valid information
+            valid = True
+            for entry in row:
+                if not entry:
+                    valid = False
+                    break
+            if valid:
+                event_ids.append(row[0])
+                # print("Event ID:" + row[0])
+                article_ids.append(row[1])
+                # print("Article ID:" + row[1])
+                uris.append(row[2])
+                # print("URI: " + row[2])
+                events.append(row[3])
+                # print("Event: " + row[3])
+                agents.append(row[4])
+                # print("Agent: " + row[4])
+                predicates.append(row[5])
+                # print("Predicate: " + row[5])
+                patients.append(row[6])
+                # print("Patient: " + row[6])
+                text.append(row[7])
+                # print("Text: " + row[7])
 
     for index in range(len(event_ids)):
         extract_features(index)
