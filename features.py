@@ -1,4 +1,3 @@
-
 # -*- coding: utf-8 -*-
 """
 Created on Tue Jan 15 12:53:46 2019
@@ -11,7 +10,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import gensim, pickle, nltk, string
-
 
 
 def makeString(listi):
@@ -29,9 +27,8 @@ def get_five_highest(article_text):
     
     #article_text = ks.run_files_query(uri)
 
-    #print("filesquery",article_text)
     if(article_text == ""):
-        print("empty")
+        print("Didn't get article")
         return []
     else:
         return highest_tf_idf_words(article_text, 5)
@@ -47,10 +44,8 @@ def highest_tf_idf_words(text, word_amount):
     vector = vectorizer.transform([text]).toarray()
     vector = np.reshape(vector,-1)
 
-    #print("vector: ",vector)
     argsorted = np.argsort(vector)
     five_highest_indices = argsorted[-word_amount:]
-    #print("indices: ",five_highest_indices)
     five_highest_words = []
     for i in five_highest_indices:
         five_highest_words.append(all_words[i])
@@ -116,7 +111,6 @@ def get_summed_word2vec(text, weighted = False):
                 score = 1
             summed_vector += score * model[token]
 
-    #print("Text: ",text,"\nSummed Vec",summed_vector)
     if (anyword == True ):
         ms = model.most_similar([summed_vector])
 
@@ -125,7 +119,6 @@ def get_summed_word2vec(text, weighted = False):
         
         return summed_vector
     else:
-        #print(model["for"]*0)
         return model["for"]*0 #Nullvector
 
 
@@ -135,11 +128,10 @@ def get_distances(articleVector, otherArticlesVectors):
     for otherVector in otherArticlesVectors:
         #print("vector1 : ",articleVector, articleVector.shape)
         #print("vector2 : ",otherVector, otherVector.shape)
-        distancesArray.extend(cosine_similarity([articleVector],[otherVector]))
+        distancesArray.extend(np.reshape(cosine_similarity([articleVector],[otherVector]),(-1)))
     distancesArray = np.sort(distancesArray)
     return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[:3])
 
-        
 def get_features(user_profile, article_uri):
 
     features = []
@@ -182,26 +174,21 @@ def get_features(user_profile, article_uri):
 
     #features for article to be classified
 
-    print("blub1",article_text)
-    print(get_summed_word2vec(article_text,True))
-    print("\n",summedVectorsWeighted)
-    print("\nShape: ",len(summedVectorsWeighted))
-    features.append(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
-    print("blub2")
-    features.append(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
-    features.append(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
-    features.append(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
-    features.append(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
-    features.append(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
+    features.extend(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
+    features.extend(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
+    features.extend(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
+    features.extend(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
+    features.extend(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
+    features.extend(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
 
     tf_idf_scores = np.sort(tf_idf_scores)
     feature = (tf_idf_scores[0],tf_idf_scores[-1],np.mean(tf_idf_scores),np.mean(tf_idf_scores[-3:]))
-    features.append(feature)
+    features.extend(feature)
     
     distances = [abs(len(article_text)-length) for length in lengths]
     distances = np.sort(distances)
     feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
-    features.append(feature)
+    features.extend(feature)
     
     #features.append(len(article_text)) #length of article
 
@@ -217,7 +204,15 @@ initialize_word2vec()
 with open("splitted_dataset.pickle", "rb") as f:
     dataSet = pickle.load(f)
     
-user = dataSet[0][0]
+training = dataSet[0]
 
-features = get_features(user[0],user[1][0][0])
-print(features)
+#features = (get_features(user[0],user[1][0][0]),1)
+
+dataset=[]
+for i in range(10):
+    print(str(i),"/ 10 done.")
+    dataset.append((get_features(training[i][0],training[i][1][0][0]),1))
+    dataset.append((get_features(training[i][0],training[i][1][1][0]),0))
+    dataset.append((get_features(training[i][0],training[i][1][1][1]),0))
+
+pickle.dump( dataset, open( "feature_selection_three_instances_dataset.pickle", "wb" ) )
