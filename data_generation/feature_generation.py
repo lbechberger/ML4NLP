@@ -125,7 +125,7 @@ def extract_features(triple_index):
 
 if __name__ == '__main__':
     # read in the information from the csv file
-    with open("demo_triples.csv", encoding='latin-1') as csv_data_file:
+    with open("data_delta_new.csv", encoding='latin-1') as csv_data_file:
         data_file = csv.reader(csv_data_file, delimiter=';')
         for row in data_file:
             # prune of all rows that do not contain valid information
@@ -156,7 +156,7 @@ if __name__ == '__main__':
 
     total_length = len(event_ids)
     for index in range(total_length):
-        print("Extracting features for data point " + str(index) + " of " + str(total_length))
+        print("Extracting features for data point " + str(index) + " of " + str(total_length) + ".")
         extract_features(index)
 
     # start writing a new csv file
