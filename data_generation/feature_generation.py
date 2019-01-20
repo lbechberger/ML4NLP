@@ -58,42 +58,46 @@ def extract_features(triple_index):
             #     if previous_index = -1 or previous_index = token_index -1:
             #         previous_index = token_index
             #     else:
-        for token in patient:
-            try:
-                patient_token_indices.append(lower_sent.index(token.lower()))
-            except ValueError:
-                pass
-        for token in predicate:
-            for index in range(len(sent)):
-                if token.lower() in sent[index].lower():
-                    predicate_token_indices.append(index)
-        # only append relpos list if position was in the sentence
-        if agent_token_indices:
-            agent_relpos.append(agent_token_indices[-1])
-        else:
-            agent_relpos.append(-1)
-        if patient_relpos:
-            patient_relpos.append(patient_token_indices[0])
-        else:
-            patient_relpos.append(-1)
-        if len(predicate_token_indices) > 1:
-            predicate_relpos_temp = [predicate_token_indices[0], predicate_token_indices[-1]]
-            predicate_relpos.append(predicate_relpos_temp)
-        elif len(predicate_token_indices) == 1:
-            predicate_relpos.append(predicate_token_indices[0])
-        else:
-            predicate_relpos.append(-1)
+    for token in patient:
+        try:
+            patient_token_indices.append(lower_sent.index(token.lower()))
+        except ValueError:
+            pass
+    for token in predicate:
+        for index in range(len(sent)):
+            if token.lower() in sent[index].lower():
+                predicate_token_indices.append(index)
+                break
+    # only append relpos list if position was in the sentence
+    if agent_token_indices:
+        agent_relpos.append(agent_token_indices[-1])
+    else:
+        agent_relpos.append(-1)
+    if patient_token_indices:
+        patient_relpos.append(patient_token_indices[0])
+    else:
+        patient_relpos.append(-1)
+    if len(predicate_token_indices) > 1:
+        predicate_relpos_temp = [predicate_token_indices[0], predicate_token_indices[-1]]
+        predicate_relpos.append(predicate_relpos_temp)
+    elif len(predicate_token_indices) == 1:
+        predicate_relpos.append(predicate_token_indices[0])
+    else:
+        predicate_relpos.append(-1)
 
     temp_agent_pos = []
     temp_patient_pos = []
     temp_predicate_pos = []
     pos_tagged_sent = nltk.pos_tag(sent)
+    # managing agent pos
     for index in agent_token_indices:
         temp_agent_pos.append(pos_tagged_sent[index][1])
     agent_pos.append(temp_agent_pos)
+    # managing predicate pos
     for index in predicate_token_indices:
         temp_predicate_pos.append(pos_tagged_sent[index][1])
     predicate_pos.append(temp_predicate_pos)
+    # managing patient pos
     for index in patient_token_indices:
         temp_patient_pos.append(pos_tagged_sent[index][1])
     patient_pos.append(temp_patient_pos)
@@ -105,7 +109,6 @@ def extract_features(triple_index):
             match_detected = False
             # match named entities with agents, patients or predicate
             for word in chunk:
-                # print(word)
                 for token in agent:
                     if token in word:
                         match_detected = True
@@ -122,15 +125,17 @@ def extract_features(triple_index):
 
 if __name__ == '__main__':
     # read in the information from the csv file
-    with open("demo_triples.csv") as csv_data_file:
+    with open("demo_triples.csv", encoding='latin-1') as csv_data_file:
         data_file = csv.reader(csv_data_file, delimiter=';')
         for row in data_file:
             # prune of all rows that do not contain valid information
             valid = True
-            for entry in row:
-                if not entry:
-                    valid = False
-                    break
+            if not row[0].isdigit():
+                valid = False
+            elif not row[1].isdigit():
+                valid = False
+            elif not "http://en.wikinews.org/wiki/" in row[2]:
+                valid = False
             if valid:
                 event_ids.append(row[0])
                 # print("Event ID:" + row[0])
@@ -149,11 +154,13 @@ if __name__ == '__main__':
                 text.append(row[7])
                 # print("Text: " + row[7])
 
-    for index in range(len(event_ids)):
+    total_length = len(event_ids)
+    for index in range(total_length):
+        print("Extracting features for data point " + str(index) + " of " + str(total_length))
         extract_features(index)
 
     # start writing a new csv file
-    with open("data_with_features.csv", "w") as csv_data_file:
+    with open("data_with_features.csv", "w", encoding="latin-1") as csv_data_file:
         writer = csv.DictWriter(csv_data_file, fieldnames=fieldnames)
         writer.writeheader()
         for event_pos in range(len(event_ids)):
@@ -163,6 +170,7 @@ if __name__ == '__main__':
             else: agent_ner = "None"
             if r"\/" in patients[event_pos]:
                 patient_ner = patients[event_pos].split(r"\/")[1]
-                agents[event_pos] = agents[event_pos].split(r"\/")[0]
+                patients[event_pos] = patients[event_pos].split(r"\/")[0]
+            else: patients_ner = "None"
             row = {"event_id": event_ids[event_pos], "article_id": article_ids[event_pos], "uri": uris[event_pos], "event": events[event_pos], "agent": agents[event_pos], "text": text[event_pos], "agent_NER": agent_ner, "agent_POS": agent_pos[event_pos], "agent_RELPOS": agent_relpos[event_pos], "predicate": predicates[event_pos], "predicate_POS": predicate_pos[event_pos], "predicate_RELPOS": predicate_relpos[event_pos], "patient": patients[event_pos], "patient_NER": patient_ner, "patient_POS": patient_pos[event_pos], "patient_RELPOS": patient_relpos[event_pos]}
             writer.writerow(row)
