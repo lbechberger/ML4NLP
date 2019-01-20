@@ -247,6 +247,42 @@ Furthermore, we thought about using WordNet and extracting synonyms, close hypon
 
 As a second feature, we want to use word embeddings and especially word2vec to calculate the ‘semantic value’ of each word and subsequently of the whole article. We are going to use the word2vec provided by Google (see https://code.google.com/archive/p/word2vec/ ), which takes a text as an input and produces word vectors as an output. These vectors can then be represented in a semantic vector-space. By adding all the values of the word vectors and taking the mean, we yield a (rather abstract but potentially useful) semantic vector of the whole article. We can use these vectors to calculate the semantic similarity of different articles by taking the cosine distance. We can use these features for positive and negative examples equally and it is helpful, because it helps to classify new articles efficiently. 
 
+# Documentation Part 8: 
+
+## Feature Extraction:
+
+The folder “data” contains all pickle files with the data we use and the keywords.txt file, containing a list of ten keywords for each category. The class feature_extraction.py takes the article and the category name and contains all methods used for feature extraction. The file user_generation.py uses the methods from freature_extraction.py to extract the different features from our dataset. We have completed to extract feature 2 and 4. The extraction of feature 3 is as good as done, but for the final feature extraction for feature 1, we still have a question for Lucas. 
+
+### Feature 1: 
+As a first feature, we measured the “semantic similarity” between an article and each category. In the first step, we extracted all words from an article, cleaned the word list from stopwords, e.g. prepositions and articles, with the english nltk stopwords list, and words that occur more than once. Also words that are shorter than four characters like “was”, “is” or “can” are excluded, if not an acronym, because they most likely carry no meaning. Afterwards, we looked up each of the resulting word’s value in the word2vec provided by Google (see https://code.google.com/archive/p/word2vec/ ). We saved the resulting 300-D vector for each word, so that we could calculate the mean vector of all the words, yielding a representation of the whole article. We also looked up the vectors for our categories (if they consist of two or more words, again, we took the mean) and calculated the cosine similarity between the article’s vector and each category’s vector. As an exception, for the category “Wackynews”, we looked up the word2vec for “wacky” and for “news”and took the mean, because there was no representation of the word “wackynews”. Our resulting first feature is a list of numbers between 0 and 1, representing the similarity between a category and an article. For a visualization of the processes see Figure 1. The resulting feature looks something like follows: 
+[0.9, 0.2, 0.5, …, 0.1, 0.6, 0.8]
+
+At the moment, we have retrieved the word2vecs of all words in each article and calculated the mean as a word2vec which represents the whole article. We have also retrieved the word2vec of each category, and also calculated the mean if the category-name contained more than one word. We have then calculated the cosine-similarities (see cosine_similarities.pickle).
+
+![Alt text](/Feature1.001.jpeg "Figure 1")
+
+
+### Feature 2:
+
+To get a second feature, we are simply going to check, whether the category name is present in the article. If the category-name contains more than one word (besides “and”), it is checked whether either word is present in the article. As an exception, for the category “Wackynews”, we checked whether either the word “wacky” or “news” is present in the article. The resulting feature is an array with 45 entries of 0 (for: not in article) and 1 (for: in article), that will look something like follows: 
+[0, 0, 1, 1, ..., 0, 1, 1, 0] 
+
+### Feature 3:
+
+The third feature we have extracted is similar to feature 2, but instead of checking whether the category-names are mentioned in the article, we checked, whether one of the keywords representing the categories, is present in the article. As keywords, we mostly used the 10 largest subcategories or terms that are in our opinion closest related to the category, so that they best represent the category. For each keyword that is present, the value of the feature is raised by 1. For keywords that consist of more than one word, it suffices if only one of the words is present in the text to raise the value of the feature for the according category. The resulting feature will be an array of 45 numbers between 0 an the number of words in the article (if all words are keywords) and will look something like the following array: 
+[0, 5, 88, 0, …, 1, 0, 0, 54]
+
+At the moment, we have completed the list of keywords (see keywords.txt), but have not completely implemented the counter-method. We will probably be done with that by tuesday. 
+
+### Feature 4:
+
+The fourth feature we extracted is simply the length of the article as a single number. This feature is not saved as a pickle, because its extraction takes as much as no time. 
+
+### Feature 5 (possibly): 
+
+For a fifth feature, we have not yet decided if we want to implement it. It would be extracted through a similar process as for feature 1, but instead of comparing the word2vecs of the different categories with the word2vecs of the article, we compare the mean of the word2vecs of the list of keywords for each category with the word2vec of the article. Keywords can, like categories, consist of more than one word. In these cases, again the mean of the word2vecs of each word would be used. The resulting feature would look something like the following array: 
+[0.2, 0.0, 0.7, …, 0.2, 0.8, 0.9]
+
 
 ## Sources: 
 [1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
