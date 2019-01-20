@@ -28,9 +28,11 @@ features = FeatureExtraction(articles, categories)
 # a, b, c = features.extract_user_similarities(users_db)
 check = features.category_check()
 article_lengths = features.get_article_length()
+
 file = open("./data/keywords.txt")
 lines = [line.rstrip('\n') for line in file]
 
+keys = features.keyword_check(lines)
 # max_similarities, min_similarities, mean_similarities = features.extract_similarities(articles, similarities)
 # for val in zip(max_similarities,min_similarities,mean_similarities):
 #     print("{}\t\t{}\t\t{}".format(val[0], val[1], val[2]))

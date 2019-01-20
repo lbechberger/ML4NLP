@@ -131,6 +131,8 @@ class FeatureExtraction:
                 bool_array = []
                 for name in self.categories:
                     name = name.lower()
+                    if name == "wackynews":
+                        name = "wacky"  # not news, because news is highly uncorrelated to the category
                     c_in_a = 0
                     for c in name.split(" "):
                         if c == "and":
@@ -150,20 +152,22 @@ class FeatureExtraction:
         :param keywords: txt file with keywords
         :return: array for each categories's keywords in each article[0,1]
         """
-        if os.path.isfile('./data/keyword_in_articles.pickle'):
-            keys_in_articles = pickle.load(open("./data/keyword_in_articles.pickle", "rb"))
+        if os.path.isfile('./data/keywords_in_articles.pickle'):
+            keys_in_articles = pickle.load(open("./data/keywords_in_articles.pickle", "rb"))
         else:
             keys_in_articles = []
             for a in self.articles:
                 a = a.lower()
+                l_in_a = []
                 for line in keywords:
-                    print(line)
                     # remove brackets from lines, so they look like: "Term A", "Term B"
                     line = line[line.find("[")+1:line.find("]")]
                     count = 0
                     for w in line.split(", "):  # for each word in line
-                        w = w.replace('"', '')  # remove parenthesis from words
-                        count += sum(1 for _ in re.finditer(r'\b%s\b' % re.escape(w), a))  # count number of appearances
-                keys_in_articles.append(count)
+                        w = w.replace('"', '').lower()  # remove parenthesis from words
+                        count += sum(1 for _ in re.finditer(r'%s' % re.escape(w), a))  # count number of appearances
+                    l_in_a.append(count)
+                keys_in_articles.append(l_in_a)
+            pickle.dump(keys_in_articles, open("./data/keywords_in_articles.pickle", "wb"))
 
         return keys_in_articles
