@@ -28,10 +28,21 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, rand
 
 # set up classifiers        
 classifiers = []
+classifiers.append(('kNN', KNeighborsClassifier()))
+classifiers.append(('NB', GaussianNB()))
+classifiers.append(('MaxEnt', LogisticRegression()))
+classifiers.append(('DT', DecisionTreeClassifier()))
+classifiers.append(('RF', RandomForestClassifier()))
+classifiers.append(('SVM', SVC(kernel = 'linear')))
+classifiers.append(('MLP', MLPClassifier()))
 
 # train and evaluate
 print('\nTRAIN & EVALUATE')
-
+for name, model in classifiers:
+    model.fit(X_train, y_train)
+    predictions = model.predict(X_test)
+    kappa = cohen_kappa_score(y_test, predictions)
+    print(name, kappa)
     
 # hyperparameter optimization
 print('\nGRID SEARCH')
