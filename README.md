@@ -165,29 +165,9 @@ We are very fascinated by the word2vec model and still considering how to best u
 
 
 
-## 07.01 - 13.01
+## Feature Extraction/Current State
+We extracted a 10 word vector around each candidate word, together with the agent and the patient word as strings. For each of these words, we generated a position within the text, as int 16, as well as Part of Speech, Named Entity Recognition and Depedency Category tokens, both saved as int16 values as well. Of these, random forests and wrapper methods showed 'relation_DEP', 'relation_NER', 'relation_POS' to be most promising, which makes sense as these are most closely related to the candidate word. 
+Furthermore we are planning to make use of cosinus distances between the agent/patient/relation words' semantic vectors, but merging these results with the rest of the data proves to be an issue due to the size of the generated data (and some data corruption issues).
+Currently everything but the binary classification value is kept in int16, as int32, or even worse Strings or mixed Object types cause the size requirements of the dataframes to explode.
 
-### Notes
-Final report 17.03, in any form we like
-Optional single page "taster" of the final report for getting some feedback by 3.3
-
-Next step: Dimensionality Reduction, reducing the number of features
-Either feature projection (via PCA etc.)
-or feature selection
-Feature selection methods:
-  Wrapper Methods:
-    Choose a subset and evalute it with a classifier (Bruteforce, greedy, etc.) and remove weak features based on performance
-   Filter Methods:
-    Use heuristics instead of a classifier (i.e. Mutal Information, Correlation,Variance), for either single features or feature subsets
-   Embedded Methods:
-    Generate subsets during classifier work (i.e. via SVM/ Random forests, tracking feature scores by themselves, or via regularization, forcing weights to zero, and removing those that stay at zero)
-
-Everything is implemented in sklearn
-    
-    
-### Notes 2
-Instead of real pos in articel, related to an anchor(agent, patient?)/
-Imbalance!
-Grid can use an external file server to make use of more than 5 gb data
-Cluster the vectors?
-
+ 
