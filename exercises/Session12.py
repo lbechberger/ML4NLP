@@ -46,7 +46,23 @@ for name, model in classifiers:
     
 # hyperparameter optimization
 print('\nGRID SEARCH')
-
+parameter_grid = {'n_neighbors' : np.arange(1,21), 'p': [1, 1.5, 2]}
+grid_search = GridSearchCV(estimator = KNeighborsClassifier(),
+                           param_grid = parameter_grid,
+                           scoring = make_scorer(cohen_kappa_score))
+grid_search.fit(X_train, y_train)
+print('Best params:', grid_search.best_params_)
+predictions = grid_search.predict(X_test)
+print('Performance:', cohen_kappa_score(y_test, predictions))
 
 # imputation
 print('\nIMPUTATION')
+imputer = Imputer(missing_values = 'NaN', strategy = 'mean')
+# three dummy feature vectors consisting of three features each
+# each feature vector has one NaN entry
+X_dummy = [[np.nan, 2, 3], [4, np.nan, 6], [10, np.nan, 9]]
+# call to 'fit' lets the imputer look at the structure of our data set in order to prepare imputation
+imputer.fit(X_dummy)
+print(X_dummy)
+# call to 'transform' replaces NaN entries with the mean of the corresponding column
+print(imputer.transform(X_dummy))
