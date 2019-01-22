@@ -253,7 +253,7 @@ The underlying intuition behind this variable is close to that of the relative p
 #### 9.1.3 The Issue with Negatives
 After having outlined above why we think that these variables have an inherent worth for the classification process, it is unfortunate to point out that it is impossible to adequately generate the same features for our set of negatives. This is due to the fact that we generated the negatives automatically and not from proper sentences.
 
-**[Note to Bhaskar: insert your solution here!]**
+Due to these reasons, we take a simpler approach for negatives generation. We first look at the unique sets of uri-agent-patient and then ranndomly assign an agent to a patient with in the same URI which is different from the original pair. Since we are creating a fake example which is not in the text, we use the corresponding NER, POS and relative position information for that agent already computed before. In the case of wordnet similarity measures, we compute them again since the pairs themselves change. This approach has the advantage of being able to generate enough negative examples by taking repeating this process for URI's with multiple times where we have . In our case we have tried generating 3 pairs of negative examples for each URI, giving us 219,157 examples.
 
 
 ### 9.2 Self-Contained Features
@@ -273,9 +273,12 @@ The None-value was introduced by us for agents and patients that do not correspo
 
 The intuition behind this variable is that there might be an increased likelihood of agent-patient pairs to be of a certain named-entity-type constellation or that certain predicates (e.g. "say") take certain named-entity-types (e.g. Persons or GPE over organizations or none) with a higher likelihood.
 
-#### 9.2.2 Word-Net Distance
-**[Note to Bhaskar: insert your bit here! Ideally adhere to the structure used above: First paragraph: what is the variable and how do we generate it. Second paragraph: what values can the variable take. Third paragraph: why did we include this variable?]**
+#### 9.2.2 Word-Net Similarity Measure
+The *wordnet similarity measure* computes the distance from one word sense to another word sense in a hierarchical structure like WordNet. WordNet is a lexical database for the English language.[1] It groups English words into sets of synonyms called synsets, provides short definitions and usage examples, and records a number of relations among these synonym sets or their members. In our case, we compute two different similarity measures called - Path similarity which computes shortest number of edges from one word sense to another word sense - in general, word senses which have a longer path distance are less similar than those with a very short path distance, e.g. man, dog versus man, tree (expectation is that man is more similar to dog than it is to tree) - and the other measure is Wu-Palmer metric where it weights the edges based on distance in the hierarchy - in some sense we can think of it as sort of edit distance, assigning type changing operations a higher cost the higher they are in the hierarchy - for example, jumping from inanimate to animate is a larger distance than jumping from say Rose to Lily. 
 
+To calculate both these measures, we take an agent-patient pair, calculate the corresponding synsets for them and then compute these two measures for each pair of these synsets. The final value is the average of all these synset pairs for that agent-patient pair. The metrics are named as path_similarity and wn_similarity and have values between 0 and 1.
+
+The intuition behind this variable is that it can be used as a discriminating feature later for the classifier since related words(say for examle from the same category) will have small values while unrelated words(from the different categories) will have higher distances.
 
 
 
