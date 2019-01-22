@@ -18,6 +18,7 @@ class FeatureExtraction:
         # Embedding of each category
         if os.path.isfile('./data/embed_categories.pickle'):
             embedded_categories = pickle.load(open("./data/embed_categories.pickle", "rb"))
+            print("Found embed_categories.pickle")
         else:
             if not embedding:
                 embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
@@ -49,6 +50,7 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/embed_articles.pickle'):
             embedded_articles = pickle.load(open("./data/embed_articles.pickle", "rb"))
+            print("Found embed_articles.pickle")
         else:
             if not embedding:
                 embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
@@ -71,16 +73,19 @@ class FeatureExtraction:
         Calculate the cosine similarity between the articles' and categories' embedding vectors
         :return: Float array with the similarity measures
         """
-        # Calculate cosine similarity between articles and category names
-        cos_sims = []
-        embedded_articles = self.get_article_embedding()
-        embedded_categories = self.get_category_embeddings()
-        for a in embedded_articles:
-            cs = []
-            for c in embedded_categories:
-                cs.append(pairwise.cosine_similarity([a], [c]))
-            cos_sims.append(cs)
-
+        if os.path.isfile('./data/cosine_similarities.pickle'):
+            cos_sims = pickle.load(open("./data/cosine_similarities.pickle", "rb"))
+            print("Found cosine_similarities.pickle")
+        else:
+            cos_sims = []
+            embedded_articles = self.get_article_embedding()
+            embedded_categories = self.get_category_embeddings()
+            for a in embedded_articles:
+                cs = []
+                for c in embedded_categories:
+                    cs.append(pairwise.cosine_similarity([a], [c]))
+                cos_sims.append(cs)
+            pickle.dump(cos_sims, open("./data/cosine_similarities.pickle", "wb"))
         return cos_sims
 
     def extract_user_similarities(self, users):
@@ -89,27 +94,33 @@ class FeatureExtraction:
         :param users: Array of all users where each user's values is in range [0,1]
         :return: Max, min and mean array containing the respective similarities
         """
-        if os.path.isfile('./data/cosine_similarities.pickle'):
-            max_val, min_val, mean_val = pickle.load(open("./data/cosine_similarities.pickle", "rb"))
+        if os.path.isfile('./data/m_similarities.pickle'):
+            max_val, min_val, mean_val = pickle.load(open("./data/m_similarities.pickle", "rb"))
             return max_val, min_val, mean_val
         else:
+            similarities = self.get_cosine_sim()
             max_val = []
             min_val = []
             mean_val = []
-            similarities = self.get_cosine_sim()
             for idx, user in users.iterrows():
-                print(idx)
-                for col in range(len(user)):
-                    if col == 1:
-                        ma = np.max(similarities[col])
-                        mi = np.min(similarities[col])
-                        me = np.mean(similarities[col])
-                        max_val.append(ma)
-                        min_val.append(mi)
-                        mean_val.append(me)
-
-            pickle.dump([max_val, min_val, mean_val], open("./data/cosine_similarities.pickle", "wb"))
-            return max_val, min_val, mean_val
+                u_max = []
+                u_min = []
+                u_mean = []
+                for a in range(len(self.articles)):
+                    values = []
+                    for i in range(len(user)):
+                        if user[i] == 1:
+                            # append the values to a list where we take the values later on (because of bad format,
+                            # have to access them via [0][0]
+                            values.append((similarities[a][i])[0][0])
+                    u_max.append(np.max(values))
+                    u_min.append(np.min(values))
+                    u_mean.append(np.mean(values))
+                max_val.append(u_max)
+                min_val.append(u_min)
+                mean_val.append(u_mean)
+            pickle.dump([max_val, min_val, mean_val], open("./data/m_similarities.pickle", "wb"))
+        return max_val, min_val, mean_val
 
     def get_article_length(self):
         lengths = []
@@ -124,6 +135,7 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/category_in_articles.pickle'):
             cat_in_articles = pickle.load(open("./data/category_in_articles.pickle", "rb"))
+            print("Found category_in_articles.pickle")
         else:
             cat_in_articles = []
             for a in self.articles:
@@ -154,6 +166,7 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/keywords_in_articles.pickle'):
             keys_in_articles = pickle.load(open("./data/keywords_in_articles.pickle", "rb"))
+            print("Found keywords_in_articles.pickle")
         else:
             keys_in_articles = []
             for a in self.articles:
