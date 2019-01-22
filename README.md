@@ -77,7 +77,7 @@ As discussed in the previous week, as the first step, our data contains RDF trip
 2. sentences will be POS-tagged
 3. NER will be applied to each sentence
 4. Relation extraction between fully tagged (both POS and NER) sentences will be applied
-The product of this approach will be sets of subject-relation-object items that will be saved in a simple text-file for now. POS- and NER-tags will also be included in the text-file. 
+The product of this approach will be sets of subject-relation-object items that will be saved in a simple text-file for now. POS- and NER-tags will also be included in the text-file.
 The second step involves generating potential questions for each part of a generated triple. Given time constraints, we lack a concrete implementation of this just now but the plan is to use common question phrases adequate for the kind of inquiry. We are currently considering to also add morphological analysis in the first step of our data generation to make question generation even more adequate (taking into consideration singular vs. plural, for example).
 
 > Mark Zuckerberg [Pers] - founded - Facebook [Org]
@@ -106,7 +106,7 @@ We can also define the pattern (α relation) as a disjunction of roles that a PE
 
 
 #### 5.2 Question Generation
-In this week's session, we received information that the system does not *have to* handle proper natural language questions, simple question formats (hereafter referred to as 'artificial questions') would also be acceptable. However, we decided to give it a try anyway. We are therefore working on both approaches, working on two methods to generate natural language questions and artificial questions. 
+In this week's session, we received information that the system does not *have to* handle proper natural language questions, simple question formats (hereafter referred to as 'artificial questions') would also be acceptable. However, we decided to give it a try anyway. We are therefore working on both approaches, working on two methods to generate natural language questions and artificial questions.
 ##### 5.2.1 Natural Language Questions
 The two biggest issues with natural language questions (NLQ) is the sheer variety of possible phrasings as well as the amount of information needed about the syntactic nature of lexical items and the context they are used in. The fact that RDF triples are based on a structure reminiscing of natural language sentences (subject-verb-object structure), we can already determine the case of the question by the position of the information in a triple. You can find an example for why cases matter in the example under section 5.3. The gender of subject and object, however, are not inherently encoded in the information and should therefore be gathered in another way. The naive approach of querying for subjects and objects simply with the term "who" would result in unnatural NLQs like "Whom does Mark Zuckerberg own?" instead of "What does Mark Zuckerberg own?". We therefore preserved morphological information for every word in a given text. In order to achieve this, we changed our POS-tagging solution to the RDRPOSTagger (https://github.com/datquocnguyen/RDRPOSTagger) which is also able to derive morphological information. The accuracy of its POS-tagging for the English language reached up to 96.49% [1]. We have not yet evaluated its accuracy ourselves, however. Moreover, no claim about its accuracy for morphological tagging was made as of yet.
 ##### 5.2.2 Artificial Questions
@@ -134,7 +134,7 @@ In continuation to last week's efforts we are currently using 3 patterns for rel
 
 ### 6.2 Negatives Generation
 Our previously designed implementation to generate data has so far omitted the need of negatives, i.e. question-answer pairs that do not match. If we do want to create a dataset to train a classifier on, however, we do need those as well. Our approach for this is to take generated question-answer pairs and to replace one of the subjects of the triple it was generated from with another entity mentioned in the text the triple was extracted from. As an example, take the a look at the qa-set example above (the Barack Obama one). It could have been extracted from a text also mentioning Joseph Biden in the sentence after the one that resulted in the given triple. We are currently working on altering the *recognize_ne(sentence)* function of **file_generation.py** to save named entities (including the relative position of their mentioning in the source text) from a given article in a separate list. This list is then going to be used in **question_generation.py** within a new function called *negatives_generation(qa_pair)* which generates two negatives by first replacing the subject of the triple with another entity from the text and saving this as a question-answer set and then by replacing the object of the original triple with another entity from the text and saving that as a question-answer set. Calling the function *negatives_generation(qa_pair)* with the qa-pair being the one from the example above (see 5.3) will add two new subtrees like these to the XML file:
-   
+
     <neg-qa-set>
         <triple> "Joe Biden" - "father to" - "Malia Obama" </triple>
         <subject_question> "Who is the father of Malia Obama?" </subject_question>
@@ -143,7 +143,7 @@ Our previously designed implementation to generate data has so far omitted the n
         ....
     </neg-qa-set>
 
-    
+
     <neg-qa-set>
         <triple> "Barack Obama" - "father to" - "the White House" </triple>
         <subject_question> "Who is the father of Malia Obama?" </subject_question>
@@ -153,10 +153,10 @@ Our previously designed implementation to generate data has so far omitted the n
     </neg-qa-set>
 
 #### 6.2.1 Additional Data Collection
-In addition to the new way of generating negatives, we have come to the realization that we need to enrich our dataset with additional data regarding the individual tokens of a triple. We will therefore attach a new subtree to every qa-set (and neg-qa-set) in the XML file including information regarding POS of the word in question, type of named entity, and relative position of the word in a text. 
+In addition to the new way of generating negatives, we have come to the realization that we need to enrich our dataset with additional data regarding the individual tokens of a triple. We will therefore attach a new subtree to every qa-set (and neg-qa-set) in the XML file including information regarding POS of the word in question, type of named entity, and relative position of the word in a text.
 
 #### 6.2.2 Concerns regarding Noise in the Data Set
-Given this newly added amount of data for each qa-pair and this comparably naive approach to generating negatives, we need to point out a flaw in automatically generated datasets which will most likely be present in our dataset as well. We are referring to errors in the automatically labelled data which can occur at many steps. We are using the following (potentially fallible) natural language processing tools in our data generation pipeline: 
+Given this newly added amount of data for each qa-pair and this comparably naive approach to generating negatives, we need to point out a flaw in automatically generated datasets which will most likely be present in our dataset as well. We are referring to errors in the automatically labelled data which can occur at many steps. We are using the following (potentially fallible) natural language processing tools in our data generation pipeline:
 - NLTK POS tagging
 - NLTK NER
 - Relation extraction based off of NLTK
@@ -164,13 +164,13 @@ Given this newly added amount of data for each qa-pair and this comparably naive
 
 Along every step of the process, these tools may make mistakes. NER, for example, turned "Barack Obama" into "Barack" as a person and "Obama" into a seperate entity labelled as an organization during one of our performance evaluations. These mismatches quickly accumulate given the size of our desired dataset and will make for a noisy data set, a circumstance we will have to deal with at a later point in development. We have evaluated our pipeline and do not see any way to reduce the chance of generating noise in our data any further.
 
-- - - - 
+- - - -
 
 ## Week 7
 
 ### 7.1 Current State of Dataset
 
-Our approach was to create a dataset using NLTK tools for NER and relation extraction(sem.relextract) for triples and then create question-answer pairs based on these triples. But we realized that the NER engine has a very low accuracy, this results in many entities to not be identified correctly. This in turn influences the relation extraction part. In the extract_rels method under sem.relextract, we need to provide the two types of entities as well as a parameter called window which specified the max nbr of words between the said entities for a relation. An example of this is 
+Our approach was to create a dataset using NLTK tools for NER and relation extraction(sem.relextract) for triples and then create question-answer pairs based on these triples. But we realized that the NER engine has a very low accuracy, this results in many entities to not be identified correctly. This in turn influences the relation extraction part. In the extract_rels method under sem.relextract, we need to provide the two types of entities as well as a parameter called window which specified the max nbr of words between the said entities for a relation. An example of this is
 
 rels = extract_rels('PER', 'ORG', sent, corpus='ace', pattern=OF, window=17)
 
@@ -188,12 +188,12 @@ As a result of the poor performance of our solution, we have decided to use the 
 #### 7.2.1 Negatives Generation - Shared Codebase
 Team Delta has already successfully generated triples from news articles; they are, however, still in the process of generating negatives. Since we had already developed a solution for this, we altered our code to be compatible with Delta's data set and provided them with it to complete it. We have a working naive approach that replaces either the agent or the patient (decided by a random-function) with another random agent or patient respectively, taken from the pool of all agents or patients respectively. We are currently discussing implementing another approach where agents and patients are only replaced by candidates from a limited pool of named entities from the original article. We have so far decided against this approach because it greatly limits the amount of negatives we can generate. We will discuss the benefits and downsides of this approach during our next session.
 
-We are able to generate negative examples which number at least the positive examples so that we have a balanced distribution and can compare to a 50-50 baseline. 
+We are able to generate negative examples which number at least the positive examples so that we have a balanced distribution and can compare to a 50-50 baseline.
 
 
 ### 7.3 Proceeding with the Data Set
 #### 7.3.1 Splitting up the Data Set
-We should have around 0.35 million examples in the scenario of 50-50 baseline. We can either do a 70:20:10 split or do a 10-fold cross-validation which should give the most reliable results.  
+We should have around 0.35 million examples in the scenario of 50-50 baseline. We can either do a 70:20:10 split or do a 10-fold cross-validation which should give the most reliable results.
 
 #### 7.3.2 Evaluation Metrics
 Accuracy and Cohen’s Kappa seem like suitable metrics for our case. The accuracy tells us how many data points the classifier gets right and Cohen’s Kappa value will tell us how much reliable the classification is compared to random.
@@ -213,6 +213,69 @@ We use the 50-50 baseline. We still do not have the final data to determine the 
 
 #### 8.1.2 Coreference Resolution
 Coreference resolution poses a problem when trying to find answer candidates in raw text. "Trump is the current president of the USA. He also purchased the 'New Jersey Generals' American football team" contains the answer to the question "Who purchased the 'New Jersey Generals' American football team. "He", however, is not the exhaustively correct answer; it has to be resolved to "Donald Trump" before returning it to the questioner. Our data is currently not impacted by unresolved pronouns but they might pose a problem when extracting further features. Thankfully, the Knowledgestore has a built-in solution for this. While it is not perfectly accurate, it will have to do for our purposes.
+
+----
+
+## Chapter 9: Feature Extraction
+In order to properly train a classifier, we need to enrich our dataset with sensible features. In the following section, we list all the features we have chosen to extract and will elaborate further on how we extracted them, why we extracted them, and which values they can take. Our features can be divided into two categories: source-based features (i.e. features of the elements of generated triples in relation to the text source they were originally extracted from) and self-contained features (i.e. linguistic features the individual tokens making up the triples have on their own).
+
+### 9.1 Source-Based Features
+The foundation of this set of features is the sentence that contained the mention of the event that corresponds to the predicate of a given triple of the original dataset. The raw dataset from group Delta (which we used with their consent, as mentioned above) contained the source sentence of the event for every triple contained in it. After cleaning the dataset of incomplete lines and formatting errors, the size of the dataset was reduced from 184,388 entries to 172,652 entries that will be used further.
+
+#### 9.1.1 Relative Position
+The *relative position* (relpos) variable encodes information regarding the position of agent, predicate, and patient of a triple, respectively, in the source sentence. In the following sentence (9.1.1.1), the agent **Barack_Obama** will receive the *relpos* value 1, the predicate **sign_deal** will receive the *relpos* value [7,9], and the agent **Netflix** will receive the value 14.
+
+```
+Ex. 9.1.1.1
+Barack Obama has, despite negative press coverage, signed a deal with video streaming provider Netflix.
+```
+
+For agents, only the index of the word closest to the event (i.e. the index of the last word of the agent mention) is stored. For patients, only index of the first word of a patient mention is stored. For predicates, however, both the variable of the first word of the mention as well as the last word of the mention are saved. This choice was made to make calculations of relative distance between agents, patients and predicates easier.
+
+Of course, not all triples in the raw data set are contained in a single sentence. In some sentences, for example, the agent or patient is denoted simply by a personal pronoun refering back to the subject of the preceding sentence, as illustrated in example 9.1.1.2:
+
+```
+Ex. 9.1.1.2
+Barack Obama has made headlines with a new and somewhat controversial business decision. He has decided to sign a deal with video streaming provider Netflix.
+```
+
+This sentence would correspond to the same example triple described above; the value of the agent *relpos* variable, however, would take the value -1. Every agent or patient that is not concretely mentioned in the source sentence of the event mention will be assigned the value -1. This choice was made due to the limitations of automatic pronoun resolution as well as to keep the computational strain to a minimum; otherwise, we would have been forced to consider every source article for every given triple.
+
+The intuition behind this variable is the assumption that - given the general subject-verb-object structure of English sentences - there is a coarse positional pattern for statements; our hope is that this variable will help the classifier recognize a range of lexical objects to take into consideration. The problem with this, however, is the abundance of technically out-of-sentence origins of agents and patients given the fact that no proper pronoun resolution is in place. The impact this has on the final relevance of this variable is yet to be assessed.
+
+#### 9.1.2 Part of Speech
+The *pos* variable encodes which part the linguistic token plays in the source sentence. The principle behind this variable is similar to that above, except that all POS tags for components of a mention are saved in a list. Unfortunately, this variable suffers from the same problem of out-of-sentence origins described in the previous section. In these scenarios, no POS information is available for the agent or patient.
+
+We abstain from including a full list of values the *pos* variable can take in this documentation. This is due to the variety of different tags that exist. A full list of POS tags and therefore a full list of possible values the variable can take can be found here: https://www.sketchengine.eu/penn-treebank-tagset/
+
+The underlying intuition behind this variable is close to that of the relative position variable: we assume a pattern of linguistic structures behind phrased facts. It is, for example, unlikely that an agent or patient consists only of an adjective or that a patient consists solely of an adverb. POS information can therefore help discover a range of possible combinations of linguistic tokens that can constitute an agent, patient, or predicate, respectively.
+
+#### 9.1.3 The Issue with Negatives
+After having outlined above why we think that these variables have an inherent worth for the classification process, it is unfortunate to point out that it is impossible to adequately generate the same features for our set of negatives. This is due to the fact that we generated the negatives automatically and not from proper sentences.
+
+**[Note to Bhaskar: insert your solution here!]**
+
+
+### 9.2 Self-Contained Features
+Of course, linguistic tokens carry information besides the context they are used in. The following features deal with this kind of information.
+
+#### 9.2.1 Named-Entity Recognition
+The *ner* variable serves as an addition to the *pos* variable outlined above. Information on the nature of a noun can be important when finding a question. We are using NLTK's inbuilt named-entity-recognition (NER) feature to generate this variable (the choice of NLTK over SpaCy was made solely due to time constraints and convenience). While we have mentioned in previous chapters of this documentation that automatic NER is wildly unreliable at times, we have chosen to include this information after a discussion with the project supervisor.
+
+The variable can take one of four possible values for the agent chunk and patient chunk, respectively:
+
+* PERSON
+* ORGANIZATION
+* GPE (geo-political entity)
+* None
+
+The None-value was introduced by us for agents and patients that do not correspond to any named entity.
+
+The intuition behind this variable is that there might be an increased likelihood of agent-patient pairs to be of a certain named-entity-type constellation or that certain predicates (e.g. "say") take certain named-entity-types (e.g. Persons or GPE over organizations or none) with a higher likelihood.
+
+#### 9.2.2 Word-Net Distance
+**[Note to Bhaskar: insert your bit here! Ideally adhere to the structure used above: First paragraph: what is the variable and how do we generate it. Second paragraph: what values can the variable take. Third paragraph: why did we include this variable?]**
+
 
 
 
