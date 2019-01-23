@@ -1,13 +1,23 @@
+import json
+import shelve
 import sys
-from typing import Sequence, Optional
+from pathlib import Path
+from typing import Sequence, Optional, Tuple
 
-import spacy
 import numpy as np
 import pandas as pd
-import json
-from sklearn.metrics import f1_score, confusion_matrix, accuracy_score, precision_score
-from sklearn.ensemble import RandomForestClassifier
+import spacy
+from sklearn.decomposition import PCA, NMF
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
+from sklearn.feature_selection import SelectKBest, chi2
+from sklearn.gaussian_process import GaussianProcessClassifier
+from sklearn.model_selection import GridSearchCV, PredefinedSplit
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
 from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.svm import SVC
 
 sys.path.append("..")
 from src import PATH_DATASETS, PATH_CONFIG
@@ -87,21 +97,76 @@ def load_feature_extractors(file_name="features.json"):
     ]
 
 
+def get_features(
+    cache_name: str = "cache.de"
+) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+    file = Path(cache_name)
+
+    if not file.exists():
+        dataset = DataSet.load(PATH_DATASETS)
+        feature_extractors = load_feature_extractors()
+        nlp = spacy.load("en_core_web_lg")
+
+        X_train, y_train = extract_features(
+            nlp, dataset["training"], feature_extractors
+        )
+        X_test, y_test = extract_features(nlp, dataset["testing"], feature_extractors)
+
+        X = np.concatenate((X_train, X_test))
+        y = np.concatenate((y_train, y_test))
+        split = np.zeros((len(X)), dtype=np.int8)
+        split[: len(X_train)] = -1
+
+        with shelve.open(file) as shelf:
+            shelf["features"] = X
+            shelf["labels"] = y
+            shelf["split"] = split
+    else:
+        with shelve.open(file, "r") as shelf:
+            X = shelf["features"]
+            y = shelf["labels"]
+            split = shelf["split"]
+
+    return X, y, split
+
+
 if __name__ == "__main__":
-    dataset = DataSet.load(PATH_DATASETS)
-    feature_extractors = load_feature_extractors()
+    NUM_FEATURES = [5, 10, 15, 20]
 
-    nlp = spacy.load("en_core_web_lg")
+    pipeline = Pipeline(
+        [("preprocessing", None), ("reduce_dim", None), ("classifier", None)]
+    )
 
-    X_train, y_train = extract_features(nlp, dataset["training"], feature_extractors)
-    X_test, y_test = extract_features(nlp, dataset["testing"], feature_extractors)
+    param_grid = [
+        {"preprocessing": [None, StandardScaler()]},
+        {
+            "reduce_dim": [PCA(iterated_power=7), NMF()],
+            "reduce_dim__n_components": NUM_FEATURES,
+        },
+        {"reduce_dim": [SelectKBest(chi2)], "reduce_dim__k": NUM_FEATURES},
+        {
+            "classifier": [RandomForestClassifier(), ExtraTreesClassifier()],
+            "classifier_n_estimators": [5, 25, 50],
+        },
+        {
+            "classifier": [
+                GaussianNB(),
+                QuadraticDiscriminantAnalysis(),
+                KNeighborsClassifier(3),
+                GaussianProcessClassifier(),
+                SVC()
+            ]
+        },
+    ]
 
-    #%%
-    pipeline = Pipeline([("rf", RandomForestClassifier(n_estimators=50))])
-    pipeline.fit(X_train, y_train)
-    prediction = pipeline.predict(X_test)
+    X, y, split = get_features()
+    grid = GridSearchCV(
+        pipeline,
+        cv=PredefinedSplit(split),
+        n_jobs=-1,
+        param_grid=param_grid,
+        scoring="f1",
+    )
+    grid.fit(X, y)
 
-    print("F1-score: ", f1_score(y_true=y_test, y_pred=prediction))
-    print("Accuracy: ", accuracy_score(y_true=y_test, y_pred=prediction))
-    print("Precision: ", precision_score(y_true=y_test, y_pred=prediction))
-    print(confusion_matrix(y_true=y_test, y_pred=prediction))
+    result = pd.DataFrame(grid.cv_results_)
