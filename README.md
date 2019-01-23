@@ -220,6 +220,44 @@ Due to the mentioned shortcomings, we thought about another source of possible f
 
 Unfortunately, the implementation of these approaches suffered from the rather unstable KnowledgeStore. While the data structure of the articles was extended to represent and store both the text and the mentions locally, a loading was not possible due to endless responses of the server at "http://knowledgestore2.fbk.eu/nwr/wikinews/".
 
+## Feature Engineering IV: Finalizing (Week 10)
+
+### Challenge:
+Earlier in the project, we decided to represent a user as a list of articles. Our classifier then should determine, whether another labeled article (interesting or not interesting) belongs to this user or not. This implies, that our features have to encode somehow a similarity measure between the user representation and the "new" labeled article. Since we have chosen a more complex representation of one user (instead of for example just a list of topics the user is interested in), we have to aggregate the different articles of the user representation to obtain such a feature.
+
+### Feature Extraction:
+The basic idea can be seen in the image below. We compare the labeled article with each of the n articles of the user representation. From this, we obtain n different values. The final feature vector is then represented by taking the maximum value, the minimum value, the mean value, the median value, the variance and the standard deviation of the n different values.
+
+![FeatureExtraction](documentation/FeatureExtraction.png)
+
+To compare the articles to each other, we use three different approaches:
+
+#### 1. Word-Embeddings-Similarity
+
+For this approach, we extract the Word Embeddings for every word in the articles, so that we obtain a vector of word vectors for each article. We then reduce each word vector to a single number by taking the mean. Now we have for each article a numeric vector consisting out of the mean values of the word vectors. The single articles can now be compared by taking the cosine similarity of the numerical vectors. In the end, we obtain for this approach one feature vector consisting out of six entries (max, min, mean, median, variance, standard deviation).
+
+#### 2. TF-IDF-Similarity
+
+In the first step, we calculate the TF-IDF score of the whole vocabulary of our training corpus. This results in a very high dimension, so we limit this dimension by just taking 1000 words with the highest TF-IDF score over out entire training corpus. Based on this we end up with a numerical vector with 1000 entries for each article. The single articles can now be compared by taking the cosine similarity
+of the numerical vectors. In the end, we obtain for this approach one feature vector consisting out of six entries (max, min, mean, median, variance, standard deviation). 
+
+#### 3. Named-Entity-Similarity
+
+Using the spacy-API (https://spacy.io/usage/linguistic-features), we extract for each article the following named entities: ```PERSON``` (People, including fictional), ```NORP``` (Nationalities or religious or political groups), ```ORG``` (Companies, agencies, institutions, etc.), ```GPE``` (Countries, cities, states), ```EVENT``` (Named hurricanes, battles, wars, sports events, etc.). From this, we get a list of named entities for every article. We lemmatize these lists of named entities per article so that we end up with the word stems, and then we build the set. Now we are able to compare each set to each other set by taking the Intersection over Union. In the end, we obtain for this approach then five feature vectors (for each named entity) consisting out of six entries (max, min, mean, median, variance, standard deviation).
+
+### Test run:
+For a first test run, we concatenated all of these feature vectors and trained a simple random forest classifier on it. We obtained the following quite promising values for the beginning: 
+
+F1-Score: 0.8654970760233919
+
+Accuracy: 0.8083333333333333
+
+Precision: 0.891566265060241
+
+|     | T  |  F |
+|-----|----|----|
+|**T**| 23 |  9 |
+|**F**| 14 | 74 |
 
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
