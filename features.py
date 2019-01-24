@@ -10,7 +10,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import gensim, pickle, nltk, string
-
+import random
 
 def makeString(listi):
     string = ""
@@ -132,87 +132,102 @@ def get_distances(articleVector, otherArticlesVectors):
     distancesArray = np.sort(distancesArray)
     return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[:3])
 
-def get_features(user_profile, article_uri):
+def get_features(user_profile, articles_uris, classifications):
 
-    features = []
-    articles_text = []
     summedVectorsWeighted = []
     summedVectorsUnweighted = []
     fiveHighestVectorsWeighted = []
     fiveHighestVectorsUnweighted = []
     tenHighestVectorsWeighted = []
     tenHighestVectorsUnweighted = []
-    tf_idf_scores = []
+    fiveHighestTfIdf = []
     lengths = []
-    
-    article_text = ks.run_files_query(article_uri)
-
-    # five highest tf_idf words in den anderen Artikeln nachschauen
-    five_highest_words = get_five_highest(article_text)
-
 
     #features for articles in profile
     for profile_article in user_profile:
-        articles_text = ks.run_files_query(profile_article)
-        summedVectorsWeighted.append(get_summed_word2vec(articles_text,True))
-        summedVectorsUnweighted.append(get_summed_word2vec(articles_text,False))
-        fiveHighestVectorsWeighted.append(get_tf_idf_wordvector(articles_text,5,True))
-        fiveHighestVectorsUnweighted.append(get_tf_idf_wordvector(articles_text,5,False))
-        tenHighestVectorsWeighted.append(get_tf_idf_wordvector(articles_text,10,True))
-        tenHighestVectorsUnweighted.append(get_tf_idf_wordvector(articles_text,10,False))
+        article_text = ks.run_files_query(profile_article)
+        summedVectorsWeighted.append(get_summed_word2vec(article_text,True))
+        summedVectorsUnweighted.append(get_summed_word2vec(article_text,False))
+        fiveHighestVectorsWeighted.append(get_tf_idf_wordvector(article_text,5,True))
+        fiveHighestVectorsUnweighted.append(get_tf_idf_wordvector(article_text,5,False))
+        tenHighestVectorsWeighted.append(get_tf_idf_wordvector(article_text,10,True))
+        tenHighestVectorsUnweighted.append(get_tf_idf_wordvector(article_text,10,False))
+        fiveHighestTfIdf.append(get_five_highest(article_text))
+        lengths.append(len(article_text))
+
+
+    feature_vectors = [] #holds one feature vector for each article defined in parameter articles_uris
+
+    for article_index, article_uri in enumerate(articles_uris):
+        print(" Inner loop:",article_index,"/",len(articles_uris))
+        feature_vector = []
+        article_text = ks.run_files_query(article_uri)
+        #features for article to be classified
+
+        feature_vector.extend(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
+        feature_vector.extend(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
+        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
+        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
+        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
+        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
+
+        tf_idf_scores = []
+        for five_highest in fiveHighestTfIdf:
+            scores = get_tf_idf_scores(article_text)
+            score = 0
+            for word in five_highest:
+                if word in all_words:
+                    score = score + scores[all_words.index(word.lower())]
+            tf_idf_scores.append(score)
+
+        tf_idf_scores = np.sort(tf_idf_scores)
+        feature = (tf_idf_scores[0],tf_idf_scores[-1],np.mean(tf_idf_scores),np.mean(tf_idf_scores[-3:]))
+        feature_vector.extend(feature)       
+            # !!!!!!!! divide sum through amount of profile articles, so we are independant of profile size !!!!!!!!!
+
+        distances = [abs(len(article_text)-length) for length in lengths]
+        distances = np.sort(distances)
+        feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
+        feature_vector.extend(feature)
+
+        feature_vectors.append((feature_vectors,classifications[article_index]))
         
-        # five highest tf_idf words in den anderen Artikeln nachschauen
-        scores = get_tf_idf_scores(articles_text)
-        score = 0
-        for word in five_highest_words:
-            if word in all_words:
-                score = score + scores[all_words.index(word.lower())]
-        tf_idf_scores.append(score)
-        
-        lengths.append(len(articles_text))
-            
+        #feature_vector.append(len(article_text)) #length of article
 
-    #features for article to be classified
+    return feature_vectors
 
-    features.extend(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
-    features.extend(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
-    features.extend(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
-    features.extend(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
-    features.extend(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
-    features.extend(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
-
-    tf_idf_scores = np.sort(tf_idf_scores)
-    feature = (tf_idf_scores[0],tf_idf_scores[-1],np.mean(tf_idf_scores),np.mean(tf_idf_scores[-3:]))
-    features.extend(feature)
-    
-    distances = [abs(len(article_text)-length) for length in lengths]
-    distances = np.sort(distances)
-    feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
-    features.extend(feature)
-    
-    #features.append(len(article_text)) #length of article
-
-    return features
 
 initialize_tf_idf()
 initialize_word2vec()
-
-#print(get_five_highest("http://en.wikinews.org/wiki/'Jesus_Camp'_shuts_down"))
-
-# get_summed_word2vec(ks.run_files_query("http://en.wikinews.org/wiki/'Jesus_Camp'_shuts_down"), True) # <-- works quite well
 
 with open("splitted_dataset.pickle", "rb") as f:
     dataSet = pickle.load(f)
     
 training = dataSet[0]
 
-#features = (get_features(user[0],user[1][0][0]),1)
-
 dataset=[]
-for i in range(10):
-    print(str(i),"/ 10 done.")
-    dataset.append((get_features(training[i][0],training[i][1][0][0]),1))
-    dataset.append((get_features(training[i][0],training[i][1][1][0]),0))
-    dataset.append((get_features(training[i][0],training[i][1][1][1]),0))
+for usernumber in range(len(training)):
+    print("")
+    print(str(usernumber),"/",len(training),"done.")
+    print("")
+    #usernumber = np.random.randint(0,len(training))
+    #rndposorneg = np.random.randint(0,2)
+    #rndarticle = np.random.randint(0,len(training[usernumber][1][rndposorneg]))
 
-pickle.dump( dataset, open( "feature_selection_three_instances_dataset.pickle", "wb" ) )
+    articles_uris = training[usernumber][1][0]+training[usernumber][1][1]
+    classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
+    
+    chosen_indices = random.sample(range(0,len(classifications)),20) #Do not use every article, so variance in user profiles is higher
+
+    chosen_articles_uris = []
+    chosen_classifications = []
+    for i in chosen_indices:
+        chosen_articles_uris.append(articles_uris[i])
+        chosen_classifications.append(classifications[i])
+
+    dataset.extend(get_features(training[usernumber][0], chosen_articles_uris, chosen_classifications))
+    #dataset.extend(get_features(training[usernumber][0], training[usernumber][1][1], 0))
+
+    pickle.dump( dataset, open( "featurised_dataset3.pickle", "wb" ))
+
+
