@@ -1,7 +1,9 @@
 import json
 import shelve
 import sys
-from pathlib import Path
+import itertools
+import copy
+from collections import OrderedDict
 from typing import Sequence, Optional, Tuple
 
 import numpy as np
@@ -98,36 +100,59 @@ def load_feature_extractors(file_name="features.json"):
 
 
 def get_features(
-    cache_name: str = "cache.de"
+    cache_name: str = "features"
 ) -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
-    file = Path(cache_name)
+    with shelve.open(cache_name, "c") as shelf:
+        if "features" not in shelf:
+            print("[INFO] Extracting features")
+            dataset = DataSet.load(PATH_DATASETS)
+            feature_extractors = load_feature_extractors()
+            nlp = spacy.load("en_core_web_lg")
 
-    if not file.exists():
-        dataset = DataSet.load(PATH_DATASETS)
-        feature_extractors = load_feature_extractors()
-        nlp = spacy.load("en_core_web_lg")
+            X_train, y_train = extract_features(
+                nlp, dataset["training"], feature_extractors
+            )
+            X_test, y_test = extract_features(
+                nlp, dataset["testing"], feature_extractors
+            )
 
-        X_train, y_train = extract_features(
-            nlp, dataset["training"], feature_extractors
-        )
-        X_test, y_test = extract_features(nlp, dataset["testing"], feature_extractors)
+            X = np.concatenate((X_train, X_test))
+            y = np.concatenate((y_train, y_test))
+            split = np.zeros((len(X)), dtype=np.int8)
+            split[: len(X_train)] = -1
 
-        X = np.concatenate((X_train, X_test))
-        y = np.concatenate((y_train, y_test))
-        split = np.zeros((len(X)), dtype=np.int8)
-        split[: len(X_train)] = -1
-
-        with shelve.open(file) as shelf:
             shelf["features"] = X
             shelf["labels"] = y
             shelf["split"] = split
-    else:
-        with shelve.open(file, "r") as shelf:
-            X = shelf["features"]
-            y = shelf["labels"]
-            split = shelf["split"]
 
-    return X, y, split
+        return shelf["features"], shelf["labels"], shelf["split"]
+
+
+def _generate_transformer_versions(transformer, **kwargs):
+    """
+    This function generates all possible permutations of a tranformer with mutliple arguments.
+    :param transformer: The class of the transformer
+    :param kwargs: The arguments of the transformer. Sequence are interpreted as different versions.
+    :return: Generator of Transformer instances
+    """
+
+    fixed_arguments = dict(
+        (name, argument)
+        for name, argument in kwargs.items()
+        if not isinstance(argument, Sequence)
+    )
+
+    free_arguments = OrderedDict(
+        (name, argument)
+        for name, argument in kwargs.items()
+        if isinstance(argument, Sequence)
+    )
+
+    for combination in itertools.product(*free_arguments.values()):
+        arguments = copy.deepcopy(fixed_arguments)
+        for argument_name, value in zip(free_arguments.keys(), combination):
+            arguments[argument_name] = value
+        yield transformer(**arguments)
 
 
 if __name__ == "__main__":
@@ -137,36 +162,51 @@ if __name__ == "__main__":
         [("preprocessing", None), ("reduce_dim", None), ("classifier", None)]
     )
 
-    param_grid = [
-        {"preprocessing": [None, StandardScaler()]},
-        {
-            "reduce_dim": [PCA(iterated_power=7), NMF()],
-            "reduce_dim__n_components": NUM_FEATURES,
-        },
-        {"reduce_dim": [SelectKBest(chi2)], "reduce_dim__k": NUM_FEATURES},
-        {
-            "classifier": [RandomForestClassifier(), ExtraTreesClassifier()],
-            "classifier_n_estimators": [5, 25, 50],
-        },
-        {
-            "classifier": [
-                GaussianNB(),
-                QuadraticDiscriminantAnalysis(),
-                KNeighborsClassifier(3),
-                GaussianProcessClassifier(),
-                SVC()
-            ]
-        },
-    ]
+    param_grid = {
+        "preprocessing": [None, StandardScaler()],
+        "reduce_dim": list(
+            itertools.chain(
+                [None],
+                _generate_transformer_versions(
+                    PCA, iterated_power=7, n_components=NUM_FEATURES
+                ),
+            )
+        ),
+        "classifier": list(
+            itertools.chain(
+                _generate_transformer_versions(
+                    RandomForestClassifier, n_estimators=[8, 16, 32, 64, 128]
+                ),
+                _generate_transformer_versions(
+                    ExtraTreesClassifier, n_estimators=[8, 16, 32, 64, 128]
+                ),
+                [
+                    GaussianNB(),
+                    QuadraticDiscriminantAnalysis(),
+                    KNeighborsClassifier(3),
+                    GaussianProcessClassifier(),
+                    SVC(gamma="auto"),
+                ],
+            )
+        ),
+    }
 
+    # Generate or load the features
     X, y, split = get_features()
+
+    # Do the grid search
     grid = GridSearchCV(
         pipeline,
         cv=PredefinedSplit(split),
         n_jobs=-1,
         param_grid=param_grid,
         scoring="f1",
+        error_score="raise",
+        return_train_score=True,
     )
     grid.fit(X, y)
 
-    result = pd.DataFrame(grid.cv_results_)
+    # Output the results
+    results = pd.DataFrame(grid.cv_results_)
+    results.sort_values("rank_test_score", inplace=True, ascending=True)
+    results.to_csv("results.csv", "\t", index=False)
