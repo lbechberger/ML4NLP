@@ -176,5 +176,5 @@ relation_NER, relation_DEP, relation_POS, agent_position, patient_position (both
 The "heavy" dataset amounts to 2.6 GB unzipped and includes additionally the positions of all words in the sliding window and extends it to -10/+10.
 We have not been able to implement semantic vectors and synonyms yet and are for now working with the light version to configure classificators.
 
-You can find our new repository here: https://github.com/Nathanaelion/NRC
+You can find our new repository here: https://github.com/Nathanaelion/NRRC
  
