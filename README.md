@@ -173,7 +173,7 @@ Currently everything but the binary classification value is kept in int16, as in
 ## New Repository
 Due to problems with this repository, we created a new repository, where we will do most of the classificator configuration. For now we have a "light" dataset, which amounts to about 1.1 GB unzipped and includes only the following features:
 relation_NER, relation_DEP, relation_POS, agent_position, patient_position (both relative to relation_positon) and DEP for words in sliding window of -7 to +7.
-The "heavy" dataset amounts to 2.6 GB unzipped and includes additionally the positions of all words in the sliding window and extends them to -10/+10.
+The "heavy" dataset amounts to 2.6 GB unzipped and includes additionally the positions of all words in the sliding window and extends it to -10/+10.
 We have not been able to implement semantic vectors and synonyms yet and are for now working with the light version to configure classificators.
 
 You can find our new repository here: https://github.com/Nathanaelion/NRC
