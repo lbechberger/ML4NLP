@@ -190,7 +190,7 @@ def get_features(user_profile, articles_uris, classifications):
         feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
         feature_vector.extend(feature)
 
-        feature_vectors.append((feature_vectors,classifications[article_index]))
+        feature_vectors.append((feature_vector,classifications[article_index]))
         
         #feature_vector.append(len(article_text)) #length of article
 
@@ -217,7 +217,7 @@ for usernumber in range(len(training)):
     articles_uris = training[usernumber][1][0]+training[usernumber][1][1]
     classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
     
-    chosen_indices = random.sample(range(0,len(classifications)),20) #Do not use every article, so variance in user profiles is higher
+    chosen_indices = random.sample(range(0,len(classifications)),10) #Do not use every article, so variance in user profiles is higher
 
     chosen_articles_uris = []
     chosen_classifications = []
@@ -226,8 +226,9 @@ for usernumber in range(len(training)):
         chosen_classifications.append(classifications[i])
 
     dataset.extend(get_features(training[usernumber][0], chosen_articles_uris, chosen_classifications))
+    print(dataset)
     #dataset.extend(get_features(training[usernumber][0], training[usernumber][1][1], 0))
 
-    pickle.dump( dataset, open( "featurised_dataset3.pickle", "wb" ))
+    pickle.dump( dataset, open( "featurised_dataset4.pickle", "wb" ))
 
 
