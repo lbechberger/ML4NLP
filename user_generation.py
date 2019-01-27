@@ -3,6 +3,7 @@ import os
 from generation_functions import *
 from feature_extraction import FeatureExtraction
 from sklearn.model_selection import KFold
+from sklearn.feature_selection import SelectKBest, mutual_info_classif
 
 # always use same numbers (for performance comparison)
 np.random.seed(0)
@@ -20,37 +21,42 @@ else:
 users_db = pd.DataFrame(np.random.randint(2, size=(100, len(categories))), columns=categories)
 users_db.apply(lambda row: check_subcategories(row), axis=1)
 
+_, labels = create_dataset(users_db, articles, 100)
 
 # Extract the features
-features = FeatureExtraction(articles, categories)
-# calculate the cosine similarities between articles and categories based on user preferences
-# TODO: make it work
-# a, b, c = features.extract_user_similarities(users_db)
-check = features.category_check()
-article_lengths = features.get_article_length()
+f = FeatureExtraction(articles, categories)
+features = f.get_features(users_db)
 
-file = open("./data/keywords.txt")
-lines = [line.rstrip('\n') for line in file]
+print("Number of features arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
 
-keys = features.keyword_check(lines)
-# max_similarities, min_similarities, mean_similarities = features.extract_similarities(articles, similarities)
-# for val in zip(max_similarities,min_similarities,mean_similarities):
-#     print("{}\t\t{}\t\t{}".format(val[0], val[1], val[2]))
+# dimension reduction via filter methods
+skb = SelectKBest(score_func=mutual_info_classif, k=3)
+skb.fit(features, labels)
+print('Feature scores according to mutual information: ', skb.scores_)
+filter_transformed = skb.transform(features)
+print('After transformation: ', filter_transformed.shape, users_db.shape)
+print('Compare: ', features[0], filter_transformed[0])
+
+pickle.dump(filter_transformed, open("./data/filtered_features.pickle", "wb"))
+
 
 # split dataset into test and training data via k-fold
-input_data, labels = create_dataset(users_db, articles, 100)
-kf = KFold(n_splits=10, shuffle=True)
-for train_index, test_index in kf.split(input_data):
-    X_train = []
-    X_test = []
-    y_train = []
-    y_test = []
-    for i in train_index:
-        X_train.append(input_data[i])
-        y_train.append(labels[i])
-    for j in test_index:
-        X_test.append(input_data[j])
-        y_test.append(labels[j])
+# kf = KFold(n_splits=10, shuffle=True)
+# for train_index, test_index in kf.split(features):
+#     X_train = []
+#     X_test = []
+#     y_train = []
+#     y_test = []
+#     for i in train_index:
+#         X_train.append(features[i])
+#         y_train.append(labels[i])
+#     for j in test_index:
+#         X_test.append(features[j])
+#         y_test.append(labels[j])
 
-print("\nThere are {} categories. In total {} articles resulting in a dataset length of {}"
-      .format(len(categories), len(articles), len(input_data)))
+# print("\nThere are {} categories. In total {} articles resulting in a dataset length of {}"
+#       .format(len(categories), len(articles), len(user)))
+
+
+
+# for classifier: run 10 times and take average

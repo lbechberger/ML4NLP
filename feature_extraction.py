@@ -18,7 +18,6 @@ class FeatureExtraction:
         # Embedding of each category
         if os.path.isfile('./data/embed_categories.pickle'):
             embedded_categories = pickle.load(open("./data/embed_categories.pickle", "rb"))
-            print("Found embed_categories.pickle")
         else:
             if not embedding:
                 embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
@@ -50,7 +49,6 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/embed_articles.pickle'):
             embedded_articles = pickle.load(open("./data/embed_articles.pickle", "rb"))
-            print("Found embed_articles.pickle")
         else:
             if not embedding:
                 embedding = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-negative300.bin',
@@ -75,7 +73,6 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/cosine_similarities.pickle'):
             cos_sims = pickle.load(open("./data/cosine_similarities.pickle", "rb"))
-            print("Found cosine_similarities.pickle")
         else:
             cos_sims = []
             embedded_articles = self.get_article_embedding()
@@ -123,6 +120,10 @@ class FeatureExtraction:
         return max_val, min_val, mean_val
 
     def get_article_length(self):
+        """
+        Calculates the length of each article
+        :return: Array with the lengths of each article
+        """
         lengths = []
         for a in self.articles:
             lengths.append(len(a))
@@ -135,7 +136,6 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/category_in_articles.pickle'):
             cat_in_articles = pickle.load(open("./data/category_in_articles.pickle", "rb"))
-            print("Found category_in_articles.pickle")
         else:
             cat_in_articles = []
             for a in self.articles:
@@ -166,7 +166,6 @@ class FeatureExtraction:
         """
         if os.path.isfile('./data/keywords_in_articles.pickle'):
             keys_in_articles = pickle.load(open("./data/keywords_in_articles.pickle", "rb"))
-            print("Found keywords_in_articles.pickle")
         else:
             keys_in_articles = []
             for a in self.articles:
@@ -184,3 +183,42 @@ class FeatureExtraction:
             pickle.dump(keys_in_articles, open("./data/keywords_in_articles.pickle", "wb"))
 
         return keys_in_articles
+
+    def get_features(self, users_db):
+        """
+        Calculates all features and return them as an array
+        Features are:
+        - cosine similarities of articles and categories based on user preferences (max, min, mean),
+        - boolean array of category names occuring in article,
+        - the article length
+        boolean array of keywords occuring in article
+        :param users_db: pandas dataframe of users
+        :return: array of size 4500, with all the features for each user
+        """
+        # calculate the cosine similarities between articles and categories based on user preferences
+        maximum_sim, minimum_sim, mean_sim = self.extract_user_similarities(users_db)
+        # check if the category names appear in text
+        check = self.category_check()
+        # get the length of each article
+        article_lengths = self.get_article_length()
+        # check if the specified keywords appear in text
+        lines = [line.rstrip('\n') for line in open("./data/keywords.txt")]
+        keys = self.keyword_check(lines)
+
+        features_list = []
+        # for each user append the articles one by one with the corresponding feature values
+        for idx, _ in users_db.iterrows():
+            for a in range(len(self.articles)):
+                row = [
+                    maximum_sim[idx][a],
+                    minimum_sim[idx][a],
+                    mean_sim[idx][a],
+                    article_lengths[a],
+                ]
+                # use extend because otherwise we end up with a nested array and we only want the values
+                row.extend(check[a])
+                row.extend(keys[a])
+                # append the row to the overall feature list
+                features_list.append(row)
+
+        return features_list
