@@ -3,7 +3,8 @@ import os
 from generation_functions import *
 from feature_extraction import FeatureExtraction
 from sklearn.model_selection import KFold
-from sklearn.feature_selection import SelectKBest, mutual_info_classif
+from sklearn.svm import SVC
+from sklearn.metrics import cohen_kappa_score
 
 # always use same numbers (for performance comparison)
 np.random.seed(0)
@@ -27,36 +28,38 @@ _, labels = create_dataset(users_db, articles, 100)
 f = FeatureExtraction(articles, categories)
 features = f.get_features(users_db)
 
-print("Number of features arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
+print("Number of feature arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
 
+"""
+CHOOSE METTHOD HERE: AUSKOMMENTIEREN VON DER GEWUENSCHTEN METHODE; EMBEDDED GIBT BISHER NUR 3 FEATURES ZURUECK 
+(KEINE AHNUNG WIESO)
+"""
 # dimension reduction via filter methods
-skb = SelectKBest(score_func=mutual_info_classif, k=3)
-skb.fit(features, labels)
-print('Feature scores according to mutual information: ', skb.scores_)
-filter_transformed = skb.transform(features)
-print('After transformation: ', filter_transformed.shape, users_db.shape)
-print('Compare: ', features[0], filter_transformed[0])
-
-pickle.dump(filter_transformed, open("./data/filtered_features.pickle", "wb"))
+filtered = f.reduce_dimension(features, labels, 10, "filter")
+# filtered_w = f.reduce_dimension(features, labels, 10, "wrapper")
+# filtered_e = f.reduce_dimension(features, labels, 10, "embedded")
 
 
 # split dataset into test and training data via k-fold
-# kf = KFold(n_splits=10, shuffle=True)
-# for train_index, test_index in kf.split(features):
-#     X_train = []
-#     X_test = []
-#     y_train = []
-#     y_test = []
-#     for i in train_index:
-#         X_train.append(features[i])
-#         y_train.append(labels[i])
-#     for j in test_index:
-#         X_test.append(features[j])
-#         y_test.append(labels[j])
+# and train with model
+# TODO: train classifier 10x and take mean for reliable result
+kf = KFold(n_splits=10, shuffle=True)
+model = SVC(kernel='linear')
+for train_index, test_index in kf.split(filtered):
+    X_train = []; y_train = []
+    X_test = []; y_test = []
+    for i in train_index:
+        X_train.append(filtered[i])
+        y_train.append(labels[i])
+    for j in test_index:
+        X_test.append(filtered[j])
+        y_test.append(labels[j])
+
+    model.fit(X_train, y_train)
+    predictions = model.predict(X_test)
+    kappa = cohen_kappa_score(y_test, predictions)
+    print(kappa)
+
 
 # print("\nThere are {} categories. In total {} articles resulting in a dataset length of {}"
 #       .format(len(categories), len(articles), len(user)))
-
-
-
-# for classifier: run 10 times and take average

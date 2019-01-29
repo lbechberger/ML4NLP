@@ -1,7 +1,9 @@
 from generation_functions import *
 from sklearn.metrics import pairwise
 import gensim, os
-
+import sklearn
+from sklearn.feature_selection import SelectKBest, mutual_info_classif, RFE, SelectFromModel
+from sklearn.ensemble import RandomForestClassifier
 
 class FeatureExtraction:
 
@@ -215,10 +217,73 @@ class FeatureExtraction:
                     mean_sim[idx][a],
                     article_lengths[a],
                 ]
-                # use extend because otherwise we end up with a nested array and we only want the values
+                # use extend because otherwise we end up with a nested array which is not allowed in the case of
+                # dimension reduction methods
                 row.extend(check[a])
                 row.extend(keys[a])
                 # append the row to the overall feature list
                 features_list.append(row)
 
         return features_list
+
+    def reduce_dimension(self, features, labels, n_features, method='filter'):
+        """
+        Method to reduce the feature dimension to n features
+        :param features: Array containing all features (one row per article)
+        :param labels: Array with 1xN labels (like or dislike)
+        :param n_features: number of features to keep (top n features will be selected. Only applies to filter or 
+        wrapper methods
+        :param method: Method to use for filtering. Choose between filter, wrapper or embedded. If nothing is set, filter
+        methods will be used
+        :return: 
+        """
+        if method == 'filter':
+            print("Reducing the dimension via filter methods")
+            if os.path.isfile('./data/features_filtered{}.pickle'.format(n_features)):
+                filtered_features = pickle.load(open("./data/features_filtered{}.pickle".format(n_features), "rb"))
+            else:
+                skb = SelectKBest(score_func=mutual_info_classif, k=n_features)
+                skb.fit(features, labels)
+                print('Feature scores according to mutual information:\n', skb.scores_)
+                filtered_features = skb.transform(features)
+                pickle.dump(filtered_features, open("./data/features_filtered{}.pickle".format(n_features), "wb"))
+            print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
+                  filtered_features.shape)
+            print('Compare: \n', features[0], '\n', filtered_features[0])
+
+        elif method == 'wrapper':
+            print("Reducing the dimension via wrapper methods")
+            if os.path.isfile('./data/features_wrapped{}.pickle'.format(n_features)):
+                filtered_features = pickle.load(open("./data/features_wrapped{}.pickle".format(n_features), "rb"))
+            else:
+                model = sklearn.linear_model.LogisticRegression(random_state=42)
+                rfe = RFE(model, n_features_to_select=n_features)
+                rfe.fit(features, labels)
+                # print('Features ranked according to RFE: \n', rfe.ranking_)
+                index_of_first = np.where(rfe.ranking_ == 1)[0][0]
+                index_of_second = np.where(rfe.ranking_ == 2)[0][0]
+                index_of_third = np.where(rfe.ranking_ == 3)[0][0]
+                print('Three most promising features: ', index_of_first, index_of_second, index_of_third)
+                filtered_features = rfe.transform(features)
+                pickle.dump(filtered_features, open("./data/features_wrapped{}.pickle".format(n_features), "wb"))
+            print("Before transformation: ", len(features), 'x', len(features[0]), "After transformation: ",
+                  filtered_features.shape)
+            print('Compare: \n', features[0], '\n', filtered_features[0])
+
+        elif method == 'embedded':
+            print("Reducing the dimension via embedding methods")
+            if os.path.isfile('./data/features_embedded.pickle'.format(n_features)):
+                filtered_features = pickle.load(open("./data/features_embedded.pickle".format(n_features), "rb"))
+            else:
+                rf = RandomForestClassifier(n_estimators=10, random_state=42)
+                rf.fit(features, labels)
+                print('Feature importances of RF classifier: ', rf.feature_importances_)
+                sfm = SelectFromModel(rf, threshold=0.1, prefit=True)
+                filtered_features = sfm.transform(features)
+                pickle.dump(filtered_features, open("./data/features_embedded.pickle".format(n_features), "wb"))
+            print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
+                  filtered_features.shape)
+            print('Compare: \n', features[3000], '\n', filtered_features[3000])
+
+        return filtered_features
+
