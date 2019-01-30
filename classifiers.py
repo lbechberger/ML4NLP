@@ -21,7 +21,7 @@ import numpy as np
 import pickle
 
 # load the data set (features are positive real numbers)
-with open("selected_features.pickle", "rb") as f:
+with open("selected_features2.pickle", "rb") as f:
     dataSet = pickle.load(f)
 
 #features = np.array([instance[0] for instance in dataSet])
@@ -32,6 +32,8 @@ data_set = dataSet
 X = data_set[0]
 y = data_set[1]
 
+print(X.shape,y.shape)
+
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, random_state = 42, shuffle = True)
@@ -39,9 +41,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.30, rand
 # set up classifiers        
 classifiers = []
 classifiers.append(('kNN', KNeighborsClassifier()))
-classifiers.append(('NB', GaussianNB()))
-classifiers.append(('MaxEnt', LogisticRegression()))
-classifiers.append(('DT', DecisionTreeClassifier()))
+#classifiers.append(('NB', GaussianNB()))
+classifiers.append(('MaxEnt', LogisticRegression(solver = 'lbfgs')))
+#classifiers.append(('DT', DecisionTreeClassifier()))
 classifiers.append(('RF', RandomForestClassifier()))
 classifiers.append(('SVM', SVC(kernel = 'linear')))
 classifiers.append(('MLP', MLPClassifier()))
@@ -61,6 +63,30 @@ grid_search = GridSearchCV(estimator = KNeighborsClassifier(),
                            param_grid = parameter_grid,
                            scoring = make_scorer(cohen_kappa_score))
 grid_search.fit(X_train, y_train)
+print('Best params:', grid_search.best_params_)
+predictions = grid_search.predict(X_test)
+print('Performance:', cohen_kappa_score(y_test, predictions))
+print("")
+
+parameter_grid = {'solver' : ['newton-cg', 'lbfgs', 'liblinear', 'sag', 'saga']}
+grid_search = GridSearchCV(estimator = LogisticRegression(),
+                           param_grid = parameter_grid,
+                           scoring = make_scorer(cohen_kappa_score))
+grid_search.fit(X_train, y_train)
+
+print("")
+print('Best params:', grid_search.best_params_)
+predictions = grid_search.predict(X_test)
+print('Performance:', cohen_kappa_score(y_test, predictions))
+
+
+parameter_grid = {'n_estimators' : np.arange(1,100,5), 'max_depth' : np.arange(110,500,25)}
+parameter_grid['max_depth'] = np.append(parameter_grid['max_depth'],None)
+grid_search = GridSearchCV(estimator = RandomForestClassifier(),
+                           param_grid = parameter_grid,
+                           scoring = make_scorer(cohen_kappa_score))
+grid_search.fit(X_train, y_train)
+
 print('Best params:', grid_search.best_params_)
 predictions = grid_search.predict(X_test)
 print('Performance:', cohen_kappa_score(y_test, predictions))
