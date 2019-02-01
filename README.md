@@ -259,6 +259,25 @@ Precision: 0.891566265060241
 |**T**| 23 |  9 |
 |**F**| 14 | 74 |
 
+# Feature and model selection (Week 13)
+
+After the generation of the available features, the machine learning circle finally enter the actual stage of selecting those, training a classifier on them and evaluate the results. At last at this point, the careful creation of the dataset provided an astonishing simplification. Common problems in machine learning like imbalanced and missing data where excluded by design.
+
+In a direct correlation with the complexity of the complete pipeline, the number of available hyperparameters grows enormously. In order of finding optimal solutions for a problem, commonly a systematic search and evaluation of different parameter constellations is necessary. Multiple ways are imaginable. Naively, one may optimize for one hyperparameter after the other. While this sounds usable in theory, in practice it suffers from the relation between the hyperparameters. As one former bad parameter may reveal itself as superior in combination with the following hyperparameter, such a greedy search for the best hyperparameter may get stuck easily in local optima. Being aware of this danger, one may instead simply optimize regarding all available permutations of all hyperparameter. This so-called grid search has the advantage of an intrinsic guaranty to find the best constellation. Nevertheless, it requires to really evaluate all different constellations which might result in infeasible time constraints. More sophisticated solutions tried to tackle this constraint, i.e. by introducing some factor of randomness for covering the complete feature space in an efficient manner.
+
+From our point of view, this selection of hyperparameter does not start with the hyperparameter of the actual classifier. Instead, the complete pipeline of preprocessing the features, selecting them, choosing a machine learning algorithm and training it with respect to some hyperparameter appears to be a feature space itself. Especially when constraining ourselves to rather fast-training classifiers, even a complete grid search seems possible. As a direct implication, we are able to guaranty the best possible detection from a carefully selected set of transformations and classifiers.
+
+Therefore, in the end, our pipeline consisted out of three different steps:
+
+1. In the step of feature preprocessing, we included both the methods of leaving the features as they are or scale them according to their mean and variance. Some classifiers like k-neighbors or SVMs being dependent on direct distances between features are sensible for the range of the data they are applied on.
+2. In the step of feature selection, we included both methods of leaving the features as they are or apply a PCA on them. The output dimension of the PCA itself was chosen from a set including 5, 10, 15, and 20 dimensions. In the beginning, we planned to add a selection algorithm on the base of the chi^2 criterion, which was unfortunately unable of dealing with the negative differences which occurred sometimes.  For the sake of simplicity, we, therefore, do not transform the data before but leaf it out.
+3. For the actual classification, we included approaches from the complete domain of different machine learning theory. Beside Decision-Tree-based approaches like Random and Extra Forest, we included Naive Bayes, Gaussian Processes, Quadratic Discriminant Analyses, K-Neighbors Classifier, and support-vector machines as the classifier.
+
+For all steps in the pipeline, the sci-kit-learn implementations are used. Especially the provided utilities for Grid searches are rather handy but are not completely capable of representing our conceptualized pipeline. While it is possible to evaluate different types of transformers, those cannot be tested with different individual hyperparameters. Therefore, we implemented an auxiliary function generating the classifiers of the same type with all permutations of available parameters.
+
+# Results
+TODO
+
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
