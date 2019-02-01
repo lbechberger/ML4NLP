@@ -2,10 +2,19 @@ import pandas as pd
 import os
 from generation_functions import *
 from feature_extraction import FeatureExtraction
-from sklearn.model_selection import KFold
-from sklearn.svm import SVC
-from sklearn.metrics import cohen_kappa_score
+import warnings
 
+from sklearn.model_selection import KFold, GridSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.svm import LinearSVC
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import cohen_kappa_score, make_scorer
+
+warnings.filterwarnings("ignore")
 # always use same numbers (for performance comparison)
 np.random.seed(0)
 
@@ -28,38 +37,56 @@ _, labels = create_dataset(users_db, articles, 100)
 f = FeatureExtraction(articles, categories)
 features = f.get_features(users_db)
 
-print("Number of feature arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
+# print("Number of feature arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
 
 """
-CHOOSE METTHOD HERE: AUSKOMMENTIEREN VON DER GEWUENSCHTEN METHODE; EMBEDDED GIBT BISHER NUR 3 FEATURES ZURUECK 
-(KEINE AHNUNG WIESO)
+Dimension Reduction
+Choose filter method here by uncommenting corresponding line. Might take longer if no pickle file is found
 """
-# dimension reduction via filter methods
-filtered = f.reduce_dimension(features, labels, 10, "filter")
-# filtered_w = f.reduce_dimension(features, labels, 10, "wrapper")
-# filtered_e = f.reduce_dimension(features, labels, 10, "embedded")
+# filtered = f.reduce_dimension(features, labels, 10, "filter")
+filtered = f.reduce_dimension(features, labels, 10, "wrapper")
+# filtered = f.reduce_dimension(features, labels, 10, "embedded")
 
+
+# TODO: train classifier 10x and take mean for reliable result (necessary if already using k-split?)
+# ('MLP', MLPClassifier()),
+# set up classifiers
+classifiers = [
+    ('kNN', KNeighborsClassifier()),
+    ('NB', GaussianNB()),
+    ('MaxEnt', LogisticRegression()),
+    ('DT', DecisionTreeClassifier()),
+    ('RF', RandomForestClassifier()),
+    ('SVM', LinearSVC()),
+]
 
 # split dataset into test and training data via k-fold
 # and train with model
-# TODO: train classifier 10x and take mean for reliable result
 kf = KFold(n_splits=10, shuffle=True)
-model = SVC(kernel='linear')
-for train_index, test_index in kf.split(filtered):
-    X_train = []; y_train = []
-    X_test = []; y_test = []
-    for i in train_index:
-        X_train.append(filtered[i])
-        y_train.append(labels[i])
-    for j in test_index:
-        X_test.append(filtered[j])
-        y_test.append(labels[j])
+for name, model in classifiers:
+    kappa = []
+    for train_index, test_index in kf.split(filtered):
+        X_train = []; y_train = []
+        X_test = []; y_test = []
+        for i in train_index:
+            X_train.append(filtered[i])
+            y_train.append(labels[i])
+        for j in test_index:
+            X_test.append(filtered[j])
+            y_test.append(labels[j])
 
-    model.fit(X_train, y_train)
-    predictions = model.predict(X_test)
-    kappa = cohen_kappa_score(y_test, predictions)
-    print(kappa)
+        model.fit(X_train, y_train)
+        predictions = model.predict(X_test)
+        kappa.append(cohen_kappa_score(y_test, predictions))
+        print(name, np.mean(kappa))
 
-
-# print("\nThere are {} categories. In total {} articles resulting in a dataset length of {}"
-#       .format(len(categories), len(articles), len(user)))
+# # hyperparameter optimization
+# print('\nGRID SEARCH')
+# parameter_grid = {'n_neighbors': np.arange(1, 21), 'p': [1, 1.5, 2]}
+# grid_search = GridSearchCV(estimator=KNeighborsClassifier(),
+#                            param_grid=parameter_grid,
+#                            scoring=make_scorer(cohen_kappa_score))
+# grid_search.fit(X_train, y_train)
+# print('Best parameters:', grid_search.best_params_)
+# predictions = grid_search.predict(X_test)
+# print('Performance:', cohen_kappa_score(y_test, predictions))

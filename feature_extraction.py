@@ -90,7 +90,7 @@ class FeatureExtraction:
     def extract_user_similarities(self, users):
         """
         Return max, min, mean similarities of the categories the user liked
-        :param users: Array of all users where each user's values is in range [0,1]
+        :param user: Array of all user where each user's values is in range [0,1]
         :return: Max, min and mean array containing the respective similarities
         """
         if os.path.isfile('./data/m_similarities.pickle'):
@@ -119,6 +119,28 @@ class FeatureExtraction:
                 min_val.append(u_min)
                 mean_val.append(u_mean)
             pickle.dump([max_val, min_val, mean_val], open("./data/m_similarities.pickle", "wb"))
+        return max_val, min_val, mean_val
+
+    def extract_user_keys(self, users, keys):
+        if os.path.isfile('./data/m_keys.pickle'):
+            max_val, min_val, mean_val = pickle.load(open("./data/m_keys.pickle", "rb"))
+            return max_val, min_val, mean_val
+        else:
+            max_val = []; mean_val = []; min_val = []
+            for idx, user in users.iterrows():
+                u_max = []; u_mean = []; u_min = []
+                for a in range(len(self.articles)):
+                    values = []
+                    for i in range(len(user)):
+                        if user[i] == 1:
+                            values.append((keys[a][i]))
+                    u_max.append(np.max(values))
+                    u_mean.append(np.mean(values))
+                    u_min.append(np.min(values))
+                max_val.append(u_max)
+                mean_val.append(u_mean)
+                min_val.append(u_min)
+            pickle.dump([max_val, min_val, mean_val], open("./data/m_keys.pickle", "wb"))
         return max_val, min_val, mean_val
 
     def get_article_length(self):
@@ -194,7 +216,7 @@ class FeatureExtraction:
         - boolean array of category names occuring in article,
         - the article length
         boolean array of keywords occuring in article
-        :param users_db: pandas dataframe of users
+        :param users_db: pandas dataframe of user
         :return: array of size 4500, with all the features for each user
         """
         # calculate the cosine similarities between articles and categories based on user preferences
@@ -206,7 +228,8 @@ class FeatureExtraction:
         # check if the specified keywords appear in text
         lines = [line.rstrip('\n') for line in open("./data/keywords.txt")]
         keys = self.keyword_check(lines)
-
+        # extract the keyword appearances based on user preferences and save as max/mean/min
+        max_keys, min_keys, mean_keys = self.extract_user_keys(users_db, keys)
         features_list = []
         # for each user append the articles one by one with the corresponding feature values
         for idx, _ in users_db.iterrows():
@@ -216,11 +239,14 @@ class FeatureExtraction:
                     minimum_sim[idx][a],
                     mean_sim[idx][a],
                     article_lengths[a],
+                    max_keys[idx][a],
+                    min_keys[idx][a],
+                    mean_keys[idx][a],
                 ]
                 # use extend because otherwise we end up with a nested array which is not allowed in the case of
                 # dimension reduction methods
                 row.extend(check[a])
-                row.extend(keys[a])
+                # row.extend(keys[a])
                 # append the row to the overall feature list
                 features_list.append(row)
 
@@ -246,10 +272,10 @@ class FeatureExtraction:
                 skb.fit(features, labels)
                 print('Feature scores according to mutual information:\n', skb.scores_)
                 filtered_features = skb.transform(features)
+                print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
+                      filtered_features.shape)
+                print('Compare: \n', features[0], '\n', filtered_features[0])
                 pickle.dump(filtered_features, open("./data/features_filtered{}.pickle".format(n_features), "wb"))
-            print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
-                  filtered_features.shape)
-            print('Compare: \n', features[0], '\n', filtered_features[0])
 
         elif method == 'wrapper':
             print("Reducing the dimension via wrapper methods")
@@ -260,15 +286,22 @@ class FeatureExtraction:
                 rfe = RFE(model, n_features_to_select=n_features)
                 rfe.fit(features, labels)
                 # print('Features ranked according to RFE: \n', rfe.ranking_)
-                index_of_first = np.where(rfe.ranking_ == 1)[0][0]
-                index_of_second = np.where(rfe.ranking_ == 2)[0][0]
-                index_of_third = np.where(rfe.ranking_ == 3)[0][0]
-                print('Three most promising features: ', index_of_first, index_of_second, index_of_third)
+                idx1 = np.where(rfe.ranking_ == 1)[0][0]
+                idx2 = np.where(rfe.ranking_ == 2)[0][0]
+                idx3 = np.where(rfe.ranking_ == 3)[0][0]
+                idx4 = np.where(rfe.ranking_ == 4)[0][0]
+                idx5 = np.where(rfe.ranking_ == 5)[0][0]
+                idx6 = np.where(rfe.ranking_ == 6)[0][0]
+                idx7 = np.where(rfe.ranking_ == 7)[0][0]
+                idx8 = np.where(rfe.ranking_ == 8)[0][0]
+                idx9 = np.where(rfe.ranking_ == 9)[0][0]
+                idx10 = np.where(rfe.ranking_ == 10)[0][0]
+                print('Three most promising features: ', idx1, idx2, idx3, idx4, idx5, idx6, idx7, idx8, idx9, idx10)
                 filtered_features = rfe.transform(features)
+                print("Before transformation: ", len(features), 'x', len(features[0]), "After transformation: ",
+                      filtered_features.shape)
+                print('Compare: \n', features[0], '\n', filtered_features[0])
                 pickle.dump(filtered_features, open("./data/features_wrapped{}.pickle".format(n_features), "wb"))
-            print("Before transformation: ", len(features), 'x', len(features[0]), "After transformation: ",
-                  filtered_features.shape)
-            print('Compare: \n', features[0], '\n', filtered_features[0])
 
         elif method == 'embedded':
             print("Reducing the dimension via embedding methods")
@@ -280,10 +313,10 @@ class FeatureExtraction:
                 print('Feature importances of RF classifier: ', rf.feature_importances_)
                 sfm = SelectFromModel(rf, threshold=0.1, prefit=True)
                 filtered_features = sfm.transform(features)
+                print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
+                      filtered_features.shape)
+                print('Compare: \n', features[3000], '\n', filtered_features[3000])
                 pickle.dump(filtered_features, open("./data/features_embedded.pickle".format(n_features), "wb"))
-            print("Before transformation: ", len(features),'x', len(features[0]), "After transformation: ",
-                  filtered_features.shape)
-            print('Compare: \n', features[3000], '\n', filtered_features[3000])
 
         return filtered_features
 
