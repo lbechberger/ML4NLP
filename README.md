@@ -188,7 +188,7 @@ Another idea to extract features to use for the classifier is to compute the tf-
 
 
 
-## Session 9, 15.01.19
+## Session 10, 15.01.19
 
 In the past few weeks, we extracted the features from the dataset and reduced the dimensionality of the feature vector by applying filter selection methods. In order to extract features, we first calculated a number of measures for each article of the user's profile and for the article that should be classified - for training, this article is denoted in the dataset as a positive or negative examples for the corresponding user.
 
@@ -213,3 +213,80 @@ d. the average of the three lowest distances (except from 7., where it is the av
 All distances combined to a feature vector gives us 32 dimensions. However, it is likely that not all features are equally important for the classifier to correctly classify an article. In order to estimate which features help the classifier the most, we applied filter methods to the extracted features, namely sklearn.feature_selection.mutual_info_classif.
 The figure above shows the scores of all 32 features sorted by score. According to this, 14 features have a low mutual information value wherefore we assume that they would not play a big role in the classification process. For the next step of the machine learning research cycle, we use the reduced feature set of the remaining 18 features with more mutual information.
 This makes in total 32 features. Despite mentioned in the last documentation step, we did not replace words that are not in the googlenews-word2vec-embeddings, but ignored them.
+
+
+## Session 12, 29.01.19
+
+### Scores of classifiers
+
+As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
+When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers. 
+
+### Classifier selection
+
+We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters. Shame on the grid search.
+
+### Results
+
+In the following are scores of the classifiers for 700 samples with first the named one feature and then the 10 best features according their mutual information:
+
+* One feature:
+
+    * default parameters:
+     * kNN 0.6488294314381271
+     * MaxEnt 0.6488294314381271
+     * RF 0.5914396887159532
+     * SVM 0.6488294314381271
+     * MLP 0.6488294314381271
+
+
+    * Hyperparameter tuning:
+
+        K nearest neighbors
+        'n_neighbors': 2
+        'p': 1
+        Performance: 0.6488294314381271
+
+        Max entropy
+        'solver': 'newton-cg'
+        0.6488
+
+        Random forest
+        'max_depth': 260
+        'n_estimators': 6
+        Performance: 0.6731517509727627
+
+    * MLP:
+        'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'solver': 'adam'
+        Performance: 0.6488294314381271
+
+
+
+* 10 features:
+
+    * kNN 0.6488294314381271
+    * MaxEnt 0.6488294314381271
+    * RF 0.6731517509727627  !!!
+    * SVM 0.6488294314381271
+    * MLP 0.6488294314381271
+
+
+    * Hyperparameter tuning:
+
+     * K nearest neighbors:
+      * 'n_neighbors': 2, 'p': 1
+      * Performance: 0.6488294314381271
+
+     * Max Entropy:
+      * 'solver': 'newton-cg'
+      * Performance: 0.6488294314381271
+
+     * Random forest:
+      * 'max_depth': None
+        'max_features': 'sqrt'
+        'n_estimators': 67
+        Performance: 0.5928798026083891
+
+
+### Missing data
+Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like dbpedia-information) is not an issue. Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector falsifies the statement of the corresponding feature.
