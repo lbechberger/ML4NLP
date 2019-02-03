@@ -1,17 +1,13 @@
 import pandas as pd
 import os
+import math
 from generation_functions import *
 from feature_extraction import FeatureExtraction
 import warnings
 
-from sklearn.model_selection import KFold, GridSearchCV
+from sklearn.model_selection import KFold, GridSearchCV, train_test_split
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import LogisticRegression
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import LinearSVC
-from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import cohen_kappa_score, make_scorer
 
 warnings.filterwarnings("ignore")
@@ -43,28 +39,34 @@ features = f.get_features(users_db)
 Dimension Reduction
 Choose filter method here by uncommenting corresponding line. Might take longer if no pickle file is found
 """
-# filtered = f.reduce_dimension(features, labels, 10, "filter")
-filtered = f.reduce_dimension(features, labels, 10, "wrapper")
-# filtered = f.reduce_dimension(features, labels, 10, "embedded")
+filter_method = 'filter'
+# filter_method = 'wrapper'
 
-
+filtered = f.reduce_dimension(features, labels, 10, filter_method)
+# filtered = f.reduce_dimension(features, labels, 10, "wrapper")
+# print(np.any(np.isnan(filtered))) # check for NaN values
 # TODO: train classifier 10x and take mean for reliable result (necessary if already using k-split?)
-# ('MLP', MLPClassifier()),
+#     ('MLP', MLPClassifier()),
+#     ('NB', GaussianNB()),
+#     ('MaxEnt', LogisticRegression()),
+#     ('DT', DecisionTreeClassifier()),
+#     ('SVM', LinearSVC()),
+
 # set up classifiers
 classifiers = [
-    ('kNN', KNeighborsClassifier()),
-    ('NB', GaussianNB()),
-    ('MaxEnt', LogisticRegression()),
-    ('DT', DecisionTreeClassifier()),
+    ('kNN', KNeighborsClassifier(algorithm='auto')),
     ('RF', RandomForestClassifier()),
-    ('SVM', LinearSVC()),
 ]
 
 # split dataset into test and training data via k-fold
 # and train with model
 kf = KFold(n_splits=10, shuffle=True)
+parameter_grid_knn = {'n_neighbors': np.arange(1, 21), 'weights': ['uniform', 'distance'], 'p': [1, 1.5, 2]}
+parameter_grid_rf = {'n_estimators': np.arange(1, 100), 'bootstrap': ['True, False']}
+print("Dimension Reduction based on {} Methods. Optimisation via Grid Search".format(filter_method))
 for name, model in classifiers:
-    kappa = []
+    kappa_before = []; kappa_after = []
+    X_train, X_test, y_train, y_test = train_test_split(filtered, labels)
     for train_index, test_index in kf.split(filtered):
         X_train = []; y_train = []
         X_test = []; y_test = []
@@ -77,16 +79,15 @@ for name, model in classifiers:
 
         model.fit(X_train, y_train)
         predictions = model.predict(X_test)
-        kappa.append(cohen_kappa_score(y_test, predictions))
-        print(name, np.mean(kappa))
+        kappa_before.append(cohen_kappa_score(y_test, predictions))
 
-# # hyperparameter optimization
-# print('\nGRID SEARCH')
-# parameter_grid = {'n_neighbors': np.arange(1, 21), 'p': [1, 1.5, 2]}
-# grid_search = GridSearchCV(estimator=KNeighborsClassifier(),
-#                            param_grid=parameter_grid,
-#                            scoring=make_scorer(cohen_kappa_score))
-# grid_search.fit(X_train, y_train)
-# print('Best parameters:', grid_search.best_params_)
-# predictions = grid_search.predict(X_test)
-# print('Performance:', cohen_kappa_score(y_test, predictions))
+        # hyperparameter optimization
+        # depending on model, use different parameter grid
+        parameter_grid = parameter_grid_knn if name == 'kNN' else parameter_grid_rf
+        grid_search = GridSearchCV(estimator=model, param_grid=parameter_grid, scoring=make_scorer(cohen_kappa_score))
+        grid_search.fit(X_train, y_train)
+        print('Best parameters:', grid_search.best_params_)
+        predictions = grid_search.predict(X_test)
+        kappa_after.append(cohen_kappa_score(y_test, predictions))
+    print(name, "before grid search:", np.mean(kappa_before))
+    print(name, "after grid search:", np.mean(kappa_after))
