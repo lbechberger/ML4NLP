@@ -37,26 +37,22 @@ features = f.get_features(users_db)
 
 """
 Dimension Reduction
-Choose filter method here by uncommenting corresponding line. Might take longer if no pickle file is found
+Choose filter method here by uncommenting corresponding string. Might take longer if no pickle file is found
 """
-filter_method = 'filter'
-# filter_method = 'wrapper'
-
+filter_method = 'filter'  # 'wrapper'
 filtered = f.reduce_dimension(features, labels, 10, filter_method)
-# filtered = f.reduce_dimension(features, labels, 10, "wrapper")
-# print(np.any(np.isnan(filtered))) # check for NaN values
-# TODO: train classifier 10x and take mean for reliable result (necessary if already using k-split?)
-#     ('MLP', MLPClassifier()),
-#     ('NB', GaussianNB()),
-#     ('MaxEnt', LogisticRegression()),
-#     ('DT', DecisionTreeClassifier()),
-#     ('SVM', LinearSVC()),
+print("Contains NaN values: ", np.any(np.isnan(filtered)))  # check for NaN values
 
 # set up classifiers
 classifiers = [
     ('kNN', KNeighborsClassifier(algorithm='auto')),
     ('RF', RandomForestClassifier()),
 ]
+#     ('MLP', MLPClassifier()),
+#     ('NB', GaussianNB()),
+#     ('MaxEnt', LogisticRegression()),
+#     ('DT', DecisionTreeClassifier()),
+#     ('SVM', LinearSVC()),
 
 # split dataset into test and training data via k-fold
 # and train with model
@@ -64,6 +60,7 @@ kf = KFold(n_splits=10, shuffle=True)
 parameter_grid_knn = {'n_neighbors': np.arange(1, 21), 'weights': ['uniform', 'distance'], 'p': [1, 1.5, 2]}
 parameter_grid_rf = {'n_estimators': np.arange(1, 100), 'bootstrap': ['True, False']}
 print("Dimension Reduction based on {} Methods. Optimisation via Grid Search".format(filter_method))
+# TODO: train classifier 10x and take mean for reliable result (necessary if already using k-split?)
 for name, model in classifiers:
     kappa_before = []; kappa_after = []
     X_train, X_test, y_train, y_test = train_test_split(filtered, labels)
