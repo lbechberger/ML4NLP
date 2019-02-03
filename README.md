@@ -233,59 +233,75 @@ In the following are scores of the classifiers for 700 samples with first the na
 * One feature:
 
     * default parameters:
-     * kNN 0.6488294314381271
-     * MaxEnt 0.6488294314381271
-     * RF 0.5914396887159532
-     * SVM 0.6488294314381271
-     * MLP 0.6488294314381271
+      
+      **kNN** 0.6488294314381271  
+        
+      **MaxEnt** 0.6488294314381271  
+        
+      **RF** 0.5914396887159532  
+        
+      **SVM** 0.6488294314381271  
+        
+      **MLP** 0.6488294314381271  
 
 
     * Hyperparameter tuning:
 
-        K nearest neighbors
-        'n_neighbors': 2
-        'p': 1
-        Performance: 0.6488294314381271
+        **K nearest neighbors**  
+        'n_neighbors': 2  
+        'p': 1  
+        Performance: 0.6488294314381271  
 
-        Max entropy
-        'solver': 'newton-cg'
-        0.6488
+        **Max entropy**  
+        'solver': 'newton-cg'  
+        0.6488  
 
-        Random forest
-        'max_depth': 260
-        'n_estimators': 6
-        Performance: 0.6731517509727627
+        **Random forest**  
+        'max_depth': 260  
+        'n_estimators': 6  
+        Performance: 0.6731517509727627  
 
-    * MLP:
-        'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'solver': 'adam'
-        Performance: 0.6488294314381271
+        **MLP**  
+        'activation': 'tanh'  
+        'alpha': 0.05  
+        'hidden_layer_sizes': (100,)  
+        'learning_rate': 'constant'  
+        'solver': 'adam'  
+        Performance: 0.6488294314381271  
 
 
 
 * 10 features:
 
-    * kNN 0.6488294314381271
-    * MaxEnt 0.6488294314381271
-    * RF 0.6731517509727627  !!!
-    * SVM 0.6488294314381271
-    * MLP 0.6488294314381271
+    * default parameters:
+       
+      **kNN** 0.6488294314381271  
+       
+      **MaxEnt** 0.6488294314381271  
+     
+      **RF** 0.6731517509727627  
+       
+      **SVM** 0.6488294314381271  
+       
+      **MLP** 0.6488294314381271  
 
 
     * Hyperparameter tuning:
 
-     * K nearest neighbors:
-      * 'n_neighbors': 2, 'p': 1
-      * Performance: 0.6488294314381271
-
-     * Max Entropy:
-      * 'solver': 'newton-cg'
-      * Performance: 0.6488294314381271
-
-     * Random forest:
-      * 'max_depth': None
-        'max_features': 'sqrt'
-        'n_estimators': 67
-        Performance: 0.5928798026083891
+      **K nearest neighbors:**  
+       'n_neighbors': 2  
+       'p': 1  
+       Performance: 0.6488294314381271  
+  
+      **Max Entropy:**  
+       'solver': 'newton-cg'  
+       Performance: 0.6488294314381271  
+  
+      **Random forest:**  
+       'max_depth': None  
+        'max_features': 'sqrt'  
+        'n_estimators': 67  
+        Performance: 0.5928798026083891  
 
 
 ### Missing data
