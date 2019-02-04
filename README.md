@@ -274,13 +274,54 @@ The None-value was introduced by us for agents and patients that do not correspo
 The intuition behind this variable is that there might be an increased likelihood of agent-patient pairs to be of a certain named-entity-type constellation or that certain predicates (e.g. "say") take certain named-entity-types (e.g. Persons or GPE over organizations or none) with a higher likelihood.
 
 #### 9.2.2 Word-Net Similarity Measure
-The *wordnet similarity measure* computes the distance from one word sense to another word sense in a hierarchical structure like WordNet. WordNet is a lexical database for the English language.[1] It groups English words into sets of synonyms called synsets, provides short definitions and usage examples, and records a number of relations among these synonym sets or their members. In our case, we compute two different similarity measures called - Path similarity which computes shortest number of edges from one word sense to another word sense - in general, word senses which have a longer path distance are less similar than those with a very short path distance, e.g. man, dog versus man, tree (expectation is that man is more similar to dog than it is to tree) - and the other measure is Wu-Palmer metric where it weights the edges based on distance in the hierarchy - in some sense we can think of it as sort of edit distance, assigning type changing operations a higher cost the higher they are in the hierarchy - for example, jumping from inanimate to animate is a larger distance than jumping from say Rose to Lily. 
+The *wordnet similarity measure* computes the distance from one word sense to another word sense in a hierarchical structure like WordNet. WordNet is a lexical database for the English language.[1] It groups English words into sets of synonyms called synsets, provides short definitions and usage examples, and records a number of relations among these synonym sets or their members. In our case, we compute two different similarity measures called - Path similarity which computes shortest number of edges from one word sense to another word sense - in general, word senses which have a longer path distance are less similar than those with a very short path distance, e.g. man, dog versus man, tree (expectation is that man is more similar to dog than it is to tree) - and the other measure is Wu-Palmer metric where it weights the edges based on distance in the hierarchy - in some sense we can think of it as sort of edit distance, assigning type changing operations a higher cost the higher they are in the hierarchy - for example, jumping from inanimate to animate is a larger distance than jumping from say Rose to Lily.
 
 To calculate both these measures, we take an agent-patient pair, calculate the corresponding synsets for them and then compute these two measures for each pair of these synsets. The final value is the average of all these synset pairs for that agent-patient pair. The metrics are named as path_similarity and wn_similarity and have values between 0 and 1.
 
 The intuition behind this variable is that it can be used as a discriminating feature later for the classifier since related words(say for examle from the same category) will have small values while unrelated words(from the different categories) will have higher distances.
 
+- - - -
 
+## Chapter 10: Final Features
+After initially running all the complete dataset with all features through a selection of multiple classifiers, optimizing the process.
+
+### 10.1 Final Feature Subset
+We have decided on using the following features:
+- **Question**: A string that represents a question that the given triple is an answer for. <br />
+Example: "? - criticise - the findings"
+- **Agent**: The subject of the triple.<br />
+Example: "The Association of Zoos and Aquariums"
+- **Agent_NER**: The result of nltk NER for that agent. "None" for entities with no match in nltk.
+- **Agent_POS**: The part of speech the agent played in the source sentence. "None" if the agent was not referred to by name in the source sentence.
+- **Agent_RELPOS**: The relative position of the mention of the agent in the source sentence. "-1" if the agent was not referred to by name in the source sentence.
+- **Predicate**: The predicate of the triple.<br />
+Example: "criticise"
+- **Predicate_POS**: See Agent_POS.
+- **Predicate_RELPOS**: See Agent_Relpos.
+- **Patient**: The object of the triple.<br />
+Example: "the findings"
+- **Patient_NER**: See Agent_NER.
+- **Patient_POS**: See Agent_POS.
+- **Patient_RELPOS**: See Agent_Relpos.
+- **wn_similarity and path_similarity**: The similarities of the wordnets for agent and patient.
+
+
+### 10.2 Choice of Classifiers
+We have tried a few classifiers. Without tweaked hyperparameters, these were the base results:
+|Classifier             |Accuracy |Kohen's Kappa|
+|:-                     |-:       |-:           |
+|K-Nearest Neighbors    | 0.5745  | 0.1275      |
+| Logistic Regression   | 0.4353  | -0.1630     |
+| Decision Trees        |  0.6029 |  0.1833     |
+| Random Forrest        | 0.5850  | 0.1031      |
+These results will be updated as we tweak the hyperparameters. Moreover, we are currently discussing excluding wn_similarity and path_similarity. Any changes in performance due to this change will also be updated
+
+### 10.3 Imbalanced/Missing Data
+Data was relatively balanced(44% +ve vs 56% -ve) based on the negative examples generation approach. As for the missing data, they were removed since there were only 7,289 records containing NaNs.
+
+### 10.4 Hyperparameter Settings
+At the time of writing this documentation, exhaustive grid search has not concluded yet. Therefore, all the results discussed here are the result of random search. <br />
+*Unfortunately, we made a mistake when planning our hyperparameter search. We started with gridsearch, think that we had enough time to conclude it. Unfortunately, gridsearch is still running at the time of us writing this documentation. Moreover, we realized our mistake too late and switchted to Random Search only hours before the deadline for this upload. This approach hasn't yielded any usable results as of yet. We have notified the project supervisor about this and will update this documentation as new results roll around.*
 
 
 # References
