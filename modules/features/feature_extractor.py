@@ -1,8 +1,9 @@
 from pydoc import locate
 from typing import Sequence, Dict, List, Tuple, Any
 from abc import ABC, abstractmethod
-from statistics import mean, median
+from statistics import mean, median, variance, stdev
 import re
+
 
 class FeatureExtractor(ABC):
     def prepare(self, unique_articles):
@@ -10,7 +11,7 @@ class FeatureExtractor(ABC):
 
     @classmethod
     def get_num_features(cls):
-        return 4
+        return 6
 
     @abstractmethod
     def __call__(self, articles: List[Tuple[int, Any]], candidate: Tuple[int, Any]):
@@ -18,7 +19,9 @@ class FeatureExtractor(ABC):
 
     @classmethod
     def from_name(cls, name: str, arguments):
-        full_name = "modules.features.{}.{}".format(FeatureExtractor.string_to_snake_case(name), name)
+        full_name = "modules.features.{}.{}".format(
+            FeatureExtractor.string_to_snake_case(name), name
+        )
         feature_class = locate(full_name)
 
         if feature_class is None:
@@ -35,10 +38,17 @@ class FeatureExtractor(ABC):
 
     @classmethod
     def aggregate(cls, individual_scores):
-        return mean(individual_scores),  median(individual_scores), min(individual_scores), max(individual_scores)
+        return (
+            mean(individual_scores),
+            median(individual_scores),
+            min(individual_scores),
+            max(individual_scores),
+            variance(individual_scores),
+            stdev(individual_scores),
+        )
 
     @staticmethod
     def string_to_snake_case(input: str) -> str:
         # Adopted from https://stackoverflow.com/questions/1175208/elegant-python-function-to-convert-camelcase-to-snake-case
-        s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', input)
-        return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
+        s1 = re.sub("(.)([A-Z][a-z]+)", r"\1_\2", input)
+        return re.sub("([a-z0-9])([A-Z])", r"\1_\2", s1).lower()

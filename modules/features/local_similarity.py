@@ -8,6 +8,10 @@ from modules.features import FeatureExtractor
 
 
 class LocalSimilarity(FeatureExtractor):
+    def __init__(self, num_features=100, weighed=True):
+        self.num_features = num_features
+        self.weighted = weighed
+
     def __call__(self, articles, candidate):
         lemmatized_articles = [
             " ".join(
@@ -18,7 +22,9 @@ class LocalSimilarity(FeatureExtractor):
             for _, article in chain([candidate], articles)
         ]
 
-        vectorizer = TfidfVectorizer(lowercase=True, max_features=100, dtype=np.float32)
+        vectorizer = TfidfVectorizer(
+            lowercase=False, max_features=self.num_features, dtype=np.float32
+        )
         tf_idf_matrix = vectorizer.fit_transform(lemmatized_articles)
 
         candidate_tfidf = tf_idf_matrix[0].todense()
@@ -32,12 +38,17 @@ class LocalSimilarity(FeatureExtractor):
                 np.stack(
                     [
                         token.vector
+                        * (
+                            tf_idf_matrix[i, vectorizer.vocabulary_[token.lemma_]]
+                            if self.weighted
+                            else 1.0
+                        )
                         for token in article
                         if token.lemma_ in vectorizer.vocabulary_
                     ]
                 )
             )
-            for _, article in chain([candidate], articles)
+            for i, (_, article) in enumerate(chain([candidate], articles))
         ]
 
         vector_similarities = [
@@ -51,4 +62,4 @@ class LocalSimilarity(FeatureExtractor):
 
     @classmethod
     def get_num_features(cls):
-        return 8
+        return 2 * super().get_num_features()
