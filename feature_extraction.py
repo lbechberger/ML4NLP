@@ -143,6 +143,28 @@ class FeatureExtraction:
             pickle.dump([max_val, min_val, mean_val], open("./data/m_keys.pickle", "wb"))
         return max_val, min_val, mean_val
 
+    def extract_user_checks(self, users, check):
+        if os.path.isfile('./data/m_checks.pickle'):
+            max_val, min_val, mean_val = pickle.load(open("./data/m_checks.pickle", "rb"))
+            return max_val, min_val, mean_val
+        else:
+            max_val = []; mean_val = []; min_val = []
+            for idx, user in users.iterrows():
+                u_max = []; u_mean = []; u_min = []
+                for a in range(len(self.articles)):
+                    values = []
+                    for i in range(len(user)):
+                        if user[i] == 1:
+                            values.append((check[a][i]))
+                    u_max.append(np.max(values))
+                    u_mean.append(np.mean(values))
+                    u_min.append(np.min(values))
+                max_val.append(u_max)
+                mean_val.append(u_mean)
+                min_val.append(u_min)
+            pickle.dump([max_val, min_val, mean_val], open("./data/m_checks.pickle", "wb"))
+        return max_val, min_val, mean_val
+
     def get_article_length(self):
         """
         Calculates the length of each article
@@ -221,8 +243,9 @@ class FeatureExtraction:
         """
         # calculate the cosine similarities between articles and categories based on user preferences
         maximum_sim, minimum_sim, mean_sim = self.extract_user_similarities(users_db)
-        # check if the category names appear in text
+        # check if the category names appear in text and use appearances based on user preferences
         check = self.category_check()
+        # max_check, min_check, mean_check = self.extract_user_checks(users_db, check)
         # get the length of each article
         article_lengths = self.get_article_length()
         # check if the specified keywords appear in text
@@ -242,11 +265,13 @@ class FeatureExtraction:
                     max_keys[idx][a],
                     min_keys[idx][a],
                     mean_keys[idx][a],
+                    # max_check[idx][a],
+                    # min_check[idx][a],
+                    # mean_check[idx][a],
                 ]
                 # use extend because otherwise we end up with a nested array which is not allowed in the case of
                 # dimension reduction methods
                 row.extend(check[a])
-                # row.extend(keys[a])
                 # append the row to the overall feature list
                 features_list.append(row)
 
@@ -264,7 +289,6 @@ class FeatureExtraction:
         :return: 
         """
         if method == 'filter':
-            print("Reducing the dimension via filter methods")
             if os.path.isfile('./data/features_filtered{}.pickle'.format(n_features)):
                 filtered_features = pickle.load(open("./data/features_filtered{}.pickle".format(n_features), "rb"))
             else:
@@ -278,14 +302,12 @@ class FeatureExtraction:
                 pickle.dump(filtered_features, open("./data/features_filtered{}.pickle".format(n_features), "wb"))
 
         elif method == 'wrapper':
-            print("Reducing the dimension via wrapper methods")
             if os.path.isfile('./data/features_wrapped{}.pickle'.format(n_features)):
                 filtered_features = pickle.load(open("./data/features_wrapped{}.pickle".format(n_features), "rb"))
             else:
                 model = sklearn.linear_model.LogisticRegression(random_state=42)
                 rfe = RFE(model, n_features_to_select=n_features)
                 rfe.fit(features, labels)
-                # print('Features ranked according to RFE: \n', rfe.ranking_)
                 idx1 = np.where(rfe.ranking_ == 1)[0][0]
                 idx2 = np.where(rfe.ranking_ == 2)[0][0]
                 idx3 = np.where(rfe.ranking_ == 3)[0][0]
@@ -296,7 +318,7 @@ class FeatureExtraction:
                 idx8 = np.where(rfe.ranking_ == 8)[0][0]
                 idx9 = np.where(rfe.ranking_ == 9)[0][0]
                 idx10 = np.where(rfe.ranking_ == 10)[0][0]
-                print('Three most promising features: ', idx1, idx2, idx3, idx4, idx5, idx6, idx7, idx8, idx9, idx10)
+                print('Most promising features: ', idx1, idx2, idx3, idx4, idx5, idx6, idx7, idx8, idx9, idx10)
                 filtered_features = rfe.transform(features)
                 print("Before transformation: ", len(features), 'x', len(features[0]), "After transformation: ",
                       filtered_features.shape)
@@ -304,7 +326,6 @@ class FeatureExtraction:
                 pickle.dump(filtered_features, open("./data/features_wrapped{}.pickle".format(n_features), "wb"))
 
         elif method == 'embedded':
-            print("Reducing the dimension via embedding methods")
             if os.path.isfile('./data/features_embedded.pickle'.format(n_features)):
                 filtered_features = pickle.load(open("./data/features_embedded.pickle".format(n_features), "rb"))
             else:
