@@ -286,6 +286,99 @@ For a fifth feature, we have not yet decided if we want to implement it. It woul
 As for feature 1, if we will implement this feature, we will filter the feature set, so that we pick the maximum, minimum and mean of the features that represent the similarities of the keywords representing the categories the user liked. The resulting feature will therefore look something like the following array: 
 [0.8, 0.2, 0.5]
 
+# Documentation Part 8: 
+
+## Training the Classifier:
+
+### Dimension Reduction:
+We have implemented filter and wrapper methods to find the most meaningful features in our feature set, but since the wrapper methods took about 4 hours to get the features for only one classifier, we decided to stick with the filter methods for now. We therefore used the 10 best features, the filter method gave us back. 
+
+### Missing Data:
+We have only one missing data point, which is the word2vec of the word “wackynews”. As described above, there is no entry for “wackynews” in word2vec, which is why we decided to use the mean of the word2vec’s of “wacky” and “news”. In the case where we checked whether the category name is mentioned in an article, we did not check for “wackynews”, but for “wacky”, which resulted in 0 cases of the word present in an article. We did not check whether the word “news” appeared, because we do not expect the word to primarily appear in relation to articles of the category “wackynews”. 
+
+### Data imbalance:
+We have slightly more negative examples than positive ones (about 10,000 more negative than positive examples out of a total 450,000 examples), because of the subcategory checks (see earlier documentation) but since we did not think that this impedes our performance, we did not do anything about it.
+
+### Classifiers: 
+We trained the classic classifiers (K-Nearest Neighbor, Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Support Vector Machine) on the feature subset extracted through the filter method. We calculated Cohen’s Kappa for comparison of the performance. We first tried a normal test-train split and compared it with a 10-fold split. The 10-split performed better, so we decided to use this method for further training. Since we use 10-split, we took the mean of all 10 Cohen’s Kappas for better comparison of the classifier performances. Because we are especially interested in how good our classifiers are in detecting relevant articles (i.e. an article the user will like), we also tested precision, i.e. the fraction of relevant instances among the retrieved instances and recall, i.e. the fraction of relevant instances that have been retrieved over the total amount of relevant instances. The reason why SVM does not work is that the data is not linearly separable. 
+In addition, we found that the performance increased a bit when instead of including the the number of keywords in the articles (Feature 3), we included only the mean, minimum and maximum number of keywords in the feature set. The results were the following:
+
+ 
+####Results for 10-fold split:
+
+|                |kNN    |NB     | LR   |DT     |RF    |SVM   |
+|----------------|-------|-------|------|-------|------|-------|
+|Cohen’s Kappa   |0.52   |0.14   |0.11  |0.41   |0.50  |0.01   | 
+|Precision       |0.72   |0.55   |0.58  |0.67   |0.78  |0.67   | 
+|Recall          |0.69   |0.26   |0.18  |0.69   |0.58  |0.69   | 
+                 
+### Hyperparameter tuning: 
+We performed a grid-search for hyperparameter tuning on the classifiers k-Nearest Neighbors and Random Forest, because they performed best. 
+The hyperparameters we wanted to include in the grid search for kNN were the following: 
+number of neighbors to use (n_neighbors), the power parameter for the Minkowski metric (p), and the weight function used in prediction (weights). For n_neighbors, we were planning to tested values between 1 and 21. For p, we wanted to test the available values 1 (equivalent to using manhattan_distance (l1)), 2 (equivalent to using euclidean_distance (l2)) and arbitrary (using minkowski_distance (l_p)). For weights we wanted to test the possible values ‘uniform’, where all points in each neighborhood are weighted equally and ‘distance’, where closer neighbours of a query point will have a greater influence than neighbours which are further away (see https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html). 
+
+The hyperparameters we wanted to include in the grid search for RF were the following:
+number of estimators (n_estimator), which refers to the number of trees in the forest, the function to measure the quality of a split (criterion), the minimum number of samples required to be at a leaf node (min_samples_leaf), the minimum number of samples required to split an internal node (min_sample_split), the maximum depth of a tree (max_depth), the maximum number of leaf nodes (max_leaf_nodes), bootstrap, which determines whether bootstrap samples are used when building trees and warm start (warm_start), which defined whether to reuse the solution of the previous call to fit and add more estimators to the ensemble or just fit a whole forest. For the n_estimator, the min_samples_leaf, the min_sample_split, the mas_depth and the max_leaf_nodes, we wanted to test the values 8, 16, 32, 64 and 128, because powers of 2 mostly work better than other numbers, for criterion, the possible values “gini” for the Gini impurity and “entropy” for the information gain, for bootstrap and warm_start, we wanted to test the available parameters True and False (see https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html). 
+
+We found that the grid-search took way too long (6 hours for 1 of 10 classifiers) for so many parameters, which forced us to reduce the parameters to n_neighbors, p and weights for kNN and criterion, n_estimator and warm_start for Random Forest. The results of the grid-search are displayed below. 
+
+####Optimal Hyperparameters:
+#####For k-Nearest Neighbors:
+
+n_neighbors: 8
+
+p: 1
+
+weights: distance
+
+#####For Random Forest:
+
+criterion: entropy
+
+n_estimator: 128
+
+warm_start: True
+
+ 
+####Classifier performance with optimized hyperparameters: 
+
+As displayed in the following table, the performance did not increase very much with the use of the optimized hyperparameters.
+
+|                                           |kNN   |RF    | 
+|------------------------------------|--------|--------|
+|Cohen’s Kappa                   |0.55  |0.96   |  
+|Precision                             |0.73  |0.98     | 
+|Recall                                  |0.71  |0.96      | 
+
+In our first try for RF, something must have gone wong, because we achieved the values stated above, but had no misclassifications after the first split. 
+We figured that warm start did not work very well in combination with the other two parameters, which is why we tested RF with all hyperparameters set to default and warm start to True. Turns out that this setting leads to very good results over 90%, while still containing false positives and false negatives.
+
+|                                           |RF     | 
+|------------------------------------|--------|
+|Cohen’s Kappa                   |0.93  | 
+|Precision                             |0.97  |
+|Recall                                  |0.93  | 
+
+
+###Further Explorations:
+
+1) We tried to change Feature 2, so that we gave the classifier only the minimum, maximum and mean number of category-name mentions in the according article. This turned out not to improve the performance, which is why we disregarded the approach again.  
+
+|                                           |kNN   |RF    | 
+|------------------------------------|--------|--------|
+|Cohen’s Kappa                   |0.53  |0.44   |  
+|Precision                             |0.72  |0.74   | 
+|Recall                                  |0.69  |0.53   | 
+
+ 
+2) We have tested the performances of the classifier when giving it only the 5 best features obtained with the filter method instead of the 10 best. The performance dropped a bit (1-5%), but training was significantly faster.
+
+|              |kNN   |RF     | 
+|--------------|------|-------|
+|Cohen’s Kappa |0.53  |0.54   |  
+|Precision     |0.73  |0.77   | 
+|Recall        |0.69  |0.64   | 
+
 
 ## Sources: 
 [1] Gopidi, S. T. R. (2015). Automatic User Profile Construction for a Personalized News Recommender System Using Twitter.
