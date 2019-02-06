@@ -108,15 +108,15 @@ class Features:
             # Fill the feature vector
             feature_index = 0
             for extractor_id, extractor in enumerate(feature_extractors):
+                num_features = extractor.get_num_features()
                 feature_vectors[
                     representation_id,
-                    feature_index : feature_index + extractor.get_num_features(),
+                    feature_index:(feature_index + num_features),
                 ] = extractor(
                     [(i, articles_parsed[i]) for i in ids_articles],
                     (id_candidate, articles_parsed[id_candidate]),
                 )
-
-                feature_index += extractor.get_num_features()
+                feature_index += num_features
 
         return feature_vectors, labels
 

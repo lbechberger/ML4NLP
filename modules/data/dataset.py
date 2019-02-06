@@ -2,12 +2,13 @@ import random
 import pickle
 import json
 import random
-from collections import UserDict
+from collections import UserDict, OrderedDict
 from typing import Dict, Set
 from pathlib import Path
 
 import pandas as pd
 from sklearn.utils import shuffle
+from sklearn.model_selection import train_test_split
 import numpy as np
 
 from . import User, Representation
@@ -20,7 +21,7 @@ class DataSet(UserDict):
         ):
             self.user_params = user_params
             self.num_user = num_user
-            self.splits = splits
+            self.splits = OrderedDict(splits)
 
         def generate(self, interests: Dict[str, Set["Article"]], seed: int = None):
             """ Generates a dataset from the specified parameters. """
@@ -59,20 +60,26 @@ class DataSet(UserDict):
                 columns=column_names,
             )
 
-            # Shuffle the data
-            data = shuffle(data)
+            # Generate the data in a stratified way
+            complete_length = len(data)
+            results = OrderedDict()
+            remaining_data = data
+            for i, (key, value) in enumerate(self.splits.items()):
+                if i + 1 == len(self.splits):
+                    results[key] = remaining_data
+                    break
+                remaining_data, results[key] = train_test_split(
+                    remaining_data,
+                    test_size=int(value * complete_length),
+                    stratify=remaining_data["label"],
+                )
 
-            # Generate the splits
-            index = 0
-            result = {}
-            for key, value in self.splits.items():
-                size = int(len(data) * value)
-                result[key] = data.iloc[
-                    index : int(index + len(data) * value)
-                ].reset_index(drop=True)
-                index += size
+            # Reset indeces and print overview
+            for key, value in results.items():
+                value.reset_index(drop=True, inplace=True)
+                print("{} ({} elements):\n{}\n".format(key, len(value), value['label'].value_counts()))
 
-            return DataSet(dataframes=result, hyperparameters=self)
+            return DataSet(dataframes=results, hyperparameters=self)
 
         @staticmethod
         def from_json(path: str) -> "Parameter":
