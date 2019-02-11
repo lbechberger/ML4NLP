@@ -94,7 +94,6 @@ if __name__ == "__main__":
                     GaussianNB(),
                     QuadraticDiscriminantAnalysis(),
                     KNeighborsClassifier(3),
-                    GaussianProcessClassifier(),
                     SVC(gamma="auto"),
                 ],
             )
