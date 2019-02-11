@@ -76,6 +76,7 @@ class Features:
         unique_articles = pd.unique(
             dataset[article_columns + ["candidate"]].values.ravel("K")
         )
+        assert all(len(article.text) > 0 for article in unique_articles), "Articles without text found!"
 
         # Parse all texts, create a mapping and prepare the feature extractors
         articles_parsed = list(

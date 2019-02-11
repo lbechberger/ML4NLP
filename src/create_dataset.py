@@ -43,5 +43,6 @@ def load_categories(
         with open(cache_file, "rb") as file:
             articles = pickle.load(file)
 
+    articles = [x for x in articles if len(x.text) > 0]
     categories = articles_to_categories(articles)
     return Category.filter_categories(categories, min_articles)
