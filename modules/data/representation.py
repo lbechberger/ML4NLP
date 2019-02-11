@@ -1,5 +1,5 @@
 import random
-from typing import Dict, Set, List, Generator
+from typing import Dict, Set, List, Iterator, Tuple
 
 
 class Representation:
@@ -18,7 +18,7 @@ class Representation:
             self,
             interests: Dict[str, Set["Article"]],
             user_interests: Dict[str, Set["Article"]],
-        ):
+        ) -> "Representation":
             interesting_category = [
                 random.sample(
                     interests[interest],
@@ -33,9 +33,9 @@ class Representation:
 
             # Generate positive samples
             for interesting_article in interesting_category:
-                read_articles.extend(interesting_article[self.num_positive_samples :])
+                read_articles.extend(interesting_article[self.num_positive_samples:])
                 positive_samples.extend(
-                    interesting_article[: self.num_positive_samples]
+                    interesting_article[:self.num_positive_samples]
                 )
 
             # Generate negative samples
@@ -71,7 +71,7 @@ class Representation:
             )
 
     def __init__(
-        self, articles: List["Article"], positive_samples: int, negative_samples: int
+        self, articles: List["Article"], positive_samples: "Article", negative_samples: "Article"
     ):
         self.articles = articles
         self.positive_samples = positive_samples
@@ -82,7 +82,7 @@ class Representation:
             self.articles, self.positive_samples, self.negative_samples
         )
 
-    def rows(self) -> Generator[List["Article"], "Article", bool]:
+    def rows(self): # -> Iterator[Tuple[List["Article"], "Article", bool]]:
         """ Returns all the different inputs to the machine learning algorithm. """
 
         for positive_sample in self.positive_samples:
