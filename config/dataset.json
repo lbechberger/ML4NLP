@@ -3,12 +3,12 @@
         "representation": {
             "articles_per_interest": 3,
             "positive_samples": 2,
-            "negative_samples": 2
+            "negative_samples": 4
         },
         "representations": 2,
         "interest": 2
     },
-    "users": 100,
+    "users": 1000,
     "splits": {
         "training": 0.8,
         "validation": 0.1,
