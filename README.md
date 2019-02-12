@@ -282,6 +282,24 @@ On the validation data set, the Random Forest Classifier performed almost equal 
 ![BoxPlotPerformance](documentation/BoxPlotPerformance.png)
 Especially in considering an algorithm for productinarization, the best performance from a given classifier may not be the most important factor of influence. Instead, it may be beneficial to visualize the range of the collected performances to obtain an overview regarding the stability of the classification process. A quick look on the generated boxplots already allows one statement: The best result, visualized before, was in no case an actual outlier. Beside this reassuring observation, some rather interesting consideration comes into mind. Unlike one may expect due to its distant-dependent nature, the K-Neighbours algorithm was at least influenced by hyperparameter optimization. Beside one outlier, its performance only differs by roughly 2.5%. The SVC performed almost as good as the tree-based classifiers. While the best result was lower than the latter, its median does not differ considerably from the results of them. For choosing our final estimator, another avantage of the Random forest comes into play over the Extra Tree Classifier: Its training, probably due to the missing random factor, appeared at least slightly more stable and not as dependent on the choice of hyperparameter.
 
+After these considerations, we applied the best pipeline, a Random Forest Classifier with 64 trees fed with standardized input, on the test dataset.
+
+|   | T   | F   |
+|---|-----|-----|
+| T | 693 | 107 |
+| F | 172 | 628 |
+
+Concluding from this confusion matrix, we gain the following metrics for comparing them towards our baseline:
+
+| Metric           | Result |
+|------------------|--------|
+| Accuracy         | 0.8256 |
+| False Alarm Rate | 0.1456 |
+| Precision        | 0.8663 |
+
+Clearly, we could show that these results are clearly better than both of our baselines. Especially the high precision of 86.6% shows the appropriateness of our model.
+Future research might deal with further experiments with the pipeline. Setting the number of articles per user representation might, i.e., a promising way of improving the results further. Nevertheless, already in the current state, the system might be quite usable for recommending articles out of interest to the user.
+
 ### Citations
 Aggarwal. (2016). Recommender Systems: The Textbook. Springer
 
