@@ -51,20 +51,6 @@ def _generate_transformer_versions(transformer, **kwargs):
         yield transformer(**arguments)
 
 
-def _visualize_result(results: pd.DataFrame):
-    best_results = OrderedDict()
-    for row in results[["param_classifier", "split0_test_score"]].itertuples():
-        name = type(row.param_classifier).__name__
-        if name not in best_results:
-            best_results[name] = row.split0_test_score
-
-    plt.barh(range(len(best_results)), list(best_results.values()), tick_label=list(best_results.keys()))
-    plt.xlim(0.5, 1.0)
-    plt.title("Best performance by classifier on validation set")
-    plt.xlabel("F1-score")
-    plt.show()
-
-
 if __name__ == "__main__":
     NUM_FEATURES = [5, 10, 15, 20]
 
@@ -121,5 +107,5 @@ if __name__ == "__main__":
     results.sort_values("rank_test_score", inplace=True, ascending=True)
     results.to_csv("results.csv", "\t", index=False)
 
-    _visualize_result(results)
+    print("Results on test set:")
     print(confusion_matrix(y_test, grid.predict(X_test)))
