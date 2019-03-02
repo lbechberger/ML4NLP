@@ -201,28 +201,28 @@ As baselines we are planning to use *always true, always false, 50-50, label fre
 
 ### Features
 
-When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec1 word embeddings instead. This should be justifiable becauses the GoogleNews word2vec has also been trained on news articles.(was zu unseen words schreiben ??) Eventually(??), the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in Handouts_Session_8 (?? vielleicht echte Quelle angeben) , the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. Articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
+When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec word embeddings instead. This should be justifiable becauses the GoogleNews word2vec has also been trained on news articles.(was zu unseen words schreiben ??) Eventually(??), the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in Handouts_Session_8 (?? vielleicht echte Quelle angeben) , the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. Articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
 Another idea to extract features to use for the classifier is to compute the tf-idf scores for all words in the article to be classified and use the 5 (or 10) words with the highest tf-idf value. When aiming to figure out if a new article is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum would be small for an uninteresting article. ?? bezieht sich das auf was anderes?
 
 In order to extract the feature vectors, we first calculated a number of measures for each article of the user's profile and for the article that should be classified - for training, this article is denoted in the dataset as a positive or negative examples for the corresponding user. 
 
 The vector consists of the following measures:
-    1. a weighted sum of the word embedding vectors of all words in the article - they are weighted according to their tf-idf scores 
-    2. an unweighted sum of the word embedding vectors of all words in the article
-    3. the sum of the five words with the highest tf-idf scores (kommentar zu unseen words ?? )  
-    4. the weighted sum of the word embedding vectors of the five words with the highest tf-idf scores with tf-idf scores as weights 
-    5 and 6. the same as 3 and 4, but with ten words 
-    
-    Apart from computing the word vectors, we did the following: 
-    5. selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles 
-    6. counting the number of characters in the article 
+1. a weighted sum of the word embedding vectors of all words in the article - they are weighted according to their tf-idf scores 
+2. an unweighted sum of the word embedding vectors of all words in the article
+3. the sum of the five words with the highest tf-idf scores (kommentar zu unseen words ?? )  
+4. the weighted sum of the word embedding vectors of the five words with the highest tf-idf scores with tf-idf scores as weights 
+5 and 6. the same as 3 and 4, but with ten words 
+Apart from computing the word vectors, we did the following: 
+7. selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles 
+8. counting the number of characters in the article 
 
 For all of these vectors, we calculated four cosine distances: 
 
-a. the minimum distance to the vector of the new article to the vectors articles in the profile 
-b. the maximum distance to the vector of the new article to the vectors articles in the profile 
-c. the mean distance to the vector of the new article to the vectors articles in the profile 
-d. the average of the three lowest distances (except from 7., where it is the average of the three highest) 
+a. the minimum distance to the vector of the new article to the vectors articles in the profile  
+b. the maximum distance to the vector of the new article to the vectors articles in the profile  
+c. the mean distance to the vector of the new article to the vectors articles in the profile  
+d. the average of the three lowest distances (except from 7., where it is the average of the three highest)  
+
 
 ![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png)
 
