@@ -30,15 +30,21 @@ def show_best(data: pd.DataFrame):
     plt.xlabel("F1-score")
     plt.show()
 
-#%%
 
-results = pd.read_csv(PATH_ROOT / "results.csv", sep="\t")
-results = results[["param_classifier", "mean_test_score"]].rename(
-    columns={"param_classifier": "Classifier", "mean_test_score": "F1 score"}
-)
-results["Classifier"] = results["Classifier"].apply(
-    lambda classifier: classifier[: classifier.find("(")]
-)
+if __name__ == "__main__":
+    # Load the results from the CSV file
+    results = pd.read_csv(PATH_ROOT / "results.csv", sep="\t")
 
-show_best(results)
-show_boxplot(results)
+    # Rename the colums of interest
+    results = results.rename(
+        columns={"param_classifier": "Classifier", "mean_test_score": "F1 score"}
+    )
+
+    # Remove unecessary details of classifier.
+    results["Classifier"] = results["Classifier"].apply(
+        lambda classifier: classifier[: classifier.find("(")]
+    )
+
+    # visualize the result
+    show_best(results)
+    show_boxplot(results)

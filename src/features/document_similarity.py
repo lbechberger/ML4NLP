@@ -1,4 +1,4 @@
-from modules.features import FeatureExtractor
+from src.features import FeatureExtractor
 
 
 class DocumentSimilarity(FeatureExtractor):

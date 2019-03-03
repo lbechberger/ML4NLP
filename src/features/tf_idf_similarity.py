@@ -2,7 +2,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.spatial.distance import cosine
 import numpy as np
 
-from modules.features import FeatureExtractor
+from src.features import FeatureExtractor
 
 
 class TfIdfSimilarity(FeatureExtractor):

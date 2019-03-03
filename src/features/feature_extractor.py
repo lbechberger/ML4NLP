@@ -19,7 +19,7 @@ class FeatureExtractor(ABC):
 
     @classmethod
     def from_name(cls, name: str, arguments):
-        full_name = "modules.features.{}.{}".format(
+        full_name = "src.features.{}.{}".format(
             FeatureExtractor.string_to_snake_case(name), name
         )
         feature_class = locate(full_name)
