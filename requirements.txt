@@ -4,7 +4,6 @@ pandas
 matplotlib
 seaborn
 wordcloud
-jupyter
 scikit-learn
 beautifulsoup4
 spacy
