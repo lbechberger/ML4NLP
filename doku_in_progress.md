@@ -217,12 +217,12 @@ Apart from computing the GoogleNews word2vec word vectors, we did the following:
 7\. selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles  
 8\. counting the number of characters in the article  
 
-For all of these vectors, we calculated four cosine distances: 
+For all of these vectors, we calculated four cosine similarities: 
 
-a. the minimum distance to the vector of the new article to the vectors articles in the profile  
-b. the maximum distance to the vector of the new article to the vectors articles in the profile  
-c. the mean distance to the vector of the new article to the vectors articles in the profile  
-d. the average of the three lowest distances (except from 7., where it is the average of the three highest)  
+a. the minimum cosine similarity to the vector of the new article to the vectors articles in the profile  
+b. the maximum cosine similarity to the vector of the new article to the vectors articles in the profile  
+c. the mean cosine similarity to the vector of the new article to the vectors articles in the profile  
+d. the average of the three lowest cosine similarities (except from 7., where it is the average of the three highest)  
 
 
 ![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png)
@@ -237,7 +237,17 @@ Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClass
 The two feature selection methods result in two differently ordered ratings of the importance of the features. However, when one choses to use the five most important features, both methods return the same set of features, namely the following:
 
 
-?? Schreiben, welche fünf wir genommen haben
+* The maximum cosine similarity between the weighted sums of the word embedding vectors of all words of the profile articles and the one of the new article.
+
+* The maximum cosine similarity between the unweighted sums of the word embedding vectors of all words of the profile articles and the one of the new article.
+
+* The maximum cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
+
+* The maximum cosine similarity between the weighted (by tf-idf scores) sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
+
+* The maximum sum of tf-idf scores, after searching each profile article for the five words from the new article that have the highest tf-idf score and summing up the tf-idf scores of these five words for each profile article separately.
+
+As one can see, the filter and embedded feature selection methods tend to recognize maximum cosine similarities as important features, rather than minimum or mean cosine similarities.
 
 ?? Schreiben, wieso nur fünf
 
