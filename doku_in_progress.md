@@ -195,10 +195,6 @@ As baselines we are planning to use *always true, always false, 50-50, label fre
 
 
 
-## Session 7, 11.12.18
-
-
-
 ### Features
 
 When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec (link??) word embeddings instead. This should be justifiable becauses the GoogleNews word2vec has also been trained on news articles.(was zu unseen words schreiben ??) Eventually(??), the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in Handouts_Session_8 (?? vielleicht echte Quelle angeben) , the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. Articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
@@ -251,8 +247,6 @@ As one can see, the filter and embedded feature selection methods tend to recogn
 
 ?? Schreiben, wieso nur fünf
 
-
-## Session 12, 29.01.19
 
 ### Scores of classifiers (Dimensionality reduction???)
 
@@ -344,82 +338,6 @@ In the following are scores of the classifiers for 700 samples with first the na
 ### Missing data
 Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles) (heh??), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like dbpedia-information) is not an issue.
 Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector weakens the informative value of the corresponding feature and might lead to falsification of the feature itself.
-
-
-## Scores of classifiers
-
-As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
-When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers. 
-
-## Classifier selection
-
-We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters. Shame on the grid search.
-
-## Results
-
-In the following are scores of the classifiers for 700 samples with first the named one feature and then the 10 best features according their mutual information:
-
-One feature:
-
-default parameters:
-kNN 0.6488294314381271
-MaxEnt 0.6488294314381271
-RF 0.5914396887159532
-SVM 0.6488294314381271
-MLP 0.6488294314381271
-
-
-Hyperparameter tuning:
-
-K nearest neighbors
-'n_neighbors': 2
-    'p': 1
-Performance: 0.6488294314381271
-
-Max entropy
-'solver': 'newton-cg'
-0.6488
-
-Random forest
-'max_depth': 260
-'n_estimators': 6
-Performance: 0.6731517509727627
-
-MLP:
-'activation': 'tanh', 'alpha': 0.05, 'hidden_layer_sizes': (100,), 'learning_rate': 'constant', 'solver': 'adam'
-Performance: 0.6488294314381271
-
-
-
-10 features:
-
-kNN 0.6488294314381271
-MaxEnt 0.6488294314381271
-RF 0.6731517509727627  !!!
-SVM 0.6488294314381271
-MLP 0.6488294314381271
-
-
-Hyperparameter tuning:
-
-K nearest neighbors:
-'n_neighbors': 2, 'p': 1
-Performance: 0.6488294314381271
-
-Max Entropy:
-'solver': 'newton-cg'
-Performance: 0.6488294314381271
-
-Random forest:
-'max_depth': None
-'max_features': 'sqrt'
-'n_estimators': 67
-Performance: 0.5928798026083891
-
-
-## Missing data
-Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like dbpedia-information) is not an issue. Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector falsifies the statement of the corresponding feature.
-
 
 
 ## Train & Test with balanced data
