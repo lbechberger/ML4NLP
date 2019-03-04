@@ -333,6 +333,49 @@ In the following are scores of the classifiers for 700 samples with first the na
         'max_features': 'sqrt'  
         'n_estimators': 67  
         Performance: 0.5928798026083891  
+        
+* five features:
+
+    * default parameters:
+       
+      **kNN** 0.6488294314381271  
+      
+      **MaxEnt** 0.6488294314381271  
+      
+      **RF** 0.6446032342986086  
+      
+      **SVM** 0.6488294314381271  
+      
+      **MLP** 0.6488294314381271
+      
+
+
+    * Hyperparameter tuning:
+
+      **K nearest neighbors:**  
+       'n_neighbors': 2  
+       'p': 1.5  
+       Performance: 0.6488294314381271  
+  
+      **Max Entropy:**  
+       'solver': 'newton-cg'  
+       Performance: 0.6488294314381271  
+  
+      **Random forest:**  
+       'bootstrap': True  
+       'max_depth': 10  
+       'max_features': 'auto'  
+       'n_estimators': 50  
+       'min_samples_split`: 5  
+       Performance: 0.6446032342986086  
+       
+       **MLP**  
+        'activation': 'tanh'  
+        'alpha': 0.0001  
+        'hidden_layer_sizes': (50,50,50)  
+        'learning_rate': 'constant'  
+        'solver': 'adam'  
+        Performance: 0.6446032342986086 
 
 
 ### Missing data
