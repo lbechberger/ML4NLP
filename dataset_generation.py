@@ -13,10 +13,8 @@ import pickle
 
 # creates a list of articles that are not in listOfInterests
 def getNegativeExamples(listOfInterests,numberOfExamples,dic):
-    #dic = ks.create_category_articles_dictionary()
     
     alreadyChosen = []
-    
 
     all_articles =  [item for sublist in dic.values() for item in sublist]
     
@@ -30,17 +28,14 @@ def getNegativeExamples(listOfInterests,numberOfExamples,dic):
 # sorts a dictionary by the length of the list of articles of the key category
 def count_and_sort(dic):
 
-    # get subcategory-articles matching
-    #dic = ks.create_category_articles_dictionary()
-
-    #length of 
     category_lengths=[]
 
+    # append the lenghts of the categories to a list
     for key in dic:
         category_lengths.append(len(dic[key]))
 
-    #for i in sorted(cat_lens
-
+        # creates tuples of the lengths and the categories, sorts them by length and returns a list of the sorted lengths and the categories
+        # sorted by the number of entries. 
     sorted_lengths, sorted_categories = zip(*sorted(zip(category_lengths, dic.keys())))
     for i, element in enumerate(sorted_lengths):
         print(sorted_lengths[i],sorted_categories[i])
@@ -118,12 +113,7 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
             dates_andWikinewsie_list.append(key)
     for entry in dates_andWikinewsie_list:
         del (dic[entry])   
-        
-    
-    
-    #count_and_sort(dic)
-    #all_articles = [item for sublist in dic.values() for item in sublist]
-    #print(len(all_articles))
+   
 
     # computes the weights for each category on the probability distribution (categories with more articles get higher chance)
     normalization_factor = 0
@@ -146,7 +136,6 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
             print(user_index)
         userProfile = []
         userPositives = []
-        #userNegatives = []
 
         # one user
             
@@ -167,10 +156,6 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
 
 dataSet = generate_dataset(250,3,5,2,32*2*3)
 
-#print(dataSet)
-#with open("dataset.csv","w+") as my_csv:
-#    csvWriter = csv.writer(my_csv,delimiter=' ')
-#    csvWriter.writerows(dataSet)
-    
+# save dataset
 with open('dataset.pickle','wb') as f:
     pickle.dump(dataSet,f)
