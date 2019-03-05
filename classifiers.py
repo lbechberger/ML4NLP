@@ -15,10 +15,20 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
 from sklearn.neural_network import MLPClassifier
-from sklearn.metrics import cohen_kappa_score, make_scorer
+from sklearn.metrics import cohen_kappa_score, make_scorer, f1_score, fbeta_score, accuracy_score, matthews_corrcoef
 from sklearn.preprocessing import Imputer
 import numpy as np
 import pickle
+
+
+def all_metrics(y, predictions):
+    accuracy = accuracy_score(y_test, predictions)
+    f1 = f1_score(y_test,predictions)
+    f2 = fbeta_score(y_test,predictions,2)
+    kappa = cohen_kappa_score(y_test, predictions)
+    matthew = matthews_corrcoef(y_test,predictions)
+
+    return "Accuracy: "+str(accuracy)+" F1-score: "+str(f1)+" F2-score: "+str(f2)+" Cohen's_Kappa: "+str(kappa)+" Matthews's_correlation_coefficient: "+str(matthew)
 
 # load the data set (features are positive real numbers)
 with open("selected_features2.pickle", "rb") as f:
