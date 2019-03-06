@@ -5,6 +5,9 @@ Created on Tue Jan 15 12:53:46 2019
 @author: patri
 """
 
+# this program takes a dataset consisting of user profiles and positive and negative examples as input and returns a set of features.
+# The features are explained in more detail in the documentation.
+
 import knowledgestore.ks as ks
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -12,20 +15,21 @@ import numpy as np
 import gensim, pickle, nltk, string
 import random
 
+# converts a list of strings into a large string where the words are seperated by spaces
 def makeString(listi):
     string = ""
     for i in listi:
         string = string +i+" "
     return string
 
+# returns a sum of word2vec vectors. It computes the sum for a specified number of words in the text, that have the highest tf-idf values.
 def get_tf_idf_wordvector(text,numberOfWords,weighted):
     highestWords = highest_tf_idf_words(text, numberOfWords)
     return get_summed_word2vec(makeString(highestWords),weighted)
     
 
+# returns the five words with the highest tf-idf values for a given article text    
 def get_five_highest(article_text):
-    
-    #article_text = ks.run_files_query(uri)
 
     if(article_text == ""):
         print("Didn't get article")
@@ -40,6 +44,7 @@ def get_tf_idf_scores(text):
 
     return vector
 
+# returns a specified number of words with the highest tf-idf values for a given article text   
 def highest_tf_idf_words(text, word_amount):
     vector = vectorizer.transform([text]).toarray()
     vector = np.reshape(vector,-1)
@@ -54,10 +59,13 @@ def highest_tf_idf_words(text, word_amount):
 def initialize_tf_idf():
     global vectorizer, all_words
 
+    # try to load the tf-idf-vectorizer of it already exists
     try:
         vectorizer = pickle.load(open("tf_idf_vectorizer.pickle", "rb"))
+    # if it does not exist, make a new one
     except FileNotFoundError:
 
+        # load a list of the uris of all articles
         all_uris = ks.get_all_resource_uris()
 
         corpus = []
@@ -89,9 +97,13 @@ def initialize_word2vec():
     global model
     model = gensim.models.KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=100000)
 
+# returns a sum of the word2vec vectors of all words in an article text. If weighted = true, it is a weighted sum that is 
+# weighted acccording to the tf-idf values
 def get_summed_word2vec(text, weighted = False):
 
+    # tokenize text
     tokens = nltk.word_tokenize(text)
+    # remove punctations
     tokens = [token for token in tokens if token not in string.punctuation]
 
     summed_vector = 0
@@ -112,7 +124,7 @@ def get_summed_word2vec(text, weighted = False):
             summed_vector += score * model[token]
 
     if (anyword == True ):
-        ms = model.most_similar([summed_vector])
+        #ms = model.most_similar([summed_vector])
 
         #for x in ms:
         #    print(x[0],x[1])
@@ -122,7 +134,9 @@ def get_summed_word2vec(text, weighted = False):
         return model["for"]*0 #Nullvector
 
 
-
+# returns cosine similarities between a vector and a set of other vectors. More specifically, it returns the minimum, maximum
+# and mean cosine similarity and the mean of the three (least) closest 
+# todo: three closest, außerdem Funktion umbennen, weil es verwirrt.
 def get_distances(articleVector, otherArticlesVectors):
     distancesArray = []
     for otherVector in otherArticlesVectors:
@@ -200,9 +214,11 @@ def get_features(user_profile, articles_uris, classifications):
 initialize_tf_idf()
 initialize_word2vec()
 
+# load the whole dataset
 with open("splitted_dataset.pickle", "rb") as f:
     dataSet = pickle.load(f)
-    
+
+# use only the training dataset at this point
 training = dataSet[0]
 
 dataset=[]
