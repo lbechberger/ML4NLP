@@ -133,6 +133,21 @@ def get_summed_word2vec(text, weighted = False):
     else:
         return model["for"]*0 #Nullvector
 
+def get_entities(article_uri):
+    all_entities = set()
+    mentions = ks.run_resource_query(article_uri, 'ks:hasMention')
+    for mention in mentions:
+
+        #mention_types = ks.run_mention_query(mention, "@type")
+
+        #if "nwr:EntityMention" in mention_types:
+            
+        entities = ks.run_mention_query(mention, 'ks:refersTo')
+        for entity in entities:
+            all_entities.add(entity)
+
+    print("ALL ",all_entities)
+    return list(all_entities)
 
 # returns cosine similarities between a vector and a set of other vectors. More specifically, it returns the minimum, maximum
 # and mean cosine similarity and the mean of the three closest cosine similarities
@@ -146,6 +161,7 @@ def get_cosine_similarities(articleVector, otherArticlesVectors):
     return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[-3:])
 
 def get_features(user_profile, articles_uris, classifications):
+    global use_entity_feature
 
     summedVectorsWeighted = []
     summedVectorsUnweighted = []
@@ -155,6 +171,8 @@ def get_features(user_profile, articles_uris, classifications):
     tenHighestVectorsUnweighted = []
     fiveHighestTfIdf = []
     lengths = []
+    entities = []
+
 
     #features for articles in profile
     for profile_article in user_profile:
@@ -167,6 +185,8 @@ def get_features(user_profile, articles_uris, classifications):
         tenHighestVectorsUnweighted.append(get_tf_idf_wordvector(article_text,10,False))
         fiveHighestTfIdf.append(get_five_highest(article_text))
         lengths.append(len(article_text))
+        if use_entity_feature:
+            entities.append(get_entities(profile_article))
 
 
     feature_vectors = [] #holds one feature vector for each article defined in parameter articles_uris
@@ -185,8 +205,8 @@ def get_features(user_profile, articles_uris, classifications):
         feature_vector.extend(get_cosine_similarities(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
 
         tf_idf_scores = []
+        scores = get_tf_idf_scores(article_text)
         for five_highest in fiveHighestTfIdf:
-            scores = get_tf_idf_scores(article_text)
             score = 0
             for word in five_highest:
                 if word in all_words:
@@ -202,10 +222,28 @@ def get_features(user_profile, articles_uris, classifications):
         feature = (distances[0],distances[-1],np.mean(distances),np.mean(distances[:3]))
         feature_vector.extend(feature)
 
+        if use_entity_feature:
+            entity_matching = []
+            new_article_entities = get_entities(article_uri)
+            for profile_article_entities in entities:
+                matching = 0
+                for entity in profile_article_entities:
+                    if entity in new_article_entities:
+                        matching += 1
+                entity_matching.append(matching)
+
+            #print(" EM ",entity_matching,"  ",profile_article_entities,"  ",new_article_entities)
+
+            entity_matching = np.sort(entity_matching)
+            feature = (entity_matching[0],entity_matching[-1],np.mean(entity_matching),np.mean(entity_matching[-3:]))
+            feature_vector.extend(feature)
+  
         feature_vectors.append((feature_vector,classifications[article_index]))
         
     return feature_vectors
 
+
+use_entity_feature = True
 
 initialize_tf_idf()
 initialize_word2vec()
@@ -216,6 +254,9 @@ with open("splitted_dataset.pickle", "rb") as f:
 
 # use only the training dataset at this point
 training = dataSet[0]
+test = dataSet[1]
+validation = dataSet[2]
+# todo: swap test and validation??
 
 dataset=[]
 for usernumber in range(len(training)):
@@ -224,7 +265,7 @@ for usernumber in range(len(training)):
     print("")
 
     articles_uris = training[usernumber][1][0]+training[usernumber][1][1]
-    classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
+    classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + lmüsliriegelist(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
     
     chosen_indices = random.sample(range(0,len(classifications)),10) #Do not use every article, so variance in user profiles is higher
 
@@ -237,6 +278,6 @@ for usernumber in range(len(training)):
     dataset.extend(get_features(training[usernumber][0], chosen_articles_uris, chosen_classifications))
     print(dataset)
 
-    pickle.dump( dataset, open( "featurised_dataset4.pickle", "wb" ))
+    pickle.dump( dataset, open( "featurised_dataset5.pickle", "wb" ))
 
 

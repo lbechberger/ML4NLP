@@ -164,7 +164,7 @@ Nevertheless, the division of the dataset needs additional consideration. In cla
 (why which scores??)
 For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination.
 
-A decision still to be made is if we use the balanced F1-score or the F2-score to weigth recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
+A decision still to be made is if we use the balanced F1-score or the F2-score to weight recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
 Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
 At last, the accuracy should be calculated for having a metric that is widely used.
 
@@ -188,6 +188,7 @@ The dataset that we are using has a huge amount of samples, which is due to the 
 
 As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
 
+??Change values, not balances anymore, so 50-50 is != Lables frequency:
 |  | Always “True” | Always “False” | 50-50 | Label Frequency |
 |-----------------------|---------------|----------------|-------|-----------------|
 | Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
@@ -195,6 +196,8 @@ As baselines we are planning to use *always true, always false, 50-50, label fre
 | F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
 | Matthew's correlation | 0 | 0 | 0 | 0 |
 | Cohen's kappa | 0 | 0 | 0 | 0 |
+
+Critic: Example how e.g. Matthew's correlation is calced
 
 
 
