@@ -248,36 +248,36 @@ use_entity_feature = True
 initialize_tf_idf()
 initialize_word2vec()
 
-# load the whole dataset
+# load dataset (splitted into training, validation and test, validation&test category
 with open("splitted_dataset.pickle", "rb") as f:
     dataSet = pickle.load(f)
 
-# use only the training dataset at this point
-training = dataSet[0]
-test = dataSet[1]
-validation = dataSet[2]
-# todo: swap test and validation??
 
-dataset=[]
-for usernumber in range(len(training)):
-    print("")
-    print(str(usernumber),"/",len(training),"done.")
-    print("")
+# training = dataSet[0]
+# validation = dataSet[1]
+# test = dataSet[2]
 
-    articles_uris = training[usernumber][1][0]+training[usernumber][1][1]
-    classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + lmüsliriegelist(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
-    
-    chosen_indices = random.sample(range(0,len(classifications)),10) #Do not use every article, so variance in user profiles is higher
+featurised_dataset=[]
 
-    chosen_articles_uris = []
-    chosen_classifications = []
-    for i in chosen_indices:
-        chosen_articles_uris.append(articles_uris[i])
-        chosen_classifications.append(classifications[i])
+for purpose in dataSet:
+    featurised_dataset.append(list())
+    for usernumber in range(len(purpose)):
+        print("\n",str(usernumber),"/",str(len(purpose)+len(,"done.","\n")
 
-    dataset.extend(get_features(training[usernumber][0], chosen_articles_uris, chosen_classifications))
-    print(dataset)
+        articles_uris = purpose[usernumber][1][0]+purpose[usernumber][1][1]
+        classifications = list(np.ones(len(purpose[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(purpose[usernumber][1][1]), dtype = np.int8))
+        
+        chosen_indices = random.sample(range(0,len(classifications)),10) #Do not use every article, so variance in user profiles is higher
 
-    pickle.dump( dataset, open( "featurised_dataset5.pickle", "wb" ))
+        chosen_articles_uris = []
+        chosen_classifications = []
+        for i in chosen_indices:
+            chosen_articles_uris.append(articles_uris[i])
+            chosen_classifications.append(classifications[i])
+
+        featurised_dataset[-1].extend(get_features(purpose[usernumber][0], chosen_articles_uris, chosen_classifications))
+
+
+pickle.dump(featurised_dataset, open( "featurised_dataset5.pickle", "wb" ))
 
 

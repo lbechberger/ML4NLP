@@ -27,11 +27,8 @@ def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
 
     #lists of users of the later splitted dataset
     training_data = list()
-    test_only_data = list()
     validation_only_data = list()
-
-    #a user might contain articles reserved for testing as well as articles reserved for validation, treat those seperately
-    validation_and_test_data = list()
+    test_only_data = list()
 
     #decide which user belongs to which split of the dataset by checking for the reserved articles
     for user in dataSet:
@@ -47,26 +44,23 @@ def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
             if article in validation_articles:
                 user_for_validation = True
 
-        if (not user_for_test) and (not user_for_validation):
+        if (not user_for_validation) and (not user_for_test):
             training_data.append(user)
-            continue
-        if user_for_test and (not user_for_validation):
-            test_only_data.append(user)
             continue
         if (not user_for_test) and user_for_validation:
             validation_only_data.append(user)
             continue
-        if user_for_test and user_for_validation:
-            validation_and_test_data.append(user)
+        if user_for_test and (not user_for_validation):
+            test_only_data.append(user)
             continue
 
+        #a user might contain articles reserved for testing as well as articles reserved for validation, discard that user from dataset
     
     #encapsulate data
     all_data = list()
     all_data.append(training_data)
-    all_data.append(test_only_data)
     all_data.append(validation_only_data)
-    all_data.append(validation_and_test_data)
+    all_data.append(test_only_data)
 
     return all_data
 
