@@ -111,8 +111,7 @@ The extraction of categories for all articles took roughly two hours, so the res
 We chose to exclude some categories, which are not taken into account for the generation of the dataset. The reason is mostly the assumption that the news articles in these categories don't share much thematic similarity. These categories are:
 
 * the 16 (??) top-level categories
-* all categories that contain less than 15 (??) news articles (ist das im Code fest or parameter dependant??)  because they don't hold enough articles to create a user as described above
-
+* all categories that contain less than 21 (*subcategories_per_user*profile_articles_per_subcategory + subcategories_per_user*liked_articles_per_subcategory* (are multiplication chars shown correctly??)) because they don't hold enough articles to create a user as described above
 or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
 * all categories that contain too many articles (over 506 (??why). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
 * all categories that denote a specific date, e.g. 'January 1, 2008'. 
