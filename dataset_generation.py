@@ -101,7 +101,7 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
          
     dates_andWikinewsie_list = []    
     for entry in dic:
-        if (len(dic[entry]) <= articles_per_user_and_category or len(dic[entry]) <= 15 or len(dic[entry]) > 506): 
+        if (len(dic[entry]) <= articles_per_user_and_category or len(dic[entry]) <= subcategories_per_user*profile_articles_per_subcategory + subcategories_per_user*liked_articles_per_subcategory or len(dic[entry]) > 506): 
             entries_to_delete.append(entry)
 
     for entry in entries_to_delete:
