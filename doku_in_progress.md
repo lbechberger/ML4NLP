@@ -75,42 +75,18 @@ By chosing the automatic generation of idealized user profiles to build the data
 
 ### Automatic generation of the dataset
 
-However, in order to aquire the data set, an intermediate step to model the interests of users is taken. Interests are defined as a small number of topics or categories. To enable an automatic generation of the dataset, we used the news categories provided by Wikinews as possible topics of interest. As the amount of top level categories is low (namely, 16), we use the much bigger number of subcategories.
+However, in order to aquire the data set, an intermediate step to model the interests of users is taken. Interests are defined as a small number of topics or categories. To enable an automatic generation of the dataset, we used the news categories provided by Wikinews as possible topics of interest. As the amount of top level categories is low (namely, 16), we use the much bigger number of subcategories. The top-level categories are explicitely not included in the list of possible interests of users, because the thematic range of articles belonging to that category would be high compared to articles belonging to a subcategory
 
-Topics of interest are chosen from the category mapping of Wikinews. Note that the top-level categories aren't taken into account but only the level-2-categories, so subcategories. We excluded the first ones because if such a category was chosen for a user's topic of interest, the thematic range of articles belongig to that category would be high compared to articles belonging to a subcategory.
-
-
-
-Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. (evtl. as a parameter, Codenäher??) That gives a total of 15 articles to describe the interest of a user.
-
-
-(?? noch sagen, welche Kategorien-Größen ausgeklammert werden)
 (?? an example vector would be good)
-
-
-
 
 Folgendes als einzelnen Teil, Codenahe Doku??)
 
 The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in (balanced/imbalanced??), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
 Having the same amout of profile articles as well as positive and negative samples ensures a uniform format of all users. (the user's categories of interest are not specified in the dataset??).
 The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category are randomly drawn.
-The dataset is returned as a list of URIs and can be saved e.g. in a csv-file. (we use pickle here??)
+The dataset is returned as a nesting of lists holding URIs. It is then saved as a pickle-file, as an easy way of serializing the structure and content of the dataset. For a more general usage of the dataset, it would of course be possible to save it as for example a csv-file. 
 
-
-
-In order to generate these user profiles, we created a python dictionary (link to code??) that lists for each topic all articles that fall into that topic. The articles are drawn from a random distribution where each topic is weighted by the number of articles that belong to that topic. We chose this approach because we assume that topics that contain a large number of articles are more important as more people are interested in these topics.
-
-The python code for generating users uses the method *create_category_articles_dictionary()*, for which we extended *ks.py* in the *knowledgestore* folder. *create_category_articles_dictionary()* creates a dictionary that matches news articles to the subcategories to which they belong. In order to get the subcategories for an article, the method *get_all_news_subcategories(resource_uri)* looks at the HTML code of the corresponding Wikinews article website, given by the parameter *resource_uri*. The HTML code contains the string *wgCategories*, which is followed by a list of categories that article belongs to. The top-level categories are excluded as explained above. 
-The extraction of categories for every article took roughly two hours, so the resulting dictionary is stored in the file *subcategory_resource_mappings.pickle*. If *create_category_articles_dictionary()* finds that file, it loads the dictionary from there instead of creating it anew.
-
-
-
-(concrete numbers in one paragraph??)
-The dataset consists of 1000 user profiles. (Imbalanced ??) Each user profile contains 15 articles the user liked - 5 from each of the 3 topics the user is interested in.
-Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
-
-The format of the dataset is a nesting of python-lists, which have the following hierarchical structure (example for two users):
+The dataset is structured as follows (example for two users). Each line is one step down the hierarchy of lists, so going down shows the unpacked version of the line before.
 
 <pre>
 [                                                       dataset                                  ]
@@ -121,11 +97,24 @@ The format of the dataset is a nesting of python-lists, which have the following
 
 [ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
 </pre>
-    
-The *generate_dataset.py* program does the following:
-Firstly, a dictionary with a matching from all subcategories to a list of all articles that belong to the specific subcategory is created. Afterward, certain categories are deleted:
-* all categories that contain too few articles (less than 15 or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
-* all categories that contain too many articles (over 506). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
+
+
+### Optaining and storing subcategories
+
+The python code for generating users uses the method *create_category_articles_dictionary()*, located in *knowledgestore/ks.py* as an extension of the functionality of *ks.py*. *create_category_articles_dictionary()* creates a dictionary that matches news articles to the subcategories to which they belong. The keys of that dictionary are the categories, it's values are lists of the articles that fall into that topic.
+In order to optain the subcategories for a news article, the method *get_all_news_subcategories(resource_uri)* looks at the HTML code of the corresponding Wikinews article website, given by the parameter *resource_uri*. The HTML code of such an article contains the string *wgCategories*, which is followed by a list of categories that article belongs to. 
+The extraction of categories for all articles took roughly two hours, so the resulting dictionary is stored in the file *subcategory_resource_mappings.pickle*. If *create_category_articles_dictionary()* finds that file, it loads the dictionary from there instead of creating it anew.
+
+
+### Excluded categories
+
+We chose to exclude some categories, which are not taken into account for the generation of the dataset. The reason is mostly the assumption that the news articles in these categories don't share much thematic similarity. These categories are:
+
+* the 16 (??) top-level categories
+* all categories that contain less than 15 (??) news articles (ist das im Code fest or parameter dependant??)  because they don't hold enough articles to create a user as described above
+
+or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
+* all categories that contain too many articles (over 506 (??why). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
 * all categories that denote a specific date, e.g. 'January 1, 2008'. 
 * all categories that just describe authorship. For example 'Cocoaguy (Wikinewsie)' or 'Juliancolton (WWC2010)'. The reason for that is that some authors write about a wide, seemingly unrelated variety of articles, hence they do not have anything to do with a certain topic.
 * the following categories: 
@@ -153,12 +142,15 @@ Firstly, a dictionary with a matching from all subcategories to a list of all ar
   * 'Writing Contests/May 2010'
   * 'News articles with translated quotes'
   * 'News articles with telephone numbers'
-   
-After deleting these unsuitable categories, we used a weighted random distribution to chose three distinct topics of interest for each user. The more articles a category has, the more likely it was chosen.
-(ebenfalls auf imbalanced ??)
-Then, for each topic of interest, there were 20 articles drawn - 10 for the user profile and 10 for the positive training samples. Afterward, 30 articles that do not belong to any of the three categories of 
-interest were drawn in order to be used as negative training samples.
-Finally, the dataset was saved as a pickle file.
+
+
+### Specification of parameters
+The values of the parameters introduced above are fixed as follows. Note that they are mostly chosen arbitrarily.
+
+The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. (evtl. as a parameter, Codenäher??) That gives a total of 15 articles to describe the interest of a user.
+Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
+
+
 
 
 ## Session 7, 04.12.18
