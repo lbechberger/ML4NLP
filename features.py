@@ -135,16 +135,15 @@ def get_summed_word2vec(text, weighted = False):
 
 
 # returns cosine similarities between a vector and a set of other vectors. More specifically, it returns the minimum, maximum
-# and mean cosine similarity and the mean of the three (least) closest 
-# todo: three closest, außerdem Funktion umbennen, weil es verwirrt.
-def get_distances(articleVector, otherArticlesVectors):
+# and mean cosine similarity and the mean of the three closest cosine similarities
+def get_cosine_similarities(articleVector, otherArticlesVectors):
     distancesArray = []
     for otherVector in otherArticlesVectors:
         #print("vector1 : ",articleVector, articleVector.shape)
         #print("vector2 : ",otherVector, otherVector.shape)
         distancesArray.extend(np.reshape(cosine_similarity([articleVector],[otherVector]),(-1)))
     distancesArray = np.sort(distancesArray)
-    return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[:3])
+    return distancesArray[0], distancesArray[-1], np.mean(distancesArray), np.mean(distancesArray[-3:])
 
 def get_features(user_profile, articles_uris, classifications):
 
@@ -178,12 +177,12 @@ def get_features(user_profile, articles_uris, classifications):
         article_text = ks.run_files_query(article_uri)
         #features for article to be classified
 
-        feature_vector.extend(get_distances(get_summed_word2vec(article_text,True),summedVectorsWeighted))
-        feature_vector.extend(get_distances(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
-        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
-        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
-        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
-        feature_vector.extend(get_distances(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
+        feature_vector.extend(get_cosine_similarities(get_summed_word2vec(article_text,True),summedVectorsWeighted))
+        feature_vector.extend(get_cosine_similarities(get_summed_word2vec(article_text,False),summedVectorsUnweighted))
+        feature_vector.extend(get_cosine_similarities(get_tf_idf_wordvector(article_text,5,True),fiveHighestVectorsWeighted))
+        feature_vector.extend(get_cosine_similarities(get_tf_idf_wordvector(article_text,5,False),fiveHighestVectorsUnweighted))
+        feature_vector.extend(get_cosine_similarities(get_tf_idf_wordvector(article_text,10,True),tenHighestVectorsWeighted))
+        feature_vector.extend(get_cosine_similarities(get_tf_idf_wordvector(article_text,10,False),tenHighestVectorsUnweighted))
 
         tf_idf_scores = []
         for five_highest in fiveHighestTfIdf:
@@ -196,8 +195,7 @@ def get_features(user_profile, articles_uris, classifications):
 
         tf_idf_scores = np.sort(tf_idf_scores)
         feature = (tf_idf_scores[0],tf_idf_scores[-1],np.mean(tf_idf_scores),np.mean(tf_idf_scores[-3:]))
-        feature_vector.extend(feature)       
-            # !!!!!!!! divide sum through amount of profile articles, so we are independant of profile size !!!!!!!!!
+        feature_vector.extend(feature)      
 
         distances = [abs(len(article_text)-length) for length in lengths]
         distances = np.sort(distances)
@@ -206,8 +204,6 @@ def get_features(user_profile, articles_uris, classifications):
 
         feature_vectors.append((feature_vector,classifications[article_index]))
         
-        #feature_vector.append(len(article_text)) #length of article
-
     return feature_vectors
 
 
@@ -226,9 +222,6 @@ for usernumber in range(len(training)):
     print("")
     print(str(usernumber),"/",len(training),"done.")
     print("")
-    #usernumber = np.random.randint(0,len(training))
-    #rndposorneg = np.random.randint(0,2)
-    #rndarticle = np.random.randint(0,len(training[usernumber][1][rndposorneg]))
 
     articles_uris = training[usernumber][1][0]+training[usernumber][1][1]
     classifications = list(np.ones(len(training[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(training[usernumber][1][1]), dtype = np.int8))
@@ -243,7 +236,6 @@ for usernumber in range(len(training)):
 
     dataset.extend(get_features(training[usernumber][0], chosen_articles_uris, chosen_classifications))
     print(dataset)
-    #dataset.extend(get_features(training[usernumber][0], training[usernumber][1][1], 0))
 
     pickle.dump( dataset, open( "featurised_dataset4.pickle", "wb" ))
 
