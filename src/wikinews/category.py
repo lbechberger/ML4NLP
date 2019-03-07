@@ -1,5 +1,5 @@
 import re
-from typing import Union, Dict, List, Tuple, Set
+from typing import Optional, Dict, Sequence, Tuple, Set
 
 import requests
 from bs4 import BeautifulSoup
@@ -9,30 +9,44 @@ from .article import Article
 
 
 class Category(Element):
-    """ A category with probably multiple attached articles. """
+    """
+    A category with probably multiple attached articles.
+    """
 
     def __init__(
         self,
         url: str,
-        name: Union[str, None] = None,
-        sub_categories: List[str] = [],
-        articles: List[str] = [],
+        name: Optional[str] = None,
+        sub_categories: Sequence[str] = (),
+        articles: Sequence[str] = (),
     ):
+        """
+        Create a category object.
+        :param url: The URL of the category.
+        :param name: The name of the category.
+        :param sub_categories: The sub-categories.
+        :param articles: The included articles.
+        """
+
         super().__init__(url)
         self.name = name
         self.sub_categories = sub_categories
         self.articles = articles
 
-    def parse(
+    def _parse(
         self,
         articles_cache: Dict[str, Article],
         categories_cache: Dict[str, "Category"],
         check_article: bool = True,
         check_categories: bool = True,
-    ) -> bool:
-        """ 
-        This function enriches the category with the corresponding articles and subcategories. 
+    ) -> None:
+        """
+        Enrich the category with the corresponding articles and subcategories.
         TODO: Move to JSON API
+        :param articles_cache: A cache for already parsed articles.
+        :param categories_cache: A cache for already parsed categories.
+        :param check_article: True, if only meaningful articles should be included.
+        :param check_categories: True, if only meaningful categories should be included.
         """
 
         page_html = requests.get(self.get_url(), timeout=5)
@@ -80,7 +94,7 @@ class Category(Element):
                     {
                         category.url: category
                         for category in new_categories
-                        if category.parse(
+                        if category._parse(
                             articles_cache,
                             categories_cache,
                             check_article,
@@ -89,8 +103,6 @@ class Category(Element):
                     }
                 )
 
-        return True
-
     def __str__(self) -> str:
         return '"{}":\n\tArticles: {}\n\tSubcategories: {}\n'.format(
             self.name, self.articles, self.sub_categories
@@ -98,9 +110,13 @@ class Category(Element):
 
     @staticmethod
     def from_urls(
-        categories: List[str]
-    ) -> Tuple[List["Category"], Dict[str, "Category"], Dict[str, Article]]:
-        """ Load categories from a list of existing URLs. """
+        categories: Sequence[str]
+    ) -> Tuple[Sequence["Category"], Dict[str, "Category"], Dict[str, Article]]:
+        """
+        Load categories from a list of existing URLs.
+        :param categories: URLS to existing categories.
+        :return: Root categories, Cache with all existing categories and Cache with all existing articles
+        """
 
         articles_tmp = {}
         categories_tmp = {}
@@ -108,7 +124,7 @@ class Category(Element):
             [
                 category
                 for category in (Category(category) for category in categories)
-                if category.parse(articles_tmp, categories_tmp, False, False)
+                if category._parse(articles_tmp, categories_tmp, False, False) is None
             ],
             categories_tmp,
             articles_tmp,
@@ -117,8 +133,13 @@ class Category(Element):
     @staticmethod
     def from_wikinews(
         limit: int = 2000, num_categories: int = -1
-    ) -> Tuple[List["Category"], Dict[str, "Category"], Dict[str, Article]]:
-        """ Load categories from all WikiNews categories. """
+    ) -> Tuple[Sequence["Category"], Dict[str, "Category"], Dict[str, Article]]:
+        """
+        Load categories from all WikiNews categories.
+        :param limit: Number of category parsed loaded with a single web request.
+        :param num_categories: Limit the number of loaded categories. If -1, load all.
+        :return: Root categories, Cache with all existing categories and Cache with all existing articles
+        """
 
         WIKINEWS = "http://en.wikinews.org/w/index.php?title=Special:Categories&limit={}&offset={}"
 
@@ -155,7 +176,12 @@ class Category(Element):
     def filter_categories(
         categories: Dict[str, Set[Article]], min_articles: int
     ) -> Dict[str, Set[Article]]:
-        """ Filter categories for meaningfulness and a minimal amount of articles. """
+        """
+        Filter categories for meaningfulness and a minimal amount of articles.
+        :param categories: Dict of articles and their corresponding articles.
+        :param min_articles: The number of articles needed at least for a valid category.
+        :return: A filtered dict of articles and their corresponding articles.
+        """
 
         date_regex = re.compile(
             "^((January)|(February)|(March)|(April)|(May)|(June)|(July)|(August)|(September)|(October)|(November)|(December))"

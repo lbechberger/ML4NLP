@@ -1,7 +1,7 @@
 from collections import defaultdict
 from pathlib import Path
 from multiprocessing import Pool
-from typing import List, Set, Dict
+from typing import Sequence, Set, Dict, Tuple
 import pickle
 
 from matplotlib import pyplot
@@ -19,14 +19,35 @@ MIN_ARTICLES = 5
 
 
 def _create_article(link: str) -> Article:
+    """
+    Load a article from internet.
+    DO NOT USE THIS METHOD! ITS SIMPLY HERE TO BE PICKABLE BY MULTIPROCESSING.
+    :param link: Relative WikiNews URL.
+    :return: A parsed article.
+    """
+
     return Article(link[22:])
 
 
 def load_categories(
     cache_file: Path, min_articles: int, num_threads: int = 6
-) -> Dict["str", Set[Article]]:
-    def articles_to_categories(articles: List[Article]) -> Dict["str", Set[Article]]:
-        """ Maps the articles to a list of categories. """
+) -> Dict[str, Set[Article]]:
+    """
+    Load categories from local cache if existing. If not, create it.
+    :param cache_file: Path to the local cache file.
+    :param min_articles: The minimal number of articles required for valid categories.
+    :param num_threads: The number of parellel workers used during multiprocessing.
+    :return: Available, validated categories.
+    """
+
+    def articles_to_categories(
+        articles: Sequence[Article]
+    ) -> Dict["str", Set[Article]]:
+        """
+        Map the articles to a list of categories.
+        :param articles: A sequence of parsed articles.
+        :return: A mapping from category names to articles.
+        """
 
         categories = defaultdict(set)
         for article in articles:
@@ -34,9 +55,13 @@ def load_categories(
                 categories[category].add(article)
         return categories
 
+    # Check if the cache was already created.
     if not cache_file.exists():
+        # Get all WikiNews article urls stored in KnowledgeStore
         print("Loading URLs...")
         urls = ks.get_all_resource_uris()
+
+        # Create all the articles from the URLs
         print(
             "Generating articles for KnowledgeStore from {} urls...".format(len(urls))
         )
@@ -46,19 +71,32 @@ def load_categories(
         else:
             articles = [_create_article(url) for url in urls]
 
-        with open(cache_file, "wb") as file:
+        # Save the extracted URLs in the cache
+        with open(str(cache_file), "wb") as file:
             pickle.dump(articles, file)
     else:
-        with open(cache_file, "rb") as file:
+        # Load the cache file
+        with open(str(cache_file), "rb") as file:
             articles = pickle.load(file)
 
+    # Filter all articles and categories. By this, methods may be optimized without invalidating the cache.
     articles = [x for x in articles if len(x.text) > 0]
     categories = articles_to_categories(articles)
     return Category.filter_categories(categories, min_articles)
 
 
-def visualize(interests):
-    def visualize_distibution(interests):
+def visualize(categories: Dict[str, Set[Article]]) -> None:
+    """
+    Visualized available categories used as interests.
+    :param categories: Available categories.
+    """
+
+    def visualize_distribution(interests: Sequence[Tuple[str, int]]) -> None:
+        """
+        Plot the distribution of the articles in the categories.
+        :param interests: Available categories.
+        """
+
         num_articles = np.array([category[1] for category in interests])
         fig, ax = pyplot.subplots(figsize=(11.7, 8.27))
         dist = sbs.distplot(num_articles, hist=False, norm_hist=False, ax=ax)
@@ -66,9 +104,14 @@ def visualize(interests):
         dist.set_ylabel("Relative number of categories")
         dist.set_xscale("log")
         dist.set_title("Distibution of articles")
-        dist.set_xlim(0)
+        pyplot.show()
 
-    def visualize_words(interests):
+    def visualize_words(interests: Sequence[Tuple[str, int]]) -> None:
+        """
+        Plot the names of available categories.
+        :param interests: Available categories.
+        """
+
         top_occurences = {name: occurences for name, occurences in interests}
         sum_occurences = sum(top_occurences.values())
         top_occurences = {
@@ -81,12 +124,15 @@ def visualize(interests):
         fig, ax = pyplot.subplots(figsize=(11.7, 8.27))
         ax.imshow(cloud, interpolation="bilinear")
         ax.axis("off")
+        pyplot.show()
 
-    interests_tmp = [(key, len(value)) for key, value in interests.items()]
-    interests_tmp.sort(key=lambda x: x[1], reverse=True)
+    # Reformat the interests
+    interests = [(key, len(value)) for key, value in categories.items()]
+    interests.sort(key=lambda x: x[1], reverse=True)
 
-    visualize_distibution(interests_tmp)
-    visualize_words(interests_tmp)
+    # Visualize data
+    visualize_distribution(interests)
+    visualize_words(interests)
 
 
 if __name__ == "__main__":
@@ -102,7 +148,7 @@ if __name__ == "__main__":
 
     # Load all available categories from cache or web and filter for those with at least MIN_ARTICLES
     interests = load_categories(
-        PATH_RAW_DATA / "articles.pickle", MIN_ARTICLES, num_threads=4
+        PATH_RAW_DATA / "articles.pickle", MIN_ARTICLES, num_threads=2
     )
 
     # Visualize the interests
