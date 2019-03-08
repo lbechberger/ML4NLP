@@ -8,7 +8,12 @@ sys.path.append("..")
 from src import PATH_ROOT
 
 
-def show_boxplot(data: pd.DataFrame):
+def show_boxplot(data: pd.DataFrame) -> None:
+    """
+    Show a boxplot with the complete range of performances of the classifiers.
+    :param data: The evaluation results of the classifier.
+    """
+
     boxplots = data.groupby("Classifier").boxplot(layout=(1, 6)).to_numpy()
 
     figure = boxplots[0].get_figure()
@@ -16,7 +21,12 @@ def show_boxplot(data: pd.DataFrame):
     plt.show()
 
 
-def show_best(data: pd.DataFrame):
+def show_best(data: pd.DataFrame) -> None:
+    """
+    Plot the best results of each classifier.
+    :param data: The evaluation results of the classifier.
+    """
+
     best_results = list(data.groupby("Classifier").max().itertuples())
     best_results.sort(key=lambda x: x[1])
 
@@ -40,11 +50,11 @@ if __name__ == "__main__":
         columns={"param_classifier": "Classifier", "mean_test_score": "F1 score"}
     )
 
-    # Remove unecessary details of classifier.
+    # Remove unnecessary details of classifier.
     results["Classifier"] = results["Classifier"].apply(
         lambda classifier: classifier[: classifier.find("(")]
     )
 
-    # visualize the result
+    # Visualize the result
     show_best(results)
     show_boxplot(results)
