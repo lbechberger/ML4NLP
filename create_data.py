@@ -9,7 +9,7 @@ import seaborn as sbs
 import numpy as np
 from wordcloud import WordCloud
 
-from src import PATH_CONFIG, PATH_RAW_DATA, PATH_DATASETS
+from src import PATH_CONFIG, PATH_CACHE, PATH_DATASETS
 from src.data import DataSet
 from src.wikinews import Article, Category
 from src.knowledgestore import ks
@@ -139,8 +139,8 @@ if __name__ == "__main__":
     assert PATH_CONFIG.exists(), "Invalid config path!"
 
     # Create raw data cache, if needed
-    if not PATH_RAW_DATA.exists():
-        PATH_RAW_DATA.mkdir()
+    if not PATH_CACHE.exists():
+        PATH_CACHE.mkdir()
 
     # Create dataset dir, if needed
     if not PATH_DATASETS.exists():
@@ -148,7 +148,7 @@ if __name__ == "__main__":
 
     # Load all available categories from cache or web and filter for those with at least MIN_ARTICLES
     interests = load_categories(
-        PATH_RAW_DATA / "articles.pickle", MIN_ARTICLES, num_threads=2
+        PATH_CACHE / "articles.pickle", MIN_ARTICLES, num_threads=2
     )
 
     # Visualize the interests

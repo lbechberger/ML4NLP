@@ -24,7 +24,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
 
 sys.path.append("..")
-from src import PATH_RAW_DATA, PATH_DATASETS, PATH_CONFIG
+from src import PATH_CACHE, PATH_DATASETS, PATH_CONFIG
 from src.data import DataSet
 from src.features import FeatureExtractor
 
@@ -271,7 +271,7 @@ if __name__ == "__main__":
     }
 
     # Generate or load the features
-    features = Features(PATH_RAW_DATA / "features")
+    features = Features(PATH_CACHE / "features")
     X, y, split, X_test, y_test = features.load(
         dataset_path=PATH_DATASETS, feature_config_path=PATH_CONFIG / "features.json"
     )
