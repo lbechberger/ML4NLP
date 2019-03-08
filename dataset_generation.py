@@ -133,7 +133,7 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
     # all users
     for user_index in range(amount_users):
         if user_index % 10 == 0:
-            print(user_index)
+            print("\n",str(user_index),"/",str(amount_users),"done.","\n")
         userProfile = []
         userPositives = []
 
@@ -154,7 +154,7 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
 
     return users
 
-dataSet = generate_dataset(250,3,5,2,32*2*3)
+dataSet = generate_dataset(5000,3,5,2,32*2*3)
 
 # save dataset
 with open('dataset.pickle','wb') as f:
