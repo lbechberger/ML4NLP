@@ -273,7 +273,7 @@ When fed to the different classifiers with their default parameters, it's enough
 
 One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a dbpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
 The mentions of an article can be accessed via the property 'ks:hasMention'. If a mention refers to an entity, that entity can be retrieved using the property 'ks:refersTo' of the mention. Oddly enough, when a mention has the type 'nwr:EntityMention', the property 'ks:refersTo' often doesn't lead to an entity, which lessens the amount of recognized entities in an article. Consequentially, the similarity of two articles measured by the share of entities that are named in the articles is reduced.
-Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter use_entity_feature in the features.py script. Yet, when using that feature, the time to calculate the features rapidly rises. Therefore, we didn't use that feature in the final version of *features.py*.
+Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter *use_entity_feature* in the features.py script. Yet, when using that feature, the time to calculate the features rapidly rises. In out testruns, enabling the entity feature led to an increase of the time needed to extract all features by the factor of 12. Therefore, we didn't use that feature in the final version of *features.py*.
 ---
 
 
@@ -401,11 +401,11 @@ In the following are scores of the classifiers for 700 samples with first the na
         'solver': 'adam'  
         Performance: 0.6446032342986086 
 
-
+-- Johannes
 ### Missing data
 Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles) (heh??), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like dbpedia-information) is not an issue.
 Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector weakens the informative value of the corresponding feature and might lead to falsification of the feature itself.
-
+---
 
 ## Train & Test with balanced data
 

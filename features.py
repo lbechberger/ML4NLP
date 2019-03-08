@@ -14,6 +14,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import gensim, pickle, nltk, string
 import random
+import os.path
+
 
 # converts a list of strings into a large string where the words are seperated by spaces
 def makeString(listi):
@@ -243,31 +245,49 @@ def get_features(user_profile, articles_uris, classifications):
     return feature_vectors
 
 
-use_entity_feature = True
+use_entity_feature = False
+n_samples_per_user = 30
 
 initialize_tf_idf()
 initialize_word2vec()
 
 # load dataset (splitted into training, validation and test, validation&test category
 with open("splitted_dataset.pickle", "rb") as f:
-    dataSet = pickle.load(f)
+    dataset = pickle.load(f)
 
 
-# training = dataSet[0]
-# validation = dataSet[1]
-# test = dataSet[2]
+# training = dataset[0]
+# validation = dataset[1]
+# test = dataset[2]
 
-featurised_dataset=[]
+#Continue with feature extraction if it was already started before
+if os.path.isfile("featurised_dataset7.pickle"):
+    with open("featurised_dataset7.pickle", "rb") as f:
+        featurised_dataset = pickle.load(f)
+else:
+    featurised_dataset = []
 
-for purpose in dataSet:
+n_users = len(dataset[0])+len(dataset[1])+len(dataset[2])
+current_user = 0
+
+for purpose_idx, purpose in enumerate(dataset):
+    if purpose_idx+1 < len(featurised_dataset): #Continue with feature extraction if it was already started before
+        current_user = current_user + int(len(featurised_dataset[purpose_idx])/n_samples_per_user)
+        continue
+
     featurised_dataset.append(list())
-    for usernumber in range(len(purpose)):
-        print("\n",str(usernumber),"/",str(len(purpose)+len(,"done.","\n")
+    for usernumber in range(len(purpose)): #usernumber resets for each purpose, current_user doesn't
+        if (usernumber) * n_samples_per_user < len(featurised_dataset[purpose_idx]): #Continue with feature extraction if it was already started before
+            current_user = current_user + 1
+            continue
+
+        print("\n",str(current_user),"/",str(n_users),"done.","\n")
+        current_user += 1
 
         articles_uris = purpose[usernumber][1][0]+purpose[usernumber][1][1]
         classifications = list(np.ones(len(purpose[usernumber][1][0]), dtype = np.int8)) + list(np.zeros(len(purpose[usernumber][1][1]), dtype = np.int8))
         
-        chosen_indices = random.sample(range(0,len(classifications)),10) #Do not use every article, so variance in user profiles is higher
+        chosen_indices = random.sample(range(0,len(classifications)), n_samples_per_user) #Do not use every article, so variance in user profiles is higher
 
         chosen_articles_uris = []
         chosen_classifications = []
@@ -277,7 +297,6 @@ for purpose in dataSet:
 
         featurised_dataset[-1].extend(get_features(purpose[usernumber][0], chosen_articles_uris, chosen_classifications))
 
-
-pickle.dump(featurised_dataset, open( "featurised_dataset5.pickle", "wb" ))
+        pickle.dump(featurised_dataset, open( "featurised_dataset7.pickle", "wb" ))
 
 
