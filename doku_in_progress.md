@@ -68,7 +68,7 @@ When applied to a real-world application, a user profile can be seen as a set of
 
 
 
-
+ -- Johannes
 ### User profiles (Einmal Resultat statt schrittweis??)
 
 By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. To give an example, these articles could be articles which the user read til the end.
@@ -149,6 +149,7 @@ The values of the parameters introduced above are fixed as follows. Note that th
 The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. (evtl. as a parameter, Codenäher??) That gives a total of 15 articles to describe the interest of a user.
 Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
 
+--
 
 
 
@@ -159,6 +160,7 @@ Apart from that, there are also 6 positive and 192 negative articles (negative s
 As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, test and validation. As there is a lot of data present in the set, we can use different parts of the set for training, test and validation.
 Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We want the same for our classifier for news recommendation. One solution that comes into mind is the reservation of articles that a newer than a certain date and putting them aside for test and validation data. ??I included that in split_dataset code, but in docu??
 
+ -- Patricia
 ### Evaluating the classifier's performance
 
 (why which scores??)
@@ -170,6 +172,23 @@ At last, the accuracy should be calculated for having a metric that is widely us
 
 ### Baselines
 
+As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
+
+??Change values, not balances anymore, so 50-50 is != label frequency:
+|  | Always “True” | Always “False” | 50-50 | Label Frequency |
+|-----------------------|---------------|----------------|-------|-----------------|
+| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
+| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
+| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
+| Matthew's correlation | 0 | 0 | 0 | 0 |
+| Cohen's kappa | 0 | 0 | 0 | 0 |
+
+Critic: Example how e.g. Matthew's correlation is calced
+
+--
+
+
+-- Johannes 
 ### Balanced vs. imbalanced data
 
 (?? in dataset or theroretícally?? meaning, in documentation, it's still to decide whether to use balanced or imbalanced)
@@ -185,19 +204,8 @@ Yet, the strongest argument for choosing balanced or imbalanced to train the cla
 The dataset that we are using has a huge amount of samples, which is due to the fact that it is computationally generated. 
 
 
+--
 
-As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
-
-??Change values, not balances anymore, so 50-50 is != Lables frequency:
-|  | Always “True” | Always “False” | 50-50 | Label Frequency |
-|-----------------------|---------------|----------------|-------|-----------------|
-| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
-| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
-| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
-| Matthew's correlation | 0 | 0 | 0 | 0 |
-| Cohen's kappa | 0 | 0 | 0 | 0 |
-
-Critic: Example how e.g. Matthew's correlation is calced
 
 
 
@@ -259,11 +267,15 @@ As one can see, the filter and embedded feature selection methods tend to recogn
 As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
 When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
 
+-- Johannes
+
 ### Additional feature of shared entities
 
 One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a dbpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
 The mentions of an article can be accessed via the property 'ks:hasMention'. If a mention refers to an entity, that entity can be retrieved using the property 'ks:refersTo' of the mention. Oddly enough, when a mention has the type 'nwr:EntityMention', the property 'ks:refersTo' often doesn't lead to an entity, which lessens the amount of recognized entities in an article. Consequentially, the similarity of two articles measured by the share of entities that are named in the articles is reduced.
 Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter use_entity_feature in the features.py script. Yet, when using that feature, the time to calculate the features rapidly rises. Therefore, we didn't use that feature in the final version of *features.py*.
+---
+
 
 ### Classifier selection
 
