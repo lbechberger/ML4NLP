@@ -97,7 +97,7 @@ def initialize_tf_idf():
 def initialize_word2vec():
     # Load google news vectors in gensim
     global model
-    model = gensim.models.KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=100000)
+    model = gensim.models.KeyedVectors.load_word2vec_format("GoogleNews-vectors-negative300.bin", binary=True, limit=500000)
 
 # returns a sum of the word2vec vectors of all words in an article text. If weighted = true, it is a weighted sum that is 
 # weighted acccording to the tf-idf values
@@ -255,7 +255,6 @@ initialize_word2vec()
 with open("splitted_dataset.pickle", "rb") as f:
     dataset = pickle.load(f)
 
-
 # training = dataset[0]
 # validation = dataset[1]
 # test = dataset[2]
@@ -274,8 +273,9 @@ for purpose_idx, purpose in enumerate(dataset):
     if purpose_idx+1 < len(featurised_dataset): #Continue with feature extraction if it was already started before
         current_user = current_user + int(len(featurised_dataset[purpose_idx])/n_samples_per_user)
         continue
+    elif (purpose_idx+1 > len(featurised_dataset)):
+        featurised_dataset.append(list())
 
-    featurised_dataset.append(list())
     for usernumber in range(len(purpose)): #usernumber resets for each purpose, current_user doesn't
         if (usernumber) * n_samples_per_user < len(featurised_dataset[purpose_idx]): #Continue with feature extraction if it was already started before
             current_user = current_user + 1
