@@ -4,16 +4,16 @@ import pickle
 import numpy as np
 import os
 
-# splits dataSet into data for training, testing and validation (plus testing/validation)
+# splits dataset into data for training, testing and validation (plus testing/validation)
 # reserves articles to be present only in testing (amount_test_articles) or validation (amount_validation_articles)
     # users that contain articles reserved for testing as well as validation fall into last split testing/validation
-def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
+def split_dataset(dataset, n_validation_articles, n_test_articles):
 
     #all articles in dataset
     all_articles = list()
 
     #creating the list of all articles present in the dataset
-    for user in dataSet:
+    for user in dataset:
         profile = user[0]
         training = user[1]
 
@@ -22,8 +22,8 @@ def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
         all_articles.extend(training[1])
 
     #reserve some articles for testing (amount_test_articles) and some for validation (amount_validation_articles)
-    test_articles = np.random.choice(all_articles,size = amount_test_articles,replace=False)
-    validation_articles = np.random.choice([article for article in all_articles if article not in test_articles],size = amount_validation_articles,replace=False)    
+    test_articles = np.random.choice(all_articles,size = n_test_articles,replace=False)
+    validation_articles = np.random.choice([article for article in all_articles if article not in test_articles],size = n_validation_articles,replace=False)    
 
     #lists of users of the later splitted dataset
     training_data = list()
@@ -31,7 +31,7 @@ def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
     test_only_data = list()
 
     #decide which user belongs to which split of the dataset by checking for the reserved articles
-    for user in dataSet:
+    for user in dataset:
         profile = user[0]
         training = user[1]
 
@@ -65,18 +65,17 @@ def split_dataset(dataSet, amount_test_articles, amount_validation_articles):
     return all_data
 
 #load dataset
-if os.path.isfile('dataset.pickle'):
-    with open('dataset.pickle', "rb") as f:
-        dataSet = pickle.load(f)
+with open('dataset_1000_users.pickle', "rb") as f:
+    dataset = pickle.load(f)
 
-splitted_dataSet = split_dataset(dataSet,10,10)
+splitted_dataset = split_dataset(dataset,10,5)
 
 #print how big the different splits are
-for cycle in splitted_dataSet:
-    print(len(cycle))
+print("Users for Training:",len(splitted_dataset[0]))
+print("Users for Validation:",len(splitted_dataset[1]))
+print("Users for Test:",len(splitted_dataset[2]))
 
 #save splitted dataset
 with open('splitted_dataset.pickle','wb') as f:
-    pickle.dump(splitted_dataSet,f)
+    pickle.dump(splitted_dataset,f)
     
-

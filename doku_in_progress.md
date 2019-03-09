@@ -98,6 +98,7 @@ The dataset is structured as follows (example for two users). Each line is one s
 [ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
 </pre>
 
+?? Include classification (0 or 1)
 
 ### Optaining and storing subcategories
 
@@ -149,16 +150,19 @@ The values of the parameters introduced above are fixed as follows. Note that th
 The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. (evtl. as a parameter, Codenäher??) That gives a total of 15 articles to describe the interest of a user.
 Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
 
---
-
 
 
 ## Session 7, 04.12.18
 
 ### Splitting up the dataset
 
-As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, test and validation. As there is a lot of data present in the set, we can use different parts of the set for training, test and validation.
-Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We want the same for our classifier for news recommendation. One solution that comes into mind is the reservation of articles that a newer than a certain date and putting them aside for test and validation data. ??I included that in split_dataset code, but in docu??
+As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, test and validation. As there is a lot of data present in the set, we use different parts of the set for training, test and validation.
+Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We do same for our classifier for news recommendation.
+*split_dataset.py* splits the dataset provided by *dataset_generation.py* into data for training, test and validation. In order to provide some unknown data for validation and testing, a certain number of news articles is randomly chosen from all articles present in the dataset. The numbers are defined by the parameters *n_validation_articles* and *n_test_articles* of the method *split_dataset()*. Users that have one of those articles in their profile data or their positive or negative samples are selected for validation or training data. Users that include articles chosen for validation as well as articles chosen for testing are discarded, the rest of them are selected for training data.
+The splitted dataset is saved in the file *splitted_dataset.pickle*.
+
+--
+
 
  -- Patricia
 ### Evaluating the classifier's performance
@@ -439,7 +443,8 @@ Performance: 0.5351925630810093
 
 
 
-Gleiche Schreibweise für Ausdrücke: dbpedia, knowledgestore, dataset
+Gleiche Schreibweise für Ausdrücke: dbpedia, knowledgestore, dataset, news recommendation
+reihenfolge validation und testing
 Sichtweise/Zeitform für am Ende vom Projekt
 table of content with links to parts of document
 
