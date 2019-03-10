@@ -66,7 +66,7 @@ def split_dataset(dataset, n_validation_articles, n_test_articles):
     return all_data
 
 #load dataset
-with open('dataset_1000_users.pickle', "rb") as f:
+with open('data/dataset_1000_users.pickle', "rb") as f:
     dataset = pickle.load(f)
 
 splitted_dataset = split_dataset(dataset,10,5)
