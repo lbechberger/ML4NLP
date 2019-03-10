@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sun Nov 25 17:34:38 2018
+This program autogenerates the dataset by using the topic-article dictionary to create artificial 
+user profiles. It randomly chooses the topics of interest of each user and draws random articles from the respective category.
 
 @author: patri
 """
