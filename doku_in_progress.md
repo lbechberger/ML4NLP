@@ -98,7 +98,6 @@ The dataset is structured as follows (example for two users). Each line is one s
 [ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
 </pre>
 
-?? Include classification (0 or 1)
 
 ### Optaining and storing subcategories
 
@@ -239,16 +238,24 @@ c. the mean cosine similarity to the vector of the new article to the vectors ar
 d. the average of the three lowest cosine similarities (except from 7., where it is the average of the three highest)  
 
 
-![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png)
 
-Combining all distances to a feature vector results in a 32 dimensional vector. However, it is likely that not all features are equally important for the classifier to correctly classify an article. In order to estimate which features help the classifier the most, we applied filter and embedded methods to the extracted features.
+-- Johannes:
+## Feature selection / Dimensionality reduction
+![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png) ??aktualisieren
 
+Combining all features results in a 32 dimensional vector. However, it is likely that not all features are equally important for the classifier to correctly classify a news article given a specific user. In order to estimate which features help the classifier the most, we apply filter and embedded methods to the extracted features.
 
-We used functions from the python library *sklearn* for the feature selection. The filter method that was used is *sklearn.feature_selection.SelectKBest* with the score function *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class. The resulting value can be used as an heuristic of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score. The figure above shows the sorted scores of all 32 features. As one can see, 14 features have a low mutual information value wherefore we assume that they would not play a big role in the classificaiton process.
+*feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (so interesting or not interesting). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score (ist das so??).
+Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) is used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
 
-Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) was used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
+The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. The scores according to the filter method are represented by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. (change markers??). Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
+ in the dataset with reduced dimensionality.
+As one can see, 14 features have a low mutual information value wherefore we assume that they would not play a big role in the classificaiton process.
+
 
 The two feature selection methods result in two differently ordered ratings of the importance of the features. However, when one choses to use the five most important features, both methods return the same set of features, namely the following:
+--
+
 
 
 * The maximum cosine similarity between the weighted sums of the word embedding vectors of all words of the profile articles and the one of the new article.
@@ -265,10 +272,16 @@ As one can see, the filter and embedded feature selection methods tend to recogn
 
 ?? Schreiben, wieso nur fünf
 
+?? Include classification (0 or 1)
+?? Where does summed wordvec point?
+
 
 ### Scores of classifiers (Dimensionality reduction???)
 
-As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
+As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
+
+
+According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
 When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
 
 -- Johannes
@@ -447,5 +460,6 @@ Gleiche Schreibweise für Ausdrücke: dbpedia, knowledgestore, dataset, news rec
 reihenfolge validation und testing
 Sichtweise/Zeitform für am Ende vom Projekt
 table of content with links to parts of document
-
+wo landen die Wortvektoren?
+Always false as the baseline to use
 
