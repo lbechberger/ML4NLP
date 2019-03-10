@@ -16,7 +16,7 @@ from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import sys
 
-with open("featurised_dataset7.pickle", "rb") as f:
+with open("data/featurised_dataset7.pickle", "rb") as f:
     dataset = pickle.load(f)
 
 training = dataset[0]
@@ -93,5 +93,5 @@ plt.xlabel('Feature (sorted by importance score)')
 plt.show()
 
 #Save reduced dataset
-pickle.dump(reduced_dataset, open("reduced_dataset.pickle", "wb" ) )
+pickle.dump(reduced_dataset, open("data/reduced_dataset.pickle", "wb" ) )
 
