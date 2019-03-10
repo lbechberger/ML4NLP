@@ -25,7 +25,7 @@ def all_metrics(y, predictions):
     return "Accuracy: "+str(accuracy)+" F1-score: "+str(f1)+" F2-score: "+str(f2)+" Cohen's_Kappa: "+str(kappa)+" Matthews's_correlation_coefficient: "+str(matthew)
 
 # load the dataset (features are positive real numbers)
-with open("selected_features2.pickle", "rb") as f:
+with open("data/selected_features2.pickle", "rb") as f:
     dataset = pickle.load(f)
 
 #features = np.array([instance[0] for instance in dataSet])
