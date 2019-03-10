@@ -30,18 +30,18 @@ def all_metrics(y, predictions):
 
     return "Accuracy: "+str(accuracy)+" F1-score: "+str(f1)+" F2-score: "+str(f2)+" Cohen's_Kappa: "+str(kappa)+" Matthews's_correlation_coefficient: "+str(matthew)
 
-# load the data set (features are positive real numbers)
+# load the dataset (features are positive real numbers)
 with open("selected_features2.pickle", "rb") as f:
-    data_set = pickle.load(f) #TODO spell "dataset" similar everywhere
+    dataset = pickle.load(f)
 
 #features = np.array([instance[0] for instance in dataSet])
 #targets =  np.array([instance[1] for instance in dataSet])
 #print(targets)
 
-X_train = data_set[0][0]
-y_train = data_set[0][1]
-X_validation = data_set[1][0]
-y_validation = data_set[1][1]
+X_train = dataset[0][0]
+y_train = dataset[0][1]
+X_validation = dataset[1][0]
+y_validation = dataset[1][1]
 
 #print(X.shape,y.shape)
 
