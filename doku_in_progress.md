@@ -4,6 +4,29 @@ Material for the Practical Seminar "Machine Learning for Natural Language Proces
 
 This is the branch of group Alpha.
 
+[Project goal](#project-goal)  
+[The data collection process](#the-data-collection-process)  
+[User profiles](#user-profiles)  
+[Optaining and storing subcategories](#optaining-and-storing-subcategories)  
+[Excluded categories](#excluded-categories)  
+[Specification of parameters](#specification-of-parameters)  
+[Splitting up the dataset](#splitting-up-the-dataset)  
+[Evaluating the classifier's performance](#evaluating-the-classifiers-performance)  
+[Baselines](#baselines)  
+[Balanced vs. imbalanced data](#balanced-vs-imbalanced-data)  
+[Features](#features)  
+[Feature selection / Dimensionality reduction](#feature-selection--dimensionality-reduction)  
+[Scores of classifiers](#scores-of-classifiers)  
+[Additional feature of shared entities](#additional-feature-of-shared-entities)  
+[Classifier selection](#classifier-selection)  
+[Results](#results)  
+[Missing data](#missing-data)  
+[Train & Test with balanced data](#train--test-with-balanced-data)  
+[Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data)  
+[Setup (How to use our code)](#setup-how-to-use-our-code)
+
+Features
+
 
 Project goal
  User profile
@@ -69,7 +92,8 @@ When applied to a real-world application, a user profile can be seen as a set of
 
 
  -- Johannes
-### User profiles (Einmal Resultat statt schrittweis??)
+### User profiles 
+(Einmal Resultat statt schrittweis??)
 
 By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. To give an example, these articles could be articles which the user read til the end.
 
@@ -276,7 +300,8 @@ As one can see, the filter and embedded feature selection methods tend to recogn
 ?? Where does summed wordvec point?
 
 
-### Scores of classifiers (Dimensionality reduction???)
+### Scores of classifiers
+(Dimensionality reduction???)
 
 As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
 
@@ -453,6 +478,21 @@ Performance: 0.5807470325601656
 
 Best params: {'max_depth': 410, 'n_estimators': 41}
 Performance: 0.5351925630810093
+
+
+### Setup (How to use our code)
+
+The code is written in Python 3 (https://www.python.org/ ). In order to run the code, one must set up a Python environment with the following packages installed:
+
+numpy (www.numpy.org/ )
+sklearn (https://scikit-learn.org/)
+matplotlib (https://matplotlib.org/)
+gensim (https://radimrehurek.com/gensim/ )
+nltk (https://www.nltk.org/)
+
+(Note that the modified version of knowledgestore (ks.py) that is in the alpha branch of the repository is required.)
+
+The first python program to be run is dataset_generation.py. It saves the created dataset as dataset.pickle. Afterwards, the program split_dataset.py splits the dataset into training, test and validation data and saves it as splitted_dataSet.pickle. The program features.py uses this splitted dataset to compute the features and saves them as featurised_dataset4.pickle. (umbenennen ?? ) After this step, feature selection is applied by the program feature_selection.py, and the resulting dataset is saved as selected_features2.pickle. ?? Eventually, the program classifiers.py applies the different classifiers to the feature-selected dataset and prints the performance of the different classifiers on the console (in Datei schreiben ?? )
 
 
 

@@ -1,11 +1,8 @@
 weitere Kritik in doku einarbeiten
-Inhaltsverzeichnis + verlinken
 Github strukturieren
 alles neu berechnen, größeres Datenset  Johannes
-Selection irgendwie kombinieren  Johannes
  Importantness neu begutachten
 finaler classifier + test result.py  Patricia
 all results in a big table  Patricia
 code aufräumen + weiter kommentieren  Patricia
-nicht tuender Selectioncode an Johannes schicken  Patricia
 compare results to baselines  Patricia
