@@ -1,11 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Example code for training a classifier shown in Session 12.
-Created on Mon Jan 21 09:58:26 2019
-@author: lbechberger
-"""
-#Just tiny adjustments to fit code to our dataset
-#No imputation needed
+# In this program the classifiers are applied to the feature-selected dataset and the classification results are computed with different metrics.
 
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier

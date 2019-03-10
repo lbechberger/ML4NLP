@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
+# splits dataset into data for training, testing and validation
 
 import pickle
 import numpy as np
 import os
 
-# splits dataset into data for training, testing and validation (plus testing/validation)
+
 # reserves articles to be present only in testing (amount_test_articles) or validation (amount_validation_articles)
     # users that contain articles reserved for testing as well as validation fall into last split testing/validation
 def split_dataset(dataset, n_validation_articles, n_test_articles):
@@ -65,7 +66,7 @@ def split_dataset(dataset, n_validation_articles, n_test_articles):
     return all_data
 
 #load dataset
-with open('dataset_1000_users.pickle', "rb") as f:
+with open('data/dataset_1000_users.pickle', "rb") as f:
     dataset = pickle.load(f)
 
 splitted_dataset = split_dataset(dataset,10,5)
@@ -76,5 +77,5 @@ print("Users for Validation:",len(splitted_dataset[1]))
 print("Users for Test:",len(splitted_dataset[2]))
 
 #save splitted dataset
-with open('splitted_dataset.pickle','wb') as f:
+with open('data/splitted_dataset.pickle','wb') as f:
     pickle.dump(splitted_dataset,f)
