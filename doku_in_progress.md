@@ -490,13 +490,14 @@ matplotlib (https://matplotlib.org/)
 gensim (https://radimrehurek.com/gensim/ )
 nltk (https://www.nltk.org/)
 
-(Note that the modified version of KnowledgeStore (ks.py) that is in the alpha branch of the repository is required.)
+(Note that the modified version of KnowledgeStore (*ks.py*) that is in the alpha branch of the repository is required.)
 
-The first python program to be run is dataset_generation.py. It saves the created dataset as dataset.pickle. Afterwards, the program split_dataset.py splits the dataset into training, validation and test data and saves it as splitted_dataset.pickle. The program features.py uses this splitted dataset to compute the features and saves them as featurised_dataset4.pickle. (umbenennen ?? ) After this step, feature selection is applied by the program feature_selection.py, and the resulting dataset is saved as selected_features2.pickle. ?? Eventually, the program classifiers.py applies the different classifiers to the feature-selected dataset and prints the performance of the different classifiers on the console (in Datei schreiben ?? )
+The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *split_dataset.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *features.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset4.pickle*. (umbenennen ?? ) After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features2.pickle*. ?? Eventually, the program *classifiers.py* applies the different classifiers to the feature-selected dataset and prints the performance of the different classifiers on the console (in Datei schreiben ?? )
 
 
 
 Gleiche Schreibweise für Ausdrücke
+kursiv anpassen
 Sichtweise/Zeitform für am Ende vom Projekt
 wo landen die Wortvektoren?
 Always false as the baseline to use
