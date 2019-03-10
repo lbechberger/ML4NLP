@@ -154,8 +154,8 @@ def generate_dataset(amount_users, subcategories_per_user, profile_articles_per_
 
     return users
 
-dataSet = generate_dataset(5000,3,5,2,32*2*3)
+dataset = generate_dataset(5000,3,5,2,32*2*3)
 
 # save dataset
 with open('dataset.pickle','wb') as f:
-    pickle.dump(dataSet,f)
+    pickle.dump(dataset,f)
