@@ -26,7 +26,7 @@ else:
 
 
 # listOfArticles = nested list of categories' articles
-# e.g. listOfArticles[0][0] = first article in cat Crime and law
+# e.g. listOfArticles[0][0] = first article in first category
 # save set of possible articles in allArticles (because need to "remember" dumped ones)
 
 for c in top_level_categories[len(listOfArticles):]:

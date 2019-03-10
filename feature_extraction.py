@@ -264,12 +264,9 @@ class FeatureExtraction:
                     article_lengths[a],
                     max_keys[idx][a],
                     min_keys[idx][a],
-                    mean_keys[idx][a],
-                    # max_check[idx][a],
-                    # min_check[idx][a],
-                    # mean_check[idx][a],
+                    mean_keys[idx][a]
                 ]
-                # use extend because otherwise we end up with a nested array which is not allowed in the case of
+                # use extend because otherwise we end up with a nested array which is not allowed in the
                 # dimension reduction methods
                 row.extend(check[a])
                 # append the row to the overall feature list

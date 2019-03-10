@@ -5,7 +5,7 @@ from feature_extraction import FeatureExtraction
 from sklearn.model_selection import KFold, GridSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import cohen_kappa_score, precision_score, recall_score, make_scorer, confusion_matrix
+from sklearn.metrics import cohen_kappa_score, precision_score, recall_score, confusion_matrix
 
 # suppress warnings (usually deprecated warnings from classifier) & always use same numbers (for performance comparison)
 warnings.filterwarnings("ignore")
@@ -29,7 +29,8 @@ _, labels = create_dataset(users_db, articles, 100)
 # Extract the features
 f = FeatureExtraction(articles, categories)
 features = f.get_features(users_db)
-# print("Number of feature arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
+print("\nNumber of feature arrays: {} = {} user * {} articles".format(len(features), len(users_db), len(articles)))
+
 
 """
 Dimension Reduction
@@ -41,12 +42,8 @@ print("Contains NaN values:", np.any(np.isnan(filtered)))  # check for NaN value
 
 # set up classifiers
 classifiers = [
-    ('kNN', KNeighborsClassifier(n_neighbors=8, weights='distance', p=1)),  # n_neighbors=8, weights='distance', p=1
-    ('RF', RandomForestClassifier(warm_start=True)),  # n_estimators=128, criterion='entropy', warm_start=True
-    # ('SVM', LinearSVC()),
-    # ('DT', DecisionTreeClassifier()),
-    # ('MaxEnt', LogisticRegression()),
-    # ('NB', GaussianNB()),
+    ('kNN', KNeighborsClassifier(n_neighbors=8, weights='distance', p=1)),
+    ('RF', RandomForestClassifier(n_estimators=128, criterion='entropy'))
 ]
 
 # split dataset into test and training data via k-fold
@@ -55,16 +52,23 @@ kf = KFold(n_splits=10, shuffle=True)
 
 # parameter grids for grid search optimisation
 parameter_grid_knn = {'n_neighbors': np.arange(1, 21), 'weights': ['uniform', 'distance'], 'p': [1, 1.5, 2]}
-parameter_grid_rf = {'n_estimators': [8, 16, 32, 64, 128], 'criterion': ['gini', 'entropy'],
-                     'warm_start': ['True', 'False']}
+parameter_grid_rf = {'n_estimators': [8, 16, 32, 64, 128], 'criterion': ['gini', 'entropy']}
 
-# print("Dimension Reduction based on {} Methods. Optimisation via Grid Search".format(filter_method))
+print("\nDimension Reduction based on {} Methods. Optimisation via Grid Search".format(filter_method))
+# train with previously defined classifiers for each k-fold split
 for name, model in classifiers:
-    outfile = open("output.txt", "a")
-    kappa_before = []  # ; kappa_after = []
-    precision_before = []  # ; precision_after = []
-    recall_before = []  # ; recall_after = []
-    cm = []
+    print("Start training with", name)
+    # outfile = open("output.txt", "a") # writes results of hyperparameter optimisation in file
+    kappa_before = []
+    precision_before = []
+    recall_before = []
+    '''
+    # Uncomment if doing hyperparameter optimisation
+    kappa_after = []
+    precision_after = []
+    recall_after = []
+    '''
+    confusion_matrix_result = []
     # split dataset n_splits times (see above)
     for train_index, test_index in kf.split(filtered):
         X_train = []; y_train = []
@@ -76,18 +80,22 @@ for name, model in classifiers:
         for j in test_index:
             X_test.append(filtered[j])
             y_test.append(labels[j])
+
         # with data of split i, train the model and calculate the metrics
         model.fit(X_train, y_train)
         predictions = model.predict(X_test)
         tn, fp, fn, tp = confusion_matrix(y_test, predictions).ravel()
-        cm.append([tn, fp, fn, tp])
+        confusion_matrix_result.append([tn, fp, fn, tp])
         kappa_before.append(cohen_kappa_score(y_test, predictions))
         precision_before.append(precision_score(y_test, predictions))
         recall_before.append(recall_score(y_test, predictions))
 
-        # hyperparameter optimization
-        # depending on model, use different parameter grid
-        # this takes ago for only one split. Saved parameters of this split in output.txt
+        '''
+        Hyperparameter Optimisation
+        This takes really long for only one split. Saves parameters of first split externally in output file
+        Uncomment if want to optimise again
+        '''
+        ## depending on model, use different parameter grid
         # parameter_grid = parameter_grid_knn if name == 'kNN' else parameter_grid_rf
         # grid_search = GridSearchCV(estimator=model, param_grid=parameter_grid, scoring=make_scorer(cohen_kappa_score))
         # grid_search.fit(X_train, y_train)
@@ -98,11 +106,12 @@ for name, model in classifiers:
         # kappa_after.append(cohen_kappa_score(y_test, predictions))
         # precision_after.append(precision_score(y_test, predictions))
         # recall_after.append(recall_score(y_test, predictions))
-
-    print("Before Grid-Search\n", name, np.mean(kappa_before), np.mean(precision_before), np.mean(recall_before))
+    ## take the mean over all splits
+    # print("Before Grid-Search\n", name, np.mean(kappa_before), np.mean(precision_before), np.mean(recall_before))
     # print("After Grid-Search:", name, np.mean(kappa_after), np.mean(precision_after), np.mean(recall_after))
-    # used to check performances when inserting optimised parameters
-    print("Confusion Matrices:\n  TN     FP    FN     TP")
-    for m in cm:
+
+    # used to check performances when inserting optimised parameters for each split
+    print("Confusion Matrix for {}:\n  TN     FP    FN     TP".format(name))
+    for m in confusion_matrix_result:
         print(m)
 
