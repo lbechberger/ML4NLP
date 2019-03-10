@@ -58,7 +58,6 @@ print("\nDimension Reduction based on {} Methods. Optimisation via Grid Search".
 # train with previously defined classifiers for each k-fold split
 for name, model in classifiers:
     print("Start training with", name)
-    # outfile = open("output.txt", "a") # writes results of hyperparameter optimisation in file
     kappa_before = []
     precision_before = []
     recall_before = []
@@ -92,16 +91,13 @@ for name, model in classifiers:
 
         '''
         Hyperparameter Optimisation
-        This takes really long for only one split. Saves parameters of first split externally in output file
-        Uncomment if want to optimise again
+        This takes really long for only one split. Only uncomment if optimisation is required
         '''
         ## depending on model, use different parameter grid
         # parameter_grid = parameter_grid_knn if name == 'kNN' else parameter_grid_rf
         # grid_search = GridSearchCV(estimator=model, param_grid=parameter_grid, scoring=make_scorer(cohen_kappa_score))
         # grid_search.fit(X_train, y_train)
         # print('Best parameters:', grid_search.best_params_)
-        # outfile.write(('Best parameters for {}: {}'.format(name, grid_search.best_params_)))
-        # outfile.close()
         # predictions = grid_search.predict(X_test)
         # kappa_after.append(cohen_kappa_score(y_test, predictions))
         # precision_after.append(precision_score(y_test, predictions))
