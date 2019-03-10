@@ -77,5 +77,5 @@ print("Users for Validation:",len(splitted_dataset[1]))
 print("Users for Test:",len(splitted_dataset[2]))
 
 #save splitted dataset
-with open('splitted_dataset.pickle','wb') as f:
+with open('data/splitted_dataset.pickle','wb') as f:
     pickle.dump(splitted_dataset,f)
