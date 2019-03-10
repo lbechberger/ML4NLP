@@ -118,11 +118,11 @@ def generate_dataset(amount_users, subcategories_per_user, articles_per_user_and
     return users
 
 #print(generate_dataset(100,3,10))
-dataSet = generate_dataset(100,3,10)
+dataset = generate_dataset(100,3,10)
 
 with open("dataset.csv","w+") as my_csv:
     csvWriter = csv.writer(my_csv,delimiter=' ')
-    csvWriter.writerows(dataSet)
+    csvWriter.writerows(dataset)
     
 wiht open('dataset.pickle','wb') as f:
     pickle.dump(dataset,f)
