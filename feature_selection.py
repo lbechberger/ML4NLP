@@ -10,7 +10,6 @@ Reduces dimensionality of dataset by applying filter (mutual information) and/or
 from sklearn.feature_selection import RFE, SelectKBest, mutual_info_classif, SelectFromModel
 import numpy as np
 import pickle
-from sklearn.datasets import load_breast_cancer
 from sklearn.decomposition import PCA
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
