@@ -11,14 +11,14 @@ This is the branch of group Alpha.
 [Excluded categories](#excluded-categories)  
 [Specification of parameters](#specification-of-parameters)  
 [Splitting up the dataset](#splitting-up-the-dataset)  
-[Evaluating the classifier's performance](#evaluating-the-classifiers-performance)  
-[Baselines](#baselines)  
 [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data)  
 [Features](#features)  
 [Feature selection / Dimensionality reduction](#feature-selection--dimensionality-reduction)  
 [Scores of classifiers](#scores-of-classifiers)  
 [Additional feature of shared entities](#additional-feature-of-shared-entities)  
 [Classifier selection](#classifier-selection)  
+[Evaluating the classifier's performance](#evaluating-the-classifiers-performance)  
+[Baselines](#baselines)  
 [Results](#results)  
 [Missing data](#missing-data)  
 [Train & Test with balanced data](#train--test-with-balanced-data)  
@@ -70,15 +70,12 @@ link to sourcecode
 
 Goal of the project is the recommendation of news articles on the basis of Wikinews (https://en.wikinews.org/wiki/Main_Page), accessed via KnowledgeStore API (http://knowledgestore2.fbk.eu/nwr/wikinews/ui). The latter includes the enrichment of articles with information in a format that makes them easiy to process by computers, for example the linking of mentioned entities with DBpedia-entries (https://wiki.dbpedia.org/).
 
-One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferrably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision, which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data, additionally, using another dataset like the yahoo-news-dataset (foto von christopher??) would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in (???)
+One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferrably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision, which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data, additionally, using another dataset like the yahoo-news-dataset (foto von christopher??) would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in the next chapter ??
 
 In order to estimate a user's interest in a given article, machine learning techniques in the form of a classifier are used. From this classifier's point of view, a user goes along with some kind of data modeling his or her interest, which is called the user profile in this context. After training, the classifier is supposed to receive one user profile and one article as an input, the output should be the statement if that article is interesting for the specific user or if not.
 
 By having a user profile, the classifier should be able to recommend each user individual articles rather than the general recommendation of (for example popular) articles to unknown users.
 
-
-
-## Session 3, 06.11.18
 
 ### The data collection process
 
@@ -174,9 +171,6 @@ The dataset consists of 1000 user profiles. Each user is interested in three of 
 Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
 
 
-
-## Session 7, 04.12.18
-
 ### Splitting up the dataset
 
 As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, and validation test. As there is a lot of data present in the set, we use different parts of the set for training, validation and test.
@@ -188,32 +182,6 @@ The splitted dataset is saved in the file *splitted_dataset.pickle*.
 
 
  -- Patricia
-### Evaluating the classifier's performance
-
-(why which scores??)
-For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination.
-
-A decision still to be made is if we use the balanced F1-score or the F2-score to weight recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
-Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
-At last, the accuracy should be calculated for having a metric that is widely used.
-
-### Baselines
-
-As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
-
-??Change values, not balances anymore, so 50-50 is != label frequency:
-|  | Always “True” | Always “False” | 50-50 | Label Frequency |
-|-----------------------|---------------|----------------|-------|-----------------|
-| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
-| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
-| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
-| Matthew's correlation | 0 | 0 | 0 | 0 |
-| Cohen's kappa | 0 | 0 | 0 | 0 |
-
-Critic: Example how e.g. Matthew's correlation is calced
-
---
-
 
 -- Johannes 
 ### Balanced vs. imbalanced data
@@ -322,6 +290,34 @@ Nevertheless, we implemented the feature of common entities. It can be turned on
 ### Classifier selection
 
 We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters. Shame on the grid search.
+
+### Evaluating the classifier's performance
+
+(why which scores??)
+For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination.
+
+A decision still to be made is if we use the balanced F1-score or the F2-score to weight recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
+Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
+At last, the accuracy should be calculated for having a metric that is widely used.
+
+### Baselines
+
+As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
+
+??Change values, not balances anymore, so 50-50 is != label frequency:
+|  | Always “True” | Always “False” | 50-50 | Label Frequency |
+|-----------------------|---------------|----------------|-------|-----------------|
+| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
+| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
+| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
+| Matthew's correlation | 0 | 0 | 0 | 0 |
+| Cohen's kappa | 0 | 0 | 0 | 0 |
+
+Critic: Example how e.g. Matthew's correlation is calced
+
+--
+
+
 
 ### Results
 
