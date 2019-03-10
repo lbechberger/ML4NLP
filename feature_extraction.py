@@ -63,7 +63,7 @@ def initialize_tf_idf():
 
     # try to load the tf-idf-vectorizer of it already exists
     try:
-        vectorizer = pickle.load(open("tf_idf_vectorizer.pickle", "rb"))
+        vectorizer = pickle.load(open("data/tf_idf_vectorizer.pickle", "rb"))
     # if it does not exist, make a new one
     except FileNotFoundError:
 
@@ -88,7 +88,7 @@ def initialize_tf_idf():
     # compute tf-idf vector for each article
 
     # save it as a dictionary: article_url and tf-idf vector
-        pickle.dump( vectorizer, open( "tf_idf_vectorizer.pickle", "wb" ) )
+        pickle.dump( vectorizer, open( "data/tf_idf_vectorizer.pickle", "wb" ) )
     #pickle.dump( tf_idic, open( "tf_idf_dictionary.pickle", "wb" ) )
     # save pickle
 
