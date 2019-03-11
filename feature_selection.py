@@ -16,7 +16,7 @@ from sklearn.ensemble import RandomForestClassifier
 import matplotlib.pyplot as plt
 import sys
 
-with open("data/featurised_dataset7.pickle", "rb") as f:
+with open("data/featurised_dataset.pickle", "rb") as f:
     dataset = pickle.load(f)
 
 training = dataset[0]
@@ -30,8 +30,8 @@ selected_features = list()
 
 use_filter = True #Use filter method for selection (mutual information)
 use_embedded = True #Use embedded method for selection (random forest)
-n_features_filter = 5 #Amount of features to select by filter method
-n_features_embedded = 5 #Amount of features to select by embedded method
+n_features_filter = 1 #Amount of features to select by filter method
+n_features_embedded = 0 #Amount of features to select by embedded method
 
 if not (use_filter or use_embedded):
     print("No selection method selected. Exiting.")
@@ -93,5 +93,5 @@ plt.xlabel('Feature (sorted by importance score)')
 plt.show()
 
 #Save reduced dataset
-pickle.dump(reduced_dataset, open("data/reduced_dataset.pickle", "wb" ) )
+pickle.dump(reduced_dataset, open("data/reduced_dataset1.pickle", "wb" ) )
 

@@ -25,17 +25,18 @@ def all_metrics(y, predictions):
     return "Accuracy: "+str(accuracy)+" F1-score: "+str(f1)+" F2-score: "+str(f2)+" Cohen's_Kappa: "+str(kappa)+" Matthews's_correlation_coefficient: "+str(matthew)
 
 # load the dataset (features are positive real numbers)
-with open("data/selected_features2.pickle", "rb") as f:
+with open("data/reduced_dataset1.pickle", "rb") as f:
     dataset = pickle.load(f)
 
 #features = np.array([instance[0] for instance in dataSet])
 #targets =  np.array([instance[1] for instance in dataSet])
 #print(targets)
 
-X_train = dataset[0][0]
-y_train = dataset[0][1]
-X_validation = dataset[1][0]
-y_validation = dataset[1][1]
+X_train = np.array([instance[0] for instance in dataset[0]])
+y_train = np.array([instance[1] for instance in dataset[0]])
+X_validation = np.array([instance[0] for instance in dataset[1]])
+y_validation = np.array([instance[1] for instance in dataset[1]])
+
 
 #print(X.shape,y.shape)
 
