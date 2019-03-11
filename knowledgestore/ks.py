@@ -125,8 +125,8 @@ def get_all_resource_uris():
     
     If possible, use locally cached version (in pickle file), if not download everything again (slow).
     """
-    if os.path.isfile('resourceURIs.pickle'):
-        with open('resourceURIs.pickle', "rb") as f:
+    if os.path.isfile('knowledgestore/resourceURIs.pickle'):
+        with open('knowledgestore/resourceURIs.pickle', "rb") as f:
             return pickle.load(f)
     else:
         sparql_query = "SELECT DISTINCT ?s WHERE { ?e gaf:denotedBy ?m . BIND(STRBEFORE(STR(?m), '#') AS ?s) }"
@@ -136,7 +136,7 @@ def get_all_resource_uris():
             resource_uri = entry['s']
             if resource_uri not in result:
                 result.append(resource_uri)
-        with open('resourceURIs.pickle', 'wb') as f:
+        with open('knowledgestore/resourceURIs.pickle', 'wb') as f:
             pickle.dump(result, f)
         return result
 
@@ -169,8 +169,8 @@ def create_category_articles_dictionary():
     If a precomputed dictionary is found, this is used. Otherwise, it is dynamically recomputed and stored.
     """
 
-    if os.path.isfile('subcategory_resource_mappings.pickle'):
-        with open('subcategory_resource_mappings.pickle', "rb") as f:
+    if os.path.isfile('knowledgestore/subcategory_resource_mappings.pickle'):
+        with open('knowledgestore/subcategory_resource_mappings.pickle', "rb") as f:
             dic = pickle.load(f)
 
     else:
@@ -185,7 +185,7 @@ def create_category_articles_dictionary():
                 dic[cat].append(uri)
             print(int(index/all_uris_len*10000)/100,"% done")
 
-        with open('subcategory_resource_mappings.pickle', 'wb') as f:
+        with open('knowledgestore/subcategory_resource_mappings.pickle', 'wb') as f:
                 pickle.dump(dic, f)
 
     return dic
@@ -218,8 +218,8 @@ def get_all_resource_category_mappings(category_names):
     
     If a precomputed mapping is found, this is used. Otherwise, it is dynamically recomputed and stored.
     """
-    if os.path.isfile('resource_category_mappings.pickle'):
-        with open('resource_category_mappings.pickle', "rb") as f:
+    if os.path.isfile('knowledgestore/resource_category_mappings.pickle'):
+        with open('knowledgestore/resource_category_mappings.pickle', "rb") as f:
             data = pickle.load(f)
             if data['category_names'] == category_names:
                 return data['mappings']
@@ -228,7 +228,7 @@ def get_all_resource_category_mappings(category_names):
     for resource_uri in all_resource_uris:
         mappings[resource_uri] = get_applicable_news_categories(resource_uri, category_names)
     result = {'category_names' : category_names, 'mappings' : mappings}
-    with open('resource_category_mappings.pickle', 'wb') as f:
+    with open('knowledgestore/resource_category_mappings.pickle', 'wb') as f:
             pickle.dump(result, f)
     return mappings
 
