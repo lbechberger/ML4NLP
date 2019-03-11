@@ -80,7 +80,7 @@ By having a user profile, the classifier should be able to recommend each user i
 ### The data collection process
 
 We encountered the problem that there is no pre-existing user data that is tailored to our research problem (??genauer, no preexisting); the data would be required to be restricted only to articles that are listed in Wikinews via the KnowledgeStore database.
-In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (?? example) or rather broad (?? example).  However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
+In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (e.g. "Pope John Paul II") or rather broad (e.g. "Germany").  However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
 
 (?? design decisions begründen)
 When applied to a real-world application, a user profile can be seen as a set of articles that the user either read till the end or articles that the user specified that they liked them.
@@ -131,9 +131,11 @@ The extraction of categories for all articles took roughly two hours, so the res
 
 We chose to exclude some categories, which are not taken into account for the generation of the dataset. The reason is mostly the assumption that the news articles in these categories don't share much thematic similarity. These categories are:
 
-* the 16 (??) top-level categories
-* all categories that contain less than 21 (*subcategories_per_user*profile_articles_per_subcategory + subcategories_per_user*liked_articles_per_subcategory* (are multiplication chars shown correctly??)) because they don't hold enough articles to create a user as described above
-or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic
+* the 16 top-level categories ("Crime and law", "Culture and entertainment", "Disasters and accidents", "Economy and business", 
+                                "Education", "Environment", "Health", "Local only", "Media", "Obituaries", 
+                                "Politics and conflicts", "Science and technology", "Sports", "Wackynews", "Weather", "Women")
+* all categories that contain less than 21 (*subcategories_per_user \* profile_articles_per_subcategory + subcategories_per_user \* liked_articles_per_subcategory*) because they don't hold enough articles to create a user as described above
+or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic.
 * all categories that contain too many articles (over 506 (??why). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
 * all categories that denote a specific date, e.g. 'January 1, 2008'. 
 * all categories that just describe authorship. For example 'Cocoaguy (Wikinewsie)' or 'Juliancolton (WWC2010)'. The reason for that is that some authors write about a wide, seemingly unrelated variety of articles, hence they do not have anything to do with a certain topic.
@@ -480,16 +482,15 @@ Performance: 0.5351925630810093
 
 The code is written in Python 3 (https://www.python.org/ ). In order to run the code, one must set up a Python environment with the following packages installed:
 
-numpy (www.numpy.org/ )
-sklearn (https://scikit-learn.org/)
-matplotlib (https://matplotlib.org/)
-gensim (https://radimrehurek.com/gensim/ )
-nltk (https://www.nltk.org/)
+* numpy (www.numpy.org/ )  
+* sklearn (https://scikit-learn.org/)  
+* matplotlib (https://matplotlib.org/)  
+* gensim (https://radimrehurek.com/gensim/ )  
+* nltk (https://www.nltk.org/)  
 
 (Note that the modified version of KnowledgeStore (*ks.py*) that is in the alpha branch of the repository is required.)
 
-The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset4.pickle*. (umbenennen ?? ) After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features2.pickle*. ?? Eventually, the program *classifiers.py* applies the different classifiers to the feature-selected dataset and prints the performance of the different classifiers on the console (in Datei schreiben ?? )
-
+The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features.pickle*. The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the file *classifier_results.pickle*. Eventually, the script results.py compares the results and ... ??
 
 
 Gleiche Schreibweise für Ausdrücke
