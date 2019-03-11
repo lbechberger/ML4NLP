@@ -208,7 +208,7 @@ b. the maximum distance to the vector of the new article to the vectors articles
 c. the mean distance to the vector of the new article to the vectors articles in the profile
 d. the average of the three lowest distances (except from 7., where it is the average of the three highest)
 
-![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png)
+![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/figures/Feature_importances.png)
 
 All distances combined to a feature vector gives us 32 dimensions. However, it is likely that not all features are equally important for the classifier to correctly classify an article. In order to estimate which features help the classifier the most, we applied filter methods to the extracted features, namely sklearn.feature_selection.mutual_info_classif.
 The figure above shows the scores of all 32 features sorted by score. According to this, 14 features have a low mutual information value wherefore we assume that they would not play a big role in the classification process. For the next step of the machine learning research cycle, we use the reduced feature set of the remaining 18 features with more mutual information.
