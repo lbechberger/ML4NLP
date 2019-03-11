@@ -70,7 +70,7 @@ link to sourcecode
 
 Goal of the project is the recommendation of news articles on the basis of Wikinews (https://en.wikinews.org/wiki/Main_Page), accessed via KnowledgeStore API (http://knowledgestore2.fbk.eu/nwr/wikinews/ui). The latter includes the enrichment of articles with information in a format that makes them easiy to process by computers, for example the linking of mentioned entities with DBpedia-entries (https://wiki.dbpedia.org/).
 
-One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferrably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision, which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data, additionally, using another dataset like the yahoo-news-dataset (foto von christopher??) would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in the next chapter ??
+One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferrably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision, which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data, additionally, using another dataset like the yahoo-news-dataset would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in the next chapter.
 
 In order to estimate a user's interest in a given article, machine learning techniques in the form of a classifier are used. From this classifier's point of view, a user goes along with some kind of data modeling his or her interest, which is called the user profile in this context. After training, the classifier is supposed to receive one user profile and one article as an input, the output should be the statement if that article is interesting for the specific user or if not.
 
@@ -79,8 +79,8 @@ By having a user profile, the classifier should be able to recommend each user i
 
 ### The data collection process
 
-We encountered the problem that there is no pre-existing user data that is tailored to our research problem (??genauer, no preexisting); the data would be required to be restricted only to articles that are listed in Wikinews via the KnowledgeStore database.
-In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (e.g. "Pope John Paul II") or rather broad (e.g. "Germany").  However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
+We encountered the problem that there is no pre-existing user data that is tailored to our research problem; the data would be required to contain user's ratings of news articles and would need to be restricted only to articles that are listed in Wikinews via the KnowledgeStore database.
+In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (e.g. "Pope John Paul II") or rather broad (e.g. "Germany"). However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
 
 (?? design decisions begründen)
 When applied to a real-world application, a user profile can be seen as a set of articles that the user either read till the end or articles that the user specified that they liked them.
@@ -100,10 +100,8 @@ However, in order to aquire the data set, an intermediate step to model the inte
 
 (?? an example vector would be good)
 
-Folgendes als einzelnen Teil, Codenahe Doku??)
-
-The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in (balanced/imbalanced??), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
-Having the same amout of profile articles as well as positive and negative samples ensures a uniform format of all users. (the user's categories of interest are not specified in the dataset??).
+The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in the chapter [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
+Having the same amout of profile articles as well as positive and negative samples ensures a uniform format of all users. The categories of interest themselves are not part of the dataset. 
 The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category are randomly drawn.
 The dataset is returned as a nesting of lists holding URIs. It is then saved as a pickle-file, as an easy way of serializing the structure and content of the dataset. For a more general usage of the dataset, it would of course be possible to save it as for example a csv-file. 
 
@@ -136,7 +134,7 @@ We chose to exclude some categories, which are not taken into account for the ge
                                 "Politics and conflicts", "Science and technology", "Sports", "Wackynews", "Weather", "Women")
 * all categories that contain less than 21 (*subcategories_per_user \* profile_articles_per_subcategory + subcategories_per_user \* liked_articles_per_subcategory*) because they don't hold enough articles to create a user as described above
 or less than twice as many as the variable that denotes the number of articles that are chosen in the user profile per topic.
-* all categories that contain too many articles (over 506 (??why). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
+* all categories that contain too many articles (over 506). We argued that categories that are very large are too general and hence the articles from that category do not have much in common.
 * all categories that denote a specific date, e.g. 'January 1, 2008'. 
 * all categories that just describe authorship. For example 'Cocoaguy (Wikinewsie)' or 'Juliancolton (WWC2010)'. The reason for that is that some authors write about a wide, seemingly unrelated variety of articles, hence they do not have anything to do with a certain topic.
 * the following categories: 
@@ -169,8 +167,8 @@ or less than twice as many as the variable that denotes the number of articles t
 ### Specification of parameters
 The values of the parameters introduced above are fixed as follows. Note that they are mostly chosen arbitrarily.
 
-The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. (evtl. as a parameter, Codenäher??) That gives a total of 15 articles to describe the interest of a user.
-Apart from that, there are also 6 positive and 192 negative articles (negative samples, uninteresting articles??, naming) per user which can later be used for training, validation and testing of the classifier.
+The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. That gives a total of 15 articles to describe the interest of a user.
+Apart from that, there are also 6 positive and 192 negative classification example articles per user which can later be used for training, validation and testing of the classifier.
 
 
 ### Splitting up the dataset
@@ -180,17 +178,12 @@ Nevertheless, the division of the dataset needs additional consideration. In cla
 *dataset_splitting.py* splits the dataset provided by *dataset_generation.py* into data for training, validation and test. In order to provide some unknown data for validation and testing, a certain number of news articles is randomly chosen from all articles present in the dataset. The numbers are defined by the parameters *n_validation_articles* and *n_test_articles* of the method *split_dataset()*. Users that have one of those articles in their profile data or their positive or negative samples are selected for validation or testing data. Users that include articles chosen for validation as well as articles chosen for testing are discarded, the rest of them are selected for training data.
 The splitted dataset is saved in the file *splitted_dataset.pickle*.
 
---
 
-
- -- Patricia
-
--- Johannes 
 ### Balanced vs. imbalanced data
 
 (?? in dataset or theroretícally?? meaning, in documentation, it's still to decide whether to use balanced or imbalanced)
-Due to the automatic generation of the dataset, the ratio of positive examples for one user in the dataset can be determined relatively accurately. Each of the users the dataset contains is interested in articles of three categories. The amout of categories that are used to generate the dataset is three(??). Additionally, the average amout of articles that a category of the dataset contain is ???. Altogether, the average amount of articles that belong to the user's three categories of interest devided by the number of all articles gives a ratio of 3.1% of positive examples in the dataset. (really, maybe we just looked up the actual amount in dataset, not calculated one??).
-Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for testing and evaluating (Reihenfolge??) the classifier's performance should be the original dataset. That means that the probability of the classifier classifing an article as negative (so uninteresting) is supposed to be much higher than the other case (see chapter ???).
+Due to the automatic generation of the dataset, the ratio of positive examples for one user in the dataset can be determined relatively accurately. Each of the users the dataset contains is interested in articles of three categories. The amout of categories that are used to generate the dataset is 649. Additionally, the average amount of articles that a category of the dataset contain is ???. Altogether, the average amount of articles that belong to the user's three categories of interest devided by the number of all articles gives a ratio of 3.1% of positive examples in the dataset. 
+Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifing an article as negative (so uninteresting) is supposed to be much higher than the other case (see chapter ???).
 However, with the ratio of 3.1% in mind, the choice of data for validation and testing is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. One is the possibility that the classifier learns to always classify an article as negative as that is the strong bias of the training data. (what else??)
 But also the use of a balanced dataset that doesn't model the supposed real-world scenario isn't ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice. (what else??)
 Yet, the strongest argument for choosing balanced or imbalanced to train the classifier is the actual performance of that classifier. Therefore, the results shown in (Kapitel??) state the performances of named classifiers using first a balanced and then an imbalanced dataset for training. As explained above, the data for evaluating the classifier's performance is imbalanced.
@@ -242,20 +235,20 @@ Combining all features results in a 32 dimensional vector. However, it is likely
 *feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (so interesting or not interesting). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score (ist das so??).
 Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) is used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
 
-The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. (change markers??). Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
+The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
 In order to decide which features to use, one can look define a threshold for the importance score. It is difficult to interpret the exact values of the scores, but their distribution for one selection method can help to set such a threshold. For the embedded selection method (red dots), one clear jump in the score distribution occurs before the fifth important feature (between 26 and 27 on the horizontal axis). For the filter method selection (blue dots), the decision how many features to use is more randomly, but is based on the jump in the score distribution between feature 16 and 17. In total, five features selected by the filter method and 15 features selected by the embedded method are used. Interstingly, all five features from the first method are included in the 15 features selected by the second method.
 (are scores of different methods comparable??)
 The five features selected by both methods are the following:
 
-* The cosine similarity between the unweighted summed word embedding of the new article (new article eindeutig?? article to be classified??) and the one of the most similar article of the user profile
+* The cosine similarity between the unweighted summed word embedding of the article to be classified and the one of the most similar article of the user profile
 
-* The maximum cosine similarity between the sums of the unweighted word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
+* The maximum cosine similarity between the sums of the unweighted word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the article to be classified.
 
-* The maximum cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
+* The maximum cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the article to be classified. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
 
-* The maximum sum of tf-idf scores, after searching each profile article for the five words from the new article that have the highest tf-idf score and summing up the tf-idf scores of these five words for each profile article separately.
+* The maximum sum of tf-idf scores, after searching each profile article for the five words from the article to be classifiedthat have the highest tf-idf score and summing up the tf-idf scores of these five words for each profile article separately.
 
-* The mean of three highest similarities as explained as follows: The cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
+* The mean of three highest similarities as explained as follows: The cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the article to be classified. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
 
 
 ### Interpretation of selection results
@@ -266,26 +259,21 @@ As one can see, the filter and embedded feature selection methods tend to recogn
 An interesting observation can be made when examining the summed word embeddings of articles. 
 
 
-
-
-?? Include classification (0 or 1)
 ?? Where does summed wordvec point?
 
 ### Scores of classifiers
-(Dimensionality reduction???)
+
 
 As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
 
 When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
 
--- Johannes
 
 ### Additional feature of shared entities
 
 One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a DBpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
 The mentions of an article can be accessed via the property 'ks:hasMention'. If a mention refers to an entity, that entity can be retrieved using the property 'ks:refersTo' of the mention. Oddly enough, when a mention has the type 'nwr:EntityMention', the property 'ks:refersTo' often doesn't lead to an entity, which lessens the amount of recognized entities in an article. Consequentially, the similarity of two articles measured by the share of entities that are named in the articles is reduced.
 Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter *use_entity_feature* in the feature_extraction.py script. Yet, when using that feature, the time to calculate the features rapidly rises. In out testruns, enabling the entity feature led to an increase of the time needed to extract all features by the factor of 12. Therefore, we didn't use that feature in the final version of *feature_extraction.py*.
----
 
 
 ### Classifier selection

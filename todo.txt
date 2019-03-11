@@ -7,9 +7,7 @@ all results in a big table  Patricia
 code aufräumen + weiter kommentieren  Patricia
 compare results to baselines  Patricia
 
-Dateien in Doku umbenennen (features.py, split_dataset.py)
-Am Anfang jedes Skripts ein kurzer beschreibungssatz
-Die pickle-Dateien die geladen werden im Skript umbenennen
-ks.py importe umbenennen, sowie pickle-dateien importe
+classifiers.py noch ändern?
+pickle-Dateien umbenennen?
 
 ? imbalanced classification punishment
