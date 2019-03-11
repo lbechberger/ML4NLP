@@ -256,10 +256,20 @@ The five features selected by both methods are the following:
 As one can see, the filter and embedded feature selection methods tend to recognize maximum cosine similarities as important features, rather than minimum or mean cosine similarities of all similarity scores. One possible explanation for this observation is that each user profile consists of three randomly chosen topics which are mostly not strongly related to each other. Another article as a sample to be classified as positive belongs to one of those three topics, so the similarity between the summed word embeddings of that article and each article from the same topic in the user profile is relativly high. The similarity to the news articles belonging to other topics is probably low as is the maximum similarity for a sample classified as negative.
 (Hinweis auf Ausreichen von einem Feature!!??)
 
-An interesting observation can be made when examining the summed word embeddings of articles. 
+Some insights can be gained by examining the nearest words of summed word embeddings of articles. The gensim python library provides a method *most_similar()*, which takes a word2vec embedding as an input and gives a list of words with vectors that are mathematically close to that input. The summed vector over all words of an article doesn't exactly match an vector of an existing word, but the environment of the summed embedding gives a feeling of what the embedding expresses.
+The following table shows the five closest words to different summed word vectors for the news article "Government of the Bahamas isssues warning over Hurricane Hanna
+" (http://en.wikinews.org/wiki/Government_of_the_Bahamas_isssues_warning_over_Hurricane_Hanna). "Weighted" means that while summing word embeddings, each embedding is multiplied (so weighted) with it's tf-idf score. "All words" says that every known word of the article is taken for summing while "top 5 words" only uses the five words of the article with the highest tf-idf-scores.
+The different ways of summing are parts of four features used for the classifier.
+
+| weighted, all words | unweighted, all words | weighted, top 5 words | unweighted, top 5 words |
+|---------------------|-----------------------|-----------------------|-------------------------|
+| hurricane           | the                   | hurricane             | hurricane               |
+| Hurricane           | hurricane             | southeastern          | storm                   |
+| Bahamas             | By_MaltaMedia_News    | tropical_storm        | southeastern            |
+| hurricanes          | that                  | storm                 | hurricanes              |
+| Hurricane_Wilma     | By_Jennifer_LeClaire  | northeastern          | tropical_storm          |
 
 
-?? Where does summed wordvec point?
 
 ### Scores of classifiers
 
@@ -302,7 +312,7 @@ As baselines we are planning to use *always true, always false, 50-50, label fre
 | Matthew's correlation | 0 | 0 | 0 | 0 |
 | Cohen's kappa | 0 | 0 | 0 | 0 |
 
-Critic: Example how e.g. Matthew's correlation is calced
+Critic: Example how e.g. Matthew's correlation is calced??
 
 --
 
@@ -428,11 +438,9 @@ In the following are scores of the classifiers for 700 samples with first the na
         'solver': 'adam'  
         Performance: 0.6446032342986086 
 
--- Johannes
 ### Missing data
 Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles) (heh??), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like DBpedia-information) is not an issue.
 Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector weakens the informative value of the corresponding feature and might lead to falsification of the feature itself.
----
 
 ## Train & Test with balanced data
 
