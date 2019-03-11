@@ -235,48 +235,47 @@ d. the average of the three lowest cosine similarities (except from 7., where it
 
 -- Johannes:
 ## Feature selection / Dimensionality reduction
-![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/Feature_Scores.png) ??aktualisieren
+![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/figures/Feature_importances.png)
 
 Combining all features results in a 32 dimensional vector. However, it is likely that not all features are equally important for the classifier to correctly classify a news article given a specific user. In order to estimate which features help the classifier the most, we apply filter and embedded methods to the extracted features.
 
 *feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (so interesting or not interesting). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score (ist das so??).
 Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) is used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
 
-The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. The scores according to the filter method are represented by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. (change markers??). Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
- in the dataset with reduced dimensionality.
-As one can see, 14 features have a low mutual information value wherefore we assume that they would not play a big role in the classificaiton process.
+The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. (change markers??). Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
+In order to decide which features to use, one can look define a threshold for the importance score. It is difficult to interpret the exact values of the scores, but their distribution for one selection method can help to set such a threshold. For the embedded selection method (red dots), one clear jump in the score distribution occurs before the fifth important feature (between 26 and 27 on the horizontal axis). For the filter method selection (blue dots), the decision how many features to use is more randomly, but is based on the jump in the score distribution between feature 16 and 17. In total, five features selected by the filter method and 15 features selected by the embedded method are used. Interstingly, all five features from the first method are included in the 15 features selected by the second method.
+(are scores of different methods comparable??)
+The five features selected by both methods are the following:
 
+* The cosine similarity between the unweighted summed word embedding of the new article (new article eindeutig?? article to be classified??) and the one of the most similar article of the user profile
 
-The two feature selection methods result in two differently ordered ratings of the importance of the features. However, when one choses to use the five most important features, both methods return the same set of features, namely the following:
---
+* The maximum cosine similarity between the sums of the unweighted word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
 
-
-
-* The maximum cosine similarity between the weighted sums of the word embedding vectors of all words of the profile articles and the one of the new article.
-
-* The maximum cosine similarity between the unweighted sums of the word embedding vectors of all words of the profile articles and the one of the new article.
-
-* The maximum cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
-
-* The maximum cosine similarity between the weighted (by tf-idf scores) sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article.
+* The maximum cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
 
 * The maximum sum of tf-idf scores, after searching each profile article for the five words from the new article that have the highest tf-idf score and summing up the tf-idf scores of these five words for each profile article separately.
 
-As one can see, the filter and embedded feature selection methods tend to recognize maximum cosine similarities as important features, rather than minimum or mean cosine similarities.
+* The mean of three highest similarities as explained as follows: The cosine similarity between the sums of the word embedding vectors of the ten words with the highest tf-idf scores of the profile articles and the one of the new article. The word embeddings of the ten words are weighted by their tf-idf-score when summed.
 
-?? Schreiben, wieso nur fünf
+
+### Interpretation of selection results
+
+As one can see, the filter and embedded feature selection methods tend to recognize maximum cosine similarities as important features, rather than minimum or mean cosine similarities of all similarity scores. One possible explanation for this observation is that each user profile consists of three randomly chosen topics which are mostly not strongly related to each other. Another article as a sample to be classified as positive belongs to one of those three topics, so the similarity between the summed word embeddings of that article and each article from the same topic in the user profile is relativly high. The similarity to the news articles belonging to other topics is probably low as is the maximum similarity for a sample classified as negative.
+(Hinweis auf Ausreichen von einem Feature!!??)
+
+An interesting observation can be made when examining the summed word embeddings of articles. 
+
+
+
 
 ?? Include classification (0 or 1)
 ?? Where does summed wordvec point?
-
 
 ### Scores of classifiers
 (Dimensionality reduction???)
 
 As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
 
-
-According to mutual_inf_classif the three most important features are the ones with index 25, 1, 21 (starting with the best). These are firstly the highest tf-idf matching, secondly the highest cosine similarity of the summed word2vec-embedding of words weighed by tf-idf score and thirdly the highest cosine similarity of word2vec-embeddings of summed and unweighed words of the ten highest words of the article according to their tf-idf scores.
 When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
 
 -- Johannes
@@ -291,7 +290,7 @@ Nevertheless, we implemented the feature of common entities. It can be turned on
 
 ### Classifier selection
 
-We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters. Shame on the grid search.
+We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters.
 
 ### Evaluating the classifier's performance
 
@@ -498,4 +497,58 @@ kursiv anpassen
 Sichtweise/Zeitform für am Ende vom Projekt
 wo landen die Wortvektoren?
 Always false as the baseline to use
+
+
+
+15 Features:
+TRAIN & EVALUATE
+kNN 0.7346710480318814
+/home/rek/.local/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:758: ConvergenceWarning: lbfgs failed to converge. Increase the number of iterations.
+  "of iterations.", ConvergenceWarning)
+MaxEnt 0.7334483325119107
+/home/rek/.local/lib/python3.6/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+RF 0.7314038185630725
+SVM 0.7265053696042789
+MLP 0.7415001511695023
+
+GRID SEARCH
+/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Best params: {'n_neighbors': 4, 'p': 1}
+Performance: 0.730056631475914
+
+Best params: {'solver': 'newton-cg'}
+Performance: 0.7362092289192845
+/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Best params: {'max_depth': 310, 'n_estimators': 31}
+Performance: 0.7478210582841092
+
+
+
+
+1 Feature:
+
+TRAIN & EVALUATE
+kNN 0.7222988632601258
+MaxEnt 0.7307941151649835
+/home/rek/.local/lib/python3.6/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
+  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
+RF 0.6278629406727534
+SVM 0.731101918014291
+MLP 0.7293276983818051
+
+GRID SEARCH
+/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Best params: {'n_neighbors': 13, 'p': 1}
+Performance: 0.7286071680327302
+
+Best params: {'solver': 'saga'}
+Performance: 0.7307941151649835
+/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
+  warnings.warn(CV_WARNING, FutureWarning)
+Best params: {'max_depth': 460, 'n_estimators': 6}
+Performance: 0.6336616660328986
 
