@@ -26,11 +26,7 @@ This is the branch of group Alpha.
 [Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data)  
 [Setup (How to use our code)](#setup-how-to-use-our-code)
 
-Features
 
-
-Project goal
- User profile
 Data collection
  Consideration of options
 
@@ -39,21 +35,11 @@ Data collection
  Modeling of user profile
  Structure of dataset
 
-Splitting of dataset
 
-Evaluating metrics
-Baselines
-
-Balanced/Imbalanced
-
-Features
 
 Dimensionality reduction
 
-Performances of different classifiers
 Comparison to baselines ??
-
-Missing data
 
 Classifier selection
 Hyperparameters, Gridsearch
@@ -92,7 +78,7 @@ By chosing the automatic generation of idealized user profiles to build the data
 
 ### Automatic generation of the dataset
 
-However, in order to aquire the data set, an intermediate step to model the interests of users is taken. Interests are defined as a small number of topics or categories. To enable an automatic generation of the dataset, we used the news categories provided by Wikinews as possible topics of interest. As the amount of top level categories is low (namely, 16), we use the much bigger number of subcategories. The top-level categories are explicitely not included in the list of possible interests of users, because the thematic range of articles belonging to that category would be high compared to articles belonging to a subcategory
+However, in order to aquire the data set, an intermediate step to model the interests of users is taken. Interests are defined as a small number of topics or categories. To enable an automatic generation of the dataset, we used the news categories provided by Wikinews as possible topics of interest. As the amount of top-level categories is low (namely, 16), we use the much bigger number of subcategories. The top-level categories are explicitely not included in the list of possible interests of users, because the thematic range of articles belonging to that category would be high compared to articles belonging to a subcategory.
 
 The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in the chapter [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
 Having the same amout of profile articles as well as positive and negative samples ensures a uniform format of all users. The categories of interest themselves are not part of the dataset. 
@@ -444,7 +430,7 @@ In the following are scores of the classifiers for 700 samples with first the na
         Performance: 0.6446032342986086 
 
 ### Missing data
-Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (apart from zero articles) (heh??), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like DBpedia-information) is not an issue.
+Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (as long as there is at least one article), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like DBpedia-information) is not an issue.
 Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector weakens the informative value of the corresponding feature and might lead to falsification of the feature itself.
 
 ## Train & Test with balanced data
