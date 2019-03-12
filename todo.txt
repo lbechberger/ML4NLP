@@ -11,3 +11,4 @@ classifiers.py noch ändern?
 pickle-Dateien umbenennen?
 
 ? imbalanced classification punishment
+was zu unseen words schreiben?
