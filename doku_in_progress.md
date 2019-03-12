@@ -81,19 +81,14 @@ By having a user profile, the classifier should be able to recommend each user i
 ### The data collection process
 
 We encountered the problem that there is no pre-existing user data that is tailored to our research problem; the data would be required to contain user's ratings of news articles and would need to be restricted only to articles that are listed in Wikinews via the KnowledgeStore database.
-In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (e.g. "Pope John Paul II") or rather broad (e.g. "Germany"). However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset would not satisfy the desiderata of being representative.
-
-(?? design decisions begründen)
-When applied to a real-world application, a user profile can be seen as a set of articles that the user either read till the end or articles that the user specified that they liked them.
+In order to resolve this problem, we have chosen to auto-generate a set of artificial user profiles. Each artificial user is interersted in a certain topic that can be rather narrow (e.g. "Pope John Paul II") or rather broad (e.g. "Germany"). However, the topic is not explicitely named in the profile, but the profile would consist of a list of articles on that topic. The goal is then to recommend articles that are about that specific topic. Creating over-simplified profiles has the advantage that one can more easily tell whether the output of the recommender system is appropriate. On the other hand, we are not able to tell whether our model would be able to cope with the complexity of real users‘ preference patterns. Therefore the dataset does not satisfy the desiderata of being representative.
+Despite this disadvantage, it appeared to us as the most sensible way of aquiring a dataset. Alternative options would have been 1. creating user profiles manually, which would not yield enough data to train a machine learning model, or 2. using a pre-existing dataset with articles that are not listed in the KnowledgeStore database and using collaborative filtering.
 
 
-
-
- -- Johannes
 ### User profiles 
 (Einmal Resultat statt schrittweis??)
 
-By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. To give an example, these articles could be articles which the user read til the end.
+By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. When applied to a real-world scenario, these articles could, for instance, be articles which the user read untill the end or articles that the user specified that they liked them.
 
 ### Automatic generation of the dataset
 
@@ -495,16 +490,12 @@ The code is written in Python 3 (https://www.python.org/ ). In order to run the 
 
 (Note that the modified version of KnowledgeStore (*ks.py*) that is in the alpha branch of the repository is required.)
 
-The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features.pickle*. The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the file *classifier_results.pickle*. Eventually, the script results.py compares the results and ... ??
+The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features.pickle*. The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the file *classifier_results.pickle*. Eventually, the script results.py compares the results and prints them into a table ??
 
 
 Gleiche Schreibweise für Ausdrücke
 kursiv anpassen
 Sichtweise/Zeitform für am Ende vom Projekt
-wo landen die Wortvektoren?
-Always false as the baseline to use
-
-
 
 15 Features:
 TRAIN & EVALUATE
