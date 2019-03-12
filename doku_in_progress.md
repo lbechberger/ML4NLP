@@ -1,4 +1,5 @@
 
+
 # ML4NLP - Alpha
 Material for the Practical Seminar "Machine Learning for Natural Language Processing" (Institute of Cognitive Science, Osnabrück University, Winter Term 2018/2019).
 
@@ -98,8 +99,6 @@ By chosing the automatic generation of idealized user profiles to build the data
 
 However, in order to aquire the data set, an intermediate step to model the interests of users is taken. Interests are defined as a small number of topics or categories. To enable an automatic generation of the dataset, we used the news categories provided by Wikinews as possible topics of interest. As the amount of top level categories is low (namely, 16), we use the much bigger number of subcategories. The top-level categories are explicitely not included in the list of possible interests of users, because the thematic range of articles belonging to that category would be high compared to articles belonging to a subcategory
 
-(?? an example vector would be good)
-
 The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in the chapter [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
 Having the same amout of profile articles as well as positive and negative samples ensures a uniform format of all users. The categories of interest themselves are not part of the dataset. 
 The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category are randomly drawn.
@@ -117,6 +116,7 @@ The dataset is structured as follows (example for two users). Each line is one s
 [ [ [liked articles] , [ [liked articles] , [disliked articles] ] ] ,           ...              ]
 </pre>
 
+An example of what one sample of the dataset looks like can be found [here](figures/example_user.txt)
 
 ### Optaining and storing subcategories
 
@@ -201,8 +201,10 @@ The dataset that we are using has a huge amount of samples, which is due to the 
 
 ### Features
 
-When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec (https://code.google.com/archive/p/word2vec/) word embeddings instead. This should be justifiable becauses the GoogleNews word2vec has also been trained on news articles.(was zu unseen words schreiben ??) Eventually(??), the sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in Handouts_Session_8 (?? vielleicht echte Quelle angeben) , the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. News articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
-Another idea to extract features to use for the classifier is to compute the tf-idf scores for all words in the article to be classified and use the 5 (or 10) words with the highest tf-idf value. When aiming to figure out if a new article is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum would be small for an uninteresting article. ?? bezieht sich das auf was anderes?
+When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec (https://code.google.com/archive/p/word2vec/) word embeddings instead. This should be justifiable becauses the GoogleNews word2vec has also been trained on news articles. 
+
+The sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in the seminar, the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. News articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
+Another idea to extract features to use for the classifier is to compute the tf-idf scores for all words in the article to be classified and use the 5 (or 10) words with the highest tf-idf value. When aiming to figure out if a new article/* is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum would be small for an uninteresting article.
 
 In order to extract the feature vectors, we first calculated a number of measures for each article of the user's profile and for the article that should be classified - for training, this article is denoted in the dataset as a positive or negative examples for the corresponding user. 
 
@@ -214,19 +216,20 @@ The vector consists of the following measures:
 4\. the weighted sum of the word embedding vectors of the five words with the highest tf-idf scores with tf-idf scores as weights  
 5\. and 6\. the same as 3 and 4, but with ten words  
 Apart from computing the GoogleNews word2vec word vectors, we did the following:  
-7\. selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles  
-8\. counting the number of characters in the article  
+7\. selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles (one sum for each profile article)  
+8\. counting the number of characters in the articles and calculating the differences in lenght between each profile article and the new article  
 
-For all of these vectors, we calculated four cosine similarities: 
+For all of the vectors of 1-6, we calculate four cosine similarities: 
 
 a. the minimum cosine similarity to the vector of the new article to the vectors articles in the profile  
 b. the maximum cosine similarity to the vector of the new article to the vectors articles in the profile  
 c. the mean cosine similarity to the vector of the new article to the vectors articles in the profile  
-d. the average of the three lowest cosine similarities (except from 7., where it is the average of the three highest)  
+d. the average of the three highest cosine similarities (except from 7., where it is the average of the three highest)  
 
+Respectively, for the values of 7 and 8 we also calculate a. the minimum, b. the maximum., c. the mean and d. the mean of the three highest values
 
+/* when using the term "new article", we mean an article that is not included in the user's profile, but in the user's training examples. We don't mean that it is a recently published article, nor that it has not occured before in other user's profiles during training.
 
--- Johannes:
 ## Feature selection / Dimensionality reduction
 ![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/figures/Feature_importances.png)
 
@@ -235,9 +238,9 @@ Combining all features results in a 32 dimensional vector. However, it is likely
 *feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (so interesting or not interesting). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score (ist das so??).
 Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) is used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
 
-The figure above (link, call/place it somehow??) shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
+The figure above shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
 In order to decide which features to use, one can look define a threshold for the importance score. It is difficult to interpret the exact values of the scores, but their distribution for one selection method can help to set such a threshold. For the embedded selection method (red dots), one clear jump in the score distribution occurs before the fifth important feature (between 26 and 27 on the horizontal axis). For the filter method selection (blue dots), the decision how many features to use is more randomly, but is based on the jump in the score distribution between feature 16 and 17. In total, five features selected by the filter method and 15 features selected by the embedded method are used. Interstingly, all five features from the first method are included in the 15 features selected by the second method.
-(are scores of different methods comparable??)
+
 The five features selected by both methods are the following:
 
 * The cosine similarity between the unweighted summed word embedding of the article to be classified and the one of the most similar article of the user profile
@@ -269,8 +272,6 @@ The different ways of summing are parts of four features used for the classifier
 | hurricanes          | that                  | storm                 | hurricanes              |
 | Hurricane_Wilma     | By_Jennifer_LeClaire  | northeastern          | tropical_storm          |
 
-
-
 ### Scores of classifiers
 
 
@@ -281,7 +282,7 @@ When fed to the different classifiers with their default parameters, it's enough
 
 ### Additional feature of shared entities
 
-One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a DBpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
+One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features ??. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a DBpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
 The mentions of an article can be accessed via the property 'ks:hasMention'. If a mention refers to an entity, that entity can be retrieved using the property 'ks:refersTo' of the mention. Oddly enough, when a mention has the type 'nwr:EntityMention', the property 'ks:refersTo' often doesn't lead to an entity, which lessens the amount of recognized entities in an article. Consequentially, the similarity of two articles measured by the share of entities that are named in the articles is reduced.
 Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter *use_entity_feature* in the feature_extraction.py script. Yet, when using that feature, the time to calculate the features rapidly rises. In out testruns, enabling the entity feature led to an increase of the time needed to extract all features by the factor of 12. Therefore, we didn't use that feature in the final version of *feature_extraction.py*.
 
@@ -292,27 +293,42 @@ We decided to use the classifiers random forest and maximum entropy because thes
 
 ### Evaluating the classifier's performance
 
-(why which scores??)
-For evaluating the classifier's performance, we want to use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination.
+For evaluating the classifier's performance, we use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. The balanced F1-score is used, as well as the F2-score which weights recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. For this reason, the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
+Two other metrics that we use are Matthews correlation coefficient[^1] and Cohen's Kappa[^2]. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the f-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
+At last, the accuracy should also be calculated for having a metric that is widely used and intuitive.
 
-A decision still to be made is if we use the balanced F1-score or the F2-score to weight recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. Wherefore the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
-Two other metrics that we want to use are Matthews correlation coefficient and Kohen's Kappa. Being somewhat similar, both are appropriate scores for evaluating the classifiers performance.
-At last, the accuracy should be calculated for having a metric that is widely used.
+The metrics are calculated as follows, given the confusion matrix:
+
+Accuracy = (tp+tn)/(tp+fp+fn+tn)
+
+Precision = tp/(tp+fp)
+Recall = tp/(tp+fn)
+
+F1-score = 2\*Precision\*Recall/(Precision+Recall)
+F2-score = (1+4)\*Precision\*Recall/((4\*Precision)+Recall)
+
+total = (tp+fp+fn+tn)
+randomAccuracy = ((tn+fp)\*(tn+fn)+(fn+tp)\*(fp+tp))/(total\*total)
+Cohen's Kappa = (accuracy-randomAccuracy)/(1-randomAccuracy)
+
+Matthews correlation coefficient = (tp\*tn-fp\*fn)/(sqrt((tp+fp)\*(tp+fn)\*(tn+fp)\*(tn+fn)))
 
 ### Baselines
 
-As baselines we are planning to use *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows:
+We are comparing the classifiers' results to the baselines *always true, always false, 50-50, label frequency* as suggested during class. The resulting metrics for these baselines are as follows with respect to our imbalanced data (3,1 % positive, 96,9 % negative examples):
 
-??Change values, not balances anymore, so 50-50 is != label frequency:
+
 |  | Always “True” | Always “False” | 50-50 | Label Frequency |
 |-----------------------|---------------|----------------|-------|-----------------|
-| Accuracy | 0.5 | 0.5 | 0.5 | 0.5 |
-| F1-Score | 0.67 | 0 | 0.5 | 0.5 |
-| F2-Score | 0.8333 | 0 | 0.5 | 0.5 |
-| Matthew's correlation | 0 | 0 | 0 | 0 |
+| Accuracy | 0.031 | 0.969 | 0.5 | 0.94 |
+| F1-Score | 0.06 | 0 | 0.058 | 0.031 |
+| F2-Score | 0.138 | 0 | 0.124 | 0.031 |
+| Matthews correlation coefficient | 0 | 0 | 0 | 0 |
 | Cohen's kappa | 0 | 0 | 0 | 0 |
 
-Critic: Example how e.g. Matthew's correlation is calced??
+Interestingly, the always-false-baseline yields bad results in every metric except accuracy, which is counter-intuitive because as 96,9% of the samples are negative, one would assume that the always-false-baseline yields good results.
+
+Critic: Example how e.g. Matthew's correlation is calced
 
 --
 
@@ -548,3 +564,6 @@ Performance: 0.7307941151649835
 Best params: {'max_depth': 460, 'n_estimators': 6}
 Performance: 0.6336616660328986
 
+[^1]: Matthews, B. W. (1975). "Comparison of the predicted and observed secondary structure of T4 phage lysozyme". Biochimica et Biophysica Acta (BBA) - Protein Structure.
+[^2]: Cohen, J. (1960): A coefficient of agreement for nominal scales. In: Educational and
+psychological measurement, Bd. 20(1): S. 37–46.
