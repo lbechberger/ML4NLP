@@ -181,12 +181,11 @@ The splitted dataset is saved in the file *splitted_dataset.pickle*.
 
 ### Balanced vs. imbalanced data
 
-(?? in dataset or theroretícally?? meaning, in documentation, it's still to decide whether to use balanced or imbalanced)
-Due to the automatic generation of the dataset, the ratio of positive examples for one user in the dataset can be determined relatively accurately. Each of the users the dataset contains is interested in articles of three categories. The amout of categories that are used to generate the dataset is 649. Additionally, the average amount of articles that a category of the dataset contain is ???. Altogether, the average amount of articles that belong to the user's three categories of interest devided by the number of all articles gives a ratio of 3.1% of positive examples in the dataset. 
-Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifing an article as negative (so uninteresting) is supposed to be much higher than the other case (see chapter ???).
-However, with the ratio of 3.1% in mind, the choice of data for validation and testing is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. One is the possibility that the classifier learns to always classify an article as negative as that is the strong bias of the training data. (what else??)
-But also the use of a balanced dataset that doesn't model the supposed real-world scenario isn't ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice. (what else??)
-Yet, the strongest argument for choosing balanced or imbalanced to train the classifier is the actual performance of that classifier. Therefore, the results shown in (Kapitel??) state the performances of named classifiers using first a balanced and then an imbalanced dataset for training. As explained above, the data for evaluating the classifier's performance is imbalanced.
+In a real-world scenario, the amount of articles that a specific user finds uninteresting would be much higher than the number of articles that they like. For this reason, it would be problematic to have a balanced dataset, where each user has as many positive examples as they have negative examples. Therefore we created an imbalanced dataset where the percentage of articles the user is theoretically interested in is not 50% but 3.1%. We calculated the number of 3.1% by counting the average amount of articles that belong to the user's 3 categories of interest devided by the number of all articles.
+Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifing an article as negative (uninteresting for the specific user) is supposed to be much higher than the other case (see chapter ???).
+However, with the ratio of 3.1% in mind, the choice of data for validation and testing is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. For example, the classifier could learn to always classify an article as negative as that is the strong bias of the training data.  
+However, also the use of a balanced dataset that doesn't model the supposed real-world scenario isn't ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice.
+Yet, the strongest argument for choosing balanced or imbalanced to train the classifier is the actual performance of that classifier. Therefore, the results shown in the chapters [Train & Test with balanced data](#train--test-with-balanced-data) and [Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data) state the performances of named classifiers using first a balanced and then an imbalanced dataset for training. As explained above, the data for evaluating the classifier's performance is imbalanced.
 (data??)
 
 
@@ -212,7 +211,7 @@ The vector consists of the following measures:
 
 1\. a weighted sum of the word embedding vectors of all words in the article - they are weighted according to their tf-idf scores  
 2\. an unweighted sum of the word embedding vectors of all words in the article  
-3\. the sum of the word embedding vectors of the five words with the highest tf-idf scores (kommentar zu unseen words ?? )  
+3\. the sum of the word embedding vectors of the five words with the highest tf-idf scores   
 4\. the weighted sum of the word embedding vectors of the five words with the highest tf-idf scores with tf-idf scores as weights  
 5\. and 6\. the same as 3 and 4, but with ten words  
 Apart from computing the GoogleNews word2vec word vectors, we did the following:  
@@ -224,22 +223,22 @@ For all of the vectors of 1-6, we calculate four cosine similarities:
 a. the minimum cosine similarity to the vector of the new article to the vectors articles in the profile  
 b. the maximum cosine similarity to the vector of the new article to the vectors articles in the profile  
 c. the mean cosine similarity to the vector of the new article to the vectors articles in the profile  
-d. the average of the three highest cosine similarities (except from 7., where it is the average of the three highest)  
+d. the average of the three highest cosine similarities
 
 Respectively, for the values of 7 and 8 we also calculate a. the minimum, b. the maximum., c. the mean and d. the mean of the three highest values
 
-/* when using the term "new article", we mean an article that is not included in the user's profile, but in the user's training examples. We don't mean that it is a recently published article, nor that it has not occured before in other user's profiles during training.
+\* when using the term "new article", we mean an article that is not included in the user's profile, but in the user's training examples. We don't mean that it is a recently published article, nor that it has not occured before in other user's profiles during training.
 
 ## Feature selection / Dimensionality reduction
 ![Feature scores](https://github.com/lbechberger/ML4NLP/blob/alpha/figures/Feature_importances.png)
 
 Combining all features results in a 32 dimensional vector. However, it is likely that not all features are equally important for the classifier to correctly classify a news article given a specific user. In order to estimate which features help the classifier the most, we apply filter and embedded methods to the extracted features.
 
-*feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (so interesting or not interesting). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* returns the features with the highest mutual information score (ist das so??).
+*feature_selection.py* uses functions from the python library *sklearn* for the feature selection. The filter method that is used is named *sklearn.feature_selection.SelectKBest*, the score function is *sklearn.feature_selection.mutual_info_classif*. The latter function computes the mutual information between the features and the class (interesting or not interesting for the user). The resulting values can be used as a measure of the feature importance. The function *SelectKBest* then returns the features with the highest mutual information score.
 Apart from that, a random forest classifier (*sklearn.ensemble.RandomForestClassifier*) is used for feature selection as an embedded method. Sklearns's implementation of the random forest classifier has a built-in function called *feature_importances_* that returns the feature importances. With these values, one can select the features that are most important according to the random forest classifier.
 
 The figure above shows the sorted scores of all 32 features. As the two feature selection methods result in two differently ordered ratings of the importance of the features, the two rankings are represented independantly in the figure. The scores according to the filter method are stated by blue dots, the red ones show the scores calculated by the embedded method. Note that the red dots conceal some of the blue dots especially in the left half of the figure. Also note that features with the same value on the horizontal axis aren't necessarily the same features. The sorting is done for both methods seperately, as to be able to seperately decide how many features to retain for each method.
-In order to decide which features to use, one can look define a threshold for the importance score. It is difficult to interpret the exact values of the scores, but their distribution for one selection method can help to set such a threshold. For the embedded selection method (red dots), one clear jump in the score distribution occurs before the fifth important feature (between 26 and 27 on the horizontal axis). For the filter method selection (blue dots), the decision how many features to use is more randomly, but is based on the jump in the score distribution between feature 16 and 17. In total, five features selected by the filter method and 15 features selected by the embedded method are used. Interstingly, all five features from the first method are included in the 15 features selected by the second method.
+In order to decide which features to use, one can look define a threshold for the importance score. It is difficult to interpret the exact values of the scores, but their distribution for one selection method can help to set such a threshold. For the embedded selection method (red dots), one clear jump in the score distribution occurs before the fifth important feature (between 26 and 27 on the horizontal axis). For the filter method selection (blue dots), the decision how many features to use is more randomly, but is based on the jump in the score distribution between feature 16 and 17. In total, five features selected by the filter method and 15 features selected by the embedded method are used. Interestingly, all five features from the first method are included in the 15 features selected by the second method.
 
 The five features selected by both methods are the following:
 
@@ -272,10 +271,10 @@ The different ways of summing are parts of four features used for the classifier
 | hurricanes          | that                  | storm                 | hurricanes              |
 | Hurricane_Wilma     | By_Jennifer_LeClaire  | northeastern          | tropical_storm          |
 
+
 ### Scores of classifiers
 
-
-As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (kohen's cappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
+As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (Cohen's Kappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
 
 When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
 
@@ -294,22 +293,22 @@ We decided to use the classifiers random forest and maximum entropy because thes
 ### Evaluating the classifier's performance
 
 For evaluating the classifier's performance, we use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. The balanced F1-score is used, as well as the F2-score which weights recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. For this reason, the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
-Two other metrics that we use are Matthews correlation coefficient[^1] and Cohen's Kappa[^2]. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the f-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
+Two other metrics that we use are Matthews correlation coefficient[^1] and Cohen's Kappa[^2]. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the F-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
 At last, the accuracy should also be calculated for having a metric that is widely used and intuitive.
 
 The metrics are calculated as follows, given the confusion matrix:
 
 Accuracy = (tp+tn)/(tp+fp+fn+tn)
 
-Precision = tp/(tp+fp)
-Recall = tp/(tp+fn)
+Precision = tp/(tp+fp)  
+Recall = tp/(tp+fn)  
 
-F1-score = 2\*Precision\*Recall/(Precision+Recall)
-F2-score = (1+4)\*Precision\*Recall/((4\*Precision)+Recall)
+F1-score = 2\*Precision\*Recall/(Precision+Recall)  
+F2-score = (1+4)\*Precision\*Recall/((4\*Precision)+Recall)  
 
-total = (tp+fp+fn+tn)
-randomAccuracy = ((tn+fp)\*(tn+fn)+(fn+tp)\*(fp+tp))/(total\*total)
-Cohen's Kappa = (accuracy-randomAccuracy)/(1-randomAccuracy)
+total = (tp+fp+fn+tn)  
+randomAccuracy = ((tn+fp)\*(tn+fn)+(fn+tp)\*(fp+tp))/(total\*total)  
+Cohen's Kappa = (accuracy-randomAccuracy)/(1-randomAccuracy)  
 
 Matthews correlation coefficient = (tp\*tn-fp\*fn)/(sqrt((tp+fp)\*(tp+fn)\*(tn+fp)\*(tn+fn)))
 
@@ -327,11 +326,6 @@ We are comparing the classifiers' results to the baselines *always true, always 
 | Cohen's kappa | 0 | 0 | 0 | 0 |
 
 Interestingly, the always-false-baseline yields bad results in every metric except accuracy, which is counter-intuitive because as 96,9% of the samples are negative, one would assume that the always-false-baseline yields good results.
-
-Critic: Example how e.g. Matthew's correlation is calced
-
---
-
 
 
 ### Results
