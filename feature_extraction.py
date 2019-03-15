@@ -4,12 +4,17 @@ import gensim, os
 import sklearn
 from sklearn.feature_selection import SelectKBest, mutual_info_classif, RFE, SelectFromModel
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import GridSearchCV
+from sklearn.metrics import cohen_kappa_score, precision_score, recall_score, confusion_matrix, make_scorer
 
 class FeatureExtraction:
 
-    def __init__(self, articles, categories):
+    def __init__(self, articles, categories, labels):
         self.articles = articles
         self.categories = categories
+        self.labels = labels
 
     def get_category_embeddings(self, embedding=[]):
         """
@@ -283,7 +288,7 @@ class FeatureExtraction:
         wrapper methods
         :param method: Method to use for filtering. Choose between filter, wrapper or embedded. If nothing is set, filter
         methods will be used
-        :return: 
+        :return: The filtered features after dimension reduction
         """
         if method == 'filter':
             if os.path.isfile('./data/features_filtered{}.pickle'.format(n_features)):
@@ -337,4 +342,103 @@ class FeatureExtraction:
                 pickle.dump(filtered_features, open("./data/features_embedded.pickle".format(n_features), "wb"))
 
         return filtered_features
+
+    def train_classifier(self, features, kf, do_optimisation=False, nsplits=10):
+        """
+        Method to train the classifier
+        :param features: The (filtered) features to be trained on
+        :param kf: The k-fold split
+        :param do_optimisation: set True if hyperparameter optimisation should be done. If not, best parameter will be used
+        :param nsplits: integer indicating after how many splits during the hyperparameter \
+        optimisation process the split should stop
+        """
+        # set up classifiers: use best parameter from previous optimisation(s) if do_optimisation is False
+
+        if do_optimisation:
+            # parameter grids for grid search optimisation  
+            parameter_grid_knn = {'n_neighbors': np.arange(1, 21), 'weights': ['uniform', 'distance'], 'p': [1, 1.5, 2]}
+            parameter_grid_rf = {'n_estimators': [8, 16, 32, 64, 128], 'criterion': ['gini', 'entropy']}
+
+            classifiers = [
+                ('kNN', KNeighborsClassifier()),
+                ('RF', RandomForestClassifier())
+            ]
+        else:
+            # for printing purposes
+            parameter_grid_knn = "n_neighbors=8, weights='distance', p=1"
+            parameter_grid_rf = "n_estimators=128, criterion='entropy'"
+
+            classifiers = [
+                ('kNN', KNeighborsClassifier(n_neighbors=8, weights='distance', p=1)),
+                ('RF', RandomForestClassifier(n_estimators=128, criterion='entropy')) 
+            ]
+
+
+
+        split_counter = 1
+        # training
+        for name, model in classifiers:
+            print("\nStart training with the {} classifier".format(name))
+            print("Parameter:", parameter_grid_knn if name == 'kNN' else parameter_grid_rf)
+            kappa_before = []
+            precision_before = []
+            recall_before = []
+            
+            # Used for comparison of hyperparameter optimisation
+            best_parameter = []
+            kappa_after = []
+            precision_after = []
+            recall_after = []
+            
+            confusion_matrix_result = []
+            # split dataset n_splits times (see above)
+            for train_index, test_index in kf.split(features):
+                X_train = []; y_train = []
+                X_test = []; y_test = []
+                # for each split, get data
+                for i in train_index:
+                    X_train.append(features[i])
+                    y_train.append(self.labels[i])
+                for j in test_index:
+                    X_test.append(features[j])
+                    y_test.append(self.labels[j])
+
+                # with data of split i, train the model and calculate the metrics
+                model.fit(X_train, y_train)
+                predictions = model.predict(X_test)
+                tn, fp, fn, tp = confusion_matrix(y_test, predictions).ravel()
+                confusion_matrix_result.append([tn, fp, fn, tp])
+                kappa_before.append(cohen_kappa_score(y_test, predictions))
+                precision_before.append(precision_score(y_test, predictions))
+                recall_before.append(recall_score(y_test, predictions))
+
+                '''
+                Hyperparameter Optimisation
+                This takes really long for only one split. Therefore use nsplits for ability to stop earlier
+                '''
+                # depending on model, use different parameter grid
+                if do_optimisation:  
+                    print("\n  Before Grid-Search:", kappa_before[-1], precision_before[-1], recall_before[-1])
+                    parameter_grid = parameter_grid_knn if name == 'kNN' else parameter_grid_rf
+                    grid_search = GridSearchCV(estimator=model, param_grid=parameter_grid, scoring=make_scorer(cohen_kappa_score))
+                    grid_search.fit(X_train, y_train)
+                    print('  Best parameters:', grid_search.best_params_)
+                    predictions = grid_search.predict(X_test)
+                    kappa_after = (cohen_kappa_score(y_test, predictions))
+                    precision_after = (precision_score(y_test, predictions))
+                    recall_after = (recall_score(y_test, predictions))
+                    print("  After Grid-Search:", name, kappa_after, precision_after, recall_after)
+
+                    if split_counter == nsplits:
+                        split_counter = 0
+                        break
+                    split_counter += 1
+            # take the mean over all splits
+            if not do_optimisation:
+                print("  Results:\n        Cohen's Kappa         Precision          Recall\n", \
+                    name, np.mean(kappa_before), np.mean(precision_before), np.mean(recall_before))
+            # used to check performances when inserting optimised parameters for each split
+            print("\n  Confusion Matrix:\n  TN     FP    FN     TP")
+            for m in confusion_matrix_result:
+                print(m)
 
