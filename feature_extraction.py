@@ -16,6 +16,9 @@ class FeatureExtraction:
         self.categories = categories
         self.labels = labels
 
+        np.random.seed(0)
+
+
     def get_category_embeddings(self, embedding=[]):
         """
         Calculate the embedding vectors of the categories
@@ -430,7 +433,7 @@ class FeatureExtraction:
                     print("  After Grid-Search:", name, kappa_after, precision_after, recall_after)
 
                     if split_counter == nsplits:
-                        split_counter = 0
+                        split_counter = 1
                         break
                     split_counter += 1
             # take the mean over all splits

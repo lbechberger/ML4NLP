@@ -44,5 +44,5 @@ print("Contains NaN values:", np.any(np.isnan(filtered)))  # check for NaN value
 kf = KFold(n_splits=10, shuffle=True)
 
 # training of classifier
-f.train_classifier(filtered, kf, False, 2)
+f.train_classifier(filtered, kf, True, 2)
 
