@@ -7,8 +7,8 @@ all results in a big table  Patricia
 code aufräumen + weiter kommentieren  Patricia
 compare results to baselines  Patricia
 
-classifiers.py noch ändern?
-pickle-Dateien umbenennen?
+pickle-dateien umbenennen?
 
 ? imbalanced classification punishment
 was zu unseen words schreiben?
+spellcheck!!
