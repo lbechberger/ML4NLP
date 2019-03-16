@@ -311,123 +311,59 @@ Interestingly, the always-false-baseline yields bad results in every metric exce
 
 ### Results
 
-In the following are scores of the classifiers for 700 samples with first the named one feature and then the 10 best features according their mutual information:
+In the following are scores of the classifiers for 700 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search.
 
-* One feature:
+number of features: 1  
 
-    * default parameters:
-      
-      **kNN** 0.6488294314381271  
-        
-      **MaxEnt** 0.6488294314381271  
-        
-      **RF** 0.5914396887159532  
-        
-      **SVM** 0.6488294314381271  
-        
-      **MLP** 0.6488294314381271  
+| Classifier                                    | Accuracy           | F1-score           | F2-score           | Cohen's kappa      | Matthews correlation coefficient |
+| --------------------------------------------- | ------------------ | ------------------ | ------------------ | ------------------ | -------------------------------- |
+| kNN with default_parameters                   | 0.96875            | 0.7368421052631581 | 0.6511627906976744 | 0.7210775317298519 | 0.7413826388009128               |
+| MaxEnt with default_parameters                | 0.9692708333333333 | 0.730593607305936  | 0.6289308176100629 | 0.715548413017276  | 0.7463811137542492               |
+| RF with default_parameters                    | 0.9552083333333333 | 0.6717557251908397 | 0.6480117820324005 | 0.6478161272571378 | 0.6492112258447845               |
+| SVM with default_parameters                   | 0.96875            | 0.7297297297297297 | 0.6338028169014084 | 0.7142616192833721 | 0.7411024243957158               |
+| MLP with default_parameters                   | 0.96875            | 0.7321428571428572 | 0.6396255850234008 | 0.7165703038504121 | 0.741086806037908                |
+| kNN with {'n_neighbors': 12, 'p': 1}          | 0.9697916666666667 | 0.7387387387387386 | 0.6416275430359937 | 0.7237862319739263 | 0.7509849567421718               |
+| MaxEnt with {'solver': 'newton-cg'}           | 0.9697916666666667 | 0.7363636363636364 | 0.6357927786499216 | 0.7215178477650908 | 0.7512356762378097               |
+| RF with {'max_depth': 460, 'n_estimators': 6} | 0.9515625          | 0.654275092936803  | 0.641399416909621  | 0.6282633134862805 | 0.6286702470021618               |
 
+number of features: 5  
 
-    * Hyperparameter tuning:
+| Classifier                                     | Accuracy           | F1-score           | F2-score           | Cohen's kappa      | Matthews correlation coefficient |
+| ---------------------------------------------- | ------------------ | ------------------ | ------------------ | ------------------ | -------------------------------- |
+| kNN with default_parameters                    | 0.9677083333333333 | 0.7280701754385964 | 0.6434108527131782 | 0.711780116120847  | 0.7318234135929149               |
+| MaxEnt with default_parameters                 | 0.9703125          | 0.7532467532467532 | 0.6712962962962963 | 0.7381467373619433 | 0.7559784828140533               |
+| RF with default_parameters                     | 0.9692708333333333 | 0.7400881057268723 | 0.6521739130434784 | 0.7246314806891991 | 0.7460754030840211               |
+| SVM with default_parameters                    | 0.96875            | 0.7321428571428572 | 0.6396255850234008 | 0.7165703038504121 | 0.741086806037908                |
+| MLP with default_parameters                    | 0.9697916666666667 | 0.75               | 0.6702619414483821 | 0.7345955298794526 | 0.7514311021575419               |
+| kNN with {'n_neighbors': 4, 'p': 2}            | 0.9671875          | 0.7200000000000001 | 0.6308411214953271 | 0.7035962479048842 | 0.7265463899492495               |
+| MaxEnt with {'solver': 'newton-cg'}            | 0.9703125          | 0.7532467532467532 | 0.6712962962962963 | 0.7381467373619433 | 0.7559784828140533               |
+| RF with {'max_depth': 310, 'n_estimators': 11} | 0.9671875          | 0.7248908296943231 | 0.6424148606811145 | 0.7082911300824772 | 0.727256801230567                |
 
-        **K nearest neighbors**  
-        'n_neighbors': 2  
-        'p': 1  
-        Performance: 0.6488294314381271  
+number of features: 6  
 
-        **Max entropy**  
-        'solver': 'newton-cg'  
-        0.6488  
+| Classifier                                     | Accuracy           | F1-score           | F2-score           | Cohen's kappa      | Matthews correlation coefficient |
+| ---------------------------------------------- | ------------------ | ------------------ | ------------------ | ------------------ | -------------------------------- |
+| kNN with default_parameters                    | 0.9677083333333333 | 0.7256637168141594 | 0.6376360808709176 | 0.7094700464203605 | 0.7315194091497506               |
+| MaxEnt with default_parameters                 | 0.9703125          | 0.7532467532467532 | 0.6712962962962963 | 0.7381467373619433 | 0.7559784828140533               |
+| RF with default_parameters                     | 0.9666666666666667 | 0.7241379310344828 | 0.6471494607087827 | 0.707139895039396  | 0.7233462348950305               |
+| SVM with default_parameters                    | 0.96875            | 0.7321428571428572 | 0.6396255850234008 | 0.7165703038504121 | 0.741086806037908                |
+| MLP with default_parameters                    | 0.9697916666666667 | 0.75               | 0.6702619414483821 | 0.7345955298794526 | 0.7514311021575419               |
+| kNN with {'n_neighbors': 19, 'p': 1.5}         | 0.9708333333333333 | 0.7477477477477478 | 0.649452269170579  | 0.7333108446644806 | 0.7608674890886279               |
+| MaxEnt with {'solver': 'newton-cg'}            | 0.9703125          | 0.7532467532467532 | 0.6712962962962963 | 0.7381467373619433 | 0.7559784828140533               |
+| RF with {'max_depth': 260, 'n_estimators': 71} | 0.9666666666666667 | 0.7217391304347827 | 0.6414219474497681 | 0.7048296669244923 | 0.7227627614926289               |
 
-        **Random forest**  
-        'max_depth': 260  
-        'n_estimators': 6  
-        Performance: 0.6731517509727627  
+number of features: 15  
 
-        **MLP**  
-        'activation': 'tanh'  
-        'alpha': 0.05  
-        'hidden_layer_sizes': (100,)  
-        'learning_rate': 'constant'  
-        'solver': 'adam'  
-        Performance: 0.6488294314381271  
-
-
-
-* 10 features:
-
-    * default parameters:
-       
-      **kNN** 0.6488294314381271  
-       
-      **MaxEnt** 0.6488294314381271  
-     
-      **RF** 0.6731517509727627  
-       
-      **SVM** 0.6488294314381271  
-       
-      **MLP** 0.6488294314381271  
-
-
-    * Hyperparameter tuning:
-
-      **K nearest neighbors:**  
-       'n_neighbors': 2  
-       'p': 1  
-       Performance: 0.6488294314381271  
-  
-      **Max Entropy:**  
-       'solver': 'newton-cg'  
-       Performance: 0.6488294314381271  
-  
-      **Random forest:**  
-       'max_depth': None  
-        'max_features': 'sqrt'  
-        'n_estimators': 67  
-        Performance: 0.5928798026083891  
-        
-* five features:
-
-    * default parameters:
-       
-      **kNN** 0.6488294314381271  
-      
-      **MaxEnt** 0.6488294314381271  
-      
-      **RF** 0.6446032342986086  
-      
-      **SVM** 0.6488294314381271  
-      
-      **MLP** 0.6488294314381271
-      
-
-
-    * Hyperparameter tuning:
-
-      **K nearest neighbors:**  
-       'n_neighbors': 2  
-       'p': 1.5  
-       Performance: 0.6488294314381271  
-  
-      **Max Entropy:**  
-       'solver': 'newton-cg'  
-       Performance: 0.6488294314381271  
-  
-      **Random forest:**  
-       'bootstrap': True  
-       'max_depth': 10  
-       'max_features': 'auto'  
-       'n_estimators': 50  
-       'min_samples_split`: 5  
-       Performance: 0.6446032342986086  
-       
-       **MLP**  
-        'activation': 'tanh'  
-        'alpha': 0.0001  
-        'hidden_layer_sizes': (50,50,50)  
-        'learning_rate': 'constant'  
-        'solver': 'adam'  
-        Performance: 0.6446032342986086 
+| Classifier                                     | Accuracy           | F1-score           | F2-score           | Cohen's kappa      | Matthews correlation coefficient |
+| ---------------------------------------------- | ------------------ | ------------------ | ------------------ | ------------------ | -------------------------------- |
+| kNN with default_parameters                    | 0.9713541666666666 | 0.7533632286995516 | 0.65625            | 0.739135590205727  | 0.7656457289343342               |
+| MaxEnt with default_parameters                 | 0.9713541666666666 | 0.759825327510917  | 0.6733746130030959 | 0.7453335262624801 | 0.7652910690783761               |
+| RF with default_parameters                     | 0.9697916666666667 | 0.7456140350877193 | 0.6589147286821706 | 0.7303749473388569 | 0.7509418640089106               |
+| SVM with default_parameters                    | 0.9692708333333333 | 0.7354260089686099 | 0.6406249999999999 | 0.72016363312978   | 0.7459933159032132               |
+| MLP with default_parameters                    | 0.9697916666666667 | 0.7363636363636364 | 0.6357927786499216 | 0.7215178477650908 | 0.7512356762378097               |
+| kNN with {'n_neighbors': 2, 'p': 1}            | 0.9697916666666667 | 0.7387387387387386 | 0.6416275430359937 | 0.7237862319739263 | 0.7509849567421718               |
+| MaxEnt with {'solver': 'newton-cg'}            | 0.9713541666666666 | 0.759825327510917  | 0.6733746130030959 | 0.7453335262624801 | 0.7652910690783761               |
+| RF with {'max_depth': 135, 'n_estimators': 51} | 0.9723958333333333 | 0.7705627705627704 | 0.6867283950617284 | 0.756522404915491  | 0.7747980597012636               |
 
 ### Missing data
 Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (as long as there is at least one article), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like DBpedia-information) is not an issue.
