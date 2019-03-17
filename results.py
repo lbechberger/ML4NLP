@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Fri Mar  8 14:44:41 2019
-
+This program writes the results from the classifiers that were saved in a list into a markdown table that can be added into the documentation.
 @author: patri
 """
 
@@ -10,7 +10,7 @@ Created on Fri Mar  8 14:44:41 2019
 
 import pickle
 
-
+# this function can be used if you want to know which classifier had the highest f2-score
 def get_highest_f2score():
     values = [i.split(" ")[5] for i in results_list if isinstance(i, str)]
     
