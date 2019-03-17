@@ -252,7 +252,7 @@ initialize_tf_idf()
 initialize_word2vec()
 
 # load dataset (splitted into training, validation and test, validation&test category
-with open("splitted_dataset.pickle", "rb") as f:
+with open("data/splitted_dataset.pickle", "rb") as f:
     dataset = pickle.load(f)
 
 # training = dataset[0]
@@ -260,8 +260,8 @@ with open("splitted_dataset.pickle", "rb") as f:
 # test = dataset[2]
 
 #Continue with feature extraction if it was already started before
-if os.path.isfile("featurised_dataset7.pickle"):
-    with open("featurised_dataset7.pickle", "rb") as f:
+if os.path.isfile("data/featurised_dataset7.pickle"):
+    with open("data/featurised_dataset7.pickle", "rb") as f:
         featurised_dataset = pickle.load(f)
 else:
     featurised_dataset = []
