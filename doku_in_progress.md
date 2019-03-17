@@ -230,7 +230,7 @@ We also included k-nearest neighbors, support vector machine and multi-layer per
 ### Evaluating the classifier's performance
 
 For evaluating the classifier's performance, we use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. The balanced F1-score is used, as well as the F2-score which weights recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. For this reason, the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
-Two other metrics that we use are Matthews correlation coefficient[^1] and Cohen's Kappa[^2]. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the F-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
+Two other metrics that we use are Matthews correlation coefficient<sup>1</sup> and Cohen's Kappa<sup>2</sup>. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the F-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
 At last, the accuracy should also be calculated for having a metric that is widely used and intuitive.
 
 The metrics are calculated as follows, given the confusion matrix:
@@ -376,12 +376,6 @@ The code is written in Python 3 (https://www.python.org/ ). In order to run the 
 The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting datasets are saved as *reduced_datasetN.pickle* (N stands for the number of features that have been selected). The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the *classifier_resultsN.pickle* files. Eventually, the script results.py prints them into a table.
 
 
-Gleiche Schreibweise für Ausdrücke
-kursiv anpassen
-Sichtweise/Zeitform für am Ende vom Projekt
-
-
-
-[^1]: Matthews, B. W. (1975). "Comparison of the predicted and observed secondary structure of T4 phage lysozyme". Biochimica et Biophysica Acta (BBA) - Protein Structure.
-[^2]: Cohen, J. (1960): A coefficient of agreement for nominal scales. In: Educational and
+<sup>1</sup> Matthews, B. W. (1975). "Comparison of the predicted and observed secondary structure of T4 phage lysozyme". Biochimica et Biophysica Acta (BBA) - Protein Structure.
+<sup>2</sup> Cohen, J. (1960): A coefficient of agreement for nominal scales. In: Educational and
 psychological measurement, Bd. 20(1): S. 37–46.
