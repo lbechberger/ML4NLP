@@ -1,14 +1,3 @@
-weitere Kritik in doku einarbeiten
-Github strukturieren
-alles neu berechnen, größeres Datenset  Johannes
- Importantness neu begutachten
+
 finaler classifier + test result.py  Patricia
-all results in a big table  Patricia
 code aufräumen + weiter kommentieren  Patricia
-compare results to baselines  Patricia
-
-pickle-dateien umbenennen?
-
-? imbalanced classification punishment
-was zu unseen words schreiben?
-spellcheck!!
