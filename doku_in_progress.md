@@ -1,9 +1,4 @@
-
-
 # ML4NLP - Alpha
-Material for the Practical Seminar "Machine Learning for Natural Language Processing" (Institute of Cognitive Science, Osnabrück University, Winter Term 2018/2019).
-
-This is the branch of group Alpha.
 
 [Project goal](#project-goal)  
 [The data collection process](#the-data-collection-process)  
@@ -26,32 +21,6 @@ This is the branch of group Alpha.
 [Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data)  
 [Setup (How to use our code)](#setup-how-to-use-our-code)
 
-
-Data collection
- Consideration of options
-
- Automatic generation of the dataset
-  Excluded categories
- Modeling of user profile
- Structure of dataset
-
-
-
-Dimensionality reduction
-
-Comparison to baselines ??
-
-Classifier selection
-Hyperparameters, Gridsearch
-(Balanced/Imbalanced)
-
-Training, Test, Validation ??
-
-Final result
-
-How to setup environment, structure of files, etc.
-dataset_generation.py
-link to sourcecode
 
 ### Project goal
 
@@ -147,7 +116,7 @@ or less than twice as many as the variable that denotes the number of articles t
 ### Specification of parameters
 The values of the parameters introduced above are fixed as follows. Note that they are mostly chosen arbitrarily.
 
-The dataset consists of 1000 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. That gives a total of 15 articles to describe the interest of a user.
+The dataset consists of 980 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. That gives a total of 15 articles to describe the interest of a user.
 Apart from that, there are also 6 positive and 192 negative classification example articles per user which can later be used for training, validation and testing of the classifier.
 
 
@@ -298,7 +267,7 @@ Interestingly, the always-false-baseline yields bad results in every metric exce
 
 ### Results
 
-In the following are scores of the classifiers for 700 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search (the grid search used Cohen's Kappa as metric).
+In the following are scores of the classifiers for 980 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search (the grid search used Cohen's kappa as metric).
 
 number of features: 1  
 
@@ -361,33 +330,35 @@ Nevertheless, one potential problem is the lack of word2vec-embeddings for rare 
 
 ## Train & Test with balanced data
 
-TRAIN & EVALUATE
-kNN 0.532319391634981 {'n_neighbors': 12, 'p': 1  0.5871559633027523}
-MaxEnt 0.7518796992481203 {default and best params {'solver': 'newton-cg'} (Performance: 0.7515060240963856)}
-RF 0.651685393258427 {'max_depth': 210, 'n_estimators': 21  0.6970830216903516}
-SVM 0.7174076865109269
-MLP 0.5896656534954408
+As mentioned in chapter [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data), we also tried to train and test the classifiers with a dataset that contains a balanced amount of positive and negative examples per user. These are the results (performance is measured in Cohen's kappa):
 
 
+* kNN with default parameters: 0.532319391634981 
+* kNN with {'n_neighbors': 12, 'p': 1}:  0.5871559633027523   
+* MaxEnt with default parameters: 0.7518796992481203 
+* MaxEnt with {'solver': 'newton-cg'}: 0.7515060240963856  
+* RF with default parameters: 0.651685393258427  
+* RF with {'max_depth': 210, 'n_estimators': 21}:  0.6970830216903516  
+* SVM with default parameters: 0.7174076865109269  
+* MLP with default parameters: 0.5896656534954408  
+
+One can see that in most cases, the performance is lower than in the imbalanced setting. However, the maximum entropy classifier reaches a very large performance on the balanced data.
 
 
 ## Train with balanced, test with imbalanced data
-TRAIN & EVALUATE
-kNN 0.25806660409722004
-MaxEnt 0.5747151266403845
-RF 0.4649720475192174
-SVM 0.6124581227641814
-MLP 0.5914396887159533
 
-GRID SEARCH
-Best params: {'n_neighbors': 7, 'p': 1}
-Performance: 0.2621448212648946
+These are the results of training on balanced data and testing on imbalanced data (again, performance is measured in Cohen's kappa):
 
-Best params: {'solver': 'newton-cg'}
-Performance: 0.5807470325601656
+* kNN with default parameters: 0.25806660409722004  
+* kNN with {'n_neighbors': 7, 'p': 1}: 0.2621448212648946  
+* MaxEnt with default parameters: 0.5747151266403845  
+* MaxEnt with {'solver': 'newton-cg'}: 0.5807470325601656  
+* RF with default parameters: 0.4649720475192174  
+* RF with {'max_depth': 410, 'n_estimators': 41}: 0.5351925630810093  
+* SVM with default parameters: 0.6124581227641814  
+* MLP with default parameters: 0.5914396887159533  
 
-Best params: {'max_depth': 410, 'n_estimators': 41}
-Performance: 0.5351925630810093
+One can see that these results are not as good as those that were reached by training with imbalanced data.
 
 
 ### Setup (How to use our code)
@@ -409,57 +380,7 @@ Gleiche Schreibweise für Ausdrücke
 kursiv anpassen
 Sichtweise/Zeitform für am Ende vom Projekt
 
-15 Features:
-TRAIN & EVALUATE
-kNN 0.7346710480318814
-/home/rek/.local/lib/python3.6/site-packages/sklearn/linear_model/logistic.py:758: ConvergenceWarning: lbfgs failed to converge. Increase the number of iterations.
-  "of iterations.", ConvergenceWarning)
-MaxEnt 0.7334483325119107
-/home/rek/.local/lib/python3.6/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
-  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
-RF 0.7314038185630725
-SVM 0.7265053696042789
-MLP 0.7415001511695023
 
-GRID SEARCH
-/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
-  warnings.warn(CV_WARNING, FutureWarning)
-Best params: {'n_neighbors': 4, 'p': 1}
-Performance: 0.730056631475914
-
-Best params: {'solver': 'newton-cg'}
-Performance: 0.7362092289192845
-/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
-  warnings.warn(CV_WARNING, FutureWarning)
-Best params: {'max_depth': 310, 'n_estimators': 31}
-Performance: 0.7478210582841092
-
-
-
-
-1 Feature:
-
-TRAIN & EVALUATE
-kNN 0.7222988632601258
-MaxEnt 0.7307941151649835
-/home/rek/.local/lib/python3.6/site-packages/sklearn/ensemble/forest.py:246: FutureWarning: The default value of n_estimators will change from 10 in version 0.20 to 100 in 0.22.
-  "10 in version 0.20 to 100 in 0.22.", FutureWarning)
-RF 0.6278629406727534
-SVM 0.731101918014291
-MLP 0.7293276983818051
-
-GRID SEARCH
-/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
-  warnings.warn(CV_WARNING, FutureWarning)
-Best params: {'n_neighbors': 13, 'p': 1}
-Performance: 0.7286071680327302
-
-Best params: {'solver': 'saga'}
-Performance: 0.7307941151649835
-/home/rek/.local/lib/python3.6/site-packages/sklearn/model_selection/_split.py:2053: FutureWarning: You should specify a value for 'cv' instead of relying on the default value. The default value will change from 3 to 5 in version 0.22.
-  warnings.warn(CV_WARNING, FutureWarning)
-Best params: {'max_depth': 460, 'n_estimators': 6}
-Performance: 0.6336616660328986
 
 [^1]: Matthews, B. W. (1975). "Comparison of the predicted and observed secondary structure of T4 phage lysozyme". Biochimica et Biophysica Acta (BBA) - Protein Structure.
 [^2]: Cohen, J. (1960): A coefficient of agreement for nominal scales. In: Educational and
