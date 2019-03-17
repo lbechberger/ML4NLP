@@ -297,6 +297,6 @@ for purpose_idx, purpose in enumerate(dataset):
 
         featurised_dataset[-1].extend(get_features(purpose[usernumber][0], chosen_articles_uris, chosen_classifications))
 
-        pickle.dump(featurised_dataset, open( "featurised_dataset7.pickle", "wb" ))
+        pickle.dump(featurised_dataset, open( "data/featurised_dataset.pickle", "wb" ))
 
 
