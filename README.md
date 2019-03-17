@@ -15,7 +15,7 @@ We stated that our goal was to answer natural language QA pairs. So far we only 
 
 ### On Terminology
 There are currently multiple terms for each entity. Some of them are quite confusing, since they are either used by others or by the KnowledgeStore already. Here a few clarifications:
-Agent is the active part in a triplet, i.e. "Mr Bigshot" in our example  "Who owns the Company BigCompany?" It also was previously called this "Subject", but we  use "Agent" to correspond to the use of the terminology in the seminar.
+Agent is the active part in a triplet, i.e. "Mr Bigshot" in our example  "Who owns the Company BigCompany?" It also was previously called "Subject", but we  use "Agent" to correspond to the use of the terminology in the seminar.
 Similarily, Patient is the passive part in a triplet, i.e. "BigCompany" in our example "Who owns the Company BigCompany?" It  previously was called  Object.
 An event that has both an agent and a patient is considered a "Relation". We will use this term, but be aware that there may be events that are not relations. However,we most likely won't be talking about these.
 
@@ -34,7 +34,7 @@ Researching the database and the entries in the database revealed that there is 
 As mentioned, we wanted a large and syntactically clean data set, which is possible with autogeneration. However, we are aware of the limitations. We cannot surpass the semantic quality of the KnowledgeStore, nor can we generate information not yet contained within it, possibly an issue if we want to apply the algorythm to articles outside of the DB. For the articles contained within, however, we are quite sure to be capable of generating representative QA pairs, as these articles are related in their content and style.
 
 ### Properties of the Data Set
-The size is determined by the size of the NewsReader data set, which currently contains 19751 articles. Representativeness for our task is given, since we select information from the same articles in order to answers questions about these articles. The representativeness of the articles within all articles depends on the selection criteria of the NewsReader project.
+The size is determined by the size of the NewsReader data set, which currently contains 19 751 articles. Representativeness for our task is given, since we select information from the same articles in order to answers questions about these articles. The representativeness of the articles within all articles depends on the selection criteria of the NewsReader project.
 Because we autogenerate, there are not going to be any accidental human errors, but the overall quality is once again dependent on the quality of the mentions provided by the NewsReader project, which we consider to be quite high
 
 ### Data Set Generation Process
