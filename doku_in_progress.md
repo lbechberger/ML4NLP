@@ -26,9 +26,9 @@
 
 Goal of the project is the recommendation of news articles on the basis of Wikinews (https://en.wikinews.org/wiki/Main_Page), accessed via KnowledgeStore API (http://knowledgestore2.fbk.eu/nwr/wikinews/ui). The latter includes the enrichment of articles with information in a format that makes them easy to process by computers, for example the linking of mentioned entities with DBpedia entries (https://wiki.dbpedia.org/).
 
-One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision, which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data, additionally, using another dataset like the [yahoo-news-dataset](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r) would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in the next chapter.
+One main approach to solve the task of news recommendation is based on collaborative filtering, another one is based on the matching of a user's profile to an article. The former approach relies on a database of preferably many users and their interests in articles, the latter doesn't require the knowledge about other users after training. The decision which of these approaches to use for the project, is taken for the matching of a user's profile to an article. Neither Wikinews nor the additional information from the KnowledgeStore database include user data. Additionally, using another dataset like the [yahoo-news-dataset](https://webscope.sandbox.yahoo.com/catalog.php?datatype=r) would be beyond the seminar's scope. Nevertheless, for training, some kind of user data is required. This topic will be revisited in the next chapter.
 
-In order to estimate a user's interest in a given article, machine learning techniques in the form of a classifier are used. From this classifier's point of view, a user goes along with some kind of data modeling his or her interest, which is called the user profile in this context. After training, the classifier is supposed to receive one user profile and one article as an input, the output should be the statement if that article is interesting for the specific user or if not.
+In order to estimate a user's interest in a given article, machine learning techniques in the form of a classifier are used. From this classifier's point of view, a user goes along with some kind of data modeling his or her interest, which is called the user profile in this context. After training, the classifier is supposed to receive one user profile and one article as an input, the output should be the statement whether that article is interesting for the specific user or not.
 
 By having a user profile, the classifier should be able to recommend each user individual articles rather than the general recommendation of (for example popular) articles to unknown users.
 
@@ -42,7 +42,7 @@ Despite this disadvantage, it appeared to us as the most sensible way of acquiri
 
 ### User profiles 
 
-By choosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articles that match the user's interests. When applied to a real-world scenario, these articles could, for instance, be articles which the user read untill the end or articles that the user specified that they liked them.
+By choosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articles that match the user's interests. When applied to a real-world scenario, these articles could, for instance, be articles which the user read until the end or articles that the user specified that he or she liked them.
 
 ### Automatic generation of the dataset
 
@@ -50,7 +50,7 @@ However, in order to acquire the data set, an intermediate step to model the int
 
 The python code for generating the dataset can be found in the file *dataset_generation.py*. It holds the method *generate_dataset(amount_users, subcategories_per_user, profile_articles_per_subcategory, liked_articles_per_subcategory, disliked_articles)* which creates a desired number of user profiles. For the user profile, the number of categories of interests and the number of articles for each interest are parameters of the named method, followed by article amounts to create the data for training, validation and test. As described in the chapter [Balanced vs. imbalanced data](#balanced-vs-imbalanced-data), the dataset is imbalanced in favor of a bigger amount of uninteresting articles in comparison to interesting articles. The named parameters control this ratio and can be changed for creating a balanced dataset.
 Having the same amount of profile articles as well as positive and negative samples ensures a uniform format of all users. The categories of interest themselves are not part of the dataset. 
-The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category are randomly drawn.
+The user's categories of interests are drawn from a weighted random distribution where categories that contain a larger number of articles are more likely to be drawn than categories containing a smaller number of articles. This decision was made because we argued that, in general, a category that contains many articles is more important and more people are interested in that topic. Subsequently, for each of the user's topics of interest, a specified number of articles from that category is randomly drawn.
 The dataset is returned as a nesting of lists holding URIs. It is then saved as a pickle-file, as an easy way of serializing the structure and content of the dataset. For a more general usage of the dataset, it would of course be possible to save it as for example a csv-file. 
 
 The dataset is structured as follows (example for two users). Each line is one step down the hierarchy of lists, so going down shows the unpacked version of the line before.
@@ -116,15 +116,15 @@ or less than twice as many as the variable that denotes the number of articles t
 ### Specification of parameters
 The values of the parameters introduced above are fixed as follows. Note that they are mostly chosen arbitrarily.
 
-The dataset consists of 980 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. That gives a total of 15 articles to describe the interest of a user.
+The dataset consists of 990 user profiles. Each user is interested in three of these subcategories, which provide five news articles each to define a user profile. That gives a total of 15 articles to describe the interest of a user.
 Apart from that, there are also 6 positive and 192 negative classification example articles per user which can later be used for training, validation and testing of the classifier.
 
 
 ### Splitting up the dataset
 
-As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, and validation test. As there is a lot of data present in the set, we use different parts of the set for training, validation and test.
-Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known for the classifier during training. We do same for our classifier for news recommendation.
-*dataset_splitting.py* splits the dataset provided by *dataset_generation.py* into data for training, validation and test. In order to provide some unknown data for validation and testing, a certain number of news articles is randomly chosen from all articles present in the dataset. The numbers are defined by the parameters *n_validation_articles* and *n_test_articles* of the method *split_dataset()*. Users that have one of those articles in their profile data or their positive or negative samples are selected for validation or testing data. Users that include articles chosen for validation as well as articles chosen for testing are discarded, the rest of them are selected for training data.
+As the dataset is auto-generated, it is big (theoretically limited only by the size of Wikinews/amount of article there), so the use of cross-validation doesn't seem necessary for creating our classifier. The same argument counts against the usage of the same data for training, validation and test. As there is a lot of data present in the set, we use different parts of the set for training, validation and testing.
+Nevertheless, the division of the dataset needs additional consideration. In class, we discussed the example of splitting up the dataset for summarization: there should be some articles that are not known by the classifier during training. We do same for our classifier for news recommendation.
+*dataset_splitting.py* splits the dataset provided by *dataset_generation.py* into data for training, validation and test. In order to provide some unknown data for validation and testing, a certain number of news articles is randomly chosen from all articles present in the dataset. The numbers are defined by the parameters *n_validation_articles* (which we set to 10) and *n_test_articles* (which we set to 5) of the method *split_dataset()*. Users that have one of those articles in their profile data or their positive or negative samples are selected for validation or testing data. Users that include articles chosen for validation as well as articles chosen for testing are discarded, the rest of them are selected for training data. The final dataset consists of 790 users in the training data, 157 in the validation data and 43 in the test data.
 The splitted dataset is saved in the file *splitted_dataset.pickle*.
 
 
@@ -132,7 +132,7 @@ The splitted dataset is saved in the file *splitted_dataset.pickle*.
 
 In a real-world scenario, the amount of articles that a specific user finds uninteresting would be much higher than the number of articles that they like. For this reason, it would be problematic to have a balanced dataset, where each user has as many positive examples as they have negative examples. Therefore we created an imbalanced dataset where the percentage of articles the user is theoretically interested in is not 50% but 3.1%. We calculated the number of 3.1% by counting the average amount of articles that belong to the user's 3 categories of interest divided by the number of all articles.
 Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifying an article as negative (uninteresting for the specific user) is supposed to be much higher than the other case.
-However, with the ratio of 3.1% in mind, the choice of data for validation and testing is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. For example, the classifier could learn to always classify an article as negative as that is the strong bias of the training data.  
+However, with the ratio of 3.1% in mind, the choice of data for validation and training is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. For example, the classifier could learn to always classify an article as negative as that is the strong bias of the training data.  
 However, also the use of a balanced dataset that does not model the supposed real-world scenario is not ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice.
 Yet, the strongest argument for choosing balanced or imbalanced to train the classifier is the actual performance of that classifier. Therefore, the results shown in the chapters [Train & Test with balanced data](#train--test-with-balanced-data) and [Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data) state the performances of named classifiers using first a balanced and then an imbalanced dataset for training. As explained above, the data for evaluating the classifier's performance is imbalanced.
 
@@ -141,8 +141,8 @@ Yet, the strongest argument for choosing balanced or imbalanced to train the cla
 
 When deciding on which features to use, we decided to take word embeddings as well as term frequency - inverse document frequency (tf-idf) into account. Our first idea was to train the word embeddings over all articles of Wikinews. However, this would be very computationally expensive, wherefore we decided to use the GoogleNews word2vec (https://code.google.com/archive/p/word2vec/) word embeddings instead. This should be justifiable because the GoogleNews word2vec has also been trained on news articles. 
 
-The sum of the embeddings of the words (or the important words according to tf-idf) can be used as a feature. As stated in the seminar, the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. News articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
-Another idea to extract features to use for the classifier is to compute the tf-idf scores for all words in the article to be classified and use the 5 (or 10) words with the highest tf-idf value. When aiming to figure out if a new article/* is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum would be small for an uninteresting article.
+The sum of the embeddings of the words (or the important words according to tf-idf) in an news article can be used as a feature. As stated in the seminar, the sum of the word embeddings of a document retrieves an "average meaning" of the document, wherefore we think that it might be a meaningful feature. News articles with similar meaning should accordingly show embedding vectors that have a small cosine distance to each other.
+Another idea to extract features to use for the classifier is to compute the tf-idf scores for all words in the article to be classified and use the 5 (or 10) words with the highest tf-idf value. When aiming to figure out if a new article/* is interesting for the user, the tf-idf values for those words in the new article are computed and summed up. This value can also be used as a feature for the classifier. We chose to use these words with high tf-idf values because we think that the overall topic of an article can be summarized by the "most important" words of the specific article. An article which should be classified positive would yield a high sum of tf-idf values for the words that have been found earlier in the user profile, whereas the sum would be small for an uninteresting article.
 
 In order to extract the feature vectors, we first calculated a number of measures for each article of the user's profile and for the article that should be classified - for training, this article is denoted in the dataset as a positive or negative examples for the corresponding user. 
 
@@ -153,7 +153,7 @@ The vector consists of the following measures:
 3\. The sum of the word embedding vectors of the five words with the highest tf-idf scores   
 4\. The weighted sum of the word embedding vectors of the five words with the highest tf-idf scores with tf-idf scores as weights  
 5\. and 6\. The same as 3 and 4, but with ten words  
-Apart from computing the GoogleNews word2vec word vectors, we did the following:  
+Apart from computing the GoogleNews word2vec word vectors, we do the following:  
 7\. Selecting the five words with the highest tf-idf score from the new article and calculating the sum of the tf-idf scores of these words in the profile articles (one sum for each profile article)  
 8\. Counting the number of characters in the articles and calculating the differences in length between each profile article and the new article  
 
@@ -164,7 +164,7 @@ b. The maximum cosine similarity to the vector of the new article to the vectors
 c. The mean cosine similarity to the vector of the new article to the vectors articles in the profile  
 d. The average of the three highest cosine similarities
 
-Respectively, for the values of 7 and 8 we also calculate a. the minimum, b. the maximum., c. the mean and d. the mean of the three highest values
+Respectively, for the values of 7 and 8 we calculate a. the minimum, b. the maximum., c. the mean and d. the mean of the three highest values
 
 \* when using the term "new article", we mean an article that is not included in the user's profile, but in the user's training examples. We don't mean that it is a recently published article, nor that it has not occurred before in other user's profiles during training.
 
@@ -222,7 +222,7 @@ Nevertheless, we implemented the feature of common entities. It can be turned on
 
 ### Classifier selection
 
-As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (Cohen's Kappa) were the random forest classifier and maximum entropy. Afterwards we ran a grid search on the random forest concerning the following parameters: *n_estimators*, *max_features*, *max_depth*, *min_samples_split*, *min_samples_leaf*, *bootstrap*, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely *min_samples_split*, *min_samples_leaf*, *bootstrap* and came to a score not higher than the score using the default parameters. We also ran a grid search on the maximum entropy classifier with the parameter *solver* and on the k-nearest neighbors with the parameters *n_neighbors* and *p* (power parameter for the Minkowski metric).
+As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (Cohen's kappa) were the random forest classifier and maximum entropy. Afterwards we ran a grid search on the random forest concerning the following parameters: *n_estimators*, *max_features*, *max_depth*, *min_samples_split*, *min_samples_leaf*, *bootstrap*, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely *min_samples_split*, *min_samples_leaf*, *bootstrap* and came to a score not higher than the score using the default parameters. We also ran a grid search on the maximum entropy classifier with the parameter *solver* and on the k-nearest neighbors with the parameters *n_neighbors* and *p* (power parameter for the Minkowski metric).
 
 We also included k-nearest neighbors, support vector machine and multi-layer perceptron classifiers in order to have a comparison.
 
@@ -230,7 +230,7 @@ We also included k-nearest neighbors, support vector machine and multi-layer per
 ### Evaluating the classifier's performance
 
 For evaluating the classifier's performance, we use several metrics. As Precision and Recall aren't that meaningful for themselves, we want to use the F-score as a combination. The balanced F1-score is used, as well as the F2-score which weights recall higher than precision. The reason is that for each user the number of positive examples is much lower than the amount of negative ones. For this reason, the error of not recommending an article that would be interesting to the user is more severe than the error of recommending articles that are not interesting.
-Two other metrics that we use are Matthews correlation coefficient<sup>1</sup> and Cohen's Kappa<sup>2</sup>. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the F-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
+Two other metrics that we use are Matthews correlation coefficient<sup>1</sup> and Cohen's kappa<sup>2</sup>. Being somewhat similar, both are appropriate scores for evaluating the classifiers' performance. Matthews correlation coefficient has the advantage over the F-scores that it does not matter which class is defined as positive and which as negative. Moreover, both Matthews correlation coefficient and Cohen's kappa are well-suited for imbalanced data.
 At last, the accuracy should also be calculated for having a metric that is widely used and intuitive.
 
 The metrics are calculated as follows, given the confusion matrix:
@@ -245,7 +245,7 @@ F2-score = (1+4)\*Precision\*Recall/((4\*Precision)+Recall)
 
 total = (tp+fp+fn+tn)  
 randomAccuracy = ((tn+fp)\*(tn+fn)+(fn+tp)\*(fp+tp))/(total\*total)  
-Cohen's Kappa = (accuracy-randomAccuracy)/(1-randomAccuracy)  
+Cohen's kappa = (accuracy-randomAccuracy)/(1-randomAccuracy)  
 
 Matthews correlation coefficient = (tp\*tn-fp\*fn)/(sqrt((tp+fp)\*(tp+fn)\*(tn+fp)\*(tn+fn)))
 
@@ -267,7 +267,7 @@ Interestingly, the always-false-baseline yields bad results in every metric exce
 
 ### Results
 
-In the following are scores of the classifiers for 980 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search (the grid search used Cohen's kappa as metric).
+In the following are scores of the classifiers for 990 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search (the grid search used Cohen's kappa as metric).
 
 number of features: 1  
 
