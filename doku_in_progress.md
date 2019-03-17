@@ -72,7 +72,6 @@ Despite this disadvantage, it appeared to us as the most sensible way of aquirin
 
 
 ### User profiles 
-(Einmal Resultat statt schrittweis??)
 
 By chosing the automatic generation of idealized user profiles to build the data set, the way to model a user's profile is also narrowed down. As described in the preceding part of the documentation, a user profile from the point of view of the classifier is just a number of articels that match the user's interests. When applied to a real-world scenario, these articles could, for instance, be articles which the user read untill the end or articles that the user specified that they liked them.
 
@@ -163,20 +162,10 @@ The splitted dataset is saved in the file *splitted_dataset.pickle*.
 ### Balanced vs. imbalanced data
 
 In a real-world scenario, the amount of articles that a specific user finds uninteresting would be much higher than the number of articles that they like. For this reason, it would be problematic to have a balanced dataset, where each user has as many positive examples as they have negative examples. Therefore we created an imbalanced dataset where the percentage of articles the user is theoretically interested in is not 50% but 3.1%. We calculated the number of 3.1% by counting the average amount of articles that belong to the user's 3 categories of interest devided by the number of all articles.
-Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifing an article as negative (uninteresting for the specific user) is supposed to be much higher than the other case (see chapter ???).
+Disregarding the character of automation for generating the dataset, this ratio is the closest model we have for a real-world scenario. Following that argumentation, the data for validation and testing of the classifier should be the original dataset. That means that the probability of the classifier classifing an article as negative (uninteresting for the specific user) is supposed to be much higher than the other case.
 However, with the ratio of 3.1% in mind, the choice of data for validation and testing is more difficult. There are a number of downsides that go along with an imbalanced dataset like the one described above. For example, the classifier could learn to always classify an article as negative as that is the strong bias of the training data.  
-However, also the use of a balanced dataset that doesn't model the supposed real-world scenario isn't ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice.
+However, also the use of a balanced dataset that does not model the supposed real-world scenario is not ideal. It could result in an unrealistic bias to classify more articles as interesting for the user than it would be the case in practice.
 Yet, the strongest argument for choosing balanced or imbalanced to train the classifier is the actual performance of that classifier. Therefore, the results shown in the chapters [Train & Test with balanced data](#train--test-with-balanced-data) and [Train with balanced, test with imbalanced data](#train-with-balanced-test-with-imbalanced-data) state the performances of named classifiers using first a balanced and then an imbalanced dataset for training. As explained above, the data for evaluating the classifier's performance is imbalanced.
-(data??)
-
-
-
-The dataset that we are using has a huge amount of samples, which is due to the fact that it is computationally generated. 
-
-
---
-
-
 
 
 ### Features
@@ -237,7 +226,6 @@ The five features selected by both methods are the following:
 ### Interpretation of selection results
 
 As one can see, the filter and embedded feature selection methods tend to recognize maximum cosine similarities as important features, rather than minimum or mean cosine similarities of all similarity scores. One possible explanation for this observation is that each user profile consists of three randomly chosen topics which are mostly not strongly related to each other. Another article as a sample to be classified as positive belongs to one of those three topics, so the similarity between the summed word embeddings of that article and each article from the same topic in the user profile is relativly high. The similarity to the news articles belonging to other topics is probably low as is the maximum similarity for a sample classified as negative.
-(Hinweis auf Ausreichen von einem Feature!!??)
 
 Some insights can be gained by examining the nearest words of summed word embeddings of articles. The gensim python library provides a method *most_similar()*, which takes a word2vec embedding as an input and gives a list of words with vectors that are mathematically close to that input. The summed vector over all words of an article doesn't exactly match an vector of an existing word, but the environment of the summed embedding gives a feeling of what the embedding expresses.
 The following table shows the five closest words to different summed word vectors for the news article "Government of the Bahamas isssues warning over Hurricane Hanna
@@ -255,21 +243,20 @@ The different ways of summing are parts of four features used for the classifier
 
 ### Scores of classifiers
 
-As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (Cohen's Kappa) are then investigated closer, so we tried to narrow down the best hyperparameters for those classifiers. 
-
-When fed to the different classifiers with their default parameters, it's enough to use the one most important feature according to its mutual_inf_classif to reach the scores the classifiers reached when using all features. Moreover, some of the scores reached when using all features are even improved, but not improving the scores of the best-performing classifiers.
-
 
 ### Additional feature of shared entities
 
-One conclusion drawn from chapter?? (last) is that the usage of only one feature is sufficient to achieve the same classification performance as the combination of all features ??. In other words, the features hold redundant information. That can be taken as a hint for the usefulness of additional features. We implemented the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a DBpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
+We had the idea to implement the similarity of named entities in news articles as an additional feature. The KnowledgeStore database holds information about mentions in Wikinews articles. One type of a mention is the referrence to an entity, which gives a link to a DBpedia entry. Entities can be for example persons or places. A similarity measure between articles is the share of entities that are named in the articles.
 The mentions of an article can be accessed via the property 'ks:hasMention'. If a mention refers to an entity, that entity can be retrieved using the property 'ks:refersTo' of the mention. Oddly enough, when a mention has the type 'nwr:EntityMention', the property 'ks:refersTo' often doesn't lead to an entity, which lessens the amount of recognized entities in an article. Consequentially, the similarity of two articles measured by the share of entities that are named in the articles is reduced.
-Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter *use_entity_feature* in the feature_extraction.py script. Yet, when using that feature, the time to calculate the features rapidly rises. In out testruns, enabling the entity feature led to an increase of the time needed to extract all features by the factor of 12. Therefore, we didn't use that feature in the final version of *feature_extraction.py*.
+Nevertheless, we implemented the feature of common entities. It can be turned on via the parameter *use_entity_feature* in the feature_extraction.py script. Yet, when using that feature, the time to calculate the features rapidly rises. In our testruns, enabling the entity feature led to an increase of the time needed to extract all features by the factor of 12. Therefore, we didn't use that feature in the final version of *feature_extraction.py*.
 
 
 ### Classifier selection
 
-We decided to use the classifiers random forest and maximum entropy because these classifier yielded the best results when ran on the dataset (without hyperparameter tuning). Afterwards we ran a grid search on the random forest concerning the following parameters: n_estimators, max_features, max_depth, min_samples_split, min_samples_leaf, bootstrap, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely min_samples_split, min_samples_leaf, bootstrap and came to a score not higher than the score using the default parameters.
+As suggested in the seminar, we used different classifiers with their default settings to work with our selected features. The classifiers with the highest scores (Cohen's Kappa) were the random forest classifier and maximum entropy. Afterwards we ran a grid search on the random forest concerning the following parameters: *n_estimators*, *max_features*, *max_depth*, *min_samples_split*, *min_samples_leaf*, *bootstrap*, but the grid search never came to an end. So, we dropped some parameters of the grid search, namely *min_samples_split*, *min_samples_leaf*, *bootstrap* and came to a score not higher than the score using the default parameters. We also ran a grid search on the maximum entropy classifier with the parameter *solver* and on the k-nearest neighbors with the parameters *n_neighbors* and *p* (power parameter for the Minkowski metric).
+
+We also included k-nearest neighbors, support vector machine and multi-layer perceptron classifiers in order to have a comparison.
+
 
 ### Evaluating the classifier's performance
 
@@ -311,7 +298,7 @@ Interestingly, the always-false-baseline yields bad results in every metric exce
 
 ### Results
 
-In the following are scores of the classifiers for 700 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search.
+In the following are scores of the classifiers for 700 samples with first the named one feature that has been selected as the most important by both mutual information and embedded feature selection methods, and then 5 best features according to embedding feature selection methods, the 6 best features according to both mutual information and embedding features selection methods, and the 15 best according to mutual information. The tables show the scores for the classifiers with default parameters and for the parameters that have been found through a grid search (the grid search used Cohen's Kappa as metric).
 
 number of features: 1  
 
@@ -365,6 +352,9 @@ number of features: 15
 | MaxEnt with {'solver': 'newton-cg'}            | 0.9713541666666666 | 0.759825327510917  | 0.6733746130030959 | 0.7453335262624801 | 0.7652910690783761               |
 | RF with {'max_depth': 135, 'n_estimators': 51} | 0.9723958333333333 | 0.7705627705627704 | 0.6867283950617284 | 0.756522404915491  | 0.7747980597012636               |
 
+One can see in the table that the best performance in all metrices was achieved by the random forest classifier that has been optimized through a grid search while using 15 parameters. The second best is the maximum entropy classifier. These classifiers clearly beat all of the baselines. One can also see that for some classifiers it does not make a big difference how many features are used (k-nearest-neighbors), whilst for others (e.g. the random forest) it makes a big difference.
+
+
 ### Missing data
 Luckily, the features we are using are not prone to produce missing data. On the one hand, this is due to the fact that the feature extraction is independently of the amount of articles in the user profile (as long as there is at least one article), on the other hand, the feature extraction only takes the raw text of articles, so missing additional information (like DBpedia-information) is not an issue.
 Nevertheless, one potential problem is the lack of word2vec-embeddings for rare or special words. In particular, when the embeddings of the five words with the highest tf-idf scores are calculated and summed up as a feature, it can happen there isn't a word2vec-embedding for any of the words. With possible high tf-idf scores for generally rare words, the probability for not having word2vec-embeddings for any of those five words is even elevated. Missing embeddings are replaced with a null-vector (model["for"] * 0), as to avoid missing values for features. Even so, a null-vector weakens the informative value of the corresponding feature and might lead to falsification of the feature itself.
@@ -412,7 +402,7 @@ The code is written in Python 3 (https://www.python.org/ ). In order to run the 
 
 (Note that the modified version of KnowledgeStore (*ks.py*) that is in the alpha branch of the repository is required.)
 
-The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting dataset is saved as *selected_features.pickle*. The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the file *classifier_results.pickle*. Eventually, the script results.py compares the results and prints them into a table ??
+The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting datasets are saved as *reduced_datasetN.pickle* (N stands for the number of features that have been selected). The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the *classifier_resultsN.pickle* files. Eventually, the script results.py prints them into a table.
 
 
 Gleiche Schreibweise für Ausdrücke
