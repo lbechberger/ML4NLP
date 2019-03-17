@@ -3,7 +3,7 @@ Material for the Practical Seminar "Machine Learning for Natural Language Proces
 
 This is the branch of group Epsilon.
 
-## Introduction
+## 1.Introduction
 
 
 We aim to create a system that is capable of answering questions concerning a single document, e.g. when asked "Who owns the Company BigCompany?" after reading a text about this company, it should be able to answer "Mrs Bigshot". For this we make use of the  KnowledgeStore Database (https://knowledgestore.fbk.eu/), in particular the NewsReader project (http://knowledgestore2.fbk.eu/nwr/wikinews/ui) and the articles contained within.
@@ -20,7 +20,7 @@ Similarily, Patient is the passive part in a triplet, i.e. "BigCompany" in our e
 An event that has both an agent and a patient is considered a "Relation". We will use this term, but be aware that there may be events that are not relations. However,we most likely won't be talking about these.
 
 
-## Data Properties
+## 2.Data Properties
 
 ### Choice of Input and Target
 We decided that the target of the predictions ought to be the completed triple of the (Agent Relation Patient) form.
@@ -44,7 +44,7 @@ For each of these triples we will generate a row for each of the words in the ar
 Assuming roughly 20 000 articles with on average 10 useful triples generated from each article and articles containing on average 500 words, we are looking at a data set with about 100 000 000 entries.
 Of course most of these entries are going to be wrong answers since most words in an article are not the answer to a given question, but wrong answers still provide a good training for classifiers.
 
-## Feature Engineering
+## 3.Feature Engineering
 
 ### Feature Extraction
 
@@ -61,35 +61,303 @@ Other syntactic features that we seek to extract from  all the words in the sent
 ### Semantic Features
 We are very fascinated by the word2vec model, however the computation power required to make use of the semantic information proved prohibitive. We used the  pretrained model provided by Google (https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit), and while we were able to generate a semantic vector for a part of the data, we were not able to merge it properly with the other features
 
-## Final State
+### Final State
 We extracted a 10 word vector around each candidate word, together with the agent and the patient word as strings. For each of these words, we generated a position within the text, as int 16, as well as Part of Speech, Named Entity Recognition and Depedency Category tokens, both saved as int16 values as well. Of these, random forests and wrapper methods showed 'relation_DEP', 'relation_NER', 'relation_POS' to be most promising, which makes sense as these are most closely related to the candidate word, as well as the 'agent_POS' and 'patient_POS' if encoded as distance to the candidate word. 
 We also planned to make use of cosinus distances between the agent/patient/relation words' semantic vectors, but merging these results with the rest of the data proves to be an issue due to the size of the generated data (and some data corruption issues).
 Currently everything but the binary classification value is kept in int16, as int32, or even worse Strings or mixed Object types cause the size requirements of the dataframes to explode.
 
-## Choice of Model
+## 4. Model Selection
 
-### Choice of Model
-So far, possible models have only briefly been discussed. One possible choice would be the use of a classification algorithm which predicts for each word or semantic unit in the text whether or not it matches the missing part of the triple. This solves the overall problem of answering questions on a given article not yet completely, but provides a semantic basis for the answering of the question. When training with the QAP database, the output of the classification algorithm will have to be translated into the denominator of the corresponding node in the database. When working with a natural language question as input, the completed triple should ideally be further translated into a natural language answer by means of natural language generation.
+So far, possible models have only briefly been discussed. After some discussion we came to the conlcusion that it would be best to use a classification algorithm to predict for each non-stop word in an article whether or not it completes the triple in question. This approach solves the overall problem of answering questions on a given article not yet completely, but provides a semantic basis for the answering of the question, which would in an application scenario then be further translated into natural language.  
 
-## Evaluation
-### Evaluation Metric
-Accuracy seems to be the intuitive answer. However, since we are not really interested in whether the classifier misses other correct answers but only want it to find at least one correct answer, another metric that is interesting for us is precision. Precision will tell us how often the answers our question answering system gives us are actually correct, which is the quality we want to optimize.
+Due to the large size of the data set, we considered only classifiers that fulfill the following requirements:
+* Low memory usage
+* High speed
 
-### Baseline
-Because of the inbalance in classifications, the only suitable baseline for now is "always false". Once we have properly started with the feature engineering, there may be a most predictive feature which will outscore "always false", but for now it is the champion among the baselines. Precision is not really defined for the baseline "always false", since there are no False Positives or True Positives when your classifier is "always false". Accuracy however is 99.64 % on our preliminary data set. This implies that we will have to involve some kind of weighting if we want to get significant differences in evaluations of our classifiers.
+In the end, only tree-based ensemble models were able to fulfill these requirements sufficiently. Especially Gradient Boosting and Random Forest classification methods proved to be most effective in predicting the missing word from the triple.
+Consequently, in the final evaluation we focused mainly on the following implementations:  
 
-### Split
-We have enough data to do 10-Fold Crossvalidation, which we hold to be the most reliable system. We would also prefer it if the triples generated from one article would not all be in one split, since we want the evaluation to be independent of the articles in question. Another point to consider is that since we only have very few True classifications, they should be evenly distributed among the splits so that there is no split with no True classifications to learn from.
+* eXtreme Gradient Boosting (XGB)
+* MicrosoftLight Gradient Boosting Machine (LGBM)
+* scikit-learn Random Forest Classifier (RF)
 
-Fortunately, all these requirements are fulfilled in scikit-learn's StratifiedShuffleSplit. Accordingly we will use this out-of-the-box solution for now. An application can be seen in the script explorer.py. For the baseline evaluation we do not yet use crossvalidation but only a single split, since the equal share of True/False classifcations is guaranteed by the stratification.
+In addition to those three, two attempts to further improve performance by using ensembling methods on these three implementations were made.
+For this purpose, the following implementations of ensembling methods were used:  
 
-## Discussion
+* mlens SuperLearner
+* scikit-learn Voter
+
+In the following we provide a short explanation for some of the lesser known methods,
 
 
-## New Repository
-Due to problems with this repository, we created a new repository, where we will do most of the classificator configuration. For now we have a "light" dataset, which amounts to about 1.1 GB unzipped and includes only the following features:
-relation_NER, relation_DEP, relation_POS, agent_position, patient_position (both relative to relation_positon) and DEP for words in sliding window of -7 to +7.
-The "heavy" dataset amounts to 2.6 GB unzipped and includes additionally the positions of all words in the sliding window and extends it to -10/+10.
-We have not been able to implement semantic vectors and synonyms yet and are for now working with the light version to configure classificators.
-You can find our new repository here: https://github.com/Nathanaelion/NRRC
+### Gradient Boosting
+
+Gradient boosting is a common machine learning method for classification problems, which produces a prediction model in the form of an ensemble of weak prediction models, typically decision trees. It builds the model stage-wise and generalizes them by allowing optimization of an arbitrary differentiable loss function.  
+
+The main difference between the two used implementations (XGB and LGBM) is that while XGB uses an pre-sort-based algorithm for decision tree learning, LGBM uses a histogram-based algorithm that buckets continuous feature values into discrete bins. This speeds up training and reduces memory usage.
+
+### Stacking
+
+Stacking is a common ensembling method that uses a number of existing models as base learners, whose predictions are then used by a so-called super learner to make its own predictions. This can sometimes super learner can sometimes achieve higher scores than the best base learner by learning to decide in which cases which base learner scores the best results. The implementation that we used was provided by the mlens package.
+
+### Voting
+
+Voting is a common ensembling method that like Stacking uses a number of existing models as base learners and makes its own predictions based on their predictions. A voting classifier is however much less sophisticated and makes decisions simply by majority vote. There are two types of voting classifiers provided by scikit-learn, hard and soft voting. Hard voting means using the binary predictions of the base learns while soft voting means using the predicted probabilities to make decisions. In the following, when we speak of model V, we mean a soft voting classifier, since hard voting turned out to produce much worse results on all metrics.
+
+
+## 5. Evaluation Procedure
+
+Three versions of our data set were compiled for the purposes of model evaluation:
+
+* Heavy:  
+The full data set that we assembled during the data generation phase - position, POS, DEP and NEC for agent, patient, relation words and all words in a sliding window from -10 to +10 non-stop words around the relation word for up to 2 sentences
+* Light:  
+A reduced version of the data set - position, POS, DEP and NEC only for agent, patient and relation words, DEP only for a sliding window from -7 to +7 stop words
+* Hot:  
+A minimal version of the data set - distance of patient and agent position to relation position and only features with a feature importance of more than 0.01 in all three implementations from a hot-encoded version of POS, DEP and NEC of the relation word
+
+The initial exploration of the different models and parameters was done almost exclusively on the Hot data set, since it provided the fastest results due to its low file size and low number of features. For the fine tuning and final evaluation, however, we moved on to the Light data set, since it is more complete and easier to replicate in an application scenario. The Heavy data set was sadly never really put to use due to its large file size and high number of features which caused the runtime to exceed acceptable dimensions on the available hardware.  
+
+For all mentioned transformations and other utilites we used, unless specified otherwise, the implementations provided by the scikit-learn.  
+
+In order to split the data set into training and test data for the purposes of cross-valdiation, a instance of StratifiedShuffleSplit was used. Its properties are prefectly suited to our data set. It shuffles the data to ensure that a wide range of articles are being used while at the same time preserving the overall ratio of positive and negative samples.  
+
+The models were evaluated mainly by two metrics: Precision and Recall. Accuracy - perhaps the more conventional choice - was out of the question, since our data set contains far more negative than positive samples and thus a naive "always false" classifier would already have scored an accuracy of > 0.95, which is not representative of the success.  
+
+The tuning of the hyperparameters for the selected classifiers was done via GridSearchCV. At first the parameter grid was distributed widely to explore the full range of possible combinations. Then the grid was tightened around parameters that returned the highest scores so far.  
+
+## 6. Results
+
+The following results were obtained by using the best parameters found using grid search for each model and scoring over 10 splits with 90% training data and 10% test data each.  
+
+### Evaluation results on the Hot data set
+
+<table class="js-csv-data csv-data js-file-line-container">
+      <thead>
+        <tr id="LC1" class="js-file-line">
+          <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+            <th></th>
+            <th>model</th>
+            <th>average precision</th>
+            <th>average recall</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr id="LC2" class="js-file-line">
+            <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+              <td>0</td>
+              <td>XGB</td>
+              <td>0.71985</td>
+              <td>0.15620</td>
+          </tr>
+          <tr id="LC3" class="js-file-line">
+            <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+              <td>1</td>
+              <td>LGBM</td>
+              <td>0.74871</td>
+              <td>0.12602</td>
+          </tr>
+          <tr id="LC4" class="js-file-line">
+            <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+              <td>2</td>
+              <td>RF</td>
+              <td>0.68972</td>
+              <td>0.18481</td>
+          </tr>
+          <tr id="LC5" class="js-file-line">
+            <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+              <td>3</td>
+              <td>SL</td>
+              <td>0.69362</td>
+              <td>0.12403</td>
+          </tr>
+	  <tr id="LC6" class="js-file-line">
+            <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+              <td>4</td>
+              <td>V</td>
+              <td>0.72419</td>
+              <td>0.15972</td>
+          </tr>
+    </tbody>
+</table>
+
+### Evaluation results on the Light data set
+
+<table>
+      <thead>
+        <tr id="LC1" class="js-file-line">
+          <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+            <th></th>
+            <th>model</th>
+            <th>average precision</th>
+            <th>average recall</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr id="LC2" class="js-file-line">
+            <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+              <td>0</td>
+              <td>XGB</td>
+              <td>0.73712</td>
+              <td>0.13123</td>
+          </tr>
+          <tr id="LC3" class="js-file-line">
+            <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+              <td>1</td>
+              <td>LGBM</td>
+              <td>0.79055</td>
+              <td>0.10212</td>
+          </tr>
+          <tr id="LC4" class="js-file-line">
+            <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+              <td>2</td>
+              <td>RF</td>
+              <td>0.58057</td>
+              <td>0.13989</td>
+          </tr>
+          <tr id="LC5" class="js-file-line">
+            <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+              <td>3</td>
+              <td>SL</td>
+              <td>0.64781</td>
+              <td>0.12948</td>
+          </tr>
+	  <tr id="LC6" class="js-file-line">
+            <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+              <td>4</td>
+              <td>V</td>
+              <td>0.63876</td>
+              <td>0.14764</td>
+          </tr>
+    </tbody>
+</table>
+
+### Best Parameters
+
+XGBoostClassifier:
+* "n_estimators": 64,
+* "objective": "binary:logistic",
+* "max_depth": 3,
+* "min_child_weight": 1,
+* "subsample": 0.5,
+* "colsample_bytree": 0.5,
+* "learning_rate": 0.12,
+* "tree_method": "exact",
+* "reg_alpha": 0.6,
+* "reg_lambda": 0.6
+
+LGBMClassifier:
+* "n_estimators": 256,
+* "max_depth": 7,
+* "num_leaves": 512,
+* "objective": "binary",
+* "min_child_samples": 20,
+* "reg_alpha": 0.4,
+* "reg_lambda": 0.4,
+* "learning_rate": 0.005
+
+RandomForestClassifier:
+* "n_estimators": 64,
+* "criterion": "gini",
+* "max_depth": 12,
+* "max_features": "log2",
+* "min_samples_split": 4
+
+### Prediction Samples
+
+<table>
+  <tr>
+    <th>agent</th>
+    <th>patient</th>
+    <th>relation</th>
+    <th>truth</th>
+    <th>predicted</th>
+  </tr>
+  <tr>
+    <td>the group</td>
+    <td>a press release</td>
+    <td>sent</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>bomb disposal</td>
+    <td>two and a half hours</td>
+    <td>took</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>George W. Bush</td>
+    <td>a speech</td>
+    <td>started</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Mustafa Kemal Atatürk</td>
+    <td>the country</td>
+    <td>founded</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Mitt Romney</td>
+    <td>the required 1144 delegates</td>
+    <td>surpassed</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Boston Red Sox</td>
+    <td>the world series championship</td>
+    <td>dominated</td>
+    <td>0</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Thomas Jefferson</td>
+    <td>a maximum sentence of 235 years</td>
+    <td>faces</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>islamic insurgents</td>
+    <td>three people</td>
+    <td>shot</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>their bombardment</td>
+    <td>the lives of UN staff</td>
+    <td>endangered</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Zinedine Zindane</td>
+    <td>Marco Materazzi</td>
+    <td>headbutted</td>
+    <td>1</td>
+    <td>1</td>
+  </tr>
+</table>
+
+### Summary
+
+As can be seen in the above tables, the highest average precision was achieved by an LGBM model on the Light data set with a score of 0.79055.
+The highest average recall, however, was achieved by a Random Forest Classifier on the Hot data set with a score of 0.18481.  
+
+In general, we observed that there seemed to be a trade-off between recall and precision. To increase one always meant to decrease the other. The Random Forest implementation seemed in general to be better able to maximize recall, while the gradient boosting methods scored better in precision. In terms of speed, LGBM is the unquestionable winner - it always took no more than half the time that the other implementations needed while often at the same time scoring much higher in precision.  
+
+Some parameters such as reg_alpha and reg_lambda in the gradient boosting methods simply improved performance in both metrics. Other parameters, however, influenced the balance between recall and precision heavily. A high learning rate for example increased recall in all cases while a high number of estimators usually decreased it.  
+
+The ensembling methods Stacking and Voting did not prove to be effective. In fact, they seemed to combine the worst from all models, decreasing both recall and precision while also taking a lot of time.  
+
+## 7. Discussion
+
+One possible reason for the ineffectiveness of the ensemble methods in this case could be that the base models were already ensemble methods of their own. One could argue that the models themselves were already optimal combinations of weaker models, and further combing these models with other models destroyed the delicate balance that was ingrained in them.  
+
  
