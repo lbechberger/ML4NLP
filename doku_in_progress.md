@@ -375,6 +375,10 @@ The code is written in Python 3 (https://www.python.org/ ). In order to run the 
 
 The first python program to be run is *dataset_generation.py*. It saves the created dataset as *dataset.pickle*. Afterwards, the program *dataset_splitting.py* splits the dataset into training, validation and test data and saves it as *splitted_dataset.pickle*. The program *feature_extraction.py* uses this splitted dataset to compute the features and saves them as *featurised_dataset.pickle*. After this step, feature selection is applied by the program *feature_selection.py*, and the resulting datasets are saved as *reduced_datasetN.pickle* (N stands for the number of features that have been selected). The program *classifiers.py* applies the different classifiers to the feature-selected dataset and saves the performance of the different classifiers into the *classifier_resultsN.pickle* files. Eventually, the script results.py prints them into a table.
 
+The figure below also shows which program uses and produces which files and where the training, test and validation data come into play.
+
+![Data processing diagram](https://github.com/lbechberger/ML4NLP/blob/alpha/figures/data_processing_diagram.png)
+
 ### References
 
 <sup>1</sup> Matthews, B. W. (1975). "Comparison of the predicted and observed secondary structure of T4 phage lysozyme". Biochimica et Biophysica Acta (BBA) - Protein Structure.  
